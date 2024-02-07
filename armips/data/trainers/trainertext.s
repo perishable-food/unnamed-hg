@@ -106,15 +106,28 @@ _0000: // Trainer 0
        // Trainer 709
        // Trainer 710
        // Trainer 711
-    trainertextentry 495, TEXT_LAST_MON_SENT_OUT, "...Humph!\nYou’re doing OK for someone weak.\n"
-    trainertextentry 495, TEXT_DEFEATED_IN_BATTLE, "...Humph!\nAre you happy you won?\n"
-    trainertextentry 495, TEXT_PLAYER_LOSES, "...Humph!\nThat was a waste of time.\n"
+	trainertextentry 495, TEXT_NOTICE_IN_OVERWORLD, "Hi!\nI'm Mocha, the first boss you'll\rencounter on your journey!\rWell, you better be ready!\n"
+	trainertextentry 495, TEXT_DEFEATED_IN_BATTLE, "Aw man...\n"
+	trainertextentry 495, TEXT_DEFEATED_IN_OVERWORLD, "Hey, don't let it\n get to your head!\rI was just going easy\r on you!\n"
+    trainertextentry 495, TEXT_PLAYER_LOSES, "Better luck next time,\n'kay?\n"
+	
+_000B: // Trainer 11
+	trainertextentry 11, TEXT_NOTICE_IN_OVERWORLD, "Hi! I'm Mocha, the first boss you'll\nencounter on your journey!\rYou better be ready!\n"
+	trainertextentry 11, TEXT_DEFEATED_IN_BATTLE, "Aw man...\n"
+	trainertextentry 11, TEXT_DEFEATED_IN_OVERWORLD, "Hey, don't let it\n get to your head!\nI was just going easy\r on you!\n"
+    trainertextentry 11, TEXT_PLAYER_LOSES, "Better luck next time,\r'kay?\n"
 
 _000C: // Trainer 496
     trainertextentry 496, TEXT_LAST_MON_SENT_OUT, "...Humph!\nYou’re doing OK for someone weak.\n"
     trainertextentry 496, TEXT_DEFEATED_IN_BATTLE, "...Humph!\nAre you happy you won?\n"
     trainertextentry 496, TEXT_PLAYER_LOSES, "...Humph!\nThat was a waste of time.\n"
-
+	
+_0013: // Trainer 19
+	trainertextentry 19, TEXT_NOTICE_IN_OVERWORLD, "hey, i'm the lead dev.\nthe name's rei.\rrun it fella\n"
+	trainertextentry 19, TEXT_DEFEATED_IN_BATTLE, "unfortunate doesnt even\nbegin to describe....\n"
+	trainertextentry 19, TEXT_DEFEATED_IN_OVERWORLD, "(She's just rambling\non about RNG...)\n"
+	trainertextentry 19, TEXT_PLAYER_LOSES, "cheating? i would never\n(im lying)\n"
+	
 _0018: // Trainer 497
     trainertextentry 497, TEXT_LAST_MON_SENT_OUT, "...Humph!\nYou’re doing OK for someone weak.\n"
     trainertextentry 497, TEXT_DEFEATED_IN_BATTLE, "...Humph!\nAre you happy you won?\n"
@@ -125,6 +138,12 @@ _0024: // Trainer 1
     trainertextentry   1, TEXT_LAST_MON_SENT_OUT, "That’s ridiculous. There’s no way\nI could lose to a wimp like you!\n"
     trainertextentry   1, TEXT_DEFEATED_IN_BATTLE, "...Humph!\nUseless Pokémon!\rListen, you. You won only because my\nPokémon were weak.\n"
     trainertextentry   1, TEXT_PLAYER_LOSES, "...Humph!\nI knew you were lying.\n"
+
+_0028: // Trainer 40
+	trainertextentry 40, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Hey, I'm Bagon.\nI do ROM Hacking for\rPokémon Conquest.\rAnyways, you ready for a battle?\n"
+	trainertextentry 40, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I just wasn't in my element.\n"
+	trainertextentry 40, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "My hack is called Twin Dragons,\njust incase you wanna check\nit out.\n"
+	trainertextentry 40, TEXT_PLAYER_LOSES, "Uh, skill issue maybe?\n"
 
 _0034: // Trainer 266
     trainertextentry 266, TEXT_LAST_MON_CRITICAL, "Say, you’ve got a lot of nerve,\ncoming here...\n"
@@ -3112,7 +3131,7 @@ _1AD0: // Trainer 630
 /* Trainer   8 */ .halfword _0A14
 /* Trainer   9 */ .halfword _0C8C
 /* Trainer  10 */ .halfword _0224
-/* Trainer  11 */ .halfword _0000
+/* Trainer  11 */ .halfword _000B
 /* Trainer  12 */ .halfword _1218
 /* Trainer  13 */ .halfword _1230
 /* Trainer  14 */ .halfword _1370
@@ -3120,7 +3139,7 @@ _1AD0: // Trainer 630
 /* Trainer  16 */ .halfword _0C74
 /* Trainer  17 */ .halfword _0E08
 /* Trainer  18 */ .halfword _0A64
-/* Trainer  19 */ .halfword _0000
+/* Trainer  19 */ .halfword _0013
 /* Trainer  20 */ .halfword _014C
 /* Trainer  21 */ .halfword _0158
 /* Trainer  22 */ .halfword _0268
@@ -3141,7 +3160,7 @@ _1AD0: // Trainer 630
 /* Trainer  37 */ .halfword _1254
 /* Trainer  38 */ .halfword _0830
 /* Trainer  39 */ .halfword _0C68
-/* Trainer  40 */ .halfword _0000
+/* Trainer  40 */ .halfword _0028
 /* Trainer  41 */ .halfword _0FB4
 /* Trainer  42 */ .halfword _1170
 /* Trainer  43 */ .halfword _1008
