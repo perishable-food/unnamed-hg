@@ -14,7 +14,6 @@ _0000: // Trainer 0
        // Trainer 40
        // Trainer 63
        // Trainer 87
-       // Trainer 88
        // Trainer 105
        // Trainer 106
        // Trainer 107
@@ -106,10 +105,10 @@ _0000: // Trainer 0
        // Trainer 709
        // Trainer 710
        // Trainer 711
-	trainertextentry 495, TEXT_NOTICE_IN_OVERWORLD, "Hi!\nI'm Mocha, the first boss you'll\rencounter on your journey!\rWell, you better be ready!\n"
-	trainertextentry 495, TEXT_DEFEATED_IN_BATTLE, "Aw man...\n"
-	trainertextentry 495, TEXT_DEFEATED_IN_OVERWORLD, "Hey, don't let it\n get to your head!\rI was just going easy\r on you!\n"
-    trainertextentry 495, TEXT_PLAYER_LOSES, "Better luck next time,\n'kay?\n"
+	trainertextentry 495, TEXT_NOTICE_IN_OVERWORLD, "test"
+	trainertextentry 495, TEXT_DEFEATED_IN_BATTLE, "tested"
+	trainertextentry 495, TEXT_DEFEATED_IN_OVERWORLD, "testing"
+    trainertextentry 495, TEXT_PLAYER_LOSES, "tested"
 	
 _000B: // Trainer 11
 	trainertextentry 11, TEXT_NOTICE_IN_OVERWORLD, "Hi! I'm Mocha, the first boss you'll\nencounter on your journey!\rYou better be ready!\n"
@@ -127,6 +126,7 @@ _0013: // Trainer 19
 	trainertextentry 19, TEXT_DEFEATED_IN_BATTLE, "unfortunate doesnt even\nbegin to describe....\n"
 	trainertextentry 19, TEXT_DEFEATED_IN_OVERWORLD, "(She's just rambling\non about RNG...)\n"
 	trainertextentry 19, TEXT_PLAYER_LOSES, "cheating? i would never\n(im lying)\n"
+	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "this is getting shiest..\n"
 	
 _0018: // Trainer 497
     trainertextentry 497, TEXT_LAST_MON_SENT_OUT, "...Humph!\nYou’re doing OK for someone weak.\n"
@@ -140,7 +140,7 @@ _0024: // Trainer 1
     trainertextentry   1, TEXT_PLAYER_LOSES, "...Humph!\nI knew you were lying.\n"
 
 _0028: // Trainer 40
-	trainertextentry 40, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Hey, I'm Bagon.\nI do ROM Hacking for\rPokémon Conquest.\rAnyways, you ready for a battle?\n"
+	trainertextentry 40, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Hey, I'm Bagon.\rI do ROM Hacking for\nPokémon Conquest.\rAnyways, you ready for a battle?\r"
 	trainertextentry 40, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I just wasn't in my element.\n"
 	trainertextentry 40, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "My hack is called Twin Dragons,\njust incase you wanna check\nit out.\n"
 	trainertextentry 40, TEXT_PLAYER_LOSES, "Uh, skill issue maybe?\n"
@@ -162,6 +162,12 @@ _0054: // Trainer 263
     trainertextentry 263, TEXT_LAST_MON_SENT_OUT, "Don’t you get that I’m going easy\non you?\n"
     trainertextentry 263, TEXT_DEFEATED_IN_BATTLE, "...Humph!\rI’m not fighting with another weakling\never again. It’s just too much playing\faround.\n"
     trainertextentry 263, TEXT_PLAYER_LOSES, "...Humph!\rI’m not fighting with another weakling\never again. I don’t have time to waste\flike that.\n"
+
+_0058: // Trainer 88
+	trainertextentry 88, TEXT_NOTICE_IN_OVERWORLD, "gloogy"
+	trainertextentry 88, TEXT_DEFEATED_IN_BATTLE, "gloogy"
+	trainertextentry 88, TEXT_DEFEATED_IN_OVERWORLD, "gloogy"
+    trainertextentry 88, TEXT_PLAYER_LOSES, "glooged!!"
 
 _0064: // Trainer 267
     trainertextentry 267, TEXT_LAST_MON_CRITICAL, "Out of desperation, weak people\nsometimes do OK at fighting back.\n"

@@ -263,7 +263,7 @@ trainerdata 8, "Joey"
         ivs 0
         abilityslot 0
         level 4
-        pokemon SPECIES_RATTATA
+        monwithform SPECIES_ZIGZAGOON, 1
         ballseal 0
     endparty
 
@@ -576,7 +576,7 @@ trainerdata 18, "Justin"
 trainerdata 19, "Rei"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_BALL | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_PSYCHIC_F
-    nummons 1
+    nummons 6
     item ITEM_FULL_RESTORE
     item ITEM_FULL_RESTORE 
     item ITEM_FULL_RESTORE
@@ -587,21 +587,117 @@ trainerdata 19, "Rei"
 
     party 19
         ivs 200
-        abilityslot 2
+        abilityslot 0
         level 100
-        pokemon SPECIES_KYOGRE
-        item ITEM_BLUE_ORB
-        move MOVE_EXPLOSION
-        move MOVE_NONE
-        move MOVE_NONE
-        move MOVE_NONE
-        ability ABILITY_HUGE_POWER
+        monwithform SPECIES_NINETALES, 1
+        item ITEM_ICY_ROCK
+        move MOVE_BLIZZARD
+        move MOVE_FREEZE_DRY
+        move MOVE_MOONBLAST
+        move MOVE_NASTY_PLOT
+        ability ABILITY_SNOW_WARNING
         ball ITEM_POKE_BALL
         setivs 31, 31, 31, 31, 31, 31 
-        setevs 252, 252, 252, 252, 252, 252
-        nature NATURE_ADAMANT
+        setevs 6, 0, 0, 252, 252, 0
+        nature NATURE_TIMID
         shinylock 1
-        additionalflags 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _S, _I, _L, _E, _N, _T, _H, _I, _L, _L, _endstr
+        ballseal 0
+    
+        ivs 200
+        abilityslot 0
+        level 100
+        pokemon SPECIES_DELPHOX
+        item ITEM_LIFE_ORB
+        move MOVE_PSYCHIC
+        move MOVE_MIND_BLOWN
+        move MOVE_NASTY_PLOT
+        move MOVE_SHADOW_BALL
+        ability ABILITY_MAGIC_GUARD
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 0, 0, 252, 252, 0
+        nature NATURE_TIMID
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _M, _R, _S, 0x1DE, _M, _A, _G, _I, _C, _endstr, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 2
+        level 100
+        pokemon SPECIES_JIRACHI
+        item ITEM_CHOICE_SCARF
+        move MOVE_DOUBLE_IRON_BASH
+        move MOVE_ICE_PUNCH
+        move MOVE_THUNDER_PUNCH
+        move MOVE_ZEN_HEADBUTT
+        ability ABILITY_SERENE_GRACE
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 252, 0, 252, 0, 0
+        nature NATURE_JOLLY
+        shinylock 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _O, _H, 0x1DE, _A, _N, _N, _A, _endstr, 0, 0, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 1
+        level 100
+        pokemon SPECIES_PRIMARINA
+        item ITEM_POWER_HERB
+        move MOVE_BOOMBURST
+        move MOVE_MOONBLAST
+        move MOVE_GEOMANCY
+        move MOVE_SEED_FLARE
+        ability ABILITY_LIQUID_VOICE
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 0, 0, 0, 252, 252
+        nature NATURE_MODEST
+        shinylock 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _S, _W, _E, _E, _T, _endstr, 0, 0, 0, 0, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 2
+        level 100
+        pokemon SPECIES_MAWILE
+        item ITEM_MAWILITE
+        move MOVE_PLAY_ROUGH
+        move MOVE_DOUBLE_IRON_BASH
+        move MOVE_SUCKER_PUNCH
+        move MOVE_SHIFT_GEAR
+        ability ABILITY_ROCK_HEAD
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 252, 0, 252, 0, 0
+        nature NATURE_JOLLY
+        shinylock 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _M, _U, _N, _C, _H, _I, _E, _S, _endstr, 0, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 2
+        level 100
+        monwithform SPECIES_DEOXYS, 1
+        item ITEM_FOCUS_SASH
+        move MOVE_PSYCHO_BOOST
+        move MOVE_SUPERPOWER
+        move MOVE_OVERHEAT
+        move MOVE_POWER_TRIP
+        ability ABILITY_CONTRARY
+        ball ITEM_CHERISH_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 252, 252, 252, 252, 252, 252
+        nature NATURE_HASTY
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _L, _I, _L_, _I_, _T_, _H_, _endstr, 0, 0, 0, 0
         ballseal 0
     endparty
 
@@ -7653,7 +7749,7 @@ trainerdata 244, "Lance"
         // mon 0
         ivs 250
         abilityslot 0
-        level 46
+        level 87
         pokemon SPECIES_GYARADOS
         item ITEM_NONE
         move MOVE_FLAIL
@@ -7674,10 +7770,10 @@ trainerdata 244, "Lance"
         move MOVE_HYPER_BEAM
         ballseal 0
 
-        // mon 2
+        // mon 2 // we are replacing these dragonites
         ivs 250
         abilityslot 0
-        level 49
+        level 89
         pokemon SPECIES_DRAGONITE
         item ITEM_NONE
         move MOVE_THUNDER_WAVE
@@ -7689,7 +7785,7 @@ trainerdata 244, "Lance"
         // mon 3
         ivs 250
         abilityslot 32
-        level 48
+        level 89
         pokemon SPECIES_AERODACTYL
         item ITEM_NONE
         move MOVE_AERIAL_ACE
@@ -7701,9 +7797,9 @@ trainerdata 244, "Lance"
         // mon 4
         ivs 250
         abilityslot 0
-        level 48
+        level 89
         pokemon SPECIES_CHARIZARD
-        item ITEM_NONE
+        item ITEM_CHARIZARDITE_X
         move MOVE_SHADOW_CLAW
         move MOVE_AIR_SLASH
         move MOVE_DRAGON_CLAW
@@ -7713,7 +7809,7 @@ trainerdata 244, "Lance"
         // mon 5
         ivs 250
         abilityslot 0
-        level 50
+        level 90
         pokemon SPECIES_DRAGONITE
         item ITEM_SITRUS_BERRY
         move MOVE_FIRE_BLAST
@@ -16335,7 +16431,7 @@ trainerdata 485, "Archer"
 
 trainerdata 486, "Proton"
 trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_BALL | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
-    trainerclass TRAINER_CLASS_EXECUTIVE_1
+    trainerclass CLASS_EXECUTIVE_1
     nummons 1
     item ITEM_HYPER_POTION 
     item ITEM_HYPER_POTION 
@@ -16349,7 +16445,7 @@ trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_
         ivs 200
         abilityslot 0
         level 22
-        monwithform SPECIES_MEGA_CROBAT
+        pokemon SPECIES_CROBAT
         item ITEM_NONE
         move MOVE_FRUSTRATION
         move MOVE_PAIN_SPLIT
