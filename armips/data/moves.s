@@ -11928,7 +11928,7 @@ movedata MOVE_VEEVEE_VOLLEY, "Veevee Volley"
     terminatedata
     movedescription MOVE_VEEVEE_VOLLEY, "---"
 
-movedatalongname MOVE_DOUBLE_IRON_BASH, "Double Iron Bash"
+movedatalongname MOVE_DOUBLE_IRON_BASH, "Double IronBash", "Double Iron Bash"
     battleeffect 296
     pss SPLIT_PHYSICAL
     basepower 60
