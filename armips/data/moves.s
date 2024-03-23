@@ -9368,15 +9368,15 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     terminatedata
     movedescription MOVE_MISTY_TERRAIN, "---"
 
-movedata MOVE_ELECTRIFY, "Electrify"
-    battleeffect 0
+movedata MOVE_ELECTRIFY, "Electrify" // not actually electrify this is the placeholder new world move
+    battleeffect 294
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC
     accuracy 0
     pp 20
     effectchance 0
-    target MOVE_TARGET_SELECTED
+    target MOVE_TARGET_ACTIVE_FIELD
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
     appeal 0x00
@@ -11928,7 +11928,7 @@ movedata MOVE_VEEVEE_VOLLEY, "Veevee Volley"
     terminatedata
     movedescription MOVE_VEEVEE_VOLLEY, "---"
 
-movedatalongname MOVE_DOUBLE_IRON_BASH, "Double IronBash", "Double Iron Bash"
+movedata MOVE_DOUBLE_IRON_BASH, "Double IronBash"
     battleeffect 296
     pss SPLIT_PHYSICAL
     basepower 60
