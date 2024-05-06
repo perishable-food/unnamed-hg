@@ -2367,6 +2367,9 @@ BOOL btl_scr_cmd_EC_updateterrainoverlay(void *bw UNUSED, struct BattleStruct *s
         case MOVE_PSYCHIC_TERRAIN:
             sp->terrainOverlay.type = PSYCHIC_TERRAIN;
             break;
+		case MOVE_ELECTRIFY:
+			sp->terrainOverlay.type = NEW_WORLD;
+			break;
         default:
             // I think this could work for moves that remove terrain
             sp->terrainOverlay.type = TERRAIN_NONE;

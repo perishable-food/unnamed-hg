@@ -1434,8 +1434,11 @@ The opposing {STRVAR_1 1, 0, 0}\ntook the kind offer!
 {STRVAR_1 1, 0, 0}’s move\nwas postponed!
 The wild {STRVAR_1 1, 0, 0}’s move\nwas postponed!
 The opposing {STRVAR_1 1, 0, 0}’s move\nwas postponed!
+<<<<<<< Updated upstream
 {STRVAR_1 1, 0, 0} is absorbing\npower!
 The wild {STRVAR_1 1, 0, 0} is absorbing\npower!
 The opposing {STRVAR_1 1, 0, 0} is absorbing\npower!
 It started to snow!
 The snow stopped.
+From darkness, from stardust...
+

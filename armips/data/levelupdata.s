@@ -10010,15 +10010,14 @@ levelup SPECIES_HAPPINY
 levelup SPECIES_CHATOT
     learnset MOVE_HYPER_VOICE, 1
     learnset MOVE_CHATTER, 1
-    learnset MOVE_CONFIDE, 1
     learnset MOVE_TAUNT, 1
     learnset MOVE_PECK, 1
-    learnset MOVE_GROWL, 5
+    learnset MOVE_OBLIVION_WING, 5
     learnset MOVE_MIRROR_MOVE, 9
     learnset MOVE_SING, 13
     learnset MOVE_FURY_ATTACK, 17
     learnset MOVE_CHATTER, 21
-    learnset MOVE_TAUNT, 25
+    learnset MOVE_OBLIVION_WING, 25
     learnset MOVE_ROUND, 29
     learnset MOVE_MIMIC, 33
     learnset MOVE_ECHOED_VOICE, 37
@@ -20952,7 +20951,22 @@ levelup SPECIES_TINKATUFF
     terminatelearnset
 
 levelup SPECIES_TINKATON
-    learnset MOVE_TACKLE, 1
+    learnset MOVE_ASTONISH, 1
+	learnset MOVE_GIGATON_HAMMER, 1
+	learnset MOVE_BABY_DOLL_EYES, 5
+	learnset MOVE_METAL_CLAW, 8
+	learnset MOVE_COVET, 11
+	learnset MOVE_ROCK_POLISH, 14
+	learnset MOVE_DRAINING_KISS, 17
+	learnset MOVE_SWEET_KISS, 21
+	learnset MOVE_BRUTAL_SWING, 24
+	learnset MOVE_SLAM, 27
+	learnset MOVE_FLASH_CANNON, 31
+	learnset MOVE_PLAY_ROUGH, 35
+	learnset MOVE_FAKE_OUT, 39
+	learnset MOVE_FLATTER, 43
+	learnset MOVE_SKITTER_SMACK, 47
+	learnset MOVE_KNOCK_OFF, 52
     terminatelearnset
 
 levelup SPECIES_WIGLETT

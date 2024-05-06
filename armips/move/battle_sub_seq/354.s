@@ -14,6 +14,7 @@ GRASSY_TERRAIN_APPLY_MSG equ (1388)
 MISTY_TERRAIN_APPLY_MSG equ (1390)
 ELECTRIC_TERRAIN_APPLY_MSG equ (1392)
 PSYCHIC_TERRAIN_APPLY_MSG equ (1394)
+NEW_WORLD_APPLY_MSG equ (1436)
 
 .create "build/move/battle_sub_seq/1_354", 0
 
@@ -26,6 +27,7 @@ Start:
     ifterrainoverlayistype MISTY_TERRAIN, MistyTerrainMessage
     ifterrainoverlayistype ELECTRIC_TERRAIN, ElectricTerrainMessage
     ifterrainoverlayistype PSYCHIC_TERRAIN, PsychicTerrainMessage
+	ifterrainoverlayistype NEW_WORLD, NewWorldMessage
     goto DefaultOrEnd
 GrassyTerrainMessage:
     printmessage GRASSY_TERRAIN_APPLY_MSG, TAG_NONE, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // Grass grew to cover the battlefield!
@@ -38,6 +40,9 @@ ElectricTerrainMessage:
     goto PostMessage
 PsychicTerrainMessage:
     printmessage PSYCHIC_TERRAIN_APPLY_MSG, TAG_NONE, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // The battlefield got weird!
+	goto PostMessage
+NewWorldMessage:
+	printmessage NEW_WORLD_APPLY_MSG, TAG_NONE, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"
 PostMessage:
     waitmessage
     wait 0x1E

@@ -822,11 +822,11 @@
 //Lets Go Pikachu
 #define ITEM_AUTOGRAPH          (ITEM_PIXIE_PLATE + 180)
 #define ITEM_GOLD_TEETH         (ITEM_PIXIE_PLATE + 181)
-#define ITEM_KEY_STONE          (ITEM_PIXIE_PLATE + 182)
+#define ITEM_EEVERSTONE         (ITEM_PIXIE_PLATE + 182)
 #define ITEM_LIFT_KEY           (ITEM_PIXIE_PLATE + 183)
 #define ITEM_PEWTER_CRUNCHIES   (ITEM_PIXIE_PLATE + 184)
 #define ITEM_SYLPH_SCOPE        (ITEM_PIXIE_PLATE + 185)
-#define ITEM_TEA                (ITEM_PIXIE_PLATE + 186)
+#define ITEM_RAREST_CANDY       (ITEM_PIXIE_PLATE + 186)
 
 //Mints
 #define IS_ITEM_NATURE_MINT(item) (item >= ITEM_LONELY_MINT && item <= ITEM_SERIOUS_MINT)
@@ -860,7 +860,7 @@
 #define NUM_UNKNOWN_SLOTS 22 // used to adjust in data/itemdata.c
 #define NUM_UNKNOWN_SLOTS_EXPLORER_KIT (NUM_UNKNOWN_SLOTS+1) // used to adjust in data/itemdata.c
 
-#define NEW_ITEM_MAX ITEM_TEA
+#define NEW_ITEM_MAX ITEM_RAREST_CANDY
 
 #define BAG_SLOT_QUANTITY_MAX                    999
 #define BAG_TMHM_QUANTITY_MAX                     99

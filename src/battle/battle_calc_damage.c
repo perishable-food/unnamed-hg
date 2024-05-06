@@ -147,6 +147,33 @@ void CalcDamageOverall(void *bw, struct BattleStruct *sp)
             sp->battlemon[sp->attack_client].moveeffect.meFirstFlag = 0;
         }
     }
+	/*case NEW_WORLD:
+            if (sp->terrainOverlay.type == NEW_WORLD && IsClientGrounded == FALSE) 
+			{
+				speed1 = speed1 * 90 / 100;
+			}
+			if (movetype == TYPE_DARK) {
+				damage = damage * 150 / 100;
+				break;
+			}
+            if (moveno == MOVE_EARTHQUAKE || moveno == MOVE_MAGNITUDE || moveno == MOVE_BULLDOZE) {
+                damage = damage * 25 / 100;
+                break;
+            }
+			if (moveno == MOVE_DOOM_DESIRE) { //placeholder until i can tell it to gain fire type
+                damage = damage * 400 / 100;
+                break;
+            }
+			if (moveno == MOVE_ANCIENT_POWER || moveno == MOVE_COMET_PUNCH || moveno == MOVE_DRACO_METEOR || moveno == MOVE_FUTURE_SIGHT || moveno == MOVE_HYPERSPACE_FURY || moveno == MOVE_HYPERSPACE_HOLE || moveno == MOVE_METEOR_MASH || moveno == MOVE_MOONBLAST || moveno == MOVE_SPACIAL_REND || moveno == MOVE_SWIFT || moveno == MOVE_VACUUM_WAVE || moveno == MOVE_BLACK_HOLE_ECLIPSE_PHYSICAL || moveno == MOVE_BLACK_HOLE_ECLIPSE_SPECIAL) {
+                damage = damage * 200 / 100;
+                break;
+            }
+			if (moveno == MOVE_AEROBLAST || moveno == MOVE_AURORA_BEAM || moveno == MOVE_BOLT_STRIKE || moveno == MOVE_BLUE_FLARE || moveno == MOVE_CORE_ENFORCER || moveno == MOVE_CRUSH_GRIP || moveno == MOVE_DAZZLING_GLEAM || moveno == MOVE_DIAMOND_STORM || moveno == MOVE_DRAGON_ASCENT || moveno == MOVE_EARTH_POWER || moveno == MOVE_ERUPTION || moveno == MOVE_FLASH_CANNON || moveno == MOVE_FLEUR_CANNON || moveno == MOVE_FREEZE_SHOCK || moveno == MOVE_FUSION_BOLT || moveno == MOVE_FUSION_FLARE || moveno == MOVE_ICE_BURN || moveno == MOVE_JUDGMENT || moveno == MOVE_LANDS_WRATH || moveno == MOVE_LUSTER_PURGE || moveno == MOVE_MAGMA_STORM || moveno == MOVE_MIND_BLOWN || moveno == MOVE_MIRROR_SHOT || moveno == MOVE_MIST_BALL || moveno == MOVE_MOONGEIST_BEAM || moveno == MOVE_MULTI_ATTACK || moveno == MOVE_OBLIVION_WING || moveno == MOVE_ORIGIN_PULSE || moveno == MOVE_PHOTON_GEYSER || moveno == MOVE_PLASMA_FISTS || moveno == MOVE_POWER_GEM || moveno == MOVE_PRECIPICE_BLADES || moveno == MOVE_PRISMATIC_LASER || moveno == MOVE_PSYCHO_BOOST || moveno == MOVE_PSYSTRIKE || moveno == MOVE_RELIC_SONG || moveno == MOVE_ROAR_OF_TIME || moveno == MOVE_SACRED_FIRE || moveno == MOVE_SACRED_SWORD || moveno == MOVE_SEARING_SHOT || moveno == MOVE_SECRET_SWORD || moveno == MOVE_SEED_FLARE || moveno == MOVE_SHADOW_FORCE || moveno == MOVE_SIGNAL_BEAM || moveno == MOVE_SPECTRAL_THIEF || moveno == MOVE_STEAM_ERUPTION || moveno == MOVE_SUNSTEEL_STRIKE || moveno == MOVE_TECHNO_BLAST || moveno == MOVE_THOUSAND_ARROWS || moveno == MOVE_THOUSAND_WAVES || moveno == MOVE_V_CREATE || moveno == MOVE_CONTINENTAL_CRUSH_PHYSICAL || moveno == MOVE_CONTINENTAL_CRUSH_SPECIAL || moveno == MOVE_GENESIS_SUPERNOVA || moveno == MOVE_MENACING_MOONRAZE_MAELSTROM || moveno == MOVE_SEARING_SUNRAZE_SMASH || moveno == MOVE_SOUL_STEALING_7_STAR_STRIKE) {
+                damage = damage * 150 / 100;
+                break;
+            break;
+        default:
+            break;*/
 }
 
 

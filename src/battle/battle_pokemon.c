@@ -342,14 +342,27 @@ BOOL LONG_CALL BattleFormChangeCheck(void *bw, struct BattleStruct *sp, int *seq
          && (GetBattlerAbility(sp, sp->client_work) == ABILITY_MULTITYPE))
         {
             form_no = GetArceusType(BattleItemDataGet(sp, sp->battlemon[sp->client_work].item, 1));
-            if(sp->battlemon[sp->client_work].form_no != form_no)
+			int temp = BattleRand(bw) % 17;
+            if(sp->battlemon[sp->client_work].form_no != form_no && sp->terrainOverlay.type != NEW_WORLD)
             {
                 sp->battlemon[sp->client_work].form_no = form_no;
                 *seq_no = SUB_SEQ_FORM_CHANGE;
                 ret = TRUE;
                 break;
             }
-        }
+			if(sp->battlemon[sp->client_work].form_no != temp && sp->terrainOverlay.type == NEW_WORLD)
+			{
+				sp->battlemon[sp->client_work].form_no = temp;
+                *seq_no = SUB_SEQ_FORM_CHANGE;
+                ret = TRUE;
+                break;
+			}	
+        	else
+			{	
+				break;
+			}
+		}
+				
 
         // handle Silvally TODO check if this actually works, eventually change to use the memories instead of plates
         if ((sp->battlemon[sp->client_work].species == SPECIES_SILVALLY)
@@ -357,7 +370,7 @@ BOOL LONG_CALL BattleFormChangeCheck(void *bw, struct BattleStruct *sp, int *seq
             && (GetBattlerAbility(sp, sp->client_work) == ABILITY_RKS_SYSTEM))
         {
             form_no = GetArceusType(BattleItemDataGet(sp, sp->battlemon[sp->client_work].item, 1));
-            if(sp->battlemon[sp->client_work].form_no != form_no)
+            if(sp->battlemon[sp->client_work].form_no != form_no && sp->terrainOverlay.type != NEW_WORLD && sp->terrainOverlay.numberOfTurnsLeft > 0)
             {
                 sp->battlemon[sp->client_work].form_no = form_no;
                 *seq_no = SUB_SEQ_FORM_CHANGE;
@@ -366,6 +379,27 @@ BOOL LONG_CALL BattleFormChangeCheck(void *bw, struct BattleStruct *sp, int *seq
             }
         }
 
+		if (sp->terrainOverlay.type == NEW_WORLD && sp->terrainOverlay.numberOfTurnsLeft > 0)
+		{
+			if ((sp->battlemon[sp->client_work].species == SPECIES_SILVALLY)
+				&& (sp->battlemon[sp->client_work].hp)
+				&& (GetBattlerAbility(sp, sp->client_work) == ABILITY_RKS_SYSTEM))
+				/*|| ((sp->battlemon[sp->client_work].species == SPECIES_ARCEUS)
+				&& (sp->battlemon[sp->client_work].hp)
+				&& (GetBattlerAbility(sp, sp->client_work) == ABILITY_MULTITYPE)))*/
+			{
+				form_no = GetArceusType(BattleItemDataGet(sp, sp->battlemon[sp->client_work].item, 1));
+				int temp = BattleRand(bw) % 17;
+				if(sp->battlemon[sp->client_work].form_no != temp)
+				{
+					sp->battlemon[sp->client_work].form_no = temp;
+					*seq_no = SUB_SEQ_FORM_CHANGE;
+					ret = TRUE;
+					break;
+				}
+			}
+		}
+		
         // handle giratina
         if ((sp->battlemon[sp->client_work].species == SPECIES_GIRATINA)
          && (sp->battlemon[sp->client_work].hp)

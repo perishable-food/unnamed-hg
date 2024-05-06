@@ -734,6 +734,7 @@ GRASSY_TERRAIN      equ (1)
 MISTY_TERRAIN       equ (2)
 ELECTRIC_TERRAIN    equ (3)
 PSYCHIC_TERRAIN     equ (4)
+NEW_WORLD			equ (5)
 
 // battle backgrounds
 

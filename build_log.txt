@@ -1,0 +1,13 @@
+-e Compiling
+arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/battle/battle_calc_damage.c -o build/battle/battle_calc_damage.o
+-e Compiling
+-e Compiling
+arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/field/overworld_table.c -o build/field/overworld_table.o
+arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/field/pokewalker.c -o build/field/pokewalker.o
+-e Compiling
+arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/field/script_commands.c -o build/field/script_commands.o
+arm-none-eabi-as -mthumb -I ./data -c asm/field/bdhcam_routine.s -o build/field/bdhcam_routine.d
+arm-none-eabi-as -mthumb -I ./data -c asm/field/field_hooks.s -o build/field/field_hooks.d
+arm-none-eabi-as -mthumb -I ./data -c asm/field/pc_anywhere.s -o build/field/pc_anywhere.d
+-e Compiling
+arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/pokedex/pokedex.c -o build/pokedex/pokedex.o

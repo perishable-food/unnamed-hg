@@ -684,6 +684,11 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
         }
     }
 
+	if (sp->terrainOverlay.type == NEW_WORLD && IsClientGrounded) 
+	{
+		speed1 = speed1 * 90 / 100;
+	}
+	
     if ((ability1 == ABILITY_SURGE_SURFER) && (sp->terrainOverlay.type == ELECTRIC_TERRAIN && sp->terrainOverlay.numberOfTurnsLeft > 0))
     {
         speed1 *= 2;

@@ -122,7 +122,7 @@ _000C: // Trainer 496
     trainertextentry 496, TEXT_PLAYER_LOSES, "...Humph!\nThat was a waste of time.\n"
 	
 _0013: // Trainer 19
-	trainertextentry 19, TEXT_NOTICE_IN_OVERWORLD, "hey, i'm the lead dev.\nthe name's rei.\rrun it fella\n"
+	trainertextentry 19, TEXT_NOTICE_IN_OVERWORLD, "Hello Vro\n"
 	trainertextentry 19, TEXT_DEFEATED_IN_BATTLE, "unfortunate doesnt even\nbegin to describe....\n"
 	trainertextentry 19, TEXT_DEFEATED_IN_OVERWORLD, "(She's just rambling\non about RNG...)\n"
 	trainertextentry 19, TEXT_PLAYER_LOSES, "cheating? i would never\n(im lying)\n"
@@ -269,7 +269,7 @@ _0158: // Trainer 21
 
 _0164: // Trainer 30
     trainertextentry  30, TEXT_LAST_MON_CRITICAL, "H-hey! Just one left?\nBut... I ain’t losin’, you hear?\n"
-    trainertextentry  30, TEXT_LAST_MON_SENT_OUT, "Poor me!\n"
+    trainertextentry  30, TEXT_LAST_MON_SENT_OUT, "Hey, I wonder what this rock\ndoes?\n"
     trainertextentry  30, TEXT_DEFEATED_IN_BATTLE, "Ugh...\n"
 
 _0170: // Trainer 31
@@ -295,7 +295,7 @@ _0194: // Trainer 32
 _01A0: // Trainer 35
     trainertextentry  35, TEXT_LAST_MON_CRITICAL, "One Pokémon left?\nThis is where the real battle begins!\n"
     trainertextentry  35, TEXT_LAST_MON_SENT_OUT, "You’re kidding, right?\nI’m supposed to win! I already decided!\n"
-    trainertextentry  35, TEXT_DEFEATED_IN_BATTLE, "I lost? ...\rI don’t believe it.\nThere must be some mistake...\n"
+    trainertextentry  35, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I lost? ...\rI don’t believe it.\nThere must be some mistake...\n"
 
 _01AC: // Trainer 712
     trainertextentry 712, TEXT_LAST_MON_CRITICAL, "The wind is finally with us!\n"
@@ -485,7 +485,7 @@ _0364: // Trainer 117
 _0370: // Trainer 245
     trainertextentry 245, TEXT_LAST_MON_CRITICAL, "We Psychics don’t give up even when\nwe’re down to the last Pokémon.\rThat’s what makes us so formidable!\n"
     trainertextentry 245, TEXT_LAST_MON_SENT_OUT, "Until we hit zero, our power is limitless.\nI’m not giving up yet!\n"
-    trainertextentry 245, TEXT_DEFEATED_IN_BATTLE, "I... I can’t...believe it...\n"
+    trainertextentry 245, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I... I can’t...believe it...\n"
 
 _037C: // Trainer 247
     trainertextentry 247, TEXT_LAST_MON_CRITICAL, "One Pokémon left?\rHa ha ha! I’ve been counting on this\none from the very beginning!\n"

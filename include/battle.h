@@ -924,7 +924,7 @@ struct __attribute__((packed)) BattleAIWorkTable
  *  @brief structure that tracks the terrain type currently present
  */
 typedef struct {
-    enum TerrainOverlayType{TERRAIN_NONE, GRASSY_TERRAIN, MISTY_TERRAIN, ELECTRIC_TERRAIN, PSYCHIC_TERRAIN} type;
+    enum TerrainOverlayType{TERRAIN_NONE, GRASSY_TERRAIN, MISTY_TERRAIN, ELECTRIC_TERRAIN, PSYCHIC_TERRAIN, NEW_WORLD} type;
     u8 numberOfTurnsLeft;
 } __attribute__((packed)) TerrainOverlay;
 

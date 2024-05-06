@@ -7437,7 +7437,7 @@ movedata MOVE_DARK_VOID, "Dark Void"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_DARK
-    accuracy 50
+    accuracy 85
     pp 10
     effectchance 0
     target MOVE_TARGET_BOTH
@@ -9370,7 +9370,7 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     movedescription MOVE_MISTY_TERRAIN, "---"
 
 movedata MOVE_ELECTRIFY, "Electrify"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_APPLY_TERRAINS
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC

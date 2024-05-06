@@ -15,9 +15,21 @@
 
 
 static BOOL IntimidateCheckHelper(struct BattleStruct *sp, u32 client);
+/*<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream*/
 static BOOL IsValidImposterTarget(void *bw, struct BattleStruct *sp, u32 client);
 
 extern struct ILLUSION_STRUCT gIllusionStruct;
+/*=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes*/
 
 
 /**
@@ -738,10 +750,35 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     if ((sp->battlemon[client_no].imposter_flag == 0)
                         && (sp->battlemon[client_no].hp)
                         && (sp->battlemon[BATTLER_OPPONENT(client_no)].hp != 0 || sp->battlemon[BATTLER_ACROSS(client_no)].hp != 0)
+/*<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream*/
                         && (GetBattlerAbility(sp, client_no) == ABILITY_IMPOSTER)
                         && IsValidImposterTarget(bw, sp, client_no))
                     {
                         sp->battlemon[client_no].imposter_flag = 1;
+/*=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+                        && (GetBattlerAbility(sp, client_no) == ABILITY_IMPOSTER))
+                    {
+                        sp->battlemon[client_no].imposter_flag = 1;
+                        sp->client_work = client_no;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes*/
                         scriptnum = SUB_SEQ_HANDLE_IMPOSTER;
                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                         break;
@@ -756,6 +793,39 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
 
                 sp->attack_client = client_no; // attack transforms into defence
                 sp->current_move_index = MOVE_TRANSFORM; // force move anim to play
+/*<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes*/
+                if (sp->battlemon[BATTLER_OPPONENT(client_no)].hp != 0 && sp->battlemon[BATTLER_ACROSS(client_no)].hp != 0)
+                {
+                    sp->defence_client = (client_no & 1) + ((BattleRand(bw) & 1) * 2); // get random defender
+                }
+                else if (sp->battlemon[BATTLER_ACROSS(client_no)].hp != 0)
+                {
+                    sp->defence_client = BATTLER_ACROSS(client_no);
+                }
+                else //if (sp->battlemon[BATTLER_OPPONENT(client_no)].hp != 0)
+                {
+                    sp->defence_client = BATTLER_OPPONENT(client_no);
+                }
+/*<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes*/
 
                 // fuck it get rid of transform script command:
                 sp->battlemon[sp->attack_client].condition2 |= STATUS2_TRANSFORMED;
@@ -894,7 +964,14 @@ int SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                                 sp->current_move_index = MOVE_PSYCHIC_TERRAIN;  // force move anim to play
                                 ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                 break;
-
+							case ABILITY_MULTITYPE:
+                                sp->current_move_index = MOVE_ELECTRIFY;  // force move anim to play
+                                ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                                break;
+							case ABILITY_RKS_SYSTEM:
+                                sp->current_move_index = MOVE_ELECTRIFY;  // force move anim to play
+                                ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                                break;
                             default:
                                 break;
                         }
@@ -970,6 +1047,10 @@ static BOOL IntimidateCheckHelper(struct BattleStruct *sp, u32 client)
     }
     return FALSE; // neither opposing battler has an ability that intimidate can activate on
 }
+//<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 
 /**
  *  @brief see if the ability imposter should activate depending on what it is up against
@@ -1026,3 +1107,11 @@ static BOOL IsValidImposterTarget(void *bw, struct BattleStruct *sp, u32 client)
 
     return FALSE;
 }
+/*=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes*/
