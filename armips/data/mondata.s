@@ -23340,7 +23340,7 @@ mondata SPECIES_MEGA_GALLADE, "-----"
     basefriendship 35
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_WATER_1, EGG_GROUP_WATER_1
-    abilities ABILITY_INNER_FOCUS, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip 0, 0
 
