@@ -27418,3 +27418,35 @@ mondata SPECIES_URSALUNA_BLOODMOON, "-----"
     abilities ABILITY_MINDS_EYE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
+
+mondata SPECIES_BUNEARY_SAISANN, "-----"
+    basestats 55, 70, 40, 70, 50, 65
+    types TYPE_ICE, TYPE_ICE
+    catchrate 20
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 1, 0, 0
+    items ITEM_ICE_STONE, ITEM_ICE_STONE
+    genderratio 127
+    eggcycles 20
+    basefriendship 0
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_KLUTZ, ABILITY_REFRIGERATE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+	
+mondata SPECIES_LOPUNNY_SAISANN, "-----"
+    basestats 70, 150, 70, 100, 80, 70
+    types TYPE_ICE, TYPE_FAIRY
+    catchrate 20
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 2, 0, 0
+    items ITEM_ICE_STONE, ITEM_ICE_STONE
+    genderratio 127
+    eggcycles 20
+    basefriendship 0
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_TOUGH_CLAWS, ABILITY_REFRIGERATE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0

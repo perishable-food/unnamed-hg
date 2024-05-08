@@ -589,18 +589,18 @@ trainerdata 19, "Rei"
         ivs 200
         abilityslot 0
         level 1
-        pokemon SPECIES_ARCEUS
+        monwithform SPECIES_LOPUNNY, 2
         item ITEM_SKY_PLATE
         move MOVE_NONE
         move MOVE_NONE
         move MOVE_NONE
         move MOVE_EXPLOSION
-        ability ABILITY_MULTITYPE
+        ability ABILITY_REFRIGERATE
         ball ITEM_POKE_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 0, 0, 0, 0, 0, 0
         nature NATURE_CALM
-        shinylock 0
+        shinylock 1
         additionalflags 0
         ballseal 0
     

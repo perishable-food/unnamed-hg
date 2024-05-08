@@ -1,4 +1,0 @@
-arm-none-eabi-ld rom.ld -T linker.ld -o build/linked.o build/bag.o build/item.o build/moves.o build/overlay.o build/pokemon.o build/pokemon_storage_system.o build/save.o build/sound.o build/summary.o build/textbox.o build/arm_hooks.d build/general_hooks.d build/other_hook.d build/thumb_help.d
-arm-none-eabi-objcopy -O binary build/linked.o build/output.bin
--e Compiling
-arm-none-eabi-gcc -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mtune=arm7tdmi -mno-long-calls -march=armv4t -Wall -Wextra -Wno-builtin-declaration-mismatch -Wno-sequence-point -Wno-address-of-packed-member -Os -fira-loop-pressure -fipa-pta -c src/battle/battle_calc_damage.c -o build/battle/battle_calc_damage.o

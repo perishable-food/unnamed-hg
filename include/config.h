@@ -73,7 +73,6 @@
 #define IMPLEMENT_LEVEL_CAP
 #define LEVEL_CAP_VARIABLE 0x416F
 
-
 // UPDATE_OVERWORLD_POISON will remove overworld poison if enabled
 // comment the line out below to retain overworld poison
 #define UPDATE_OVERWORLD_POISON
@@ -105,5 +104,9 @@
 // uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
 #define IMPLEMENT_SCALING 1
 #define SCALING_TYPE_VARIABLE 0x406A
+
+// RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
+// comment out the line below to keep vanilla behavior
+#define RESTORE_ITEMS_AT_BATTLE_END
 
 #endif
