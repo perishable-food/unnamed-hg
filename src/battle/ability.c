@@ -230,6 +230,14 @@ int MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int 
         }
     }
 
+     if (MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_RUN_AWAY) == TRUE)
+    {
+        if ((movetype == TYPE_POISON) && (attacker != defender))
+        {
+            scriptnum = SUB_SEQ_HANDLE_LIGHTING_ROD_RAISE_SPATK; // placeholder effect
+        }
+    }
+    
     // handle lightning rod
     if (MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_LIGHTNING_ROD) == TRUE)
     {
