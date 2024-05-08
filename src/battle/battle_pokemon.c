@@ -1374,7 +1374,13 @@ u16 SoundProofMovesList[] = {
 u32 LONG_CALL GetAdjustedMoveTypeBasics(struct BattleStruct *sp, u32 move, u32 ability, u32 type)
 {
     u32 typeLocal;
-
+    
+if (sp->moveTbl[move].type == TYPE_POISON)
+    {
+        if (ability == ABILITY_RUN_AWAY)
+        {
+            typeLocal = TYPE_GRASS;
+        }
     if (ability == ABILITY_NORMALIZE)
     {
         typeLocal = TYPE_NORMAL;
