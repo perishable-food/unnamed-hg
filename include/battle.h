@@ -334,15 +334,15 @@
 #define WEATHER_SNOW                        (0x00100000)                                                          //      0001 0000 0000 0000 0000 0000
 #define WEATHER_SNOW_PERMANENT              (0x00200000)                                                          //      0010 0000 0000 0000 0000 0000
 #define WEATHER_SNOW_ANY                    (WEATHER_SNOW | WEATHER_SNOW_PERMANENT)                               //      0011 0000 0000 0000 0000 0000
-// We have 2 extra bits let's have fun:           
+// We have 2 extra bits let's have fun:
 #define WEATHER_SHADOWY_AURA                (0x00400000)                                                          //      0100 0000 0000 0000 0000 0000
 #define WEATHER_SHADOWY_AURA_PERMANENT      (0x00800000)                                                          //      1000 0000 0000 0000 0000 0000
 #define WEATHER_SHADOWY_AURA_ANY            (WEATHER_SHADOWY_AURA | WEATHER_SHADOWY_AURA_PERMANENT)               //      1100 0000 0000 0000 0000 0000
-    
+
 #define WEATHER_EXTREMELY_HARSH_SUNLIGHT    (0x01000000)                                                          // 0001 0000 0000 0000 0000 0000 0000
 #define WEATHER_HEAVY_RAIN                  (0x02000000)                                                          // 0010 0000 0000 0000 0000 0000 0000
 #define WEATHER_STRONG_WINDS                (0x04000000)                                                          // 0100 0000 0000 0000 0000 0000 0000
-    
+
 #define FIELD_CONDITION_WEATHER_NO_SUN      (WEATHER_RAIN_ANY | WEATHER_SANDSTORM_ANY | WEATHER_HAIL_ANY | FIELD_STATUS_FOG | WEATHER_SNOW_ANY \
                                             | WEATHER_SHADOWY_AURA_ANY | WEATHER_EXTREMELY_HARSH_SUNLIGHT | WEATHER_HEAVY_RAIN | WEATHER_STRONG_WINDS)
 #define FIELD_CONDITION_WEATHER_CASTFORM    (WEATHER_RAIN_ANY| WEATHER_HEAVY_RAIN | WEATHER_SUNNY_ANY | WEATHER_EXTREMELY_HARSH_SUNLIGHT \
@@ -515,7 +515,7 @@
 #define BATTLE_STATUS_NO_ATTACK_MESSAGE             (1 << 0)
 #define BATTLE_STATUS_CHECK_LOOP_ONLY_ONCE          (1 << 1)
 #define BATTLE_STATUS_HIT_FLY                       (1 << 2)
-#define BATTLE_STATUS_HIT_DIG                       (1 << 3)     
+#define BATTLE_STATUS_HIT_DIG                       (1 << 3)
 #define BATTLE_STATUS_HIT_DIVE                      (1 << 4)
 #define BATTLE_STATUS_CHARGE_TURN                   (1 << 5)
 #define BATTLE_STATUS_NO_BLINK                      (1 << 6)
@@ -523,7 +523,7 @@
 #define BATTLE_STATUS_BATON_PASS                    (1 << 8)
 #define BATTLE_STATUS_CHARGE_MOVE_HIT               (1 << 9)
 #define BATTLE_STATUS_FLAT_HIT_RATE                 (1 << 10)
-#define BATTLE_STATUS_IGNORE_TYPE_EFFECTIVENESS     (1 << 11)  
+#define BATTLE_STATUS_IGNORE_TYPE_EFFECTIVENESS     (1 << 11)
 #define BATTLE_STATUS_CRASH_DAMAGE                  (1 << 12)
 #define BATTLE_STATUS_MOVE_SUCCESSFUL               (1 << 13)
 #define BATTLE_STATUS_MOVE_ANIMATIONS_OFF           (1 << 14)
@@ -1077,17 +1077,13 @@ struct __attribute__((packed)) BattleStruct
 
     /*0x30BC*/ u16 waza_no_pos[CLIENT_MAX];
     /*0x30C4*/ //u8 unk_bytes_4[0x44];
-    /*0x    */ u16 waza_no_texture2[CLIENT_MAX];
-    /*0x    */ u16 waza_no_texture2_client[CLIENT_MAX];
-    /*0x    */ u16 waza_no_texture2_type[CLIENT_MAX];
-    /*0x    */ u16 waza_no_metronome[CLIENT_MAX];
-
-    /*0x    */ int store_damage[CLIENT_MAX];
-
-    /*0x    */ int client_no_hit[CLIENT_MAX];
-
-    /*0x    */ int client_no_agi;
-
+    /*0x30C4*/ u16 waza_no_texture2[CLIENT_MAX];
+    /*0x30CC*/ u16 waza_no_texture2_client[CLIENT_MAX];
+    /*0x30D4*/ u16 waza_no_texture2_type[CLIENT_MAX];
+    /*0x30DC*/ u16 waza_no_metronome[CLIENT_MAX];
+    /*0x30E4*/ int store_damage[CLIENT_MAX];
+    /*0x30F4*/ int client_no_hit[CLIENT_MAX];
+    /*0x3104*/ int client_no_agi;
     /*0x3108*/ u8 no_reshuffle_client;
     /*0x3109*/ u8 level_up_pokemon;
     /*0x310A*/ u16 que_check_wait;
@@ -1117,7 +1113,7 @@ struct __attribute__((packed)) BattleStruct
     /*0x315C*/ u8 mons_getting_exp_from_item;
     /*0x315D*/ u8 relic_song_tracker; // bitfield with 1 << client for if it used relic song
     /*0x315E*/ u8 frisk_tracker; // see which clients have been frisked by the frisk client (1 << client)
-    /*0x315E*/ u8 padding_315F[0x1F]; // padding to get moveTbl to 317E (for convenience of 3180 in asm)
+    /*0x315F*/ u8 padding_315F[0x1F]; // padding to get moveTbl to 317E (for convenience of 3180 in asm)
     /*0x317E*/ struct BattleMove moveTbl[NUM_OF_MOVES + 1];
     /*0x    */ u32 gainedExperience[6]; // possible experience gained per party member in order to get level scaling done right
     /*0x    */ u32 gainedExperienceShare[6]; // possible experience gained per party member in order to get level scaling done right
@@ -1210,9 +1206,9 @@ struct BattleSystem {
     // UnkBattleSystemSub1D0 unk1D0[4];
     // UnkBattleSystemSub220 unk220;
     // GAME_STATS *gameStats;
-    u8 padding_19C[0x230 - 0x19C];
+    u8 padding_19C[0x220 - 0x19C]; // 220 based on assembly at 0223B884
     u8 *bg_area;
-    // u16 *unk234;
+    u16 *pal_area;
     // u8 sendBuffer[0x1000];
     // u8 recvBuffer[0x1000];
     // u16 unk2238[0x70];
@@ -1233,7 +1229,7 @@ struct BattleSystem {
     // u8 unk240E_F:1;
     // u8 criticalHpMusic:2;
     // u8 criticalHpMusicDelay:3;
-    u8 padding[0x2400 - 0x234];
+    u8 padding[0x2400 - 0x228];
     u32 terrain;
     u32 bgId;
     // int location;
@@ -1337,7 +1333,7 @@ enum
 #define MEGA_CHECK_APPER 2
 #define MEGA_NO_NEED 0
 
-struct __attribute__((packed)) newBattleStruct
+struct PACKED newBattleStruct
 {
     u8 SideMega[4];//检查双方是否mega过,0我方,1敌方
     u8 needMega[4];//需要mega
@@ -1352,6 +1348,10 @@ struct __attribute__((packed)) newBattleStruct
     CATS_ACT_PTR WeatherOAM;
     SysTask *weatherUpdateTask;
     u32 weather;
+
+#ifdef RESTORE_ITEMS_AT_BATTLE_END
+    u16 itemsToRestore[6]; // items that each mon was holding at the beginning of the battle
+#endif // RESTORE_ITEMS_AT_BATTLE_END
 };
 
 struct PACKED BATTLE_PARAM
