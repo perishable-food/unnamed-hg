@@ -48,7 +48,7 @@ Pressure
 Thick Fat
 Early Bird
 Flame Body
-Run Away
+Purifier
 Keen Eye
 Hyper Cutter
 Pickup
@@ -150,7 +150,7 @@ Analytic
 Illusion
 Imposter
 Infiltrator
-Mummy
+Sharpness
 Moxie
 Justified
 Rattled
@@ -290,7 +290,7 @@ Orichalcum Pulse
 Hadron Engine
 Opportunist
 Cud Chew
-Sharpness
+Mummy
 Supreme Overlord
 Costar
 Toxic Debris

@@ -48,7 +48,7 @@ The Pokémon raises the\nfoe’s PP usage.
 Ups resistance to Fire-\nand Ice-type moves.
 The Pokémon awakens\nquickly from sleep.
 Contact with the Pokémon\nmay burn the foe.
-Enables sure getaway\nfrom wild Pokémon.
+Purifies Poison type\nmoves.
 Prevents the Pokémon\nfrom losing accuracy.
 Prevents the Attack\nstat from being lowered.
 The Pokémon may\npick up items.
@@ -150,7 +150,7 @@ Boosts move power when\nthe Pokémon moves last.
 Comes out disguised as the\nPokémon in back.
 It transforms itself into\nthe Pokémon it is facing.
 Passes through the foe’s\nbarrier and strikes.
-Contact with this Pokémon\nspreads this Ability.
+Powers up\nslicing moves.
 Boosts Attack after\nknocking out any Pokémon.
 Raises Attack when\nhit by a Dark-type move.
 Some move types\nscare it and boost its Speed.
@@ -290,7 +290,7 @@ Makes the weather sunny.\nUps Attack in sun.
 Makes Electric Terrain.\nUps Sp. Atk on Electric Terrain.
 If foe raises a stat,\nboosts the stat itself.
 After eating a Berry,\nit’s eaten again next turn.
-Powers up\nslicing moves.
+Contact with this Pokémon\nspreads this Ability.
 Ups Attack and Sp. Atk\nif allies were defeated.
 Copies an ally’s stat\nchanges when sent out.
 Scatters poison spikes\nif hit by physical moves.

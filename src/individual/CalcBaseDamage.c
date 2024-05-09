@@ -120,6 +120,7 @@ static const u16 MegaLauncherMovesTable[] = {
         MOVE_ORIGIN_PULSE,
         MOVE_TERRAIN_PULSE,
         MOVE_WATER_PULSE,
+		MOVE_ARMOR_CANNON,
 };
 
 static const u16 SharpnessMovesTable[] = {

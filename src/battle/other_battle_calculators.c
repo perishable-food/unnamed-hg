@@ -1562,7 +1562,7 @@ BOOL CantEscape(void *bw, struct BattleStruct *ctx, int battlerId, MESSAGE_PARAM
     item = HeldItemHoldEffectGet(ctx, battlerId);
 
     // if shed shell or no experience or has run away or has ghost type then there is nothing stopping the battler from escaping
-    if (item == HOLD_EFFECT_FLEE || (battleType & BATTLE_TYPE_NO_EXPERIENCE) || GetBattlerAbility(ctx, battlerId) == ABILITY_RUN_AWAY || BATTLE_MON_HAS_TYPE(ctx, battlerId, TYPE_GHOST)) {
+    if (item == HOLD_EFFECT_FLEE || (battleType & BATTLE_TYPE_NO_EXPERIENCE) /*|| GetBattlerAbility(ctx, battlerId) == ABILITY_RUN_AWAY*/ || BATTLE_MON_HAS_TYPE(ctx, battlerId, TYPE_GHOST)) {
         return FALSE;
     }
 
@@ -1695,7 +1695,7 @@ BOOL BattleTryRun(void *bw, struct BattleStruct *ctx, int battlerId) {
         ret = TRUE;
     } else if (battleType & BATTLE_TYPE_NO_EXPERIENCE || BATTLE_MON_HAS_TYPE(ctx, battlerId, TYPE_GHOST)) { // ghost types can always escape regardless of speed
         ret = TRUE;
-    } else if (GetBattlerAbility(ctx, battlerId) == ABILITY_RUN_AWAY) {
+    } else if (GetBattlerAbility(ctx, battlerId) == ABILITY_WANDERING_SPIRIT) {
         ctx->oneTurnFlag[battlerId].escape_flag = 2;
         ret = TRUE;
     } else {
