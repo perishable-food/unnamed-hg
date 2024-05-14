@@ -764,11 +764,11 @@ Waters Scroll Description
 Mega Ring Description
 Autograph Description
 Gold Teeth Description
-A stone filled with an unexplained power.\nIt allows Pokémon that battle with\na Mega Stone to Mega Evolve.
+A stone filled with an unexplained power.\nIt allows Eevee's evolutions to\nun-evolve.
 Lift Key Description
 Pewter Snacks Description
 Silph Scope Description
-Tea Description
+An abnormally Rare Candy that does not\ndeplete.
 Having a Pokémon smell this mint can\nmake its Attack stat grow stronger.\nHowever, its Defense stat may suffer.
 Having a Pokémon smell this mint can\nmake its Attack stat grow stronger.\nHowever, its Sp. Atk stat may suffer.
 Having a Pokémon smell this mint can\nmake its Attack stat grow stronger.\nHowever, its Sp. Def stat may suffer.
