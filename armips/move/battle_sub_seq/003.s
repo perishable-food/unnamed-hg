@@ -19,7 +19,7 @@ _0040:
     playse BATTLER_ATTACKER, 0x6FF
     if IF_MASK, VAR_BATTLE_TYPE, 0x80, _0108
     if IF_MASK, VAR_BATTLE_TYPE, 0x4, _0134
-    abilitycheck 0x0, BATTLER_ATTACKER, ABILITY_RUN_AWAY, _00B0
+    abilitycheck 0x0, BATTLER_ATTACKER, ABILITY_WANDERING_SPIRIT, _00B0
     checkitemeffect 0x0, BATTLER_ATTACKER, 0x3F, _00CC
     printmessage 0x30D, 0x0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN"
     goto _00E0

@@ -1547,6 +1547,7 @@ trainerdata 35, "Clair"
         ballseal 0
 		
 		ivs 200
+		abilityslot 32
 		level 1
 		pokemon SPECIES_KOMMO_O
 		item ITEM_ROSELI_BERRY
@@ -1563,6 +1564,7 @@ trainerdata 35, "Clair"
 		ballseal 0
 		
 		ivs 200
+		abilityslot 32
 		level 1
 		pokemon SPECIES_CHARIZARD
 		item ITEM_CHARIZARDITE_X
