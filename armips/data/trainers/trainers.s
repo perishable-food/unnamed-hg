@@ -1717,7 +1717,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        pokemon SPECIES_SILVALLY
+        monwithform SPECIES_LOPUNNY, 2
         item ITEM_SALAMENCITE
         move MOVE_ROCK_SLIDE
         move MOVE_DOUBLE_EDGE
@@ -1736,7 +1736,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_ARCEUS, 1
+        monwithform SPECIES_BUNEARY, 1
         item ITEM_CHOICE_SCARF
         move MOVE_ENERGY_BALL
         move MOVE_EARTH_POWER
@@ -1747,7 +1747,7 @@ trainerdata 40, "Bagon"
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 0, 0, 252, 252, 0
         nature NATURE_TIMID
-        shinylock 0
+        shinylock 1
         additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
 		nickname _S, _e_, _r_, _e_, _n_, _i_, _t_, _y_, _endstr, 0, 0
         ballseal 0
