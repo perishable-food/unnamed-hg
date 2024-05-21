@@ -1717,7 +1717,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_LOPUNNY, 2
+        monwithform SPECIES_LOPUNNY, 1 // for testing change to form 2 later
         item ITEM_SALAMENCITE
         move MOVE_ROCK_SLIDE
         move MOVE_DOUBLE_EDGE
@@ -1736,7 +1736,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_BUNEARY, 1
+        monwithform SPECIES_SHAYMIN, 1 // for testing change to buneary
         item ITEM_CHOICE_SCARF
         move MOVE_ENERGY_BALL
         move MOVE_EARTH_POWER

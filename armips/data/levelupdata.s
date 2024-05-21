@@ -27082,29 +27082,3 @@ levelup SPECIES_TERAPAGOS_STELLAR
 levelup SPECIES_URSALUNA_BLOODMOON
     learnset MOVE_TACKLE, 1
     terminatelearnset
-
-levelup SPECIES_BUNEARY_SAISANN
-    learnset MOVE_RETURN, 1
-	learnset MOVE_ICICLE_CRASH, 1
-	learnset MOVE_PLAY_ROUGH, 1
-	learnset MOVE_ICE_SHARD, 1
-	learnset MOVE_ICE_PUNCH, 1
-	learnset MOVE_THROAT_CHOP, 1
-	learnset MOVE_SWORDS_DANCE, 1
-	learnset MOVE_FIRE_PUNCH, 1
-	learnset MOVE_THUNDER_PUNCH, 1
-	learnset MOVE_BULLET_PUNCH, 1
-    terminatelearnset
-	
-levelup SPECIES_LOPUNNY_SAISANN
-    learnset MOVE_RETURN, 1
-	learnset MOVE_ICICLE_CRASH, 1
-	learnset MOVE_PLAY_ROUGH, 1
-	learnset MOVE_ICE_SHARD, 1
-	learnset MOVE_ICE_PUNCH, 1
-	learnset MOVE_THROAT_CHOP, 1
-	learnset MOVE_SWORDS_DANCE, 1
-	learnset MOVE_FIRE_PUNCH, 1
-	learnset MOVE_THUNDER_PUNCH, 1
-	learnset MOVE_BULLET_PUNCH, 1
-    terminatelearnset

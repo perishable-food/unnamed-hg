@@ -1734,16 +1734,4 @@ const struct FormData UNUSED PokeFormDataTbl[]=
         .need_rev = 0,
         .file = SPECIES_URSALUNA_BLOODMOON,
     },
-	{
-        .species = SPECIES_BUNEARY,
-        .form_no = 1,
-        .need_rev = 0,
-        .file = SPECIES_BUNEARY_SAISANN,
-    },
-	{
-        .species = SPECIES_LOPUNNY,
-        .form_no = 2,
-        .need_rev = 0,
-        .file = SPECIES_LOPUNNY_SAISANN,
-    },
 };
