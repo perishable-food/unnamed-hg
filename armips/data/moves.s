@@ -14618,7 +14618,7 @@ movedata MOVE_THUNDERCLAP, "Thunderclap"
     movedescription MOVE_THUNDERCLAP, "---"
 
 movedata MOVE_MIGHTY_CLEAVE, "Mighty Cleave"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_REMOVE_PROTECT
     pss SPLIT_PHYSICAL
     basepower 95
     type TYPE_ROCK
