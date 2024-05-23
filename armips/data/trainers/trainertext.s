@@ -545,7 +545,7 @@ _03F4: // Trainer 253
 _0400: // Trainer 254
     trainertextentry 254, TEXT_LAST_MON_CRITICAL, "Hmm... You’re pretty good...\n"
     trainertextentry 254, TEXT_LAST_MON_SENT_OUT, "Looks like you’re not just someone who\ngets in the way...\n"
-    trainertextentry 254, TEXT_DEFEATED_IN_BATTLE, "Looks like this is it...\n"
+    trainertextentry 254, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Looks like this is it...\n"
 
 _040C: // Trainer 255
     trainertextentry 255, TEXT_LAST_MON_CRITICAL, "It’s not over yet. It’s just beginning!\n"
