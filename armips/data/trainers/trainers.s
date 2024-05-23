@@ -8693,13 +8693,13 @@ trainerdata 253, "Brock"
 		ivs 200
 		abilityslot 32
 		level 1
-		pokemon SPECIES_BAXCALIBUR
+		pokemon SPECIES_KABUTOPS
 		item ITEM_LIFE_ORB
-		move MOVE_DUAL_CHOP
-		move MOVE_ICICLE_SPEAR
-		move MOVE_ICE_SHARD
-		move MOVE_IRON_HEAD
-		ability ABILITY_TECHNICIAN
+		move MOVE_MIGHTY_CLEAVE
+		move MOVE_AQUA_CUTTER
+		move MOVE_SMART_STRIKE
+		move MOVE_X_SCISSOR
+		ability ABILITY_SHARPNESS
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 4, 252, 0, 252, 0, 0
 		nature NATURE_JOLLY
@@ -8710,17 +8710,17 @@ trainerdata 253, "Brock"
 		ivs 200
 		abilityslot 32
 		level 1
-		pokemon SPECIES_CHARIZARD
-		item ITEM_CHARIZARDITE_X
-		move MOVE_DRAGON_DANCE
-		move MOVE_FLARE_BLITZ
-		move MOVE_OUTRAGE
-		move MOVE_EARTHQUAKE
-		ability ABILITY_DROUGHT
+		pokemon SPECIES_REGIGIGAS
+		item ITEM_LEFTOVERS
+		move MOVE_SLEEP_TALK
+		move MOVE_LAST_RESORT
+		move MOVE_NONE
+		move MOVE_NONE
+		ability ABILITY_COMATOSE
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 4, 252, 0, 252, 0, 0
 		nature NATURE_JOLLY
-		shinylock 0
+		shinylock 1
 		additionalflags 0
 		ballseal 0
     endparty
