@@ -1452,3 +1452,7 @@ The mysterious strong winds\nblow on regardless!
 The mysterious strong winds\nweakened the attack!
 The mysterious strong winds\nhave dissipated!
 From darkness, from stardust...
+Stardust began to swirl\naround the battlefield!
+The stardust remains on the\nfield!
+The Ground-type attack was\nweakened by cosmic energy!
+The stardust settled.

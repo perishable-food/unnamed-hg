@@ -313,16 +313,16 @@ movedata MOVE_WHIRLWIND, "Whirlwind"
     movedescription MOVE_WHIRLWIND, "The foe is blown away,\nto be replaced by\nanother Pokémon\nin its party. In the\nwild, the battle ends."
 
 movedata MOVE_FLY, "Fly"
-    battleeffect MOVE_EFFECT_FLY
+   battleeffect MOVE_EFFECT_PRIORITY_1
     pss SPLIT_PHYSICAL
-    basepower 90
+    basepower 40
     type TYPE_FLYING
-    accuracy 95
-    pp 15
+    accuracy 100
+    pp 30
     effectchance 0
     target MOVE_TARGET_SELECTED
-    priority 0
-    flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
+    priority 1
+    flags FLAG_KEEP_HP_BAR | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_CONTACT
     appeal 0x06
     contesttype CONTEST_SMART
     terminatedata

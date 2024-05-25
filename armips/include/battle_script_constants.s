@@ -375,8 +375,9 @@ SUB_SEQ_CANCEL_WATER_MOVE                     equ (370)
 SUB_SEQ_CANCEL_FIRE_MOVE                      equ (371)
 SUB_SEQ_WEAKEN_MOVES_STRONG_WINDS             equ (372)
 SUB_SEQ_PREVENT_CHANGING_WEATHER              equ (373)
-
-
+SUB_SEQ_STAR_STREAM							  equ (374)
+//SUB_SEQ_HALVE_GROUND_MOVES				  equ (375)
+//SUB_SEQ_EIGHTH_CHIP						  equ (376)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

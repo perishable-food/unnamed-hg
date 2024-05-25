@@ -200,6 +200,13 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
                                     break;
+								 case ABILITY_STENCH:
+                                    sp->battlemon[client_no].appear_check_flag = 1;
+                                    if ((sp->field_condition & WEATHER_STARSTORM) == 0) {
+                                        scriptnum = SUB_SEQ_STAR_STREAM;
+                                        ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                                    }
+                                    break;
                             }
                         }
                         if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {

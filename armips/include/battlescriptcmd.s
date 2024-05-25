@@ -89,7 +89,7 @@ WEATHER_SNOW                        equ (0x00100000)                            
 WEATHER_SNOW_PERMANENT              equ (0x00200000)                                                          //      0010 0000 0000 0000 0000 0000
 WEATHER_SNOW_ANY                    equ (0x00300000)                                                          //      0011 0000 0000 0000 0000 0000
 // We have 2 extra bits let's have fun:
-WEATHER_SHADOWY_AURA                equ (0x00400000)                                                          //      0100 0000 0000 0000 0000 0000
+WEATHER_STARSTORM                   equ (0x00400000)                                                          //      0100 0000 0000 0000 0000 0000
 WEATHER_SHADOWY_AURA_PERMANENT      equ (0x00800000)                                                          //      1000 0000 0000 0000 0000 0000
 WEATHER_SHADOWY_AURA_ANY            equ (0x00c00000)                                                          //      1100 0000 0000 0000 0000 0000
 

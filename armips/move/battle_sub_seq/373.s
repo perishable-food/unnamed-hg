@@ -16,6 +16,7 @@ a001_373:
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_EXTREMELY_HARSH_SUNLIGHT, Sun
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_HEAVY_RAIN, Rain
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_STRONG_WINDS, Winds
+	if IF_MASK, VAR_FIELD_EFFECT, WEATHER_STARSTORM, Stars
     endscript
 Sun:
     printmessage 1442, 0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // The extremely harsh sunlight\nwas not lessened at all!
@@ -25,6 +26,9 @@ Rain:
     goto Continue
 Winds:
     printmessage 1450, 0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // The mysterious strong winds\nblow on regardless!
+	goto Continue
+Stars:
+	printmessage 1455, 0, "NaN", "NaN", "NaN", "NaN", "NaN", "NaN" // The stardust remains on the field!
 Continue:
     waitmessage
     wait 0x1E

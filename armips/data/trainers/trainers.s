@@ -1723,7 +1723,7 @@ trainerdata 40, "Bagon"
         move MOVE_DOUBLE_EDGE
         move MOVE_DRAGON_DANCE
         move MOVE_DRAGON_CLAW
-        ability ABILITY_RKS_SYSTEM
+        ability ABILITY_STENCH
         ball ITEM_POKE_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 252, 0, 252, 0, 0
@@ -8624,8 +8624,8 @@ trainerdata 253, "Brock"
         abilityslot 0
         level 1 
         pokemon SPECIES_AERODACTYL
-        item ITEM_LUCKY_EGG
-        move MOVE_SPLASH
+        item ITEM_FOCUS_SASH
+        move MOVE_MIGHTY_CLEAVE
         move MOVE_DUAL_WINGBEAT
         move MOVE_STEALTH_ROCK
         move MOVE_IRON_HEAD
@@ -8645,7 +8645,7 @@ trainerdata 253, "Brock"
         item ITEM_TYRANITARITE
         move MOVE_STONE_EDGE
         move MOVE_DRAGON_DANCE
-        move MOVE_SPLASH
+        move MOVE_CRUNCH
         move MOVE_EARTHQUAKE
 		ability ABILITY_SAND_STREAM
 		setivs 31, 31, 31, 31, 31, 31
@@ -8670,6 +8670,7 @@ trainerdata 253, "Brock"
 		setevs 4, 252, 0, 252, 0, 0
 		nature NATURE_ADAMANT
 		shinylock 1
+		additionalflags 0
         ballseal 0
 
         // mon 3
@@ -8678,7 +8679,7 @@ trainerdata 253, "Brock"
         level 1
         monwithform SPECIES_ARCANINE, 1
         item ITEM_PASSHO_BERRY
-        move MOVE_WATER_GUN
+        move MOVE_WILL_O_WISP
         move MOVE_EXTREME_SPEED
         move MOVE_PROTECT
         move MOVE_FLARE_BLITZ
@@ -8726,7 +8727,7 @@ trainerdata 253, "Brock"
     endparty
 
 trainerdata 254, "Misty"
-       trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
+    trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_LEADER_6
     nummons 6
     item ITEM_NONE
@@ -8789,6 +8790,7 @@ trainerdata 254, "Misty"
 		setevs 4, 252, 0, 252, 0, 0
 		nature NATURE_ADAMANT
 		shinylock 0
+		additionalflags 0
         ballseal 0
 
         // mon 3
@@ -8812,12 +8814,12 @@ trainerdata 254, "Misty"
 		ivs 200
 		abilityslot 32
 		level 1
-		pokemon SPECIES_KABUTOPS
-		item ITEM_LIFE_ORB
-		move MOVE_MIGHTY_CLEAVE
-		move MOVE_AQUA_CUTTER
-		move MOVE_SMART_STRIKE
-		move MOVE_X_SCISSOR
+		pokemon SPECIES_OMASTAR
+		item ITEM_FOCUS_SASH
+		move MOVE_ROCK_BLAST
+		move MOVE_LIQUIDATION
+		move MOVE_SHELL_SMASH
+		move MOVE_PIN_MISSILE
 		ability ABILITY_SHARPNESS
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 4, 252, 0, 252, 0, 0
@@ -8829,17 +8831,17 @@ trainerdata 254, "Misty"
 		ivs 200
 		abilityslot 32
 		level 1
-		pokemon SPECIES_REGIGIGAS
+		pokemon SPECIES_STARMIE
 		item ITEM_LEFTOVERS
-		move MOVE_SLEEP_TALK
-		move MOVE_LAST_RESORT
-		move MOVE_NONE
-		move MOVE_NONE
-		ability ABILITY_COMATOSE
-		setivs 31, 31, 31, 31, 31, 31
-		setevs 4, 252, 0, 252, 0, 0
-		nature NATURE_JOLLY
-		shinylock 1
+		move MOVE_CALM_MIND
+		move MOVE_PSYCHIC
+		move MOVE_SCALD
+		move MOVE_ICE_BEAM
+		ability ABILITY_NATURAL_CURE
+		setivs 31, 0, 31, 31, 31, 31
+		setevs 4, 0, 0, 0, 252, 252
+		nature NATURE_CALM
+		shinylock 0
 		additionalflags 0
 		ballseal 0
     endparty

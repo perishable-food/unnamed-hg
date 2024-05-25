@@ -3574,6 +3574,7 @@ eggmoveentry SPECIES_SCORBUNNY
 	eggmove MOVE_SAND_ATTACK
 	eggmove MOVE_SUCKER_PUNCH
 	eggmove MOVE_SUPER_FANG
+	eggmove MOVE_SACRED_FIRE
 
 eggmoveentry SPECIES_SOBBLE
 	eggmove MOVE_AQUA_JET

@@ -88,7 +88,7 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
     togepi = AllocMonZeroed(11);
     ZeroMonData(togepi);
 
-    SetEggStats(togepi, SPECIES_TOGEPI, 1, profile, 3, sub_02017FE4(1, 13));
+    SetEggStats(togepi, SPECIES_TOXEL, 1, profile, 3, sub_02017FE4(1, 13));
 
     //SetMonData(togepi, MON_DATA_FORM, &form); // add form capability
 
@@ -105,7 +105,7 @@ BOOL ScrCmd_GiveTogepiEgg(SCRIPTCONTEXT *ctx) {
         i = 3;
     }
 
-    moveData = MOVE_EXTRASENSORY; // add extrasensory to the togepi
+    moveData = MOVE_POWER_UP_PUNCH; // add extrasensory to the togepi
     SetMonData(togepi, MON_DATA_MOVE1 + i, &moveData);
 
     pp = GetMonData(togepi, MON_DATA_MOVE1MAXPP + i, 0);

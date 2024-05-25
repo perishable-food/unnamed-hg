@@ -15,6 +15,7 @@ a001_104:
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_SNOW_ANY, SkipPrintWeatherMessage
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_EXTREMELY_HARSH_SUNLIGHT, SkipPrintWeatherMessage
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_HEAVY_RAIN, SkipPrintWeatherMessage
+	if IF_MASK, VAR_FIELD_EFFECT, WEATHER_STARSTORM, SkipPrintWeatherMessage
     if IF_MASK, VAR_FIELD_EFFECT, WEATHER_STRONG_WINDS, PlayStrongWindsAnimation
     gotosubscript 57
 SkipPrintWeatherMessage:
