@@ -21726,7 +21726,7 @@ mondata SPECIES_KINGAMBIT, "Kingambit"
     mondexweight SPECIES_KINGAMBIT, "264.6 lbs."
 
 
-mondata SPECIES_GREAT_TUSK, "Great Tusk"
+mondata SPECIES_GREAT_TUSK, "Idainakiba" // japanese name
     basestats 115, 131, 131, 87, 53, 53
     types TYPE_GROUND, TYPE_FIGHTING
     catchrate 30
@@ -21738,7 +21738,7 @@ mondata SPECIES_GREAT_TUSK, "Great Tusk"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_SAND_FORCE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
     mondexentry SPECIES_GREAT_TUSK, "This creature resembles a mysterious Pokémon that, according to a paranormal magazine, has lived since ancient times."
@@ -21747,7 +21747,7 @@ mondata SPECIES_GREAT_TUSK, "Great Tusk"
     mondexweight SPECIES_GREAT_TUSK, "705.5 lbs."
 
 
-mondata SPECIES_SCREAM_TAIL, "ScreamTail"
+mondata SPECIES_SCREAM_TAIL, "Colagrito" //spanish name
     basestats 115, 65, 99, 111, 65, 115
     types (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL, TYPE_PSYCHIC
     catchrate 50
@@ -21759,7 +21759,7 @@ mondata SPECIES_SCREAM_TAIL, "ScreamTail"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_PUNK_ROCK, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PINK, 0
     mondexentry SPECIES_SCREAM_TAIL, "It resembles a mysterious Pokémon described in a paranormal magazine as a Jigglypuff from one billion years ago."
@@ -21768,7 +21768,7 @@ mondata SPECIES_SCREAM_TAIL, "ScreamTail"
     mondexweight SPECIES_SCREAM_TAIL, "17.6 lbs."
 
 
-mondata SPECIES_BRUTE_BONNET, "BruteBonet"
+mondata SPECIES_BRUTE_BONNET, "Furioseta" // spanish name
     basestats 111, 127, 99, 55, 79, 99
     types TYPE_GRASS, TYPE_DARK
     catchrate 50
@@ -21780,7 +21780,7 @@ mondata SPECIES_BRUTE_BONNET, "BruteBonet"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_REGENERATOR, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_BRUTE_BONNET, "It bears a slight resemblance to a Pokémon described in a dubious magazine as a cross between a dinosaur and a mushroom."
@@ -21789,7 +21789,7 @@ mondata SPECIES_BRUTE_BONNET, "BruteBonet"
     mondexweight SPECIES_BRUTE_BONNET, "46.3 lbs."
 
 
-mondata SPECIES_FLUTTER_MANE, "FluttrMane"
+mondata SPECIES_FLUTTER_MANE, "Crinealato" // italian name
     basestats 55, 55, 55, 135, 135, 135
     types TYPE_GHOST, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_GHOST
     catchrate 30
@@ -21801,7 +21801,7 @@ mondata SPECIES_FLUTTER_MANE, "FluttrMane"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_LEVITATE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_FLUTTER_MANE, "It has similar features to a ghostly pterosaur that was covered in a paranormal magazine, but the two have little else in common."
@@ -21810,7 +21810,7 @@ mondata SPECIES_FLUTTER_MANE, "FluttrMane"
     mondexweight SPECIES_FLUTTER_MANE, "8.8 lbs."
 
 
-mondata SPECIES_SLITHER_WING, "SlithrWing"
+mondata SPECIES_SLITHER_WING, "Reptalada" // spanish name
     basestats 85, 135, 79, 81, 85, 105
     types TYPE_BUG, TYPE_FIGHTING
     catchrate 30
@@ -21822,7 +21822,7 @@ mondata SPECIES_SLITHER_WING, "SlithrWing"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_MULTISCALE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
     mondexentry SPECIES_SLITHER_WING, "This Pokémon somewhat resembles an ancient form of Volcarona that was introduced in a dubious magazine."
@@ -21831,7 +21831,7 @@ mondata SPECIES_SLITHER_WING, "SlithrWing"
     mondexweight SPECIES_SLITHER_WING, "202.8 lbs."
 
 
-mondata SPECIES_SANDY_SHOCKS, "SandyShock"
+mondata SPECIES_SANDY_SHOCKS, "Pelarena" // spanish name
     basestats 85, 81, 97, 101, 121, 85
     types TYPE_ELECTRIC, TYPE_GROUND
     catchrate 30
@@ -21843,7 +21843,7 @@ mondata SPECIES_SANDY_SHOCKS, "SandyShock"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_MAGNET_PULL, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_SANDY_SHOCKS, "It slightly resembles a Magneton that lived for 10,000 years and was featured in an article in a paranormal magazine."
@@ -21852,7 +21852,7 @@ mondata SPECIES_SANDY_SHOCKS, "SandyShock"
     mondexweight SPECIES_SANDY_SHOCKS, "132.3 lbs."
 
 
-mondata SPECIES_IRON_TREADS, "IronTreads"
+mondata SPECIES_IRON_TREADS, "Eisenrad" // german name
     basestats 90, 112, 120, 106, 72, 70
     types TYPE_GROUND, TYPE_STEEL
     catchrate 30
@@ -21864,7 +21864,7 @@ mondata SPECIES_IRON_TREADS, "IronTreads"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_SAND_RUSH, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_IRON_TREADS, "Sightings of this Pokémon have occurred in recent years. It resembles a mysterious object described in an old expedition journal."
@@ -21873,7 +21873,7 @@ mondata SPECIES_IRON_TREADS, "IronTreads"
     mondexweight SPECIES_IRON_TREADS, "529.1 lbs."
 
 
-mondata SPECIES_IRON_BUNDLE, "IronBundle"
+mondata SPECIES_IRON_BUNDLE, "Ferrosaco" // spanish name
     basestats 56, 80, 114, 136, 124, 60
     types TYPE_ICE, TYPE_WATER
     catchrate 50
@@ -21885,7 +21885,7 @@ mondata SPECIES_IRON_BUNDLE, "IronBundle"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_MEGA_LAUNCHER, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
     mondexentry SPECIES_IRON_BUNDLE, "It resembles a mysterious object mentioned in an old book. There are only two reported sightings of this Pokémon."
@@ -21894,7 +21894,7 @@ mondata SPECIES_IRON_BUNDLE, "IronBundle"
     mondexweight SPECIES_IRON_BUNDLE, "24.3 lbs."
 
 
-mondata SPECIES_IRON_HANDS, "Iron Hands"
+mondata SPECIES_IRON_HANDS, "Eisenhand" // german name
     basestats 154, 140, 108, 50, 50, 68
     types TYPE_FIGHTING, TYPE_ELECTRIC
     catchrate 50
@@ -21906,7 +21906,7 @@ mondata SPECIES_IRON_HANDS, "Iron Hands"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_IRON_FIST, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_IRON_HANDS, "This Pokémon shares many similarities with Iron Hands, an object mentioned in a certain expedition journal."
@@ -21915,7 +21915,7 @@ mondata SPECIES_IRON_HANDS, "Iron Hands"
     mondexweight SPECIES_IRON_HANDS, "839.3 lbs."
 
 
-mondata SPECIES_IRON_JUGULIS, "Iron Neck"
+mondata SPECIES_IRON_JUGULIS, "Eisenhals" // german name
     basestats 94, 80, 86, 108, 122, 80
     types TYPE_DARK, TYPE_FLYING
     catchrate 30
@@ -21927,7 +21927,7 @@ mondata SPECIES_IRON_JUGULIS, "Iron Neck"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_DRAGONS_MAW, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
     mondexentry SPECIES_IRON_JUGULIS, "It’s possible that Iron Jugulis, an object described in an old book, may actually be this Pokémon."
@@ -21948,7 +21948,7 @@ mondata SPECIES_IRON_MOTH, "Iron Moth"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_LEVITATE, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
     mondexentry SPECIES_IRON_MOTH, "No records exist of this species being caught. Data is lacking, but the Pokémon’s traits match up with an object described in an old book."
@@ -21957,7 +21957,7 @@ mondata SPECIES_IRON_MOTH, "Iron Moth"
     mondexweight SPECIES_IRON_MOTH, "79.4 lbs."
 
 
-mondata SPECIES_IRON_THORNS, "Iron Thorn"
+mondata SPECIES_IRON_THORNS, "Eisendorn" // german name
     basestats 100, 134, 110, 72, 70, 84
     types TYPE_ROCK, TYPE_ELECTRIC
     catchrate 30
@@ -21969,7 +21969,7 @@ mondata SPECIES_IRON_THORNS, "Iron Thorn"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_IRON_BARBS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
     mondexentry SPECIES_IRON_THORNS, "Some of its notable features match those of an object named within a certain expedition journal as Iron Thorns."
@@ -22167,7 +22167,7 @@ mondata SPECIES_CHI_YU, "Chi-Yu"
     mondexweight SPECIES_CHI_YU, "10.8 lbs."
 
 
-mondata SPECIES_ROARING_MOON, "Roar Moon"
+mondata SPECIES_ROARING_MOON, "Bramaluna" // spanish name
     basestats 105, 139, 71, 119, 55, 101
     types TYPE_DRAGON, TYPE_DARK
     catchrate 10
@@ -22179,7 +22179,7 @@ mondata SPECIES_ROARING_MOON, "Roar Moon"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_TOUGH_CLAWS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
     mondexentry SPECIES_ROARING_MOON, "According to an article in a dubious magazine, this Pokémon has some connection to a phenomenon that occurs in a certain region."
@@ -22188,7 +22188,7 @@ mondata SPECIES_ROARING_MOON, "Roar Moon"
     mondexweight SPECIES_ROARING_MOON, "837.8 lbs."
 
 
-mondata SPECIES_IRON_VALIANT, "Iron Valor"
+mondata SPECIES_IRON_VALIANT, "Eroeferreo" // italian name
     basestats 74, 130, 90, 116, 120, 60
     types (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL, TYPE_FIGHTING
     catchrate 10
@@ -22200,7 +22200,7 @@ mondata SPECIES_IRON_VALIANT, "Iron Valor"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
     mondexentry SPECIES_IRON_VALIANT, "It’s possible that this is the object listed as Iron Valiant in a certain expedition journal."
@@ -22221,7 +22221,7 @@ mondata SPECIES_KORAIDON, "Koraidon"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_ORICHALCUM_PULSE, ABILITY_NONE
+    abilities ABILITY_SHEER_FORCE, ABILITY_DROUGHT
     runchance 0
     colorflip BODY_COLOR_RED, 0
     mondexentry SPECIES_KORAIDON, "This Pokémon resembles Cyclizar, but it is far burlier and more ferocious. Nothing is known about its ecology or other features."
@@ -22242,7 +22242,7 @@ mondata SPECIES_MIRAIDON, "Miraidon"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_HADRON_ENGINE, ABILITY_NONE
+    abilities ABILITY_LEVITATE, ABILITY_ELECTRIC_SURGE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
     mondexentry SPECIES_MIRAIDON, "This seems to be the Iron Serpent mentioned in an old book. The Iron Serpent is said to have turned the land to ash with its lightning."
@@ -22251,7 +22251,7 @@ mondata SPECIES_MIRAIDON, "Miraidon"
     mondexweight SPECIES_MIRAIDON, "529.1 lbs."
 
 
-mondata SPECIES_WALKING_WAKE, "Walk Wake"
+mondata SPECIES_WALKING_WAKE, "Ondulagua" // spanish name
     basestats 99, 83, 91, 109, 125, 83
     types TYPE_WATER, TYPE_DRAGON
     catchrate 5
@@ -22263,7 +22263,7 @@ mondata SPECIES_WALKING_WAKE, "Walk Wake"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_SWIFT_SWIM, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
     mondexentry SPECIES_WALKING_WAKE, "This is a newly discovered\nPokémon."
@@ -22272,7 +22272,7 @@ mondata SPECIES_WALKING_WAKE, "Walk Wake"
     mondexweight SPECIES_WALKING_WAKE, "617.3 lbs."
 
 
-mondata SPECIES_IRON_LEAVES, "Iron Leaf"
+mondata SPECIES_IRON_LEAVES, "Eisenblatt" // german name
     basestats 90, 130, 88, 104, 70, 108
     types TYPE_GRASS, TYPE_PSYCHIC
     catchrate 5
@@ -22284,7 +22284,7 @@ mondata SPECIES_IRON_LEAVES, "Iron Leaf"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
     mondexentry SPECIES_IRON_LEAVES, "This is a newly discovered\nPokémon."
@@ -22482,7 +22482,7 @@ mondata SPECIES_HYDRAPPLE, "Hydrapple"
     mondexweight SPECIES_HYDRAPPLE, "205.0 lbs."
 
 
-mondata SPECIES_GOUGING_FIRE, "GougedFire"
+mondata SPECIES_GOUGING_FIRE, "Keilflamme" // german name
     basestats 105, 115, 121, 91, 65, 93
     types TYPE_FIRE, TYPE_DRAGON
     catchrate 10
@@ -22495,7 +22495,7 @@ mondata SPECIES_GOUGING_FIRE, "GougedFire"
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
     runchance 0
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_SOLAR_POWER, ABILITY_NONE
     colorflip BODY_COLOR_BROWN, 0
     mondexentry SPECIES_GOUGING_FIRE, "This is a newly discovered\nPokémon."
     mondexclassification SPECIES_GOUGING_FIRE, "Paradox Pokémon"
@@ -22503,7 +22503,7 @@ mondata SPECIES_GOUGING_FIRE, "GougedFire"
     mondexweight SPECIES_GOUGING_FIRE, "1300.7 lbs."
 
 
-mondata SPECIES_RAGING_BOLT, "RagingBolt"
+mondata SPECIES_RAGING_BOLT, "Ire-Foudre" // french name
     basestats 125, 73, 91, 75, 137, 89
     types TYPE_ELECTRIC, TYPE_DRAGON
     catchrate 10
@@ -22515,7 +22515,7 @@ mondata SPECIES_RAGING_BOLT, "RagingBolt"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_PROTOSYNTHESIS, ABILITY_NONE
+    abilities ABILITY_RAIN_DISH, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
     mondexentry SPECIES_RAGING_BOLT, "This is a newly discovered\nPokémon."
@@ -22524,7 +22524,7 @@ mondata SPECIES_RAGING_BOLT, "RagingBolt"
     mondexweight SPECIES_RAGING_BOLT, "1058.2 lbs."
 
 
-mondata SPECIES_IRON_BOULDER, "IronBolder"
+mondata SPECIES_IRON_BOULDER, "Eisenfels" // german name
     basestats 90, 120, 80, 124, 68, 108
     types TYPE_ROCK, TYPE_PSYCHIC
     catchrate 10
@@ -22536,7 +22536,7 @@ mondata SPECIES_IRON_BOULDER, "IronBolder"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_IRON_BOULDER, "This is a newly discovered\nPokémon."
@@ -22545,7 +22545,7 @@ mondata SPECIES_IRON_BOULDER, "IronBolder"
     mondexweight SPECIES_IRON_BOULDER, "358.3 lbs."
 
 
-mondata SPECIES_IRON_CROWN, "Iron Crown"
+mondata SPECIES_IRON_CROWN, "Eisenhaupt" // german name
     basestats 90, 72, 100, 98, 122, 108
     types TYPE_STEEL, TYPE_PSYCHIC
     catchrate 10
@@ -22557,7 +22557,7 @@ mondata SPECIES_IRON_CROWN, "Iron Crown"
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_QUARK_DRIVE, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
     mondexentry SPECIES_IRON_CROWN, "This is a newly discovered\nPokémon."

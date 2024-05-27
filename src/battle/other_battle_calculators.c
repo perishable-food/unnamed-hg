@@ -450,7 +450,7 @@ BOOL CalcAccuracy(void *bw, struct BattleStruct *sp, int attacker, int defender,
     {
         accuracy = accuracy * 130 / 100;
     }
-
+	
     //handle Wonder Skin
     if ((MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_WONDER_SKIN) == TRUE) && (GetMoveSplit(sp, move_no) == SPLIT_STATUS))
     {
@@ -1182,7 +1182,7 @@ int CalcCritical(void *bw, struct BattleStruct *sp, int attacker, int defender, 
             multiplier = 2;
         }
     }
-
+	
     if ((multiplier == 2) && (GetBattlerAbility(sp, attacker) == ABILITY_SNIPER))
     {
         multiplier = 3;
@@ -1297,7 +1297,7 @@ void ServerHPCalc(void *bw, struct BattleStruct *sp)
                     }
                 }
             }
-
+			
             /**
              * END OF ORIGINAL AND USER-DEFINED DAMAGE CALCULATIONS.
              * ALL NEW EFFECTS SHOULD BE PLACED ABOVE THIS COMMENT UNLESS YOU WISH TO EDIT THE CODE BELOW.

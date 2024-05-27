@@ -589,19 +589,20 @@ trainerdata 19, "Rei"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_LOPUNNY, 2
-        item ITEM_SKY_PLATE
-        move MOVE_NONE
-        move MOVE_NONE
-        move MOVE_NONE
-        move MOVE_EXPLOSION
-        ability ABILITY_REFRIGERATE
-        ball ITEM_POKE_BALL
+        pokemon SPECIES_IRON_VALIANT
+        item ITEM_CHOICE_BAND
+        move MOVE_PSYBLADE
+        move MOVE_PLAY_ROUGH
+        move MOVE_SACRED_SWORD
+        move MOVE_CEASELESS_EDGE
+        ability ABILITY_SHARPNESS
+        ball ITEM_HEAVY_BALL
         setivs 31, 31, 31, 31, 31, 31 
-        setevs 0, 0, 0, 0, 0, 0
-        nature NATURE_CALM
+        setevs 0, 252, 0, 252, 0, 4
+        nature NATURE_JOLLY
         shinylock 1
-        additionalflags 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _D, _R, _A, _G, _U, _L, _A, _endstr, 0, 0, 0
         ballseal 0
     
         ivs 200
@@ -646,17 +647,17 @@ trainerdata 19, "Rei"
         abilityslot 1
         level 1
         pokemon SPECIES_PRIMARINA
-        item ITEM_POWER_HERB
+        item ITEM_WHITE_HERB
         move MOVE_BOOMBURST
         move MOVE_MOONBLAST
-        move MOVE_GEOMANCY
+        move MOVE_SHELL_SMASH
         move MOVE_SEED_FLARE
         ability ABILITY_LIQUID_VOICE
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 0, 0, 0, 252, 252
         nature NATURE_MODEST
-        shinylock 0
+        shinylock 1
         additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
 		nickname _S, _W, _E, _E, _T, _endstr, 0, 0, 0, 0, 0
         ballseal 0
@@ -694,9 +695,9 @@ trainerdata 19, "Rei"
         setivs 31, 31, 31, 31, 31, 31 
         setevs 252, 252, 252, 252, 252, 252
         nature NATURE_HASTY
-        shinylock 1
+        shinylock 0
         additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _L, _I, _L_, _I_, _T_, _H_, _endstr, 0, 0, 0, 0
+		nickname _L, _I, _L, _I, _T, _H, _endstr, 0, 0, 0, 0
         ballseal 0
     endparty
 
@@ -1717,7 +1718,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_LOPUNNY, 1 // for testing change to form 2 later
+        pokemon SPECIES_CHI_YU
         item ITEM_SALAMENCITE
         move MOVE_ROCK_SLIDE
         move MOVE_DOUBLE_EDGE
@@ -1736,7 +1737,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_SHAYMIN, 1 // for testing change to buneary
+        pokemon SPECIES_IRON_VALIANT
         item ITEM_CHOICE_SCARF
         move MOVE_ENERGY_BALL
         move MOVE_EARTH_POWER

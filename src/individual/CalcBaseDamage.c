@@ -242,6 +242,13 @@ int CalcBaseDamage(void *bw, struct BattleStruct *sp, int moveno, u32 side_cond,
     // handle charge
     if ((sp->battlemon[attacker].effect_of_moves & MOVE_EFFECT_FLAG_CHARGE) && (movetype == TYPE_ELECTRIC))
         movepower *= 2;
+	
+	// teravolt/turboblaze buffs
+	if ((AttackingMon.ability == ABILITY_TERAVOLT) && (movetype == TYPE_ELECTRIC))
+         sp->damage = sp->damage * 150 / 100;
+	
+	if ((AttackingMon.ability == ABILITY_TURBOBLAZE) && (movetype == TYPE_FIRE))
+         movepower = movepower * 15 / 10;
 
     // handle helping hand
     if (sp->oneTurnFlag[attacker].helping_hand_flag)

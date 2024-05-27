@@ -2713,7 +2713,7 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp) {
 
     int client_no = 0;  // initialize
     u8 count = 0;
-    int client_set_max, i, lowerBound, sunAddress, rainAddress, windsAddress, starsAddress, failAddress;
+    int client_set_max, i, lowerBound, sunAddress, rainAddress, windsAddress, failAddress;
 
     IncrementBattleScriptPtr(sp, 1);
 
@@ -2721,12 +2721,11 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp) {
     sunAddress = read_battle_script_param(sp);
     rainAddress = read_battle_script_param(sp);
     windsAddress = read_battle_script_param(sp);
-	starsAddress = read_battle_script_param(sp);
     failAddress = read_battle_script_param(sp);
 
     client_set_max = BattleWorkClientSetMaxGet(bw);
 
-    u32 currentPrimalWeather = sp->field_condition & (WEATHER_EXTREMELY_HARSH_SUNLIGHT | WEATHER_HEAVY_RAIN | WEATHER_STRONG_WINDS | WEATHER_STARSTORM);
+    u32 currentPrimalWeather = sp->field_condition & (WEATHER_EXTREMELY_HARSH_SUNLIGHT | WEATHER_HEAVY_RAIN | WEATHER_STRONG_WINDS);
 
     if (currentPrimalWeather) {
         for (i = 0; i < client_set_max; i++) {
@@ -2747,11 +2746,6 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp) {
                         count++;
                     }
                     break;
-				case WEATHER_STARSTORM:
-					if (GetBattlerAbility(sp, client_no) == ABILITY_STENCH && sp->battlemon[client_no].hp != 0) { //placeholder ability
-                        count++;
-                    }
-					break;
                 default:
                     break;
             }
@@ -2783,12 +2777,6 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp) {
                 // sprintf(buf, "WEATHER_STRONG_WINDS\n");
                 // debugsyscall(buf);
                 IncrementBattleScriptPtr(sp, windsAddress);
-                return FALSE;
-                break;
-			case WEATHER_STARSTORM:
-                // sprintf(buf, "WEATHER_STARSTORM\n");
-                // debugsyscall(buf);
-                IncrementBattleScriptPtr(sp, starsAddress);
                 return FALSE;
                 break;
 				

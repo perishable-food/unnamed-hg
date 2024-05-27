@@ -221,10 +221,6 @@ int MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int 
         scriptnum = SUB_SEQ_CANCEL_FIRE_MOVE;
     }
 	
-	/*if ((sp->field_condition & WEATHER_STARSTORM) && (movetype == TYPE_GROUND)) {
-        scriptnum = SUB_SEQ_CANCEL_FIRE_MOVE;
-    }
-*/
     return scriptnum;
 }
 
