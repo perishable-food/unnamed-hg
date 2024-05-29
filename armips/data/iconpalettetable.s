@@ -1384,8 +1384,8 @@ gIconPalTable:
 /* SPECIES_OGERPON_CORNERSTONE_MASK    */ .byte  0x0
 /* SPECIES_TERAPAGOS_STELLAR           */ .byte  0x0
 /* SPECIES_URSALUNA_BLOODMOON          */ .byte  0x2
-/* SPECIES_BUNEARY_SAISANN			   */ .byte  0x0
-/* SPECIES_LOPUNNY_SAISANN       	   */ .byte  0x0
+/* SPECIES_BUNEARY_SAISANN			   */ .byte  0x2
+/* SPECIES_LOPUNNY_SAISANN       	   */ .byte  0x2
 
 .endarea
 
