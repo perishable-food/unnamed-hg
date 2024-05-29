@@ -3919,4 +3919,11 @@ eggmoveentry SPECIES_FRILLISH_FEMALE
 	eggmove MOVE_PAIN_SPLIT
 	eggmove MOVE_RECOVER
 
+eggmoveentry SPECIES_BUNEARY_SAISANN
+	eggmove MOVE_GLACIATE
+	eggmove MOVE_GEOMANCY
+	eggmove MOVE_FLEUR_CANNON
+	eggmove MOVE_MIST
+	eggmove MOVE_RECOVER
+
 terminateeggmoves

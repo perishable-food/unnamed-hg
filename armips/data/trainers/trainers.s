@@ -1718,7 +1718,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        pokemon SPECIES_CHI_YU
+        monwithform SPECIES_LOPUNNY, 2
         item ITEM_SALAMENCITE
         move MOVE_ROCK_SLIDE
         move MOVE_DOUBLE_EDGE
@@ -1737,7 +1737,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        pokemon SPECIES_IRON_VALIANT
+        monwithform SPECIES_BUNEARY, 1
         item ITEM_CHOICE_SCARF
         move MOVE_ENERGY_BALL
         move MOVE_EARTH_POWER

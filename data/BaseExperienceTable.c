@@ -1317,4 +1317,6 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_OGERPON_CORNERSTONE_MASK    ] = 690,
     [SPECIES_TERAPAGOS_STELLAR           ] = 690, // TODO verify
     [SPECIES_URSALUNA_BLOODMOON          ] = 690,
+	[SPECIES_BUNEARY_SAISANN             ] = 690,
+    [SPECIES_LOPUNNY_SAISANN             ] = 690,
 };
