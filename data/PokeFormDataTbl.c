@@ -1713,19 +1713,19 @@ const struct FormData UNUSED PokeFormDataTbl[]=
     {
         .species = SPECIES_OGERPON,
         .form_no = 1,
-        .need_rev = 0,
+        .need_rev = 1,
         .file = SPECIES_OGERPON_WELLSPRING_MASK,
     },
     {
         .species = SPECIES_OGERPON,
         .form_no = 2,
-        .need_rev = 0,
+        .need_rev = 1,
         .file = SPECIES_OGERPON_HEARTHFLAME_MASK,
     },
     {
         .species = SPECIES_OGERPON,
         .form_no = 3,
-        .need_rev = 0,
+        .need_rev = 1,
         .file = SPECIES_OGERPON_CORNERSTONE_MASK,
     },
     {
@@ -1745,5 +1745,17 @@ const struct FormData UNUSED PokeFormDataTbl[]=
         .form_no = 2,
         .need_rev = 0,
         .file = SPECIES_LOPUNNY_SAISANN,
+	},
+	{
+        .species = SPECIES_DEOXYS,
+        .form_no = 4,
+        .need_rev = 1,
+        .file = SPECIES_DEOXYS_ABSOLUTE,
+    },
+	{
+        .species = SPECIES_OGERPON,
+        .form_no = 4,
+        .need_rev = 1,
+        .file = SPECIES_OGERPON_TEAL_MASK,
     },
 };

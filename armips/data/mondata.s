@@ -27450,3 +27450,36 @@ mondata SPECIES_LOPUNNY_SAISANN, "-----"
     abilities ABILITY_TOUGH_CLAWS, ABILITY_REFRIGERATE
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
+
+mondata SPECIES_DEOXYS_ABSOLUTE, "-----"
+    basestats 50, 152, 132, 152, 152, 135
+    types TYPE_PSYCHIC, TYPE_ROCK
+    catchrate 20
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 3, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_SAND_STREAM, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_RED, 0
+
+mondata SPECIES_OGERPON_TEAL_MASK, "-----"
+    basestats 80, 120, 84, 110, 60, 96
+    types TYPE_GRASS, TYPE_GRASS
+    catchrate 5
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 254
+    eggcycles 10
+    basefriendship 50
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_DEFIANT, ABILITY_CUTE_CHARM
+    runchance 0
+    colorflip BODY_COLOR_GREEN, 0
+   

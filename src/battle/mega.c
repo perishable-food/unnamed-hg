@@ -257,9 +257,9 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
-        .monindex = SPECIES_DIANCIE,
-        .itemindex = ITEM_DIANCITE,
-        .form = 1,
+        .monindex = SPECIES_DEOXYS,
+        .itemindex = ITEM_RED_CHAIN,
+        .form = 4,
     },
 };
 
@@ -268,6 +268,11 @@ const struct MegaStructMove sMegaMoveTable[] =
     {
         .monindex = SPECIES_RAYQUAZA,
         .moveindex = MOVE_DRAGON_ASCENT,
+        .form = 1,
+    },
+	{
+        .monindex = SPECIES_DIANCIE,
+        .moveindex = MOVE_DIAMOND_STORM,
         .form = 1,
     },
 };

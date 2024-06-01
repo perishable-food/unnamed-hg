@@ -1319,4 +1319,6 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_URSALUNA_BLOODMOON          ] = 690,
 	[SPECIES_BUNEARY_SAISANN             ] = 690,
     [SPECIES_LOPUNNY_SAISANN             ] = 690,
+	[SPECIES_DEOXYS_ABSOLUTE			 ] = 690,
+	[SPECIES_OGERPON_TEAL_MASK    ] = 690,
 };

@@ -172,12 +172,12 @@ const u16 *_0210FA3C[] = {
 .org 0x020FBBB4
 /* This spills over into _020FBBC6 */
 /* Goldenrod Dept Store 3F & Celadon Dept Store 5F -> Chansey Supply 1 */ 
-.halfword ITEM_HP_UP
-.halfword ITEM_PROTEIN
-.halfword ITEM_IRON
-.halfword ITEM_CALCIUM
-.halfword ITEM_ZINC
-.halfword ITEM_CARBOS
+.halfword ITEM_POMEG_BERRY
+.halfword ITEM_KELPSY_BERRY
+.halfword ITEM_QUALOT_BERRY
+.halfword ITEM_HONDEW_BERRY
+.halfword ITEM_GREPA_BERRY
+.halfword ITEM_TAMATO_BERRY
 .halfword ITEM_POWER_WEIGHT
 .halfword ITEM_POWER_BRACER
 .halfword ITEM_POWER_BELT

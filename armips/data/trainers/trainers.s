@@ -1718,96 +1718,96 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_LOPUNNY, 2
-        item ITEM_SALAMENCITE
-        move MOVE_ROCK_SLIDE
-        move MOVE_DOUBLE_EDGE
-        move MOVE_DRAGON_DANCE
-        move MOVE_DRAGON_CLAW
+        monwithform SPECIES_OGERPON, 2
+        item ITEM_RED_CHAIN
+        move MOVE_MEMENTO
+        move MOVE_NONE
+        move MOVE_NONE
+        move MOVE_NONE
         ability ABILITY_STENCH
         ball ITEM_POKE_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 252, 0, 252, 0, 0
         nature NATURE_JOLLY
         shinylock 1
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _D, _i_, _l_, _u_, _c_, _endstr, 0, 0, 0, 0, 0
+        additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		//nickname _D, _i_, _l_, _u_, _c_, _endstr, 0, 0, 0, 0, 0
         ballseal 0
     
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_BUNEARY, 1
+        monwithform SPECIES_OGERPON, 1
         item ITEM_CHOICE_SCARF
-        move MOVE_ENERGY_BALL
-        move MOVE_EARTH_POWER
-        move MOVE_AIR_SLASH
-        move MOVE_SEED_FLARE
-        ability ABILITY_MULTITYPE
+        move MOVE_MEMENTO
+        move MOVE_NONE
+        move MOVE_NONE
+        move MOVE_NONE
+        ability ABILITY_DEFIANT
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 0, 0, 252, 252, 0
         nature NATURE_TIMID
         shinylock 1
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _S, _e_, _r_, _e_, _n_, _i_, _t_, _y_, _endstr, 0, 0
+        additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		//nickname _S, _e_, _r_, _e_, _n_, _i_, _t_, _y_, _endstr, 0, 0
         ballseal 0
 		
 		ivs 200
         abilityslot 2
         level 1
-        pokemon SPECIES_EMOLGA
+        monwithform SPECIES_OGERPON, 2
         item ITEM_LEFTOVERS
-        move MOVE_VOLT_SWITCH
-        move MOVE_THUNDERBOLT
-        move MOVE_AIR_SLASH
-        move MOVE_THUNDER_WAVE
+        move MOVE_MEMENTO
+        move MOVE_NONE
+        move MOVE_NONE
+        move MOVE_NONE
         ability ABILITY_MOTOR_DRIVE
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 0, 0, 252, 252, 0
         nature NATURE_TIMID
         shinylock 0
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _A, _c_, _r_, _o_, _endstr, 0, 0, 0, 0, 0, 0
+        additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		//nickname _A, _c_, _r_, _o_, _endstr, 0, 0, 0, 0, 0, 0
         ballseal 0
 		
 		ivs 200
         abilityslot 1
         level 1
-        pokemon SPECIES_MIENSHAO
+        monwithform SPECIES_OGERPON, 3
         item ITEM_LIFE_ORB
-        move MOVE_FAKE_OUT
-        move MOVE_HIGH_JUMP_KICK
-        move MOVE_U_TURN
-        move MOVE_KNOCK_OFF
+        move MOVE_MEMENTO
+        move MOVE_NONE
+        move MOVE_NONE
+        move MOVE_NONE
         ability ABILITY_REGENERATOR
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 252, 0, 252, 0, 0
         nature NATURE_JOLLY
         shinylock 0
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _E, _n_, _t_, _o_, _u_, _r_, _a_, _g_, _e_, _endstr, 0
+        additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		//nickname _E, _n_, _t_, _o_, _u_, _r_, _a_, _g_, _e_, _endstr, 0
         ballseal 0
 		
 		ivs 200
         abilityslot 2
         level 1
-        pokemon SPECIES_TYRANTRUM
+        monwithform SPECIES_OGERPON, 4
         item ITEM_LIFE_ORB
-        move MOVE_HEAD_SMASH
-        move MOVE_EARTHQUAKE
-        move MOVE_DRAGON_CLAW
-        move MOVE_DRAGON_DANCE
+        move MOVE_MEMENTO
+        move MOVE_NONE
+        move MOVE_NONE
+        move MOVE_NONE
         ability ABILITY_ROCK_HEAD
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 252, 0, 252, 0, 0
         nature NATURE_JOLLY
         shinylock 0
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _B, _e_, _w_, _i_, _l_, _d_, _r_, _o_, _c_, _k_, _endstr
+        additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		//nickname _B, _e_, _w_, _i_, _l_, _d_, _r_, _o_, _c_, _k_, _endstr
         ballseal 0
 		
 		ivs 200

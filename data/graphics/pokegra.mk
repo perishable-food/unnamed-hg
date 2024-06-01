@@ -36846,6 +36846,60 @@ build/pokemonicon/1_1363.NCGR: data/graphics/sprites/lopunny_saisann/icon.png
 ICONGFX_OBJS += build/pokemonicon/1_1363.NCGR
 
 
+build/pokemonpic/1364-00.NCGR: data/graphics/sprites/deoxys_absolute/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1364-01.NCGR: data/graphics/sprites/deoxys_absolute/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1364-02.NCGR: data/graphics/sprites/deoxys_absolute/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1364-03.NCGR: data/graphics/sprites/deoxys_absolute/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1364-04.NCLR: data/graphics/sprites/deoxys_absolute/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1364-05.NCLR: data/graphics/sprites/deoxys_absolute/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1364-00.NCGR build/pokemonpic/1364-01.NCGR build/pokemonpic/1364-02.NCGR build/pokemonpic/1364-03.NCGR build/pokemonpic/1364-04.NCLR build/pokemonpic/1364-05.NCLR
+build/pokemonicon/1_1364.NCGR: data/graphics/sprites/deoxys_absolute/icon.png
+	$(GFX) $< $@ -clobbersize -version101
+
+ICONGFX_OBJS += build/pokemonicon/1_1364.NCGR
+
+
+build/pokemonpic/1365-00.NCGR: data/graphics/sprites/ogerpon_teal_mask/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1365-01.NCGR: data/graphics/sprites/ogerpon_teal_mask/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1365-02.NCGR: data/graphics/sprites/ogerpon_teal_mask/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1365-03.NCGR: data/graphics/sprites/ogerpon_teal_mask/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1365-04.NCLR: data/graphics/sprites/ogerpon_teal_mask/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1365-05.NCLR: data/graphics/sprites/ogerpon_teal_mask/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1365-00.NCGR build/pokemonpic/1365-01.NCGR build/pokemonpic/1365-02.NCGR build/pokemonpic/1365-03.NCGR build/pokemonpic/1365-04.NCLR build/pokemonpic/1365-05.NCLR
+build/pokemonicon/1_1365.NCGR: data/graphics/sprites/ogerpon_teal_mask/icon.png
+	$(GFX) $< $@ -clobbersize -version101
+
+ICONGFX_OBJS += build/pokemonicon/1_1365.NCGR
+
+
 $(POKEGRA_NARC): $(POKEGRA_DEPENDENCIES)
 	$(NARCHIVE) create $@ $(POKEGRA_BUILD_DIR) -nf
 
