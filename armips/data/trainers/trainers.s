@@ -1718,7 +1718,7 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_OGERPON, 2
+        monwithform SPECIES_OGERPON, 4
         item ITEM_RED_CHAIN
         move MOVE_MEMENTO
         move MOVE_NONE
@@ -1729,7 +1729,7 @@ trainerdata 40, "Bagon"
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 252, 0, 252, 0, 0
         nature NATURE_JOLLY
-        shinylock 1
+        shinylock 0
         additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
 		//nickname _D, _i_, _l_, _u_, _c_, _endstr, 0, 0, 0, 0, 0
         ballseal 0
@@ -1737,18 +1737,18 @@ trainerdata 40, "Bagon"
         ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_OGERPON, 1
-        item ITEM_CHOICE_SCARF
+        pokemon SPECIES_OGERPON 
+        item ITEM_ULTRA_BALL
         move MOVE_MEMENTO
         move MOVE_NONE
         move MOVE_NONE
         move MOVE_NONE
-        ability ABILITY_DEFIANT
+        ability ABILITY_STALL
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
         setevs 6, 0, 0, 252, 252, 0
         nature NATURE_TIMID
-        shinylock 1
+        shinylock 0
         additionalflags 0 //TRAINER_DATA_EXTRA_TYPE_NICKNAME
 		//nickname _S, _e_, _r_, _e_, _n_, _i_, _t_, _y_, _endstr, 0, 0
         ballseal 0
@@ -8742,19 +8742,19 @@ trainerdata 254, "Misty"
     party 35
         // mon 0
         ivs 200
-        abilityslot 0
-        level 1 
-        pokemon SPECIES_KYOGRE
-        item ITEM_BLUE_ORB
-        move MOVE_WATER_SPOUT
+        abilityslot 32
+        level 1
+        pokemon SPECIES_POLITOED
+        item ITEM_DAMP_ROCK
+        move MOVE_WEATHER_BALL
+        move MOVE_FOLLOW_ME
         move MOVE_PROTECT
-        move MOVE_THUNDER
-        move MOVE_ICE_BEAM
+        move MOVE_THUNDER_WAVE
 		ability ABILITY_DRIZZLE
-		setivs 31, 31, 31, 31, 31, 31
-		setevs 4, 0, 0, 252, 252, 0
-		nature NATURE_MODEST
-		shinylock 1
+		setivs 31, 0, 31, 31, 31, 31
+		setevs 252, 0, 252, 0, 4, 0
+		nature NATURE_BOLD
+		shinylock 0
 		additionalflags 0
         ballseal 0
 
@@ -8798,33 +8798,33 @@ trainerdata 254, "Misty"
         ivs 200
         abilityslot 32
         level 1
-        monwithform SPECIES_ARCANINE, 1
-        item ITEM_PASSHO_BERRY
-        move MOVE_WILL_O_WISP
-        move MOVE_EXTREME_SPEED
-        move MOVE_PROTECT
-        move MOVE_FLARE_BLITZ
-		ability ABILITY_INTIMIDATE
+        monwithform SPECIES_PALAFIN, 1
+        item ITEM_CHOICE_BAND
+        move MOVE_WAVE_CRASH
+        move MOVE_CLOSE_COMBAT
+        move MOVE_ICE_PUNCH
+        move MOVE_DRAIN_PUNCH
+		ability ABILITY_SWIFT_SWIM
 		setivs 31, 0, 31, 31, 31, 31
-		setevs 0, 252, 252, 4, 0, 0
-		nature NATURE_IMPISH
-		shinylock 0
+		setevs 4, 252, 0, 252, 0, 0
+		nature NATURE_ADAMANT
+		shinylock 1
 		additionalflags 0
         ballseal 0
 		
 		ivs 200
 		abilityslot 32
 		level 1
-		pokemon SPECIES_OMASTAR
-		item ITEM_FOCUS_SASH
-		move MOVE_ROCK_BLAST
-		move MOVE_LIQUIDATION
-		move MOVE_SHELL_SMASH
-		move MOVE_PIN_MISSILE
-		ability ABILITY_SHARPNESS
+		pokemon SPECIES_MANAPHY
+		item ITEM_LEFTOVERS
+		move MOVE_REST
+		move MOVE_TAIL_GLOW
+		move MOVE_SCALD
+		move MOVE_ENERGY_BALL
+		ability ABILITY_HYDRATION
 		setivs 31, 31, 31, 31, 31, 31
-		setevs 4, 252, 0, 252, 0, 0
-		nature NATURE_JOLLY
+		setevs 4, 0, 0, 252, 0, 252
+		nature NATURE_TIMID
 		shinylock 0
 		additionalflags 0
 		ballseal 0
@@ -8851,9 +8851,9 @@ trainerdata 255, "Lt. Surge"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES
     trainerclass CLASS_LEADER_7
     nummons 5
-    item ITEM_FULL_RESTORE
-    item ITEM_FULL_RESTORE
-    item ITEM_FULL_RESTORE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
     item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
     battletype SINGLE_BATTLE
