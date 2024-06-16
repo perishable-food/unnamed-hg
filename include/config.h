@@ -102,7 +102,7 @@
 // 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon
 // Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
 // uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
-#define IMPLEMENT_SCALING 1
+#define IMPLEMENT_SCALING 2
 #define SCALING_TYPE_VARIABLE 0x406A
 
 // RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle

@@ -1834,10 +1834,8 @@ _1044: // Trainer 55
     trainertextentry  55, TEXT_DEFEATED_IN_BATTLE, "It is my head that is bright!\n"
     trainertextentry  55, TEXT_DEFEATED_IN_OVERWORLD, "Let there be light on your journey.\n"
 
-_1050: // Trainer 290
-    trainertextentry 290, TEXT_NOTICE_IN_OVERWORLD, "So good of you to come here!\rSprout Tower is a place of training.\nPeople and Pokémon test their bonds\fto build a bright future together.\fI am the final test.\rAllow me to check the ties between\nyou and your Pokémon!"
-    trainertextentry 290, TEXT_DEFEATED_IN_BATTLE, "Ah, excellent!\n"
-    trainertextentry 290, TEXT_DEFEATED_IN_OVERWORLD, "You and your Pokémon should have no\nproblem using this move.\rTake this Flash TM.\n"
+_1050: // Trainer 292
+    trainertextentry 292, TEXT_DEFEATED_IN_BATTLE, "Ah, excellent!\n"
 
 _105C: // Trainer 281
     trainertextentry 281, TEXT_NOTICE_IN_OVERWORLD, "I’m practicing my fire breathing in the\nBurned Tower! Don’t try this at home!\r"
@@ -3415,7 +3413,7 @@ _1AD0: // Trainer 630
 /* Trainer 287 */ .halfword _0104
 /* Trainer 288 */ .halfword _0084
 /* Trainer 289 */ .halfword _0094
-/* Trainer 290 */ .halfword _1050
+/* Trainer 292 */ .halfword _1050
 /* Trainer 291 */ .halfword _08BC
 /* Trainer 292 */ .halfword _0000
 /* Trainer 293 */ .halfword _08D4
