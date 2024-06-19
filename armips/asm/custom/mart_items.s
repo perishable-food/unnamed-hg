@@ -6,7 +6,7 @@
 
 .open "base/arm9.bin", 0x02000000
 
-/* Values for badge restrictions as it isn't 1:1 */
+/* Values for badge restrictions as it isnt 1:1 */
 ZERO_BADGES equ 1
 ONE_BADGE equ 2
 THREE_BADGES equ 3
@@ -17,7 +17,7 @@ EIGHT_BADGES equ 6
 /* General Poké Mart Table */
 .org 0x020FBF22
 
-.halfword ITEM_LONELY_MINT
+.halfword ITEM_POKE_BALL
 .halfword ZERO_BADGES
 
 .halfword ITEM_GREAT_BALL
@@ -26,7 +26,7 @@ EIGHT_BADGES equ 6
 .halfword ITEM_ULTRA_BALL
 .halfword THREE_BADGES
 
-.halfword ITEM_ADAMANT_MINT
+.halfword ITEM_POTION
 .halfword ZERO_BADGES
 
 .halfword ITEM_SUPER_POTION
@@ -112,9 +112,9 @@ const u16 *_0210FA3C[] = {
 /* const u16 _020FBA54[] = {ITEM_AIR_MAIL, ITEM_HEAL_BALL, 0xFFFF}; */
 /* Cherrygrove City 2nd Clerk -> Violet City 2nd Clerk */
 .org 0x020FBA54
-.halfword ITEM_HEAL_BALL
-.halfword ITEM_NET_BALL
-.halfword 0xFFFF
+.halfword ITEM_MYSTIC_WATER
+.halfword ITEM_MIRACLE_SEED
+.halfword ITEM_CHARCOAL
 
 /* const u16 _020FBA5A[] = {ITEM_AIR_MAIL, ITEM_QUICK_BALL, 0xFFFF}; */
 
@@ -196,14 +196,14 @@ const u16 *_0210FA3C[] = {
 
 .org 0x020FBBD8
 /* Mahogany Shop -> Goldenrod/Celadon Dept Store */
-.halfword ITEM_POMEG_BERRY
-.halfword ITEM_KELPSY_BERRY
-.halfword ITEM_QUALOT_BERRY
-.halfword ITEM_HONDEW_BERRY
-.halfword ITEM_GREPA_BERRY
-.halfword ITEM_TAMATO_BERRY
-.halfword ITEM_LUM_BERRY
-.halfword ITEM_STARF_BERRY
+.halfword ITEM_SUN_STONE
+.halfword ITEM_MOON_STONE
+.halfword ITEM_FIRE_STONE
+.halfword ITEM_THUNDER_STONE
+.halfword ITEM_WATER_STONE
+.halfword ITEM_LEAF_STONE
+.halfword ITEM_ICE_STONE
+.halfword ITEM_EVERSTONE
 .halfword 0xFFFF
 
 /* const u16 _020FBBEA[] = {ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_ANTIDOTE, ITEM_PARLYZ_HEAL, ITEM_BURN_HEAL, ITEM_ICE_HEAL, ITEM_AWAKENING, ITEM_FULL_HEAL, 0xFFFF}; */
@@ -244,42 +244,24 @@ const u16 *_0210FA3C[] = {
 
 .org 0x020FBC34
 /* Goldenrod Dept Store 5F -> Goldenrod Dept Store 5F still (also Celadon 3F) */
-.halfword ITEM_SUN_STONE
-.halfword ITEM_MOON_STONE
-.halfword ITEM_FIRE_STONE
-.halfword ITEM_THUNDER_STONE
-.halfword ITEM_WATER_STONE
-.halfword ITEM_LEAF_STONE
-.halfword ITEM_ICE_STONE
-.halfword ITEM_EVERSTONE
-.halfword 0xFFFF
-.halfword 0xFFFF
-.halfword 0xFFFF
-.halfword 0xFFFF
+.halfword ITEM_TM70
+.halfword ITEM_TM17
+.halfword ITEM_TM54
+.halfword ITEM_TM83
+.halfword ITEM_TM16
+.halfword ITEM_TM33
+.halfword ITEM_TM22
+.halfword ITEM_TM52
+.halfword ITEM_TM38
+.halfword ITEM_TM25
+.halfword ITEM_TM14
+.halfword ITEM_TM15
 .halfword 0xFFFF
 
 /* const u16 _020FBC4E[] = {ITEM_POKE_BALL, ITEM_GREAT_BALL, ITEM_ULTRA_BALL, ITEM_ESCAPE_ROPE, ITEM_POKE_DOLL, ITEM_REPEL, ITEM_SUPER_REPEL, ITEM_MAX_REPEL, ITEM_GRASS_MAIL, ITEM_FLAME_MAIL, ITEM_BUBBLE_MAIL, ITEM_SPACE_MAIL, 0xFFFF}; */
 
 .org 0x020FBC4E
 /* Celadon Dept Store 2F -> Safari Zone Gate */
-.halfword ITEM_FULL_INCENSE
-.halfword ITEM_LAX_INCENSE
-.halfword ITEM_LUCK_INCENSE
-.halfword ITEM_ODD_INCENSE
-.halfword ITEM_PURE_INCENSE
-.halfword ITEM_ROCK_INCENSE
-.halfword ITEM_ROSE_INCENSE
-.halfword ITEM_SEA_INCENSE
-.halfword ITEM_WAVE_INCENSE
-.halfword 0xFFFF
-.halfword 0xFFFF
-.halfword 0xFFFF
-.halfword 0xFFFF
-
-/* const u16 _020FBC68[] = {ITEM_TM21, ITEM_TM27, ITEM_TM87, ITEM_TM78, ITEM_TM12, ITEM_TM41, ITEM_TM20, ITEM_TM28, ITEM_TM76, ITEM_TM55, ITEM_TM72, ITEM_TM79, 0xFFFF}; */
-
-.org 0x020FBC68
-/* Celadon Dept Store 3F -> Safari Zone Gate */
 .halfword ITEM_SHINY_STONE
 .halfword ITEM_DUSK_STONE
 .halfword ITEM_DAWN_STONE
@@ -292,6 +274,24 @@ const u16 *_0210FA3C[] = {
 .halfword ITEM_SACHET
 .halfword ITEM_UP_GRADE
 .halfword ITEM_WHIPPED_DREAM
+.halfword 0xFFFF
+
+/* const u16 _020FBC68[] = {ITEM_TM21, ITEM_TM27, ITEM_TM87, ITEM_TM78, ITEM_TM12, ITEM_TM41, ITEM_TM20, ITEM_TM28, ITEM_TM76, ITEM_TM55, ITEM_TM72, ITEM_TM79, 0xFFFF}; */
+
+.org 0x020FBC68
+/* Celadon Dept Store 3F -> Safari Zone Gate */
+.halfword ITEM_TM21
+.halfword ITEM_TM27
+.halfword ITEM_TM87
+.halfword ITEM_TM78
+.halfword ITEM_TM12
+.halfword ITEM_TM41
+.halfword ITEM_TM20
+.halfword ITEM_TM28
+.halfword ITEM_TM76
+.halfword ITEM_TM55
+.halfword ITEM_TM72
+.halfword ITEM_TM79
 .halfword 0xFFFF
 
 .close
