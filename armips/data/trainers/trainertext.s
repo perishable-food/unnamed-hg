@@ -535,7 +535,7 @@ _03DC: // Trainer 701
 _03E8: // Trainer 261
     trainertextentry 261, TEXT_LAST_MON_CRITICAL, "Heh heh heh... You’re unprepared\nfor this. We’ll knock you down!\n"
     trainertextentry 261, TEXT_LAST_MON_SENT_OUT, "Perhaps I’m the one who was\nunprepared?\n"
-    trainertextentry 261, TEXT_DEFEATED_IN_BATTLE, "This is the real power of Johto...\n"
+    trainertextentry 261, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "This is the real power of Johto...\n"
 
 _03F4: // Trainer 253
     trainertextentry 253, TEXT_LAST_MON_CRITICAL, "Ah ha ha! It itches! It itches!\n"
@@ -565,7 +565,7 @@ _0424: // Trainer 257
 _0430: // Trainer 258
     trainertextentry 258, TEXT_LAST_MON_CRITICAL, "What will happen after this?\nI already know.\n"
     trainertextentry 258, TEXT_LAST_MON_SENT_OUT, "Was the future I saw...wrong?\n"
-    trainertextentry 258, TEXT_DEFEATED_IN_BATTLE, "I get it...\n"
+    trainertextentry 258, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I get it...\n"
 
 _043C: // Trainer 259
     trainertextentry 259, TEXT_LAST_MON_CRITICAL, "I’ll show you the spirit of this\ncave Gym!\n"
