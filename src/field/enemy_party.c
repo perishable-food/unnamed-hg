@@ -47,7 +47,7 @@ extern u32 gLastPokemonLevelForMoneyCalc;
 /**
  *  @brief get which dynamic scaling formula to apply from the script variable defined by SCALING_TYPE_VARIABLE
  *
- *  @return scaling type from LEVEL_CAP_VARIABLE script variable
+ *  @return scaling type from SCALING_TYPE_VARIABLE script variable
  */
 u32 GetScalingType(void)
 {
@@ -66,23 +66,30 @@ u32 GetScalingType(void)
 	struct PartyPokemon *pp;
 	struct Party *party = bp->poke_party[0];
 	s32 playerCount = bp->poke_party[0]->count;
-	u16 newLevel; //begin avg level implementation
+	u16 avgLevel; //begin avg level implementation
 	u16 totalLevel = 0;
 	for (i = 0; i < playerCount; i++) {
 		pp = Party_GetMonByIndex(party, i);
 		u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
 		totalLevel += currLevel;
 	}
-	newLevel = (int)(totalLevel / playerCount);//end avg level implementation
+	avgLevel = (int)(totalLevel / playerCount);//end avg level implementation
 	 
-	return newLevel;
+	return avgLevel;
 	
  }
  
  /**
  * replace code between comments in above function with below to scale to highest level
- 
-	 u16 highestLevel = 0;
+ */ 
+u16 GetHighLevel(struct BATTLE_PARAM *bp)
+ {
+	int i;
+	struct PartyPokemon *pp;
+	struct Party *party = bp->poke_party[0];
+	s32 playerCount = bp->poke_party[0]->count;
+	u16 highLevel;
+	u16 highestLevel = 0;
 	 for (i = 0; i < playerCount; i++) {
 		 pp = Party_GetMonByIndex(party, i);
 		 u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
@@ -90,22 +97,12 @@ u32 GetScalingType(void)
 			 highestLevel = currLevel;
 		 }
 	 }
-	 newLevel = highestLevel;
-	 
- * or with below to get lowest level in Party
-	 u16 lowestLevel = 100;
-	 for (i = 0; i < playerCount; i++) {
-		 pp = Party_GetMonByIndex(party, i);
-		 u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
-		 if (currLevel < lowestLevel) {
-			 lowestLevel = currLevel;
-		 }
-	 }
-	 newLevel = lowestLevel;
- *
- */
- 
+	  highLevel = highestLevel;
 
+	 return highLevel;
+ }
+
+	 
 /**
  *  @brief create the trainer Party from the trainer data file and trainer party file
  *
@@ -153,10 +150,11 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
     u16 *nickname = sys_AllocMemory(heapID, 11*sizeof(u16));
     u8 form_no = 0, abilityslot = 0, nature = 0, ballseal = 0, shinylock = 0, status = 0, ab1 = 0, ab2 = 0;
     u32 additionalflags = 0;
-	u16 newLevel = GetScaledLevel(bp);
 	
 	#ifdef IMPLEMENT_SCALING
 	u32 DoScaling = GetScalingType();
+	u16 avgLevel = GetScaledLevel(bp);
+	u16 highLevel = GetHighLevel(bp);
 	#endif
 	
 	int partyOrder[pokecount];
@@ -209,10 +207,13 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 
         // level field
 		level = buf[offset] | (buf[offset+1] << 8);
-        gLastPokemonLevelForMoneyCalc = level; // ends up being the last level at the end of the loop that we use for the money calc loop default case
+        gLastPokemonLevelForMoneyCalc = highLevel; // ends up being the last level at the end of the loop that we use for the money calc loop default case
         offset += 2;
-		if ((DoScaling != 0) && newLevel >= level) {
-			level = newLevel;
+		if ((DoScaling == 1) && avgLevel >= level) {
+			level = avgLevel;
+		}
+		if ((DoScaling == 2) && highLevel >= level) {
+			level = highLevel;
 		}
 
         // species field
