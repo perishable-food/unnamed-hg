@@ -19,7 +19,7 @@
 
 
 
-#define NELEMS_POKEFORMDATATBL 289
+#define NELEMS_POKEFORMDATATBL 290
 
 
 extern u32 word_to_store_form_at;

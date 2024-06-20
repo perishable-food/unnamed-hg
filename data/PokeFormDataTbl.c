@@ -1758,4 +1758,10 @@ const struct FormData UNUSED PokeFormDataTbl[]=
         .need_rev = 1,
         .file = SPECIES_OGERPON_TEAL_MASK,
     },
+	{
+		.species = SPECIES_MEWTWO,
+        .form_no = 3,
+        .need_rev = 0,
+        .file = SPECIES_MEWTWO_ARMORED,
+    },
 };

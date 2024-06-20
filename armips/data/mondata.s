@@ -23156,7 +23156,7 @@ mondata SPECIES_MEGA_BANETTE, "-----"
 
 mondata SPECIES_MEGA_ABSOL, "-----"
     basestats 65, 150, 60, 115, 115, 60
-    types TYPE_DARK, TYPE_DARK
+    types TYPE_DARK, TYPE_FAIRY
     catchrate 30
     baseexp 174
     evyields 0, 2, 0, 0, 0, 0
@@ -23166,7 +23166,7 @@ mondata SPECIES_MEGA_ABSOL, "-----"
     basefriendship 35
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
-    abilities ABILITY_INTREPID_SWORD, ABILITY_INTREPID_SWORD //ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE
+    abilities ABILITY_SHARPNESS, ABILITY_SHARPNESS //ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE
     runchance 0
     colorflip 0, 0
 
@@ -27485,3 +27485,18 @@ mondata SPECIES_OGERPON_TEAL_MASK, "-----"
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
    
+mondata SPECIES_MEWTWO_ARMORED, "-----"
+    basestats 96, 100, 80, 120, 144, 80
+    types TYPE_PSYCHIC, TYPE_STEEL
+    catchrate 5
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 10
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_BERSERK, ABILITY_LEVITATE
+    runchance 0
+    colorflip BODY_COLOR_GREEN, 0

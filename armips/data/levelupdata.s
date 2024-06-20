@@ -29156,3 +29156,30 @@ levelup SPECIES_LOPUNNY_SAISANN
 	learnset MOVE_THUNDER_PUNCH, 1
 	learnset MOVE_BULLET_PUNCH, 1
     terminatelearnset
+	
+levelup SPECIES_MEWTWO_ARMORED
+    learnset MOVE_LIFE_DEW, 1
+    learnset MOVE_LASER_FOCUS, 1
+    learnset MOVE_DISABLE, 1
+    learnset MOVE_CONFUSION, 1
+    learnset MOVE_SWIFT, 1
+    learnset MOVE_PSYWAVE, 1
+    learnset MOVE_SAFEGUARD, 1
+    learnset MOVE_ANCIENT_POWER, 8
+    learnset MOVE_SWIFT, 8
+    learnset MOVE_PSYCH_UP, 22
+    learnset MOVE_SAFEGUARD, 24
+    learnset MOVE_PSYCHO_CUT, 25
+    learnset MOVE_MIRACLE_EYE, 29
+    learnset MOVE_POWER_SWAP, 49
+    learnset MOVE_GUARD_SWAP, 49
+    learnset MOVE_PSYCHIC, 52
+    learnset MOVE_AMNESIA, 53
+    learnset MOVE_FUTURE_SIGHT, 53
+    learnset MOVE_AURA_SPHERE, 54
+    learnset MOVE_BARRIER, 64
+    learnset MOVE_RECOVER, 66
+    learnset MOVE_MIST, 74
+    learnset MOVE_PSYSTRIKE, 85
+    learnset MOVE_ME_FIRST, 93
+    terminatelearnset
