@@ -85,3 +85,8 @@ tools/swav2swar.exe
 *:Zone.Identifier
 
 *.ml*
+
+.idea/*
+.idea/.gitignore
+.idea/misc.xml
+.idea/vcs.xml
