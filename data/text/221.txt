@@ -740,7 +740,7 @@ DNA Splicers Description
 Reveal Glass Description
 Prison Bottle Description
 Catching Charm Description
-Exp. Charm Description
+A Poké Ball given to you by Kurt. It's\nsealed shut.
 Oval Charm Description
 Shiny Charm Description
 N Solarizer Description

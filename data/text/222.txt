@@ -740,7 +740,7 @@ DNA Splicers
 Reveal Glass
 Prison Bottle
 Catching Charm
-Exp. Charm
+GS Ball
 Oval Charm
 Shiny Charm
 N Solarizer
