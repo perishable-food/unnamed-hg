@@ -27486,7 +27486,7 @@ mondata SPECIES_OGERPON_TEAL_MASK, "-----"
     colorflip BODY_COLOR_GREEN, 0
    
 mondata SPECIES_MEWTWO_ARMORED, "-----"
-    basestats 96, 100, 80, 120, 144, 80
+    basestats 96, 100, 90, 120, 144, 90
     types TYPE_PSYCHIC, TYPE_STEEL
     catchrate 5
     baseexp 0 // defined in baseexp.s
