@@ -1167,6 +1167,12 @@ _09E0: // Trainer 104
     trainertextentry 104, TEXT_DEFEATED_IN_BATTLE, "Just as I thought!\n"
     trainertextentry 104, TEXT_DEFEATED_IN_OVERWORLD, "A good Trainer can recognize other\ngood Trainers.\n"
 
+_09FA: // ethan, trainer 105
+	trainertextentry 105, TEXT_DEFEATED_IN_BATTLE, "I guess I still have a ways to\ngo..."
+
+_09FB: // lyra, trainer 106
+	trainertextentry 105, TEXT_DEFEATED_IN_BATTLE, "I guess I still have a ways to\ngo..."
+	
 _09EC: // Trainer 114
     trainertextentry 114, TEXT_NOTICE_IN_OVERWORLD, "You came from New Bark Town?\nYou must be exhausted.\r"
     trainertextentry 114, TEXT_DEFEATED_IN_BATTLE, "Oh! You’re much too strong!\n"
@@ -3228,8 +3234,8 @@ _1AD0: // Trainer 630
 /* Trainer 102 */ .halfword _0980
 /* Trainer 103 */ .halfword _09D4
 /* Trainer 104 */ .halfword _09E0
-/* Trainer 105 */ .halfword _0000
-/* Trainer 106 */ .halfword _0000
+/* Trainer 105 */ .halfword _09FA
+/* Trainer 106 */ .halfword _09FB
 /* Trainer 107 */ .halfword _0000
 /* Trainer 108 */ .halfword _0DFC
 /* Trainer 109 */ .halfword _0E8C
