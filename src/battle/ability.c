@@ -591,11 +591,20 @@ BOOL MoveHitAttackerAbilityCheck(void *bw, struct BattleStruct *sp, int *seq_no)
                 && ((sp->waza_status_flag & WAZA_STATUS_FLAG_NO_OUT) == 0))
             {
 
-                if (sp->battlemon[sp->attack_client].species == SPECIES_GRENINJA && sp->battlemon[sp->attack_client].form_no == 1)
+                if (sp->battlemon[sp->attack_client].species != SPECIES_DEOXYS && sp->battlemon[sp->attack_client].form_no == 1)
                 {
                     sp->state_client = sp->attack_client;
                     sp->client_work = sp->attack_client;
                     sp->battlemon[sp->attack_client].form_no = 2;
+                    seq_no[0] = SUB_SEQ_FORM_CHANGE;
+                    ret = TRUE;
+                }
+				
+				if (sp->battlemon[sp->attack_client].species == SPECIES_DEOXYS)
+                {
+                    sp->state_client = sp->attack_client;
+                    sp->client_work = sp->attack_client;
+                    sp->battlemon[sp->attack_client].form_no = 4;
                     seq_no[0] = SUB_SEQ_FORM_CHANGE;
                     ret = TRUE;
                 }
