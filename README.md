@@ -1,4 +1,5 @@
 # hg-engine
+# Note: These instructs are for compiling [Unnamed HeartGold Romhack (UGH)](https://github.com/perishable-food/unnamed-hg), not regular [hg-engine](https://github.com/BluRosie/hg-engine).
 ## About
  A huge upgrade to the battle engine in HeartGold
 
@@ -92,13 +93,13 @@
 ## Further Setup Instructions (All Platforms) (Continued from Individual Sections)
 1. In Terminal/WSL, run the following commands:
     * ```cd Documents```
-    * ```git clone --recursive https://github.com/BluRosie/hg-engine.git```
+    * ```git clone --recursive https://github.com/perishable-food/unnamed-hg.git```
 2. Continue to [Build Instructions](#build-instructions-all-platforms-continued-from-further-setup-instructions)
 
 ## Setup Instructions (Docker)
 If you are using Docker, there is no need for complicated setup or anything.  You just have to clone the git repository:
 * ```cd Documents```
-* ```git clone --recursive https://github.com/BluRosie/hg-engine.git```
+* ```git clone --recursive https://github.com/perishable-food/unnamed-hg.git```
 * ```cd hg-engine```
 
 Docker handles all of the setup for you with relative replicability across platforms.  This abstracts a bit of it away from the user and is slightly slower, but such is the price of simplicity.
