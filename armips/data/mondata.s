@@ -23156,7 +23156,7 @@ mondata SPECIES_MEGA_BANETTE, "-----"
 
 mondata SPECIES_MEGA_ABSOL, "-----"
     basestats 65, 150, 60, 115, 115, 60
-    types TYPE_DARK, TYPE_FAIRY
+    types TYPE_DARK, TYPE_PSYCHIC
     catchrate 30
     baseexp 174
     evyields 0, 2, 0, 0, 0, 0

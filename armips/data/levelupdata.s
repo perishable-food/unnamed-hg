@@ -22633,6 +22633,7 @@ levelup SPECIES_DIPPLIN
     learnset MOVE_RECOVER, 36
     learnset MOVE_ENERGY_BALL, 40
     learnset MOVE_SUBSTITUTE, 44
+	learnset MOVE_DRAGON_CHEER, 54
     terminatelearnset
 
 levelup SPECIES_POLTCHAGEIST

@@ -2533,7 +2533,7 @@ trainerdata 67, "Benny"
 trainerdata 68, "Al"
     trainermontype TRAINER_DATA_TYPE_NOTHING
     trainerclass CLASS_BUG_CATCHER
-    nummons 2
+    nummons 1 // this is a bug that needs to be fixed but im keeping it because its funny
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -24701,7 +24701,7 @@ trainerdata 700, "Giovanni"
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
-    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS 
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS | 0
     battletype DOUBLE_BATTLE 
     endentry
 
@@ -24712,12 +24712,12 @@ trainerdata 700, "Giovanni"
         pokemon SPECIES_RHYPERIOR
         item ITEM_ASSAULT_VEST
         move MOVE_STEALTH_ROCK
-        move MOVE_EARTHQUAKE
-        move MOVE_STONE_EDGE
+        move MOVE_HIGH_HORSEPOWER
+        move MOVE_ROCK_SLIDE
         move MOVE_MEGAHORN
 		ability ABILITY_SOLID_ROCK
 		setivs 31, 31, 31, 31, 31, 31
-		setevs 252, 64, 16, 0, 0, 176
+        setevs 252, 64, 16, 0, 0, 176
 		nature NATURE_CAREFUL
 		shinylock 0
 		additionalflags 0
@@ -24726,7 +24726,7 @@ trainerdata 700, "Giovanni"
         ivs 200
         abilityslot 0
         level 1 
-        monwithform SPECIES_MEWTWO, 1
+        monwithform SPECIES_MEWTWO, 3
         item ITEM_MALICIOUS_ARMOR
         move MOVE_PSYSTRIKE
         move MOVE_THUNDERBOLT
@@ -24743,16 +24743,16 @@ trainerdata 700, "Giovanni"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_NIDOKING
-        item ITEM_LIFE_ORB
-        move MOVE_SLUDGE_WAVE
-        move MOVE_EARTH_POWER
-        move MOVE_THUNDERBOLT
-        move MOVE_ICE_BEAM
-		ability ABILITY_SHEER_FORCE
-		setivs 31, 0, 31, 31, 31, 31
-		setevs 0, 0, 0, 252, 252, 4
-		nature NATURE_TIMID
+        pokemon SPECIES_HONCHKROW
+        item ITEM_BLACK_GLASSES
+        move MOVE_SUCKER_PUNCH
+        move MOVE_BRAVE_BIRD
+        move MOVE_TAILWIND
+        move MOVE_ROOST
+		ability ABILITY_MOXIE
+		setivs 31, 31, 31, 31, 31, 31
+		setevs 248, 252, 0, 0, 0, 8
+		nature NATURE_ADAMANT
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -24760,16 +24760,16 @@ trainerdata 700, "Giovanni"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_HONCHKROW
-        item ITEM_BLACK_GLASSES
-        move MOVE_SUCKER_PUNCH
-        move MOVE_BRAVE_BIRD
-        move MOVE_PURSUIT
-        move MOVE_ROOST
-		ability ABILITY_MOXIE
-		setivs 31, 31, 31, 31, 31, 31
-		setevs 248, 252, 0, 0, 0, 8
-		nature NATURE_ADAMANT
+        pokemon SPECIES_NIDOKING
+        item ITEM_LIFE_ORB
+        move MOVE_SLUDGE_BOMB
+        move MOVE_EARTH_POWER
+        move MOVE_THUNDERBOLT
+        move MOVE_ICE_BEAM
+		ability ABILITY_SHEER_FORCE
+		setivs 31, 0, 31, 31, 31, 31
+		setevs 0, 0, 0, 252, 252, 4
+		nature NATURE_TIMID
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -24800,7 +24800,7 @@ trainerdata 700, "Giovanni"
         move MOVE_CLOSE_COMBAT
         move MOVE_KNOCK_OFF
         move MOVE_U_TURN
-		ability ABILITY_TOUGH_CLAWS
+		ability ABILITY_STEELY_SPIRIT
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 252, 0, 248, 0, 8
 		nature NATURE_ADAMANT
