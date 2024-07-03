@@ -13,7 +13,7 @@ Restores HP if hit by a\nWater-type move.
 Prevents it from\nbecoming infatuated.
 Eliminates the effects of\nweather.
 The Pokémon’s accuracy\nis boosted.
-Prevents the Pokémon\nfrom falling asleep.
+Defensively, acts as\nevery type.
 Changes the Pokémon’s\ntype to the foe’s move.
 Prevents the Pokémon\nfrom getting poisoned.
 It powers up Fire-type\nmoves if it’s hit by one.

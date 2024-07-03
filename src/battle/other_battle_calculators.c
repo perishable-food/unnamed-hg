@@ -688,11 +688,6 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
         }
     }
 
-	if (sp->terrainOverlay.type == NEW_WORLD && IsClientGrounded) 
-	{
-		speed1 = speed1 * 90 / 100;
-	}
-	
     if ((ability1 == ABILITY_SURGE_SURFER) && (sp->terrainOverlay.type == ELECTRIC_TERRAIN && sp->terrainOverlay.numberOfTurnsLeft > 0))
     {
         speed1 *= 2;
@@ -1460,6 +1455,38 @@ int LONG_CALL ServerDoTypeCalcMod(void *bw UNUSED, struct BattleStruct *sp, int 
     {
         flag[0] |= MOVE_STATUS_FLAG_NOT_EFFECTIVE;
     }
+	
+    else if (MoldBreakerAbilityCheck(sp, attack_client, defence_client, ABILITY_INSOMNIA) == TRUE)
+    {
+        if (move_type == TYPE_NORMAL
+         || move_type == TYPE_FIGHTING
+         || move_type == TYPE_ELECTRIC
+         || move_type == TYPE_GROUND
+         || move_type == TYPE_GHOST
+         || move_type == TYPE_POISON
+         || move_type == TYPE_DRAGON
+         || move_type == TYPE_PSYCHIC)
+        {
+            flag[0] |= MOVE_STATUS_FLAG_NOT_EFFECTIVE; // MOVE_STATUS_FLAG_MISS_WONDER_GUARD
+        }
+        else if (move_type == TYPE_ROCK)
+        {
+            flag[0] |= MOVE_STATUS_FLAG_SUPER_EFFECTIVE;
+            damage *= 2;
+        }
+        else if (move_type == TYPE_STEEL
+              || move_type == TYPE_DARK)
+        {
+            flag[0] |= MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE;
+            damage /= 2;
+        }
+        else if (move_type == TYPE_GRASS
+              || move_type == TYPE_BUG)
+        {
+            flag[0] |= MOVE_STATUS_FLAG_NOT_VERY_EFFECTIVE;
+            damage /= 16;
+        }
+	}
     else
     {
         i = 0;
