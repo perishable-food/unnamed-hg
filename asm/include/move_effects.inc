@@ -326,5 +326,6 @@
 .equ MOVE_EFFECT_HIT_AND_PREVENT_HEALING, 320
 .equ MOVE_EFFECT_INFERNAL_PARADE, 321
 .equ MOVE_EFFECT_BARB_BARRAGE, 322
+.equ MOVE_EFFECT_CHARGE_SPA_RAIN, 323 //Mild issue with this is that the SpA boost is applied on the turn its fired instead of the turn its selected.
 
 .endif
