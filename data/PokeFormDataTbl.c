@@ -1764,4 +1764,10 @@ const struct FormData UNUSED PokeFormDataTbl[]=
         .need_rev = 0,
         .file = SPECIES_MEWTWO_ARMORED,
     },
+	{
+		.species = SPECIES_VULPIX,
+        .form_no = 2,
+        .need_rev = 1,
+        .file = SPECIES_MAR,
+    },
 };

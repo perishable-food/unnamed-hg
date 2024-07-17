@@ -122,9 +122,9 @@ _000C: // Trainer 496
     trainertextentry 496, TEXT_PLAYER_LOSES, "...Humph!\nThat was a waste of time.\n"
 	
 _0013: // Trainer 19
-	trainertextentry 19, TEXT_NOTICE_IN_OVERWORLD, "Hello Vro\n"
-	trainertextentry 19, TEXT_DEFEATED_IN_BATTLE, "unfortunate doesnt even\nbegin to describe....\n"
-	trainertextentry 19, TEXT_DEFEATED_IN_OVERWORLD, "(She's just rambling\non about RNG...)\n"
+	trainertextentry 19, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Hello Vro\n"
+	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "unfortunate doesnt even\nbegin to describe....\n"
+	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "(She's just rambling\non about RNG...)\n"
 	trainertextentry 19, TEXT_PLAYER_LOSES, "cheating? i would never\n(im lying)\n"
 	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "this is getting shiest..\n"
 	

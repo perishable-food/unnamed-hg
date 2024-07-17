@@ -578,38 +578,19 @@ trainerdata 19, "Rei"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_BALL | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_PSYCHIC_F
     nummons 6
-    item ITEM_FULL_RESTORE
-    item ITEM_FULL_RESTORE 
-    item ITEM_FULL_RESTORE
-    item ITEM_FULL_RESTORE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
+    item ITEM_NONE
     aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS
-    battletype SINGLE_BATTLE
+    battletype DOUBLE_BATTLE
     endentry
 
     party 19	
 		ivs 200
-        abilityslot 2
-        level 1
-        monwithform SPECIES_DEOXYS, 1
-        item ITEM_FOCUS_SASH
-        move MOVE_PSYSTRIKE
-        move MOVE_POWER_GEM
-        move MOVE_TAIL_GLOW
-        move MOVE_PSYCHO_BOOST
-        ability ABILITY_BATTLE_BOND
-        ball ITEM_CHERISH_BALL
-        setivs 31, 31, 31, 31, 31, 31 
-        setevs 252, 252, 252, 252, 252, 252
-        nature NATURE_HASTY
-        shinylock 0
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _L, _I, _L, _I, _T, _H, _endstr, 0, 0, 0, 0
-        ballseal 0
-	
-        ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_SAMUROTT, 1
+        monwithform SPECIES_ETERNATUS, 1
         item ITEM_CHOICE_BAND
         move MOVE_AQUA_CUTTER
         move MOVE_PLAY_ROUGH
@@ -620,9 +601,27 @@ trainerdata 19, "Rei"
         setivs 31, 31, 31, 31, 31, 31 
         setevs 0, 252, 0, 252, 0, 4
         nature NATURE_JOLLY
-        shinylock 1
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _T, _E, _R, _M, _I, _N, _A, _L, _endstr, 0, 0
+        shinylock 0
+        additionalflags 0
+		//nickname _T, _E, _R, _M, _I, _N, _A, _L, _endstr, 0, 0
+        ballseal 0
+	
+		ivs 200
+        abilityslot 2
+        level 1
+        pokemon SPECIES_MAR
+        item ITEM_MAWILITE
+        move MOVE_PLAY_ROUGH
+        move MOVE_DOUBLE_IRON_BASH
+        move MOVE_SUCKER_PUNCH
+        move MOVE_SHIFT_GEAR
+        ability ABILITY_INSOMNIA
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 252, 252, 252, 252, 252, 252
+        nature NATURE_JOLLY
+        shinylock 0
+        additionalflags 0
         ballseal 0
 		
         ivs 200
@@ -685,20 +684,19 @@ trainerdata 19, "Rei"
 		ivs 200
         abilityslot 2
         level 1
-        pokemon SPECIES_MAWILE
+        pokemon SPECIES_MAR
         item ITEM_MAWILITE
         move MOVE_PLAY_ROUGH
         move MOVE_DOUBLE_IRON_BASH
         move MOVE_SUCKER_PUNCH
         move MOVE_SHIFT_GEAR
-        ability ABILITY_ROCK_HEAD
+        ability ABILITY_INSOMNIA
         ball ITEM_ULTRA_BALL
         setivs 31, 31, 31, 31, 31, 31 
-        setevs 6, 252, 0, 252, 0, 0
+        setevs 252, 252, 252, 252, 252, 252
         nature NATURE_JOLLY
         shinylock 0
-        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _M, _U, _N, _C, _H, _I, _E, _S, _endstr, 0, 0
+        additionalflags 0
         ballseal 0
     endparty
 
@@ -3712,7 +3710,7 @@ trainerdata 104, "Brian"
 trainerdata 105, "Ethan"	    
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_COWGIRL
-    nummons 6
+    nummons 0x80 | 6
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -3833,7 +3831,7 @@ trainerdata 105, "Ethan"
 trainerdata 106, "Lyra"	    
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_JOGGER
-    nummons 6
+    nummons 0x80 | 6
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE

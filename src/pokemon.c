@@ -19,7 +19,7 @@
 
 
 
-#define NELEMS_POKEFORMDATATBL 290
+#define NELEMS_POKEFORMDATATBL 291
 
 
 extern u32 word_to_store_form_at;
@@ -483,12 +483,12 @@ void LONG_CALL SetBoxMonAbility(struct BoxPokemon *boxmon) // actually takes box
     pid = GetBoxMonData(boxmon, MON_DATA_PERSONALITY, NULL);
     form = GetBoxMonData(boxmon, MON_DATA_FORM, NULL);
 
-    if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1)
+    if (gf_rand() % 3 == 0)
     {
         SET_BOX_MON_HIDDEN_ABILITY_BIT(boxmon)
         has_hidden_ability = 1;
         // need to clear this script flag because this function is used for in-battle form change ability resets as well, which shouldn't happen normally
-        ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
+        // ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
     }
     else
     {
@@ -1399,11 +1399,11 @@ BOOL LONG_CALL GiveMon(int heapId, void *saveData, int species, int level, int f
 
     RecalcPartyPokemonStats(pokemon); // recalculate stats
 
-    if (CheckScriptFlag(HIDDEN_ABILITIES_FLAG) == 1)
+    if (gf_rand() % 3 == 0)
     {
         SET_MON_HIDDEN_ABILITY_BIT(pokemon)
         // need to clear this script flag because this function is used for in-battle form change ability resets as well, which shouldn't happen normally
-        ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
+        // ClearScriptFlag(HIDDEN_ABILITIES_FLAG);
     }
 
     if (ability != 0) {

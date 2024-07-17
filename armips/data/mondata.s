@@ -27500,3 +27500,19 @@ mondata SPECIES_MEWTWO_ARMORED, "-----"
     abilities ABILITY_BERSERK, ABILITY_LEVITATE
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
+	
+mondata SPECIES_MAR, "Mar!"
+    basestats 255, 255, 255, 255, 255, 255
+    types TYPE_FIRE, TYPE_FAIRY
+    catchrate 5
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 10
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_BERSERK, ABILITY_LEVITATE
+    runchance 0
+    colorflip BODY_COLOR_GREEN, 0

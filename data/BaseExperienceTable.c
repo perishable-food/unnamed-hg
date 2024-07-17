@@ -1322,4 +1322,5 @@ const u16 UNUSED BaseExperienceTable[] =
 	[SPECIES_DEOXYS_ABSOLUTE			 ] = 690,
 	[SPECIES_OGERPON_TEAL_MASK    		 ] = 690,
 	[SPECIES_MEWTWO_ARMORED				 ] = 690,
+	[SPECIES_MAR			 			 ] = 690,
 };

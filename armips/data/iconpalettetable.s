@@ -1391,6 +1391,7 @@ gIconPalTable:
 /* SPECIES_DEOXYS_ABSOLUTE		       */ .byte  0x0
 /* SPECIES_OGERPON_TEAL_MASK           */ .byte  0x0
 /* SPECIES_MEWTWO_ARMORED          	   */ .byte  0x2
+/* SPECIES_MAR          */ .byte  0x0
 
 .endarea
 
