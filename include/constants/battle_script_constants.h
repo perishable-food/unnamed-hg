@@ -303,6 +303,7 @@
 #define SUB_SEQ_OVERWORLD_TRICK_ROOM            (295)
 #define SUB_SEQ_GIRATINA_FORM_CHECK             (296)
 
+
 // new sub_seq entries:
 #define SUB_SEQ_HANDLE_MEGA_EVOLUTION                 (297)
 #define SUB_SEQ_HANDLE_UNNERVE_MESSAGE                (298)
@@ -381,7 +382,7 @@
 #define SUB_SEQ_CANCEL_FIRE_MOVE                      (371)
 #define SUB_SEQ_WEAKEN_MOVES_STRONG_WINDS             (372)
 #define SUB_SEQ_PREVENT_CHANGING_WEATHER              (373)
-
+#define SUB_SEQ_VICTORY_DANCE                         (374)
 
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
@@ -549,6 +550,7 @@
 #define ADD_STATUS_EFF_AFTER_YOU                       (160)
 #define ADD_STATUS_EFF_QUASH                           (161)
 #define ADD_STATUS_EFF_DRAIN_FULL                      (162)
+#define ADD_STATUS_EFF_VICTORY_DANCE                   (163)
 
 
 
