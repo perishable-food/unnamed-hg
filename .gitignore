@@ -89,9 +89,3 @@ tools/swav2swar.exe
 
 *.gbapal
 *.4bpp
-
-.idea/*
-.idea/.gitignore
-.idea/misc.xml
-.idea/vcs.xml
-

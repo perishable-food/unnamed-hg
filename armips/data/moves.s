@@ -7786,7 +7786,7 @@ movedata MOVE_SLUDGE_WAVE, "Sludge Wave"
     movedescription MOVE_SLUDGE_WAVE, "The area around the\nuser is swamped by\na giant sludge wave.\nIt may also poison\nthose hit."
 
 movedata MOVE_QUIVER_DANCE, "Quiver Dance"
-    battleeffect MOVE_EFFECT_SP_ATK_SP_DEF_SPEED_UP
+    battleeffect MOVE_EFFECT_ATK_DEF_SPEED_UP
     pss SPLIT_STATUS
     basepower 0
     type TYPE_BUG
@@ -13460,7 +13460,7 @@ movedata MOVE_VICTORY_DANCE, "Victory Dance"
     effectchance 0
     target MOVE_TARGET_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_SNATCH
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
@@ -14539,7 +14539,7 @@ movedata MOVE_IVY_CUDGEL, "Ivy Cudgel"
     movedescription MOVE_IVY_CUDGEL, "---"
 
 movedata MOVE_ELECTRO_SHOT, "Electro Shot"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_CHARGE_SPA_RAIN
     pss SPLIT_SPECIAL
     basepower 130
     type TYPE_ELECTRIC
