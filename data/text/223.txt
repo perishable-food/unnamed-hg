@@ -740,7 +740,7 @@ a {COLOR 255}DNA Splicers{COLOR 0}
 a {COLOR 255}Reveal Glass{COLOR 0}
 a {COLOR 255}Prison Bottle{COLOR 0}
 a {COLOR 255}Catching Charm{COLOR 0}
-an {COLOR 255}Exp. Charm{COLOR 0}
+a {COLOR 255}GS Ball{COLOR 0}
 an {COLOR 255}Oval Charm{COLOR 0}
 a {COLOR 255}Shiny Charm{COLOR 0}
 an {COLOR 255}N Solarizer{COLOR 0}
@@ -764,11 +764,11 @@ a {COLOR 255}Waters Scroll{COLOR 0}
 a {COLOR 255}Mega Ring{COLOR 0}
 an {COLOR 255}Autograph{COLOR 0}
 a {COLOR 255}Gold Teeth{COLOR 0}
-a {COLOR 255}Key Stone{COLOR 0}
+an {COLOR 255}Eeverstone{COLOR 0}
 a {COLOR 255}Lift Key{COLOR 0}
 a {COLOR 255}Pewter Snacks{COLOR 0}
-a {COLOR 255}Silph Scope{COLOR 0}
-a {COLOR 255}Tea{COLOR 0}
+a {COLOR 255}Berserk Gene{COLOR 0}
+a {COLOR 255}Rarest Candy{COLOR 0}
 a {COLOR 255}Lonely Mint{COLOR 0}
 an {COLOR 255}Adamant Mint{COLOR 0}
 a {COLOR 255}Naughty Mint{COLOR 0}
