@@ -38,3 +38,31 @@ WesleyFG and [The Sounds Resource](https://www.sounds-resource.com/3ds/pokemonsu
 XLuma - helping get this buildable initially
 
 Game Freak - amazing Pokémon games from way back when
+
+// UGH Developers
+
+Rei (perishable), for Leading Development
+
+Mar (bubblyee), for Trainers, Encounters
+
+MKBurst (bagbaggybagbagbagbaaaaaag), for Blue Moon Lugia and Red Sun Ho-Oh Designs
+
+Minty (mintyforsure), for Victory Dance and Electro Shot implementations
+
+Rappa (yokaimedal), for Deoxys-Absolute and Deoxys Deity Rei sprites
+
+Gamzee (transfemgamzee), for doing Documentation and converting trainers to the HG-Engine format
+
+// Miscellaneous UGH Credits
+
+Senate, for the original Wonder Trade script
+
+KyleDove, for the Ogerpon/Iron Valiant/Chi-Yu sprites (https://x.com/DoveKyle/status/1794443316722823292?t=AaDoCbth-_1sdtEHoVIEkA&s=19)
+
+Nilo1011, for the Saisann Buneary line's sprites
+
+MeroMero, for making this Vitamin tutorial like 10 years ago (https://projectpokemon.org/home/forums/topic/33166-tutorialhgss-lift-the-100-ev-limit-on-vitamins/)
+
+The DS Rom Hacking Discord Server, and especially BluRose, for various resources and putting up with my stupid questions <3
+
+The Playtesters, who have provided information and criticism to improve the hack
