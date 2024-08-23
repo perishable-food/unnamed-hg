@@ -483,3 +483,6 @@ arm9 GF_AssertFail 0202551C 0
 arm9 form_evo_hook_1 02077224 1
 # actually setting the new mon's form
 arm9 form_evo_hook_2 0207641C 0
+
+# hooking item use : 020902D0 + 4 = 020902D4
+arm9 UseItemOnPokemon_hook 020902D4 5
