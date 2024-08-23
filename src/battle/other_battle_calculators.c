@@ -2996,61 +2996,63 @@ int LONG_CALL GetDynamicMoveType(struct BattleSystem *bsys, struct BattleStruct 
             }
             break;
         case MOVE_MULTI_ATTACK:
-            switch (HeldItemHoldEffectGet(ctx, battlerId)) {
-                case HOLD_EFFECT_FIGHTING_MEMORY:
+			if (species == SPECIES_SILVALLY) {
+			switch (form) {
+                case 1:
                     type = TYPE_FIGHTING;
                     break;
-                case HOLD_EFFECT_FLYING_MEMORY:
+                case 2:
                     type = TYPE_FLYING;
                     break;
-                case HOLD_EFFECT_POISON_MEMORY:
+                case 3:
                     type = TYPE_POISON;
                     break;
-                case HOLD_EFFECT_GROUND_MEMORY:
+                case 4:
                     type = TYPE_GROUND;
                     break;
-                case HOLD_EFFECT_ROCK_MEMORY:
+                case 5:
                     type = TYPE_ROCK;
                     break;
-                case HOLD_EFFECT_BUG_MEMORY:
+                case 6:
                     type = TYPE_BUG;
                     break;
-                case HOLD_EFFECT_GHOST_MEMORY:
+                case 7:
                     type = TYPE_GHOST;
                     break;
-                case HOLD_EFFECT_STEEL_MEMORY:
+                case 8:
                     type = TYPE_STEEL;
                     break;
-                case HOLD_EFFECT_FIRE_MEMORY:
+                case 10:
                     type = TYPE_FIRE;
                     break;
-                case HOLD_EFFECT_WATER_MEMORY:
+                case 11:
                     type = TYPE_WATER;
                     break;
-                case HOLD_EFFECT_GRASS_MEMORY:
+                case 12:
                     type = TYPE_GRASS;
                     break;
-                case HOLD_EFFECT_ELECTRIC_MEMORY:
+                case 13:
                     type = TYPE_ELECTRIC;
                     break;
-                case HOLD_EFFECT_PSYCHIC_MEMORY:
+                case 14:
                     type = TYPE_PSYCHIC;
                     break;
-                case HOLD_EFFECT_ICE_MEMORY:
+                case 15:
                     type = TYPE_ICE;
                     break;
-                case HOLD_EFFECT_DRAGON_MEMORY:
+                case 16:
                     type = TYPE_DRAGON;
                     break;
-                case HOLD_EFFECT_DARK_MEMORY:
+                case 17:
                     type = TYPE_DARK;
                     break;
-                case HOLD_EFFECT_FAIRY_MEMORY:
+                case 9:
                     type = TYPE_FAIRY;
                     break;
                 default:
                     type = TYPE_NORMAL;
                     break;
+					
             }
             break;
         case MOVE_AURA_WHEEL:
