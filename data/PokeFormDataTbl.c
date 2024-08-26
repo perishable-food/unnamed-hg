@@ -1770,4 +1770,10 @@ const struct FormData UNUSED PokeFormDataTbl[]=
         .need_rev = 1,
         .file = SPECIES_MAR,
     },
+	{
+        .species = SPECIES_LOPUNNY,
+        .form_no = 3,
+        .need_rev = 1,
+        .file = SPECIES_MEGA_LOPUNNY_SAISANN,
+	},
 };

@@ -1385,3 +1385,4 @@ heightentry SPECIES_DEOXYS_ABSOLUTE, 3, 3, 0, 0
 heightentry SPECIES_OGERPON_TEAL_MASK, 0, 0, 0, 0
 heightentry SPECIES_MEWTWO_ARMORED, 3, 3, 0, 0
 heightentry SPECIES_MAR, 11, 11, 18, 18
+heightentry SPECIES_MEGA_LOPUNNY_SAISANN, 3, 3, 0, 0

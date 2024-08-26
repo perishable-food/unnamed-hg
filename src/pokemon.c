@@ -20,7 +20,7 @@
 
 
 
-#define NELEMS_POKEFORMDATATBL 291
+#define NELEMS_POKEFORMDATATBL 292
 
 
 extern u32 word_to_store_form_at;
@@ -2144,6 +2144,8 @@ bool8 LONG_CALL RevertFormChange(struct PartyPokemon *pp, u16 species, u8 form_n
             {
                 if (species == SPECIES_DARMANITAN && form_no == 3)
                     work = 1;
+				else if (species == SPECIES_LOPUNNY && form_no == 3)
+                    work = 2;
                 else if (species == SPECIES_NECROZMA)
                     work = form_no-2;
                 else if (species == SPECIES_GRENINJA)

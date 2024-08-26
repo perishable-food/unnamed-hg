@@ -36954,6 +36954,33 @@ build/pokemonicon/1_1367.NCGR: data/graphics/sprites/mar/icon.png
 ICONGFX_OBJS += build/pokemonicon/1_1367.NCGR
 
 
+build/pokemonpic/1368-00.NCGR: data/graphics/sprites/mega_lopunny_saisann/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1368-01.NCGR: data/graphics/sprites/mega_lopunny_saisann/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1368-02.NCGR: data/graphics/sprites/mega_lopunny_saisann/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1368-03.NCGR: data/graphics/sprites/mega_lopunny_saisann/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1368-04.NCLR: data/graphics/sprites/mega_lopunny_saisann/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1368-05.NCLR: data/graphics/sprites/mega_lopunny_saisann/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1368-00.NCGR build/pokemonpic/1368-01.NCGR build/pokemonpic/1368-02.NCGR build/pokemonpic/1368-03.NCGR build/pokemonpic/1368-04.NCLR build/pokemonpic/1368-05.NCLR
+build/pokemonicon/1_1368.NCGR: data/graphics/sprites/mega_lopunny_saisann/icon.png
+	$(GFX) $< $@ -clobbersize -version101
+
+ICONGFX_OBJS += build/pokemonicon/1_1368.NCGR
+
+
 $(POKEGRA_NARC): $(POKEGRA_DEPENDENCIES)
 	$(NARCHIVE) create $@ $(POKEGRA_BUILD_DIR) -nf
 

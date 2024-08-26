@@ -3172,7 +3172,7 @@ int LONG_CALL GetDynamicMoveType(struct BattleSystem *bsys, struct BattleStruct 
             type = TYPE_NORMAL;
             break;
     }
-
+	}
     return GetAdjustedMoveTypeBasics(ctx, moveNo, GetBattlerAbility(ctx, battlerId), type);
 }
 

@@ -209,8 +209,18 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
                 if (flag)
                 {
                     newBS.needMega[client_no] = MEGA_NEED;
-                    sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
-                    BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, FALSE);
+                    if ((sp->battlemon[client_no].species == SPECIES_LOPUNNY && sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2))
+                   
+                    {
+                        sp->battlemon[client_no].form_no = 3;
+						BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id 
+                    }
+                    else
+					{	
+						sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
+						BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, TRUE);
+					}
+					
                 }
             }
             sp->sba_seq_no++;
@@ -276,10 +286,19 @@ static BOOL MegaEvolution(void *bw, struct BattleStruct *sp)
             {
                 newBS.PlayerMegaed = TRUE;
             }
+			if ((sp->battlemon[client_no].species == SPECIES_LOPUNNY && sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2))
+                   
+                    {
+						BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id 
+                        sp->battlemon[client_no].form_no = 3;
+                    }
+                    else
+					{	
+						 sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
+						BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, TRUE);
 
-            sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
-            BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, TRUE);
-
+					}
+           
             newBS.needMega[client_no] = MEGA_CHECK_APPER;
             sp->client_work = client_no;
             if (CheckCanSpeciesMegaEvolveByMove(sp, client_no))
@@ -448,6 +467,31 @@ void ServerWazaBefore(void *bw, struct BattleStruct *sp)
                     runMyScriptInstead = 1;
                 }
                 else if (sp->moveTbl[sp->current_move_index].power != 0 && sp->battlemon[sp->attack_client].form_no == 0)
+                {
+                    sp->battlemon[sp->client_work].form_no = 1;
+                    BattleFormChange(sp->client_work, sp->battlemon[sp->client_work].form_no, bw, sp, 0);
+                    LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_FORM_CHANGE);
+                    runMyScriptInstead = 1;
+                }
+            }
+			if (sp->battlemon[sp->attack_client].ability == ABILITY_STANCE_CHANGE && sp->battlemon[sp->attack_client].species == SPECIES_DEOXYS)
+            {
+                sp->client_work = sp->attack_client;
+                if ((sp->current_move_index == MOVE_PROTECT && sp->battlemon[sp->attack_client].form_no != 2))
+                {
+                    sp->battlemon[sp->client_work].form_no = 2;
+                    BattleFormChange(sp->client_work, sp->battlemon[sp->client_work].form_no, bw, sp, 0);
+                    LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_FORM_CHANGE);
+                    runMyScriptInstead = 1;
+                }
+                else if ((sp->moveTbl[sp->current_move_index].power == 0 && sp->current_move_index != MOVE_PROTECT && sp->battlemon[sp->attack_client].form_no != 3))
+                {
+                    sp->battlemon[sp->client_work].form_no = 3;
+                    BattleFormChange(sp->client_work, sp->battlemon[sp->client_work].form_no, bw, sp, 0);
+                    LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, SUB_SEQ_FORM_CHANGE);
+                    runMyScriptInstead = 1;
+                }
+				else if (sp->moveTbl[sp->current_move_index].power != 0 && sp->battlemon[sp->attack_client].form_no != 1)
                 {
                     sp->battlemon[sp->client_work].form_no = 1;
                     BattleFormChange(sp->client_work, sp->battlemon[sp->client_work].form_no, bw, sp, 0);

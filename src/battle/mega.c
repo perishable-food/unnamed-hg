@@ -291,10 +291,7 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
 
     if (newBS.SideMega[client])
         return FALSE;
-
-    if (form)
-        return FALSE;
-
+	
     if (battle->playerActions[client][3] != SELECT_FIGHT_COMMAND)
         return FALSE;
 
@@ -409,6 +406,11 @@ u32 LONG_CALL GrabMegaTargetForm(u32 mon, u32 item)
         {
             return sMegaTable[i].form;
         }
+		
+        if (sMegaTable[i].monindex == SPECIES_LOPUNNY && sMegaTable[i].itemindex == item && sMegaTable[i].form == 2)
+        {
+            return sMegaTable[i].form == 0;
+        }
     }
     for (i = 0; i < (s32)NELEMS(sMegaMoveTable); i++)
     {
@@ -463,10 +465,7 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
     mon = GetMonData(pp, MON_DATA_SPECIES, NULL);
     for (int i = 0; i < 4; i++)
         moves[i] = GetMonData(pp, MON_DATA_MOVE1+i, NULL);
-
-    form_no = GetMonData(pp, MON_DATA_FORM, 0);
-    if (form_no) // can not draw mega button if form is nonzero.  only base form can mega evolve
-        return FALSE;
+	
 
     return (CheckMegaData(mon, item) || CheckMegaMoveData(mon, moves));
 }

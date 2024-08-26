@@ -590,7 +590,7 @@ trainerdata 19, "Rei"
 		ivs 200
         abilityslot 0
         level 1
-        monwithform SPECIES_ETERNATUS, 1
+        monwithform SPECIES_LOPUNNY, 3
         item ITEM_CHOICE_BAND
         move MOVE_AQUA_CUTTER
         move MOVE_PLAY_ROUGH
