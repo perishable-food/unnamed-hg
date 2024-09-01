@@ -12,6 +12,8 @@
 #define MOVE_APPEND_FULL    0xFFFFu
 #define MOVE_APPEND_KNOWN   0xFFFEu
 
+#define NUM_BANNED_BATTLE_FRONTIER 19
+
 #define MONS_MALE       (0)
 #define MONS_FEMALE     (254)
 #define MONS_UNKNOWN    (255)
