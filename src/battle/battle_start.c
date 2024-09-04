@@ -209,11 +209,14 @@ void ServerBeforeAct(void *bw, struct BattleStruct *sp)
                 if (flag)
                 {
                     newBS.needMega[client_no] = MEGA_NEED;
-                    if ((sp->battlemon[client_no].species == SPECIES_LOPUNNY && sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2))
-                   
+                    if (sp->battlemon[client_no].species == SPECIES_LOPUNNY)
                     {
-                        sp->battlemon[client_no].form_no = 3;
-						BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id 
+                        // nest it so that lopunny form 3 handling is not grabbing from the table
+                        if (sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2)
+                        {
+                            sp->battlemon[client_no].form_no = 3;
+    						BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id 
+                        }
                     }
                     else
 					{	
@@ -286,18 +289,22 @@ static BOOL MegaEvolution(void *bw, struct BattleStruct *sp)
             {
                 newBS.PlayerMegaed = TRUE;
             }
-			if ((sp->battlemon[client_no].species == SPECIES_LOPUNNY && sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2))
-                   
-                    {
-						BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id 
-                        sp->battlemon[client_no].form_no = 3;
-                    }
-                    else
-					{	
-						 sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
-						BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, TRUE);
 
-					}
+			if (sp->battlemon[client_no].species == SPECIES_LOPUNNY)
+            {
+                // nest it so that lopunny form 3 handling is not default
+                if (sp->battlemon[client_no].item == ITEM_LOPUNNITE && sp->battlemon[client_no].form_no == 2)
+                {
+                    sp->battlemon[client_no].form_no = 3;
+                    BattleFormChange(client_no, 3, bw, sp, FALSE); // temp form id
+                }
+            }
+            else
+            {	
+                sp->battlemon[client_no].form_no = GrabMegaTargetForm(sp->battlemon[client_no].species, sp->battlemon[client_no].item);
+                BattleFormChange(client_no, sp->battlemon[client_no].form_no, bw, sp, TRUE);
+
+            }
            
             newBS.needMega[client_no] = MEGA_CHECK_APPER;
             sp->client_work = client_no;
