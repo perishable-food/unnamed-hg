@@ -256,11 +256,6 @@ const struct MegaStruct sMegaTable[] =
         .itemindex = ITEM_AUDINITE,
         .form = 1,
     },
-    {
-        .monindex = SPECIES_DEOXYS,
-        .itemindex = ITEM_RED_CHAIN,
-        .form = 4,
-    },
 };
 
 const struct MegaStructMove sMegaMoveTable[] =

@@ -1024,7 +1024,7 @@ movedata MOVE_HYPER_BEAM, "Hyper Beam"
     type TYPE_NORMAL
     accuracy 90
     pp 5
-    effectchance 0
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_HIDE_SHADOW | FLAG_KINGS_ROCK | FLAG_MIRROR_MOVE | FLAG_PROTECT
