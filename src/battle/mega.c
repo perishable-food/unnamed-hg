@@ -401,11 +401,6 @@ u32 LONG_CALL GrabMegaTargetForm(u32 mon, u32 item)
         {
             return sMegaTable[i].form;
         }
-		
-        if (sMegaTable[i].monindex == SPECIES_LOPUNNY && sMegaTable[i].itemindex == item && sMegaTable[i].form == 2)
-        {
-            return sMegaTable[i].form == 0;
-        }
     }
     for (i = 0; i < (s32)NELEMS(sMegaMoveTable); i++)
     {
