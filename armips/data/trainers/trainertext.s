@@ -122,11 +122,11 @@ _000C: // Trainer 496
     trainertextentry 496, TEXT_PLAYER_LOSES, "...Humph!\nThat was a waste of time.\n"
 	
 _0013: // Trainer 19
-	trainertextentry 19, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Hello Vro\n"
-	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "unfortunate doesnt even\nbegin to describe....\n"
+	trainertextentry 19, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Gonna beat me? Better make it count.\rBetter make it hurt.\nBetter kill all my 'mons in one shot.\n"
+	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Unfortunate doesn't begin to describe my\n"
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "(She's just rambling\non about RNG...)\n"
-	trainertextentry 19, TEXT_PLAYER_LOSES, "cheating? i would never\n(im lying)\n"
-	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "this is getting shiest..\n"
+	trainertextentry 19, TEXT_PLAYER_LOSES, "This is Calamitous Crystal bitch!\nTake your sensitive ass back to UGH!\n"
+	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "This is getting shiest...\n"
 	
 _0018: // Trainer 497
     trainertextentry 497, TEXT_LAST_MON_SENT_OUT, "...Humph!\nYou’re doing OK for someone weak.\n"
@@ -320,17 +320,17 @@ _01D0: // Trainer 715
 _01DC: // Trainer 717
     trainertextentry 717, TEXT_LAST_MON_CRITICAL, "Properly tempered steel won’t be made\nrusty by things like this!\n"
     trainertextentry 717, TEXT_LAST_MON_SENT_OUT, "Steel will hang on to the very last!\n"
-    trainertextentry 717, TEXT_DEFEATED_IN_BATTLE, "Well done...\n"
+    trainertextentry 717, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Well done...\n"
 
 _01E8: // Trainer 718
     trainertextentry 718, TEXT_LAST_MON_CRITICAL, "We haven’t lost yet!\n"
     trainertextentry 718, TEXT_LAST_MON_SENT_OUT, "No... Not...yet...\n"
-    trainertextentry 718, TEXT_DEFEATED_IN_BATTLE, "We...lost...\n"
+    trainertextentry 718, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "We...lost...\n"
 
 _01F4: // Trainer 716
     trainertextentry 716, TEXT_LAST_MON_CRITICAL, "Humph... You are quite the Trainer.\n"
     trainertextentry 716, TEXT_LAST_MON_SENT_OUT, "Willow is my middle name.\nWillow is flexible and not easily broken.\fI’m not giving up yet.\n"
-    trainertextentry 716, TEXT_DEFEATED_IN_BATTLE, "Hmm. Seems as if my luck has run out.\n"
+    trainertextentry 716, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Hmm. Seems as if my luck has run out.\n"
 
 _0200: // Trainer 719
     trainertextentry 719, TEXT_LAST_MON_CRITICAL, "One Pokémon left?\nThis is where the real battle begins!\n"
@@ -545,7 +545,7 @@ _03F4: // Trainer 253
 _0400: // Trainer 254
     trainertextentry 254, TEXT_LAST_MON_CRITICAL, "Hmm... You’re pretty good...\n"
     trainertextentry 254, TEXT_LAST_MON_SENT_OUT, "Looks like you’re not just someone who\ngets in the way...\n"
-    trainertextentry 254, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Looks like this is it...\n"
+    trainertextentry 254, TEXT_DEFEATED_IN_BATTLE, "Looks like this is it...\n"
 
 _040C: // Trainer 255
     trainertextentry 255, TEXT_LAST_MON_CRITICAL, "It’s not over yet. It’s just beginning!\n"
@@ -565,7 +565,7 @@ _0424: // Trainer 257
 _0430: // Trainer 258
     trainertextentry 258, TEXT_LAST_MON_CRITICAL, "What will happen after this?\nI already know.\n"
     trainertextentry 258, TEXT_LAST_MON_SENT_OUT, "Was the future I saw...wrong?\n"
-    trainertextentry 258, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I get it...\n"
+    trainertextentry 258, TEXT_DEFEATED_IN_BATTLE, "I get it...\n"
 
 _043C: // Trainer 259
     trainertextentry 259, TEXT_LAST_MON_CRITICAL, "I’ll show you the spirit of this\ncave Gym!\n"
@@ -580,37 +580,37 @@ _0448: // Trainer 727
 _0454: // Trainer 720
     trainertextentry 720, TEXT_LAST_MON_CRITICAL, "Ah ha ha! It itches! It itches!\n"
     trainertextentry 720, TEXT_LAST_MON_SENT_OUT, "Ow ow ow ow ow...\n"
-    trainertextentry 720, TEXT_DEFEATED_IN_BATTLE, "Looks like you’re the stronger one...\n"
+    trainertextentry 720, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Looks like you’re the stronger one...\n"
 
 _0460: // Trainer 721
     trainertextentry 721, TEXT_LAST_MON_CRITICAL, "Hmm... You’re pretty good...\n"
     trainertextentry 721, TEXT_LAST_MON_SENT_OUT, "Looks like you’re not just someone who\ngets in the way...\n"
-    trainertextentry 721, TEXT_DEFEATED_IN_BATTLE, "Looks like this is it...\n"
+    trainertextentry 721, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Looks like this is it...\n"
 
 _046C: // Trainer 722
     trainertextentry 722, TEXT_LAST_MON_CRITICAL, "It’s not over yet. It’s just beginning!\n"
     trainertextentry 722, TEXT_LAST_MON_SENT_OUT, "Oh, last one! Never give up!\n"
-    trainertextentry 722, TEXT_DEFEATED_IN_BATTLE, "My electric trick...\n"
+    trainertextentry 722, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "My electric trick...\n"
 
 _0478: // Trainer 723
     trainertextentry 723, TEXT_LAST_MON_CRITICAL, "Don’t go easy on me.\nGive me everything you’ve got!\n"
     trainertextentry 723, TEXT_LAST_MON_SENT_OUT, "Wow, that’s a bit harsh!\n"
-    trainertextentry 723, TEXT_DEFEATED_IN_BATTLE, "Looks like I underestimated you...\n"
+    trainertextentry 723, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Looks like I underestimated you...\n"
 
 _0484: // Trainer 724
     trainertextentry 724, TEXT_LAST_MON_CRITICAL, "You’ve got a great battle technique!\n"
     trainertextentry 724, TEXT_LAST_MON_SENT_OUT, "Not good. Seriously not good.\n"
-    trainertextentry 724, TEXT_DEFEATED_IN_BATTLE, "...!!!\nSo... So strong!\n"
+    trainertextentry 724, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "...!!!\nSo... So strong!\n"
 
 _0490: // Trainer 725
     trainertextentry 725, TEXT_LAST_MON_CRITICAL, "What will happen after this?\nI already know.\n"
     trainertextentry 725, TEXT_LAST_MON_SENT_OUT, "Was the future I saw...wrong?\n"
-    trainertextentry 725, TEXT_DEFEATED_IN_BATTLE, "I get it...\n"
+    trainertextentry 725, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I get it...\n"
 
 _049C: // Trainer 726
     trainertextentry 726, TEXT_LAST_MON_CRITICAL, "I’ll show you the spirit of my\ncave Gym!\n"
     trainertextentry 726, TEXT_LAST_MON_SENT_OUT, "We can still do it!\n"
-    trainertextentry 726, TEXT_DEFEATED_IN_BATTLE, "My spirit has not been defeated!\n"
+    trainertextentry 726, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "My spirit has not been defeated!\n"
 
 _04A8: // Trainer 681
     trainertextentry 681, TEXT_NOTICE_IN_OVERWORLD, "Anyway, fight me and see!\r"
