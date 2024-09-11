@@ -577,7 +577,7 @@ trainerdata 18, "Justin"
 trainerdata 19, "Rei"
     trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_BALL | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
     trainerclass CLASS_PSYCHIC_F
-    nummons 6
+    nummons 2
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
@@ -643,7 +643,7 @@ trainerdata 20, "Falkner"
         abilityslot 0
         level 1 
         pokemon SPECIES_HOOTHOOT
-        item ITEM_TINTED_LENS
+        item ITEM_NONE
         move MOVE_RETURN
         move MOVE_FLY
         move MOVE_ROOST
@@ -765,7 +765,7 @@ trainerdata 21, "Bugsy"
         move MOVE_ROCK_SMASH
         move MOVE_DUAL_WINGBEAT
         move MOVE_U_TURN
-		ability ABILITY_TECHNQ
+		ability ABILITY_TECHNICIAN
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 80, 0, 80, 0, 0
 		nature NATURE_ADAMANT
@@ -1178,7 +1178,7 @@ trainerdata 31, "Morty"
 		ivs 200
         abilityslot 0
         level 1 
-        momwithform SPECIES_MAROWAK, 1
+        monwithform SPECIES_MAROWAK, 1
         item ITEM_CHOICE_SCARF
         move MOVE_FLARE_BLITZ
         move MOVE_SHADOW_BONE
@@ -8936,7 +8936,7 @@ trainerdata 253, "Brock"
 		ability ABILITY_SHARPNESS
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 252, 0, 0, 252, 0, 4
-		nature NATURE_SHARPNESS
+		nature NATURE_JOLLY
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -8971,7 +8971,7 @@ trainerdata 253, "Brock"
 		ability ABILITY_SAND_STREAM
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 252, 0, 252, 0, 4
-		nature NATURE_
+		nature NATURE_ADAMANT
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -8988,7 +8988,7 @@ trainerdata 253, "Brock"
 		ability ABILITY_TOUGH_CLAWS
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 252, 0, 252, 0, 4
-		nature NATURE_
+		nature NATURE_JOLLY
 		shinylock 1
 		additionalflags 0
         ballseal 0
@@ -9132,7 +9132,7 @@ trainerdata 255, "Lt. Surge"
         move MOVE_SPIKES
         move MOVE_RISING_VOLTAGE
         move MOVE_SURF
-        move MOVE_MOMENTO
+        move MOVE_MEMENTO
 		ability ABILITY_ELECTRIC_SURGE
 		setivs 31, 0, 31, 31, 31, 31
 		setevs 252, 0, 0, 0, 252, 4
@@ -9537,7 +9537,7 @@ trainerdata 258, "Sabrina"
         move MOVE_PSYCHIC
         move MOVE_SHADOW_BALL
 		ability ABILITY_PIXILATE
-		setivs 31, , 31, 31, 31, 31
+		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 0, 0, 252, 252, 4
 		nature NATURE_TIMID
 		shinylock 1
@@ -9850,7 +9850,7 @@ trainerdata 261, "Blue"
         ivs 200
         abilityslot 0
         level 1 
-        monwithform SPECIES_EXXEGGUTOR, 1
+        monwithform SPECIES_EXEGGUTOR, 1
         item ITEM_SITRUS_BERRY
         move MOVE_DRAGON_PULSE
         move MOVE_SLEEP_POWDER

@@ -123,8 +123,10 @@ _000C: // Trainer 496
 	
 _0013: // Trainer 19
 	trainertextentry 19, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_1, "Gonna beat me? Better make it count.\rBetter make it hurt.\nBetter kill all my 'mons in one shot.\n"
+	trainertextentry 19, TEXT_DOUBLE_NOTICE_IN_OVERWORLD_2, "AEGISLASH: Ae-gi-SLASH!\n"
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Unfortunate doesn't begin to describe my\n"
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "(She's just rambling\non about RNG...)\n"
+	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_2, "(Aegislash congratulates you on the\nwin!)"
 	trainertextentry 19, TEXT_PLAYER_LOSES, "This is Calamitous Crystal bitch!\nTake your sensitive ass back to UGH!\n"
 	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "This is getting shiest...\n"
 	
