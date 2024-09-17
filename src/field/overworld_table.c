@@ -291,62 +291,62 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
 
 // npc mons
 
-    { .tag =  1000, .gfx = 309, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag =  1001, .gfx = 313, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag =  1002, .gfx = 316, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag =  1003, .gfx = 318, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag =  1004, .gfx = 319, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag =  1005, .gfx = 322, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1006, .gfx = 327, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1007, .gfx = 330, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1008, .gfx = 331, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1009, .gfx = 333, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1010, .gfx = 337, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1011, .gfx = 339, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1012, .gfx = 341, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1013, .gfx = 348, .callback_params = OVERWORLD_SIZE_SMALL_NO_SHADOW},
-    { .tag = 1014, .gfx = 350, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1015, .gfx = 351, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1016, .gfx = 352, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1017, .gfx = 360, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1018, .gfx = 361, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1019, .gfx = 364, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1020, .gfx = 365, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1021, .gfx = 377, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1022, .gfx = 378, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1023, .gfx = 381, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1024, .gfx = 383, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1025, .gfx = 399, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1026, .gfx = 410, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1027, .gfx = 411, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1028, .gfx = 413, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1029, .gfx = 429, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1030, .gfx = 442, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1031, .gfx = 443, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1032, .gfx = 444, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1033, .gfx = 445, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1034, .gfx = 447, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1035, .gfx = 448, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1036, .gfx = 451, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1037, .gfx = 481, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1038, .gfx = 483, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1039, .gfx = 490, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1040, .gfx = 498, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1041, .gfx = 571, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1042, .gfx = 572, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1043, .gfx = 573, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1044, .gfx = 574, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1045, .gfx = 575, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1046, .gfx = 581, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1047, .gfx = 710, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1048, .gfx = 711, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1049, .gfx = 712, .callback_params = OVERWORLD_SIZE_LARGE},
-    { .tag = 1050, .gfx = 713, .callback_params = OVERWORLD_SIZE_LARGE},
-    { .tag = 1051, .gfx = 714, .callback_params = OVERWORLD_SIZE_LARGE},
-    { .tag = 1052, .gfx = 472, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1053, .gfx = 452, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1054, .gfx = 456, .callback_params = OVERWORLD_SIZE_SMALL},
-    { .tag = 1055, .gfx = 459, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  994, .gfx = 309, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  995, .gfx = 313, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  996, .gfx = 316, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  997, .gfx = 318, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  998, .gfx = 319, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag =  999, .gfx = 322, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1000, .gfx = 327, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1001, .gfx = 330, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1002, .gfx = 331, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1003, .gfx = 333, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1004, .gfx = 337, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1005, .gfx = 339, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1006, .gfx = 341, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1007, .gfx = 348, .callback_params = OVERWORLD_SIZE_SMALL_NO_SHADOW},
+    { .tag = 1008, .gfx = 350, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1009, .gfx = 351, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1010, .gfx = 352, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1011, .gfx = 360, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1012, .gfx = 361, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1013, .gfx = 364, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1014, .gfx = 365, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1015, .gfx = 377, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1016, .gfx = 378, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1017, .gfx = 381, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1018, .gfx = 383, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1019, .gfx = 399, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1020, .gfx = 410, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1021, .gfx = 411, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1022, .gfx = 413, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1023, .gfx = 429, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1024, .gfx = 442, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1025, .gfx = 443, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1026, .gfx = 444, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1027, .gfx = 445, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1028, .gfx = 447, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1029, .gfx = 448, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1030, .gfx = 451, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1031, .gfx = 481, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1032, .gfx = 483, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1033, .gfx = 490, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1034, .gfx = 498, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1035, .gfx = 571, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1036, .gfx = 572, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1037, .gfx = 573, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1038, .gfx = 574, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1039, .gfx = 575, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1040, .gfx = 581, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1041, .gfx = 710, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1042, .gfx = 711, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1043, .gfx = 712, .callback_params = OVERWORLD_SIZE_LARGE},
+    { .tag = 1044, .gfx = 713, .callback_params = OVERWORLD_SIZE_LARGE},
+    { .tag = 1045, .gfx = 714, .callback_params = OVERWORLD_SIZE_LARGE},
+    { .tag = 1046, .gfx = 472, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1047, .gfx = 452, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1048, .gfx = 456, .callback_params = OVERWORLD_SIZE_SMALL},
+    { .tag = 1049, .gfx = 459, .callback_params = OVERWORLD_SIZE_SMALL},
 
 
 
@@ -556,7 +556,7 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag =  629, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MEWTWO
 	{ .tag =  630, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // one of the megas
 	{ .tag =  631, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // the other mega
-	{ .tag =  632, .gfx =  1460, .callback_params = OVERWORLD_SIZE_SMALL}, // armored		// add 3 to everything from mew onwards
+	{ .tag =  632, .gfx = 1460, .callback_params = OVERWORLD_SIZE_SMALL}, // armored		// add 3 to everything from mew onwards
     { .tag =  633, .gfx =  449, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MEW  
     { .tag =  634, .gfx =  450, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CHIKORITA
     { .tag =  635, .gfx =  451, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_BAYLEEF
@@ -887,10 +887,10 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag =  960, .gfx =  765, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DRIFLOON
     { .tag =  961, .gfx =  766, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DRIFBLIM
     { .tag =  962, .gfx =  767, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_BUNEARY
-	{ .tag =  963, .gfx =  1458, .callback_params = OVERWORLD_SIZE_SMALL}, // saisann
+	{ .tag =  963, .gfx = 1458, .callback_params = OVERWORLD_SIZE_SMALL}, // saisann
     { .tag =  964, .gfx =  768, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_LOPUNNY
 	{ .tag =  965, .gfx =  768, .callback_params = OVERWORLD_SIZE_SMALL}, // mega
-	{ .tag =  966, .gfx =  1459, .callback_params = OVERWORLD_SIZE_SMALL}, // saisann
+	{ .tag =  966, .gfx = 1459, .callback_params = OVERWORLD_SIZE_SMALL}, // saisann
     { .tag =  967, .gfx =  769, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MISMAGIUS
     { .tag =  968, .gfx =  770, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_HONCHKROW
     { .tag =  969, .gfx =  771, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_GLAMEOW
@@ -918,12 +918,12 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag =  991, .gfx =  796, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_SKORUPI
     { .tag =  992, .gfx =  797, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DRAPION
     { .tag =  993, .gfx =  798, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CROAGUNK
-    { .tag =  994, .gfx =  799, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_TOXICROAK
-    { .tag =  995, .gfx =  800, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CARNIVINE
-    { .tag =  996, .gfx =  801, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_FINNEON
-    { .tag =  997, .gfx =  802, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_LUMINEON
-    { .tag =  998, .gfx =  803, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MANTYKE
-    { .tag =  999, .gfx =  804, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_SNOVER
+    { .tag = 1050, .gfx =  799, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_TOXICROAK
+    { .tag = 1051, .gfx =  800, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CARNIVINE
+    { .tag = 1052, .gfx =  801, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_FINNEON
+    { .tag = 1053, .gfx =  802, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_LUMINEON
+    { .tag = 1054, .gfx =  803, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MANTYKE
+    { .tag = 1055, .gfx =  804, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_SNOVER
     { .tag = 1056, .gfx =  805, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_ABOMASNOW
     { .tag = 1057, .gfx =  806, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_WEAVILE
     { .tag = 1058, .gfx =  807, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MAGNEZONE
