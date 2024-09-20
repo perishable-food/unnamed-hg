@@ -1037,6 +1037,7 @@ struct PACKED BattleStruct
     /*0x5C*/ int svc_work;
 
     /*0x60*/ int waza_seq_adrs;
+	
     /*0x64*/ int attack_client;
     /*0x68*/ int attack_client_temp;
     /*0x6C*/ int defence_client;
@@ -1066,9 +1067,11 @@ struct PACKED BattleStruct
     /*0xEC*/ int executionIndex;
     /*0xF0*/ int wait_cnt;
     /*0xF4*/ MESSAGE_PARAM mp;
+	
     /*0x118*/ int client_work;
     /*0x11C*/ int attack_client_work;
     /*0x120*/ int defence_client_work;
+	
     /*0x124*/ int waza_work;
     /*0x128*/ int item_work;
     /*0x12C*/ int tokusei_work;

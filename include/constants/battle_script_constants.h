@@ -386,6 +386,12 @@
 #define SUB_SEQ_VICTORY_DANCE                         (375)
 
 
+// calcrys only -- thanks mojo!
+#define SUB_SEQ_OVERWORLD_GRAVITY					  (376)
+#define SUB_SEQ_OVERWORLD_TAILWIND					  (377)
+#define SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM		  (378)
+
+
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 
 #define ADD_STATUS_EFF_START_BATTLE                    (  0)

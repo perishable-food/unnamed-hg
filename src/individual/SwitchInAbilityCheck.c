@@ -80,6 +80,39 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
+						case 16:
+							sp->current_move_index = MOVE_GRASSY_TERRAIN;
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+							break;
+						case 17:
+							sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+							break;
+						case 18:
+							sp->current_move_index = MOVE_MISTY_TERRAIN;
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+							break;
+						case 19:
+							sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+							break;
+						case 20:
+							sp->client_work = client_no;
+							scriptnum = SUB_SEQ_DELTA_STREAM;
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							break;
+						case 21:
+							scriptnum = SUB_SEQ_OVERWORLD_GRAVITY;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+						case 22:
+							scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;
