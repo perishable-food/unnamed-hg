@@ -168,43 +168,6 @@ BOOL BattleFormChangeCheck(void *bw, struct BattleStruct *sp, int *seq_no)
             }
         }
 
-		// try and figure out ogerpon mechanics
-		if ((sp->battlemon[sp->client_work].species == SPECIES_OGERPON)
-         && (sp->battlemon[sp->client_work].hp))
-        {
-            if((sp->battlemon[sp->client_work].form_no == 0) && (sp->battlemon[sp->client_work].item != ITEM_ADAMANT_MINT || ITEM_ABILITY_CAPSULE || ITEM_ULTRA_BALL)) // placeholder items until i care enough to get the masks ingame
-            {
-                sp->battlemon[sp->client_work].form_no = 4;
-                *seq_no = SUB_SEQ_FORM_CHANGE;
-                ret = TRUE;
-                break;
-            }
-			
-			if((sp->battlemon[sp->client_work].form_no != 1) && (sp->battlemon[sp->client_work].item == ITEM_ADAMANT_MINT)) // placeholder item until i care enough to get the masks ingame
-            {
-                sp->battlemon[sp->client_work].form_no = 1;
-                *seq_no = SUB_SEQ_FORM_CHANGE;
-                ret = TRUE;
-                break;
-            }
-			
-			if((sp->battlemon[sp->client_work].form_no != 2) && (sp->battlemon[sp->client_work].item == ITEM_ABILITY_CAPSULE)) // placeholder item until i care enough to get the masks ingame
-            {
-                sp->battlemon[sp->client_work].form_no = 2;
-                *seq_no = SUB_SEQ_FORM_CHANGE;
-                ret = TRUE;
-                break;
-            }
-			
-			if((sp->battlemon[sp->client_work].form_no != 3) && (sp->battlemon[sp->client_work].item == ITEM_ULTRA_BALL)) // placeholder item until i care enough to get the masks ingame
-            {
-                sp->battlemon[sp->client_work].form_no = 3;
-                *seq_no = SUB_SEQ_FORM_CHANGE;
-                ret = TRUE;
-                break;
-            }
-        }
-
         // handle Silvally TODO check if this actually works, eventually change to use the memories instead of plates
         if ((sp->battlemon[sp->client_work].species == SPECIES_SILVALLY)
             && (sp->battlemon[sp->client_work].hp)
