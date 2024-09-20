@@ -127,7 +127,7 @@ _0013: // Trainer 19
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "Unfortunate doesn't begin to describe my\n"
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_1, "(She's just rambling\non about RNG...)\n"
 	trainertextentry 19, TEXT_DOUBLE_DEFEATED_IN_OVERWORLD_2, "(Aegislash congratulates you on the\nwin!)"
-	trainertextentry 19, TEXT_PLAYER_LOSES, "This is Calamitous Crystal bitch!\nTake your sensitive ass back to UGH!\n"
+	trainertextentry 19, TEXT_PLAYER_LOSES, "This is UGH bitch!\n"
 	trainertextentry 19, TEXT_LAST_MON_SENT_OUT, "This is getting shiest...\n"
 	
 _0018: // Trainer 497
@@ -302,7 +302,7 @@ _01A0: // Trainer 35
 _01AC: // Trainer 712
     trainertextentry 712, TEXT_LAST_MON_CRITICAL, "The wind is finally with us!\n"
     trainertextentry 712, TEXT_LAST_MON_SENT_OUT, "We can still fly!\n"
-    trainertextentry 712, TEXT_DEFEATED_IN_BATTLE, "I understand...\nI’ll bow out gracefully.\n"
+    trainertextentry 712, TEXT_DOUBLE_DEFEATED_IN_BATTLE_1, "I understand...\nI’ll bow out gracefully.\n"
 
 _01B8: // Trainer 713
     trainertextentry 713, TEXT_LAST_MON_CRITICAL, "Even though it’s my last Pokémon,\nBug Pokémon are tough!\n"
