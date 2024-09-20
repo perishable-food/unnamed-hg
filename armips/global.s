@@ -28,6 +28,8 @@
 .include "armips/asm/custom/rock_climb.s"
 .include "armips/asm/custom/ai_edits.s"
 .include "armips/asm/custom/title_screen_cry.s"
+.include "armips/asm/custom/waterfall.s"
+.include "armips/asm/custom/double_battle_music.s"
 
 .if REUSABLE_TMS == 1
 
