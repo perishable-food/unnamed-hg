@@ -102,7 +102,7 @@
 // 0 = Do Not Scale; 1 = Scale Up Wild and Trainer pokemon
 // Trainers will only scale up, if levels in trainers.s are higher they will remain the same.
 // uncommenting IMPLEMENT_SCALING enables dynamic scaling.  Undefining SCALING_TYPE_VARIABLE will just cause compilation errors
-#define IMPLEMENT_SCALING 2
+#define IMPLEMENT_SCALING 3
 #define SCALING_TYPE_VARIABLE 0x406A
 
 // RESTORE_ITEMS_AT_BATTLE_END will restore held items that are single-use at the end of battle
@@ -113,6 +113,6 @@
 #define PROTEAN_GENERATION 8
 
 // IMPLEMENT_REUSABLE_REPELS defines whether or not a prompt to use another repel automatically appears upon the previous repel being used up
-#define IMPLEMENT_REUSABLE_REPELS
+//#define IMPLEMENT_REUSABLE_REPELS
 
 #endif

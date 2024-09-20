@@ -101,7 +101,31 @@ u16 GetHighLevel(struct BATTLE_PARAM *bp)
 
 	 return highLevel;
  }
+ /**
+ @brief Generate the scaled level to use for a Pokemon based on lowest level in player party
+ *		-ALL CREDIT TO Mixone-FinallyHere FOR THIS-
+ *  @param bp battle param
+*/ 
 
+u16 GetLowLevel(struct BATTLE_PARAM *bp)
+ {
+	int i;
+	struct PartyPokemon *pp;
+	struct Party *party = bp->poke_party[0];
+	s32 playerCount = bp->poke_party[0]->count;
+	u16 lowLevel;
+	u16 lowestLevel = 100;
+	 for (i = 0; i < playerCount; i++) {
+		 pp = Party_GetMonByIndex(party, i);
+		 u16 currLevel = GetMonData(pp, MON_DATA_LEVEL, NULL);
+		 if (currLevel < lowestLevel) {
+			 lowestLevel = currLevel;
+		 }
+	 }
+	 lowLevel = lowestLevel;
+
+	 return lowLevel;
+ }
 	 
 /**
  *  @brief create the trainer Party from the trainer data file and trainer party file
@@ -155,6 +179,7 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 	u32 DoScaling = GetScalingType();
 	u16 avgLevel = GetScaledLevel(bp);
 	u16 highLevel = GetHighLevel(bp);
+	u16 lowLevel = GetLowLevel(bp);
 	#endif
 	
 	int partyOrder[pokecount];
@@ -214,6 +239,9 @@ void MakeTrainerPokemonParty(struct BATTLE_PARAM *bp, int num, int heapID)
 		}
 		if ((DoScaling == 2) && highLevel >= level) {
 			level = highLevel;
+		}
+		if ((DoScaling == 3) && lowLevel >= level) {
+			level = lowLevel;
 		}
 
         // species field
