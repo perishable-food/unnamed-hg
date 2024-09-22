@@ -143,7 +143,7 @@
 #define SUB_SEQ_ROLE_PLAY                       (135)
 #define SUB_SEQ_WISH_HEAL                       (136)
 #define SUB_SEQ_INGRAIN_HEAL                    (137)
-#define SUB_SEQ_SUPERPOWER_DEBUFF               (138)
+#define SUB_SEQ_USER_ATK_AND_DEF_DOWN_HIT       (138)
 #define SUB_SEQ_MAGIC_COAT                      (139)
 #define SUB_SEQ_BREAK_SCREENS                   (140)
 #define SUB_SEQ_YAWN                            (141)
@@ -166,7 +166,7 @@
 #define SUB_SEQ_MIRACLE_EYE                     (158)
 #define SUB_SEQ_HEALING_WISH                    (159)
 #define SUB_SEQ_APPLY_TAILWIND                  (160)
-#define SUB_SEQ_CLOSE_COMBAT_DEBUFF             (161)
+#define SUB_SEQ_USER_DEF_AND_SP_DEF_DOWN_HIT    (161)
 #define SUB_SEQ_POWER_TRICK                     (162)
 #define SUB_SEQ_GASTRO_ACID                     (163)
 #define SUB_SEQ_APPLY_LUCKY_CHANT               (164)
@@ -322,12 +322,12 @@
 #define SUB_SEQ_RAISE_ATTACK_AND_ACCURACY             (311)
 #define SUB_SEQ_GUARD_SPLIT                           (312)
 #define SUB_SEQ_POWER_SPLIT                           (313)
-#define SUB_SEQ_QUIVER_DANCE                          (314)
+#define SUB_SEQ_SP_ATK_SP_DEF_SPEED_UP                (314)
 #define SUB_SEQ_CHANGE_TARGET_TO_WATER_TYPE           (315)
-#define SUB_SEQ_COIL                                  (316)
+#define SUB_SEQ_ATK_DEF_ACC_UP                        (316)
 #define SUB_SEQ_SHIFT_GEAR                            (317)
-#define SUB_SEQ_SHELL_SMASH                           (318)
-#define SUB_SEQ_V_CREATE                              (319)
+#define SUB_SEQ_ATK_SP_ATK_SPEED_UP_2_DEF_SP_DEF_DOWN (318)
+#define SUB_SEQ_USER_DEF_SP_DEF_SPEED_DOWN_HIT        (319)
 #define SUB_SEQ_AUTOTOMIZE                            (320)
 #define SUB_SEQ_HANDLE_HARVEST                        (321)
 #define SUB_SEQ_HANDLE_MOODY                          (322)
@@ -358,9 +358,9 @@
 #define SUB_SEQ_HANDLE_TERRAIN_END                    (347)
 #define SUB_SEQ_HANDLE_JUST_FAIL                      (348)
 #define SUB_SEQ_HANDLE_TERRAIN_SEEDS                  (349)
-#define SUB_SEQ_WORK_UP                               (350)
+#define SUB_SEQ_ATK_SP_ATK_UP                         (350)
 #define SUB_SEQ_SPICY_EXTRACT                         (351)
-#define SUB_SEQ_FILLET_AWAY                           (352)
+#define SUB_SEQ_ATK_SP_ATK_SPEED_UP_2_LOSE_HALF_MAX_HP (352)
 #define SUB_SEQ_HANDLE_PARENTAL_BOND                  (353)
 #define SUB_SEQ_CREATE_TERRAIN_OVERLAY                (354)
 #define SUB_SEQ_HANDLE_SHED_TAIL                      (355)
@@ -386,11 +386,14 @@
 #define SUB_SEQ_VICTORY_DANCE                         (375)
 
 
+
 // calcrys only -- thanks mojo!
 #define SUB_SEQ_OVERWORLD_GRAVITY					  (376)
 #define SUB_SEQ_OVERWORLD_TAILWIND					  (377)
 #define SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM		  (378)
 
+#define SUB_SEQ_SIMPLE_BEAM                           (379)
+#define SUB_SEQ_HANDLE_WELL_BAKED_BODY_RAISE_DEF_2    (380)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 
@@ -558,6 +561,8 @@
 #define ADD_STATUS_EFF_QUASH                           (161)
 #define ADD_STATUS_EFF_DRAIN_FULL                      (162)
 #define ADD_STATUS_EFF_VICTORY_DANCE                   (163)
+#define ADD_STATUS_EFF_SIMPLE_BEAM                     (164)
+
 
 
 
