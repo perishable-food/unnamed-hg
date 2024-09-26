@@ -21751,7 +21751,7 @@ mondata SPECIES_GREAT_TUSK, "Idainakiba" // japanese name
 
 mondata SPECIES_SCREAM_TAIL, "Colagrito" //spanish name
     basestats 115, 65, 99, 111, 65, 115
-    types (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL, TYPE_PSYCHIC
+    types (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_NORMAL, TYPE_DARK
     catchrate 50
     baseexp 0 // defined in baseexp.s
     evyields 3, 0, 0, 0, 0, 0
@@ -21992,7 +21992,7 @@ mondata SPECIES_FRIGIBAX, "Frigibax"
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
-    abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
+    abilities ABILITY_TECHNICIAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_FRIGIBAX, "This Pokémon lives in forests and craggy areas. Using the power of its dorsal fin, it cools the inside of its nest like a refrigerator."
@@ -22013,7 +22013,7 @@ mondata SPECIES_ARCTIBAX, "Arctibax"
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
-    abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
+    abilities ABILITY_TECHNICIAN, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_ARCTIBAX, "It attacks with the blade of its frozen dorsal fin by doing a front flip in the air. Arctibax’s strong back and legs allow it to pull off this technique."
@@ -22034,7 +22034,7 @@ mondata SPECIES_BAXCALIBUR, "Baxcalibur"
     basefriendship 50
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
-    abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
+    abilities ABILITY_TECHNICIAN, ABILITY_FLASH_FIRE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
     mondexentry SPECIES_BAXCALIBUR, "It launches itself into battle by flipping upside down and spewing frigid air from its mouth. It finishes opponents off with its dorsal blade."
@@ -22498,7 +22498,7 @@ mondata SPECIES_GOUGING_FIRE, "Keilflamme" // german name
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
     runchance 0
-    abilities ABILITY_SOLAR_POWER, ABILITY_NONE
+    abilities ABILITY_FLAME_BODY, ABILITY_NONE
     colorflip BODY_COLOR_BROWN, 0
     mondexentry SPECIES_GOUGING_FIRE, "It resembles a Pokémon once shown in a\nparanormal magazine. That Pokémon was said\nto be an Entei regenerated from a fossil."
     mondexclassification SPECIES_GOUGING_FIRE, "Paradox Pokémon"
@@ -22959,7 +22959,7 @@ mondata SPECIES_MEGA_SCEPTILE, "-----"
     basefriendship 50
     growthrate GROWTH_MEDIUM_SLOW
     egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
-    abilities ABILITY_LIGHTNING_ROD, ABILITY_NONE
+    abilities ABILITY_SOLAR_POWER, ABILITY_NONE
     runchance 0
     colorflip 0, 0
 
@@ -23359,7 +23359,7 @@ mondata SPECIES_MEGA_AUDINO, "-----"
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
-    abilities ABILITY_HEALER, ABILITY_HEALER
+    abilities ABILITY_REGENERATOR, ABILITY_REGENERATOR
     runchance 0
     colorflip 0, 0
 
