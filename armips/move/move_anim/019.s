@@ -45,7 +45,6 @@ a010_019:
     resetsprite 1
     resetsprite 2
     resetsprite 3
-    checkturn _0180, _0260
     end
 _0180:
     cmd43

@@ -327,7 +327,7 @@ movedata MOVE_FLY, "Fly"
     appeal 0x06
     contesttype CONTEST_SMART
     terminatedata
-    movedescription MOVE_FLY, "The user soars, then\nstrikes on the second\nturn. It can also be\nused for flying to\nany familiar town."
+    movedescription MOVE_FLY, "Flying Type Bullet Punch"
 
 movedata MOVE_BIND, "Bind"
     battleeffect MOVE_EFFECT_BIND_HIT
@@ -7786,7 +7786,7 @@ movedata MOVE_SLUDGE_WAVE, "Sludge Wave"
     movedescription MOVE_SLUDGE_WAVE, "The area around the\nuser is swamped by\na giant sludge wave.\nIt may also poison\nthose hit."
 
 movedata MOVE_QUIVER_DANCE, "Quiver Dance"
-    battleeffect MOVE_EFFECT_ATK_DEF_SPEED_UP
+    battleeffect MOVE_EFFECT_SP_ATK_SP_DEF_SPEED_UP
     pss SPLIT_STATUS
     basepower 0
     type TYPE_BUG
@@ -7834,20 +7834,20 @@ movedata MOVE_SYNCHRONOISE, "Synchronoise"
     movedescription MOVE_SYNCHRONOISE, "Using an odd shock\nwave, the user\ndamages same-type\nPokémon in the\nsurrounding area."
 
 movedata MOVE_ELECTRO_BALL, "Electro Ball"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_SP_ATK_UP
     pss SPLIT_SPECIAL
-    basepower 1
+    basepower 55
     type TYPE_ELECTRIC
     accuracy 100
     pp 10
-    effectchance 0
+    effectchance 100
     target MOVE_TARGET_SELECTED
     priority 0
     flags FLAG_MIRROR_MOVE | FLAG_KINGS_ROCK
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_ELECTRO_BALL, "The user hurls an\nelectric orb. The\nfaster the user is\nthan the foe, the\ngreater the damage."
+    movedescription MOVE_ELECTRO_BALL, "Raises Sp.Atk"
 
 movedata MOVE_SOAK, "Soak"
     battleeffect MOVE_EFFECT_CHANGE_TO_WATER_TYPE
@@ -13003,12 +13003,12 @@ movedata MOVE_LASH_OUT, "Lash Out"
     movedescription MOVE_LASH_OUT, "---"
 
 movedata MOVE_POLTERGEIST, "Poltergeist"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_REMOVE_HELD_ITEM
     pss SPLIT_PHYSICAL
-    basepower 110
+    basepower 65
     type TYPE_GHOST
-    accuracy 90
-    pp 5
+    accuracy 100
+    pp 20
     effectchance 0
     target MOVE_TARGET_SELECTED
     priority 0
@@ -13016,7 +13016,7 @@ movedata MOVE_POLTERGEIST, "Poltergeist"
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
-    movedescription MOVE_POLTERGEIST, "---"
+    movedescription MOVE_POLTERGEIST, "Ghost-Type Knock Off (for now)"
 
 movedata MOVE_CORROSIVE_GAS, "Corrosive Gas"
     battleeffect MOVE_EFFECT_HIT
@@ -13451,7 +13451,7 @@ movedata MOVE_MOUNTAIN_GALE, "Mountain Gale"
     movedescription MOVE_MOUNTAIN_GALE, "---"
 
 movedata MOVE_VICTORY_DANCE, "Victory Dance"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_ATK_DEF_SPEED_UP
     pss SPLIT_STATUS
     basepower 0
     type TYPE_FIGHTING
