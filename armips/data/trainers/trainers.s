@@ -26493,16 +26493,16 @@ trainerdata 721, "Misty"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_BARRASKEWDA
-        item ITEM_FOCUS_SASH
-        move MOVE_WAVE_CRASH
-        move MOVE_CLOSE_COMBAT
-        move MOVE_PSYCHIC_FANGS
-        move MOVE_DRILL_RUN
-		ability ABILITY_SWIFT_SWIM
+        monwithform SPECIES_KELDEO, 1
+        item ITEM_CHOICE_SPECS
+        move MOVE_SURF
+        move MOVE_SECRET_SWORD
+        move MOVE_TACHYON_CUTTER
+        move MOVE_SCALD
+		ability ABILITY_SHARPNESS
 		setivs 31, 31, 31, 31, 31, 31
-		setevs 0, 252, 0, 252, 0, 4
-		nature NATURE_ADAMANT
+		setevs 0, 0, 0, 252, 252, 4
+		nature NATURE_TIMID
 		shinylock 1
 		additionalflags 0
         ballseal 0
@@ -26516,7 +26516,7 @@ trainerdata 721, "Misty"
         move MOVE_HORN_LEECH
         move MOVE_SPIKY_SHIELD
         move MOVE_SWORDS_DANCE
-		ability ABILITY_DAZZLING
+		ability ABILITY_WATER_ABSORB
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 252, 0, 252, 0, 0
 		nature NATURE_JOLLY
