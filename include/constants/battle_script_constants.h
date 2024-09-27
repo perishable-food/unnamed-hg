@@ -356,7 +356,7 @@
 #define SUB_SEQ_HANDLE_FIELD_EFFECTS_INITIAL_MSG      (345)
 #define SUB_SEQ_HANDLE_FIELD_EFFECTS_END_OF_TURN      (346)
 #define SUB_SEQ_HANDLE_TERRAIN_END                    (347)
-#define SUB_SEQ_HANDLE_JUST_FAIL                      (348)
+#define SUB_SEQ_HANDLE_PSYCHIC_TERRAIN_PROTECTION     (348)
 #define SUB_SEQ_HANDLE_TERRAIN_SEEDS                  (349)
 #define SUB_SEQ_ATK_SP_ATK_UP                         (350)
 #define SUB_SEQ_SPICY_EXTRACT                         (351)
@@ -385,15 +385,16 @@
 #define SUB_SEQ_HEAL_TARGET_BURN                      (374)
 #define SUB_SEQ_VICTORY_DANCE                         (375)
 
-
-
 // calcrys only -- thanks mojo!
 #define SUB_SEQ_OVERWORLD_GRAVITY					  (376)
 #define SUB_SEQ_OVERWORLD_TAILWIND					  (377)
 #define SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM		  (378)
 
-#define SUB_SEQ_SIMPLE_BEAM                           (379)
-#define SUB_SEQ_HANDLE_WELL_BAKED_BODY_RAISE_DEF_2    (380)
+#define SUB_SEQ_SWITCH_IN_ABILITY_CHECK               (379)
+#define SUB_SEQ_HANDLE_CLOUD_NINE_MESSAGE             (380)
+#define SUB_SEQ_GIVE_TARGET_SIMPLE                    (381)
+#define SUB_SEQ_ABSORB_AND_DEF_UP_2_STAGE             (382)
+#define SUB_SEQ_CANNOT_USE_MOVE                       (383)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 
