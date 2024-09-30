@@ -7834,7 +7834,7 @@ movedata MOVE_SYNCHRONOISE, "Synchronoise"
     movedescription MOVE_SYNCHRONOISE, "Using an odd shock\nwave, the user\ndamages same-type\nPokémon in the\nsurrounding area."
 
 movedata MOVE_ELECTRO_BALL, "Electro Ball"
-    battleeffect MOVE_EFFECT_SP_ATK_UP
+    battleeffect MOVE_EFFECT_RAISE_SP_ATK_HIT
     pss SPLIT_SPECIAL
     basepower 55
     type TYPE_ELECTRIC
@@ -9371,7 +9371,7 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     movedescription MOVE_MISTY_TERRAIN, "---"
 
 movedata MOVE_ELECTRIFY, "Electrify"
-    battleeffect MOVE_EFFECT_APPLY_TERRAINS
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC
