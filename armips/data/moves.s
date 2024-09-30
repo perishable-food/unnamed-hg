@@ -9371,7 +9371,7 @@ movedata MOVE_MISTY_TERRAIN, "Misty Terrain"
     movedescription MOVE_MISTY_TERRAIN, "---"
 
 movedata MOVE_ELECTRIFY, "Electrify"
-    battleeffect MOVE_EFFECT_APPLY_TERRAINS
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC
