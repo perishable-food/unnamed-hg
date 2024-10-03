@@ -552,6 +552,7 @@ One of a variety of Mega Stones.\nHave Mewtwo hold it, and this stone\nwill enab
 One of a variety of Mega Stones.\nHave Mewtwo hold it, and this stone\nwill enable it to Mega Evolve in battle.
 One of a variety of Mega Stones.\nHave Ampharos hold it, and this stone\nwill enable it to Mega Evolve in battle.
 One of a variety of Mega Stones.\nHave Steelix hold it, and this stone\nwill enable it to Mega Evolve in battle.
+One of a variety of Mega Stones.\nHave Scizor hold it, and this stone\nwill enable it to Mega Evolve in battle.
 One of a variety of Mega Stones.\nHave Heracross hold it, and this stone\nwill enable it to Mega Evolve in battle.
 One of a variety of Mega Stones.\nHave Houndoom hold it, and this stone\nwill enable it to Mega Evolve in battle.
 One of a variety of Mega Stones.\nHave Tyranitar hold it, and this stone\nwill enable it to Mega Evolve in battle.
@@ -753,21 +754,6 @@ Zekrom’s body was destroyed and\nchanged into this stone. It is said to\nbe wa
 Produce that the King of Bountiful\nHarvests’ beloved steed likes to eat.\nIt grew in a field covered in snow.
 Produce that the King of Bountiful\nHarvests’ beloved steed likes to eat.\nIt grew in a gloomy field.
 Reins of Unity Description
-Wooden Crown Description
-Rotom Catalog Description
-Adamant Crystal Description
-Lustrous Globe Description
-Griseous Core Description
-Darkness Scroll Description
-Waters Scroll Description
-Mega Ring Description
-An autograph given to you by Misty.
-Gold Teeth Description
-A stone filled with an unexplained power.\nIt allows Eeveelutions to devolve.
-Lift Key Description
-Pewter Snacks Description
-A crystallized fragment of DNA. It\nseems to have an aversion to Pokémon.
-An abnormally Rare Candy that does not\ndeplete.
 A mysterious object made of wood. Part\nof it seems to be chipped. Maybe it’s\nmeant to be part of something.
 A catalog of devices that Rotom like.\nUse the catalog to have Rotom hop in\nand out of the devices listed within.
 An item to be held by Dialga.\nThis large, glowing gem wells with power\nand allows the Pokémon to change form.

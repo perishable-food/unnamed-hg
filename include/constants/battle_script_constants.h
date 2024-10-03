@@ -383,18 +383,20 @@
 #define SUB_SEQ_WEAKEN_MOVES_STRONG_WINDS             (372)
 #define SUB_SEQ_PREVENT_CHANGING_WEATHER              (373)
 #define SUB_SEQ_HEAL_TARGET_BURN                      (374)
-#define SUB_SEQ_VICTORY_DANCE                         (375)
+#define SUB_SEQ_SWITCH_IN_ABILITY_CHECK               (375)
+#define SUB_SEQ_HANDLE_CLOUD_NINE_MESSAGE             (376)
+#define SUB_SEQ_GIVE_TARGET_SIMPLE                    (377)
+#define SUB_SEQ_ABSORB_AND_DEF_UP_2_STAGE             (378)
+#define SUB_SEQ_CANNOT_USE_MOVE                       (379)
+
+// probs from dray #IDK ~ mojo
+#define SUB_SEQ_VICTORY_DANCE                         (380)
 
 // calcrys only -- thanks mojo!
-#define SUB_SEQ_OVERWORLD_GRAVITY					  (376)
-#define SUB_SEQ_OVERWORLD_TAILWIND					  (377)
-#define SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM		  (378)
+#define SUB_SEQ_OVERWORLD_GRAVITY					  (381)
+#define SUB_SEQ_OVERWORLD_TAILWIND					  (382)
+#define SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM		  (383)
 
-#define SUB_SEQ_SWITCH_IN_ABILITY_CHECK               (379)
-#define SUB_SEQ_HANDLE_CLOUD_NINE_MESSAGE             (380)
-#define SUB_SEQ_GIVE_TARGET_SIMPLE                    (381)
-#define SUB_SEQ_ABSORB_AND_DEF_UP_2_STAGE             (382)
-#define SUB_SEQ_CANNOT_USE_MOVE                       (383)
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c
 

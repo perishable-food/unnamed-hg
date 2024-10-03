@@ -175,8 +175,8 @@ u16 move_effect_to_subscripts[] =
     [ADD_STATUS_EFF_AFTER_YOU]                   = SUB_SEQ_HANDLE_AFTER_YOU,
     [ADD_STATUS_EFF_QUASH]                       = SUB_SEQ_HANDLE_QUASH,
     [ADD_STATUS_EFF_DRAIN_FULL]                  = SUB_SEQ_DRAIN_FULL,
-    [ADD_STATUS_EFF_VICTORY_DANCE]               = SUB_SEQ_VICTORY_DANCE,
     [ADD_STATUS_EFF_SIMPLE_BEAM]                 = SUB_SEQ_GIVE_TARGET_SIMPLE,
+    [ADD_STATUS_EFF_VICTORY_DANCE]               = SUB_SEQ_VICTORY_DANCE,
 };
 
 
