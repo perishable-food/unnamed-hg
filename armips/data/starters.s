@@ -9,7 +9,7 @@
 // sequence. To update that text, modify text archive 190 in
 // DSPRE.
 .macro STARTER_CHOICES
-    .word SPECIES_SNIVY
+    .word SPECIES_SPRIGATITO
     .word SPECIES_FENNEKIN
     .word SPECIES_POPPLIO
 .endmacro

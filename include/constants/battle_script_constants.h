@@ -388,8 +388,7 @@
 #define SUB_SEQ_GIVE_TARGET_SIMPLE                    (377)
 #define SUB_SEQ_ABSORB_AND_DEF_UP_2_STAGE             (378)
 #define SUB_SEQ_CANNOT_USE_MOVE                       (379)
-#define SUB_SEQ_POWER_HERB_METEOR_BEAM                (380)
-#define SUB_SEQ_SP_ATK_UP_RAIN_SKIP                   (381)
+
 
 // probs from dray #IDK ~ mojo
 #define SUB_SEQ_VICTORY_DANCE                         (380)
@@ -404,6 +403,9 @@
 #define SUB_SEQ_OVERWORLD_SUN_RADIO_WAVES             (387)
 #define SUB_SEQ_OVERWORLD_TRICK_ROOM_RADIO_WAVES      (388)
 #define SUB_SEQ_OVERWORLD_GRAVITY_RADIO_WAVES	      (389)
+
+#define SUB_SEQ_POWER_HERB_METEOR_BEAM                (390)
+#define SUB_SEQ_SP_ATK_UP_RAIN_SKIP                   (391)
 
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c

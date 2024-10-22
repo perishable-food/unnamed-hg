@@ -110,8 +110,11 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
 						case 22:
-							scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+							/* scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT; */
+                            sp->current_move_index = MOVE_TAILWIND;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->tailwindCount[1] = 255;
 							break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
@@ -207,6 +210,12 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                                     sp->battlemon[client_no].appear_check_flag = 1;
                                     if ((sp->field_condition & WEATHER_HAIL_ANY) == 0) {
                                         scriptnum = SUB_SEQ_SNOW_WARNING;
+                                        ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                                    }
+                                    break;
+								case ABILITY_WATER_VEIL:
+                                    sp->battlemon[client_no].appear_check_flag = 1; {
+                                        scriptnum = SUB_SEQ_WATER_VEIL_AQUA_RING;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
                                     break;
