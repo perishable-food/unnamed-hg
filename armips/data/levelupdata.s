@@ -1251,7 +1251,7 @@ levelup SPECIES_PRIMEAPE
     learnset MOVE_CROSS_CHOP, 22
     learnset MOVE_ASSURANCE, 26
     learnset MOVE_PUNISHMENT, 30
-    learnset MOVE_THRASH, 35
+    learnset MOVE_RAGE_FIST, 35
     learnset MOVE_CLOSE_COMBAT, 39
     learnset MOVE_SCREECH, 44
     learnset MOVE_STOMPING_TANTRUM, 48

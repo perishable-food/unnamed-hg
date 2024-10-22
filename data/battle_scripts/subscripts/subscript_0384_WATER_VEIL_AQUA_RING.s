@@ -1,0 +1,16 @@
+.include "asm/include/battle_commands.inc"
+
+.data
+
+_000:
+    UpdateVar OPCODE_SET, BSCRIPT_VAR_MSG_MOVE_TEMP, MOVE_AQUA_RING
+    PlayMoveAnimation BATTLER_CATEGORY_MSG_TEMP
+    Wait 
+    UpdateVar OPCODE_SET, BSCRIPT_VAR_MOVE_EFFECT_CHANCE, 0
+    UpdateVar OPCODE_FLAG_OFF, BSCRIPT_VAR_BATTLE_STATUS, BATTLE_STATUS_MOVE_ANIMATIONS_OFF
+    // {0} surrounded itself with a veil of water!
+    PrintMessage 1027, TAG_NICKNAME, BATTLER_CATEGORY_ATTACKER
+    Wait 
+    WaitButtonABTime 30
+    UpdateMonData OPCODE_FLAG_ON, BATTLER_CATEGORY_ATTACKER, BMON_DATA_MOVE_EFFECT, MOVE_EFFECT_FLAG_AQUA_RING
+    End 

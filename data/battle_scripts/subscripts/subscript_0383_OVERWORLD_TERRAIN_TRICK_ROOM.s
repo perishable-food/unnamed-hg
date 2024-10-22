@@ -3,11 +3,13 @@
 .data
 
 _000:
+UpdateTerrainOverlay FALSE, _045
     GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _019
     GotoIfTerrainOverlayIsType MISTY_TERRAIN, _024
     GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _029
     GotoIfTerrainOverlayIsType PSYCHIC_TERRAIN, _034
-
+    GoTo _049
+	
 _019:
     PlayBattleAnimation BATTLER_CATEGORY_ATTACKER, BATTLE_ANIMATION_GRASSY_TERRAIN
     Wait
@@ -50,3 +52,9 @@ _037:
     WaitButtonABTime 30
     UpdateVar OPCODE_FLAG_ON, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_TRICK_ROOM
     End 
+	
+_045:
+    UpdateVar OPCODE_FLAG_ON, BSCRIPT_VAR_MOVE_STATUS_FLAGS, MOVE_STATUS_FAILED
+	
+_049:
+    End
