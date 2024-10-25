@@ -48,6 +48,7 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
     int method_local;
     u32 form = GetMonData(pokemon, MON_DATA_FORM, NULL);
     u32 lowkey = 0;
+	u32 GetLevelCap(void);
 
     species = GetMonData(pokemon, MON_DATA_SPECIES, NULL);
     heldItem = GetMonData(pokemon, MON_DATA_HELD_ITEM, NULL);
@@ -412,6 +413,8 @@ u16 GetMonEvolutionInternal(struct Party *party, struct PartyPokemon *pokemon, u
             }
         }
 		u32 levelCap = GetScriptVar(LEVEL_CAP_VARIABLE);
+		if (levelCap > 100) levelCap = 100;
+		return levelCap;
         if (level == levelCap && usedItem == ITEM_RAREST_CANDY)
         {
             species = GetMonEvolutionInternal(party, pokemon, EVOCTX_LEVELUP, usedItem, NULL);
