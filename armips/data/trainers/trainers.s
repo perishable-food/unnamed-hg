@@ -1429,7 +1429,7 @@ trainerdata 33, "Jasmine"
 		setivs 31, 0, 31, 31, 31, 31
 		setevs 252, 0, 232, 24, 0, 0
 		nature NATURE_BOLD
-		shinylock 0
+		shinylock 1
 		additionalflags 0
         ballseal 0
 
@@ -26074,12 +26074,12 @@ trainerdata 717, "Jasmine"
         abilityslot 0
         level 1 
         pokemon SPECIES_GHOLDENGO
-        item ITEM_AIR_BALLOON
+        item ITEM_LEFTOVERS
         move MOVE_MAKE_IT_RAIN
         move MOVE_SHADOW_BALL
         move MOVE_NASTY_PLOT
         move MOVE_RECOVER
-		ability ABILITY_GOOD_AS_GOLD
+		ability ABILITY_LEVITATE
 		setivs 31, 0, 31, 31, 31, 31
 		setevs 252, 0, 0, 0, 252, 4
 		nature NATURE_MODEST
@@ -26221,7 +26221,6 @@ trainerdata 718, "Chuck"
 		additionalflags 0
         ballseal 0
 
-
         ivs 200
         abilityslot 0
         level 1 
@@ -26268,7 +26267,7 @@ trainerdata 718, "Chuck"
 		ability ABILITY_SPEED_BOOST
 		setivs 31, 0, 31, 31, 31, 31
 		setevs 0, 0, 0, 252, 252, 4
-		nature NATURE_ADAMANT
+		nature NATURE_MODEST
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -26410,7 +26409,7 @@ trainerdata 720, "Brock"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_OGERPON
+        monwithform SPECIES_OGERPON, 3
         item ITEM_CORNERSTONE_MASK
         move MOVE_IVY_CUDGEL
         move MOVE_HORN_LEECH
@@ -26445,7 +26444,7 @@ trainerdata 720, "Brock"
 		ivs 200
         abilityslot 0
         level 1 
-        monwithform SPECIES_LYCANROC, 1
+        monwithform SPECIES_LYCANROC, 2
         item ITEM_FOCUS_SASH
         move MOVE_ACCELEROCK
         move MOVE_ROCK_SLIDE
@@ -26510,7 +26509,7 @@ trainerdata 721, "Misty"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_OGERPON
+        monwithform SPECIES_OGERPON, 1
         item ITEM_WELLSPRING_MASK
         move MOVE_IVY_CUDGEL
         move MOVE_HORN_LEECH
@@ -26779,7 +26778,7 @@ trainerdata 723, "Erika"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_OGERPON
+        monwithform SPECIES_OGERPON, 2
         item ITEM_HEARTHFLAME_MASK
         move MOVE_SWORDS_DANCE
         move MOVE_IVY_CUDGEL
