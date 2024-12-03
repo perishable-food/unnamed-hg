@@ -2057,9 +2057,9 @@ encounter SPECIES_NONE, 0, 0
 // old rod encounters
 encounter SPECIES_MAGIKARP, 10, 10
 encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_MAGIKARP, 10, 10
-encounter SPECIES_HORSEA, 10, 10
-encounter SPECIES_HORSEA, 10, 10
+encounter SPECIES_FROAKIE, 10, 10
+encounter SPECIES_FROAKIE, 10, 10
+encounter SPECIES_FROAKIE, 10, 10
 
 // good rod encounters
 encounter SPECIES_MAGIKARP, 20, 20
@@ -6785,7 +6785,7 @@ pokemon SPECIES_BLACEPHALON
 pokemon SPECIES_BLACEPHALON
 pokemon SPECIES_BLACEPHALON
 pokemon SPECIES_BLACEPHALON
-pokemon SPECIES_BLACEPHALON
+pokemon SPECIES_BLACEPHALON //big fat slobbering encounter
 pokemon SPECIES_BLACEPHALON
 pokemon SPECIES_OSHAWOTT
 pokemon SPECIES_BLACEPHALON

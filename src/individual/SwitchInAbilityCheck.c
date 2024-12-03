@@ -48,20 +48,23 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
             case SWITCH_IN_CHECK_WEATHER:  // 022531DE
             {
                 if (sp->weather_check_flag == 0) {
-                    switch (BattleWorkWeatherGet(bw)) {
+					switch (BattleWorkWeatherGet(bw)) {
                         case WEATHER_SYS_RAIN:
                         case WEATHER_SYS_HEAVY_RAIN:
                         case WEATHER_SYS_THUNDER:
+                        case 15:
                             scriptnum = SUB_SEQ_OVERWORLD_RAIN;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
                         case WEATHER_SYS_SNOW:
                         case WEATHER_SYS_SNOWSTORM:
-                            // case WEATHER_SYS_BLIZZARD:
+                        // case WEATHER_SYS_BLIZZARD:
+                        case 17:
                             scriptnum = SUB_SEQ_OVERWORLD_HAIL;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
                         case WEATHER_SYS_SANDSTORM:
+                        case 16:
                             scriptnum = SUB_SEQ_OVERWORLD_SANDSTORM;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
@@ -71,51 +74,72 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
                         case WEATHER_SYS_HIGH_SUN:
-						case 14:
+                        case 14:
                             scriptnum = SUB_SEQ_OVERWORLD_SUN;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
                         case WEATHER_SYS_TRICK_ROOM:
-						case 15:
-                            scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM;
+                        case 18:
+                            scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM; 
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
-						case 16:
-							sp->current_move_index = MOVE_GRASSY_TERRAIN;
-							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
-							break;
-						case 17:
-							sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
-							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
-							break;
-						case 18:
-							sp->current_move_index = MOVE_MISTY_TERRAIN;
-							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
-							break;
-						case 19:
-							sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
-							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-							scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
-							break;
-						case 20:
-							sp->client_work = client_no;
-							scriptnum = SUB_SEQ_DELTA_STREAM;
-							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-							break;
-						case 21:
-							scriptnum = SUB_SEQ_OVERWORLD_GRAVITY;
+                        case 19:
+                            scriptnum = SUB_SEQ_OVERWORLD_GRAVITY_RADIO_WAVES;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             break;
-						case 22:
-							/* scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
+                        case 20:
+                            sp->current_move_index = MOVE_GRASSY_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 21:
+                            sp->current_move_index = MOVE_MISTY_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 22:
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 23:
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 24:
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM;
+                            break;
+                        case 25:
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_TERRAIN_TRICK_ROOM;
+                            break;
+                        case 26:
+                            /* scriptnum = SUB_SEQ_OVERWORLD_TAILWIND;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT; */
                             sp->current_move_index = MOVE_TAILWIND;
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             sp->tailwindCount[1] = 255;
-							break;
+                            break;
+                        case 27:
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_RADIO_WAVES;
+                            break;
+                        case 28:
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_RAIN_RADIO_WAVES;
+                            break;
+                        case 29:
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_SUN_RADIO_WAVES;
+                            break;
+                        case 30:
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM_RADIO_WAVES;
+                            break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;
