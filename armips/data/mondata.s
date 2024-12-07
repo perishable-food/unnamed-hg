@@ -21824,7 +21824,7 @@ mondata SPECIES_SLITHER_WING, "Reptalada" // spanish name
     basefriendship 0
     growthrate GROWTH_SLOW
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_MULTISCALE, ABILITY_NONE
+    abilities ABILITY_FLUFFY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_RED, 0
     mondexentry SPECIES_SLITHER_WING, "This Pokémon somewhat resembles an\nancient form of Volcarona that was\nintroduced in a dubious magazine."
