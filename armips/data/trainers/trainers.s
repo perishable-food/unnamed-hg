@@ -8562,18 +8562,17 @@ trainerdata 246, "Karen"
         abilityslot 0
         level 1 
         pokemon SPECIES_UMBREON
-        item ITEM_LEFTOVERS
+        item ITEM_TOXIC_ORB
         move MOVE_TOXIC
         move MOVE_PROTECT
-        move MOVE_WISH
+        move MOVE_LEECH_SEED
         move MOVE_FOUL_PLAY
-		ability ABILITY_SYNCHRONIZE
+		ability ABILITY_POISON_HEAL
 		setivs 31, 0, 31, 31, 31, 31
 		setevs 252, 0, 4, 0, 0, 252
 		nature NATURE_BOLD
 		shinylock 1
-		additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
-		nickname _T, _A, _R, _O, _endstr, 0, 0, 0, 0, 0, 0
+		additionalflags 0
         ballseal 0
 
         // mon 1
