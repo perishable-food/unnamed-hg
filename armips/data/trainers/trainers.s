@@ -831,7 +831,6 @@ trainerdata 21, "Bugsy"
 		additionalflags 0
         ballseal 0
 
-
         ivs 200
         abilityslot 0
         level 1 
@@ -9102,17 +9101,17 @@ trainerdata 254, "Misty"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_BARRASKEWDA
+        pokemon SPECIES_FLOATZEL
         item ITEM_FOCUS_SASH
         move MOVE_LIQUIDATION
-        move MOVE_CLOSE_COMBAT
-        move MOVE_PSYCHIC_FANGS
-        move MOVE_DRILL_RUN
+        move MOVE_BRICK_BREAK
+        move MOVE_WAVE_CRASH
+        move MOVE_ICE_SPINNER
 		ability ABILITY_SWIFT_SWIM
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 0, 252, 0, 252, 0, 4
 		nature NATURE_ADAMANT
-		shinylock 1
+		shinylock 0
 		additionalflags 0
         ballseal 0
 
@@ -9622,16 +9621,16 @@ trainerdata 258, "Sabrina"
 		ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_POLTEAGEIST
-        item ITEM_FOCUS_SASH
+             pokemon SPECIES_SINISTCHA
+        item ITEM_HEAVY_DUTY_BOOTS
+        move MOVE_CALM_MIND
+        move MOVE_MATCHA_GOTCHA
         move MOVE_SHADOW_BALL
-        move MOVE_STORED_POWER
-        move MOVE_TERA_BLAST
-        move MOVE_SHELL_SMASH
-		ability ABILITY_WEAK_ARMOR
-		setivs 31, 31, 31, 31, 31, 31
-		setevs 0, 0, 0, 252, 252, 4
-		nature NATURE_TIMID
+        move MOVE_SUBSTITUTE
+		ability ABILITY_HEATPROOF
+		setivs 31, 0, 31, 31, 31, 31
+		setevs 252, 0, 160, 96, 0, 0
+		nature NATURE_BOLD
 		shinylock 0
 		additionalflags 0
         ballseal 0
@@ -26223,13 +26222,13 @@ trainerdata 718, "Chuck"
         ivs 200
         abilityslot 0
         level 1 
-        pokemon SPECIES_IRON_HANDS
-        item ITEM_SITRUS_BERRY
+        pokemon SPECIES_HARIYAMA
+        item ITEM_FLAME_ORB
         move MOVE_THUNDER_PUNCH
         move MOVE_DRAIN_PUNCH
         move MOVE_ROCK_SLIDE
         move MOVE_BELLY_DRUM
-		ability ABILITY_IRON_FIST
+		ability ABILITY_GUTS
 		setivs 31, 31, 31, 31, 31, 31
 		setevs 252, 252, 0, 0, 0, 4
 		nature NATURE_ADAMANT
@@ -26491,7 +26490,7 @@ trainerdata 721, "Misty"
         ivs 200
         abilityslot 0
         level 1 
-        monwithform SPECIES_KELDEO, 1
+        pokemon SPECIES_KELDEO
         item ITEM_CHOICE_SPECS
         move MOVE_SURF
         move MOVE_SECRET_SWORD
