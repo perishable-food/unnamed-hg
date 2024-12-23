@@ -140,6 +140,10 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                             ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                             scriptnum = SUB_SEQ_OVERWORLD_TRICK_ROOM_RADIO_WAVES;
                             break;
+						case 31:
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_DESOLATE_LAND;
+							break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;

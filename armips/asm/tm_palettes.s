@@ -40,7 +40,7 @@ PALETTE_FAIRY equ 401
 .halfword PALETTE_DRAGON
 .skip 4
 
-// TM003 WATER_PULSE
+// TM003 SCALD
 .skip 2
 .halfword PALETTE_WATER
 .skip 4
@@ -125,7 +125,7 @@ PALETTE_FAIRY equ 401
 .halfword PALETTE_GRASS
 .skip 4
 
-// TM020 SAFEGUARD
+// TM020 ROAR
 .skip 2
 .halfword PALETTE_NORMAL
 .skip 4
@@ -195,7 +195,7 @@ PALETTE_FAIRY equ 401
 .halfword PALETTE_PSYCHIC
 .skip 4
 
-// TM034 SHOCK_WAVE
+// TM034 VOLT_SWITCH
 .skip 2
 .halfword PALETTE_ELECTRIC
 .skip 4
@@ -410,9 +410,9 @@ PALETTE_FAIRY equ 401
 .halfword PALETTE_ROCK
 .skip 4
 
-// TM077 PSYCH_UP
+// TM077 DAZZLING_GLEAM
 .skip 2
-.halfword PALETTE_NORMAL
+.halfword PALETTE_FAIRY
 .skip 4
 
 // TM078 CAPTIVATE
@@ -440,7 +440,7 @@ PALETTE_FAIRY equ 401
 .halfword PALETTE_NORMAL
 .skip 4
 
-// TM083 NATURAL_GIST
+// TM083 NATURAL_GIFT
 .skip 2
 .halfword PALETTE_NORMAL
 .skip 4
