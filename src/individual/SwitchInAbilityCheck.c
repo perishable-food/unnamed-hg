@@ -144,6 +144,14 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
 							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
 							scriptnum = SUB_SEQ_DESOLATE_LAND;
 							break;
+						case 32:
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_PRIMORDIAL_SEA;
+							break;
+						case 33:
+							ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+							scriptnum = SUB_SEQ_DELTA_STREAM;
+							break;
                     }
                     if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
                         sp->weather_check_flag = 1;
@@ -243,6 +251,7 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                                     break;
 								case ABILITY_WATER_VEIL:
                                     sp->battlemon[client_no].appear_check_flag = 1; {
+										sp->client_work = client_no;
                                         scriptnum = SUB_SEQ_WATER_VEIL_AQUA_RING;
                                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                                     }
