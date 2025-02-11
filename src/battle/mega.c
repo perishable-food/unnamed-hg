@@ -466,7 +466,7 @@ BOOL CheckCanSpeciesMegaEvolveByMove(struct BattleStruct *sp, u32 client)
     int i, j, species;
 
     species = sp->battlemon[client].species;
-    //move = ST_ServerSelectWazaGet(sp, client);
+    //move = GetBattlerSelectedMove(sp, client);
 
     for (i = 0; i < (s32)NELEMS(sMegaMoveTable); i++)
     {

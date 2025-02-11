@@ -25433,7 +25433,7 @@ mondata SPECIES_PUMPKABOO_SUPER, "-----"
     catchrate 120
     baseexp 67
     evyields 0, 0, 1, 0, 0, 0
-    items ITEM_NONE, ITEM_NONE
+    items ITEM_MIRACLE_SEED, ITEM_MIRACLE_SEED
     genderratio 127
     eggcycles 0
     basefriendship 70
@@ -25481,7 +25481,7 @@ mondata SPECIES_GOURGEIST_SUPER, "-----"
     catchrate 60
     baseexp 173
     evyields 0, 0, 2, 0, 0, 0
-    items ITEM_NONE, ITEM_NONE
+    items ITEM_MIRACLE_SEED, ITEM_MIRACLE_SEED
     genderratio 127
     eggcycles 0
     basefriendship 70
