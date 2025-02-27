@@ -1209,27 +1209,27 @@ BOOL LONG_CALL UseItemOnPokemon(struct PartyPokemon *mon, u16 itemID, u16 moveId
 
     sp58 = sp54 = GetMonData(mon, MON_DATA_STATUS, NULL);
     if (itemData->partyUseParam.slp_heal) {
-        sp58 &= ~STATUS_FLAG_ASLEEP;
+        sp58 &= ~STATUS_SLEEP;
         effectFound = TRUE;
     }
 
     if (itemData->partyUseParam.psn_heal) {
-        sp58 &= ~(STATUS_FLAG_POISONED | STATUS_FLAG_BADLY_POISONED | 0xF00);
+        sp58 &= ~(STATUS_POISON | STATUS_BAD_POISON | 0xF00);
         effectFound = TRUE;
     }
 
     if (itemData->partyUseParam.brn_heal) {
-        sp58 &= ~STATUS_FLAG_BURNED;
+        sp58 &= ~STATUS_BURN;
         effectFound = TRUE;
     }
 
     if (itemData->partyUseParam.frz_heal) {
-        sp58 &= ~STATUS_FLAG_FROZEN;
+        sp58 &= ~STATUS_FREEZE;
         effectFound = TRUE;
     }
 
     if (itemData->partyUseParam.prz_heal) {
-        sp58 &= ~STATUS_FLAG_PARALYZED;
+        sp58 &= ~STATUS_PARALYSIS;
         effectFound = TRUE;
     }
 
@@ -2534,74 +2534,7 @@ u32 SpeciesAndFormeToWazaOshieIndex(u32 species, u32 form)
     return ret;
 }
 
-static const u16 sBattleFrontierBanlist[NUM_BANNED_BATTLE_FRONTIER] = {
-    SPECIES_MEWTWO,
-    SPECIES_MEW,
-    SPECIES_LUGIA,
-    SPECIES_HO_OH,
-    SPECIES_CELEBI,
-    SPECIES_KYOGRE,
-    SPECIES_GROUDON,
-    SPECIES_RAYQUAZA,
-    SPECIES_JIRACHI,
-    SPECIES_DEOXYS,
-    SPECIES_DIALGA,
-    SPECIES_PALKIA,
-    SPECIES_GIRATINA,
-    SPECIES_PHIONE,
-    SPECIES_MANAPHY,
-    SPECIES_DARKRAI,
-    SPECIES_SHAYMIN,
-    SPECIES_ARCEUS,
-	SPECIES_SALAMENCE,
-};
 
-BOOL IsPokemonBannedFromBattleFrontier(u16 species, u16 form) {
-    for (u32 i = 0; i < NUM_BANNED_BATTLE_FRONTIER; i++) {
-        if (species == sBattleFrontierBanlist[i]) {
-            return TRUE;
-        }
-    }
-    if (species == SPECIES_PICHU && form == 1) {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-u16 GetBannedBattleFrontierPokemon(u32 idx) {
-    if (idx >= NUM_BANNED_BATTLE_FRONTIER) {
-        idx = 0;
-    }
-    return sBattleFrontierBanlist[idx];
-}
-
-static const u16 sMythicalMonsList[9] = {
-    SPECIES_MEW,
-    SPECIES_CELEBI,
-    SPECIES_JIRACHI,
-    SPECIES_DEOXYS,
-    SPECIES_PHIONE,
-    SPECIES_MANAPHY,
-    SPECIES_DARKRAI,
-    SPECIES_SHAYMIN,
-    SPECIES_ARCEUS,
-};
-
-BOOL SpeciesIsMythical(u16 species) {
-    int i;
-    for (i = 0; i < NELEMS(sMythicalMonsList); i++) {
-        if (species == sMythicalMonsList[i]) {
-            return TRUE;
-        }
-    }
-    return FALSE;
-}
-
-BOOL MonCheckFrontierIneligibility(struct PartyPokemon *mon) {
-    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
-    u16 form = GetMonData(mon, MON_DATA_FORM, NULL);
-    return IsPokemonBannedFromBattleFrontier(species, form);
-}
 
 /**
  *  @brief get level cap from the script variable defined by LEVEL_CAP_VARIABLE

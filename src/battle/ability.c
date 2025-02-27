@@ -396,28 +396,6 @@ BOOL MoveHitAttackerAbilityCheck(void *bw, struct BattleStruct *sp, int *seq_no)
                 }
             }
             break;
-        case ABILITY_BATTLE_BOND:
-            if ((sp->defence_client == sp->fainting_client)
-                && ((sp->server_status_flag2 & SERVER_STATUS_FLAG2_U_TURN) == 0)
-                && (sp->battlemon[sp->attack_client].hp)
-                && ((sp->waza_status_flag & WAZA_STATUS_FLAG_NO_OUT) == 0))
-            {
-
-                if (sp->battlemon[sp->attack_client].species != SPECIES_DEOXYS && sp->battlemon[sp->attack_client].form_no == 1)
-                {
-                    sp->oneTurnFlag[sp->attack_client].numberOfKOs++;
-                }
-				
-				if (sp->battlemon[sp->attack_client].species == SPECIES_DEOXYS)
-                {
-                    sp->state_client = sp->attack_client;
-                    sp->client_work = sp->attack_client;
-                    sp->battlemon[sp->attack_client].form_no = 4;
-                    seq_no[0] = SUB_SEQ_FORM_CHANGE;
-                    ret = TRUE;
-                }
-            }
-            break;
         default:
             break;
     }
