@@ -5,7 +5,6 @@
 
 #define SCRIPT_NEW_CMD_REPEL_USE      0
 #define SCRIPT_NEW_CMD_BOTTLE_CAP_USE 1
-
 #define SCRIPT_NEW_CMD_MAX          256
 
 BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
@@ -21,10 +20,7 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
 #endif
             break;
 
-        default: break;
-
-    case SCRIPT_NEW_CMD_BOTTLE_CAP_USE:;
-#ifdef BOTTLE_CAP_MAX_IVS
+        case SCRIPT_NEW_CMD_BOTTLE_CAP_USE:;
             FieldSystem *fsys = ctx->fsys;
             struct PartyPokemon *pp;
             struct Party *party = SaveData_GetPlayerPartyPtr(fsys->savedata);
@@ -49,8 +45,10 @@ BOOL Script_RunNewCmd(SCRIPTCONTEXT *ctx) {
             default:break;
             }
             RecalcPartyPokemonStats(pp);
-#endif
             break;
+
+        default: break;
+
     }
 
     return FALSE;
