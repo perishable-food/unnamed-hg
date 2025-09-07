@@ -121,3 +121,19 @@ mov r0, r4
 bl PartyMenu_ItemUseFunc_ReuseItem
 ldr r3, =0x02081398 | 1
 bx r3
+
+.global UseItemOnPokemon_hook
+UseItemOnPokemon_hook:
+ldr r5, =UseItemOnPokemon_return_address
+mov r6, lr
+str r6, [r5]
+pop {r5-r6}
+bl UseItemOnPokemon
+ldr r1, =UseItemOnPokemon_return_address
+ldr r1, [r1]
+mov pc, r1
+
+.pool
+
+UseItemOnPokemon_return_address:
+.word 0

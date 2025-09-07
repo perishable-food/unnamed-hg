@@ -457,5 +457,8 @@ arm9 020821B0 DB
 # nop out heal bell check for healing mons in the party using heal bell
 0012 022593A4 00 00 00 00
 
-# nop out selection of cancel when the item won't have an effect
+# nop out selection of cancel when the item wont have an effect
 arm9 0207C3AC 00 00 00 00
+
+# UseItemOnPokemon_hook setup
+arm9 020902D0 60 B4 C0 46
