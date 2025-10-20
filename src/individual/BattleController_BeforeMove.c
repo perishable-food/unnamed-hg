@@ -1463,7 +1463,7 @@ void BattleController_CheckInfatuation(struct BattleSystem *bsys, struct BattleS
 
 // TODO: unique subscript for Stance Change
 void BattleController_CheckStanceChange(struct BattleSystem *bsys, struct BattleStruct *ctx) {
-    if (ctx->battlemon[ctx->attack_client].ability == ABILITY_STANCE_CHANGE && ctx->battlemon[ctx->attack_client].species == SPECIES_AEGISLASH) {
+    if (ctx->battlemon[ctx->attack_client].species == SPECIES_AEGISLASH) {
         ctx->battlerIdTemp = ctx->attack_client;
         if (ctx->current_move_index == MOVE_KINGS_SHIELD && ctx->battlemon[ctx->attack_client].form_no == 1) {
             ctx->battlemon[ctx->battlerIdTemp].form_no = 0;
