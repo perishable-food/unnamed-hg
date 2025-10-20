@@ -15377,7 +15377,7 @@ mondata SPECIES_AEGISLASH, "Aegislash"
     basefriendship 50
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
-    abilities ABILITY_STANCE_CHANGE, ABILITY_NONE
+    abilities ABILITY_BULLETPROOF, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
     mondexentry SPECIES_AEGISLASH, "It can detect the innate qualities of\nleadership. Whoever it recognizes is\ndestined to become king."
@@ -25582,7 +25582,7 @@ mondata SPECIES_AEGISLASH_BLADE, "-----"
     basefriendship 70
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
-    abilities ABILITY_STANCE_CHANGE, ABILITY_NONE
+    abilities ABILITY_SHARPNESS, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_BROWN, 0
 
