@@ -1423,6 +1423,33 @@ gIconPalTable:
 /* SPECIES_TERAPAGOS_TERASTAL          */ .byte  0x0
 /* SPECIES_TERAPAGOS_STELLAR           */ .byte  0x0
 
+/* SPECIES_MEGA_CLEFABLE               */  .byte 0x0
+/* SPECIES_MEGA_VICTREEBEL             */  .byte 0x1
+/* SPECIES_MEGA_STARMIE                */  .byte 0x0
+/* SPECIES_MEGA_DRAGONITE              */  .byte 0x2
+/* SPECIES_MEGA_MEGANIUM               */  .byte 0x0
+/* SPECIES_MEGA_FERALIGATR             */  .byte 0x0
+/* SPECIES_MEGA_SKARMORY               */  .byte 0x0
+/* SPECIES_MEGA_FROSLASS               */  .byte 0x0
+/* SPECIES_MEGA_EMBOAR                 */  .byte 0x0
+/* SPECIES_MEGA_EXCADRILL              */  .byte 0x0
+/* SPECIES_MEGA_SCOLIPEDE              */  .byte 0x0
+/* SPECIES_MEGA_SCRAFTY                */  .byte 0x0
+/* SPECIES_MEGA_EELEKTROSS             */  .byte 0x0
+/* SPECIES_MEGA_CHANDELURE             */  .byte 0x0
+/* SPECIES_MEGA_CHESNAUGHT             */  .byte 0x1
+/* SPECIES_MEGA_DELPHOX                */  .byte 0x0
+/* SPECIES_MEGA_GRENINJA               */  .byte 0x0
+/* SPECIES_MEGA_PYROAR                 */  .byte 0x0
+/* SPECIES_MEGA_FLOETTE                */  .byte 0x0
+/* SPECIES_MEGA_MALAMAR                */  .byte 0x2
+/* SPECIES_MEGA_BARBARACLE             */  .byte 0x0
+/* SPECIES_MEGA_DRAGALGE               */  .byte 0x0
+/* SPECIES_MEGA_HAWLUCHA               */  .byte 0x0
+/* SPECIES_MEGA_ZYGARDE                */  .byte 0x0
+/* SPECIES_MEGA_DRAMPA                 */  .byte 0x0
+/* SPECIES_MEGA_FALINKS                */  .byte 0x0
+
 .endarea
 
 .close
