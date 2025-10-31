@@ -758,8 +758,12 @@ _09F5:
 scr_seq_0003_010:
     scrcmd_609
     lockall
+    play_se SEQ_SE_DP_PC_ON
+    call _0A18
+    buffer_players_name 0
+    npc_msg 33
     touchscreen_menu_hide
-    goto _0B01
+    goto _0A2E
 
 _0A18:
     goto_if_set 0x18F, _skipPCOnOff

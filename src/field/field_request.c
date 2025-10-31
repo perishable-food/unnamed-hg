@@ -5,8 +5,6 @@
 #include "../../include/constants/file.h"
 #include "../../include/constants/species.h"
 
-/**** AURORA CRYSTAL: Used for Teleport Gem and Portable PC. ****/
-
 /**
  *  @brief clear overworld request flags
  *
@@ -43,12 +41,14 @@ void ClearOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req)
  */
 void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
 {
-    if (trg & PAD_BUTTON_L) {
+    if (trg & PAD_BUTTON_L) 
+    {
         req->OpenRelearnerCheck = TRUE;
     }
 
-    if (trg & PAD_BUTTON_R) {
-        req->OpenPCCheck = TRUE;
+    if (trg & PAD_BUTTON_R) 
+    {
+       req->OpenPCCheck = TRUE;
     }
 }
 
@@ -59,31 +59,29 @@ void SetOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, u16 trg)
  */
 void CheckOverworldRequestFlags(OVERWORLD_REQUEST_FLAGS *req, FieldSystem *fsys)
 {
-    // Proper mode
-    // if (req->OpenRelearnerCheck && CheckScriptFlag(2167)) {
-    //     if (CheckScriptFlag(2170)) {
-    //         EventSet_Script(fsys, 2074, NULL); // set up script 2074 if flag 2170 is set, disallowing use of the Teleport Gem
-    //     } else {
-    //         EventSet_Script(fsys, 2073, NULL); // set up script 2073
-    //     }
-    // }
-
-    // Testing mode
-    if (req->OpenRelearnerCheck) {
-        EventSet_Script(fsys, 2073, NULL); // set up script 2073
+    // Don't allow the relearner at all if flag 2567 hasn't been set
+    if (req->OpenRelearnerCheck && CheckScriptFlag(2566)) 
+    {
+        if (CheckScriptFlag(2567)) 
+        {
+            EventSet_Script(fsys, 2510, NULL); // set up script
+        } 
+        else 
+        {
+            EventSet_Script(fsys, 2509, NULL); // set up script
+        }
     }
-
-    // Don't allow the PC at all if flag 398 hasn't been set
-    // if (req->OpenPCCheck && CheckScriptFlag(398)) {
-    //     if (CheckScriptFlag(397)) {
-    //         EventSet_Script(fsys, 2072, NULL); // set up script 2072 to show a cannot use PC message if flag 397 is set
-    //     } else {
-    //         SetScriptFlag(399); // some random flag that should be set by script 2010 (file 3 script 10)
-    //         EventSet_Script(fsys, 2075, NULL); // set up script 2075
-    //     }
-    // }
-
-    if (req->OpenPCCheck) {
-        EventSet_Script(fsys, 2010, NULL); // set up script 2075
+    // Don't allow the PC at all if flag 2565 hasn't been set
+    if (req->OpenPCCheck && CheckScriptFlag(2564)) 
+    {
+        if (CheckScriptFlag(2565)) 
+        {
+            EventSet_Script(fsys, 2074, NULL); // set up script
+        } 
+        else 
+        { 
+            SetScriptFlag(399); // some random flag that should be set by script 2010 (file 3 script 10)
+            EventSet_Script(fsys, 2010, NULL); // set up script
+        } 
     }
 }

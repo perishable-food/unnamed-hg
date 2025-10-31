@@ -2596,7 +2596,7 @@
 #define MAX_TOTAL_ITEM_NUM ITEM_FALINKSITE
 
 
-#define NUM_MEGA_STONES (48 + 26) // includes the pixie plate
+#define NUM_MEGA_STONES (48) // includes the pixie plate, doesn't include plza due to overflowing bag
 #define NUM_HMS         (ITEM_HM08 - ITEM_HM01 + 1) // intentionally do not include HM07_ORAS (Dive)
 
 #define IS_ITEM_ARCEUS_PLATE(item) ((item >= ITEM_FLAME_PLATE && item <= ITEM_IRON_PLATE) || (item == ITEM_PIXIE_PLATE))
