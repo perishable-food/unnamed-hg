@@ -2556,3 +2556,34 @@ Meteorite
 Scarlet Book
 Violet Book
 Briar’s Book
+Clefablite
+Victreebelite
+Starminite
+Dragoninite
+Meganiumite
+Feraligite
+Skarmorite
+Froslassite
+Emboarite
+Excadrite
+Scolipite
+Scraftinite
+Eelektrossite
+Chandelurite
+Chesnaughtite
+Delphoxite
+Greninjite
+Pyroarite
+Floettite
+Malamarite
+Barbaracite
+Dragalgite
+Hawluchanite
+Zygardite
+Drampanite
+Falinksite
+Deciduite
+Incinerite
+Primarinite
+Dedennite
+Eeverstone

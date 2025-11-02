@@ -25348,7 +25348,7 @@ mondata SPECIES_FLOETTE_WHITE_FLOWER, "-----"
 
 mondata SPECIES_FLOETTE_ETERNAL_FLOWER, "-----"
     basestats 74, 65, 67, 92, 125, 128
-    types TYPE_FAIRY, TYPE_FAIRY
+    types TYPE_FAIRY, TYPE_DRAGON
     catchrate 120
     baseexp 243
     evyields 0, 0, 0, 0, 0, 2
@@ -27956,7 +27956,7 @@ mondata SPECIES_MEGA_GRENINJA, "-----"
 
 mondata SPECIES_MEGA_FLOETTE, "-----"
     basestats 74, 85, 87, 102, 155, 148
-    types TYPE_FAIRY, TYPE_FAIRY
+    types TYPE_FAIRY, TYPE_DRAGON
     catchrate 120
     baseexp 243
     evyields 0, 0, 0, 0, 0, 0
@@ -28079,5 +28079,69 @@ mondata SPECIES_MEGA_FALINKS, "Falinks"
     growthrate GROWTH_MEDIUM_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_MINERAL
     abilities ABILITY_BATTLE_ARMOR, ABILITY_BATTLE_ARMOR
+    runchance 0
+    colorflip BODY_COLOR_YELLOW, 0
+
+    mondata SPECIES_MEGA_DECIDUEYE, "Decidueye"
+    basestats 78, 107, 75, 70, 100, 100
+    types TYPE_GRASS, TYPE_GHOST
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 31
+    eggcycles 15
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
+    abilities ABILITY_OVERGROW, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BROWN, 0
+
+    mondata SPECIES_MEGA_INCINEROAR, "Incineroar"
+    basestats 95, 115, 90, 60, 80, 90
+    types TYPE_FIRE, TYPE_DARK
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 31
+    eggcycles 15
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_BLAZE, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_RED, 0
+
+    mondata SPECIES_MEGA_PRIMARINA, "Primarina"
+    basestats 80, 74, 74, 60, 126, 116
+    types TYPE_WATER, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_WATER
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 3, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 31
+    eggcycles 15
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_WATER_1, EGG_GROUP_FIELD
+    abilities ABILITY_TORRENT, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+
+    mondata SPECIES_MEGA_DEDENNE, "Dedenne"
+    basestats 67, 58, 62, 136, 121, 82
+    types TYPE_ELECTRIC, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_ELECTRIC
+    catchrate 180
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 2, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
+    abilities ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0

@@ -392,6 +392,27 @@ const struct MegaStruct sMegaTable[] =
         .itemindex = ITEM_FALINKSITE,
         .form = 1,
     },
+    // ugh
+    {
+        .monindex = SPECIES_DECIDUEYE,
+        .itemindex = ITEM_DECIDUITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_INCINEROAR,
+        .itemindex = ITEM_INCINERITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_PRIMARINA,
+        .itemindex = ITEM_PRIMARINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_DEDENNE,
+        .itemindex = ITEM_DEDENNITE,
+        .form = 1,
+    },
 };
 
 const struct MegaStructMove sMegaMoveTable[] =

@@ -1374,4 +1374,9 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_ZYGARDE                ] = 354,
     [SPECIES_MEGA_DRAMPA                 ] = 170,
     [SPECIES_MEGA_FALINKS                ] = 165,
+    // ugh guys
+    [SPECIES_MEGA_DECIDUEYE              ] = 175, // idgaf about no exp values. give me Placeholders
+    [SPECIES_MEGA_INCINEROAR             ] = 354,
+    [SPECIES_MEGA_PRIMARINA              ] = 170,
+    [SPECIES_MEGA_DEDENNE                ] = 165,
 };

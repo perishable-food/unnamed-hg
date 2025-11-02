@@ -1450,6 +1450,11 @@ gIconPalTable:
 /* SPECIES_MEGA_DRAMPA                 */  .byte 0x0
 /* SPECIES_MEGA_FALINKS                */  .byte 0x0
 
+/* SPECIES_MEGA_DECIDUEYE              */  .byte 0x0
+/* SPECIES_MEGA_INCINEROAR             */  .byte 0x0
+/* SPECIES_MEGA_PRIMARINA              */  .byte 0x0
+/* SPECIES_MEGA_DEDENNE                */  .byte 0x0
+
 .endarea
 
 .close

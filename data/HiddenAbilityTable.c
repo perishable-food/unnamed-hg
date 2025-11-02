@@ -1375,4 +1375,8 @@ const u16 UNUSED HiddenAbilityTable[] =
     [SPECIES_MEGA_ZYGARDE                ] = ABILITY_NONE,
     [SPECIES_MEGA_DRAMPA                 ] = ABILITY_NONE,
     [SPECIES_MEGA_FALINKS                ] = ABILITY_NONE,
+    [SPECIES_MEGA_DECIDUEYE              ] = ABILITY_NONE,
+    [SPECIES_MEGA_INCINEROAR             ] = ABILITY_NONE,
+    [SPECIES_MEGA_PRIMARINA              ] = ABILITY_NONE,
+    [SPECIES_MEGA_DEDENNE                ] = ABILITY_NONE,
 };

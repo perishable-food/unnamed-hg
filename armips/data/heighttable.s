@@ -1441,3 +1441,8 @@ heightentry SPECIES_MEGA_HAWLUCHA, 0, 0, 0, 0
 heightentry SPECIES_MEGA_ZYGARDE, 0, 0, 0, 0
 heightentry SPECIES_MEGA_DRAMPA, 0, 0, 0, 0
 heightentry SPECIES_MEGA_FALINKS, 0, 0, 0, 0
+
+heightentry SPECIES_MEGA_DECIDUEYE, 0, 0, 0, 0
+heightentry SPECIES_MEGA_INCINEROAR, 0, 0, 0, 0
+heightentry SPECIES_MEGA_PRIMARINA, 0, 0, 0, 0
+heightentry SPECIES_MEGA_DEDENNE, 0, 0, 0, 0
