@@ -577,7 +577,7 @@ trainerdata 18, "Justin"
     endparty
 
 trainerdata 19, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_NOTHING
+    trainermontype TRAINER_DATA_TYPE_ITEMS
     trainerclass TRAINERCLASS_BIKER
     nummons 3
     item ITEM_NONE
@@ -593,7 +593,8 @@ trainerdata 19, "Mickey"
         ivs 0
         abilityslot 0
         level 20
-        pokemon SPECIES_KOFFING
+        pokemon SPECIES_DEDENNE
+        item ITEM_NONE
         ballseal 0
 
         // mon 1
@@ -601,6 +602,7 @@ trainerdata 19, "Mickey"
         abilityslot 0
         level 20
         pokemon SPECIES_KOFFING
+        item ITEM_NONE
         ballseal 0
 
         // mon 2
@@ -608,6 +610,7 @@ trainerdata 19, "Mickey"
         abilityslot 0
         level 20
         pokemon SPECIES_KOFFING
+        item ITEM_NONE
         ballseal 0
     endparty
 

@@ -1082,6 +1082,7 @@
 /* SPECIES_IRON_CROWN                        */ .word 1560
 /* SPECIES_TERAPAGOS                         */ .word 65 // Normal Form
 /* SPECIES_PECHARUNT                         */ .word 3
+/* SPECIES_SPECTREON                         */ .word 285
 
 /* SPECIES_MEGA_VENUSAUR                     */ .word 1555
 /* SPECIES_MEGA_CHARIZARD_X                  */ .word 1105

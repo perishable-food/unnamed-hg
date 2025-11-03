@@ -1090,6 +1090,7 @@ heightentry SPECIES_IRON_BOULDER, "null", 0, "null", 0
 heightentry SPECIES_IRON_CROWN, "null", 0, "null", 0
 heightentry SPECIES_TERAPAGOS, 0, 0, 0, 0
 heightentry SPECIES_PECHARUNT, "null", 10, "null", 0
+heightentry SPECIES_SPECTREON, 0, 0, 0, 0
 
 heightentry SPECIES_MEGA_VENUSAUR, 0, 0, 0, 0
 heightentry SPECIES_MEGA_CHARIZARD_X, 0, 0, 0, 0

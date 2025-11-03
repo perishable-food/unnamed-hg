@@ -1616,7 +1616,7 @@ evodata SPECIES_EEVEE
     evolution EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON
     evolution EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON
     evolution EVO_HAS_MOVE_TYPE, TYPE_FAIRY, SPECIES_SYLVEON
-    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_STONE, ITEM_DUSK_STONE, SPECIES_SPECTREON
     terminateevodata
 
 evodata SPECIES_VAPOREON
@@ -12930,7 +12930,17 @@ evodata SPECIES_PECHARUNT
     evolution EVO_NONE, 0, SPECIES_NONE
 terminateevodata
 
-
+evodata SPECIES_SPECTREON
+    evolution EVO_STONE, ITEM_EEVERSTONE, SPECIES_EEVEE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+    evolution EVO_NONE, 0, SPECIES_NONE
+terminateevodata
 
 evodata SPECIES_MEGA_VENUSAUR
     evolution EVO_NONE, 0, SPECIES_NONE

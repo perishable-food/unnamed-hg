@@ -36948,3 +36948,34 @@ specialareas SPECIES_PECHARUNT, DEX_SPECIAL
 
 routesandcities SPECIES_PECHARUNT, DEX_SPECIAL
     dexendareadata
+
+specialareas SPECIES_SPECTREON, DEX_MORNING
+    dexendareadata
+
+
+specialareas SPECIES_SPECTREON, DEX_DAY
+    dexendareadata
+
+
+specialareas SPECIES_SPECTREON, DEX_NIGHT
+    dexendareadata
+
+
+routesandcities SPECIES_SPECTREON, DEX_MORNING
+    dexendareadata
+
+
+routesandcities SPECIES_SPECTREON, DEX_DAY
+    dexendareadata
+
+
+routesandcities SPECIES_SPECTREON, DEX_NIGHT
+    dexendareadata
+
+
+specialareas SPECIES_SPECTREON, DEX_SPECIAL
+    dexendareadata
+
+
+routesandcities SPECIES_SPECTREON, DEX_SPECIAL
+    dexendareadata

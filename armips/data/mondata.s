@@ -22609,6 +22609,25 @@ mondata SPECIES_PECHARUNT, "Pecharunt"
     mondexheight SPECIES_PECHARUNT, "1’00”"
     mondexweight SPECIES_PECHARUNT, "0.7 lbs."
 
+mondata SPECIES_SPECTREON, "Spectreon"
+    basestats 60, 65, 110, 95, 130, 65
+    types TYPE_GHOST, TYPE_GHOST
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 31
+    eggcycles 35
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_PERISH_BODY, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_PURPLE, 0
+    mondexentry SPECIES_SPECTREON, "Lorum Ipsum"
+    mondexclassification SPECIES_SPECTREON, "Apparition Pokémon"
+    mondexheight SPECIES_SPECTREON, "3’03”"
+    mondexweight SPECIES_SPECTREON, "51.8 lbs."
 
 mondata SPECIES_MEGA_VENUSAUR, "-----"
     basestats 80, 100, 123, 80, 122, 120
