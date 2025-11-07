@@ -22609,7 +22609,7 @@ mondata SPECIES_PECHARUNT, "Pecharunt"
     mondexheight SPECIES_PECHARUNT, "1’00”"
     mondexweight SPECIES_PECHARUNT, "0.7 lbs."
 
-mondata SPECIES_SPECTREON, "Spectreon"
+/*mondata SPECIES_SPECTREON, "Spectreon"
     basestats 60, 65, 110, 95, 130, 65
     types TYPE_GHOST, TYPE_GHOST
     catchrate 45
@@ -22627,7 +22627,7 @@ mondata SPECIES_SPECTREON, "Spectreon"
     mondexentry SPECIES_SPECTREON, "Lorum Ipsum"
     mondexclassification SPECIES_SPECTREON, "Apparition Pokémon"
     mondexheight SPECIES_SPECTREON, "3’03”"
-    mondexweight SPECIES_SPECTREON, "51.8 lbs."
+    mondexweight SPECIES_SPECTREON, "51.8 lbs."*/
 
 mondata SPECIES_MEGA_VENUSAUR, "-----"
     basestats 80, 100, 123, 80, 122, 120

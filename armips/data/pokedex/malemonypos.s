@@ -1083,6 +1083,6 @@
 /* SPECIES_IRON_CROWN      */ .halfword 24
 /* SPECIES_TERAPAGOS       */ .halfword 24
 /* SPECIES_PECHARUNT       */ .halfword 24
-/* SPECIES_SPECTREON       */ .halfword 24
+/* SPECIES_SPECTREON        .halfword 24*/
 
 .close
