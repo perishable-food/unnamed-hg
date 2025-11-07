@@ -377,6 +377,17 @@ BOOL MoveHitDefenderAbilityCheckInternal(void *bw, struct BattleStruct *sp, int 
             seq_no[0] = SUB_SEQ_HANDLE_DISGUISE_ICE_FACE;
             ret = TRUE;
         }
+        else if (MoldBreakerAbilityCheck(sp, sp->attack_client, sp->defence_client, ABILITY_DISGUISE)) {
+        if ((sp->battlemon[sp->defence_client].species == SPECIES_DEOXYS) // this'll be changed to scrafty when mojo fixes megas
+            && (sp->battlemon[sp->defence_client].hp)
+            && ((sp->waza_status_flag & MOVE_STATUS_FLAG_MISS) == 0) // if move was successful
+            && (sp->moveTbl[sp->current_move_index].power) // if move has power
+        ) {
+            BattleFormChange(sp->defence_client, 1, bw, sp, TRUE);
+            sp->battlerIdTemp = sp->defence_client;
+            seq_no[0] = SUB_SEQ_HANDLE_DISGUISE_ICE_FACE;
+            ret = TRUE;
+        }
     } else if (MoldBreakerAbilityCheck(sp, sp->attack_client, sp->defence_client, ABILITY_ICE_FACE)) {
         if ((sp->battlemon[sp->defence_client].species == SPECIES_EISCUE)
             && (sp->battlemon[sp->defence_client].hp)
