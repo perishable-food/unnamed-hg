@@ -592,7 +592,7 @@ trainerdata 19, "Mickey"
         // mon 0
         ivs 0
         abilityslot 0
-        level 20
+        level 1
         pokemon SPECIES_DEDENNE
         item ITEM_NONE
         ballseal 0
@@ -600,7 +600,7 @@ trainerdata 19, "Mickey"
         // mon 1
         ivs 0
         abilityslot 0
-        level 20
+        level 2
         pokemon SPECIES_KOFFING
         item ITEM_NONE
         ballseal 0
