@@ -16269,7 +16269,7 @@ mondata SPECIES_DARTRIX, "Dartrix"
 
 
 mondata SPECIES_DECIDUEYE, "Decidueye"
-    basestats 78, 107, 75, 70, 100, 100
+    basestats 78, 107, 75, 100, 70, 100
     types TYPE_GRASS, TYPE_GHOST
     catchrate 45
     baseexp 0 // defined in baseexp.s
@@ -26870,7 +26870,7 @@ mondata SPECIES_AVALUGG_HISUIAN, "-----"
     colorflip BODY_COLOR_BLUE, 0
 
 mondata SPECIES_DECIDUEYE_HISUIAN, "-----"
-    basestats 88, 112, 80, 60, 95, 95
+    basestats 88, 112, 80, 95, 60, 95
     types TYPE_GRASS, TYPE_FIGHTING
     catchrate 55
     baseexp 239
