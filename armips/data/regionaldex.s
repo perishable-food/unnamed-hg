@@ -1093,7 +1093,7 @@
 /* SPECIES_IRON_CROWN      */ .halfword 0
 /* SPECIES_TERAPAGOS       */ .halfword 0
 /* SPECIES_PECHARUNT       */ .halfword 0
-/* SPECIES_SPECTREON        .halfword 0*/
+/* SPECIES_SPECTREON       */ .halfword 0
 
 
 

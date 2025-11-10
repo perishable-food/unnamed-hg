@@ -1028,6 +1028,6 @@
 .halfword SPECIES_IRON_CROWN
 .halfword SPECIES_TERAPAGOS
 .halfword SPECIES_PECHARUNT
-// .halfword SPECIES_SPECTREON
+.halfword SPECIES_SPECTREON
 
 .close

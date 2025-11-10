@@ -155277,7 +155277,6 @@
       "MOVE_TERA_BLAST",
       "MOVE_TRAILBLAZE",
       "MOVE_U_TURN"
-      "MOVE_HIDDEN_POWER",
     ],
     "EggMoves": [
       "MOVE_ALLY_SWITCH",

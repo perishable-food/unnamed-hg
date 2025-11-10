@@ -1083,6 +1083,6 @@
 /* SPECIES_IRON_CROWN      */ .halfword 0x110
 /* SPECIES_TERAPAGOS       */ .halfword 0x110
 /* SPECIES_PECHARUNT       */ .halfword 0x110
-/* SPECIES_SPECTREON        .halfword 0x110*/
+/* SPECIES_SPECTREON       */ .halfword 0x110
 
 .close

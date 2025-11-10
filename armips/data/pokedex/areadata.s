@@ -36949,7 +36949,7 @@ specialareas SPECIES_PECHARUNT, DEX_SPECIAL
 routesandcities SPECIES_PECHARUNT, DEX_SPECIAL
     dexendareadata
 
-/*specialareas SPECIES_SPECTREON, DEX_MORNING
+specialareas SPECIES_SPECTREON, DEX_MORNING
     dexendareadata
 
 
@@ -36978,4 +36978,4 @@ specialareas SPECIES_SPECTREON, DEX_SPECIAL
 
 
 routesandcities SPECIES_SPECTREON, DEX_SPECIAL
-    dexendareadata*/
+    dexendareadata
