@@ -261,6 +261,137 @@ const struct MegaStruct sMegaTable[] =
         .itemindex = ITEM_DIANCITE,
         .form = 1,
     },
+    //plza
+    {
+        .monindex = SPECIES_CLEFABLE,
+        .itemindex = ITEM_CLEFABLITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_VICTREEBEL,
+        .itemindex = ITEM_VICTREEBELITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_STARMIE,
+        .itemindex = ITEM_STARMINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_DRAGONITE,
+        .itemindex = ITEM_DRAGONINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_MEGANIUM,
+        .itemindex = ITEM_MEGANIUMITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_FERALIGATR,
+        .itemindex = ITEM_FERALIGITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_SKARMORY,
+        .itemindex = ITEM_SKARMORITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_FROSLASS,
+        .itemindex = ITEM_FROSLASSITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_EMBOAR,
+        .itemindex = ITEM_EMBOARITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_EXCADRILL,
+        .itemindex = ITEM_EXCADRITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_SCOLIPEDE,
+        .itemindex = ITEM_SCOLIPITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_SCRAFTY,
+        .itemindex = ITEM_SCRAFTINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_EELEKTROSS,
+        .itemindex = ITEM_EELEKTROSSITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_CHANDELURE,
+        .itemindex = ITEM_CHANDELURITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_CHESNAUGHT,
+        .itemindex = ITEM_CHESNAUGHTITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_DELPHOX,
+        .itemindex = ITEM_DELPHOXITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_GRENINJA,
+        .itemindex = ITEM_GRENINJITE,
+        .form = 4,
+    },
+    {
+        .monindex = SPECIES_PYROAR,
+        .itemindex = ITEM_PYROARITE,
+        .form = 3,
+    },
+    {
+        .monindex = SPECIES_FLOETTE,
+        .itemindex = ITEM_FLOETTITE,
+        .form = 7,
+    },
+    {
+        .monindex = SPECIES_MALAMAR,
+        .itemindex = ITEM_MALAMARITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_BARBARACLE,
+        .itemindex = ITEM_BARBARACITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_DRAGALGE,
+        .itemindex = ITEM_DRAGALGITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_HAWLUCHA,
+        .itemindex = ITEM_HAWLUCHANITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_ZYGARDE,
+        .itemindex = ITEM_ZYGARDITE,
+        .form = 7,
+    },
+    {
+        .monindex = SPECIES_DRAMPA,
+        .itemindex = ITEM_DRAMPANITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_FALINKS,
+        .itemindex = ITEM_FALINKSITE,
+        .form = 1,
+    },
 };
 
 const struct MegaStructMove sMegaMoveTable[] =

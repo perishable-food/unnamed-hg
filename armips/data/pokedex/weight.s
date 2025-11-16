@@ -1400,5 +1400,31 @@
 /* SPECIES_URSALUNA_BLOODMOON                */ .word 3330
 /* SPECIES_TERAPAGOS_TERASTAL                */ .word 160
 /* SPECIES_TERAPAGOS_STELLAR                 */ .word 770
+/* SPECIES_MEGA_CLEFABLE                     */ .word 423
+/* SPECIES_MEGA_VICTREEBEL                   */ .word 1255
+/* SPECIES_MEGA_STARMIE                      */ .word 800
+/* SPECIES_MEGA_DRAGONITE                    */ .word 2899
+/* SPECIES_MEGA_MEGANIUM                     */ .word 2009
+/* SPECIES_MEGA_FERALIGATR                   */ .word 1088
+/* SPECIES_MEGA_SKARMORY                     */ .word 404
+/* SPECIES_MEGA_FROSLASS                     */ .word 296
+/* SPECIES_MEGA_EMBOAR                       */ .word 1803
+/* SPECIES_MEGA_EXCADRILL                    */ .word 600
+/* SPECIES_MEGA_SCOLIPEDE                    */ .word 2305
+/* SPECIES_MEGA_SCRAFTY                      */ .word 309
+/* SPECIES_MEGA_EELEKTROSS                   */ .word 1799
+/* SPECIES_MEGA_CHANDELURE                   */ .word 695
+/* SPECIES_MEGA_CHESNAUGHT                   */ .word 900
+/* SPECIES_MEGA_DELPHOX                      */ .word 390
+/* SPECIES_MEGA_GRENINJA                     */ .word 400
+/* SPECIES_MEGA_PYROAR                       */ .word 933
+/* SPECIES_MEGA_FLOETTE                      */ .word 1007
+/* SPECIES_MEGA_MALAMAR                      */ .word 698
+/* SPECIES_MEGA_BARBARACLE                   */ .word 1000
+/* SPECIES_MEGA_DRAGALGE                     */ .word 1002
+/* SPECIES_MEGA_HAWLUCHA                     */ .word 249
+/* SPECIES_MEGA_ZYGARDE                      */ .word 6099
+/* SPECIES_MEGA_DRAMPA                       */ .word 5404
+/* SPECIES_MEGA_FALINKS                      */ .word 990
 
 .close
