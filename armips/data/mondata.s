@@ -22588,7 +22588,6 @@ mondata SPECIES_TERAPAGOS, "Terapagos"
     mondexheight SPECIES_TERAPAGOS, "0’08”"
     mondexweight SPECIES_TERAPAGOS, "14.3 lbs."
 
-
 mondata SPECIES_PECHARUNT, "Pecharunt"
     basestats 88, 88, 160, 88, 88, 88
     types TYPE_POISON, TYPE_GHOST
@@ -22624,7 +22623,7 @@ mondata SPECIES_SPECTREON, "Spectreon"
     abilities ABILITY_PERISH_BODY, ABILITY_NONE
     runchance 0
     colorflip BODY_COLOR_PURPLE, 0
-    mondexentry SPECIES_SPECTREON, "Lorum Ipsum"
+    mondexentry SPECIES_SPECTREON, "It appears on Pokémon burial grounds\nand visits the graves of fallen\nEevees. Some scholars suggest that it\ris a ghost mourning its own death."
     mondexclassification SPECIES_SPECTREON, "Apparition Pokémon"
     mondexheight SPECIES_SPECTREON, "3’03”"
     mondexweight SPECIES_SPECTREON, "51.8 lbs."
