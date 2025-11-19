@@ -1425,11 +1425,11 @@ gIconPalTable:
 
 /* SPECIES_MEGA_CLEFABLE               */  .byte 0x0
 /* SPECIES_MEGA_VICTREEBEL             */  .byte 0x1
-/* SPECIES_MEGA_STARMIE                */  .byte 0x0
+/* SPECIES_MEGA_STARMIE                */  .byte 0x2
 /* SPECIES_MEGA_DRAGONITE              */  .byte 0x2
-/* SPECIES_MEGA_MEGANIUM               */  .byte 0x0
+/* SPECIES_MEGA_MEGANIUM               */  .byte 0x1
 /* SPECIES_MEGA_FERALIGATR             */  .byte 0x0
-/* SPECIES_MEGA_SKARMORY               */  .byte 0x0
+/* SPECIES_MEGA_SKARMORY               */  .byte 0x2
 /* SPECIES_MEGA_FROSLASS               */  .byte 0x0
 /* SPECIES_MEGA_EMBOAR                 */  .byte 0x0
 /* SPECIES_MEGA_EXCADRILL              */  .byte 0x0

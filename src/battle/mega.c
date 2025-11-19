@@ -57,8 +57,18 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_CLEFABLE,
+        .itemindex = ITEM_CLEFABLITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_ALAKAZAM,
         .itemindex = ITEM_ALAKAZITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_VICTREEBEL,
+        .itemindex = ITEM_VICTREEBELITE,
         .form = 1,
     },
     {
@@ -77,6 +87,11 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_STARMIE,
+        .itemindex = ITEM_STARMINITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_PINSIR,
         .itemindex = ITEM_PINSIRITE,
         .form = 1,
@@ -92,6 +107,11 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_DRAGONITE,
+        .itemindex = ITEM_DRAGONINITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_MEWTWO,
         .itemindex = ITEM_MEWTWONITE_X,
         .form = 1,
@@ -101,6 +121,16 @@ const struct MegaStruct sMegaTable[] =
         .itemindex = ITEM_MEWTWONITE_Y,
         .form = 2,
     }, // y
+    {
+        .monindex = SPECIES_MEGANIUM,
+        .itemindex = ITEM_MEGANIUMITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_FERALIGATR,
+        .itemindex = ITEM_FERALIGITE,
+        .form = 1,
+    },
     {
         .monindex = SPECIES_AMPHAROS,
         .itemindex = ITEM_AMPHAROSITE,
@@ -119,6 +149,11 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_HERACROSS,
         .itemindex = ITEM_HERACRONITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_SKARMORY,
+        .itemindex = ITEM_SKARMORITE,
         .form = 1,
     },
     {
@@ -252,52 +287,6 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
-        .monindex = SPECIES_AUDINO,
-        .itemindex = ITEM_AUDINITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_DIANCIE,
-        .itemindex = ITEM_DIANCITE,
-        .form = 1,
-    },
-    //plza
-    {
-        .monindex = SPECIES_CLEFABLE,
-        .itemindex = ITEM_CLEFABLITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_VICTREEBEL,
-        .itemindex = ITEM_VICTREEBELITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_STARMIE,
-        .itemindex = ITEM_STARMINITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_DRAGONITE,
-        .itemindex = ITEM_DRAGONINITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_MEGANIUM,
-        .itemindex = ITEM_MEGANIUMITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_FERALIGATR,
-        .itemindex = ITEM_FERALIGITE,
-        .form = 1,
-    },
-    {
-        .monindex = SPECIES_SKARMORY,
-        .itemindex = ITEM_SKARMORITE,
-        .form = 1,
-    },
-    {
         .monindex = SPECIES_FROSLASS,
         .itemindex = ITEM_FROSLASSITE,
         .form = 1,
@@ -310,6 +299,11 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_EXCADRILL,
         .itemindex = ITEM_EXCADRITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_AUDINO,
+        .itemindex = ITEM_AUDINITE,
         .form = 1,
     },
     {
@@ -383,6 +377,11 @@ const struct MegaStruct sMegaTable[] =
         .form = 7,
     },
     {
+        .monindex = SPECIES_DIANCIE,
+        .itemindex = ITEM_DIANCITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_DRAMPA,
         .itemindex = ITEM_DRAMPANITE,
         .form = 1,
@@ -413,12 +412,15 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
     u32 form = battle->battlemon[client].form_no;
 
     if (battle->battlemon[client].canMega)
+        debug_printf("you CAN mega !\n");
         return FALSE;
 
     if (newBS.SideMega[client])
+        debug_printf("you CAN sidemega !\n");
         return FALSE;
 
     if (form)
+        debug_printf("form!\n");
         return FALSE;
 
     if (battle->playerActions[client][3] != SELECT_FIGHT_COMMAND)
@@ -598,6 +600,7 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
 
     form_no = GetMonData(pp, MON_DATA_FORM, 0);
     if (form_no || (bip->bw->sp->battlemon[bip->client_no].condition2 & STATUS2_TRANSFORMED)) // can not draw mega button if form is nonzero.  only base form can mega evolve
+        debug_printf("baseform is nonzero\n");
         return FALSE;
 
     return (CheckMegaData(mon, item) || CheckMegaMoveData(mon, moves));
