@@ -2058,7 +2058,7 @@ BOOL LONG_CALL IsBannedSpreadMoveForParentalBond(void *bw, struct BattleStruct *
 BOOL LONG_CALL IsValidParentalBondMove(void *bw, struct BattleStruct *sp, BOOL checkTempMove) {
     u32 moveIndex = checkTempMove ? (u32)sp->waza_work : sp->current_move_index;
 
-    return (GetBattlerAbility(sp, sp->attack_client) == ABILITY_PARENTAL_BOND &&
+    return (GetBattlerAbility(sp, sp->attack_client) == (ABILITY_PARENTAL_BOND || ABILITY_STARSTRUCK) &&
             GetMoveSplit(sp, moveIndex) != SPLIT_STATUS &&
             !IsBannedParentalBondMove(moveIndex) &&
             !IsBannedSpreadMoveForParentalBond(bw, sp, moveIndex));

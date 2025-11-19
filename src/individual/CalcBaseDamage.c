@@ -372,7 +372,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
         }
         break;
     case MOVE_SPIT_UP:
-        if (AttackingMon.parentalBondFlag == 2 && AttackingMon.ability == ABILITY_PARENTAL_BOND) {
+        if (AttackingMon.parentalBondFlag == 2 && AttackingMon.ability == (ABILITY_PARENTAL_BOND || ABILITY_STARSTRUCK)) {
             movepower = damage_power;
         } else {
             movepower = 100 * AttackingMon.stockpileCount;
@@ -863,7 +863,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
                 basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_5);
                 continue;
             }
-
+            
             // handle Flare Boost
             if ((AttackingMon.ability == ABILITY_FLARE_BOOST)
             && (AttackingMon.condition & STATUS_BURN)) {

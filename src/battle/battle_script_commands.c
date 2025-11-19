@@ -1155,7 +1155,7 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
     IncrementBattleScriptPtr(sp, 1);
     effect = sp->moveTbl[sp->current_move_index].effect;
 
-    if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE)
+    if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE || ABILITY_STARSTRUCK)
     {
         // list taken from bulbapedia article on sheer force and the moves affected.
         switch (effect)

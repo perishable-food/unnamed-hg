@@ -309,3 +309,4 @@ Transforms into its Terastal Form\nupon entering battle.
 Resists all damage when\nHP is full.
 Reduces effects of weather\nand terrain to zero.
 Pokémon poisoned by Pecharunt\nwill also become confused.
+Moves under 60 Base Power hit\nfive times. 
