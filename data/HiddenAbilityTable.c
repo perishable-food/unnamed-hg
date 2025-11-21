@@ -1380,4 +1380,6 @@ const u16 UNUSED HiddenAbilityTable[] =
     [SPECIES_MEGA_INCINEROAR             ] = ABILITY_NONE,
     [SPECIES_MEGA_PRIMARINA              ] = ABILITY_NONE,
     [SPECIES_MEGA_DEDENNE                ] = ABILITY_NONE,
+    [SPECIES_MEGA_LEDIAN                 ] = ABILITY_NONE,
+    [SPECIES_MEGA_MARSHADOW              ] = ABILITY_NONE,
 };

@@ -1456,6 +1456,8 @@ gIconPalTable:
 /* SPECIES_MEGA_INCINEROAR             */  .byte 0x0
 /* SPECIES_MEGA_PRIMARINA              */  .byte 0x0
 /* SPECIES_MEGA_DEDENNE                */  .byte 0x0
+/* SPECIES_MEGA_LEDIAN                 */  .byte 0x0
+/* SPECIES_MEGA_MARSHADOW              */  .byte 0x0
 
 .endarea
 

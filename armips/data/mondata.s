@@ -28163,3 +28163,35 @@ mondata SPECIES_MEGA_FALINKS, "Falinks"
     abilities ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
+
+    mondata SPECIES_MEGA_LEDIAN, "Ledian"
+    basestats 55, 35, 50, 85, 55, 110 // placeholder
+    types TYPE_BUG, TYPE_STEEL
+    catchrate 90
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 0, 2
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 15
+    basefriendship 70
+    growthrate GROWTH_FAST
+    egggroups EGG_GROUP_BUG, EGG_GROUP_BUG
+    abilities ABILITY_STARSTRUCK, ABILITY_STARSTRUCK
+    runchance 0
+    colorflip BODY_COLOR_RED, 0
+
+    mondata SPECIES_MEGA_MARSHADOW, "Marshadow"
+    basestats 90, 125, 80, 125, 90, 90 // placeholder
+    types TYPE_FIGHTING, TYPE_GHOST
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 2, 0, 1, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 120
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_TECHNICIAN, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_GRAY, 0

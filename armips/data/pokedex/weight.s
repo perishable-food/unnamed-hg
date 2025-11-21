@@ -1431,5 +1431,7 @@
 /* SPECIES_MEGA_INCINEROAR                   */ .word 6099
 /* SPECIES_MEGA_PRIMARINA                    */ .word 5404
 /* SPECIES_MEGA_DEDENNE                      */ .word 990
+/* SPECIES_MEGA_LEDIAN                       */ .word 356
+/* SPECIES_MEGA_MARSHADOW                    */ .word 222
 
 .close

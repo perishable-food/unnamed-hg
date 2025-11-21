@@ -1380,4 +1380,6 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_INCINEROAR             ] = 354,
     [SPECIES_MEGA_PRIMARINA              ] = 170,
     [SPECIES_MEGA_DEDENNE                ] = 165,
+    [SPECIES_MEGA_LEDIAN                 ] = 170,
+    [SPECIES_MEGA_MARSHADOW              ] = 165,
 };
