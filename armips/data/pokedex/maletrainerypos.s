@@ -1084,5 +1084,8 @@
 /* SPECIES_TERAPAGOS       */ .halfword 9
 /* SPECIES_PECHARUNT       */ .halfword 9
 /* SPECIES_SPECTREON       */ .halfword 9
+/* SPECIES_BUFFUGU         */ .halfword 9
+/* SPECIES_PUFFUGU         */ .halfword 9
+/* SPECIES_TUFFUGU         */ .halfword 9
 
 .close

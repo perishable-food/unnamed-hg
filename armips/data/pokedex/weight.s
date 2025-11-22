@@ -1083,6 +1083,9 @@
 /* SPECIES_TERAPAGOS                         */ .word 65 // Normal Form
 /* SPECIES_PECHARUNT                         */ .word 3
 /* SPECIES_SPECTREON                         */ .word 285
+/* SPECIES_BUFFUGU                           */ .word 10
+/* SPECIES_PUFFUGU                           */ .word 55
+/* SPECIES_TUFFUGU                           */ .word 120
 
 /* SPECIES_MEGA_VENUSAUR                     */ .word 1555
 /* SPECIES_MEGA_CHARIZARD_X                  */ .word 1105

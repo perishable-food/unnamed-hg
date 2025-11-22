@@ -1029,5 +1029,8 @@
 .halfword SPECIES_TERAPAGOS
 .halfword SPECIES_PECHARUNT
 .halfword SPECIES_SPECTREON
+.halfword SPECIES_BUFFUGU
+.halfword SPECIES_PUFFUGU
+.halfword SPECIES_TUFFUGU
 
 .close

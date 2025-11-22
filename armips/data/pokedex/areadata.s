@@ -36979,3 +36979,98 @@ specialareas SPECIES_SPECTREON, DEX_SPECIAL
 
 routesandcities SPECIES_SPECTREON, DEX_SPECIAL
     dexendareadata
+
+specialareas SPECIES_BUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+specialareas SPECIES_BUFFUGU, DEX_DAY
+    dexendareadata
+
+
+specialareas SPECIES_BUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+routesandcities SPECIES_BUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+routesandcities SPECIES_BUFFUGU, DEX_DAY
+    dexendareadata
+
+
+routesandcities SPECIES_BUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+specialareas SPECIES_BUFFUGU, DEX_SPECIAL
+    dexendareadata
+
+
+routesandcities SPECIES_BUFFUGU, DEX_SPECIAL
+    dexendareadata
+
+
+specialareas SPECIES_PUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+specialareas SPECIES_PUFFUGU, DEX_DAY
+    dexendareadata
+
+
+specialareas SPECIES_PUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+routesandcities SPECIES_PUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+routesandcities SPECIES_PUFFUGU, DEX_DAY
+    dexendareadata
+
+
+routesandcities SPECIES_PUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+specialareas SPECIES_PUFFUGU, DEX_SPECIAL
+    dexendareadata
+
+
+routesandcities SPECIES_PUFFUGU, DEX_SPECIAL
+    dexendareadata
+
+
+specialareas SPECIES_TUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+specialareas SPECIES_TUFFUGU, DEX_DAY
+    dexendareadata
+
+
+specialareas SPECIES_TUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+routesandcities SPECIES_TUFFUGU, DEX_MORNING
+    dexendareadata
+
+
+routesandcities SPECIES_TUFFUGU, DEX_DAY
+    dexendareadata
+
+
+routesandcities SPECIES_TUFFUGU, DEX_NIGHT
+    dexendareadata
+
+
+specialareas SPECIES_TUFFUGU, DEX_SPECIAL
+    dexendareadata
+
+
+routesandcities SPECIES_TUFFUGU, DEX_SPECIAL
+    dexendareadata

@@ -1106,6 +1106,9 @@ gIconPalTable:
 /* SPECIES_PECHARUNT       */ .byte  0x0
 
 /* SPECIES_SPECTREON       */ .byte  0x0
+/* SPECIES_BUFFUGU         */ .byte  0x0
+/* SPECIES_PUFFUGU         */ .byte  0x0
+/* SPECIES_TUFFUGU         */ .byte  0x0
 
 /* SPECIES_MEGA_VENUSAUR   */ .byte  0x1
 /* SPECIES_MEGA_CHARIZARD_X*/ .byte  0x0

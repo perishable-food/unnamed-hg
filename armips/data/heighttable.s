@@ -1091,6 +1091,9 @@ heightentry SPECIES_IRON_CROWN, "null", 0, "null", 0
 heightentry SPECIES_TERAPAGOS, 0, 0, 0, 0
 heightentry SPECIES_PECHARUNT, "null", 10, "null", 0
 heightentry SPECIES_SPECTREON, 0, 0, 0, 0
+heightentry SPECIES_BUFFUGU, 16, 16, 25, 25
+heightentry SPECIES_PUFFUGU, 0, 0, 22, 22
+heightentry SPECIES_TUFFUGU, 0, 0, 11, 11
 
 heightentry SPECIES_MEGA_VENUSAUR, 0, 0, 0, 0
 heightentry SPECIES_MEGA_CHARIZARD_X, 0, 0, 0, 0
