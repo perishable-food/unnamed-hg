@@ -27714,7 +27714,7 @@ mondata SPECIES_MEGA_VICTREEBEL, "-----"
     runchance 0
     colorflip BODY_COLOR_GREEN, 0
 
-mondata SPECIES_MEGA_STARMIE, "Starmie"
+mondata SPECIES_MEGA_STARMIE, "-----"
     basestats 60, 140, 105, 120, 130, 105
     types TYPE_WATER, TYPE_PSYCHIC
     catchrate 60
@@ -27954,6 +27954,22 @@ mondata SPECIES_MEGA_GRENINJA, "-----"
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
 
+mondata SPECIES_MEGA_PYROAR, "-----"
+    basestats 86, 88, 92, 126, 129, 86
+    types TYPE_FIRE, TYPE_NORMAL
+    catchrate 65
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 0
+    eggcycles 20
+    basefriendship 70
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_RIVALRY, ABILITY_RIVALRY
+    runchance 0
+    colorflip BODY_COLOR_BROWN, 0
+
 mondata SPECIES_MEGA_FLOETTE, "-----"
     basestats 74, 85, 87, 102, 155, 148
     types TYPE_FAIRY, TYPE_FAIRY
@@ -28050,7 +28066,7 @@ mondata SPECIES_MEGA_ZYGARDE, "-----"
     runchance 0
     colorflip BODY_COLOR_BLACK, 1
 
-mondata SPECIES_MEGA_DRAMPA, "Drampa"
+mondata SPECIES_MEGA_DRAMPA, "-----"
     basestats 78, 85, 110, 36, 160, 116
     types TYPE_NORMAL, TYPE_DRAGON
     catchrate 70
@@ -28066,7 +28082,7 @@ mondata SPECIES_MEGA_DRAMPA, "Drampa"
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
 
-mondata SPECIES_MEGA_FALINKS, "Falinks"
+mondata SPECIES_MEGA_FALINKS, "-----"
     basestats 65, 135, 135, 100, 70, 65
     types TYPE_FIGHTING, TYPE_FIGHTING
     catchrate 45

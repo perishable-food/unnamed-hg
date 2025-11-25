@@ -1423,6 +1423,7 @@ heightentry SPECIES_MEGA_DRAGONITE, 0, 0, 0, 0
 heightentry SPECIES_MEGA_MEGANIUM, 0, 0, 0, 0
 heightentry SPECIES_MEGA_FERALIGATR, 0, 0, 0, 0
 heightentry SPECIES_MEGA_SKARMORY, 0, 0, 0, 0
+heightentry SPECIES_MEGA_FROSLASS, 0, 0, 0, 0
 heightentry SPECIES_MEGA_EMBOAR, 0, 0, 0, 0
 heightentry SPECIES_MEGA_EXCADRILL, 0, 0, 0, 0
 heightentry SPECIES_MEGA_SCOLIPEDE, 0, 0, 0, 0
