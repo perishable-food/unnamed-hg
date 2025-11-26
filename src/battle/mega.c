@@ -339,17 +339,17 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_GRENINJA,
         .itemindex = ITEM_GRENINJITE,
-        .form = 4,
+        .form = 3,
     },
     {
         .monindex = SPECIES_PYROAR,
         .itemindex = ITEM_PYROARITE,
-        .form = 3,
+        .form = 2,
     },
     {
         .monindex = SPECIES_FLOETTE,
         .itemindex = ITEM_FLOETTITE,
-        .form = 7,
+        .form = 6,
     },
     {
         .monindex = SPECIES_MALAMAR,
@@ -374,7 +374,7 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_ZYGARDE,
         .itemindex = ITEM_ZYGARDITE,
-        .form = 7,
+        .form = 6,
     },
     {
         .monindex = SPECIES_DIANCIE,
