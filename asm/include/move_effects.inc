@@ -394,7 +394,7 @@
 .equ MAX_BASE_MOVE_EFFECT_NUM, 386
 
 // define your custom move effects below like this
-// .equ MOVE_EFFECT_CUSTOM_1, (MAX_BASE_MOVE_EFFECT_NUM + 1)
+.equ MOVE_EFFECT_STARSTRUCK, (MAX_BASE_MOVE_EFFECT_NUM + 1)
 
 
 .endif

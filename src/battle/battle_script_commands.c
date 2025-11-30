@@ -1155,7 +1155,7 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
     IncrementBattleScriptPtr(sp, 1);
     effect = sp->moveTbl[sp->current_move_index].effect;
 
-    if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE || ABILITY_STARSTRUCK)
+    if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE)
     {
         // list taken from bulbapedia article on sheer force and the moves affected.
         switch (effect)
@@ -1226,6 +1226,56 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
          || (sp->current_move_index == MOVE_STONE_AXE)
          || (sp->current_move_index == MOVE_ELECTRO_SHOT)) { // according to bulbapedia but only on the electro shot page ?
             sp->battlemon[sp->attack_client].sheer_force_flag = 1;
+        }
+    }
+
+if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
+    && sp->moveTbl[sp->current_move_index].power <= 60)
+{
+    // list taken from bulbapedia article on sheer force and the moves affected.
+    switch (effect)
+    {
+        case MOVE_EFFECT_FLINCH_HIT:
+        case MOVE_EFFECT_RAISE_ALL_STATS_HIT:
+        case MOVE_EFFECT_BLIZZARD:
+        case MOVE_EFFECT_PARALYZE_HIT:
+        case MOVE_EFFECT_LOWER_SPEED_HIT:
+        case MOVE_EFFECT_RAISE_SP_ATK_HIT:
+        case MOVE_EFFECT_CONFUSE_HIT:
+        case MOVE_EFFECT_LOWER_DEFENSE_HIT:
+        case MOVE_EFFECT_LOWER_SP_DEF_HIT:
+        case MOVE_EFFECT_BURN_HIT:
+        case MOVE_EFFECT_FLINCH_BURN_HIT:
+        case MOVE_EFFECT_RAISE_SPEED_HIT:
+        case MOVE_EFFECT_POISON_HIT:
+        case MOVE_EFFECT_FREEZE_HIT:
+        case MOVE_EFFECT_FLINCH_FREEZE_HIT:
+        case MOVE_EFFECT_RAISE_ATTACK_HIT:
+        case MOVE_EFFECT_LOWER_ACCURACY_HIT:
+        case MOVE_EFFECT_BADLY_POISON_HIT:
+        //case MOVE_EFFECT_SECRET_POWER: // need a different way of doing this i think
+        case MOVE_EFFECT_LOWER_SP_ATK_HIT:
+        case MOVE_EFFECT_THUNDER:
+        case MOVE_EFFECT_HURRICANE:
+        case MOVE_EFFECT_FLINCH_PARALYZE_HIT:
+        case MOVE_EFFECT_FLINCH_DOUBLE_DAMAGE_FLY_OR_BOUNCE: // removes the double damage flying too
+        case MOVE_EFFECT_LOWER_SP_DEF_2_HIT:
+        case MOVE_EFFECT_LOWER_ATTACK_HIT:
+        case MOVE_EFFECT_THAW_AND_BURN_HIT: // it does thaw otherwise
+        case MOVE_EFFECT_CHATTER: // confuse chance based on volume of cry
+        case MOVE_EFFECT_FLINCH_MINIMIZE_DOUBLE_HIT:
+        case MOVE_EFFECT_RANDOM_PRIMARY_STATUS_HIT:
+        case MOVE_EFFECT_PREVENT_HEALING_HIT: // Psychic Noise
+        case MOVE_EFFECT_POISON_MULTI_HIT: // twineedle
+        case MOVE_EFFECT_HIGH_CRITICAL_BURN_HIT: // blaze kick
+        case MOVE_EFFECT_HIGH_CRITICAL_POISON_HIT: // cross poison
+        case MOVE_EFFECT_RECOIL_BURN_HIT: // flare blitz
+        case MOVE_EFFECT_RECOIL_PARALYZE_HIT:
+            effect = MOVE_EFFECT_STARSTRUCK;
+            break;
+
+        default:
+            break;
         }
     }
 

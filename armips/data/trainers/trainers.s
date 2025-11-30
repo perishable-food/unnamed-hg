@@ -593,7 +593,7 @@ trainerdata 19, "Mickey"
         ivs 0
         abilityslot 0
         level 1
-        pokemon SPECIES_DEDENNE
+        pokemon SPECIES_SPECTREON
         item ITEM_NONE
         ballseal 0
 
