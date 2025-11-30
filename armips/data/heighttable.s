@@ -1090,7 +1090,7 @@ heightentry SPECIES_IRON_BOULDER, "null", 0, "null", 0
 heightentry SPECIES_IRON_CROWN, "null", 0, "null", 0
 heightentry SPECIES_TERAPAGOS, 0, 0, 0, 0
 heightentry SPECIES_PECHARUNT, "null", 10, "null", 0
-heightentry SPECIES_SPECTREON, 0, 0, 0, 0
+heightentry SPECIES_SPECTREON, 0, 0, 14, 14
 heightentry SPECIES_BUFFUGU, 16, 16, 25, 25
 heightentry SPECIES_PUFFUGU, 0, 0, 22, 22
 heightentry SPECIES_TUFFUGU, 0, 0, 11, 11
