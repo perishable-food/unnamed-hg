@@ -22629,7 +22629,7 @@ mondata SPECIES_SPECTREON, "Spectreon"
     mondexweight SPECIES_SPECTREON, "51.8 lbs."
 
 mondata SPECIES_BUFFUGU, "Buffugu"
-    basestats 90, 30, 15, 15, 40, 20
+    basestats 90, 15, 30, 15, 20, 40
     types TYPE_POISON, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_POISON
     catchrate 170
     baseexp 0 // defined in baseexp.s
@@ -22640,16 +22640,16 @@ mondata SPECIES_BUFFUGU, "Buffugu"
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
-    abilities ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE
+    abilities ABILITY_CORROSION, ABILITY_INNARDS_OUT
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_BUFFUGU, "It has a very soft body. If it\nstarts to roll, it will bounce all\nover and be impossible to stop."
-    mondexclassification SPECIES_BUFFUGU, "Balloon Pokémon"
+    mondexentry SPECIES_BUFFUGU, "Buffugu's quills contain a potent\nanesthethic toxin. Those who dare to\rtouch them are promptly put to sleep."
+    mondexclassification SPECIES_BUFFUGU, "Bufferfish Pokémon"
     mondexheight SPECIES_BUFFUGU, "1’00”"
     mondexweight SPECIES_BUFFUGU, "2.2 lbs."
 
 mondata SPECIES_PUFFUGU, "Puffugu"
-    basestats 115, 45, 20, 20, 45, 25
+    basestats 115, 20, 45, 20, 25, 45
     types TYPE_POISON, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_POISON
     catchrate 170
     baseexp 0 // defined in baseexp.s
@@ -22660,17 +22660,17 @@ mondata SPECIES_PUFFUGU, "Puffugu"
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
-    abilities ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE
+    abilities ABILITY_CORROSION, ABILITY_INNARDS_OUT
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_PUFFUGU, "If it inflates to sing a lullaby,\nit can perform longer and cause\nsure drowsiness in its audience."
-    mondexclassification SPECIES_PUFFUGU, "Balloon Pokémon"
+    mondexentry SPECIES_PUFFUGU, "Puffugu puff up their cheeks to extend\nthe spines scattered across its body.\nWhen relaxed, the spines become soft."
+    mondexclassification SPECIES_PUFFUGU, "Pufferfish Pokémon"
     mondexheight SPECIES_PUFFUGU, "1’08”"
     mondexweight SPECIES_PUFFUGU, "12.1 lbs."
 
 
 mondata SPECIES_TUFFUGU, "Tuffugu"
-    basestats 140, 70, 45, 45, 85, 50
+    basestats 140, 45, 70, 45, 50, 85
     types TYPE_POISON, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_POISON
     catchrate 50
     baseexp 0 // defined in baseexp.s
@@ -22681,11 +22681,11 @@ mondata SPECIES_TUFFUGU, "Tuffugu"
     basefriendship 50
     growthrate GROWTH_FAST
     egggroups EGG_GROUP_FAIRY, EGG_GROUP_FAIRY
-    abilities ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE
+    abilities ABILITY_CORROSION, ABILITY_INNARDS_OUT
     runchance 0
     colorflip BODY_COLOR_PINK, 0
-    mondexentry SPECIES_TUFFUGU, "Their fur feels so good that if two\nof them snuggle together,\nthey won’t want to be separated."
-    mondexclassification SPECIES_TUFFUGU, "Balloon Pokémon"
+    mondexentry SPECIES_TUFFUGU, "Tuffugu often have territorial\ndisputes with Overqwil. The aftermath\nof these turf-wars are catastrophic."
+    mondexclassification SPECIES_TUFFUGU, "Tufferfish Pokémon"
     mondexheight SPECIES_TUFFUGU, "3’03”"
     mondexweight SPECIES_TUFFUGU, "26.5 lbs."    
 
