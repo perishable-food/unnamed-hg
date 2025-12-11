@@ -27682,12 +27682,44 @@ mondata SPECIES_TERAPAGOS_STELLAR, "-----"
     runchance 0
     colorflip BODY_COLOR_BLUE, 0
 
+mondata SPECIES_MEGA_RAICHU_X, "-----"
+    basestats 60, 135, 95, 110, 90, 95
+    types TYPE_ELECTRIC, TYPE_ELECTRIC
+    catchrate 75
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 3, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 10
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
+    abilities ABILITY_STATIC, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_YELLOW, 0
+
+mondata SPECIES_MEGA_RAICHU_Y, "-----"
+    basestats 60, 100, 55, 130, 160, 80
+    types TYPE_ELECTRIC, TYPE_ELECTRIC
+    catchrate 75
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 3, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 10
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FAIRY
+    abilities ABILITY_STATIC, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_YELLOW, 0
+
 mondata SPECIES_MEGA_CLEFABLE, "-----"
     basestats 95, 80, 93, 70, 135, 110
     types TYPE_FAIRY, TYPE_FLYING
     catchrate 25
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 3, 0, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 190
     eggcycles 10
@@ -27703,7 +27735,7 @@ mondata SPECIES_MEGA_VICTREEBEL, "-----"
     types TYPE_GRASS, TYPE_POISON
     catchrate 45
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 3, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
     eggcycles 20
@@ -27719,7 +27751,7 @@ mondata SPECIES_MEGA_STARMIE, "-----"
     types TYPE_WATER, TYPE_PSYCHIC
     catchrate 60
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 0, 0, 2, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 255
     eggcycles 20
@@ -27735,7 +27767,7 @@ mondata SPECIES_MEGA_DRAGONITE, "-----"
     types TYPE_DRAGON, TYPE_FLYING
     catchrate 45
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 3, 0, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
     eggcycles 40
@@ -27751,7 +27783,7 @@ mondata SPECIES_MEGA_MEGANIUM, "-----"
     types TYPE_GRASS, TYPE_FAIRY
     catchrate 45
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 0, 1, 0, 0, 2
     items ITEM_NONE, ITEM_NONE
     genderratio 31
     eggcycles 20
@@ -27767,7 +27799,7 @@ mondata SPECIES_MEGA_FERALIGATR, "-----"
     types TYPE_WATER, TYPE_DRAGON
     catchrate 45
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 2, 1, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 31
     eggcycles 20
@@ -27783,7 +27815,7 @@ mondata SPECIES_MEGA_SKARMORY, "-----"
     types TYPE_STEEL, TYPE_FLYING
     catchrate 25
     baseexp 0 // defined in baseexp.s
-    evyields 0, 0, 0, 0, 0, 0
+    evyields 0, 0, 2, 0, 0, 0
     items ITEM_NONE, ITEM_NONE
     genderratio 127
     eggcycles 25
@@ -27793,6 +27825,86 @@ mondata SPECIES_MEGA_SKARMORY, "-----"
     abilities ABILITY_KEEN_EYE, ABILITY_KEEN_EYE
     runchance 0
     colorflip BODY_COLOR_GRAY, 0
+
+mondata SPECIES_MEGA_CHIMECHO, "-----"
+    basestats 75, 50, 110, 65, 135, 120
+    types TYPE_PSYCHIC, TYPE_STEEL
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 1, 1
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 25
+    basefriendship 70
+    growthrate GROWTH_FAST
+    egggroups EGG_GROUP_AMORPHOUS, EGG_GROUP_AMORPHOUS
+    abilities ABILITY_LEVITATE, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+
+mondata SPECIES_MEGA_ABSOL_Z, "-----"
+    basestats 65, 154, 60, 151, 75, 60
+    types TYPE_DARK, TYPE_GHOST
+    catchrate 30
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 2, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 25
+    basefriendship 35
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_PRESSURE, ABILITY_PRESSURE
+    runchance 0
+    colorflip BODY_COLOR_BLACK, 0
+
+mondata SPECIES_MEGA_STARAPTOR, "-----"
+    basestats 85, 140, 100, 110, 60, 90
+    types TYPE_FIGHTING, TYPE_FLYING
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_YACHE_BERRY
+    genderratio 127
+    eggcycles 15
+    basefriendship 70
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FLYING, EGG_GROUP_FLYING
+    abilities ABILITY_INTIMIDATE, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_GRAY, 0
+
+mondata SPECIES_MEGA_GARCHOMP_Z, "-----"
+    basestats 108, 130, 95, 151, 141, 85
+    types TYPE_DRAGON, TYPE_DRAGON
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 40
+    basefriendship 50
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_MONSTER, EGG_GROUP_DRAGON
+    abilities ABILITY_SAND_VEIL, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+
+mondata SPECIES_MEGA_LUCARIO_Z, "-----"
+    basestats 70, 100, 70, 151, 164, 70
+    types TYPE_FIGHTING, TYPE_STEEL
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 1, 0, 0, 1, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 31
+    eggcycles 25
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE
+    abilities ABILITY_STEADFAST, ABILITY_STEADFAST
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
 
 mondata SPECIES_MEGA_FROSLASS, "-----"
     basestats 70, 80, 70, 120, 140, 100
@@ -27809,6 +27921,38 @@ mondata SPECIES_MEGA_FROSLASS, "-----"
     abilities ABILITY_SNOW_CLOAK, ABILITY_SNOW_CLOAK
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
+
+mondata SPECIES_MEGA_HEATRAN, "-----"
+    basestats 91, 120, 106, 67, 175, 141
+    types TYPE_FIRE, TYPE_STEEL
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 3, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 10
+    basefriendship 100
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_FLASH_FIRE, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BROWN, 0
+
+mondata SPECIES_MEGA_DARKRAI, "-----"
+    basestats 70, 120, 130, 85, 165, 130
+    types TYPE_DARK, TYPE_DARK
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 1, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 120
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_BAD_DREAMS, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BLACK, 0
 
 mondata SPECIES_MEGA_EMBOAR, "-----"
     basestats 110, 148, 75, 75, 110, 110
@@ -27906,6 +28050,22 @@ mondata SPECIES_MEGA_CHANDELURE, "-----"
     runchance 0
     colorflip BODY_COLOR_BLACK, 0
 
+mondata SPECIES_MEGA_GOLURK, "-----"
+    basestats 89, 159, 105, 55, 70, 105
+    types TYPE_GROUND, TYPE_GHOST
+    catchrate 90
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 2, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 25
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
+    abilities ABILITY_IRON_FIST, ABILITY_IRON_FIST
+    runchance 0
+    colorflip BODY_COLOR_GREEN, 0
+
 mondata SPECIES_MEGA_CHESNAUGHT, "-----"
     basestats 88, 137, 172, 44, 74, 115
     types TYPE_GRASS, TYPE_FIGHTING
@@ -27985,6 +28145,38 @@ mondata SPECIES_MEGA_FLOETTE, "-----"
     abilities ABILITY_FLOWER_VEIL, ABILITY_FLOWER_VEIL
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
+
+mondata SPECIES_MEGA_MEOWSTIC, "-----"
+    basestats 74, 48, 76, 124, 143, 101
+    types TYPE_PSYCHIC, TYPE_PSYCHIC
+    catchrate 75
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 2, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 0
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_KEEN_EYE, ABILITY_KEEN_EYE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+
+mondata SPECIES_MEGA_MEOWSTIC_FEMALE, "-----"
+    basestats 74, 48, 76, 124, 143, 101
+    types TYPE_PSYCHIC, TYPE_PSYCHIC
+    catchrate 75
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 2, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 0
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_FIELD, EGG_GROUP_FIELD
+    abilities ABILITY_KEEN_EYE, ABILITY_KEEN_EYE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
 
 mondata SPECIES_MEGA_MALAMAR, "-----"
     basestats 86, 102, 88, 88, 98, 120
@@ -28066,6 +28258,38 @@ mondata SPECIES_MEGA_ZYGARDE, "-----"
     runchance 0
     colorflip BODY_COLOR_BLACK, 1
 
+mondata SPECIES_MEGA_CRABOMINABLE, "-----"
+    basestats 97, 157, 122, 33, 62, 107
+    types TYPE_FIGHTING, TYPE_ICE
+    catchrate 60
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 2, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_CHERI_BERRY
+    genderratio 127
+    eggcycles 20
+    basefriendship 70
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_WATER_3, EGG_GROUP_WATER_3
+    abilities ABILITY_HYPER_CUTTER, ABILITY_HYPER_CUTTER
+    runchance 0
+    colorflip BODY_COLOR_WHITE, 0
+
+mondata SPECIES_MEGA_GOLISOPOD, "-----"
+    basestats 75, 150, 175, 40, 70, 120
+    types TYPE_BUG, TYPE_STEEL
+    catchrate 45
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 2, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_BUG, EGG_GROUP_WATER_3
+    abilities ABILITY_EMERGENCY_EXIT, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_GRAY, 0
+
 mondata SPECIES_MEGA_DRAMPA, "-----"
     basestats 78, 85, 110, 36, 160, 116
     types TYPE_NORMAL, TYPE_DRAGON
@@ -28082,6 +28306,54 @@ mondata SPECIES_MEGA_DRAMPA, "-----"
     runchance 0
     colorflip BODY_COLOR_WHITE, 0
 
+mondata SPECIES_MEGA_MAGEARNA, "-----"
+    basestats 80, 125, 115, 95, 170, 115
+    types TYPE_STEEL, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_STEEL
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 3, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 120
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_SOUL_HEART, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_GRAY, 0
+
+mondata SPECIES_MEGA_MAGEARNA_ORIGINAL, "-----"
+    basestats 80, 125, 115, 95, 170, 115
+    types TYPE_STEEL, (FAIRY_TYPE_IMPLEMENTED) ? TYPE_FAIRY : TYPE_STEEL
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 3, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 120
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_SOUL_HEART, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_RED, 0
+
+mondata SPECIES_MEGA_ZERAORA, "-----"
+    basestats 88, 157, 75, 153, 147, 80
+    types TYPE_ELECTRIC, TYPE_ELECTRIC
+    catchrate 3
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 3, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 255
+    eggcycles 120
+    basefriendship 0
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED
+    abilities ABILITY_VOLT_ABSORB, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_YELLOW, 0
+
 mondata SPECIES_MEGA_FALINKS, "-----"
     basestats 65, 135, 135, 100, 70, 65
     types TYPE_FIGHTING, TYPE_FIGHTING
@@ -28097,3 +28369,99 @@ mondata SPECIES_MEGA_FALINKS, "-----"
     abilities ABILITY_BATTLE_ARMOR, ABILITY_BATTLE_ARMOR
     runchance 0
     colorflip BODY_COLOR_YELLOW, 0
+
+mondata SPECIES_MEGA_SCOVILLAIN, "-----"
+    basestats 65, 138, 85, 75, 138, 85
+    types TYPE_GRASS, TYPE_FIRE
+    catchrate 75
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 2, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 20
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_FAST
+    egggroups EGG_GROUP_GRASS, EGG_GROUP_GRASS
+    abilities ABILITY_CHLOROPHYLL, ABILITY_CHLOROPHYLL
+    runchance 0
+    colorflip BODY_COLOR_GREEN, 0
+
+mondata SPECIES_MEGA_GLIMMORA, "-----"
+    basestats 83, 90, 105, 101, 150, 96
+    types TYPE_ROCK, TYPE_POISON
+    catchrate 25
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 30
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_MINERAL, EGG_GROUP_MINERAL
+    abilities ABILITY_TOXIC_DEBRIS, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_BLUE, 0
+
+mondata SPECIES_MEGA_TATSUGIRI, "-----"
+    basestats 68, 65, 90, 92, 135, 125
+    types TYPE_DRAGON, TYPE_WATER
+    catchrate 100
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 35
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
+    abilities ABILITY_COMMANDER, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_RED, 0
+
+mondata SPECIES_MEGA_TATSUGIRI_DROOPY, "-----"
+    basestats 68, 65, 90, 92, 135, 125
+    types TYPE_DRAGON, TYPE_WATER
+    catchrate 100
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 35
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
+    abilities ABILITY_COMMANDER, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_PINK, 0
+
+mondata SPECIES_MEGA_TATSUGIRI_STRETCHY, "-----"
+    basestats 68, 65, 90, 92, 135, 125
+    types TYPE_DRAGON, TYPE_WATER
+    catchrate 100
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 0, 0, 0, 2, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 35
+    basefriendship 50
+    growthrate GROWTH_MEDIUM_SLOW
+    egggroups EGG_GROUP_WATER_2, EGG_GROUP_WATER_2
+    abilities ABILITY_COMMANDER, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_YELLOW, 0
+
+mondata SPECIES_MEGA_BAXCALIBUR, "-----"
+    basestats 115, 175, 117, 87, 105, 101
+    types TYPE_DRAGON, TYPE_ICE
+    catchrate 10
+    baseexp 0 // defined in baseexp.s
+    evyields 0, 3, 0, 0, 0, 0
+    items ITEM_NONE, ITEM_NONE
+    genderratio 127
+    eggcycles 40
+    basefriendship 50
+    growthrate GROWTH_SLOW
+    egggroups EGG_GROUP_DRAGON, EGG_GROUP_MINERAL
+    abilities ABILITY_THERMAL_EXCHANGE, ABILITY_NONE
+    runchance 0
+    colorflip BODY_COLOR_GRAY, 0

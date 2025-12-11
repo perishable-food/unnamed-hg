@@ -57,6 +57,16 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_RAICHU,
+        .itemindex = ITEM_RAICHUNITE_X,
+        .form = 2,
+    },
+    {
+        .monindex = SPECIES_RAICHU,
+        .itemindex = ITEM_RAICHUNITE_Y,
+        .form = 3,
+    },
+    {
         .monindex = SPECIES_CLEFABLE,
         .itemindex = ITEM_CLEFABLITE,
         .form = 1,
@@ -232,9 +242,19 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_CHIMECHO,
+        .itemindex = ITEM_CHIMECHITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_ABSOL,
         .itemindex = ITEM_ABSOLITE,
         .form = 1,
+    },
+    {
+        .monindex = SPECIES_ABSOL,
+        .itemindex = ITEM_ABSOLITE_Z,
+        .form = 2,
     },
     {
         .monindex = SPECIES_GLALIE,
@@ -262,6 +282,16 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_LATIOS,
+        .itemindex = ITEM_LATIOSITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_STARAPTOR,
+        .itemindex = ITEM_STARAPTITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_LOPUNNY,
         .itemindex = ITEM_LOPUNNITE,
         .form = 1,
@@ -272,9 +302,19 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_GARCHOMP,
+        .itemindex = ITEM_GARCHOMPITE_Z,
+        .form = 2,
+    },
+    {
         .monindex = SPECIES_LUCARIO,
         .itemindex = ITEM_LUCARIONITE,
         .form = 1,
+    },
+    {
+        .monindex = SPECIES_LUCARIO,
+        .itemindex = ITEM_LUCARIONITE_Z,
+        .form = 2,
     },
     {
         .monindex = SPECIES_ABOMASNOW,
@@ -327,6 +367,11 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_GOLURK,
+        .itemindex = ITEM_GOLURKITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_CHESNAUGHT,
         .itemindex = ITEM_CHESNAUGHTITE,
         .form = 1,
@@ -350,6 +395,11 @@ const struct MegaStruct sMegaTable[] =
         .monindex = SPECIES_FLOETTE,
         .itemindex = ITEM_FLOETTITE,
         .form = 6,
+    },
+    {
+        .monindex = SPECIES_MEOWSTIC,
+        .itemindex = ITEM_MEOWSTICITE,
+        .form = 2,
     },
     {
         .monindex = SPECIES_MALAMAR,
@@ -382,13 +432,53 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_CRABOMINABLE,
+        .itemindex = ITEM_CRABOMINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_GOLISOPOD,
+        .itemindex = ITEM_GOLISOPITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_DRAMPA,
         .itemindex = ITEM_DRAMPANITE,
         .form = 1,
     },
     {
+        .monindex = SPECIES_MAGEARNA,
+        .itemindex = ITEM_MAGEARNITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_ZERAORA,
+        .itemindex = ITEM_ZERAORITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_FALINKS,
         .itemindex = ITEM_FALINKSITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_SCOVILLAIN,
+        .itemindex = ITEM_SCOVILLAINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_GLIMMORA,
+        .itemindex = ITEM_GLIMMORANITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_TATSUGIRI,
+        .itemindex = ITEM_TATSUGIRINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_BAXCALIBUR,
+        .itemindex = ITEM_BAXCALIBRITE,
         .form = 1,
     },
 };
