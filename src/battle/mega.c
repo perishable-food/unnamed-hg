@@ -11,16 +11,16 @@
 
 struct MegaStruct
 {
-    u16 monindex;
-    u16 itemindex:11;
-    u16 form:5;
+    u32 monindex:12;
+    u32 itemindex:12;
+    u32 form:8;
 };
 
 struct MegaStructMove
 {
-    u16 monindex;
-    u16 moveindex:11;
-    u16 form:5;
+    u32 monindex:12;
+    u32 moveindex:12;
+    u32 form:8;
 };
 
 #ifdef MEGA_EVOLUTIONS
@@ -502,15 +502,12 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
     u32 form = battle->battlemon[client].form_no;
 
     if (battle->battlemon[client].canMega)
-        debug_printf("you CAN mega !\n");
         return FALSE;
 
     if (newBS.SideMega[client])
-        debug_printf("you CAN sidemega !\n");
         return FALSE;
 
     if (form)
-        debug_printf("form!\n");
         return FALSE;
 
     if (battle->playerActions[client][3] != SELECT_FIGHT_COMMAND)
@@ -690,7 +687,6 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
 
     form_no = GetMonData(pp, MON_DATA_FORM, 0);
     if (form_no || (bip->bw->sp->battlemon[bip->client_no].condition2 & STATUS2_TRANSFORMED)) // can not draw mega button if form is nonzero.  only base form can mega evolve
-        debug_printf("baseform is nonzero\n");
         return FALSE;
 
     return (CheckMegaData(mon, item) || CheckMegaMoveData(mon, moves));

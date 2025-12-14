@@ -1434,6 +1434,7 @@ gIconPalTable:
 /* SPECIES_MEGA_SKARMORY               */  .byte 0x2
 /* SPECIES_MEGA_CHIMECHO               */  .byte 0x0
 /* SPECIES_MEGA_ABSOL_Z                */  .byte 0x0
+/* SPECIES_MEGA_STARAPTOR              */  .byte 0x0
 /* SPECIES_MEGA_GARCHOMP_Z             */  .byte 0x0
 /* SPECIES_MEGA_LUCARIO_Z              */  .byte 0x0
 /* SPECIES_MEGA_FROSLASS               */  .byte 0x0
