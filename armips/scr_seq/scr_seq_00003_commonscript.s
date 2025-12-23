@@ -89,7 +89,6 @@ scrdef scr_seq_0003_071
 scrdef scr_seq_0003_072
 scrdef scr_seq_0003_073
 scrdef scr_seq_0003_074
-scrdef scr_seq_0003_072_repels
 scrdef scr_seq_0003_073_autobattle_testing
 scrdef_end
 
