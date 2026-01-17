@@ -11,16 +11,16 @@
 
 struct MegaStruct
 {
-    u16 monindex;
-    u16 itemindex:11;
-    u16 form:5;
+    u32 monindex:12;
+    u32 itemindex:12;
+    u32 form:8;
 };
 
 struct MegaStructMove
 {
-    u16 monindex;
-    u16 moveindex:11;
-    u16 form:5;
+    u32 monindex:12;
+    u32 moveindex:12;
+    u32 form:8;
 };
 
 #ifdef MEGA_EVOLUTIONS
@@ -55,6 +55,16 @@ const struct MegaStruct sMegaTable[] =
         .monindex = SPECIES_PIDGEOT,
         .itemindex = ITEM_PIDGEOTITE,
         .form = 1,
+    },
+    {
+        .monindex = SPECIES_RAICHU,
+        .itemindex = ITEM_RAICHUNITE_X,
+        .form = 2,
+    },
+    {
+        .monindex = SPECIES_RAICHU,
+        .itemindex = ITEM_RAICHUNITE_Y,
+        .form = 3,
     },
     {
         .monindex = SPECIES_CLEFABLE,
@@ -232,9 +242,19 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_CHIMECHO,
+        .itemindex = ITEM_CHIMECHITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_ABSOL,
         .itemindex = ITEM_ABSOLITE,
         .form = 1,
+    },
+    {
+        .monindex = SPECIES_ABSOL,
+        .itemindex = ITEM_ABSOLITE_Z,
+        .form = 2,
     },
     {
         .monindex = SPECIES_GLALIE,
@@ -262,6 +282,16 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_LATIOS,
+        .itemindex = ITEM_LATIOSITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_STARAPTOR,
+        .itemindex = ITEM_STARAPTITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_LOPUNNY,
         .itemindex = ITEM_LOPUNNITE,
         .form = 1,
@@ -272,9 +302,19 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_GARCHOMP,
+        .itemindex = ITEM_GARCHOMPITE_Z,
+        .form = 2,
+    },
+    {
         .monindex = SPECIES_LUCARIO,
         .itemindex = ITEM_LUCARIONITE,
         .form = 1,
+    },
+    {
+        .monindex = SPECIES_LUCARIO,
+        .itemindex = ITEM_LUCARIONITE_Z,
+        .form = 2,
     },
     {
         .monindex = SPECIES_ABOMASNOW,
@@ -327,6 +367,11 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_GOLURK,
+        .itemindex = ITEM_GOLURKITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_CHESNAUGHT,
         .itemindex = ITEM_CHESNAUGHTITE,
         .form = 1,
@@ -339,17 +384,22 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_GRENINJA,
         .itemindex = ITEM_GRENINJITE,
-        .form = 4,
+        .form = 3,
     },
     {
         .monindex = SPECIES_PYROAR,
         .itemindex = ITEM_PYROARITE,
-        .form = 3,
+        .form = 2,
     },
     {
         .monindex = SPECIES_FLOETTE,
         .itemindex = ITEM_FLOETTITE,
-        .form = 7,
+        .form = 6,
+    },
+    {
+        .monindex = SPECIES_MEOWSTIC,
+        .itemindex = ITEM_MEOWSTICITE,
+        .form = 2,
     },
     {
         .monindex = SPECIES_MALAMAR,
@@ -374,11 +424,21 @@ const struct MegaStruct sMegaTable[] =
     {
         .monindex = SPECIES_ZYGARDE,
         .itemindex = ITEM_ZYGARDITE,
-        .form = 7,
+        .form = 6,
     },
     {
         .monindex = SPECIES_DIANCIE,
         .itemindex = ITEM_DIANCITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_CRABOMINABLE,
+        .itemindex = ITEM_CRABOMINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_GOLISOPOD,
+        .itemindex = ITEM_GOLISOPITE,
         .form = 1,
     },
     {
@@ -387,11 +447,41 @@ const struct MegaStruct sMegaTable[] =
         .form = 1,
     },
     {
+        .monindex = SPECIES_MAGEARNA,
+        .itemindex = ITEM_MAGEARNITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_ZERAORA,
+        .itemindex = ITEM_ZERAORITE,
+        .form = 1,
+    },
+    {
         .monindex = SPECIES_FALINKS,
         .itemindex = ITEM_FALINKSITE,
         .form = 1,
     },
-    // ugh
+    {
+        .monindex = SPECIES_SCOVILLAIN,
+        .itemindex = ITEM_SCOVILLAINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_GLIMMORA,
+        .itemindex = ITEM_GLIMMORANITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_TATSUGIRI,
+        .itemindex = ITEM_TATSUGIRINITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_BAXCALIBUR,
+        .itemindex = ITEM_BAXCALIBRITE,
+        .form = 1,
+    },
+        // ugh
     {
         .monindex = SPECIES_DECIDUEYE,
         .itemindex = ITEM_DECIDUITE,
@@ -433,15 +523,12 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
     u32 form = battle->battlemon[client].form_no;
 
     if (battle->battlemon[client].canMega)
-        debug_printf("you CAN mega !\n");
         return FALSE;
 
     if (newBS.SideMega[client])
-        debug_printf("you CAN sidemega !\n");
         return FALSE;
 
     if (form)
-        debug_printf("form!\n");
         return FALSE;
 
     if (battle->playerActions[client][3] != SELECT_FIGHT_COMMAND)
@@ -621,7 +708,6 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
 
     form_no = GetMonData(pp, MON_DATA_FORM, 0);
     if (form_no || (bip->bw->sp->battlemon[bip->client_no].condition2 & STATUS2_TRANSFORMED)) // can not draw mega button if form is nonzero.  only base form can mega evolve
-        debug_printf("baseform is nonzero\n");
         return FALSE;
 
     return (CheckMegaData(mon, item) || CheckMegaMoveData(mon, moves));

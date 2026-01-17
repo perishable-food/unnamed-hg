@@ -566,6 +566,11 @@ struct OVERWORLD_TAG gOWTagToFileNum[] = // skip down a bit to see the parts tha
     { .tag =  629, .gfx =  446, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DRAGONAIR
     { .tag =  630, .gfx =  447, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_DRAGONITE
     { .tag =  631, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MEWTWO
+    { .tag =  632, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // mega x
+    { .tag =  633, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // mega y
+    { .tag =  634, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // armored
+    { .tag =  635, .gfx =  448, .callback_params = OVERWORLD_SIZE_SMALL}, // shadow
+    // add four to every .tag value after this point. 636 for mew, 637 for chikorita, etc etc
     { .tag =  632, .gfx =  449, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_MEW
     { .tag =  633, .gfx =  450, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_CHIKORITA
     { .tag =  634, .gfx =  451, .callback_params = OVERWORLD_SIZE_SMALL}, // SPECIES_BAYLEEF
