@@ -305,8 +305,8 @@ The Hearthflame Mask shines,\nboosting the Attack stat.
 The Cornerstone Mask shines,\nboosting the Defense stat.
 May badly poison targets when\na Pokémon makes contact.
 Lowers evasiveness of\nPokémon upon first entry.
-Transforms into its Terastal Form\nupon entering battle.
+Transforms into Terastal Form\nupon entering battle.
 Resists all damage when\nHP is full.
 Reduces effects of weather\nand terrain to zero.
-Pokémon poisoned by Pecharunt\nwill also become confused.
+Poison-inflicting moves\nwill also cause confusion.
 Moves under 60 Base Power hit\nfive times. 
