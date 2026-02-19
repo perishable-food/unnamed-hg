@@ -50,6 +50,64 @@ void randomize(int arr[], int n) {
 extern u32 gLastPokemonLevelForMoneyCalc;
 
 /**
+ *  @brief Check if Pokemon should evolve based on level and return evolved species
+ *
+ *  @param species current species
+ *  @param level target level
+ *  @return evolved species if evolution occurs, original species otherwise
+ */
+u16 GetLevelBasedEvolution(u16 species, u8 level)
+{
+    struct Evolution *evoTable = sys_AllocMemory(3, MAX_EVOS_PER_POKE * sizeof(struct Evolution));
+    ArchiveDataLoad(evoTable, ARC_EVOLUTIONS, species);
+    
+    u16 evolvedSpecies = species;
+    
+    for (int i = 0; i < MAX_EVOS_PER_POKE; i++)
+    {
+        if (evoTable[i].method == EVO_NONE)
+            break;
+            
+        // Check all level-based evolution methods
+        switch (evoTable[i].method)
+        {
+            case EVO_LEVEL:
+            case EVO_LEVEL_ATK_GT_DEF:
+            case EVO_LEVEL_ATK_EQ_DEF:
+            case EVO_LEVEL_ATK_LT_DEF:
+            case EVO_LEVEL_PID_LO:
+            case EVO_LEVEL_PID_HI:
+            case EVO_LEVEL_NINJASK:
+            case EVO_LEVEL_MALE:
+            case EVO_LEVEL_FEMALE:
+            case EVO_LEVEL_DAY:
+            case EVO_LEVEL_NIGHT:
+            case EVO_LEVEL_DUSK:
+            case EVO_LEVEL_RAIN:
+            case EVO_LEVEL_DARK_TYPE_MON_IN_PARTY:
+            case EVO_LEVEL_NATURE_AMPED:
+            case EVO_LEVEL_NATURE_LOW_KEY:
+                if (evoTable[i].param <= level)
+                {
+                    evolvedSpecies = evoTable[i].target & 0x7FF;
+                    // Check if this evolution can evolve further
+                    u16 nextEvolution = GetLevelBasedEvolution(evolvedSpecies, level);
+                    if (nextEvolution != evolvedSpecies)
+                    {
+                        evolvedSpecies = nextEvolution;
+                    }
+                    sys_FreeMemoryEz(evoTable);
+                    return evolvedSpecies;
+                }
+                break;
+        }
+    }
+    
+    sys_FreeMemoryEz(evoTable);
+    return evolvedSpecies;
+}
+
+/**
  *  @brief get which dynamic scaling formula to apply from the script variable defined by SCALING_TYPE_VARIABLE
  *
  *  @return scaling type from SCALING_TYPE_VARIABLE script variable

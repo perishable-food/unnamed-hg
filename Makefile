@@ -398,8 +398,8 @@ move_narc: $(NARC_FILES)
 	@echo "pokemon overworld data:"
 	cp $(OVERWORLD_DATA_NARC) $(OVERWORLD_DATA_TARGET)
 
-	@echo "move an updated gs_sound_data.sdat:"
-	cp $(SDAT_BUILD) $(SDAT_TARGET)
+	# @echo "move an updated gs_sound_data.sdat:"
+	# cp $(SDAT_BUILD) $(SDAT_TARGET)
 
 	@echo "text data:"
 	cp $(MSGDATA_NARC) $(MSGDATA_TARGET)

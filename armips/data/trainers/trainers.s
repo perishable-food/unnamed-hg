@@ -576,41 +576,131 @@ trainerdata 18, "Justin"
         ballseal 0
     endparty
 
-trainerdata 19, "Mickey"
-    trainermontype TRAINER_DATA_TYPE_ITEMS
-    trainerclass TRAINERCLASS_BIKER
-    nummons 3
+trainerdata 19, "Rei"
+    trainermontype TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_MOVES | TRAINER_DATA_TYPE_ITEMS | TRAINER_DATA_TYPE_ABILITY | TRAINER_DATA_TYPE_BALL | TRAINER_DATA_TYPE_IV_EV_SET | TRAINER_DATA_TYPE_NATURE_SET | TRAINER_DATA_TYPE_SHINY_LOCK | TRAINER_DATA_TYPE_ADDITIONAL_FLAGS
+    trainerclass TRAINERCLASS_PSYCHIC_F
+    nummons 6
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
     item ITEM_NONE
-    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | 0
-    battletype SINGLE_BATTLE
+    aiflags F_PRIORITIZE_SUPER_EFFECTIVE | F_EVALUATE_ATTACKS | F_EXPERT_ATTACKS
+    battletype DOUBLE_BATTLE
     endentry
 
-    party 19
-        // mon 0
-        ivs 0
+    party 19	
+		ivs 200
         abilityslot 0
         level 1
-        pokemon SPECIES_SPECTREON
-        item ITEM_NONE
+        pokemon SPECIES_LOPUNNY
+        item ITEM_LOPUNNITE
+        move MOVE_RETURN
+        move MOVE_ICICLE_CRASH
+        move MOVE_VOLT_TACKLE
+        move MOVE_BULLET_PUNCH
+        ability ABILITY_SHARPNESS
+        ball ITEM_HEAVY_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 0, 252, 0, 252, 0, 4
+        nature NATURE_JOLLY
+        shinylock 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _L, _U, _S, _T, _B, _U, _N, _N, _Y, _endstr, 0
         ballseal 0
-
-        // mon 1
-        ivs 0
-        abilityslot 0
-        level 2
-        pokemon SPECIES_KOFFING
-        item ITEM_NONE
+	
+		ivs 200
+        abilityslot 2
+        level 1
+        monwithform SPECIES_DEOXYS, 3
+        item ITEM_FOCUS_SASH
+        move MOVE_PROTECT
+        move MOVE_SPIKES
+        move MOVE_PSYCHO_BOOST
+        move MOVE_TAIL_GLOW
+        ability ABILITY_STANCE_CHANGE
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 252, 252, 252, 252, 252, 252
+        nature NATURE_JOLLY
+        shinylock 0
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _C, _A, _R, _C, _I, _endstr, 0, 0, 0, 0, 0
         ballseal 0
-
-        // mon 2
-        ivs 0
+		
+        ivs 200
         abilityslot 0
-        level 20
-        pokemon SPECIES_KOFFING
-        item ITEM_NONE
+        level 1
+        pokemon SPECIES_DELPHOX
+        item ITEM_LIFE_ORB
+        move MOVE_PSYSTRIKE
+        move MOVE_MIND_BLOWN
+        move MOVE_NASTY_PLOT
+        move MOVE_SHADOW_BALL
+        ability ABILITY_MAGIC_GUARD
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 0, 0, 252, 252, 0
+        nature NATURE_TIMID
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _M, _R, _S, 0x1DE, _M, _A, _G, _I, _C, _endstr, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 2
+        level 1
+        pokemon SPECIES_JIRACHI
+        item ITEM_CHOICE_SCARF
+        move MOVE_DOUBLE_IRON_BASH
+        move MOVE_ICE_PUNCH
+        move MOVE_THUNDER_PUNCH
+        move MOVE_ZEN_HEADBUTT
+        ability ABILITY_SERENE_GRACE
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 252, 0, 252, 0, 0
+        nature NATURE_JOLLY
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _A, _N, _N, _A, _endstr, 0, 0, 0, 0, 0, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 1
+        level 1
+        pokemon SPECIES_PRIMARINA
+        item ITEM_WHITE_HERB
+        move MOVE_BOOMBURST
+        move MOVE_MOONBLAST
+        move MOVE_SHELL_SMASH
+        move MOVE_SEED_FLARE
+        ability ABILITY_LIQUID_VOICE
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 0, 0, 252, 252, 0
+        nature NATURE_MODEST
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _S, _W, _E, _E, _T, _endstr, 0, 0, 0, 0, 0
+        ballseal 0
+		
+		ivs 200
+        abilityslot 2
+        level 1
+        pokemon SPECIES_IRON_VALIANT
+        item ITEM_LIFE_ORB
+        move MOVE_MOONBLAST
+        move MOVE_QUIVER_DANCE
+        move MOVE_SECRET_SWORD
+        move MOVE_TACHYON_CUTTER
+        ability ABILITY_SHARPNESS
+        ball ITEM_ULTRA_BALL
+        setivs 31, 31, 31, 31, 31, 31 
+        setevs 6, 0, 0, 252, 252, 0
+        nature NATURE_JOLLY
+        shinylock 1
+        additionalflags TRAINER_DATA_EXTRA_TYPE_NICKNAME
+		nickname _D, _R, _A, _G, _U, _L, _A, _endstr, 0, 0, 0
         ballseal 0
     endparty
 
