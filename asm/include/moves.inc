@@ -942,6 +942,7 @@
 
 .equ NUM_OF_CANONICAL_MOVES, 923
 
+.equ MOVE_GOAT_POLISH, (NUM_OF_CANONICAL_MOVES)
 // make.py doesn't support constants for now
 // define your new moves below like this
 // .equ MOVE_CUSTOM_MOVE_1, (NUM_OF_CANONICAL_MOVES)
@@ -951,7 +952,7 @@
 
 
 // update this number yourself manually
-.equ NUM_OF_CUSTOM_MOVES, 0
+.equ NUM_OF_CUSTOM_MOVES, 1
 
 .equ NUM_OF_MOVES, (NUM_OF_CANONICAL_MOVES + NUM_OF_CUSTOM_MOVES)
 

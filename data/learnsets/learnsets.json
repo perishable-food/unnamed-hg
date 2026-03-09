@@ -113727,6 +113727,10 @@
       {
         "Level": 58,
         "Move": "MOVE_MILK_DRINK"
+      },
+      {
+        "Level": 67,
+        "Move": "MOVE_GOAT_POLISH"
       }
     ],
     "MachineMoves": [

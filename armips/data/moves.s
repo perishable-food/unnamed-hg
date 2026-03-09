@@ -14791,6 +14791,22 @@ movedata MOVE_MALIGNANT_CHAIN, "Malignant Chain"
     terminatedata
     movedescription MOVE_MALIGNANT_CHAIN, "The user pours toxins\ninto the target through\na corrosive chain. This\nmay also leave the\ntarget badly poisoned."
 
+movedata MOVE_GOAT_POLISH, "Goat Polish"
+    battleeffect MOVE_EFFECT_RAISE_ALL_STATS_LOSE_THIRD_MAX_HP
+    pss SPLIT_STATUS
+    basepower 0
+    type TYPE_DRAGON
+    accuracy 100
+    pp 5
+    effectchance 100
+    target RANGE_USER
+    priority 0
+    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    appeal 0x00
+    contesttype CONTEST_COOL
+    terminatedata
+    movedescription MOVE_GOAT_POLISH, "The goat boosts all\nits stats by using\nsome of its own HP."
+
 movedatanoname NUM_OF_MOVES
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL

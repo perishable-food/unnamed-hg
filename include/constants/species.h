@@ -1086,7 +1086,7 @@
 // define your fakemons below like this
 // #define SPECIES_FAKEMON_NAME1 (MAX_CANONICAL_MON_NUM + 1)
 
-#define MUM_OF_FAKEMONS 4
+#define NUM_OF_FAKEMONS 4
 
 #define SPECIES_SPECTREON (MAX_CANONICAL_MON_NUM + 1)
 #define SPECIES_BUFFUGU (MAX_CANONICAL_MON_NUM + 2)
