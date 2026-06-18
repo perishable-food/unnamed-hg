@@ -102,3 +102,4 @@ changelog
 /armips/include/generated/
 /include/constants/generated/
 test_logs.txt
+test_DSPRE_contents.ndstool_backup.zip
