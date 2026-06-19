@@ -86,8 +86,8 @@ we need to change ldrb -> ldrh (and strb -> strh) when applicable as well
 
 // btl_scr_cmd_d1_trynaturalcure
 // already handled because of hooked change
-.org 0x02245148
-.word ABILITY_OFFSET_WITHIN_BATTLESTRUCT
+//.org 0x02245148
+//.word ABILITY_OFFSET_WITHIN_BATTLESTRUCT
 
 
 // MessageParamTokuseiGet
@@ -123,6 +123,11 @@ strh r0, [r2, r1]
 .org 0x0224E914
 .word ABILITY_OFFSET_WITHIN_BATTLESTRUCT
 
+
+// edits to GetBattlerVar - https://github.com/pret/pokeheartgold/blob/77a632e01831822a771760d1afdbfbcd7d3bd96b/asm/overlay_12_0224E4FC.s#L1282-L1284
+.org 0x0224EF36
+add r4, #NEW_ABILITY_OFFSET
+ldrh r0, [r4]
 
 // edits to SetBattlerVar
 .org 0x0224F320

@@ -8,6 +8,9 @@
 
 #define AI_SCRIPT_MAX_MOVES 8
 
+#define TEST_BATTLE_MESSAGE_LEN 128
+#define TEST_BATTLE_MESSAGE_FILE_ID 197
+
 #define STATE_SCRIPT_IDX_MASK       0xF
 #define STATE_COMPLETE_BIT          (1 << 20)
 #define STATE_HAS_MORE_BIT          (1 << 21)
@@ -37,14 +40,17 @@ struct PACKED TestBattlePokemon {
 enum ExpectationType {
     EXPECTATION_TYPE_HP_BAR = 1,
     EXPECTATION_TYPE_MESSAGE,
+    EXPECTATION_TYPE_MESSAGE_CONTAINS,
     EXPECTATION_TYPE_ATTACK_MESSAGE,
     EXPECTATION_OVERWORLD_FORM,
+    EXPECTATION_TYPE_MESSAGE_DOES_NOT_CONTAIN,
+    EXPECTATION_TYPE_NOT_MESSAGE
 };
 
 union ExpectationValue {
     u32 hpTaken[16];
     u32 hpRecovered[16];
-    u32 messageID;  // TODO: switch to string
+    char message[TEST_BATTLE_MESSAGE_LEN];
     u16 formID;
 };
 
@@ -72,7 +78,8 @@ struct PACKED TestBattleScenario {
     struct Expectations expectations[MAX_EXPECTATIONS];
 
     u8 expectationPassCount;
-    u8 knownFailing;
+    u8 knownFailing : 1;
+    u8 markAsFail : 7;
 };
 
 #define FULL_HP 0

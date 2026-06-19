@@ -11,6 +11,8 @@ CUSTOM = 9999
 MSG_DATA_ITEM_DESCRIPTION = {
     4: 830, 5: 834, 6: 838, 7: 842, 8: 846, 9: 850, CUSTOM: 221
 }
+MAX_ITEM_DESC_WIDTH = 36
+MAX_ITEM_DESC_LINES = 3
 
 
 def parse_moves_descriptions(moves_s: Path):
@@ -97,7 +99,6 @@ def parse_moves_types(moves_s: Path):
     return moves_to_type
 
 
-
 def load_machine_move_list(file_path: Path):
     """
     Scan C file and extract MOVE_* tokens inside sMachineMoves[].
@@ -150,7 +151,7 @@ def item_generation(item_id, C):
         return 7
     if item_id <= C["ITEM_LEGEND_PLATE"]: 
         return 8
-    if item_id <= C["ITEM_BRIARS_BOOK"]:  
+    if item_id <= C["ITEM_BAXCALIBRITE"]:  
         return 9
     return CUSTOM
 
@@ -166,9 +167,9 @@ def item_msg_offset(item_id, C):
         return item_id - (C["ITEM_EON_FLUTE"] + 1)
     if item_id <= C["ITEM_LEGEND_PLATE"]:
         return item_id - (C["ITEM_UNKNOWN_1073"] + 1)
-    if item_id <= C["ITEM_BRIARS_BOOK"]:
+    if item_id <= C["ITEM_BAXCALIBRITE"]:
         return item_id - (C["ITEM_LEGEND_PLATE"] + 1)
-    return item_id - (C["ITEM_BRIARS_BOOK"] + 1)
+    return item_id - (C["ITEM_BAXCALIBRITE"] + 1)
 
 
 def build_item_to_index_fn(C):
@@ -235,6 +236,50 @@ def write_description_line(text_root: Path, file_id: int, line_num_1idx: int, te
     lines[line_num_1idx - 1] = text
     with path.open("w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
+
+
+def wrap_item_description(text: str):
+    text = text.rstrip("\n").replace("\\n", " ").replace("\\r", " ")
+
+    lines = []
+    remaining = text.strip()
+    ok_flag = True
+
+    while remaining:
+        if len(remaining) <= MAX_ITEM_DESC_WIDTH:
+            lines.append(remaining)
+            break
+
+        window = remaining[:MAX_ITEM_DESC_WIDTH + 1]
+        if len(window) > MAX_ITEM_DESC_WIDTH and window[MAX_ITEM_DESC_WIDTH] == " ":
+            break_at = MAX_ITEM_DESC_WIDTH
+        else:
+            break_at = window.rfind(" ")
+            if break_at == -1:
+                break_at = MAX_ITEM_DESC_WIDTH
+                ok_flag = False
+
+        lines.append(remaining[:break_at])
+        remaining = remaining[break_at + 1:].lstrip()
+
+    count = 0
+    wrapped = ""
+    for line in lines:
+        if count == 0:
+            wrapped = line
+            count += 1
+            continue
+        if count < MAX_ITEM_DESC_LINES:
+            wrapped = f"{wrapped}\\n{line}"
+            count += 1
+        else:
+            wrapped = f"{wrapped}\\r{line}"
+            count = 1
+
+    if any(len(line) > MAX_ITEM_DESC_WIDTH for line in lines):
+        ok_flag = False
+
+    return wrapped, ok_flag
 
 
 def canonical_items():
@@ -376,14 +421,19 @@ def update_descriptions(args):
         file_id = MSG_DATA_ITEM_DESCRIPTION[gen]
         line_num = item_msg_offset(item_id, items) + 1  # 1-indexed
 
+        wrapped_desc, wrapped_ok = wrap_item_description(desc)
+        if not wrapped_ok:
+            print(f"[warn] wrap exceeded preferred constraints for {item_name} ({move})")
+
         if args.dry_run:
-            print(f"[dry] {item_name} id={item_id} idx={idx} -> file {file_id}, line {line_num} := {move} :: {desc[:60]}{'...' if len(desc)>60 else ''}")
+            print(f"[dry] {item_name} id={item_id} idx={idx} -> file {file_id}, line {line_num} := {move} :: {wrapped_desc[:60]}{'...' if len(wrapped_desc)>60 else ''}")
         else:
-            write_description_line(args.text_root, file_id, line_num, desc)
+            write_description_line(args.text_root, file_id, line_num, wrapped_desc)
             wrote += 1
 
     if not args.dry_run:
         print(f"[descriptions] wrote={wrote} skipped={skipped}")
+
     return 0
 
 
@@ -427,7 +477,6 @@ if __name__ == "__main__":
     p = build_parser()
     args = p.parse_args()
 
-    # Require at least one action
     if not (args.descriptions or args.sprites):
         print("[ERROR] Specify at least one of --descriptions or --sprites")
         exit(1)

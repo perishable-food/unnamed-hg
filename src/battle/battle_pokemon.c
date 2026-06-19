@@ -22,8 +22,8 @@ void ClientPokemonEncount(void *bw, struct CLIENT_PARAM *cp);
 void ClientPokemonEncountAppear(void *bw, struct CLIENT_PARAM *cp);
 void ClientPokemonAppear(void *bw, struct CLIENT_PARAM *cp);
 int MessageParam_GetNickname(void *bw, struct BattleStruct *sp, int para);
-void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITCH_MESSAGE_PARAM *smp, MESSAGE_PARAM *mp);
-void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct ENCOUNT_SEND_OUT_MESSAGE_PARAM *esomp, MESSAGE_PARAM *mp);
+void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITCH_MESSAGE_PARAM *smp, BattleMessage *mp);
+void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct ENCOUNT_SEND_OUT_MESSAGE_PARAM *esomp, BattleMessage *mp);
 //void BattleFormChange(int client, int form_no, void* bw, struct BattleStruct *sp, bool8 SwitchAbility);
 void TryRevertFormChange(struct BattleStruct *sp, void *bw, int client_no);
 void BattleEndRevertFormChange(struct BattleSystem *bw);
@@ -39,9 +39,9 @@ ALIGN4 struct ILLUSION_STRUCT gIllusionStruct =
 
 /**
  *  @brief type effectiveness table
+ *         iterated through from top to bottom
  *         format is move type, defending type, and effectiveness
- *         0 is ineffective, 5 is not very effective, 20 is super effective
- *         every entry after the 0xFE entry is ignored by foresight
+ *         table stops early at TYPE_RING_TARGET or TYPE_FORESIGHT if conditions are met.
  */
 u8 TypeEffectivenessTable[][3] =
 {
@@ -188,7 +188,7 @@ u8 TypeEffectivenessTable[][3] =
 #if TYPE_EFFECTIVENESS_GEN < 6
     { TYPE_DARK, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE },
 #endif
-
+    { TYPE_RING_TARGET, TYPE_RING_TARGET, TYPE_MUL_NO_EFFECT },
 // AI bugfix: move all of the immune type interactions to the end of the table so that the
 // immunities properly unset the super effective move effect flag (and a lanturn with thunderbolt
 // isn't switched in on a gliscor over a raichu with ice beam)
@@ -451,7 +451,7 @@ int MessageParam_GetNickname(void *bw, struct BattleStruct *sp, int para)
  *  @param smp switchin message param
  *  @param mp message param to construct
  */
-void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITCH_MESSAGE_PARAM *smp, MESSAGE_PARAM *mp)
+void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITCH_MESSAGE_PARAM *smp, BattleMessage *mp)
 {
     if (cp->client_type & 1)
     {
@@ -474,18 +474,18 @@ void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITC
 
         if ((BattleTypeGet(bw) & BATTLE_TYPE_WIRELESS) == 0)
         {
-            mp->msg_id = BATTLE_MSG_SWITCH_IN_ENEMY_MSG;
-            mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME;
-            mp->msg_para[0] = cp->client_no;
-            mp->msg_para[1] = cp->client_no;
-            mp->msg_para[2] = cp->client_no | (smp->sel_mons_no << 8);
+            mp->id = BATTLE_MSG_SWITCH_IN_ENEMY_MSG;
+            mp->tag = TAG_TRCLASS_TRNAME_NICKNAME;
+            mp->param[0] = cp->client_no;
+            mp->param[1] = cp->client_no;
+            mp->param[2] = cp->client_no | (smp->sel_mons_no << 8);
         }
         else
         {
-            mp->msg_id = BATTLE_MSG_SWITCH_IN_TITLELESS;
-            mp->msg_tag = TAG_TRNAME_NICKNAME;
-            mp->msg_para[0] = cp->client_no;
-            mp->msg_para[1] = cp->client_no | (smp->sel_mons_no << 8);
+            mp->id = BATTLE_MSG_SWITCH_IN_TITLELESS;
+            mp->tag = TAG_TRNAME_NICKNAME;
+            mp->param[0] = cp->client_no;
+            mp->param[1] = cp->client_no | (smp->sel_mons_no << 8);
         }
     }
     else
@@ -510,31 +510,31 @@ void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITC
         {
             if (smp->rate < 100)
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_3;
+                mp->id = BATTLE_MSG_SEND_IN_MON_3;
             }
             else if (smp->rate < 325)
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_4;
+                mp->id = BATTLE_MSG_SEND_IN_MON_4;
             }
             else if (smp->rate < 550)
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_2;
+                mp->id = BATTLE_MSG_SEND_IN_MON_2;
             }
             else if (smp->rate < 775)
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_1;
+                mp->id = BATTLE_MSG_SEND_IN_MON_1;
             }
             else
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_0;
+                mp->id = BATTLE_MSG_SEND_IN_MON_0;
             }
         }
         else
         {
-            mp->msg_id = BATTLE_MSG_SEND_IN_MON_0;
+            mp->id = BATTLE_MSG_SEND_IN_MON_0;
         }
-        mp->msg_tag = TAG_NICKNAME;
-        mp->msg_para[0] = cp->client_no | (smp->sel_mons_no << 8);
+        mp->tag = TAG_NICKNAME;
+        mp->param[0] = cp->client_no | (smp->sel_mons_no << 8);
     }
 }
 
@@ -546,7 +546,7 @@ void CT_SwitchInMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct SWITC
  *  @param esomp encounter send out message param
  *  @param mp message param to construct
  */
-void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct ENCOUNT_SEND_OUT_MESSAGE_PARAM *esomp, MESSAGE_PARAM *mp)
+void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct ENCOUNT_SEND_OUT_MESSAGE_PARAM *esomp, BattleMessage *mp)
 {
     u32 fight_type;
     int client1 = 0;
@@ -609,38 +609,38 @@ void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct
         {
             if (fight_type & BATTLE_TYPE_BATTLE_TOWER)
             {
-                mp->msg_id = BATTLE_MSG_DOUBLE_TOWER_BATTLE_SEND_OUT;
-                mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME_TRCLASS_TRNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1;
-                mp->msg_para[2] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[3] = client2;
-                mp->msg_para[4] = client2;
-                mp->msg_para[5] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_DOUBLE_TOWER_BATTLE_SEND_OUT;
+                mp->tag = TAG_TRCLASS_TRNAME_NICKNAME_TRCLASS_TRNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1;
+                mp->param[2] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[3] = client2;
+                mp->param[4] = client2;
+                mp->param[5] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else if (fight_type & BATTLE_TYPE_MULTI)
             {
-                mp->msg_id = BATTLE_MSG_MULTI_BATTLE_SEND_OUT_MESSAGE;
-                mp->msg_tag = TAG_TRNAME_NICKNAME_TRNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[2] = client2;
-                mp->msg_para[3] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_MULTI_BATTLE_SEND_OUT_MESSAGE;
+                mp->tag = TAG_TRNAME_NICKNAME_TRNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[2] = client2;
+                mp->param[3] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else if (fight_type & BATTLE_TYPE_DOUBLE)
             {
-                mp->msg_id = BATTLE_MSG_DOUBLE_BATTLE_SEND_OUT_WIRELESS;
-                mp->msg_tag = TAG_TRNAME_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[2] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_DOUBLE_BATTLE_SEND_OUT_WIRELESS;
+                mp->tag = TAG_TRNAME_NICKNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[2] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else
             {
-                mp->msg_id = BATTLE_MSG_SWITCH_IN_TITLELESS;
-                mp->msg_tag = TAG_TRNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->id = BATTLE_MSG_SWITCH_IN_TITLELESS;
+                mp->tag = TAG_TRNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1 | (esomp->sel_mons_no[client1] << 8);
             }
         }
         else
@@ -648,31 +648,31 @@ void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct
             if ((fight_type & BATTLE_TYPE_TAG)
              || (fight_type & BATTLE_TYPE_MULTI))
             {
-                mp->msg_id = BATTLE_MSG_DOUBLE_TOWER_BATTLE_SEND_OUT;
-                mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME_TRCLASS_TRNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1;
-                mp->msg_para[2] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[3] = client2;
-                mp->msg_para[4] = client2;
-                mp->msg_para[5] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_DOUBLE_TOWER_BATTLE_SEND_OUT;
+                mp->tag = TAG_TRCLASS_TRNAME_NICKNAME_TRCLASS_TRNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1;
+                mp->param[2] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[3] = client2;
+                mp->param[4] = client2;
+                mp->param[5] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else if (fight_type & BATTLE_TYPE_DOUBLE)
             {
-                mp->msg_id = BATTLE_MSG_ENEMY_SEND_OUT_DOUBLES;
-                mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1;
-                mp->msg_para[2] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[3] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_ENEMY_SEND_OUT_DOUBLES;
+                mp->tag = TAG_TRCLASS_TRNAME_NICKNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1;
+                mp->param[2] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[3] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else
             {
-                mp->msg_id = BATTLE_MSG_SWITCH_IN_ENEMY_MSG;
-                mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1;
-                mp->msg_para[2] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->id = BATTLE_MSG_SWITCH_IN_ENEMY_MSG;
+                mp->tag = TAG_TRCLASS_TRNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1;
+                mp->param[2] = client1 | (esomp->sel_mons_no[client1] << 8);
             }
         }
     }
@@ -766,49 +766,49 @@ void CT_EncountSendOutMessageParamMake(void *bw, struct CLIENT_PARAM *cp, struct
         {
             if (fight_type & BATTLE_TYPE_MULTI)
             {
-                mp->msg_id = BATTLE_MSG_MULTI_BATTLE_PLAYER_SEND_OUT_MESSAGE;
-                mp->msg_tag = TAG_TRNAME_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[2] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_MULTI_BATTLE_PLAYER_SEND_OUT_MESSAGE;
+                mp->tag = TAG_TRNAME_NICKNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[2] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else if (fight_type & BATTLE_TYPE_DOUBLE)
             {
-                mp->msg_id = BATTLE_MSG_SEND_OUT_DOUBLES;
-                mp->msg_tag = TAG_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[1] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_SEND_OUT_DOUBLES;
+                mp->tag = TAG_NICKNAME_NICKNAME;
+                mp->param[0] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[1] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_0;
-                mp->msg_tag = TAG_NICKNAME;
-                mp->msg_para[0] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->id = BATTLE_MSG_SEND_IN_MON_0;
+                mp->tag = TAG_NICKNAME;
+                mp->param[0] = client1 | (esomp->sel_mons_no[client1] << 8);
             }
         }
         else
         {
             if (fight_type & BATTLE_TYPE_MULTI)
             {
-                mp->msg_id = BATTLE_MSG_MULTI_BATTLE_PLAYER_SIDE_SEND_OUT;
-                mp->msg_tag = TAG_TRCLASS_TRNAME_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1;
-                mp->msg_para[1] = client1;
-                mp->msg_para[2] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[3] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_MULTI_BATTLE_PLAYER_SIDE_SEND_OUT;
+                mp->tag = TAG_TRCLASS_TRNAME_NICKNAME_NICKNAME;
+                mp->param[0] = client1;
+                mp->param[1] = client1;
+                mp->param[2] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[3] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else if (fight_type & BATTLE_TYPE_DOUBLE)
             {
-                mp->msg_id = BATTLE_MSG_SEND_OUT_DOUBLES;
-                mp->msg_tag = TAG_NICKNAME_NICKNAME;
-                mp->msg_para[0] = client1 | (esomp->sel_mons_no[client1] << 8);
-                mp->msg_para[1] = client2 | (esomp->sel_mons_no[client2] << 8);
+                mp->id = BATTLE_MSG_SEND_OUT_DOUBLES;
+                mp->tag = TAG_NICKNAME_NICKNAME;
+                mp->param[0] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->param[1] = client2 | (esomp->sel_mons_no[client2] << 8);
             }
             else
             {
-                mp->msg_id = BATTLE_MSG_SEND_IN_MON_0;
-                mp->msg_tag = TAG_NICKNAME;
-                mp->msg_para[0] = client1 | (esomp->sel_mons_no[client1] << 8);
+                mp->id = BATTLE_MSG_SEND_IN_MON_0;
+                mp->tag = TAG_NICKNAME;
+                mp->param[0] = client1 | (esomp->sel_mons_no[client1] << 8);
             }
         }
     }
@@ -1005,7 +1005,7 @@ while (currentScenario != NULL && TestBattle_HasMoreExpectations()) {
         // debug_printf("Checking form\n");
         struct Party *party = SaveData_GetPlayerPartyPtr(SaveBlock2_get());
         struct PartyPokemon partyPokemon = party->members[currentScenario->expectations[currentScenario->expectationPassCount].battlerIDOrPartySlot];
-        int expectedForm = currentScenario->expectations[currentScenario->expectationPassCount].expectationValue.formID;
+        u32 expectedForm = currentScenario->expectations[currentScenario->expectationPassCount].expectationValue.formID;
         // debug_printf("expected form %d\n", expectedForm);
         if (GetMonData(&partyPokemon, MON_DATA_FORM, NULL) == expectedForm) {
             // debug_printf("Form matches expectation\n");
@@ -1018,6 +1018,7 @@ while (currentScenario != NULL && TestBattle_HasMoreExpectations()) {
 }
 
 if (TestBattle_HasMoreExpectations()) {
+    debug_printf("expectation[%d] ❌\n", currentScenario->expectationPassCount);
     if (currentScenario->knownFailing) {
         SendValueThroughCommunicationSendHole(TEST_CASE_KNOWN_FAILING);
     } else {
@@ -1064,7 +1065,7 @@ void LONG_CALL ClearBattleMonFlags(struct BattleStruct *sp, int client)
     sp->moveConditionsFlags[client].doubleShockFlag = FALSE;
     sp->oneTurnFlag[client].parental_bond_flag = 0;
     sp->oneTurnFlag[client].parental_bond_is_active = 0;
-    sp->moveConditionsFlags[client].endTurnMoveEffectActivated = 0;
+
     sp->moveConditionsFlags[client].moveFailureThisTurn = 0;
     sp->moveConditionsFlags[client].moveFailureLastTurn = 0;
     sp->moveConditionsFlags[client].powderBlockingFireMove = 0;
@@ -1072,10 +1073,14 @@ void LONG_CALL ClearBattleMonFlags(struct BattleStruct *sp, int client)
     sp->moveConditionsFlags[client].glaiveRush = 0;
     sp->moveConditionsFlags[client].anyStatLoweredThisTurn = 0;
     sp->moveConditionsFlags[client].throatChopTimer = 0;
+    sp->moveConditionsFlags[client].dragonDartsStatus = 0;
 
     sp->log_hail_for_ice_face &= ~(1 << client); // unset log_hail_for_ice_face for client
     sp->binding_turns[client] = 0;
     sp->protectSuccessTurns[client] = 0;
+    sp->paradoxBoostedStat[client] = 0;
+    sp->boosterEnergyActivated[client] = FALSE;
+    sp->lastClientMoveType[client] = TYPE_TYPELESS;
 
     if (gBattleSystem != NULL)
     {
@@ -1170,6 +1175,10 @@ u32 LONG_CALL GetAdjustedMoveTypeBasics(struct BattleStruct *sp, u32 move, u32 a
         {
             typeLocal = TYPE_ELECTRIC;
         }
+        if (ability == ABILITY_DRAGONIZE)
+        {
+            typeLocal = TYPE_DRAGON;
+        }
         else // needs to be for sure initialized
         {
             typeLocal = TYPE_NORMAL;
@@ -1209,6 +1218,12 @@ u32 LONG_CALL GetAdjustedMoveTypeBasics(struct BattleStruct *sp, u32 move, u32 a
  */
 u32 LONG_CALL GetAdjustedMoveType(struct BattleStruct *sp, u32 client, u32 move)
 {
+    // Tera moves ignore type adjustments if the client is Terastallized.
+    if (sp->battlemon[client].is_currently_terastallized
+    && (move == MOVE_TERA_BLAST || move == MOVE_TERA_STARSTORM))
+    {
+        return GetDynamicMoveType(gBattleSystem, sp, client, move);
+    }
     return GetAdjustedMoveTypeBasics(sp, move, GetBattlerAbility(sp, client), GetDynamicMoveType(gBattleSystem, sp, client, move));
 }
 
@@ -1283,4 +1298,10 @@ BOOL LONG_CALL IsMonValidAndHealthy(struct PartyPokemon *mon) {
         GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0) != 0 &&
         GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0) != SPECIES_EGG &&
         GetMonData(mon, MON_DATA_STATUS, 0) == 0);
+}
+
+BOOL LONG_CALL IsBattlerSlotValid(struct BattleSystem *battleSystem, int battlerId)
+{
+    // TODO implement battle type check for relevant types like raids and totem battles here
+    return battleSystem->sp->battlemon[battlerId].species != SPECIES_NONE;
 }
