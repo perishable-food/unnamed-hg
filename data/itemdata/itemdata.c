@@ -3263,7 +3263,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RARE_CANDY] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166348,7 +166348,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CLEFABLITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166413,7 +166413,7 @@ const ITEMDATA __data[] =
 
 [ITEM_VICTREEBELITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166478,7 +166478,7 @@ const ITEMDATA __data[] =
 
 [ITEM_STARMINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166543,7 +166543,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DRAGONINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166608,7 +166608,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MEGANIUMITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166673,7 +166673,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FERALIGITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166738,7 +166738,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SKARMORITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166803,7 +166803,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FROSLASSITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166868,7 +166868,7 @@ const ITEMDATA __data[] =
 
 [ITEM_HEATRANITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166933,7 +166933,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DARKRANITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -166998,7 +166998,7 @@ const ITEMDATA __data[] =
 
 [ITEM_EMBOARITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167063,7 +167063,7 @@ const ITEMDATA __data[] =
 
 [ITEM_EXCADRITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167128,7 +167128,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SCOLIPITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167193,7 +167193,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SCRAFTINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167258,7 +167258,7 @@ const ITEMDATA __data[] =
 
 [ITEM_EELEKTROSSITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167323,7 +167323,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHANDELURITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167388,7 +167388,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHESNAUGHTITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167453,7 +167453,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DELPHOXITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167518,7 +167518,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GRENINJITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167583,7 +167583,7 @@ const ITEMDATA __data[] =
 
 [ITEM_PYROARITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167648,7 +167648,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FLOETTITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167713,7 +167713,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MALAMARITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167778,7 +167778,7 @@ const ITEMDATA __data[] =
 
 [ITEM_BARBARACITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167843,7 +167843,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DRAGALGITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167908,7 +167908,7 @@ const ITEMDATA __data[] =
 
 [ITEM_HAWLUCHANITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -167973,7 +167973,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ZYGARDITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -168038,7 +168038,7 @@ const ITEMDATA __data[] =
 
 [ITEM_DRAMPANITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -168103,7 +168103,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ZERAORITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -168168,7 +168168,7 @@ const ITEMDATA __data[] =
 
 [ITEM_FALINKSITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171288,7 +171288,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RAICHUNITE_X] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171353,7 +171353,7 @@ const ITEMDATA __data[] =
 
 [ITEM_RAICHUNITE_Y] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171418,7 +171418,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CHIMECHITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171483,7 +171483,7 @@ const ITEMDATA __data[] =
 
 [ITEM_ABSOLITE_Z] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171548,7 +171548,7 @@ const ITEMDATA __data[] =
 
 [ITEM_STARAPTITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171613,7 +171613,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GARCHOMPITE_Z] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171678,7 +171678,7 @@ const ITEMDATA __data[] =
 
 [ITEM_LUCARIONITE_Z] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171743,7 +171743,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GOLURKITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171808,7 +171808,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MEOWSTICITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171873,7 +171873,7 @@ const ITEMDATA __data[] =
 
 [ITEM_CRABOMINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -171938,7 +171938,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GOLISOPITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -172003,7 +172003,7 @@ const ITEMDATA __data[] =
 
 [ITEM_MAGEARNITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -172068,7 +172068,7 @@ const ITEMDATA __data[] =
 
 [ITEM_SCOVILLAINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -172133,7 +172133,7 @@ const ITEMDATA __data[] =
 
 [ITEM_GLIMMORANITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -172198,7 +172198,7 @@ const ITEMDATA __data[] =
 
 [ITEM_TATSUGIRINITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -172263,7 +172263,7 @@ const ITEMDATA __data[] =
 
 [ITEM_BAXCALIBRITE] =
 {
-    .price = 0,
+    ITEM_PRICE(0),
     .holdEffect = 0,
     .holdEffectParam = 0,
     .pluckEffect = 0,
@@ -174535,5 +174535,331 @@ const ITEMDATA __data[] =
         .friendship_mod_hi_param = 0,
     },
 },
+
+[ITEM_DECIDUITE] =
+{
+    ITEM_PRICE(0),
+    .holdEffect = 0,
+    .holdEffectParam = 0,
+    .pluckEffect = 0,
+    .flingEffect = 0,
+    .flingPower = 0,
+    .naturalGiftPower = 0,
+    .naturalGiftType = 31,
+    .prevent_toss = FALSE,
+    .selectable = FALSE,
+    .fieldPocket = POCKET_ITEMS,
+    .battlePocket = BATTLE_POCKET_NONE,
+    .fieldUseFunc = 0,
+    .battleUseFunc = 0,
+    .partyUse = 1,
+    .partyUseParam = {
+        .slp_heal = FALSE,
+        .psn_heal = FALSE,
+        .brn_heal = FALSE,
+        .frz_heal = FALSE,
+        .prz_heal = FALSE,
+        .cfs_heal = FALSE,
+        .inf_heal = FALSE,
+        .guard_spec = FALSE,
+        .revive = FALSE,
+        .revive_all = FALSE,
+        .level_up = FALSE,
+        .evolve = FALSE,
+        .atk_stages = 0,
+        .def_stages = 0,
+        .spatk_stages = 0,
+        .spdef_stages = 0,
+        .speed_stages = 0,
+        .accuracy_stages = 0,
+        .critrate_stages = 0,
+        .pp_up = FALSE,
+        .pp_max = FALSE,
+        .pp_restore = FALSE,
+        .pp_restore_all = FALSE,
+        .hp_restore = FALSE,
+        .hp_ev_up = FALSE,
+        .atk_ev_up = FALSE,
+        .def_ev_up = FALSE,
+        .speed_ev_up = FALSE,
+        .spatk_ev_up = FALSE,
+        .spdef_ev_up = FALSE,
+        .friendship_mod_lo = FALSE,
+        .friendship_mod_med = FALSE,
+        .friendship_mod_hi = FALSE,
+        .hp_ev_up_param = 0,
+        .atk_ev_up_param = 0,
+        .def_ev_up_param = 0,
+        .speed_ev_up_param = 0,
+        .spatk_ev_up_param = 0,
+        .spdef_ev_up_param = 0,
+        .hp_restore_param = 0,
+        .pp_restore_param = 0,
+        .friendship_mod_lo_param = 0,
+        .friendship_mod_med_param = 0,
+        .friendship_mod_hi_param = 0,
+    },
+},
+
+[ITEM_INCINERITE] =
+{
+    ITEM_PRICE(0),
+    .holdEffect = 0,
+    .holdEffectParam = 0,
+    .pluckEffect = 0,
+    .flingEffect = 0,
+    .flingPower = 0,
+    .naturalGiftPower = 0,
+    .naturalGiftType = 31,
+    .prevent_toss = FALSE,
+    .selectable = FALSE,
+    .fieldPocket = POCKET_ITEMS,
+    .battlePocket = BATTLE_POCKET_NONE,
+    .fieldUseFunc = 0,
+    .battleUseFunc = 0,
+    .partyUse = 1,
+    .partyUseParam = {
+        .slp_heal = FALSE,
+        .psn_heal = FALSE,
+        .brn_heal = FALSE,
+        .frz_heal = FALSE,
+        .prz_heal = FALSE,
+        .cfs_heal = FALSE,
+        .inf_heal = FALSE,
+        .guard_spec = FALSE,
+        .revive = FALSE,
+        .revive_all = FALSE,
+        .level_up = FALSE,
+        .evolve = FALSE,
+        .atk_stages = 0,
+        .def_stages = 0,
+        .spatk_stages = 0,
+        .spdef_stages = 0,
+        .speed_stages = 0,
+        .accuracy_stages = 0,
+        .critrate_stages = 0,
+        .pp_up = FALSE,
+        .pp_max = FALSE,
+        .pp_restore = FALSE,
+        .pp_restore_all = FALSE,
+        .hp_restore = FALSE,
+        .hp_ev_up = FALSE,
+        .atk_ev_up = FALSE,
+        .def_ev_up = FALSE,
+        .speed_ev_up = FALSE,
+        .spatk_ev_up = FALSE,
+        .spdef_ev_up = FALSE,
+        .friendship_mod_lo = FALSE,
+        .friendship_mod_med = FALSE,
+        .friendship_mod_hi = FALSE,
+        .hp_ev_up_param = 0,
+        .atk_ev_up_param = 0,
+        .def_ev_up_param = 0,
+        .speed_ev_up_param = 0,
+        .spatk_ev_up_param = 0,
+        .spdef_ev_up_param = 0,
+        .hp_restore_param = 0,
+        .pp_restore_param = 0,
+        .friendship_mod_lo_param = 0,
+        .friendship_mod_med_param = 0,
+        .friendship_mod_hi_param = 0,
+    },
+},
+
+[ITEM_PRIMARINITE] =
+{
+    ITEM_PRICE(0),
+    .holdEffect = 0,
+    .holdEffectParam = 0,
+    .pluckEffect = 0,
+    .flingEffect = 0,
+    .flingPower = 0,
+    .naturalGiftPower = 0,
+    .naturalGiftType = 31,
+    .prevent_toss = FALSE,
+    .selectable = FALSE,
+    .fieldPocket = POCKET_ITEMS,
+    .battlePocket = BATTLE_POCKET_NONE,
+    .fieldUseFunc = 0,
+    .battleUseFunc = 0,
+    .partyUse = 1,
+    .partyUseParam = {
+        .slp_heal = FALSE,
+        .psn_heal = FALSE,
+        .brn_heal = FALSE,
+        .frz_heal = FALSE,
+        .prz_heal = FALSE,
+        .cfs_heal = FALSE,
+        .inf_heal = FALSE,
+        .guard_spec = FALSE,
+        .revive = FALSE,
+        .revive_all = FALSE,
+        .level_up = FALSE,
+        .evolve = FALSE,
+        .atk_stages = 0,
+        .def_stages = 0,
+        .spatk_stages = 0,
+        .spdef_stages = 0,
+        .speed_stages = 0,
+        .accuracy_stages = 0,
+        .critrate_stages = 0,
+        .pp_up = FALSE,
+        .pp_max = FALSE,
+        .pp_restore = FALSE,
+        .pp_restore_all = FALSE,
+        .hp_restore = FALSE,
+        .hp_ev_up = FALSE,
+        .atk_ev_up = FALSE,
+        .def_ev_up = FALSE,
+        .speed_ev_up = FALSE,
+        .spatk_ev_up = FALSE,
+        .spdef_ev_up = FALSE,
+        .friendship_mod_lo = FALSE,
+        .friendship_mod_med = FALSE,
+        .friendship_mod_hi = FALSE,
+        .hp_ev_up_param = 0,
+        .atk_ev_up_param = 0,
+        .def_ev_up_param = 0,
+        .speed_ev_up_param = 0,
+        .spatk_ev_up_param = 0,
+        .spdef_ev_up_param = 0,
+        .hp_restore_param = 0,
+        .pp_restore_param = 0,
+        .friendship_mod_lo_param = 0,
+        .friendship_mod_med_param = 0,
+        .friendship_mod_hi_param = 0,
+    },
+},
+
+[ITEM_DEDENNITE] =
+{
+    ITEM_PRICE(0),
+    .holdEffect = 0,
+    .holdEffectParam = 0,
+    .pluckEffect = 0,
+    .flingEffect = 0,
+    .flingPower = 0,
+    .naturalGiftPower = 0,
+    .naturalGiftType = 31,
+    .prevent_toss = FALSE,
+    .selectable = FALSE,
+    .fieldPocket = POCKET_ITEMS,
+    .battlePocket = BATTLE_POCKET_NONE,
+    .fieldUseFunc = 0,
+    .battleUseFunc = 0,
+    .partyUse = 1,
+    .partyUseParam = {
+        .slp_heal = FALSE,
+        .psn_heal = FALSE,
+        .brn_heal = FALSE,
+        .frz_heal = FALSE,
+        .prz_heal = FALSE,
+        .cfs_heal = FALSE,
+        .inf_heal = FALSE,
+        .guard_spec = FALSE,
+        .revive = FALSE,
+        .revive_all = FALSE,
+        .level_up = FALSE,
+        .evolve = FALSE,
+        .atk_stages = 0,
+        .def_stages = 0,
+        .spatk_stages = 0,
+        .spdef_stages = 0,
+        .speed_stages = 0,
+        .accuracy_stages = 0,
+        .critrate_stages = 0,
+        .pp_up = FALSE,
+        .pp_max = FALSE,
+        .pp_restore = FALSE,
+        .pp_restore_all = FALSE,
+        .hp_restore = FALSE,
+        .hp_ev_up = FALSE,
+        .atk_ev_up = FALSE,
+        .def_ev_up = FALSE,
+        .speed_ev_up = FALSE,
+        .spatk_ev_up = FALSE,
+        .spdef_ev_up = FALSE,
+        .friendship_mod_lo = FALSE,
+        .friendship_mod_med = FALSE,
+        .friendship_mod_hi = FALSE,
+        .hp_ev_up_param = 0,
+        .atk_ev_up_param = 0,
+        .def_ev_up_param = 0,
+        .speed_ev_up_param = 0,
+        .spatk_ev_up_param = 0,
+        .spdef_ev_up_param = 0,
+        .hp_restore_param = 0,
+        .pp_restore_param = 0,
+        .friendship_mod_lo_param = 0,
+        .friendship_mod_med_param = 0,
+        .friendship_mod_hi_param = 0,
+    },
+},
+
+[ITEM_EEVERSTONE] =
+{
+    ITEM_PRICE(0),
+    .holdEffect = 0,
+    .holdEffectParam = 0,
+    .pluckEffect = 0,
+    .flingEffect = 0,
+    .flingPower = 30,
+    .naturalGiftPower = 0,
+    .naturalGiftType = 31,
+    .prevent_toss = TRUE,
+    .selectable = FALSE,
+    .fieldPocket = POCKET_KEY_ITEMS,
+    .battlePocket = BATTLE_POCKET_NONE,
+    .fieldUseFunc = 1,
+    .battleUseFunc = 0,
+    .partyUse = 1,
+    .partyUseParam = {
+        .slp_heal = FALSE,
+        .psn_heal = FALSE,
+        .brn_heal = FALSE,
+        .frz_heal = FALSE,
+        .prz_heal = FALSE,
+        .cfs_heal = FALSE,
+        .inf_heal = FALSE,
+        .guard_spec = FALSE,
+        .revive = FALSE,
+        .revive_all = FALSE,
+        .level_up = FALSE,
+        .evolve = TRUE,
+        .atk_stages = 0,
+        .def_stages = 0,
+        .spatk_stages = 0,
+        .spdef_stages = 0,
+        .speed_stages = 0,
+        .accuracy_stages = 0,
+        .critrate_stages = 0,
+        .pp_up = FALSE,
+        .pp_max = FALSE,
+        .pp_restore = FALSE,
+        .pp_restore_all = FALSE,
+        .hp_restore = FALSE,
+        .hp_ev_up = FALSE,
+        .atk_ev_up = FALSE,
+        .def_ev_up = FALSE,
+        .speed_ev_up = FALSE,
+        .spatk_ev_up = FALSE,
+        .spdef_ev_up = FALSE,
+        .friendship_mod_lo = TRUE,
+        .friendship_mod_med = TRUE,
+        .friendship_mod_hi = TRUE,
+        .hp_ev_up_param = 0,
+        .atk_ev_up_param = 0,
+        .def_ev_up_param = 0,
+        .speed_ev_up_param = 0,
+        .spatk_ev_up_param = 0,
+        .spdef_ev_up_param = 0,
+        .hp_restore_param = 0,
+        .pp_restore_param = 0,
+        .friendship_mod_lo_param = 5,
+        .friendship_mod_med_param = 3,
+        .friendship_mod_hi_param = 2,
+    },
+},
+
 
 };
