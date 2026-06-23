@@ -366,8 +366,8 @@ u32 LONG_CALL PokeIconPalNumGet(u32 mons, u32 form, u32 isegg)
  */
 u32 LONG_CALL GetMonIconPalette(u32 mons, u32 form, u32 isegg)
 {
-    u32 ret = PokeIconPalNumGet(mons, form, isegg);
-    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_ICON_PALETTES, ret, sizeof(u8));
+    u32 ret = 0;
+    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_ICON_PALETTES, PokeIconPalNumGet(mons, form, isegg), sizeof(u8));
     return ret;
 }
 
@@ -1533,7 +1533,7 @@ u16 LONG_CALL GetMonEvolution(struct Party *party, struct PartyPokemon *pokemon,
     u32 ovyId, target, offset;
     u16 (*internalFunc)(struct Party *, struct PartyPokemon *, u8, u16, int *);
 
-    if (IsOverlayLoaded(OVERLAY_BATTLE_EXTENSION)) // during battles it needs to be loaded to a separate location.  we have 2 overlays for this
+    if (IsOverlayLoaded(OVERLAY_BATTLE_EXTENSION) || IsOverlayLoaded(OVERLAY_PARTY_HANDLEUSEITEMONMON)) // during battles it needs to be loaded to a separate location.  we have 2 overlays for this
     {
         ovyId = OVERLAY_GETMONEVOLUTION_BATTLE;
         offset = 0x021FBE60 | 1;
@@ -1634,9 +1634,10 @@ u16 LONG_CALL get_mon_ow_tag(u16 species, u32 form, u32 isFemale)
  *  @param species species index
  *  @return FALSE if no form or female handling for overworlds; the base index otherwise.  e.g. SPECIES_PICHU would return
  */
-u32 LONG_CALL OverworldModelLookupHasFemaleForm(u32 species) {
+u32 LONG_CALL OverworldModelLookupHasFemaleForm(u32 species)
+{
     u32 ret = 0;
-    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_OVERWORLD_FORM_FEMALE, sizeof(u16)*(species), sizeof(u16));
+    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_OVERWORLD_FORM_FEMALE, sizeof(u16) * (species), sizeof(u16));
     return ret;
 }
 
