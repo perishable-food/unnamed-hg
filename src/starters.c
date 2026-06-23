@@ -17,9 +17,9 @@ void LONG_CALL GetMonSpriteCharAndPlttNarcIdsEx(MON_PIC *picdata, u16 mons_no, u
 // sequence. To update that text, modify text archive 190 in
 // DSPRE.
 static const u16 sStarterChoices[3] = {
-    SPECIES_CHIKORITA,
-    SPECIES_CYNDAQUIL,
-    SPECIES_TOTODILE,
+    SPECIES_SPRIGATITO,
+    SPECIES_FENNEKIN,
+    SPECIES_POPPLIO,
 };
 
 /**
