@@ -1423,6 +1423,12 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_MAGEARNA_ORIGINAL      ] = 300,
     [SPECIES_MEGA_ZERAORA                ] = 300,
     [SPECIES_MEGA_FALINKS                ] = 165,
+    [SPECIES_MEGA_SCOVILLAIN             ] = 170,
+    [SPECIES_MEGA_GLIMMORA               ] = 184,
+    [SPECIES_MEGA_TATSUGIRI              ] = 166,
+    [SPECIES_MEGA_TATSUGIRI_DROOPY       ] = 166,
+    [SPECIES_MEGA_TATSUGIRI_STRETCHY     ] = 166,
+    [SPECIES_MEGA_BAXCALIBUR             ] = 300,
     // ugh guys
     [SPECIES_MEGA_DECIDUEYE              ] = 175, // idgaf about no exp values. give me Placeholders
     [SPECIES_MEGA_INCINEROAR             ] = 354,
@@ -1430,11 +1436,4 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_DEDENNE                ] = 165,
     [SPECIES_MEGA_LEDIAN                 ] = 170,
     [SPECIES_MEGA_MARSHADOW              ] = 165,
-    
-    [SPECIES_MEGA_SCOVILLAIN             ] = 170,
-    [SPECIES_MEGA_GLIMMORA               ] = 184,
-    [SPECIES_MEGA_TATSUGIRI              ] = 166,
-    [SPECIES_MEGA_TATSUGIRI_DROOPY       ] = 166,
-    [SPECIES_MEGA_TATSUGIRI_STRETCHY     ] = 166,
-    [SPECIES_MEGA_BAXCALIBUR             ] = 300,
 };
