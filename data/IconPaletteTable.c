@@ -1080,6 +1080,10 @@ u8 gIconPalTable[] = {
     [SPECIES_IRON_CROWN]       = 0,
     [SPECIES_TERAPAGOS]        = 0,
     [SPECIES_PECHARUNT]        = 0,
+    [SPECIES_SPECTREON]        = 0,
+    [SPECIES_BUFFUGU]          = 0,
+    [SPECIES_PUFFUGU]          = 0,
+    [SPECIES_TUFFUGU]          = 0,
 
     [SPECIES_MEGA_VENUSAUR]                      = 1,
     [SPECIES_MEGA_CHARIZARD_X]                   = 0,
@@ -1481,4 +1485,10 @@ u8 gIconPalTable[] = {
     [SPECIES_MEGA_TATSUGIRI_DROOPY]              = 0,
     [SPECIES_MEGA_TATSUGIRI_STRETCHY]            = 0,
     [SPECIES_MEGA_BAXCALIBUR]                    = 0,
+    [SPECIES_MEGA_DECIDUEYE]        = 0,
+    [SPECIES_MEGA_INCINEROAR]        = 0,
+    [SPECIES_MEGA_PRIMARINA]        = 0,
+    [SPECIES_MEGA_DEDENNE]          = 0,
+    [SPECIES_MEGA_LEDIAN]          = 0,
+    [SPECIES_MEGA_MARSHADOW]          = 0,
 };
