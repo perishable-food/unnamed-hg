@@ -54,7 +54,7 @@ BOOL LONG_CALL GetOtherFormPic(MON_PIC *picdata, u16 mons_no, u8 dir, u8 col, u8
 
     if (form_no != 0) {
         u16 newSpecies;
-        ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
+        ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
         newSpecies &= ~(NEEDS_REVERSION);
         if (newSpecies != 0) {
             picdata->arc_no = ARC_MON_PIC;
@@ -123,7 +123,7 @@ int LONG_CALL PokeOtherFormMonsNoGet(int mons_no, int form_no)
     default:;
         if (form_no != 0) {
             u16 newSpecies;
-            ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
+            ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
             newSpecies &= ~(NEEDS_REVERSION);
             if (newSpecies != 0) {
                 mons_no = newSpecies;
@@ -146,7 +146,7 @@ u16 LONG_CALL GetSpeciesBasedOnForm(int mons_no, int form_no)
 {
     if (form_no != 0) {
         u16 newSpecies;
-        ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
+        ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons_no + form_no - 1), sizeof(u16));
         newSpecies &= ~(NEEDS_REVERSION);
         if (newSpecies != 0) {
             mons_no = newSpecies;
@@ -163,8 +163,9 @@ u16 LONG_CALL GetSpeciesBasedOnForm(int mons_no, int form_no)
  */
 u16 LONG_CALL GetBaseSpeciesFromAdjustedForm(u32 mons_no)
 {
-    if (mons_no > MAX_MON_NUM) {
-        ArchiveDataLoadOfs(&mons_no, ARC_CODE_ADDONS, CODE_ADDON_FORM_SPECIES_MAPPING, sizeof(u16) * (mons_no - SPECIES_MEGA_START), sizeof(u16));
+    if (mons_no > MAX_MON_NUM)
+    {
+        ReadFromNarcMemberByIdPair(&mons_no, ARC_CODE_ADDONS, CODE_ADDON_FORM_SPECIES_MAPPING, sizeof(u16) * (mons_no - SPECIES_MEGA_START), sizeof(u16));
     }
     return mons_no;
 }
@@ -181,8 +182,9 @@ u16 LONG_CALL GetFormFromAdjustedForm(u32 mons_no)
     if (mons_no > MAX_MON_NUM) {
         u16 oldSpecies = GetBaseSpeciesFromAdjustedForm(mons_no);
         u16 formTable[32]; // right on stack so do not have to free this
-        ArchiveDataLoadOfs(formTable, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (oldSpecies * 32), sizeof(u16) * 32);
-        for (ret = 0; ret < 32; ret++) {
+        ReadFromNarcMemberByIdPair(formTable, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (oldSpecies * 32), sizeof(u16) * 32);
+        for (ret = 0; ret < 32; ret++)
+        {
             if ((formTable[ret] & ~NEEDS_REVERSION) == mons_no || !formTable[ret]) {
                 break;
             }
@@ -252,7 +254,7 @@ u32 LONG_CALL PokeIconIndexGetByMonsNumber(u32 mons, u32 egg, u32 form_no)
         // pat is now treated as the return value.  is initially set as the mons+7, but is adjusted as necessary below
         if (form_no != 0) {
             u16 newSpecies;
-            ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons + form_no - 1), sizeof(u16));
+            ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons + form_no - 1), sizeof(u16));
             newSpecies &= ~(NEEDS_REVERSION);
             if (newSpecies != 0) {
                 mons = newSpecies;
@@ -291,7 +293,7 @@ u16 LONG_CALL PokeIconCgxPatternGet(struct BoxPokemon *ppp)
     default:;
         // here we check if the mon at all has any forms--if so we assume its form id is valid and return it
         u16 newSpecies;
-        ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * monsno + 1 - 1), sizeof(u16));
+        ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * monsno + 1 - 1), sizeof(u16));
         newSpecies &= ~(NEEDS_REVERSION);
         if (newSpecies != 0) {
             ret = GetBoxMonData(ppp, MON_DATA_FORM, NULL);
@@ -345,7 +347,7 @@ u32 LONG_CALL PokeIconPalNumGet(u32 mons, u32 form, u32 isegg)
         } else {
             if (form != 0) {
                 u16 newSpecies;
-                ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons + form - 1), sizeof(u16));
+                ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * mons + form - 1), sizeof(u16));
                 newSpecies &= ~(NEEDS_REVERSION);
                 if (newSpecies != 0) {
                     mons = newSpecies;
@@ -367,7 +369,7 @@ u32 LONG_CALL PokeIconPalNumGet(u32 mons, u32 form, u32 isegg)
 u32 LONG_CALL GetMonIconPalette(u32 mons, u32 form, u32 isegg)
 {
     u32 ret = 0;
-    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_ICON_PALETTES, PokeIconPalNumGet(mons, form, isegg), sizeof(u8));
+    ReadFromNarcMemberByIdPair(&ret, ARC_CODE_ADDONS, CODE_ADDON_ICON_PALETTES, PokeIconPalNumGet(mons, form, isegg), sizeof(u8));
     return ret;
 }
 
@@ -395,7 +397,7 @@ u16 GetMonHiddenAbilityAlreadySanitized(u16 species)
 {
 #ifdef HIDDEN_ABILITIES
     u16 ability = 0;
-    ArchiveDataLoadOfs(&ability, ARC_CODE_ADDONS, CODE_ADDON_HIDDEN_ABILITY_LIST, sizeof(u16) * species, sizeof(u16));
+    ReadFromNarcMemberByIdPair(&ability, ARC_CODE_ADDONS, CODE_ADDON_HIDDEN_ABILITY_LIST, sizeof(u16) * species, sizeof(u16));
     return ability;
 #else
     return 0;
@@ -654,7 +656,7 @@ u32 LONG_CALL GetSpeciesBaseExp(u32 species, u32 form)
 {
     u16 baseExp;
     species = PokeOtherFormMonsNoGet(species, form); // for whatever reason alternate formes can have different base experiences
-    ArchiveDataLoadOfs(&baseExp, ARC_CODE_ADDONS, CODE_ADDON_BASE_EXPERIENCE_LIST, sizeof(u16) * species, sizeof(u16));
+    ReadFromNarcMemberByIdPair(&baseExp, ARC_CODE_ADDONS, CODE_ADDON_BASE_EXPERIENCE_LIST, sizeof(u16) * species, sizeof(u16));
     return baseExp;
 }
 
@@ -1353,7 +1355,7 @@ BOOL LONG_CALL Party_TryResetShaymin(struct Party *party, int min_max, const str
 u8 LONG_CALL LoadEggMoves(struct PartyPokemon *pokemon, u16 *dest)
 {
     u16 species = PokeOtherFormMonsNoGet(GetMonData(pokemon, MON_DATA_SPECIES, NULL), GetMonData(pokemon, MON_DATA_FORM, NULL));
-    ArchiveDataLoadOfs(dest, ARC_EGG_MOVES, 0, species * MAX_EGG_MOVES * sizeof(u16), MAX_EGG_MOVES * sizeof(u16));
+    ReadFromNarcMemberByIdPair(dest, ARC_EGG_MOVES, 0, species * MAX_EGG_MOVES * sizeof(u16), MAX_EGG_MOVES * sizeof(u16));
 
     u8 count = 0;
     while (count < MAX_EGG_MOVES && dest[count] != 0xFFFF) {
@@ -1605,7 +1607,7 @@ u32 LONG_CALL GetBoxMonSex(struct BoxPokemon *bp)
  */
 u16 LONG_CALL get_mon_ow_tag(u16 species, u32 form, u32 isFemale)
 {
-    u32 ret = 1050, formFemaleIndex = 0;
+    u32 ret = MON_OVERWORLD_TAG_START, formFemaleIndex = 0;
 
     formFemaleIndex = OverworldModelLookupHasFemaleForm(species);
 
@@ -1637,7 +1639,7 @@ u16 LONG_CALL get_mon_ow_tag(u16 species, u32 form, u32 isFemale)
 u32 LONG_CALL OverworldModelLookupHasFemaleForm(u32 species)
 {
     u32 ret = 0;
-    ArchiveDataLoadOfs(&ret, ARC_CODE_ADDONS, CODE_ADDON_OVERWORLD_FORM_FEMALE, sizeof(u16) * (species), sizeof(u16));
+    ReadFromNarcMemberByIdPair(&ret, ARC_CODE_ADDONS, CODE_ADDON_OVERWORLD_FORM_FEMALE, sizeof(u16) * (species), sizeof(u16));
     return ret;
 }
 
@@ -1831,7 +1833,7 @@ bool8 LONG_CALL RevertFormChange(struct PartyPokemon *pp, u16 species, u8 form_n
 
     if (form_no != 0) {
         u16 newSpecies;
-        ArchiveDataLoadOfs(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * species + form_no - 1), sizeof(u16));
+        ReadFromNarcMemberByIdPair(&newSpecies, ARC_CODE_ADDONS, CODE_ADDON_FORM_DATA, sizeof(u16) * (32 * species + form_no - 1), sizeof(u16));
         ret = ((newSpecies & NEEDS_REVERSION) != 0); // initial return
         newSpecies &= ~(NEEDS_REVERSION);
         // invalid form entry specified or form does not require reversion--return
@@ -1839,7 +1841,7 @@ bool8 LONG_CALL RevertFormChange(struct PartyPokemon *pp, u16 species, u8 form_n
             return FALSE;
         }
         // Form
-        ArchiveDataLoadOfs(&work, ARC_CODE_ADDONS, CODE_ADDON_FORM_REVERSION_MAPPING, sizeof(u16) * (newSpecies - SPECIES_MEGA_START), sizeof(u16));
+        ReadFromNarcMemberByIdPair(&work, ARC_CODE_ADDONS, CODE_ADDON_FORM_REVERSION_MAPPING, sizeof(u16) * (newSpecies - SPECIES_MEGA_START), sizeof(u16));
 
         SetMonData(pp, MON_DATA_FORM, &work);
         correct_zacian_zamazenta_kyurem_moves_for_form(pp, work, 0);
@@ -2629,7 +2631,7 @@ BOOL GetMonMachineMoveCompat(struct PartyPokemon *pp, u16 machineMoveIndex)
     }
 
     u32 buf[MACHINE_LEARNSETS_BITFIELD_COUNT];
-    ArchiveDataLoadOfs(buf, ARC_CODE_ADDONS, CODE_ADDON_MACHINE_LEARNSETS, PokeOtherFormMonsNoGet(species, form) * MACHINE_LEARNSETS_BITFIELD_COUNT * sizeof(u32), MACHINE_LEARNSETS_BITFIELD_COUNT * sizeof(u32));
+    ReadFromNarcMemberByIdPair(buf, ARC_CODE_ADDONS, CODE_ADDON_MACHINE_LEARNSETS, PokeOtherFormMonsNoGet(species, form) * MACHINE_LEARNSETS_BITFIELD_COUNT * sizeof(u32), MACHINE_LEARNSETS_BITFIELD_COUNT * sizeof(u32));
 
     return (buf[machineMoveIndex / 32] >> (machineMoveIndex % 32)) & 1;
 }
@@ -2637,9 +2639,8 @@ BOOL GetMonMachineMoveCompat(struct PartyPokemon *pp, u16 machineMoveIndex)
 /**
  * @brief loads level up data for a mon. reads from data/generated/LevelupLearnsets.c
  */
-void LONG_CALL LoadLevelUpLearnset_HandleAlternateForm(int species, int form, u32 *levelUpLearnset)
-{
-    ArchiveDataLoadOfs(levelUpLearnset, ARC_LEVELUP_LEARNSETS, 0, PokeOtherFormMonsNoGet(species, form) * MAX_LEVELUP_MOVES * sizeof(u32), MAX_LEVELUP_MOVES * sizeof(u32));
+void LONG_CALL LoadLevelUpLearnset_HandleAlternateForm(int species, int form, u32 *levelUpLearnset) {
+    ReadFromNarcMemberByIdPair(levelUpLearnset, ARC_LEVELUP_LEARNSETS, 0, PokeOtherFormMonsNoGet(species, form) * MAX_LEVELUP_MOVES * sizeof(u32), MAX_LEVELUP_MOVES * sizeof(u32));
 
 #ifdef BLOCK_LEARNING_UNIMPLEMENTED_MOVES
     // shift moves to skip the unimplemented ones

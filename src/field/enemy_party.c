@@ -63,7 +63,7 @@ extern u32 gLastPokemonLevelForMoneyCalc;
  *  @param level target level
  *  @return evolved species if evolution occurs, original species otherwise
  */
-u16 GetLevelBasedEvolution(u16 species, u8 level)
+/*u16 GetLevelBasedEvolution(u16 species, u8 level)
 {
     struct Evolution *evoTable = sys_AllocMemory(3, MAX_EVOS_PER_POKE * sizeof(struct Evolution));
     ArchiveDataLoad(evoTable, ARC_EVOLUTIONS, species);
@@ -112,7 +112,7 @@ u16 GetLevelBasedEvolution(u16 species, u8 level)
     
     sys_FreeMemoryEz(evoTable);
     return evolvedSpecies;
-}
+}*/
 
 /**
  *  @brief get which dynamic scaling formula to apply from the script variable defined by SCALING_TYPE_VARIABLE
