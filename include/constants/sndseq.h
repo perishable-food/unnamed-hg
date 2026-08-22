@@ -1375,7 +1375,7 @@
 #define SEQ_SE_END                           2378
 #define SEQ_VS_CHROMIUM                      2379
 
-//Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
+// Sounds marked BANK, WAVE, PLAYER, GROUP not ported over from pokeheartgold/include/constants/sndseq.h
 
 enum {
     ANIM_MUSIC_COMBO_FALKNER,
@@ -1426,4 +1426,4 @@ enum {
     ANIM_MUSIC_COMBO_CHROMIUM,
 };
 
-#endif //POKEHEARTGOLD_CONSTANTS_SNDSEQ_H
+#endif // POKEHEARTGOLD_CONSTANTS_SNDSEQ_H
