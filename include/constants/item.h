@@ -2699,8 +2699,14 @@
 #define ITEM_PRIMARINITE (MAX_BASE_ITEM_NUM + 3)
 #define ITEM_DEDENNITE (MAX_BASE_ITEM_NUM + 4)
 #define ITEM_EEVERSTONE (MAX_BASE_ITEM_NUM + 5)
+#define ITEM_LEDIANITE (MAX_BASE_ITEM_NUM + 6)
+#define ITEM_MARSHADITE (MAX_BASE_ITEM_NUM + 7)
+#define ITEM_JIRACHITE (MAX_BASE_ITEM_NUM + 8)
+#define ITEM_MEOWSCARADITE (MAX_BASE_ITEM_NUM + 9)
+#define ITEM_SKELEDIRGITE (MAX_BASE_ITEM_NUM + 10)
+#define ITEM_QUAQUAVITE (MAX_BASE_ITEM_NUM + 11)
 
-#define MAX_TOTAL_ITEM_NUM ITEM_EEVERSTONE
+#define MAX_TOTAL_ITEM_NUM ITEM_QUAQUAVITE
 
 #define NUM_MEGA_STONES (48) // includes the pixie plate, doesn't include plza megas due to overflowing bag
 #define NUM_HMS         (ITEM_HM08 - ITEM_HM01 + 1) // intentionally do not include HM07_ORAS (Dive)

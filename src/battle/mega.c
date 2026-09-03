@@ -502,12 +502,47 @@ const struct MegaStruct sMegaTable[] = {
         .itemindex = ITEM_DEDENNITE,
         .form = 1,
     },
+    {
+        .monindex = SPECIES_LEDIAN,
+        .itemindex = ITEM_LEDIANITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_MARSHADOW,
+        .itemindex = ITEM_MARSHADITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_JIRACHI,
+        .itemindex = ITEM_JIRACHITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_MEOWSCARADA,
+        .itemindex = ITEM_MEOWSCARADITE,
+        .form = 1,
+    },
+        {
+        .monindex = SPECIES_SKELEDIRGE,
+        .itemindex = ITEM_SKELEDIRGITE,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_QUAQUAVAL,
+        .itemindex = ITEM_QUAQUAVITE,
+        .form = 1,
+    },
 };
 
 const struct MegaStructMove sMegaMoveTable[] = {
     {
         .monindex = SPECIES_RAYQUAZA,
         .moveindex = MOVE_DRAGON_ASCENT,
+        .form = 1,
+    },
+    {
+        .monindex = SPECIES_DIANCIE,
+        .moveindex = MOVE_DIAMOND_STORM,
         .form = 1,
     },
 };

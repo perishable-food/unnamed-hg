@@ -22304,4 +22304,64 @@ const EvolutionTable __data[MAX_SPECIES_INCLUDING_FORMS + 1] =
         .terminator = 0,
     },
 
+    [SPECIES_MEGA_JIRACHI] = {
+        .entries = {
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+        },
+        .terminator = 0,
+    },
+
+    [SPECIES_MEGA_MEOWSCARADA] = {
+        .entries = {
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+        },
+        .terminator = 0,
+    },
+
+    [SPECIES_MEGA_SKELEDIRGE] = {
+        .entries = {
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+        },
+        .terminator = 0,
+    },
+
+    [SPECIES_MEGA_QUAQUAVAL] = {
+        .entries = {
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+            { EVO_NONE, 0, SPECIES_NONE },
+        },
+        .terminator = 0,
+    },
+
 };

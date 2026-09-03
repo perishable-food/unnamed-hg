@@ -1436,4 +1436,8 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_DEDENNE                ] = 165,
     [SPECIES_MEGA_LEDIAN                 ] = 170,
     [SPECIES_MEGA_MARSHADOW              ] = 165,
+    [SPECIES_MEGA_JIRACHI                ] = 170,
+    [SPECIES_MEGA_MEOWSCARADA            ] = 165,
+    [SPECIES_MEGA_SKELEDIRGE             ] = 170,
+    [SPECIES_MEGA_QUAQUAVAL              ] = 165,
 };

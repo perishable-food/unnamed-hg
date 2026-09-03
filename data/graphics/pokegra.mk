@@ -134,10 +134,10 @@ build/pokemonpic/0003-05.NCLR: data/graphics/sprites/venusaur/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0003-00.NCGR build/pokemonpic/0003-01.NCGR build/pokemonpic/0003-02.NCGR build/pokemonpic/0003-03.NCGR build/pokemonpic/0003-04.NCLR build/pokemonpic/0003-05.NCLR
 build/pokemonow/3_0003.btx0: data/graphics/sprites/venusaur/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1486.btx0: data/graphics/sprites/venusaur/overworld_female.png
+build/pokemonow/3_1490.btx0: data/graphics/sprites/venusaur/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/venusaur/overworld.png data/graphics/sprites/venusaur/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0003.btx0 build/pokemonow/3_1486.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0003.btx0 build/pokemonow/3_1490.btx0
 build/pokemonicon/1_0003.NCGR: data/graphics/sprites/venusaur/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -818,10 +818,10 @@ build/pokemonpic/0025-05.NCLR: data/graphics/sprites/pikachu/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0025-00.NCGR build/pokemonpic/0025-01.NCGR build/pokemonpic/0025-02.NCGR build/pokemonpic/0025-03.NCGR build/pokemonpic/0025-04.NCLR build/pokemonpic/0025-05.NCLR
 build/pokemonow/3_0025.btx0: data/graphics/sprites/pikachu/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1487.btx0: data/graphics/sprites/pikachu/overworld_female.png
+build/pokemonow/3_1491.btx0: data/graphics/sprites/pikachu/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/pikachu/overworld.png data/graphics/sprites/pikachu/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0025.btx0 build/pokemonow/3_1487.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0025.btx0 build/pokemonow/3_1491.btx0
 build/pokemonicon/1_0025.NCGR: data/graphics/sprites/pikachu/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -4819,10 +4819,10 @@ build/pokemonpic/0154-05.NCLR: data/graphics/sprites/meganium/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0154-00.NCGR build/pokemonpic/0154-01.NCGR build/pokemonpic/0154-02.NCGR build/pokemonpic/0154-03.NCGR build/pokemonpic/0154-04.NCLR build/pokemonpic/0154-05.NCLR
 build/pokemonow/3_0154.btx0: data/graphics/sprites/meganium/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1488.btx0: data/graphics/sprites/meganium/overworld_female.png
+build/pokemonow/3_1492.btx0: data/graphics/sprites/meganium/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/meganium/overworld.png data/graphics/sprites/meganium/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0154.btx0 build/pokemonow/3_1488.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0154.btx0 build/pokemonow/3_1492.btx0
 build/pokemonicon/1_0154.NCGR: data/graphics/sprites/meganium/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -5379,10 +5379,10 @@ build/pokemonpic/0172-05.NCLR: data/graphics/sprites/pichu/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0172-00.NCGR build/pokemonpic/0172-01.NCGR build/pokemonpic/0172-02.NCGR build/pokemonpic/0172-03.NCGR build/pokemonpic/0172-04.NCLR build/pokemonpic/0172-05.NCLR
 build/pokemonow/3_0172.btx0: data/graphics/sprites/pichu/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1522.btx0: data/graphics/sprites/pichu/overworld_spiky_eared.png
+build/pokemonow/3_1526.btx0: data/graphics/sprites/pichu/overworld_spiky_eared.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/pichu/overworld.png data/graphics/sprites/pichu/overworld_spiky_eared.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0172.btx0 build/pokemonow/3_1522.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0172.btx0 build/pokemonow/3_1526.btx0
 build/pokemonicon/1_0172.NCGR: data/graphics/sprites/pichu/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -6280,62 +6280,62 @@ build/pokemonpic/0201-05.NCLR: data/graphics/sprites/unown/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0201-00.NCGR build/pokemonpic/0201-01.NCGR build/pokemonpic/0201-02.NCGR build/pokemonpic/0201-03.NCGR build/pokemonpic/0201-04.NCLR build/pokemonpic/0201-05.NCLR
 build/pokemonow/3_0201.btx0: data/graphics/sprites/unown/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1495.btx0: data/graphics/sprites/unown/overworld_b.png
+build/pokemonow/3_1499.btx0: data/graphics/sprites/unown/overworld_b.png
 	$(BTX) $< $@
-build/pokemonow/3_1496.btx0: data/graphics/sprites/unown/overworld_c.png
+build/pokemonow/3_1500.btx0: data/graphics/sprites/unown/overworld_c.png
 	$(BTX) $< $@
-build/pokemonow/3_1497.btx0: data/graphics/sprites/unown/overworld_d.png
+build/pokemonow/3_1501.btx0: data/graphics/sprites/unown/overworld_d.png
 	$(BTX) $< $@
-build/pokemonow/3_1498.btx0: data/graphics/sprites/unown/overworld_e.png
+build/pokemonow/3_1502.btx0: data/graphics/sprites/unown/overworld_e.png
 	$(BTX) $< $@
-build/pokemonow/3_1499.btx0: data/graphics/sprites/unown/overworld_f.png
+build/pokemonow/3_1503.btx0: data/graphics/sprites/unown/overworld_f.png
 	$(BTX) $< $@
-build/pokemonow/3_1500.btx0: data/graphics/sprites/unown/overworld_g.png
+build/pokemonow/3_1504.btx0: data/graphics/sprites/unown/overworld_g.png
 	$(BTX) $< $@
-build/pokemonow/3_1501.btx0: data/graphics/sprites/unown/overworld_h.png
+build/pokemonow/3_1505.btx0: data/graphics/sprites/unown/overworld_h.png
 	$(BTX) $< $@
-build/pokemonow/3_1502.btx0: data/graphics/sprites/unown/overworld_i.png
+build/pokemonow/3_1506.btx0: data/graphics/sprites/unown/overworld_i.png
 	$(BTX) $< $@
-build/pokemonow/3_1503.btx0: data/graphics/sprites/unown/overworld_j.png
+build/pokemonow/3_1507.btx0: data/graphics/sprites/unown/overworld_j.png
 	$(BTX) $< $@
-build/pokemonow/3_1504.btx0: data/graphics/sprites/unown/overworld_k.png
+build/pokemonow/3_1508.btx0: data/graphics/sprites/unown/overworld_k.png
 	$(BTX) $< $@
-build/pokemonow/3_1505.btx0: data/graphics/sprites/unown/overworld_l.png
+build/pokemonow/3_1509.btx0: data/graphics/sprites/unown/overworld_l.png
 	$(BTX) $< $@
-build/pokemonow/3_1506.btx0: data/graphics/sprites/unown/overworld_m.png
+build/pokemonow/3_1510.btx0: data/graphics/sprites/unown/overworld_m.png
 	$(BTX) $< $@
-build/pokemonow/3_1507.btx0: data/graphics/sprites/unown/overworld_n.png
+build/pokemonow/3_1511.btx0: data/graphics/sprites/unown/overworld_n.png
 	$(BTX) $< $@
-build/pokemonow/3_1508.btx0: data/graphics/sprites/unown/overworld_o.png
+build/pokemonow/3_1512.btx0: data/graphics/sprites/unown/overworld_o.png
 	$(BTX) $< $@
-build/pokemonow/3_1509.btx0: data/graphics/sprites/unown/overworld_p.png
+build/pokemonow/3_1513.btx0: data/graphics/sprites/unown/overworld_p.png
 	$(BTX) $< $@
-build/pokemonow/3_1510.btx0: data/graphics/sprites/unown/overworld_q.png
+build/pokemonow/3_1514.btx0: data/graphics/sprites/unown/overworld_q.png
 	$(BTX) $< $@
-build/pokemonow/3_1511.btx0: data/graphics/sprites/unown/overworld_r.png
+build/pokemonow/3_1515.btx0: data/graphics/sprites/unown/overworld_r.png
 	$(BTX) $< $@
-build/pokemonow/3_1512.btx0: data/graphics/sprites/unown/overworld_s.png
+build/pokemonow/3_1516.btx0: data/graphics/sprites/unown/overworld_s.png
 	$(BTX) $< $@
-build/pokemonow/3_1513.btx0: data/graphics/sprites/unown/overworld_t.png
+build/pokemonow/3_1517.btx0: data/graphics/sprites/unown/overworld_t.png
 	$(BTX) $< $@
-build/pokemonow/3_1514.btx0: data/graphics/sprites/unown/overworld_u.png
+build/pokemonow/3_1518.btx0: data/graphics/sprites/unown/overworld_u.png
 	$(BTX) $< $@
-build/pokemonow/3_1515.btx0: data/graphics/sprites/unown/overworld_v.png
+build/pokemonow/3_1519.btx0: data/graphics/sprites/unown/overworld_v.png
 	$(BTX) $< $@
-build/pokemonow/3_1516.btx0: data/graphics/sprites/unown/overworld_w.png
+build/pokemonow/3_1520.btx0: data/graphics/sprites/unown/overworld_w.png
 	$(BTX) $< $@
-build/pokemonow/3_1517.btx0: data/graphics/sprites/unown/overworld_x.png
+build/pokemonow/3_1521.btx0: data/graphics/sprites/unown/overworld_x.png
 	$(BTX) $< $@
-build/pokemonow/3_1518.btx0: data/graphics/sprites/unown/overworld_y.png
+build/pokemonow/3_1522.btx0: data/graphics/sprites/unown/overworld_y.png
 	$(BTX) $< $@
-build/pokemonow/3_1519.btx0: data/graphics/sprites/unown/overworld_z.png
+build/pokemonow/3_1523.btx0: data/graphics/sprites/unown/overworld_z.png
 	$(BTX) $< $@
-build/pokemonow/3_1520.btx0: data/graphics/sprites/unown/overworld_question.png
+build/pokemonow/3_1524.btx0: data/graphics/sprites/unown/overworld_question.png
 	$(BTX) $< $@
-build/pokemonow/3_1521.btx0: data/graphics/sprites/unown/overworld_exclamation.png
+build/pokemonow/3_1525.btx0: data/graphics/sprites/unown/overworld_exclamation.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/unown/overworld.png data/graphics/sprites/unown/overworld_b.png data/graphics/sprites/unown/overworld_c.png data/graphics/sprites/unown/overworld_d.png data/graphics/sprites/unown/overworld_e.png data/graphics/sprites/unown/overworld_f.png data/graphics/sprites/unown/overworld_g.png data/graphics/sprites/unown/overworld_h.png data/graphics/sprites/unown/overworld_i.png data/graphics/sprites/unown/overworld_j.png data/graphics/sprites/unown/overworld_k.png data/graphics/sprites/unown/overworld_l.png data/graphics/sprites/unown/overworld_m.png data/graphics/sprites/unown/overworld_n.png data/graphics/sprites/unown/overworld_o.png data/graphics/sprites/unown/overworld_p.png data/graphics/sprites/unown/overworld_q.png data/graphics/sprites/unown/overworld_r.png data/graphics/sprites/unown/overworld_s.png data/graphics/sprites/unown/overworld_t.png data/graphics/sprites/unown/overworld_u.png data/graphics/sprites/unown/overworld_v.png data/graphics/sprites/unown/overworld_w.png data/graphics/sprites/unown/overworld_x.png data/graphics/sprites/unown/overworld_y.png data/graphics/sprites/unown/overworld_z.png data/graphics/sprites/unown/overworld_question.png data/graphics/sprites/unown/overworld_exclamation.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0201.btx0 build/pokemonow/3_1495.btx0 build/pokemonow/3_1496.btx0 build/pokemonow/3_1497.btx0 build/pokemonow/3_1498.btx0 build/pokemonow/3_1499.btx0 build/pokemonow/3_1500.btx0 build/pokemonow/3_1501.btx0 build/pokemonow/3_1502.btx0 build/pokemonow/3_1503.btx0 build/pokemonow/3_1504.btx0 build/pokemonow/3_1505.btx0 build/pokemonow/3_1506.btx0 build/pokemonow/3_1507.btx0 build/pokemonow/3_1508.btx0 build/pokemonow/3_1509.btx0 build/pokemonow/3_1510.btx0 build/pokemonow/3_1511.btx0 build/pokemonow/3_1512.btx0 build/pokemonow/3_1513.btx0 build/pokemonow/3_1514.btx0 build/pokemonow/3_1515.btx0 build/pokemonow/3_1516.btx0 build/pokemonow/3_1517.btx0 build/pokemonow/3_1518.btx0 build/pokemonow/3_1519.btx0 build/pokemonow/3_1520.btx0 build/pokemonow/3_1521.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0201.btx0 build/pokemonow/3_1499.btx0 build/pokemonow/3_1500.btx0 build/pokemonow/3_1501.btx0 build/pokemonow/3_1502.btx0 build/pokemonow/3_1503.btx0 build/pokemonow/3_1504.btx0 build/pokemonow/3_1505.btx0 build/pokemonow/3_1506.btx0 build/pokemonow/3_1507.btx0 build/pokemonow/3_1508.btx0 build/pokemonow/3_1509.btx0 build/pokemonow/3_1510.btx0 build/pokemonow/3_1511.btx0 build/pokemonow/3_1512.btx0 build/pokemonow/3_1513.btx0 build/pokemonow/3_1514.btx0 build/pokemonow/3_1515.btx0 build/pokemonow/3_1516.btx0 build/pokemonow/3_1517.btx0 build/pokemonow/3_1518.btx0 build/pokemonow/3_1519.btx0 build/pokemonow/3_1520.btx0 build/pokemonow/3_1521.btx0 build/pokemonow/3_1522.btx0 build/pokemonow/3_1523.btx0 build/pokemonow/3_1524.btx0 build/pokemonow/3_1525.btx0
 build/pokemonicon/1_0201.NCGR: data/graphics/sprites/unown/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -6365,10 +6365,10 @@ build/pokemonpic/0202-05.NCLR: data/graphics/sprites/wobbuffet/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0202-00.NCGR build/pokemonpic/0202-01.NCGR build/pokemonpic/0202-02.NCGR build/pokemonpic/0202-03.NCGR build/pokemonpic/0202-04.NCLR build/pokemonpic/0202-05.NCLR
 build/pokemonow/3_0202.btx0: data/graphics/sprites/wobbuffet/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1489.btx0: data/graphics/sprites/wobbuffet/overworld_female.png
+build/pokemonow/3_1493.btx0: data/graphics/sprites/wobbuffet/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/wobbuffet/overworld.png data/graphics/sprites/wobbuffet/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0202.btx0 build/pokemonow/3_1489.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0202.btx0 build/pokemonow/3_1493.btx0
 build/pokemonicon/1_0202.NCGR: data/graphics/sprites/wobbuffet/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -6553,10 +6553,10 @@ build/pokemonpic/0208-05.NCLR: data/graphics/sprites/steelix/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0208-00.NCGR build/pokemonpic/0208-01.NCGR build/pokemonpic/0208-02.NCGR build/pokemonpic/0208-03.NCGR build/pokemonpic/0208-04.NCLR build/pokemonpic/0208-05.NCLR
 build/pokemonow/3_0208.btx0: data/graphics/sprites/steelix/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1490.btx0: data/graphics/sprites/steelix/overworld_female.png
+build/pokemonow/3_1494.btx0: data/graphics/sprites/steelix/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/steelix/overworld.png data/graphics/sprites/steelix/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0208.btx0 build/pokemonow/3_1490.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0208.btx0 build/pokemonow/3_1494.btx0
 build/pokemonicon/1_0208.NCGR: data/graphics/sprites/steelix/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -6741,10 +6741,10 @@ build/pokemonpic/0214-05.NCLR: data/graphics/sprites/heracross/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0214-00.NCGR build/pokemonpic/0214-01.NCGR build/pokemonpic/0214-02.NCGR build/pokemonpic/0214-03.NCGR build/pokemonpic/0214-04.NCLR build/pokemonpic/0214-05.NCLR
 build/pokemonow/3_0214.btx0: data/graphics/sprites/heracross/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1491.btx0: data/graphics/sprites/heracross/overworld_female.png
+build/pokemonow/3_1495.btx0: data/graphics/sprites/heracross/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/heracross/overworld.png data/graphics/sprites/heracross/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0214.btx0 build/pokemonow/3_1491.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0214.btx0 build/pokemonow/3_1495.btx0
 build/pokemonicon/1_0214.NCGR: data/graphics/sprites/heracross/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -12075,14 +12075,14 @@ build/pokemonpic/0386-05.NCLR: data/graphics/sprites/deoxys/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0386-00.NCGR build/pokemonpic/0386-01.NCGR build/pokemonpic/0386-02.NCGR build/pokemonpic/0386-03.NCGR build/pokemonpic/0386-04.NCLR build/pokemonpic/0386-05.NCLR
 build/pokemonow/3_0386.btx0: data/graphics/sprites/deoxys/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1523.btx0: data/graphics/sprites/deoxys/overworld_attack.png
+build/pokemonow/3_1527.btx0: data/graphics/sprites/deoxys/overworld_attack.png
 	$(BTX) $< $@
-build/pokemonow/3_1524.btx0: data/graphics/sprites/deoxys/overworld_defense.png
+build/pokemonow/3_1528.btx0: data/graphics/sprites/deoxys/overworld_defense.png
 	$(BTX) $< $@
-build/pokemonow/3_1525.btx0: data/graphics/sprites/deoxys/overworld_speed.png
+build/pokemonow/3_1529.btx0: data/graphics/sprites/deoxys/overworld_speed.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/deoxys/overworld.png data/graphics/sprites/deoxys/overworld_attack.png data/graphics/sprites/deoxys/overworld_defense.png data/graphics/sprites/deoxys/overworld_speed.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0386.btx0 build/pokemonow/3_1523.btx0 build/pokemonow/3_1524.btx0 build/pokemonow/3_1525.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0386.btx0 build/pokemonow/3_1527.btx0 build/pokemonow/3_1528.btx0 build/pokemonow/3_1529.btx0
 build/pokemonicon/1_0386.NCGR: data/graphics/sprites/deoxys/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -12887,12 +12887,12 @@ build/pokemonpic/0412-05.NCLR: data/graphics/sprites/burmy/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0412-00.NCGR build/pokemonpic/0412-01.NCGR build/pokemonpic/0412-02.NCGR build/pokemonpic/0412-03.NCGR build/pokemonpic/0412-04.NCLR build/pokemonpic/0412-05.NCLR
 build/pokemonow/3_0412.btx0: data/graphics/sprites/burmy/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1526.btx0: data/graphics/sprites/burmy/overworld_sandy.png
+build/pokemonow/3_1530.btx0: data/graphics/sprites/burmy/overworld_sandy.png
 	$(BTX) $< $@
-build/pokemonow/3_1527.btx0: data/graphics/sprites/burmy/overworld_trashy.png
+build/pokemonow/3_1531.btx0: data/graphics/sprites/burmy/overworld_trashy.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/burmy/overworld.png data/graphics/sprites/burmy/overworld_sandy.png data/graphics/sprites/burmy/overworld_trashy.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0412.btx0 build/pokemonow/3_1526.btx0 build/pokemonow/3_1527.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0412.btx0 build/pokemonow/3_1530.btx0 build/pokemonow/3_1531.btx0
 build/pokemonicon/1_0412.NCGR: data/graphics/sprites/burmy/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -12922,12 +12922,12 @@ build/pokemonpic/0413-05.NCLR: data/graphics/sprites/wormadam/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0413-00.NCGR build/pokemonpic/0413-01.NCGR build/pokemonpic/0413-02.NCGR build/pokemonpic/0413-03.NCGR build/pokemonpic/0413-04.NCLR build/pokemonpic/0413-05.NCLR
 build/pokemonow/3_0413.btx0: data/graphics/sprites/wormadam/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1528.btx0: data/graphics/sprites/wormadam/overworld_sandy.png
+build/pokemonow/3_1532.btx0: data/graphics/sprites/wormadam/overworld_sandy.png
 	$(BTX) $< $@
-build/pokemonow/3_1529.btx0: data/graphics/sprites/wormadam/overworld_trashy.png
+build/pokemonow/3_1533.btx0: data/graphics/sprites/wormadam/overworld_trashy.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/wormadam/overworld.png data/graphics/sprites/wormadam/overworld_sandy.png data/graphics/sprites/wormadam/overworld_trashy.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0413.btx0 build/pokemonow/3_1528.btx0 build/pokemonow/3_1529.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0413.btx0 build/pokemonow/3_1532.btx0 build/pokemonow/3_1533.btx0
 build/pokemonicon/1_0413.NCGR: data/graphics/sprites/wormadam/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -12988,10 +12988,10 @@ build/pokemonpic/0415-05.NCLR: data/graphics/sprites/combee/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0415-00.NCGR build/pokemonpic/0415-01.NCGR build/pokemonpic/0415-02.NCGR build/pokemonpic/0415-03.NCGR build/pokemonpic/0415-04.NCLR build/pokemonpic/0415-05.NCLR
 build/pokemonow/3_0415.btx0: data/graphics/sprites/combee/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1492.btx0: data/graphics/sprites/combee/overworld_female.png
+build/pokemonow/3_1496.btx0: data/graphics/sprites/combee/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/combee/overworld.png data/graphics/sprites/combee/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0415.btx0 build/pokemonow/3_1492.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0415.btx0 build/pokemonow/3_1496.btx0
 build/pokemonicon/1_0415.NCGR: data/graphics/sprites/combee/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -14044,10 +14044,10 @@ build/pokemonpic/0449-05.NCLR: data/graphics/sprites/hippopotas/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0449-00.NCGR build/pokemonpic/0449-01.NCGR build/pokemonpic/0449-02.NCGR build/pokemonpic/0449-03.NCGR build/pokemonpic/0449-04.NCLR build/pokemonpic/0449-05.NCLR
 build/pokemonow/3_0449.btx0: data/graphics/sprites/hippopotas/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1493.btx0: data/graphics/sprites/hippopotas/overworld_female.png
+build/pokemonow/3_1497.btx0: data/graphics/sprites/hippopotas/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/hippopotas/overworld.png data/graphics/sprites/hippopotas/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0449.btx0 build/pokemonow/3_1493.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0449.btx0 build/pokemonow/3_1497.btx0
 build/pokemonicon/1_0449.NCGR: data/graphics/sprites/hippopotas/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -14077,10 +14077,10 @@ build/pokemonpic/0450-05.NCLR: data/graphics/sprites/hippowdon/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0450-00.NCGR build/pokemonpic/0450-01.NCGR build/pokemonpic/0450-02.NCGR build/pokemonpic/0450-03.NCGR build/pokemonpic/0450-04.NCLR build/pokemonpic/0450-05.NCLR
 build/pokemonow/3_0450.btx0: data/graphics/sprites/hippowdon/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1494.btx0: data/graphics/sprites/hippowdon/overworld_female.png
+build/pokemonow/3_1498.btx0: data/graphics/sprites/hippowdon/overworld_female.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/hippowdon/overworld.png data/graphics/sprites/hippowdon/overworld_female.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0450.btx0 build/pokemonow/3_1494.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0450.btx0 build/pokemonow/3_1498.btx0
 build/pokemonicon/1_0450.NCGR: data/graphics/sprites/hippowdon/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -14978,18 +14978,18 @@ build/pokemonpic/0479-05.NCLR: data/graphics/sprites/rotom/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0479-00.NCGR build/pokemonpic/0479-01.NCGR build/pokemonpic/0479-02.NCGR build/pokemonpic/0479-03.NCGR build/pokemonpic/0479-04.NCLR build/pokemonpic/0479-05.NCLR
 build/pokemonow/3_0479.btx0: data/graphics/sprites/rotom/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1530.btx0: data/graphics/sprites/rotom/overworld_heat.png
+build/pokemonow/3_1534.btx0: data/graphics/sprites/rotom/overworld_heat.png
 	$(BTX) $< $@
-build/pokemonow/3_1531.btx0: data/graphics/sprites/rotom/overworld_wash.png
+build/pokemonow/3_1535.btx0: data/graphics/sprites/rotom/overworld_wash.png
 	$(BTX) $< $@
-build/pokemonow/3_1532.btx0: data/graphics/sprites/rotom/overworld_frost.png
+build/pokemonow/3_1536.btx0: data/graphics/sprites/rotom/overworld_frost.png
 	$(BTX) $< $@
-build/pokemonow/3_1533.btx0: data/graphics/sprites/rotom/overworld_fan.png
+build/pokemonow/3_1537.btx0: data/graphics/sprites/rotom/overworld_fan.png
 	$(BTX) $< $@
-build/pokemonow/3_1534.btx0: data/graphics/sprites/rotom/overworld_mow.png
+build/pokemonow/3_1538.btx0: data/graphics/sprites/rotom/overworld_mow.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/rotom/overworld.png data/graphics/sprites/rotom/overworld_heat.png data/graphics/sprites/rotom/overworld_wash.png data/graphics/sprites/rotom/overworld_frost.png data/graphics/sprites/rotom/overworld_fan.png data/graphics/sprites/rotom/overworld_mow.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0479.btx0 build/pokemonow/3_1530.btx0 build/pokemonow/3_1531.btx0 build/pokemonow/3_1532.btx0 build/pokemonow/3_1533.btx0 build/pokemonow/3_1534.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0479.btx0 build/pokemonow/3_1534.btx0 build/pokemonow/3_1535.btx0 build/pokemonow/3_1536.btx0 build/pokemonow/3_1537.btx0 build/pokemonow/3_1538.btx0
 build/pokemonicon/1_0479.NCGR: data/graphics/sprites/rotom/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -15236,10 +15236,10 @@ build/pokemonpic/0487-05.NCLR: data/graphics/sprites/giratina/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0487-00.NCGR build/pokemonpic/0487-01.NCGR build/pokemonpic/0487-02.NCGR build/pokemonpic/0487-03.NCGR build/pokemonpic/0487-04.NCLR build/pokemonpic/0487-05.NCLR
 build/pokemonow/3_0487.btx0: data/graphics/sprites/giratina/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1535.btx0: data/graphics/sprites/giratina/overworld_origin.png
+build/pokemonow/3_1539.btx0: data/graphics/sprites/giratina/overworld_origin.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/giratina/overworld.png data/graphics/sprites/giratina/overworld_origin.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0487.btx0 build/pokemonow/3_1535.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0487.btx0 build/pokemonow/3_1539.btx0
 build/pokemonicon/1_0487.NCGR: data/graphics/sprites/giratina/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -15393,10 +15393,10 @@ build/pokemonpic/0492-05.NCLR: data/graphics/sprites/shaymin/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0492-00.NCGR build/pokemonpic/0492-01.NCGR build/pokemonpic/0492-02.NCGR build/pokemonpic/0492-03.NCGR build/pokemonpic/0492-04.NCLR build/pokemonpic/0492-05.NCLR
 build/pokemonow/3_0492.btx0: data/graphics/sprites/shaymin/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1536.btx0: data/graphics/sprites/shaymin/overworld_sky.png
+build/pokemonow/3_1540.btx0: data/graphics/sprites/shaymin/overworld_sky.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/shaymin/overworld.png data/graphics/sprites/shaymin/overworld_sky.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0492.btx0 build/pokemonow/3_1536.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0492.btx0 build/pokemonow/3_1540.btx0
 build/pokemonicon/1_0492.NCGR: data/graphics/sprites/shaymin/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -15426,42 +15426,42 @@ build/pokemonpic/0493-05.NCLR: data/graphics/sprites/arceus/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0493-00.NCGR build/pokemonpic/0493-01.NCGR build/pokemonpic/0493-02.NCGR build/pokemonpic/0493-03.NCGR build/pokemonpic/0493-04.NCLR build/pokemonpic/0493-05.NCLR
 build/pokemonow/3_0493.btx0: data/graphics/sprites/arceus/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1537.btx0: data/graphics/sprites/arceus/overworld_fight.png
+build/pokemonow/3_1541.btx0: data/graphics/sprites/arceus/overworld_fight.png
 	$(BTX) $< $@
-build/pokemonow/3_1538.btx0: data/graphics/sprites/arceus/overworld_fly.png
+build/pokemonow/3_1542.btx0: data/graphics/sprites/arceus/overworld_fly.png
 	$(BTX) $< $@
-build/pokemonow/3_1539.btx0: data/graphics/sprites/arceus/overworld_poison.png
+build/pokemonow/3_1543.btx0: data/graphics/sprites/arceus/overworld_poison.png
 	$(BTX) $< $@
-build/pokemonow/3_1540.btx0: data/graphics/sprites/arceus/overworld_ground.png
+build/pokemonow/3_1544.btx0: data/graphics/sprites/arceus/overworld_ground.png
 	$(BTX) $< $@
-build/pokemonow/3_1541.btx0: data/graphics/sprites/arceus/overworld_rock.png
+build/pokemonow/3_1545.btx0: data/graphics/sprites/arceus/overworld_rock.png
 	$(BTX) $< $@
-build/pokemonow/3_1542.btx0: data/graphics/sprites/arceus/overworld_bug.png
+build/pokemonow/3_1546.btx0: data/graphics/sprites/arceus/overworld_bug.png
 	$(BTX) $< $@
-build/pokemonow/3_1543.btx0: data/graphics/sprites/arceus/overworld_ghost.png
+build/pokemonow/3_1547.btx0: data/graphics/sprites/arceus/overworld_ghost.png
 	$(BTX) $< $@
-build/pokemonow/3_1544.btx0: data/graphics/sprites/arceus/overworld_steel.png
+build/pokemonow/3_1548.btx0: data/graphics/sprites/arceus/overworld_steel.png
 	$(BTX) $< $@
-build/pokemonow/3_1545.btx0: data/graphics/sprites/arceus/overworld_fairy.png
+build/pokemonow/3_1549.btx0: data/graphics/sprites/arceus/overworld_fairy.png
 	$(BTX) $< $@
-build/pokemonow/3_1546.btx0: data/graphics/sprites/arceus/overworld_fire.png
+build/pokemonow/3_1550.btx0: data/graphics/sprites/arceus/overworld_fire.png
 	$(BTX) $< $@
-build/pokemonow/3_1547.btx0: data/graphics/sprites/arceus/overworld_water.png
+build/pokemonow/3_1551.btx0: data/graphics/sprites/arceus/overworld_water.png
 	$(BTX) $< $@
-build/pokemonow/3_1548.btx0: data/graphics/sprites/arceus/overworld_grass.png
+build/pokemonow/3_1552.btx0: data/graphics/sprites/arceus/overworld_grass.png
 	$(BTX) $< $@
-build/pokemonow/3_1549.btx0: data/graphics/sprites/arceus/overworld_electric.png
+build/pokemonow/3_1553.btx0: data/graphics/sprites/arceus/overworld_electric.png
 	$(BTX) $< $@
-build/pokemonow/3_1550.btx0: data/graphics/sprites/arceus/overworld_psychic.png
+build/pokemonow/3_1554.btx0: data/graphics/sprites/arceus/overworld_psychic.png
 	$(BTX) $< $@
-build/pokemonow/3_1551.btx0: data/graphics/sprites/arceus/overworld_ice.png
+build/pokemonow/3_1555.btx0: data/graphics/sprites/arceus/overworld_ice.png
 	$(BTX) $< $@
-build/pokemonow/3_1552.btx0: data/graphics/sprites/arceus/overworld_dragon.png
+build/pokemonow/3_1556.btx0: data/graphics/sprites/arceus/overworld_dragon.png
 	$(BTX) $< $@
-build/pokemonow/3_1553.btx0: data/graphics/sprites/arceus/overworld_dark.png
+build/pokemonow/3_1557.btx0: data/graphics/sprites/arceus/overworld_dark.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/arceus/overworld.png data/graphics/sprites/arceus/overworld_fight.png data/graphics/sprites/arceus/overworld_fly.png data/graphics/sprites/arceus/overworld_poison.png data/graphics/sprites/arceus/overworld_ground.png data/graphics/sprites/arceus/overworld_rock.png data/graphics/sprites/arceus/overworld_bug.png data/graphics/sprites/arceus/overworld_ghost.png data/graphics/sprites/arceus/overworld_steel.png data/graphics/sprites/arceus/overworld_fairy.png data/graphics/sprites/arceus/overworld_fire.png data/graphics/sprites/arceus/overworld_water.png data/graphics/sprites/arceus/overworld_grass.png data/graphics/sprites/arceus/overworld_electric.png data/graphics/sprites/arceus/overworld_psychic.png data/graphics/sprites/arceus/overworld_ice.png data/graphics/sprites/arceus/overworld_dragon.png data/graphics/sprites/arceus/overworld_dark.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0493.btx0 build/pokemonow/3_1537.btx0 build/pokemonow/3_1538.btx0 build/pokemonow/3_1539.btx0 build/pokemonow/3_1540.btx0 build/pokemonow/3_1541.btx0 build/pokemonow/3_1542.btx0 build/pokemonow/3_1543.btx0 build/pokemonow/3_1544.btx0 build/pokemonow/3_1545.btx0 build/pokemonow/3_1546.btx0 build/pokemonow/3_1547.btx0 build/pokemonow/3_1548.btx0 build/pokemonow/3_1549.btx0 build/pokemonow/3_1550.btx0 build/pokemonow/3_1551.btx0 build/pokemonow/3_1552.btx0 build/pokemonow/3_1553.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0493.btx0 build/pokemonow/3_1541.btx0 build/pokemonow/3_1542.btx0 build/pokemonow/3_1543.btx0 build/pokemonow/3_1544.btx0 build/pokemonow/3_1545.btx0 build/pokemonow/3_1546.btx0 build/pokemonow/3_1547.btx0 build/pokemonow/3_1548.btx0 build/pokemonow/3_1549.btx0 build/pokemonow/3_1550.btx0 build/pokemonow/3_1551.btx0 build/pokemonow/3_1552.btx0 build/pokemonow/3_1553.btx0 build/pokemonow/3_1554.btx0 build/pokemonow/3_1555.btx0 build/pokemonow/3_1556.btx0 build/pokemonow/3_1557.btx0
 build/pokemonicon/1_0493.NCGR: data/graphics/sprites/arceus/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -25690,42 +25690,42 @@ build/pokemonpic/0823-05.NCLR: data/graphics/sprites/silvally/male/back.png
 POKEGRA_DEPENDENCIES += build/pokemonpic/0823-00.NCGR build/pokemonpic/0823-01.NCGR build/pokemonpic/0823-02.NCGR build/pokemonpic/0823-03.NCGR build/pokemonpic/0823-04.NCLR build/pokemonpic/0823-05.NCLR
 build/pokemonow/3_0823.btx0: data/graphics/sprites/silvally/overworld.png
 	$(BTX) $< $@
-build/pokemonow/3_1554.btx0: data/graphics/sprites/silvally/overworld_fight.png
+build/pokemonow/3_1558.btx0: data/graphics/sprites/silvally/overworld_fight.png
 	$(BTX) $< $@
-build/pokemonow/3_1555.btx0: data/graphics/sprites/silvally/overworld_fly.png
+build/pokemonow/3_1559.btx0: data/graphics/sprites/silvally/overworld_fly.png
 	$(BTX) $< $@
-build/pokemonow/3_1556.btx0: data/graphics/sprites/silvally/overworld_poison.png
+build/pokemonow/3_1560.btx0: data/graphics/sprites/silvally/overworld_poison.png
 	$(BTX) $< $@
-build/pokemonow/3_1557.btx0: data/graphics/sprites/silvally/overworld_ground.png
+build/pokemonow/3_1561.btx0: data/graphics/sprites/silvally/overworld_ground.png
 	$(BTX) $< $@
-build/pokemonow/3_1558.btx0: data/graphics/sprites/silvally/overworld_rock.png
+build/pokemonow/3_1562.btx0: data/graphics/sprites/silvally/overworld_rock.png
 	$(BTX) $< $@
-build/pokemonow/3_1559.btx0: data/graphics/sprites/silvally/overworld_bug.png
+build/pokemonow/3_1563.btx0: data/graphics/sprites/silvally/overworld_bug.png
 	$(BTX) $< $@
-build/pokemonow/3_1560.btx0: data/graphics/sprites/silvally/overworld_ghost.png
+build/pokemonow/3_1564.btx0: data/graphics/sprites/silvally/overworld_ghost.png
 	$(BTX) $< $@
-build/pokemonow/3_1561.btx0: data/graphics/sprites/silvally/overworld_steel.png
+build/pokemonow/3_1565.btx0: data/graphics/sprites/silvally/overworld_steel.png
 	$(BTX) $< $@
-build/pokemonow/3_1562.btx0: data/graphics/sprites/silvally/overworld_fairy.png
+build/pokemonow/3_1566.btx0: data/graphics/sprites/silvally/overworld_fairy.png
 	$(BTX) $< $@
-build/pokemonow/3_1563.btx0: data/graphics/sprites/silvally/overworld_fire.png
+build/pokemonow/3_1567.btx0: data/graphics/sprites/silvally/overworld_fire.png
 	$(BTX) $< $@
-build/pokemonow/3_1564.btx0: data/graphics/sprites/silvally/overworld_water.png
+build/pokemonow/3_1568.btx0: data/graphics/sprites/silvally/overworld_water.png
 	$(BTX) $< $@
-build/pokemonow/3_1565.btx0: data/graphics/sprites/silvally/overworld_grass.png
+build/pokemonow/3_1569.btx0: data/graphics/sprites/silvally/overworld_grass.png
 	$(BTX) $< $@
-build/pokemonow/3_1566.btx0: data/graphics/sprites/silvally/overworld_electric.png
+build/pokemonow/3_1570.btx0: data/graphics/sprites/silvally/overworld_electric.png
 	$(BTX) $< $@
-build/pokemonow/3_1567.btx0: data/graphics/sprites/silvally/overworld_psychic.png
+build/pokemonow/3_1571.btx0: data/graphics/sprites/silvally/overworld_psychic.png
 	$(BTX) $< $@
-build/pokemonow/3_1568.btx0: data/graphics/sprites/silvally/overworld_ice.png
+build/pokemonow/3_1572.btx0: data/graphics/sprites/silvally/overworld_ice.png
 	$(BTX) $< $@
-build/pokemonow/3_1569.btx0: data/graphics/sprites/silvally/overworld_dragon.png
+build/pokemonow/3_1573.btx0: data/graphics/sprites/silvally/overworld_dragon.png
 	$(BTX) $< $@
-build/pokemonow/3_1570.btx0: data/graphics/sprites/silvally/overworld_dark.png
+build/pokemonow/3_1574.btx0: data/graphics/sprites/silvally/overworld_dark.png
 	$(BTX) $< $@
 ALL_OVERWORLDS_SRCS += data/graphics/sprites/silvally/overworld.png data/graphics/sprites/silvally/overworld_fight.png data/graphics/sprites/silvally/overworld_fly.png data/graphics/sprites/silvally/overworld_poison.png data/graphics/sprites/silvally/overworld_ground.png data/graphics/sprites/silvally/overworld_rock.png data/graphics/sprites/silvally/overworld_bug.png data/graphics/sprites/silvally/overworld_ghost.png data/graphics/sprites/silvally/overworld_steel.png data/graphics/sprites/silvally/overworld_fairy.png data/graphics/sprites/silvally/overworld_fire.png data/graphics/sprites/silvally/overworld_water.png data/graphics/sprites/silvally/overworld_grass.png data/graphics/sprites/silvally/overworld_electric.png data/graphics/sprites/silvally/overworld_psychic.png data/graphics/sprites/silvally/overworld_ice.png data/graphics/sprites/silvally/overworld_dragon.png data/graphics/sprites/silvally/overworld_dark.png
-ALL_OVERWORLDS_OBJS += build/pokemonow/3_0823.btx0 build/pokemonow/3_1554.btx0 build/pokemonow/3_1555.btx0 build/pokemonow/3_1556.btx0 build/pokemonow/3_1557.btx0 build/pokemonow/3_1558.btx0 build/pokemonow/3_1559.btx0 build/pokemonow/3_1560.btx0 build/pokemonow/3_1561.btx0 build/pokemonow/3_1562.btx0 build/pokemonow/3_1563.btx0 build/pokemonow/3_1564.btx0 build/pokemonow/3_1565.btx0 build/pokemonow/3_1566.btx0 build/pokemonow/3_1567.btx0 build/pokemonow/3_1568.btx0 build/pokemonow/3_1569.btx0 build/pokemonow/3_1570.btx0
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_0823.btx0 build/pokemonow/3_1558.btx0 build/pokemonow/3_1559.btx0 build/pokemonow/3_1560.btx0 build/pokemonow/3_1561.btx0 build/pokemonow/3_1562.btx0 build/pokemonow/3_1563.btx0 build/pokemonow/3_1564.btx0 build/pokemonow/3_1565.btx0 build/pokemonow/3_1566.btx0 build/pokemonow/3_1567.btx0 build/pokemonow/3_1568.btx0 build/pokemonow/3_1569.btx0 build/pokemonow/3_1570.btx0 build/pokemonow/3_1571.btx0 build/pokemonow/3_1572.btx0 build/pokemonow/3_1573.btx0 build/pokemonow/3_1574.btx0
 build/pokemonicon/1_0823.NCGR: data/graphics/sprites/silvally/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
@@ -46252,6 +46252,130 @@ build/pokemonicon/1_1485.NCGR: data/graphics/sprites/mega_marshadow/icon.png
 	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
 
 ICONGFX_OBJS += build/pokemonicon/1_1485.NCGR
+
+
+build/pokemonpic/1486-00.NCGR: data/graphics/sprites/mega_jirachi/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1486-01.NCGR: data/graphics/sprites/mega_jirachi/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1486-02.NCGR: data/graphics/sprites/mega_jirachi/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1486-03.NCGR: data/graphics/sprites/mega_jirachi/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1486-04.NCLR: data/graphics/sprites/mega_jirachi/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1486-05.NCLR: data/graphics/sprites/mega_jirachi/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1486-00.NCGR build/pokemonpic/1486-01.NCGR build/pokemonpic/1486-02.NCGR build/pokemonpic/1486-03.NCGR build/pokemonpic/1486-04.NCLR build/pokemonpic/1486-05.NCLR
+build/pokemonow/3_1486.btx0: data/graphics/sprites/mega_jirachi/overworld.png
+	$(BTX) $< $@
+ALL_OVERWORLDS_SRCS += data/graphics/sprites/mega_jirachi/overworld.png
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_1486.btx0
+build/pokemonicon/1_1486.NCGR: data/graphics/sprites/mega_jirachi/icon.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+ICONGFX_OBJS += build/pokemonicon/1_1486.NCGR
+
+
+build/pokemonpic/1487-00.NCGR: data/graphics/sprites/mega_meowscarada/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1487-01.NCGR: data/graphics/sprites/mega_meowscarada/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1487-02.NCGR: data/graphics/sprites/mega_meowscarada/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1487-03.NCGR: data/graphics/sprites/mega_meowscarada/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1487-04.NCLR: data/graphics/sprites/mega_meowscarada/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1487-05.NCLR: data/graphics/sprites/mega_meowscarada/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1487-00.NCGR build/pokemonpic/1487-01.NCGR build/pokemonpic/1487-02.NCGR build/pokemonpic/1487-03.NCGR build/pokemonpic/1487-04.NCLR build/pokemonpic/1487-05.NCLR
+build/pokemonow/3_1487.btx0: data/graphics/sprites/mega_meowscarada/overworld.png
+	$(BTX) $< $@
+ALL_OVERWORLDS_SRCS += data/graphics/sprites/mega_meowscarada/overworld.png
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_1487.btx0
+build/pokemonicon/1_1487.NCGR: data/graphics/sprites/mega_meowscarada/icon.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+ICONGFX_OBJS += build/pokemonicon/1_1487.NCGR
+
+
+build/pokemonpic/1488-00.NCGR: data/graphics/sprites/mega_skeledirge/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1488-01.NCGR: data/graphics/sprites/mega_skeledirge/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1488-02.NCGR: data/graphics/sprites/mega_skeledirge/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1488-03.NCGR: data/graphics/sprites/mega_skeledirge/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1488-04.NCLR: data/graphics/sprites/mega_skeledirge/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1488-05.NCLR: data/graphics/sprites/mega_skeledirge/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1488-00.NCGR build/pokemonpic/1488-01.NCGR build/pokemonpic/1488-02.NCGR build/pokemonpic/1488-03.NCGR build/pokemonpic/1488-04.NCLR build/pokemonpic/1488-05.NCLR
+build/pokemonow/3_1488.btx0: data/graphics/sprites/mega_skeledirge/overworld.png
+	$(BTX) $< $@
+ALL_OVERWORLDS_SRCS += data/graphics/sprites/mega_skeledirge/overworld.png
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_1488.btx0
+build/pokemonicon/1_1488.NCGR: data/graphics/sprites/mega_skeledirge/icon.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+ICONGFX_OBJS += build/pokemonicon/1_1488.NCGR
+
+
+build/pokemonpic/1489-00.NCGR: data/graphics/sprites/mega_quaquaval/female/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1489-01.NCGR: data/graphics/sprites/mega_quaquaval/male/back.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1489-02.NCGR: data/graphics/sprites/mega_quaquaval/female/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1489-03.NCGR: data/graphics/sprites/mega_quaquaval/male/front.png
+	$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_SPRITE)
+build/pokemonpic/1489-04.NCLR: data/graphics/sprites/mega_quaquaval/male/front.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/front.png,$(POKEGRA_SPRITES_DIR)/%/female/front.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+build/pokemonpic/1489-05.NCLR: data/graphics/sprites/mega_quaquaval/male/back.png
+	if test -s $<; then \
+		$(GFX) $< $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	elif test -s $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<); then \
+		$(GFX) $(patsubst $(POKEGRA_SPRITES_DIR)/%/male/back.png,$(POKEGRA_SPRITES_DIR)/%/female/back.png,$<) $@ $(POKEGRA_GFX_FLAGS_PAL); \
+	fi
+POKEGRA_DEPENDENCIES += build/pokemonpic/1489-00.NCGR build/pokemonpic/1489-01.NCGR build/pokemonpic/1489-02.NCGR build/pokemonpic/1489-03.NCGR build/pokemonpic/1489-04.NCLR build/pokemonpic/1489-05.NCLR
+build/pokemonow/3_1489.btx0: data/graphics/sprites/mega_quaquaval/overworld.png
+	$(BTX) $< $@
+ALL_OVERWORLDS_SRCS += data/graphics/sprites/mega_quaquaval/overworld.png
+ALL_OVERWORLDS_OBJS += build/pokemonow/3_1489.btx0
+build/pokemonicon/1_1489.NCGR: data/graphics/sprites/mega_quaquaval/icon.png
+	$(GFX) $< $@ -clobbersize -version101 -bitdepth 4
+
+ICONGFX_OBJS += build/pokemonicon/1_1489.NCGR
 
 
 $(POKEGRA_NARC): $(POKEGRA_DEPENDENCIES)
