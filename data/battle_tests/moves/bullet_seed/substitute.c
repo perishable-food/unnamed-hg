@@ -1,4 +1,4 @@
-// Test: Imposter - inherit stats
+// Test: Bullet Seed - break Substitute
 #include "../../battle_tests.h"
 BEGIN_TEST
 {
@@ -8,12 +8,12 @@ BEGIN_TEST
     .terrain = TERRAIN_NONE,
     .playerParty = {
         {
-            .species = SPECIES_DITTO,
-            .level = 53,
+            .species = SPECIES_CARNIVINE,
+            .level = 20,
             .form = 0,
-            .ability = ABILITY_IMPOSTER,
-            .item = ITEM_CHOICE_SCARF, // 82 speed
-            .moves = { MOVE_TRANSFORM, MOVE_NONE, MOVE_NONE, MOVE_NONE },
+            .ability = ABILITY_LEVITATE,
+            .item = ITEM_LOADED_DICE,
+            .moves = { MOVE_BULLET_SEED, MOVE_NONE, MOVE_NONE, MOVE_NONE },
             .hp = FULL_HP,
             .status = 0,
             .condition2 = 0,
@@ -23,15 +23,16 @@ BEGIN_TEST
         { .species = SPECIES_NONE },
         { .species = SPECIES_NONE },
         { .species = SPECIES_NONE },
-        { .species = SPECIES_NONE } },
+        { .species = SPECIES_NONE }
+    },
     .enemyParty = { {
-                        .species = SPECIES_STARAPTOR,
-                        .level = 50,
+                        .species = SPECIES_SWAMPERT,
+                        .level = 54,
                         .form = 0,
-                        .ability = ABILITY_INTIMIDATE,
+                        .ability = ABILITY_TORRENT,
                         .item = ITEM_NONE,
-                        .moves = { MOVE_WING_ATTACK, MOVE_NONE, MOVE_NONE, MOVE_NONE },
-                        .hp = FULL_HP,
+                        .moves = { MOVE_SUBSTITUTE, MOVE_NONE, MOVE_NONE, MOVE_NONE },
+                        .hp = FULL_HP, //188: sub: 47
                         .status = 0,
                         .condition2 = 0,
                         .moveEffectFlags = 0,
@@ -82,14 +83,14 @@ BEGIN_TEST
             { ACTION_NONE, 0 },
         } },
     .expectations = {
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Ditto's Attack fell!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Ditto's Imposter" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Ditto transformed into Staraptor!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Ditto's Intimidate" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "The opposing Staraptor's Attack fell!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Ditto used Wing Attack!" },
-        { .expectationType = EXPECTATION_TYPE_HP_BAR, .battlerIDOrPartySlot = BATTLER_ENEMY_FIRST, .expectationValue.hpTaken = { 55, 55, 57, 57, 58, 58, 60, 60, 60, 61, 61, 63, 63, 64, 64, 66 } },
-        { .expectationType = EXPECTATION_TYPE_HP_BAR, .battlerIDOrPartySlot = BATTLER_PLAYER_FIRST, .expectationValue.hpTaken = { 36, 36, 37, 37, 37, 39, 39, 39, 39, 40, 40, 40, 42, 42, 42, 43 } },
-    },
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "The opposing Swampert made a substitute!" },
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Carnivine used Bullet Seed!" },
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "The substitute took damage for the opposing Swampert!" },
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "The substitute took damage for the opposing Swampert!" },//2or 3 hits
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "The opposing Swampert's substitute faded!" },
+        { .expectationType = EXPECTATION_TYPE_HP_BAR, .battlerIDOrPartySlot = BATTLER_ENEMY_FIRST, .expectationValue.hpTaken = { 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 24 } },  
+        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "It's super effective!" },
+        { .expectationType = EXPECTATION_TYPE_MESSAGE_CONTAINS, .expectationValue.message = "was hit" },
+    }
 }
 END_TEST
