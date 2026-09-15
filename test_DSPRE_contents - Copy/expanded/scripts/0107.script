@@ -1,0 +1,86 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0107
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	RenderCutscene 2
+	Movement Overworld.0 Action#1
+	WaitMovement
+	TrainerBattle TRAINER_REI_019 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	Message 1
+	WaitTime 30 0x800C
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	CloseMessage
+	RemoveOW Overworld.0
+	SetFlag 607
+	SetVar 0x40FD 1
+	CompareVarValue 0x4131 0
+	CallIf EQUAL Function#2
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	Call Function#3
+	WaitTime 60 0x800C
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	EndGameScreen 1
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	LostBattle
+	ReleaseAll
+End
+
+Function 2:
+	SetVar 0x4131 1
+	ClearFlag 766
+	ClearFlag 768
+	ClearFlag 767
+Return
+
+Function 3:
+	GetPartyCount 0x8004
+	SetVar 0x8005 0
+	GetPartyPokemonID 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	GiveRibbon 0x8005 72
+	IncrementVar 0x8005 1
+	CompareVars 0x8005 0x8004
+	JumpIf LESS Function#5
+Return
+
+Function 4:
+	IncrementVar 0x8005 1
+	CompareVars 0x8005 0x8004
+	JumpIf LESS Function#5
+Return
+
+Function 5:
+	GetPartyPokemonID 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	GiveRibbon 0x8005 72
+	IncrementVar 0x8005 1
+	CompareVars 0x8005 0x8004
+	JumpIf LESS Function#5
+Return
+
+//===== ACTIONS =====//
+Action 1:
+	FaceSouth 0x1
+End
+

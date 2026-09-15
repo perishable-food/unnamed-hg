@@ -1,0 +1,192 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0133
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_GROUDON 0
+	Message 0
+	WaitCry
+	CloseMessage
+	SetFlag 164
+	WildBattleSp SPECIES_GROUDON 50 0
+	ClearFlag 164
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	GetBattleOutcome 0x4002
+	CompareVarValue 0x4002 3
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x4002 4
+	JumpIf EQUAL Function#3
+	Message 1
+	WaitButton
+	CloseMessage
+	SetFlag 395
+	ReleaseAll
+End
+
+Script 2:
+	CompareVarValue 0x40F9 4
+	JumpIf GREATER/EQUAL Function#4
+	CheckVersion 0x4000
+	CompareVarValue 0x4000 8
+	JumpIf DIFFERENT Function#5
+Jump Function#6
+
+Script 3:
+	CheckFlag 164
+	JumpIf EQUAL Function#7
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	LostBattle
+	ReleaseAll
+End
+
+Function 2:
+	Message 1
+	WaitButton
+	CloseMessage
+	SetFlag 395
+	ReleaseAll
+End
+
+Function 3:
+	SetVar 0x40F9 4
+	SetFlag 377
+	ClearFlag 723
+	AddOW Overworld.1
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#8
+	Movement Overworld.1 Action#1
+	WaitMovement
+	Movement Player Action#2
+	WaitMovement
+Jump Function#9
+
+Function 4:
+End
+
+Function 5:
+Jump Function#10
+
+Function 6:
+	SetFlag 720
+	SetFlag 723
+End
+
+Function 7:
+	SetFlag 720
+	RemoveOW Overworld.0
+	ClearFlag 164
+End
+
+Function 8:
+	Movement Overworld.1 Action#3
+	WaitMovement
+	Movement Player Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 2
+	CloseMessage
+	Movement Overworld.1 Action#5
+	WaitMovement
+	Message 3
+	CloseMessage
+	Movement Overworld.1 Action#6
+	WaitMovement
+	Message 4
+	CloseMessage
+	Movement Overworld.1 Action#7
+	WaitMovement
+	RemoveOW Overworld.1
+	SetFlag 723
+	SetFlag 719
+	ReleaseAll
+End
+
+Function 9:
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 2
+	CloseMessage
+	Movement Overworld.1 Action#5
+	WaitMovement
+	Message 3
+	CloseMessage
+	Movement Overworld.1 Action#6
+	WaitMovement
+	Message 4
+	CloseMessage
+	Movement Overworld.1 Action#7
+	WaitMovement
+	RemoveOW Overworld.1
+	SetFlag 723
+	SetFlag 719
+	ReleaseAll
+End
+
+Function 10:
+	CheckFlag 395
+	JumpIf EQUAL Function#4
+	CheckItem ITEM_RED_ORB 1 0x4000
+	CompareVarValue 0x4000 1
+	JumpIf GREATER/EQUAL Function#11
+Jump Function#6
+
+Function 11:
+	SetFlag 723
+	ClearFlag 720
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkNorth8 0x8
+	WalkOnSpotNorth8 0x1
+End
+
+Action 2:
+	WalkOnSpotSouth8 0x1
+	WalkSouth8 0x1
+End
+
+Action 3:
+	WalkNorth8 0xA
+	WalkOnSpotNorth8 0x1
+End
+
+Action 4:
+	WalkOnSpotSouth8 0x1
+End
+
+Action 5:
+	WalkOnSpotSouth8 0x1
+	WalkSouth16 0x2
+	WalkOnSpotNorth8 0x1
+End
+
+Action 6:
+	WalkNorth8 0x2
+	WalkOnSpotNorth8 0x1
+End
+
+Action 7:
+	WalkSouth8 0x8
+End
+

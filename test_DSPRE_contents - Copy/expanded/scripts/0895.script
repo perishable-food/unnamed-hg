@@ -1,0 +1,29 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0895
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_N_LINEAR
+	WaitTime 40 0x8004
+	StopFanfare SEQ_SE_GS_N_LINEAR
+	CMD_722 0 1 401 14 11
+	SetVar 0x411F 0
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//
+Action 1:
+	WalkEast8 0x7
+	WalkNorth8 0x2
+End
+

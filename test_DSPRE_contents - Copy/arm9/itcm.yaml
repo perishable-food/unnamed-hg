@@ -1,0 +1,4 @@
+base_address: 33521664
+code_size: 1568
+bss_size: 0
+kind: Itcm

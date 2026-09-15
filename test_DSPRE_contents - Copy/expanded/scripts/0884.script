@@ -1,0 +1,70 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0884
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#1
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+Jump Function#3
+
+Function 2:
+	CheckItem ITEM_CLEAR_BELL 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#4
+	CheckItem ITEM_RAINBOW_FEATHER 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#5
+Jump Function#6
+
+Function 3:
+	CheckItem ITEM_TIDAL_BELL 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#7
+	CheckItem ITEM_SILVER_FEATHER 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#8
+Jump Function#6
+
+Function 4:
+	Message 3
+Jump Function#9
+
+Function 5:
+	Message 1
+Jump Function#9
+
+Function 6:
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 4
+Jump Function#9
+
+Function 8:
+	Message 2
+Jump Function#9
+
+Function 9:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

@@ -1,0 +1,311 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0033
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetFlag 439
+	SetVar 0x4125 0
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#1
+	ClearFlag 439
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	CompareVarValue 0x4077 4
+	JumpIf EQUAL Function#2
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+End
+
+Function 2:
+	GetItemQuantity ITEM_BASEMENT_KEY 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#3
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 0
+	CloseMessage
+	WaitTime 16 0x800C
+	GetPlayerDirection 0x4000
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.0 Action#1
+Jump Function#5
+
+Function 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#6
+	Movement Overworld.0 Action#2
+Jump Function#5
+
+Function 5:
+	WaitMovement
+	CompareVarValue 0x4000 3
+	JumpIf DIFFERENT Function#7
+	Movement Overworld.0 Action#3
+Jump Function#8
+
+Function 6:
+	Movement Overworld.0 Action#4
+	WaitMovement
+	CompareVarValue 0x4000 3
+	JumpIf DIFFERENT Function#7
+	Movement Overworld.0 Action#3
+Jump Function#8
+
+Function 7:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#8
+	Movement Overworld.0 Action#5
+	WaitMovement
+	Message 1
+	CloseMessage
+	CompareVarValue 0x4000 3
+	JumpIf DIFFERENT Function#9
+	Movement Overworld.0 Action#6
+Jump Function#10
+
+Function 8:
+	WaitMovement
+	Message 1
+	CloseMessage
+	CompareVarValue 0x4000 3
+	JumpIf DIFFERENT Function#9
+	Movement Overworld.0 Action#6
+Jump Function#10
+
+Function 9:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.0 Action#7
+	WaitMovement
+	TextPlayerName 0
+	Message 2
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.0 Action#8
+Jump Function#12
+
+Function 10:
+	WaitMovement
+	TextPlayerName 0
+	Message 2
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.0 Action#8
+Jump Function#12
+
+Function 11:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.0 Action#9
+Jump Function#12
+
+Function 12:
+	WaitMovement
+	SetFlag 710
+	ClearFlag 711
+	AddOW Overworld.2
+	RemoveOW Overworld.0
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.2 Action#10
+Jump Function#15
+
+Function 13:
+	Movement Overworld.0 Action#11
+	WaitMovement
+	SetFlag 710
+	ClearFlag 711
+	AddOW Overworld.2
+	RemoveOW Overworld.0
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.2 Action#10
+Jump Function#15
+
+Function 14:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.2 Action#12
+Jump Function#15
+
+Function 15:
+	WaitMovement
+	Message 3
+	CloseMessage
+	TrainerBattle TRAINER_PETREL_487 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#17
+	Message 4
+	SetVar 0x8004 476
+	SetVar 0x8005 1
+	CommonScript 2008
+	CloseMessage
+	ReleaseAll
+	SetVar 0x40E7 2
+	ClearFlag 567
+End
+
+Function 16:
+	Movement Overworld.2 Action#13
+	WaitMovement
+	Message 3
+	CloseMessage
+	TrainerBattle TRAINER_PETREL_487 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#17
+	Message 4
+	SetVar 0x8004 476
+	SetVar 0x8005 1
+	CommonScript 2008
+	CloseMessage
+	ReleaseAll
+	SetVar 0x40E7 2
+	ClearFlag 567
+End
+
+Function 17:
+	LostBattle
+	ClearFlag 710
+	SetFlag 711
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceSouth 0x1
+	EmoteExclamation 0x1
+End
+
+Action 2:
+	FaceEast 0x1
+	EmoteExclamation 0x1
+End
+
+Action 3:
+	LockDir 0x1
+	WalkEast4 0x1
+	ReleaseDir 0x1
+End
+
+Action 4:
+	FaceWest 0x1
+	EmoteExclamation 0x1
+End
+
+Action 5:
+	LockDir 0x1
+	WalkWest4 0x1
+	ReleaseDir 0x1
+End
+
+Action 6:
+	WalkWest4 0x1
+End
+
+Action 7:
+	WalkEast4 0x1
+End
+
+Action 8:
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+End
+
+Action 9:
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+End
+
+Action 10:
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+End
+
+Action 11:
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+End
+
+Action 12:
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+End
+
+Action 13:
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+End
+

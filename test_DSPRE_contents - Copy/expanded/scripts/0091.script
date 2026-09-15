@@ -1,0 +1,521 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0091
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#1
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Movement Overworld.5 Action#2
+	WaitMovement
+	Movement Overworld.5 Action#3
+	Movement Overworld.6 Action#4
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 0 1
+	CloseMessage
+	Movement Overworld.5 Action#5
+	Movement Overworld.6 Action#6
+	WaitMovement
+	RemoveOW Overworld.5
+	RemoveOW Overworld.6
+	SetFlag 486
+	ReleaseAll
+	SetVar 0x40AC 1
+End
+
+Script 3:
+	MecScript
+	LockAll
+	Movement Player Action#2
+	WaitMovement
+	CommonScript 2031
+	ClearFlag 509
+	AddOW Overworld.7
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4001 17
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.7 Action#7
+Jump Function#2
+
+Script 4:
+	MecScript
+	LockAll
+	Movement Player Action#2
+	WaitMovement
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 23
+	JumpIf DIFFERENT Function#3
+	Movement Player Action#8
+Jump Function#4
+
+Script 5:
+	CompareVarValue 0x40AC 4
+	JumpIf GREATER/EQUAL Function#5
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckTrainerFlag TRAINER_GRUNT_404
+	JumpIf LESS Function#6
+	CheckTrainerFlag TRAINER_GRUNT_222
+	JumpIf LESS Function#6
+	TextPlayerName 0
+	Message 12
+	CloseMessage
+	PlayFanfare SEQ_SE_DP_DOOR10
+	Movement Overworld.10 Action#9
+	Movement Overworld.11 Action#9
+	WaitMovement
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetFlag 211
+End
+
+Script 7:
+	CheckTrainerFlag TRAINER_GRUNT_404
+	JumpIf LESS Function#7
+	CheckTrainerFlag TRAINER_GRUNT_222
+	JumpIf LESS Function#7
+	CompareVarValue 0x40AC 3
+	JumpIf GREATER/EQUAL Function#7
+	SetVar 0x40AC 2
+End
+
+Script 8:
+	MecScript
+	LockAll
+	Movement Overworld.16 Action#10
+	WaitMovement
+	Message 10
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Overworld.16 Action#11
+	Movement Player Action#12
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	SetVar 0x40AC 6
+	RemoveOW Overworld.16
+	SetFlag 588
+	ClearFlag 589
+	ReleaseAll
+End
+
+Script 9:
+	CompareVarValue 0x40AC 4
+	JumpIf GREATER/EQUAL Function#8
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4001 18
+	JumpIf DIFFERENT Function#9
+	Movement Overworld.7 Action#13
+Jump Function#2
+
+Function 2:
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#14
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextRivalName 0
+	Message 3
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.7 Action#15
+	Movement Player Action#16
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Movement Overworld.7 Action#17
+	WaitMovement
+	CommonScript 2032
+	RemoveOW Overworld.7
+	SetFlag 509
+	ReleaseAll
+	SetVar 0x40AC 3
+End
+
+Function 3:
+	Movement Player Action#18
+	Movement Overworld.18 Action#19
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextPlayerName 0
+	Message 4
+	CloseMessage
+	Movement Overworld.18 Action#20
+	WaitMovement
+	Message 5
+	CloseMessage
+	Movement Overworld.18 Action#21
+	WaitMovement
+	ClearFlag 500
+	AddOW Overworld.8
+	SetFlag 640
+	RemoveOW Overworld.18
+	Movement Overworld.8 Action#22
+	WaitMovement
+	Message 6
+	CloseMessage
+	TrainerBattle TRAINER_PETREL_488 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	Message 7
+	CloseMessage
+	Movement Overworld.8 Action#23
+	WaitMovement
+	RemoveOW Overworld.8
+	SetFlag 500
+	Movement Overworld.9 Action#24
+	WaitMovement
+	Message 8
+	CloseMessage
+	Message 9
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Overworld.9 Action#25
+	Movement Player Action#26
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	SetVar 0x40AC 4
+	RemoveOW Overworld.9
+	SetFlag 586
+	ClearFlag 587
+	ReleaseAll
+End
+
+Function 4:
+	Movement Overworld.18 Action#19
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextPlayerName 0
+	Message 4
+	CloseMessage
+	Movement Overworld.18 Action#20
+	WaitMovement
+	Message 5
+	CloseMessage
+	Movement Overworld.18 Action#21
+	WaitMovement
+	ClearFlag 500
+	AddOW Overworld.8
+	SetFlag 640
+	RemoveOW Overworld.18
+	Movement Overworld.8 Action#22
+	WaitMovement
+	Message 6
+	CloseMessage
+	TrainerBattle TRAINER_PETREL_488 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	Message 7
+	CloseMessage
+	Movement Overworld.8 Action#23
+	WaitMovement
+	RemoveOW Overworld.8
+	SetFlag 500
+	Movement Overworld.9 Action#24
+	WaitMovement
+	Message 8
+	CloseMessage
+	Message 9
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Overworld.9 Action#25
+	Movement Player Action#26
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	SetVar 0x40AC 4
+	RemoveOW Overworld.9
+	SetFlag 586
+	ClearFlag 587
+	ReleaseAll
+End
+
+Function 5:
+End
+
+Function 6:
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+End
+
+Function 8:
+	SetOWPosition Overworld.10 22 0 15 Up
+	SetOWPosition Overworld.11 22 0 15 Up
+End
+
+Function 9:
+	Movement Overworld.7 Action#27
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#14
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextRivalName 0
+	Message 3
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.7 Action#15
+	Movement Player Action#16
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Movement Overworld.7 Action#17
+	WaitMovement
+	CommonScript 2032
+	RemoveOW Overworld.7
+	SetFlag 509
+	ReleaseAll
+	SetVar 0x40AC 3
+End
+
+Function 10:
+	LostBattle
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkWest8 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+End
+
+Action 3:
+	WalkOnSpotSouth8 0x1
+	WalkSouth8 0x3
+	WalkEast8 0x3
+End
+
+Action 4:
+	Delay8 0x1
+	Delay2 0x1
+	WalkWest8 0x1
+	WalkSouth8 0x3
+	WalkEast8 0x2
+End
+
+Action 5:
+	WalkWest8 0x9
+End
+
+Action 6:
+	Delay2 0x1
+	WalkEast8 0x1
+	WalkWest8 0x9
+End
+
+Action 7:
+	WalkSouth8 0x9
+	WalkEast8 0x2
+End
+
+Action 8:
+	WalkNorth8 0x5
+	WalkWest8 0x1
+	WalkOnSpotWest8 0x1
+End
+
+Action 9:
+	WalkWest8 0x3
+End
+
+Action 10:
+	JumpOnSpotEast8 0x2
+End
+
+Action 11:
+	FaceSouth 0x1
+	JumpOnSpotSouth8 0x1
+	WalkSouth4 0xA
+End
+
+Action 12:
+	Delay8 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 13:
+	WalkSouth8 0xA
+	WalkEast8 0x2
+End
+
+Action 14:
+	WalkWest8 0x2
+End
+
+Action 15:
+	WalkEast4 0x1
+End
+
+Action 16:
+	LockDir 0x1
+	WalkEast4 0x1
+	JumpEast8 0x1
+	ReleaseDir 0x1
+End
+
+Action 17:
+	WalkOnSpotNorth2 0x1
+	WalkOnSpotWest2 0x1
+	Delay8 0x1
+	WalkWest8 0x2
+	WalkNorth8 0x9
+End
+
+Action 18:
+	WalkNorth8 0x5
+	WalkWest8 0x2
+	WalkOnSpotWest8 0x1
+End
+
+Action 19:
+	Delay8 0x4
+	WalkOnSpotEast8 0x1
+End
+
+Action 20:
+	EmoteExclamation 0x1
+	Delay8 0x2
+End
+
+Action 21:
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+End
+
+Action 22:
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+	FaceSouth 0x1
+	FaceWest 0x1
+	FaceNorth 0x1
+	FaceEast 0x1
+End
+
+Action 23:
+	LockDir 0x1
+	WalkWest16 0x1
+	ReleaseDir 0x1
+	Delay8 0x1
+	WalkSouth4 0x5
+	LockDir 0x1
+	JumpNorth8 0x1
+	ReleaseDir 0x1
+	WalkSouth4 0x1
+	WalkEast4 0x3
+	WalkSouth4 0x5
+	WalkWest4 0x7
+	WalkNorth4 0xC
+	WalkWest4 0x4
+End
+
+Action 24:
+	WalkSouth8 0x3
+	WalkEast8 0x2
+	JumpOnSpotEast8 0x2
+End
+
+Action 25:
+	FaceSouth 0x1
+	WalkSouth4 0x1
+	WalkEast4 0x2
+	WalkSouth4 0x9
+	WalkWest4 0x7
+	WalkNorth4 0xD
+	WalkWest4 0x5
+End
+
+Action 26:
+	Delay8 0x3
+	FaceSouth 0x1
+	Delay8 0x3
+	WalkSouth8 0x3
+End
+
+Action 27:
+	WalkSouth8 0xB
+	WalkEast8 0x2
+End
+

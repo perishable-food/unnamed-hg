@@ -1,0 +1,213 @@
+{
+  "key": 3245,
+  "messages": [
+    {
+      "id": "msg_0215_00000",
+      "en_US": "DONE!"
+    },
+    {
+      "id": "msg_0215_00001",
+      "en_US": "Is your Pokémon all dressed up?"
+    },
+    {
+      "id": "msg_0215_00002",
+      "en_US": "Would you like to save this design?"
+    },
+    {
+      "id": "msg_0215_00003",
+      "en_US": "There is no more space."
+    },
+    {
+      "id": "msg_0215_00004",
+      "en_US": "  "
+    },
+    {
+      "id": "msg_0215_00005",
+      "en_US": "   "
+    },
+    {
+      "id": "msg_0215_00006",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00007",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00008",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00009",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00010",
+      "en_US": "      "
+    },
+    {
+      "id": "msg_0215_00011",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00012",
+      "en_US": "        "
+    },
+    {
+      "id": "msg_0215_00013",
+      "en_US": "      "
+    },
+    {
+      "id": "msg_0215_00014",
+      "en_US": "     "
+    },
+    {
+      "id": "msg_0215_00015",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00016",
+      "en_US": "        "
+    },
+    {
+      "id": "msg_0215_00017",
+      "en_US": "        "
+    },
+    {
+      "id": "msg_0215_00018",
+      "en_US": "       "
+    },
+    {
+      "id": "msg_0215_00019",
+      "en_US": "                                                                                                                         "
+    },
+    {
+      "id": "msg_0215_00020",
+      "en_US": "                                                     "
+    },
+    {
+      "id": "msg_0215_00021",
+      "en_US": "                                                   "
+    },
+    {
+      "id": "msg_0215_00022",
+      "en_US": "                                                    "
+    },
+    {
+      "id": "msg_0215_00023",
+      "en_US": "                                                    "
+    },
+    {
+      "id": "msg_0215_00024",
+      "en_US": "                                                     "
+    },
+    {
+      "id": "msg_0215_00025",
+      "en_US": "                                                                                      "
+    },
+    {
+      "id": "msg_0215_00026",
+      "en_US": "                                                                          "
+    },
+    {
+      "id": "msg_0215_00027",
+      "en_US": "                                                                                     "
+    },
+    {
+      "id": "msg_0215_00028",
+      "en_US": "                                                                                                              "
+    },
+    {
+      "id": "msg_0215_00029",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00030",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00031",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00032",
+      "en_US": "                        "
+    },
+    {
+      "id": "msg_0215_00033",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00034",
+      "en_US": "                          "
+    },
+    {
+      "id": "msg_0215_00035",
+      "en_US": "                        "
+    },
+    {
+      "id": "msg_0215_00036",
+      "en_US": "                       "
+    },
+    {
+      "id": "msg_0215_00037",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00038",
+      "en_US": "                          "
+    },
+    {
+      "id": "msg_0215_00039",
+      "en_US": "                          "
+    },
+    {
+      "id": "msg_0215_00040",
+      "en_US": "                         "
+    },
+    {
+      "id": "msg_0215_00041",
+      "en_US": "                                                                            "
+    },
+    {
+      "id": "msg_0215_00042",
+      "en_US": "                                                                             "
+    },
+    {
+      "id": "msg_0215_00043",
+      "en_US": "           "
+    },
+    {
+      "id": "msg_0215_00044",
+      "en_US": "             "
+    },
+    {
+      "id": "msg_0215_00045",
+      "en_US": "{STRVAR_1, 28, 0, 0}"
+    },
+    {
+      "id": "msg_0215_00046",
+      "en_US": "Communicating. Please stand by..."
+    },
+    {
+      "id": "msg_0215_00047",
+      "en_US": [
+        "You can see your Accessories on the\\n",
+        "left side of the lower screen.\\r",
+        "Touch an Accessory, drag it to\\n",
+        "your Pokémon on the right, and\\f",
+        "position it securely.\\r",
+        "You can put on ten Accessories,\\n",
+        "so you should check for the right\\f",
+        "ones using the arrow buttons.\\r",
+        "Change the background with the\\n",
+        "square button at the center right.\\r",
+        "OK? Let’s begin dressing up!"
+      ]
+    },
+    {
+      "id": "msg_0215_00048",
+      "en_US": []
+    }
+  ]
+}

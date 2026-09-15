@@ -1,0 +1,108 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0805
+ * Generated: 9/2/2026 12:10:08 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	CloseMessage
+	Movement Overworld.5 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	CloseMessage
+	Movement Overworld.4 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 3
+	CloseMessage
+	Movement Overworld.2 Action#2
+	WaitMovement
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckItem ITEM_COIN_CASE 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	Message 4
+	CloseMessage
+	Movement Overworld.1 Action#2
+	WaitMovement
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	CloseMessage
+	Movement Overworld.3 Action#3
+	WaitMovement
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 5
+	CloseMessage
+	Movement Overworld.1 Action#2
+	WaitMovement
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkOnSpotNorth8 0x1
+End
+
+Action 2:
+	WalkOnSpotSouth8 0x1
+End
+
+Action 3:
+	WalkOnSpotEast8 0x1
+End
+

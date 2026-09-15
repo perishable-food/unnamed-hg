@@ -1,0 +1,278 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0860
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetVar 0x8007 3
+	CommonScript 2002
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 12
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#1
+	CMD_815 0
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	CloseMessage
+	EasyChat 0x800C 0x8000 0x8001
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	Message 13
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	CloseMessage
+	CMD_815 0
+	EasyChat 0x800C 0x8002 0x8003
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CheckPrimoPasswordWallpaper 0x800C 0x8000 0x8001 0x8002 0x8003
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#3
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+Jump Function#5
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 709
+	JumpIf EQUAL Function#6
+	Message 21
+Jump Function#7
+
+//===== FUNCTIONS =====//
+Function 1:
+	CloseTouchScreen
+	Message 15
+	WaitButton
+Jump Function#8
+
+Function 2:
+	Message 15
+	WaitButton
+Jump Function#8
+
+Function 3:
+	CheckPrimoPasswordEggs 0x800C 0x8000 0x8001 0x8002 0x8003
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#4
+	CompareVarValue 0x800C 8
+	JumpIf EQUAL Function#9
+	CompareVarValue 0x800C 9
+	JumpIf EQUAL Function#10
+	CompareVarValue 0x800C 10
+	JumpIf EQUAL Function#11
+	CheckFlag 345
+	JumpIf EQUAL Function#4
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#12
+	SetFlag 345
+	Message 18
+	TextPlayerName 0
+	TextPokemon 1 SPECIES_MAREEP 0 0
+	GivePokemonEgg SPECIES_MAREEP 14
+Jump Function#13
+
+Function 4:
+	Message 14
+	WaitButton
+Jump Function#8
+
+Function 5:
+	Message 16
+	WaitButton
+Jump Function#8
+
+Function 6:
+	TextPlayerTrainerType 0
+	Message 26
+Jump Function#7
+
+Function 7:
+	Message 22
+	OpenTouchScreen
+	TextUnionRoomTrainerClassOptions
+	MultiTouchStandardText 1 1 0 1 0x800C
+	CreateMultiTouchBox 53 255 0
+	CreateMultiTouchBox 54 255 1
+	CreateMultiTouchBox 55 255 2
+	CreateMultiTouchBox 56 255 3
+	CreateMultiTouchBox 44 255 4
+	CloseMultiTouch
+	SetVarFromVariable 0x8004 0x800C
+	SetVarFromVariable 0x8008 0x800C
+	CompareVarValue 0x8008 4
+	JumpIf EQUAL Function#14
+	CompareVarValue 0x8008 0xFFFE
+	JumpIf EQUAL Function#14
+	CheckUnionRoomTrainerClass 0x8004 0x8005
+	TextTrainerClass 0 0x8005
+	TextCapitalize 0
+	Message 23
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#15
+Jump Function#7
+
+Function 8:
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	CheckFlag 345
+	JumpIf EQUAL Function#4
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#12
+	SetFlag 345
+	Message 18
+	TextPlayerName 0
+	TextPokemon 1 SPECIES_MAREEP 0 0
+	GivePokemonEgg SPECIES_MAREEP 14
+Jump Function#13
+
+Function 10:
+	CheckFlag 346
+	JumpIf EQUAL Function#4
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#12
+	SetFlag 346
+	Message 18
+	TextPlayerName 0
+	TextPokemon 1 SPECIES_WOOPER 0 0
+	GivePokemonEgg SPECIES_WOOPER 14
+Jump Function#13
+
+Function 11:
+	CheckFlag 347
+	JumpIf EQUAL Function#4
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#12
+	SetFlag 347
+	Message 18
+	TextPlayerName 0
+	TextPokemon 1 SPECIES_SLUGMA 0 0
+	GivePokemonEgg SPECIES_SLUGMA 14
+Jump Function#13
+
+Function 12:
+	Message 20
+	WaitButton
+Jump Function#8
+
+Function 13:
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.8 Action#1
+Jump Function#17
+
+Function 14:
+	CloseTouchScreen
+	Message 25
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	CloseTouchScreen
+	TextTrainerClass 0 0x8005
+	Message 24
+	SetFlag 709
+	CheckUnionRoomTrainerSprite 0x8004 0x8005
+	SetUnionRoomSprite 0x8005
+Jump Function#18
+
+Function 16:
+	Movement Overworld.8 Action#2
+	WaitMovement
+	PlaySound SEQ_ME_TAMAGO_GET
+	Message 19
+	WaitSound
+	WaitButton
+Jump Function#8
+
+Function 17:
+	WaitMovement
+	PlaySound SEQ_ME_TAMAGO_GET
+	Message 19
+	WaitSound
+	WaitButton
+Jump Function#8
+
+Function 18:
+	Message 25
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+	Delay8 0x2
+	WalkOnSpotSouth8 0x1
+End
+
+Action 2:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+	Delay8 0x2
+	WalkOnSpotEast8 0x1
+End
+

@@ -1,0 +1,144 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0001
+ * Generated: 9/2/2026 12:10:03 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 8:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 9:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	WorldMapScreen
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Script 10:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonSelection
+	GetSelectedPartySlot 0x8005
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x8005 255
+	JumpIf EQUAL Function#1
+	GetPartyPokemonID 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CheckHasLearnableMoves 0x800C 0x8005
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	RememberMoveScreen 0x8005
+	ResponseTeachMove 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#1
+	ReleaseAll
+End
+
+Script 11:
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	ReleaseAll
+End
+
+Function 2:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

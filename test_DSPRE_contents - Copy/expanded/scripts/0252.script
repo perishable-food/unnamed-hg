@@ -1,0 +1,315 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0252
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	WaitMovement
+	GetPlayerPosition 0x8000 0x8001
+	ClearFlag 669
+	AddOW Overworld.10
+	CompareVarValue 0x8001 172
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.10 Action#2
+Jump Function#2
+
+Script 2:
+	MecScript
+	LockAll
+	PlayCry SPECIES_SUICUNE 0
+	Release Overworld.11
+	ShakeOverworld Overworld.11 2 90 2 0
+	Lock Overworld.11
+	WaitCry
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.11 Action#3
+	Movement Player Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	ClearFlag 675
+	AddOW Overworld.12
+	CommonScript 2042
+	Movement Overworld.12 Action#5
+	WaitMovement
+	Message 7
+	CloseMessage
+	Movement Overworld.12 Action#6
+	WaitMovement
+	TextPlayerName 0
+	Message 8
+	CloseMessage
+	Movement Overworld.12 Action#7
+	WaitMovement
+	Message 9
+	CloseMessage
+	Movement Overworld.12 Action#8
+	WaitMovement
+	CommonScript 2043
+	RemoveOW Overworld.11
+	RemoveOW Overworld.12
+	SetFlag 670
+	SetFlag 675
+	SetVar 0x4092 0
+	SetVar 0x4070 1
+	SetVar 0x4071 1
+	ClearFlag 671
+	ReleaseAll
+End
+
+Script 3:
+	SetIconBoard 0 1 1 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 4:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 1 0x800C
+	CommonScript 2000
+End
+
+Script 5:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 2 0x800C
+	CommonScript 2000
+End
+
+Script 6:
+	SetIconBoard 3 1 2 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x8001 173
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.10 Action#9
+Jump Function#2
+
+Function 2:
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#10
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 5
+	CloseMessage
+	Movement Overworld.10 Action#11
+	WaitMovement
+	SetVar 0x8004 423
+	SetVar 0x8005 1
+	CommonScript 2033
+	Message 6
+	CloseMessage
+	CompareVarValue 0x8001 172
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.10 Action#12
+Jump Function#5
+
+Function 3:
+	CompareVarValue 0x8001 174
+	JumpIf DIFFERENT Function#6
+	Movement Overworld.10 Action#13
+Jump Function#2
+
+Function 4:
+	CompareVarValue 0x8001 173
+	JumpIf DIFFERENT Function#7
+	Movement Overworld.10 Action#14
+Jump Function#5
+
+Function 5:
+	WaitMovement
+	SetFlag 669
+	RemoveOW Overworld.10
+	SetVar 0x4091 1
+	ReleaseAll
+End
+
+Function 6:
+	CompareVarValue 0x8001 175
+	JumpIf DIFFERENT Function#8
+	Movement Overworld.10 Action#15
+Jump Function#2
+
+Function 7:
+	CompareVarValue 0x8001 174
+	JumpIf DIFFERENT Function#9
+	Movement Overworld.10 Action#16
+Jump Function#5
+
+Function 8:
+	Movement Overworld.10 Action#17
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#10
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 5
+	CloseMessage
+	Movement Overworld.10 Action#11
+	WaitMovement
+	SetVar 0x8004 423
+	SetVar 0x8005 1
+	CommonScript 2033
+	Message 6
+	CloseMessage
+	CompareVarValue 0x8001 172
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.10 Action#12
+Jump Function#5
+
+Function 9:
+	CompareVarValue 0x8001 175
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.10 Action#18
+Jump Function#5
+
+Function 10:
+	Movement Overworld.10 Action#19
+	WaitMovement
+	SetFlag 669
+	RemoveOW Overworld.10
+	SetVar 0x4091 1
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+End
+
+Action 2:
+	WalkSouth4 0x1
+	WalkWest4 0x1
+End
+
+Action 3:
+	Delay4 0x3
+	WalkWest2 0x2
+	JumpFarWest 0x1
+	WalkWest2 0x2
+	JumpFarNorth 0x2
+	0070 0x1
+End
+
+Action 4:
+	EmoteExclamation 0x1
+	LockDir 0x1
+	WalkNorth4 0x4
+	ReleaseDir 0x1
+	Delay16 0x1
+	WalkEast8 0x1
+End
+
+Action 5:
+	WalkEast8 0x4
+	WalkNorth8 0x3
+	WalkEast8 0x6
+End
+
+Action 6:
+	WalkNorth8 0x1
+	FaceWest 0x1
+End
+
+Action 7:
+	WalkEast8 0x1
+End
+
+Action 8:
+	WalkEast8 0x9
+End
+
+Action 9:
+	WalkSouth4 0x2
+	WalkWest4 0x1
+End
+
+Action 10:
+	FaceEast 0x1
+	LockDir 0x1
+	JumpFarWest 0x1
+	ReleaseDir 0x1
+End
+
+Action 11:
+	WalkWest8 0x2
+End
+
+Action 12:
+	WalkSouth8 0x1
+	WalkWest8 0x5
+	WalkSouth8 0x2
+	WalkWest8 0x5
+End
+
+Action 13:
+	WalkSouth4 0x3
+	WalkWest4 0x1
+End
+
+Action 14:
+	WalkSouth8 0x1
+	WalkWest8 0x5
+	WalkSouth8 0x1
+	WalkWest8 0x5
+End
+
+Action 15:
+	WalkSouth4 0x4
+	WalkWest4 0x1
+End
+
+Action 16:
+	WalkSouth8 0x1
+	WalkWest8 0xA
+End
+
+Action 17:
+	WalkSouth4 0x5
+	WalkWest4 0x1
+End
+
+Action 18:
+	WalkSouth8 0x1
+	WalkWest8 0x4
+	WalkNorth8 0x1
+	WalkWest8 0x5
+End
+
+Action 19:
+	WalkNorth8 0x1
+	WalkWest8 0xA
+End
+

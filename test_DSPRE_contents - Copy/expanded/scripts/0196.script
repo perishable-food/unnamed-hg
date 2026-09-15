@@ -1,0 +1,293 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0196
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 288
+	JumpIf EQUAL Function#1
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 289
+	JumpIf EQUAL Function#2
+	Message 8
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	PartyPokemonTradeScreen
+	GetSelectedPartySlot 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#3
+	InitTrade 8
+	SetVarFromVariable 0x8004 0x800C
+	GetPartyPokemonID 0x8004 0x8005
+	GetRequestedPokemon 0x800C
+	CompareVars 0x8005 0x800C
+	JumpIf DIFFERENT Function#4
+	TradePokemonScreen 0x8004
+	EndTrade
+	SetFlag 289
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckItem ITEM_MACHINE_PART 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#5
+	CheckFlag 288
+	JumpIf EQUAL Function#6
+	SetFlag 288
+	SetVar 0x411B 1
+	Message 13
+	WaitButton
+	CloseMessage
+	Movement Overworld.0 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+Script 8:
+	MecScript
+	LockAll
+	PlayFanfare SEQ_SE_GS_PHONE0
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.0 Action#2
+	Movement Player Action#3
+	Movement Overworld.1 Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 1
+	CloseMessage
+	Movement Overworld.0 Action#5
+	Movement Player Action#6
+	WaitMovement
+	Message 2
+	CloseMessage
+	Movement Overworld.0 Action#7
+	WaitMovement
+	ClearFlag 596
+	SetVar 0x411B 0
+	SetVar 0x411C 1
+	ReleaseAll
+End
+
+Script 9:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 10:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	Message 12
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	EndTrade
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 14
+	CloseMessage
+	TakeItem ITEM_MACHINE_PART 1 0x800C
+	Movement Overworld.6 Action#8
+	WaitMovement
+	WaitFanfare SEQ_SE_GS_W012
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 467 0 13 7 Down
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	Message 15
+	Movement Overworld.6 Action#9
+	WaitMovement
+	SetFlag 280
+	Message 16
+	SetVar 0x8004 384
+	SetVar 0x8005 1
+	CommonScript 2033
+	Message 17
+	WaitButton
+	CloseMessage
+	SetFlag 600
+	ClearFlag 601
+	SetFlag 763
+	ClearFlag 764
+	SetVar 0x40FF 1
+	ReleaseAll
+End
+
+Function 6:
+	Message 13
+	WaitButton
+	CloseMessage
+	Movement Overworld.0 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceSouth 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+	WalkSouth8 0x1
+	WalkEast8 0x2
+	WalkNorth8 0x3
+	WalkEast8 0x5
+	WalkNorth8 0x2
+End
+
+Action 3:
+	Delay32 0x2
+	WalkNorth8 0x1
+	FaceSouth 0x1
+	Delay16 0x1
+	FaceEast 0x1
+End
+
+Action 4:
+	Delay32 0x4
+	FaceSouth 0x1
+End
+
+Action 5:
+	WalkSouth8 0x2
+	WalkWest8 0x5
+	FaceNorth 0x1
+End
+
+Action 6:
+	Delay8 0x7
+	FaceSouth 0x1
+End
+
+Action 7:
+	WalkSouth8 0x3
+	WalkWest8 0x2
+	WalkNorth8 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 8:
+	WalkOnSpotWest8 0x1
+	Delay2 0x1
+	WalkOnSpotWest8 0x1
+	Delay2 0x1
+	WalkOnSpotWest8 0x1
+End
+
+Action 9:
+	FaceNorth 0x1
+End
+

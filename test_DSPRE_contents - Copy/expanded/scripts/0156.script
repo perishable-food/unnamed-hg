@@ -1,0 +1,275 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0156
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x40E1 1
+	JumpIf GREATER Function#1
+Jump Function#2
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CMD_490 0x40CB
+	CompareVarValue 0x40CB 7
+	JumpIf LESS Function#3
+	Message 9
+Jump Function#4
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+End
+
+Script 5:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	WaitMovement
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 22
+	JumpIf DIFFERENT Function#5
+	SetOWPosition Overworld.3 31 0 0x4001 Left
+Jump Function#6
+
+Script 6:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#2
+	Movement Overworld.1 Action#3
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	SetVar 0x40DC 1
+	ReleaseAll
+End
+
+Script 7:
+	CompareVarValue 0x40E1 1
+	JumpIf LESS/EQUAL Function#7
+	CompareVarValue 0x40E1 2
+	JumpIf GREATER/EQUAL Function#8
+End
+
+Script 8:
+	CheckFlag 235
+	JumpIf LESS Function#9
+End
+
+Script 9:
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+Jump Function#10
+
+Function 2:
+	CheckFlag 235
+	JumpIf EQUAL Function#11
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	CompareVarValue 0x4000 23
+	JumpIf DIFFERENT Function#12
+	SetOWPosition Overworld.3 32 0 0x4001 Left
+Jump Function#6
+
+Function 6:
+	Movement Overworld.3 Action#4
+	Movement Player Action#5
+	WaitMovement
+	Movement Overworld.3 Action#6
+	WaitMovement
+	Message 7
+	CloseMessage
+	Movement Overworld.3 Action#7
+	WaitMovement
+	RemoveOW Overworld.3
+	SetFlag 533
+	SetVar 0x40CB 2
+	StopFanfare SEQ_SE_GS_N_UMIBE
+	ReleaseAll
+End
+
+Function 7:
+	SetWarpPosition 0 27 20
+End
+
+Function 8:
+	SetWarpPosition 12 27 20
+End
+
+Function 9:
+End
+
+Function 10:
+	CheckFlag 235
+	JumpIf EQUAL Function#13
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	CompareVarValue 0x4000 1
+	JumpIf EQUAL Function#14
+	Message 2
+	CloseMessage
+	Movement Overworld.1 Action#8
+	WaitMovement
+	SetVar 0x40CB 7
+	SetVar 0x4000 1
+	ReleaseAll
+End
+
+Function 12:
+	CompareVarValue 0x4000 24
+	JumpIf DIFFERENT Function#15
+	SetOWPosition Overworld.3 33 0 0x4001 Left
+Jump Function#6
+
+Function 13:
+	CompareVarValue 0x4000 1
+	JumpIf EQUAL Function#16
+	Message 5
+	CloseMessage
+	Movement Overworld.1 Action#8
+	WaitMovement
+	SetVar 0x4000 1
+	ReleaseAll
+End
+
+Function 14:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	CompareVarValue 0x4000 25
+	JumpIf DIFFERENT Function#17
+	SetOWPosition Overworld.3 34 0 0x4001 Left
+Jump Function#6
+
+Function 16:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 17:
+	SetOWPosition Overworld.3 35 0 0x4001 Left
+	Movement Overworld.3 Action#4
+	Movement Player Action#5
+	WaitMovement
+	Movement Overworld.3 Action#6
+	WaitMovement
+	Message 7
+	CloseMessage
+	Movement Overworld.3 Action#7
+	WaitMovement
+	RemoveOW Overworld.3
+	SetFlag 533
+	SetVar 0x40CB 2
+	StopFanfare SEQ_SE_GS_N_UMIBE
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+End
+
+Action 2:
+	WalkNorth8 0x4
+End
+
+Action 3:
+	LockDir 0x1
+	WalkWest16 0x1
+	ReleaseDir 0x1
+	FaceEast 0x2
+	Delay16 0x1
+	WalkEast16 0x1
+	FaceNorth 0x2
+End
+
+Action 4:
+	WalkWest4 0x9
+	LockDir 0x1
+	JumpEast8 0x1
+	ReleaseDir 0x1
+	Delay16 0x1
+End
+
+Action 5:
+	Delay2 0x5
+	FaceEast 0x2
+	Delay2 0x5
+	JumpOnSpotEast8 0x1
+	Delay16 0x1
+End
+
+Action 6:
+	JumpOnSpotWest8 0x4
+End
+
+Action 7:
+	WalkOnSpotWest4 0x2
+	FaceNorth 0x2
+	WalkNorth4 0x1
+	FaceWest 0x2
+	WalkWest4 0xA
+End
+
+Action 8:
+	LockDir 0x1
+	WalkSouth8 0x1
+	ReleaseDir 0x1
+	FaceWest 0x2
+	LockDir 0x1
+	WalkEast8 0x1
+	ReleaseDir 0x1
+End
+

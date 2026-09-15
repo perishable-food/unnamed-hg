@@ -1,0 +1,31 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0781
+ * Generated: 9/2/2026 12:10:08 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//

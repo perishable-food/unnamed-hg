@@ -1,0 +1,385 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0866
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 9
+	PlayCry SPECIES_SLOWPOKE 0
+	Message 10
+	WaitCry
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	MecScript
+	LockAll
+	FadeOutMusic 0 3
+	Movement Player Action#1
+	WaitMovement
+	SetVar 0x4099 1
+	CommonScript 2031
+	GetPlayerPosition 0x8004 0x8005
+	CompareVarValue 0x8005 462
+	JumpIf DIFFERENT Function#1
+	SetOWPosition Overworld.9 404 0 463 Left
+	Movement Overworld.9 Action#2
+	Movement Player Action#3
+Jump Function#2
+
+Script 4:
+	MecScript
+	LockAll
+	Movement Overworld.12 Action#4
+	WaitMovement
+	Message 16
+	PlayFanfare SEQ_SE_DP_WALL_HIT
+	Message 17
+	CloseMessage
+	Movement Overworld.13 Action#5
+	WaitMovement
+	SetOWPosition Overworld.13 23 0 16 Right
+	Movement Overworld.12 Action#6
+	WaitMovement
+	RemoveOW Overworld.13
+	SetFlag 626
+	SetFlag 625
+	ClearFlag 415
+	SetVar 0x4080 1
+	ReleaseAll
+End
+
+Script 5:
+	CompareVarValue 0x4080 0
+	JumpIf DIFFERENT Function#3
+	SetFlag 415
+	ClearFlag 625
+	ClearFlag 626
+End
+
+Script 6:
+	UseScript_#1
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 123
+	JumpIf EQUAL Function#4
+	Message 18
+Jump Function#5
+
+Script 8:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 123
+	JumpIf EQUAL Function#6
+	Message 5
+Jump Function#5
+
+Script 9:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 12 0x800C
+	CommonScript 2000
+End
+
+Script 10:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 13 0x800C
+	CommonScript 2000
+End
+
+Script 11:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 15 0x800C
+	CommonScript 2000
+End
+
+Script 12:
+	SetIconBoard 11 0 14 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 13:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 14 0x800C
+	CommonScript 2000
+End
+
+Script 14:
+	SetIconBoard 0 1 2 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 15:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 16:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 17:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x8005 463
+	JumpIf DIFFERENT Function#7
+	SetOWPosition Overworld.9 404 0 464 Left
+	Movement Overworld.9 Action#2
+	Movement Player Action#3
+Jump Function#2
+
+Function 2:
+	WaitMovement
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#8
+	TrainerBattle TRAINER_SILVER_266 TRAINER_NONE 0 0
+Jump Function#9
+
+Function 3:
+End
+
+Function 4:
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 6
+Jump Function#5
+
+Function 7:
+	CompareVarValue 0x8005 464
+	JumpIf DIFFERENT Function#10
+	SetOWPosition Overworld.9 404 0 463 Left
+	Movement Overworld.9 Action#7
+	Movement Player Action#8
+Jump Function#2
+
+Function 8:
+	CompareVarValue 0x800C 703
+	JumpIf DIFFERENT Function#11
+	TrainerBattle TRAINER_SILVER_269 TRAINER_NONE 0 0
+Jump Function#9
+
+Function 9:
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#12
+	CommonScript 2070
+	TextRivalName 0
+	Message 2
+	CloseMessage
+	SetVar 0x4075 2
+	GetPlayerPosition 0x8004 0x8005
+	CompareVarValue 0x8005 462
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.9 Action#9
+Jump Function#14
+
+Function 10:
+	CompareVarValue 0x8005 465
+	JumpIf DIFFERENT Function#15
+	SetOWPosition Overworld.9 404 0 464 Left
+	Movement Overworld.9 Action#7
+	Movement Player Action#8
+Jump Function#2
+
+Function 11:
+	TrainerBattle TRAINER_SILVER_001 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#12
+	CommonScript 2070
+	TextRivalName 0
+	Message 2
+	CloseMessage
+	SetVar 0x4075 2
+	GetPlayerPosition 0x8004 0x8005
+	CompareVarValue 0x8005 462
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.9 Action#9
+Jump Function#14
+
+Function 12:
+	LostBattle
+	ReleaseAll
+End
+
+Function 13:
+	CompareVarValue 0x8005 463
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.9 Action#10
+Jump Function#14
+
+Function 14:
+	WaitMovement
+	RemoveOW Overworld.9
+	CommonScript 2071
+	ReleaseAll
+End
+
+Function 15:
+	SetOWPosition Overworld.9 404 0 465 Left
+	Movement Overworld.9 Action#7
+	Movement Player Action#8
+	WaitMovement
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#8
+	TrainerBattle TRAINER_SILVER_266 TRAINER_NONE 0 0
+Jump Function#9
+
+Function 16:
+	CompareVarValue 0x8005 464
+	JumpIf DIFFERENT Function#17
+	Movement Overworld.9 Action#9
+Jump Function#14
+
+Function 17:
+	CompareVarValue 0x8005 465
+	JumpIf DIFFERENT Function#18
+	Movement Overworld.9 Action#10
+Jump Function#14
+
+Function 18:
+	Movement Overworld.9 Action#11
+	WaitMovement
+	RemoveOW Overworld.9
+	CommonScript 2071
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+End
+
+Action 2:
+	WalkWest8 0x9
+	FaceNorth 0x1
+End
+
+Action 3:
+	FaceEast 0x1
+	Delay4 0x6
+	Delay8 0x7
+	FaceSouth 0x1
+End
+
+Action 4:
+	WalkOnSpotWest8 0x2
+End
+
+Action 5:
+	LockDir 0x1
+	WalkWest2 0x1
+	Delay8 0x2
+	WalkWest16 0x2
+	ReleaseDir 0x1
+	WalkWest4 0x9
+End
+
+Action 6:
+	WalkNorth8 0x2
+	WalkOnSpotSouth8 0x1
+End
+
+Action 7:
+	WalkWest8 0x9
+	FaceSouth 0x1
+End
+
+Action 8:
+	FaceEast 0x1
+	Delay4 0x6
+	Delay8 0x7
+	FaceNorth 0x1
+End
+
+Action 9:
+	WalkWest8 0x3
+End
+
+Action 10:
+	WalkWest8 0x1
+	WalkNorth8 0x1
+	WalkWest8 0x2
+End
+
+Action 11:
+	WalkWest8 0x1
+	WalkNorth8 0x2
+	WalkWest8 0x2
+End
+

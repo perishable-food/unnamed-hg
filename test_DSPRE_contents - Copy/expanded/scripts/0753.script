@@ -1,0 +1,107 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0753
+ * Generated: 9/2/2026 12:10:08 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetVar 0x8007 0
+	CommonScript 2002
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 307
+	JumpIf EQUAL Function#1
+	Message 3
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	PartyPokemonTradeScreen
+	GetSelectedPartySlot 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#2
+	InitTrade 9
+	SetVarFromVariable 0x8004 0x800C
+	GetPartyPokemonID 0x8004 0x8005
+	GetRequestedPokemon 0x800C
+	CompareVars 0x8005 0x800C
+	JumpIf DIFFERENT Function#3
+	TradePokemonScreen 0x8004
+	EndTrade
+	SetFlag 307
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_JIGGLYPUFF 0
+	Message 1
+	WaitCry
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	EndTrade
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

@@ -1,0 +1,145 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0071
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+End
+
+Script 2:
+	CompareVarValue 0x414E 0
+	CallIf DIFFERENT Function#1
+End
+
+Script 3:
+	MecScript
+	LockAll
+	Call Function#2
+	GetRandom 0x800C 4
+	SetVarFromVariable 0x8008 0x800C
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#3
+	CompareVarValue 0x8008 2
+	JumpIf EQUAL Function#4
+	CompareVarValue 0x8008 3
+	JumpIf EQUAL Function#5
+Jump Function#6
+
+//===== FUNCTIONS =====//
+Function 1:
+	VanishOverworld Player
+Return
+
+Function 2:
+	DoorAnimation 0 0 2 2 77
+	OpenDoor 77
+	WaitDoor 77
+	Movement Overworld.0 Action#1
+	WaitMovement
+	UnvanishOverworld Player
+	Movement Player Action#2
+	WaitMovement
+	CloseDoor 77
+	WaitDoor 77
+	FreeDoor 77
+Return
+
+Function 3:
+	Movement Overworld.0 Action#3
+	Movement Player Action#4
+	WaitMovement
+Jump Function#7
+
+Function 4:
+	Movement Overworld.0 Action#5
+	Movement Player Action#6
+	WaitMovement
+Jump Function#7
+
+Function 5:
+	Movement Overworld.0 Action#7
+	Movement Player Action#8
+	WaitMovement
+Jump Function#7
+
+Function 6:
+	Movement Overworld.0 Action#9
+	Movement Player Action#10
+	WaitMovement
+Jump Function#7
+
+Function 7:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 269 0 7 6 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x3
+	FaceNorth 0x1
+End
+
+Action 2:
+	WalkSouth8 0x2
+End
+
+Action 3:
+	WalkEast8 0x8
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 4:
+	WalkSouth8 0x1
+	WalkEast8 0x8
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 5:
+	WalkEast8 0xC
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 6:
+	WalkSouth8 0x1
+	WalkEast8 0xC
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 7:
+	WalkEast8 0x10
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 8:
+	WalkSouth8 0x1
+	WalkEast8 0x10
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 9:
+	WalkEast8 0x4
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+
+Action 10:
+	WalkSouth8 0x1
+	WalkEast8 0x4
+	WalkNorth8 0x2
+	SetInvisible 0x1
+End
+

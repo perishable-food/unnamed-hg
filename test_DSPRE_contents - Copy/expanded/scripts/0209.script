@@ -1,0 +1,19 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0209
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	CyclingRoad 1
+End
+
+Script 2:
+	CyclingRoad 1
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//

@@ -1,0 +1,173 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0782
+ * Generated: 9/2/2026 12:10:08 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 248
+	JumpIf LESS Function#1
+	TextPlayerName 0
+	GenderMessage 4 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetItemQuantity ITEM_LOST_ITEM 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#2
+	GetItemQuantity ITEM_PASS 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#2
+	CheckFlag 281
+	JumpIf EQUAL Function#3
+	CheckFlag 280
+	JumpIf EQUAL Function#4
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_BAYLEEF 0
+	Message 16
+	WaitCry
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 8:
+	CheckFlag 764
+	JumpIf EQUAL Function#5
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 15
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+	Message 1
+	SetVar 0x8004 50
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	CommonScript 2033
+	SetFlag 248
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	Message 13
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 11
+	RemoveOW Overworld.5
+	SetFlag 764
+	SetVar 0x8004 479
+	SetVar 0x8005 1
+	CommonScript 2033
+	SetVar 0x4130 1
+	ClearFlag 765
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+End
+
+Function 6:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

@@ -1504,4 +1504,5 @@ const HeightTableEntry __data[] =
     [SPECIES_MEGA_MEOWSCARADA] = { 0, 0, 0, 0 },
     [SPECIES_MEGA_SKELEDIRGE] = { 0, 0, 0, 0 },
     [SPECIES_MEGA_QUAQUAVAL] = { 0, 0, 0, 0 },
+    [SPECIES_ETERNAL_FRUIT_OGERPON] = { 0, -1, 0, -1 },
 };

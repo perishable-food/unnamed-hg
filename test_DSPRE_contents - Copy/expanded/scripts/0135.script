@@ -1,0 +1,114 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0135
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Release Overworld.0
+	ShakeOverworld Overworld.0 8 90 3 0
+	PlayCry SPECIES_RAYQUAZA 0
+	Message 0
+	WaitCry
+	CloseMessage
+	SetFlag 164
+	WildBattleSp SPECIES_RAYQUAZA 50 0
+	ClearFlag 164
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	GetBattleOutcome 0x4002
+	CompareVarValue 0x4002 3
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x4002 4
+	JumpIf EQUAL Function#3
+	Message 1
+	WaitButton
+	CloseMessage
+	SetVar 0x40F9 9
+	ReleaseAll
+End
+
+Script 2:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#1
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	PlayCry SPECIES_RAYQUAZA 0
+	WaitCry
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#1
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Release Overworld.0
+	ShakeOverworld Overworld.0 8 90 3 0
+	PlayCry SPECIES_RAYQUAZA 0
+	Message 0
+	WaitCry
+	Lock Overworld.0
+	CloseMessage
+	SetVar 0x40F9 6
+	ReleaseAll
+End
+
+Script 3:
+	CheckFlag 164
+	JumpIf EQUAL Function#4
+End
+
+Script 4:
+	CompareVarValue 0x40F9 7
+	JumpIf GREATER/EQUAL Function#5
+	ClearFlag 722
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	LostBattle
+	ReleaseAll
+End
+
+Function 2:
+	Message 1
+	WaitButton
+	CloseMessage
+	SetVar 0x40F9 9
+	ReleaseAll
+End
+
+Function 3:
+	SetVar 0x40F9 7
+	SetFlag 379
+	ReleaseAll
+End
+
+Function 4:
+	SetFlag 722
+	RemoveOW Overworld.0
+End
+
+Function 5:
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkNorth8 0x8
+	Delay8 0x2
+End
+

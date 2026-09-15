@@ -1,0 +1,23 @@
+version: Original
+title:
+  japanese: |-
+    Pokémon HeartGold
+    Nintendo
+  english: |-
+    Pokémon HeartGold
+    Nintendo
+  french: |-
+    Pokémon HeartGold
+    Nintendo
+  german: |-
+    Pokémon HeartGold
+    Nintendo
+  italian: |-
+    Pokémon HeartGold
+    Nintendo
+  spanish: |-
+    Pokémon HeartGold
+    Nintendo
+images:
+  bitmap_path: bitmap.png
+  palette_path: palette.png

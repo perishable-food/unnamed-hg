@@ -1,0 +1,3025 @@
+{
+  "key": 22339,
+  "messages": [
+    {
+      "id": "msg_0849_00000",
+      "en_US": "a {COLOR, 0, 255}letter of Endorsement{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00001",
+      "en_US": "a {COLOR, 0, 255}Pokémon Box Link{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00002",
+      "en_US": "a {COLOR, 0, 255}Wishing Star{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00003",
+      "en_US": "a {COLOR, 0, 255}Dynamax Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00004",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00005",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00006",
+      "en_US": "a {COLOR, 0, 255}Fishing Rod{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00007",
+      "en_US": "a {COLOR, 0, 255}Rotom Bike{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00008",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00009",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00010",
+      "en_US": "the {COLOR, 0, 255}pack of Sausages{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00011",
+      "en_US": "a {COLOR, 0, 255}Bob’s Food Tin{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00012",
+      "en_US": "a {COLOR, 0, 255}Bach’s Food Tin{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00013",
+      "en_US": "the {COLOR, 0, 255}Tin of Beans{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00014",
+      "en_US": "a {COLOR, 0, 255}loaf of Bread{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00015",
+      "en_US": "a {COLOR, 0, 255}bag of Pasta{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00016",
+      "en_US": "a {COLOR, 0, 255}bag of Mixed Mushrooms{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00017",
+      "en_US": "a {COLOR, 0, 255}pack of Smoke-Poke Tail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00018",
+      "en_US": "a {COLOR, 0, 255}Large Leek{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00019",
+      "en_US": "a {COLOR, 0, 255}Fancy Apple{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00020",
+      "en_US": "a {COLOR, 0, 255}bag of Brittle Bones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00021",
+      "en_US": "the {COLOR, 0, 255}Pack of Potatoes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00022",
+      "en_US": "a {COLOR, 0, 255}Pungent Root{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00023",
+      "en_US": "a {COLOR, 0, 255}bag of Salad Mix{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00024",
+      "en_US": "a {COLOR, 0, 255}pack of Fried Food{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00025",
+      "en_US": "a {COLOR, 0, 255}Boiled Egg{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00026",
+      "en_US": "a {COLOR, 0, 255}set of Camping Gear{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00027",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00028",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00029",
+      "en_US": "a {COLOR, 0, 255}Rusted Sword{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00030",
+      "en_US": "a {COLOR, 0, 255}Rusted Shield{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00031",
+      "en_US": "a {COLOR, 0, 255}Fossilized Bird{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00032",
+      "en_US": "a {COLOR, 0, 255}Fossilized Fish{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00033",
+      "en_US": "a {COLOR, 0, 255}Fossilized Drake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00034",
+      "en_US": "a {COLOR, 0, 255}Fossilized Dino{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00035",
+      "en_US": "a {COLOR, 0, 255}Strawberry Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00036",
+      "en_US": "a {COLOR, 0, 255}Love Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00037",
+      "en_US": "a {COLOR, 0, 255}Berry Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00038",
+      "en_US": "a {COLOR, 0, 255}Clover Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00039",
+      "en_US": "a {COLOR, 0, 255}Flower Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00040",
+      "en_US": "a {COLOR, 0, 255}Star Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00041",
+      "en_US": "a {COLOR, 0, 255}Ribbon Sweet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00042",
+      "en_US": "a {COLOR, 0, 255}Sweet Apple{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00043",
+      "en_US": "a {COLOR, 0, 255}Tart Apple{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00044",
+      "en_US": "a {COLOR, 0, 255}bottle of Throat Spray{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00045",
+      "en_US": "an {COLOR, 0, 255}Eject Pack{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00046",
+      "en_US": "the {COLOR, 0, 255}pair of Heavy-Duty Boots{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00047",
+      "en_US": "a {COLOR, 0, 255}Blunder Policy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00048",
+      "en_US": "a {COLOR, 0, 255}voucher for Room Service{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00049",
+      "en_US": "a {COLOR, 0, 255}Utility Umbrella{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00050",
+      "en_US": "an {COLOR, 0, 255}Exp. Candy XS{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00051",
+      "en_US": "an {COLOR, 0, 255}Exp. Candy S{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00052",
+      "en_US": "an {COLOR, 0, 255}Exp. Candy M{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00053",
+      "en_US": "an {COLOR, 0, 255}Exp. Candy L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00054",
+      "en_US": "an {COLOR, 0, 255}Exp. Candy XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00055",
+      "en_US": "a {COLOR, 0, 255}Dynamax Candy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00056",
+      "en_US": "a {COLOR, 0, 255}TR00{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00057",
+      "en_US": "a {COLOR, 0, 255}TR01{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00058",
+      "en_US": "a {COLOR, 0, 255}TR02{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00059",
+      "en_US": "a {COLOR, 0, 255}TR03{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00060",
+      "en_US": "a {COLOR, 0, 255}TR04{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00061",
+      "en_US": "a {COLOR, 0, 255}TR05{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00062",
+      "en_US": "a {COLOR, 0, 255}TR06{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00063",
+      "en_US": "a {COLOR, 0, 255}TR07{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00064",
+      "en_US": "a {COLOR, 0, 255}TR08{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00065",
+      "en_US": "a {COLOR, 0, 255}TR09{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00066",
+      "en_US": "a {COLOR, 0, 255}TR10{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00067",
+      "en_US": "a {COLOR, 0, 255}TR11{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00068",
+      "en_US": "a {COLOR, 0, 255}TR12{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00069",
+      "en_US": "a {COLOR, 0, 255}TR13{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00070",
+      "en_US": "a {COLOR, 0, 255}TR14{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00071",
+      "en_US": "a {COLOR, 0, 255}TR15{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00072",
+      "en_US": "a {COLOR, 0, 255}TR16{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00073",
+      "en_US": "a {COLOR, 0, 255}TR17{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00074",
+      "en_US": "a {COLOR, 0, 255}TR18{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00075",
+      "en_US": "a {COLOR, 0, 255}TR19{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00076",
+      "en_US": "a {COLOR, 0, 255}TR20{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00077",
+      "en_US": "a {COLOR, 0, 255}TR21{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00078",
+      "en_US": "a {COLOR, 0, 255}TR22{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00079",
+      "en_US": "a {COLOR, 0, 255}TR23{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00080",
+      "en_US": "a {COLOR, 0, 255}TR24{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00081",
+      "en_US": "a {COLOR, 0, 255}TR25{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00082",
+      "en_US": "a {COLOR, 0, 255}TR26{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00083",
+      "en_US": "a {COLOR, 0, 255}TR27{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00084",
+      "en_US": "a {COLOR, 0, 255}TR28{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00085",
+      "en_US": "a {COLOR, 0, 255}TR29{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00086",
+      "en_US": "a {COLOR, 0, 255}TR30{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00087",
+      "en_US": "a {COLOR, 0, 255}TR31{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00088",
+      "en_US": "a {COLOR, 0, 255}TR32{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00089",
+      "en_US": "a {COLOR, 0, 255}TR33{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00090",
+      "en_US": "a {COLOR, 0, 255}TR34{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00091",
+      "en_US": "a {COLOR, 0, 255}TR35{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00092",
+      "en_US": "a {COLOR, 0, 255}TR36{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00093",
+      "en_US": "a {COLOR, 0, 255}TR37{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00094",
+      "en_US": "a {COLOR, 0, 255}TR38{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00095",
+      "en_US": "a {COLOR, 0, 255}TR39{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00096",
+      "en_US": "a {COLOR, 0, 255}TR40{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00097",
+      "en_US": "a {COLOR, 0, 255}TR41{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00098",
+      "en_US": "a {COLOR, 0, 255}TR42{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00099",
+      "en_US": "a {COLOR, 0, 255}TR43{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00100",
+      "en_US": "a {COLOR, 0, 255}TR44{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00101",
+      "en_US": "a {COLOR, 0, 255}TR45{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00102",
+      "en_US": "a {COLOR, 0, 255}TR46{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00103",
+      "en_US": "a {COLOR, 0, 255}TR47{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00104",
+      "en_US": "a {COLOR, 0, 255}TR48{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00105",
+      "en_US": "a {COLOR, 0, 255}TR49{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00106",
+      "en_US": "a {COLOR, 0, 255}TR50{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00107",
+      "en_US": "a {COLOR, 0, 255}TR51{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00108",
+      "en_US": "a {COLOR, 0, 255}TR52{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00109",
+      "en_US": "a {COLOR, 0, 255}TR53{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00110",
+      "en_US": "a {COLOR, 0, 255}TR54{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00111",
+      "en_US": "a {COLOR, 0, 255}TR55{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00112",
+      "en_US": "a {COLOR, 0, 255}TR56{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00113",
+      "en_US": "a {COLOR, 0, 255}TR57{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00114",
+      "en_US": "a {COLOR, 0, 255}TR58{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00115",
+      "en_US": "a {COLOR, 0, 255}TR59{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00116",
+      "en_US": "a {COLOR, 0, 255}TR60{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00117",
+      "en_US": "a {COLOR, 0, 255}TR61{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00118",
+      "en_US": "a {COLOR, 0, 255}TR62{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00119",
+      "en_US": "a {COLOR, 0, 255}TR63{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00120",
+      "en_US": "a {COLOR, 0, 255}TR64{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00121",
+      "en_US": "a {COLOR, 0, 255}TR65{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00122",
+      "en_US": "a {COLOR, 0, 255}TR66{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00123",
+      "en_US": "a {COLOR, 0, 255}TR67{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00124",
+      "en_US": "a {COLOR, 0, 255}TR68{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00125",
+      "en_US": "a {COLOR, 0, 255}TR69{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00126",
+      "en_US": "a {COLOR, 0, 255}TR70{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00127",
+      "en_US": "a {COLOR, 0, 255}TR71{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00128",
+      "en_US": "a {COLOR, 0, 255}TR72{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00129",
+      "en_US": "a {COLOR, 0, 255}TR73{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00130",
+      "en_US": "a {COLOR, 0, 255}TR74{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00131",
+      "en_US": "a {COLOR, 0, 255}TR75{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00132",
+      "en_US": "a {COLOR, 0, 255}TR76{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00133",
+      "en_US": "a {COLOR, 0, 255}TR77{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00134",
+      "en_US": "a {COLOR, 0, 255}TR78{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00135",
+      "en_US": "a {COLOR, 0, 255}TR79{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00136",
+      "en_US": "a {COLOR, 0, 255}TR80{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00137",
+      "en_US": "a {COLOR, 0, 255}TR81{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00138",
+      "en_US": "a {COLOR, 0, 255}TR82{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00139",
+      "en_US": "a {COLOR, 0, 255}TR83{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00140",
+      "en_US": "a {COLOR, 0, 255}TR84{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00141",
+      "en_US": "a {COLOR, 0, 255}TR85{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00142",
+      "en_US": "a {COLOR, 0, 255}TR86{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00143",
+      "en_US": "a {COLOR, 0, 255}TR87{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00144",
+      "en_US": "a {COLOR, 0, 255}TR88{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00145",
+      "en_US": "a {COLOR, 0, 255}TR89{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00146",
+      "en_US": "a {COLOR, 0, 255}TR90{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00147",
+      "en_US": "a {COLOR, 0, 255}TR91{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00148",
+      "en_US": "a {COLOR, 0, 255}TR92{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00149",
+      "en_US": "a {COLOR, 0, 255}TR93{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00150",
+      "en_US": "a {COLOR, 0, 255}TR94{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00151",
+      "en_US": "a {COLOR, 0, 255}TR95{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00152",
+      "en_US": "a {COLOR, 0, 255}TR96{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00153",
+      "en_US": "a {COLOR, 0, 255}TR97{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00154",
+      "en_US": "a {COLOR, 0, 255}TR98{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00155",
+      "en_US": "a {COLOR, 0, 255}TR99{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00156",
+      "en_US": "a {COLOR, 0, 255}TM00{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00157",
+      "en_US": "a {COLOR, 0, 255}sprig of Lonely Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00158",
+      "en_US": "a {COLOR, 0, 255}sprig of Adamant Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00159",
+      "en_US": "a {COLOR, 0, 255}sprig of Naughty Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00160",
+      "en_US": "a {COLOR, 0, 255}sprig of Brave Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00161",
+      "en_US": "a {COLOR, 0, 255}sprig of Bold Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00162",
+      "en_US": "a {COLOR, 0, 255}sprig of Impish Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00163",
+      "en_US": "a {COLOR, 0, 255}sprig of Lax Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00164",
+      "en_US": "a {COLOR, 0, 255}sprig of Relaxed Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00165",
+      "en_US": "a {COLOR, 0, 255}sprig of Modest Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00166",
+      "en_US": "a {COLOR, 0, 255}sprig of Mild Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00167",
+      "en_US": "a {COLOR, 0, 255}sprig of Rash Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00168",
+      "en_US": "a {COLOR, 0, 255}sprig of Quiet Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00169",
+      "en_US": "a {COLOR, 0, 255}sprig of Calm Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00170",
+      "en_US": "a {COLOR, 0, 255}sprig of Gentle Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00171",
+      "en_US": "a {COLOR, 0, 255}sprig of Careful Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00172",
+      "en_US": "a {COLOR, 0, 255}sprig of Sassy Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00173",
+      "en_US": "a {COLOR, 0, 255}sprig of Timid Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00174",
+      "en_US": "a {COLOR, 0, 255}sprig of Hasty Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00175",
+      "en_US": "a {COLOR, 0, 255}sprig of Jolly Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00176",
+      "en_US": "a {COLOR, 0, 255}sprig of Naive Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00177",
+      "en_US": "a {COLOR, 0, 255}sprig of Serious Mint{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00178",
+      "en_US": "a {COLOR, 0, 255}Wishing Piece{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00179",
+      "en_US": "a {COLOR, 0, 255}Cracked Pot{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00180",
+      "en_US": "a {COLOR, 0, 255}Chipped Pot{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00181",
+      "en_US": "the {COLOR, 0, 255}set of Hi-tech Earbuds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00182",
+      "en_US": "a {COLOR, 0, 255}Fruit Bunch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00183",
+      "en_US": "a {COLOR, 0, 255}wheel of Moomoo Cheese{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00184",
+      "en_US": "a {COLOR, 0, 255}bottle of Spice Mix{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00185",
+      "en_US": "a {COLOR, 0, 255}pack of Fresh Cream{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00186",
+      "en_US": "a {COLOR, 0, 255}box of Packaged Curry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00187",
+      "en_US": "a {COLOR, 0, 255}pack of Coconut Milk{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00188",
+      "en_US": "the {COLOR, 0, 255}cup of Instant Noodles{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00189",
+      "en_US": "a {COLOR, 0, 255}bag of Precooked Burger{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00190",
+      "en_US": "a {COLOR, 0, 255}bottle of Gigantamix{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00191",
+      "en_US": "a {COLOR, 0, 255}Wishing Chip{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00192",
+      "en_US": "a {COLOR, 0, 255}Rotom Bike{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00193",
+      "en_US": "a {COLOR, 0, 255}Catching Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00194",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00195",
+      "en_US": "an {COLOR, 0, 255}Old Letter{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00196",
+      "en_US": "a {COLOR, 0, 255}Band Autograph{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00197",
+      "en_US": "a {COLOR, 0, 255}copy of Sonia’s Book{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00198",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00199",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00200",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00201",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00202",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00203",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00204",
+      "en_US": "a {COLOR, 0, 255}Rotom Catalog{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00205",
+      "en_US": "an {COLOR, 0, 255}★And458{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00206",
+      "en_US": "an {COLOR, 0, 255}★And15{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00207",
+      "en_US": "an {COLOR, 0, 255}★And337{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00208",
+      "en_US": "an {COLOR, 0, 255}★And603{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00209",
+      "en_US": "an {COLOR, 0, 255}★And390{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00210",
+      "en_US": "a {COLOR, 0, 255}★Sgr6879{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00211",
+      "en_US": "a {COLOR, 0, 255}★Sgr6859{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00212",
+      "en_US": "a {COLOR, 0, 255}★Sgr6913{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00213",
+      "en_US": "a {COLOR, 0, 255}★Sgr7348{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00214",
+      "en_US": "a {COLOR, 0, 255}★Sgr7121{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00215",
+      "en_US": "a {COLOR, 0, 255}★Sgr6746{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00216",
+      "en_US": "a {COLOR, 0, 255}★Sgr7194{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00217",
+      "en_US": "a {COLOR, 0, 255}★Sgr7337{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00218",
+      "en_US": "a {COLOR, 0, 255}★Sgr7343{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00219",
+      "en_US": "a {COLOR, 0, 255}★Sgr6812{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00220",
+      "en_US": "a {COLOR, 0, 255}★Sgr7116{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00221",
+      "en_US": "a {COLOR, 0, 255}★Sgr7264{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00222",
+      "en_US": "a {COLOR, 0, 255}★Sgr7597{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00223",
+      "en_US": "a {COLOR, 0, 255}★Del7882{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00224",
+      "en_US": "a {COLOR, 0, 255}★Del7906{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00225",
+      "en_US": "a {COLOR, 0, 255}★Del7852{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00226",
+      "en_US": "a {COLOR, 0, 255}★Psc596{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00227",
+      "en_US": "a {COLOR, 0, 255}★Psc361{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00228",
+      "en_US": "a {COLOR, 0, 255}★Psc510{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00229",
+      "en_US": "a {COLOR, 0, 255}★Psc437{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00230",
+      "en_US": "a {COLOR, 0, 255}★Psc8773{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00231",
+      "en_US": "a {COLOR, 0, 255}★Lep1865{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00232",
+      "en_US": "a {COLOR, 0, 255}★Lep1829{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00233",
+      "en_US": "a {COLOR, 0, 255}★Boo5340{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00234",
+      "en_US": "a {COLOR, 0, 255}★Boo5506{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00235",
+      "en_US": "a {COLOR, 0, 255}★Boo5435{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00236",
+      "en_US": "a {COLOR, 0, 255}★Boo5602{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00237",
+      "en_US": "a {COLOR, 0, 255}★Boo5733{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00238",
+      "en_US": "a {COLOR, 0, 255}★Boo5235{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00239",
+      "en_US": "a {COLOR, 0, 255}★Boo5351{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00240",
+      "en_US": "a {COLOR, 0, 255}★Hya3748{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00241",
+      "en_US": "a {COLOR, 0, 255}★Hya3903{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00242",
+      "en_US": "a {COLOR, 0, 255}★Hya3418{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00243",
+      "en_US": "a {COLOR, 0, 255}★Hya3482{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00244",
+      "en_US": "a {COLOR, 0, 255}★Hya3845{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00245",
+      "en_US": "an {COLOR, 0, 255}★Eri1084{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00246",
+      "en_US": "an {COLOR, 0, 255}★Eri472{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00247",
+      "en_US": "an {COLOR, 0, 255}★Eri1666{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00248",
+      "en_US": "an {COLOR, 0, 255}★Eri897{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00249",
+      "en_US": "an {COLOR, 0, 255}★Eri1231{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00250",
+      "en_US": "an {COLOR, 0, 255}★Eri874{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00251",
+      "en_US": "an {COLOR, 0, 255}★Eri1298{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00252",
+      "en_US": "an {COLOR, 0, 255}★Eri1325{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00253",
+      "en_US": "an {COLOR, 0, 255}★Eri984{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00254",
+      "en_US": "an {COLOR, 0, 255}★Eri1464{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00255",
+      "en_US": "an {COLOR, 0, 255}★Eri1393{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00256",
+      "en_US": "an {COLOR, 0, 255}★Eri850{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00257",
+      "en_US": "a {COLOR, 0, 255}★Tau1409{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00258",
+      "en_US": "a {COLOR, 0, 255}★Tau1457{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00259",
+      "en_US": "a {COLOR, 0, 255}★Tau1165{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00260",
+      "en_US": "a {COLOR, 0, 255}★Tau1791{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00261",
+      "en_US": "a {COLOR, 0, 255}★Tau1910{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00262",
+      "en_US": "a {COLOR, 0, 255}★Tau1346{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00263",
+      "en_US": "a {COLOR, 0, 255}★Tau1373{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00264",
+      "en_US": "a {COLOR, 0, 255}★Tau1412{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00265",
+      "en_US": "a {COLOR, 0, 255}★CMa2491{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00266",
+      "en_US": "a {COLOR, 0, 255}★CMa2693{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00267",
+      "en_US": "a {COLOR, 0, 255}★CMa2294{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00268",
+      "en_US": "a {COLOR, 0, 255}★CMa2827{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00269",
+      "en_US": "a {COLOR, 0, 255}★CMa2282{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00270",
+      "en_US": "a {COLOR, 0, 255}★CMa2618{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00271",
+      "en_US": "a {COLOR, 0, 255}★CMa2657{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00272",
+      "en_US": "a {COLOR, 0, 255}★CMa2646{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00273",
+      "en_US": "an {COLOR, 0, 255}★UMa4905{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00274",
+      "en_US": "an {COLOR, 0, 255}★UMa4301{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00275",
+      "en_US": "an {COLOR, 0, 255}★UMa5191{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00276",
+      "en_US": "an {COLOR, 0, 255}★UMa5054{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00277",
+      "en_US": "an {COLOR, 0, 255}★UMa4295{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00278",
+      "en_US": "an {COLOR, 0, 255}★UMa4660{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00279",
+      "en_US": "an {COLOR, 0, 255}★UMa4554{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00280",
+      "en_US": "an {COLOR, 0, 255}★UMa4069{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00281",
+      "en_US": "an {COLOR, 0, 255}★UMa3569{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00282",
+      "en_US": "an {COLOR, 0, 255}★UMa3323{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00283",
+      "en_US": "an {COLOR, 0, 255}★UMa4033{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00284",
+      "en_US": "an {COLOR, 0, 255}★UMa4377{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00285",
+      "en_US": "an {COLOR, 0, 255}★UMa4375{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00286",
+      "en_US": "an {COLOR, 0, 255}★UMa4518{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00287",
+      "en_US": "an {COLOR, 0, 255}★UMa3594{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00288",
+      "en_US": "a {COLOR, 0, 255}★Vir5056{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00289",
+      "en_US": "a {COLOR, 0, 255}★Vir4825{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00290",
+      "en_US": "a {COLOR, 0, 255}★Vir4932{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00291",
+      "en_US": "a {COLOR, 0, 255}★Vir4540{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00292",
+      "en_US": "a {COLOR, 0, 255}★Vir4689{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00293",
+      "en_US": "a {COLOR, 0, 255}★Vir5338{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00294",
+      "en_US": "a {COLOR, 0, 255}★Vir4910{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00295",
+      "en_US": "a {COLOR, 0, 255}★Vir5315{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00296",
+      "en_US": "a {COLOR, 0, 255}★Vir5359{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00297",
+      "en_US": "a {COLOR, 0, 255}★Vir5409{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00298",
+      "en_US": "a {COLOR, 0, 255}★Vir5107{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00299",
+      "en_US": "an {COLOR, 0, 255}★Ari617{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00300",
+      "en_US": "an {COLOR, 0, 255}★Ari553{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00301",
+      "en_US": "an {COLOR, 0, 255}★Ari546{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00302",
+      "en_US": "an {COLOR, 0, 255}★Ari951{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00303",
+      "en_US": "an {COLOR, 0, 255}★Ori1713{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00304",
+      "en_US": "an {COLOR, 0, 255}★Ori2061{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00305",
+      "en_US": "an {COLOR, 0, 255}★Ori1790{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00306",
+      "en_US": "an {COLOR, 0, 255}★Ori1903{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00307",
+      "en_US": "an {COLOR, 0, 255}★Ori1948{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00308",
+      "en_US": "an {COLOR, 0, 255}★Ori2004{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00309",
+      "en_US": "an {COLOR, 0, 255}★Ori1852{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00310",
+      "en_US": "an {COLOR, 0, 255}★Ori1879{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00311",
+      "en_US": "an {COLOR, 0, 255}★Ori1899{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00312",
+      "en_US": "an {COLOR, 0, 255}★Ori1543{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00313",
+      "en_US": "a {COLOR, 0, 255}★Cas21{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00314",
+      "en_US": "a {COLOR, 0, 255}★Cas168{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00315",
+      "en_US": "a {COLOR, 0, 255}★Cas403{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00316",
+      "en_US": "a {COLOR, 0, 255}★Cas153{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00317",
+      "en_US": "a {COLOR, 0, 255}★Cas542{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00318",
+      "en_US": "a {COLOR, 0, 255}★Cas219{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00319",
+      "en_US": "a {COLOR, 0, 255}★Cas265{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00320",
+      "en_US": "a {COLOR, 0, 255}★Cnc3572{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00321",
+      "en_US": "a {COLOR, 0, 255}★Cnc3208{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00322",
+      "en_US": "a {COLOR, 0, 255}★Cnc3461{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00323",
+      "en_US": "a {COLOR, 0, 255}★Cnc3449{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00324",
+      "en_US": "a {COLOR, 0, 255}★Cnc3429{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00325",
+      "en_US": "a {COLOR, 0, 255}★Cnc3627{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00326",
+      "en_US": "a {COLOR, 0, 255}★Cnc3268{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00327",
+      "en_US": "a {COLOR, 0, 255}★Cnc3249{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00328",
+      "en_US": "a {COLOR, 0, 255}★Com4968{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00329",
+      "en_US": "a {COLOR, 0, 255}★Crv4757{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00330",
+      "en_US": "a {COLOR, 0, 255}★Crv4623{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00331",
+      "en_US": "a {COLOR, 0, 255}★Crv4662{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00332",
+      "en_US": "a {COLOR, 0, 255}★Crv4786{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00333",
+      "en_US": "an {COLOR, 0, 255}★Aur1708{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00334",
+      "en_US": "an {COLOR, 0, 255}★Aur2088{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00335",
+      "en_US": "an {COLOR, 0, 255}★Aur1605{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00336",
+      "en_US": "an {COLOR, 0, 255}★Aur2095{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00337",
+      "en_US": "an {COLOR, 0, 255}★Aur1577{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00338",
+      "en_US": "an {COLOR, 0, 255}★Aur1641{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00339",
+      "en_US": "an {COLOR, 0, 255}★Aur1612{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00340",
+      "en_US": "a {COLOR, 0, 255}★Pav7790{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00341",
+      "en_US": "a {COLOR, 0, 255}★Cet911{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00342",
+      "en_US": "a {COLOR, 0, 255}★Cet681{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00343",
+      "en_US": "a {COLOR, 0, 255}★Cet188{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00344",
+      "en_US": "a {COLOR, 0, 255}★Cet539{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00345",
+      "en_US": "a {COLOR, 0, 255}★Cet804{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00346",
+      "en_US": "a {COLOR, 0, 255}★Cep8974{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00347",
+      "en_US": "a {COLOR, 0, 255}★Cep8162{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00348",
+      "en_US": "a {COLOR, 0, 255}★Cep8238{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00349",
+      "en_US": "a {COLOR, 0, 255}★Cep8417{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00350",
+      "en_US": "a {COLOR, 0, 255}★Cen5267{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00351",
+      "en_US": "a {COLOR, 0, 255}★Cen5288{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00352",
+      "en_US": "a {COLOR, 0, 255}★Cen551{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00353",
+      "en_US": "a {COLOR, 0, 255}★Cen5459{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00354",
+      "en_US": "a {COLOR, 0, 255}★Cen5460{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00355",
+      "en_US": "a {COLOR, 0, 255}★CMi2943{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00356",
+      "en_US": "a {COLOR, 0, 255}★CMi2845{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00357",
+      "en_US": "an {COLOR, 0, 255}★Equ8131{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00358",
+      "en_US": "a {COLOR, 0, 255}★Vul7405{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00359",
+      "en_US": "an {COLOR, 0, 255}★UMi424{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00360",
+      "en_US": "an {COLOR, 0, 255}★UMi5563{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00361",
+      "en_US": "an {COLOR, 0, 255}★UMi5735{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00362",
+      "en_US": "an {COLOR, 0, 255}★UMi6789{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00363",
+      "en_US": "a {COLOR, 0, 255}★Crt4287{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00364",
+      "en_US": "a {COLOR, 0, 255}★Lyr7001{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00365",
+      "en_US": "a {COLOR, 0, 255}★Lyr7178{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00366",
+      "en_US": "a {COLOR, 0, 255}★Lyr7106{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00367",
+      "en_US": "a {COLOR, 0, 255}★Lyr7298{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00368",
+      "en_US": "an {COLOR, 0, 255}★Ara6585{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00369",
+      "en_US": "a {COLOR, 0, 255}★Sco6134{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00370",
+      "en_US": "a {COLOR, 0, 255}★Sco6527{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00371",
+      "en_US": "a {COLOR, 0, 255}★Sco6553{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00372",
+      "en_US": "a {COLOR, 0, 255}★Sco5953{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00373",
+      "en_US": "a {COLOR, 0, 255}★Sco5984{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00374",
+      "en_US": "a {COLOR, 0, 255}★Sco6508{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00375",
+      "en_US": "a {COLOR, 0, 255}★Sco6084{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00376",
+      "en_US": "a {COLOR, 0, 255}★Sco5944{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00377",
+      "en_US": "a {COLOR, 0, 255}★Sco6630{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00378",
+      "en_US": "a {COLOR, 0, 255}★Sco6027{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00379",
+      "en_US": "a {COLOR, 0, 255}★Sco6247{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00380",
+      "en_US": "a {COLOR, 0, 255}★Sco6252{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00381",
+      "en_US": "a {COLOR, 0, 255}★Sco5928{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00382",
+      "en_US": "a {COLOR, 0, 255}★Sco6241{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00383",
+      "en_US": "a {COLOR, 0, 255}★Sco6165{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00384",
+      "en_US": "a {COLOR, 0, 255}★Tri544{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00385",
+      "en_US": "a {COLOR, 0, 255}★Leo3982{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00386",
+      "en_US": "a {COLOR, 0, 255}★Leo4534{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00387",
+      "en_US": "a {COLOR, 0, 255}★Leo4357{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00388",
+      "en_US": "a {COLOR, 0, 255}★Leo4057{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00389",
+      "en_US": "a {COLOR, 0, 255}★Leo4359{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00390",
+      "en_US": "a {COLOR, 0, 255}★Leo4031{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00391",
+      "en_US": "a {COLOR, 0, 255}★Leo3852{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00392",
+      "en_US": "a {COLOR, 0, 255}★Leo3905{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00393",
+      "en_US": "a {COLOR, 0, 255}★Leo3773{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00394",
+      "en_US": "a {COLOR, 0, 255}★Gru8425{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00395",
+      "en_US": "a {COLOR, 0, 255}★Gru8636{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00396",
+      "en_US": "a {COLOR, 0, 255}★Gru8353{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00397",
+      "en_US": "a {COLOR, 0, 255}★Lib5685{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00398",
+      "en_US": "a {COLOR, 0, 255}★Lib5531{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00399",
+      "en_US": "a {COLOR, 0, 255}★Lib5787{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00400",
+      "en_US": "a {COLOR, 0, 255}★Lib5603{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00401",
+      "en_US": "a {COLOR, 0, 255}★Pup3165{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00402",
+      "en_US": "a {COLOR, 0, 255}★Pup3185{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00403",
+      "en_US": "a {COLOR, 0, 255}★Pup3045{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00404",
+      "en_US": "a {COLOR, 0, 255}★Cyg7924{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00405",
+      "en_US": "a {COLOR, 0, 255}★Cyg7417{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00406",
+      "en_US": "a {COLOR, 0, 255}★Cyg7796{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00407",
+      "en_US": "a {COLOR, 0, 255}★Cyg8301{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00408",
+      "en_US": "a {COLOR, 0, 255}★Cyg7949{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00409",
+      "en_US": "a {COLOR, 0, 255}★Cyg7528{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00410",
+      "en_US": "an {COLOR, 0, 255}★Oct7228{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00411",
+      "en_US": "a {COLOR, 0, 255}★Col1956{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00412",
+      "en_US": "a {COLOR, 0, 255}★Col2040{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00413",
+      "en_US": "a {COLOR, 0, 255}★Col2177{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00414",
+      "en_US": "a {COLOR, 0, 255}★Gem2990{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00415",
+      "en_US": "a {COLOR, 0, 255}★Gem2891{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00416",
+      "en_US": "a {COLOR, 0, 255}★Gem2421{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00417",
+      "en_US": "a {COLOR, 0, 255}★Gem2473{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00418",
+      "en_US": "a {COLOR, 0, 255}★Gem2216{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00419",
+      "en_US": "a {COLOR, 0, 255}★Gem2777{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00420",
+      "en_US": "a {COLOR, 0, 255}★Gem2650{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00421",
+      "en_US": "a {COLOR, 0, 255}★Gem2286{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00422",
+      "en_US": "a {COLOR, 0, 255}★Gem2484{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00423",
+      "en_US": "a {COLOR, 0, 255}★Gem2930{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00424",
+      "en_US": "a {COLOR, 0, 255}★Peg8775{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00425",
+      "en_US": "a {COLOR, 0, 255}★Peg8781{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00426",
+      "en_US": "a {COLOR, 0, 255}★Peg39{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00427",
+      "en_US": "a {COLOR, 0, 255}★Peg8308{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00428",
+      "en_US": "a {COLOR, 0, 255}★Peg8650{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00429",
+      "en_US": "a {COLOR, 0, 255}★Peg8634{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00430",
+      "en_US": "a {COLOR, 0, 255}★Peg8684{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00431",
+      "en_US": "a {COLOR, 0, 255}★Peg8450{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00432",
+      "en_US": "a {COLOR, 0, 255}★Peg8880{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00433",
+      "en_US": "a {COLOR, 0, 255}★Peg8905{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00434",
+      "en_US": "an {COLOR, 0, 255}★Oph6556{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00435",
+      "en_US": "an {COLOR, 0, 255}★Oph6378{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00436",
+      "en_US": "an {COLOR, 0, 255}★Oph6603{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00437",
+      "en_US": "an {COLOR, 0, 255}★Oph6149{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00438",
+      "en_US": "an {COLOR, 0, 255}★Oph6056{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00439",
+      "en_US": "an {COLOR, 0, 255}★Oph6075{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00440",
+      "en_US": "a {COLOR, 0, 255}★Ser5854{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00441",
+      "en_US": "a {COLOR, 0, 255}★Ser7141{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00442",
+      "en_US": "a {COLOR, 0, 255}★Ser5879{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00443",
+      "en_US": "a {COLOR, 0, 255}★Her6406{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00444",
+      "en_US": "a {COLOR, 0, 255}★Her6148{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00445",
+      "en_US": "a {COLOR, 0, 255}★Her6410{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00446",
+      "en_US": "a {COLOR, 0, 255}★Her6526{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00447",
+      "en_US": "a {COLOR, 0, 255}★Her6117{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00448",
+      "en_US": "a {COLOR, 0, 255}★Her6008{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00449",
+      "en_US": "a {COLOR, 0, 255}★Per936{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00450",
+      "en_US": "a {COLOR, 0, 255}★Per1017{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00451",
+      "en_US": "a {COLOR, 0, 255}★Per1131{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00452",
+      "en_US": "a {COLOR, 0, 255}★Per1228{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00453",
+      "en_US": "a {COLOR, 0, 255}★Per834{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00454",
+      "en_US": "a {COLOR, 0, 255}★Per941{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00455",
+      "en_US": "a {COLOR, 0, 255}★Phe99{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00456",
+      "en_US": "a {COLOR, 0, 255}★Phe338{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00457",
+      "en_US": "a {COLOR, 0, 255}★Vel3634{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00458",
+      "en_US": "a {COLOR, 0, 255}★Vel3485{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00459",
+      "en_US": "a {COLOR, 0, 255}★Vel3734{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00460",
+      "en_US": "an {COLOR, 0, 255}★Aqr8232{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00461",
+      "en_US": "an {COLOR, 0, 255}★Aqr8414{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00462",
+      "en_US": "an {COLOR, 0, 255}★Aqr8709{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00463",
+      "en_US": "an {COLOR, 0, 255}★Aqr8518{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00464",
+      "en_US": "an {COLOR, 0, 255}★Aqr7950{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00465",
+      "en_US": "an {COLOR, 0, 255}★Aqr8499{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00466",
+      "en_US": "an {COLOR, 0, 255}★Aqr8610{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00467",
+      "en_US": "an {COLOR, 0, 255}★Aqr8264{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00468",
+      "en_US": "a {COLOR, 0, 255}★Cru4853{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00469",
+      "en_US": "a {COLOR, 0, 255}★Cru4730{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00470",
+      "en_US": "a {COLOR, 0, 255}★Cru4763{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00471",
+      "en_US": "a {COLOR, 0, 255}★Cru4700{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00472",
+      "en_US": "a {COLOR, 0, 255}★Cru4656{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00473",
+      "en_US": "a {COLOR, 0, 255}★PsA8728{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00474",
+      "en_US": "a {COLOR, 0, 255}★TrA6217{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00475",
+      "en_US": "a {COLOR, 0, 255}★Cap7776{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00476",
+      "en_US": "a {COLOR, 0, 255}★Cap7754{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00477",
+      "en_US": "a {COLOR, 0, 255}★Cap8278{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00478",
+      "en_US": "a {COLOR, 0, 255}★Cap8322{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00479",
+      "en_US": "a {COLOR, 0, 255}★Cap7773{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00480",
+      "en_US": "a {COLOR, 0, 255}★Sge7479{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00481",
+      "en_US": "a {COLOR, 0, 255}★Car2326{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00482",
+      "en_US": "a {COLOR, 0, 255}★Car3685{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00483",
+      "en_US": "a {COLOR, 0, 255}★Car3307{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00484",
+      "en_US": "a {COLOR, 0, 255}★Car3699{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00485",
+      "en_US": "a {COLOR, 0, 255}★Dra5744{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00486",
+      "en_US": "a {COLOR, 0, 255}★Dra5291{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00487",
+      "en_US": "a {COLOR, 0, 255}★Dra6705{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00488",
+      "en_US": "a {COLOR, 0, 255}★Dra6536{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00489",
+      "en_US": "a {COLOR, 0, 255}★Dra7310{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00490",
+      "en_US": "a {COLOR, 0, 255}★Dra6688{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00491",
+      "en_US": "a {COLOR, 0, 255}★Dra4434{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00492",
+      "en_US": "a {COLOR, 0, 255}★Dra6370{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00493",
+      "en_US": "a {COLOR, 0, 255}★Dra7462{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00494",
+      "en_US": "a {COLOR, 0, 255}★Dra6396{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00495",
+      "en_US": "a {COLOR, 0, 255}★Dra6132{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00496",
+      "en_US": "a {COLOR, 0, 255}★Dra6636{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00497",
+      "en_US": "a {COLOR, 0, 255}★CVn4915{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00498",
+      "en_US": "a {COLOR, 0, 255}★CVn4785{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00499",
+      "en_US": "a {COLOR, 0, 255}★CVn4846{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00500",
+      "en_US": "an {COLOR, 0, 255}★Aql7595{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00501",
+      "en_US": "an {COLOR, 0, 255}★Aql7557{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00502",
+      "en_US": "an {COLOR, 0, 255}★Aql7525{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00503",
+      "en_US": "an {COLOR, 0, 255}★Aql7602{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00504",
+      "en_US": "an {COLOR, 0, 255}★Aql7235{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00505",
+      "en_US": "a {COLOR, 0, 255}comb of Max Honey{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00506",
+      "en_US": "the {COLOR, 0, 255}cluster of Max Mushrooms{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00507",
+      "en_US": "a {COLOR, 0, 255}Galarica Twig{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00508",
+      "en_US": "a {COLOR, 0, 255}Galarica Cuff{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00509",
+      "en_US": "a {COLOR, 0, 255}Style Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00510",
+      "en_US": "an {COLOR, 0, 255}Armor Pass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00511",
+      "en_US": "a {COLOR, 0, 255}Rotom Bike{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00512",
+      "en_US": "a {COLOR, 0, 255}Rotom Bike{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00513",
+      "en_US": "an {COLOR, 0, 255}Exp. Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00514",
+      "en_US": "a {COLOR, 0, 255}piece of Armorite Ore{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00515",
+      "en_US": "a {COLOR, 0, 255}Mark Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00516",
+      "en_US": "a {COLOR, 0, 255}set of Reins of Unity{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00517",
+      "en_US": "a {COLOR, 0, 255}set of Reins of Unity{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00518",
+      "en_US": "a {COLOR, 0, 255}Galarica Wreath{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00519",
+      "en_US": "a {COLOR, 0, 255}Legendary Clue 1{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00520",
+      "en_US": "a {COLOR, 0, 255}Legendary Clue 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00521",
+      "en_US": "a {COLOR, 0, 255}Legendary Clue 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00522",
+      "en_US": "a {COLOR, 0, 255}Legendary Clue?{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00523",
+      "en_US": "a {COLOR, 0, 255}Crown Pass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00524",
+      "en_US": "a {COLOR, 0, 255}Wooden Crown{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00525",
+      "en_US": "a {COLOR, 0, 255}Radiant Petal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00526",
+      "en_US": "a {COLOR, 0, 255}tuft of White Mane Hair{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00527",
+      "en_US": "a {COLOR, 0, 255}tuft of Black Mane Hair{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00528",
+      "en_US": "an {COLOR, 0, 255}Iceroot Carrot{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00529",
+      "en_US": "a {COLOR, 0, 255}Shaderoot Carrot{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00530",
+      "en_US": "a {COLOR, 0, 255}piece of Dynite Ore{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00531",
+      "en_US": "a {COLOR, 0, 255}bag of Carrot Seeds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00532",
+      "en_US": "an {COLOR, 0, 255}Ability Patch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00533",
+      "en_US": "a {COLOR, 0, 255}set of Reins of Unity{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00534",
+      "en_US": "a {COLOR, 0, 255}Time Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00535",
+      "en_US": "a {COLOR, 0, 255}Space Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00536",
+      "en_US": "a {COLOR, 0, 255}Mysterious Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00537",
+      "en_US": "a {COLOR, 0, 255}Linking Cord{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00538",
+      "en_US": "a {COLOR, 0, 255}Hometown Muffin{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00539",
+      "en_US": "an {COLOR, 0, 255}Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00540",
+      "en_US": "a {COLOR, 0, 255}Jubilife Muffin{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00541",
+      "en_US": "a {COLOR, 0, 255}dose of Aux Powerguard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00542",
+      "en_US": "a {COLOR, 0, 255}dose of Dire Hit{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00543",
+      "en_US": "a {COLOR, 0, 255}Choice Dumpling{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00544",
+      "en_US": "a {COLOR, 0, 255}serving of Twice-Spiced Radish{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00545",
+      "en_US": "a {COLOR, 0, 255}Swap Snack{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00546",
+      "en_US": "a {COLOR, 0, 255}Caster Fern leaf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00547",
+      "en_US": "a {COLOR, 0, 255}Seed of Mastery{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00548",
+      "en_US": "a {COLOR, 0, 255}Poké Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00549",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00550",
+      "en_US": "a {COLOR, 0, 255}piece of Eternal Ice{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00551",
+      "en_US": "an {COLOR, 0, 255}Uxie’s Claw{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00552",
+      "en_US": "an {COLOR, 0, 255}Azelf’s Fang{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00553",
+      "en_US": "a {COLOR, 0, 255}Mesprit’s Plume{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00554",
+      "en_US": "a {COLOR, 0, 255}Tumblestone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00555",
+      "en_US": "a {COLOR, 0, 255}Celestica Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00556",
+      "en_US": "a {COLOR, 0, 255}dose of Remedy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00557",
+      "en_US": "a {COLOR, 0, 255}dose of Fine Remedy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00558",
+      "en_US": "a {COLOR, 0, 255}comb of Dazzling Honey{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00559",
+      "en_US": "the {COLOR, 0, 255}stalk of Hearty Grains{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00560",
+      "en_US": "the {COLOR, 0, 255}pod of Plump Beans{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00561",
+      "en_US": "a {COLOR, 0, 255}Springy Mushroom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00562",
+      "en_US": "a {COLOR, 0, 255}hunk of Crunchy Salt{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00563",
+      "en_US": "a {COLOR, 0, 255}log of Wood{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00564",
+      "en_US": "a {COLOR, 0, 255}bunch of King’s Leaf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00565",
+      "en_US": "a {COLOR, 0, 255}Marsh Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00566",
+      "en_US": "a {COLOR, 0, 255}Poké Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00567",
+      "en_US": "a {COLOR, 0, 255}Great Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00568",
+      "en_US": "an {COLOR, 0, 255}Ultra Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00569",
+      "en_US": "a {COLOR, 0, 255}Feather Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00570",
+      "en_US": "a {COLOR, 0, 255}Pokéshi Doll recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00571",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00572",
+      "en_US": "a {COLOR, 0, 255}Smoke Bomb recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00573",
+      "en_US": "a {COLOR, 0, 255}Scatter Bang recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00574",
+      "en_US": "a {COLOR, 0, 255}Sticky Glob recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00575",
+      "en_US": "a {COLOR, 0, 255}Star Piece recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00576",
+      "en_US": "a {COLOR, 0, 255}Mushroom Cake recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00577",
+      "en_US": "a {COLOR, 0, 255}Bugwort bloom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00578",
+      "en_US": "a {COLOR, 0, 255}Honey Cake recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00579",
+      "en_US": "a {COLOR, 0, 255}Grain Cake recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00580",
+      "en_US": "a {COLOR, 0, 255}Bean Cake recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00581",
+      "en_US": "a {COLOR, 0, 255}Salt Cake recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00582",
+      "en_US": "a {COLOR, 0, 255}Potion recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00583",
+      "en_US": "a {COLOR, 0, 255}Super Potion recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00584",
+      "en_US": "a {COLOR, 0, 255}Hyper Potion recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00585",
+      "en_US": "a {COLOR, 0, 255}Max Potion recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00586",
+      "en_US": "a {COLOR, 0, 255}Full Restore recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00587",
+      "en_US": "a {COLOR, 0, 255}Remedy recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00588",
+      "en_US": "a {COLOR, 0, 255}Fine Remedy recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00589",
+      "en_US": "a {COLOR, 0, 255}Superb Remedy recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00590",
+      "en_US": "an {COLOR, 0, 255}Old Gateau recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00591",
+      "en_US": "a {COLOR, 0, 255}Jubilife Muffin recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00592",
+      "en_US": "a {COLOR, 0, 255}Full Heal recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00593",
+      "en_US": "a {COLOR, 0, 255}Revive recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00594",
+      "en_US": "a {COLOR, 0, 255}Max Revive recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00595",
+      "en_US": "a {COLOR, 0, 255}Max Ether recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00596",
+      "en_US": "a {COLOR, 0, 255}Max Elixir recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00597",
+      "en_US": "a {COLOR, 0, 255}Stealth Spray recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00598",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00599",
+      "en_US": "an {COLOR, 0, 255}Aux Power recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00600",
+      "en_US": "an {COLOR, 0, 255}Aux Guard recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00601",
+      "en_US": "a {COLOR, 0, 255}Dire Hit recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00602",
+      "en_US": "an {COLOR, 0, 255}Aux Evasion recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00603",
+      "en_US": "an {COLOR, 0, 255}Aux Powerguard recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00604",
+      "en_US": "a {COLOR, 0, 255}Forest Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00605",
+      "en_US": "an {COLOR, 0, 255}Iron Chunk{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00606",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00607",
+      "en_US": "a {COLOR, 0, 255}Black Tumblestone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00608",
+      "en_US": "a {COLOR, 0, 255}Sky Tumblestone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00609",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00610",
+      "en_US": "a {COLOR, 0, 255}Ball of Mud{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00611",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00612",
+      "en_US": "a {COLOR, 0, 255}Pop Pod{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00613",
+      "en_US": "a {COLOR, 0, 255}Sootfoot Root{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00614",
+      "en_US": "a {COLOR, 0, 255}Spoiled Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00615",
+      "en_US": "a {COLOR, 0, 255}Snowball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00616",
+      "en_US": "a {COLOR, 0, 255}Sticky Glob{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00617",
+      "en_US": "a {COLOR, 0, 255}piece of Black Augurite{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00618",
+      "en_US": "a {COLOR, 0, 255}Peat Block{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00619",
+      "en_US": "a {COLOR, 0, 255}Stealth Spray{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00620",
+      "en_US": "a {COLOR, 0, 255}Medicinal Leek{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00621",
+      "en_US": "a {COLOR, 0, 255}Vivichoke{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00622",
+      "en_US": "a {COLOR, 0, 255}Pep-Up Plant{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00623",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00624",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00625",
+      "en_US": "a {COLOR, 0, 255}Tempting Charm B{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00626",
+      "en_US": "a {COLOR, 0, 255}Tempting Charm P{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00627",
+      "en_US": "a {COLOR, 0, 255}bunch of Swordcap{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00628",
+      "en_US": "a {COLOR, 0, 255}scrap of Iron Barktongue{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00629",
+      "en_US": "the {COLOR, 0, 255}bunch of Doppel Bonnets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00630",
+      "en_US": "a {COLOR, 0, 255}Direshroom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00631",
+      "en_US": "a {COLOR, 0, 255}Sand Radish{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00632",
+      "en_US": "a {COLOR, 0, 255}Tempting Charm T{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00633",
+      "en_US": "a {COLOR, 0, 255}Tempting Charm Y{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00634",
+      "en_US": "a {COLOR, 0, 255}Candy Truffle{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00635",
+      "en_US": "a {COLOR, 0, 255}ball of Cake-Lure Base{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00636",
+      "en_US": "a {COLOR, 0, 255}Poké Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00637",
+      "en_US": "a {COLOR, 0, 255}Great Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00638",
+      "en_US": "an {COLOR, 0, 255}Ultra Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00639",
+      "en_US": "a {COLOR, 0, 255}Feather Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00640",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00641",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00642",
+      "en_US": "a {COLOR, 0, 255}Scatter Bang{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00643",
+      "en_US": "a {COLOR, 0, 255}Smoke Bomb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00644",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00645",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00646",
+      "en_US": "a {COLOR, 0, 255}Pokéshi Doll{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00647",
+      "en_US": "a {COLOR, 0, 255}Volcano Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00648",
+      "en_US": "a {COLOR, 0, 255}Mountain Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00649",
+      "en_US": "a {COLOR, 0, 255}Snow Balm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00650",
+      "en_US": "a {COLOR, 0, 255}Honey Cake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00651",
+      "en_US": "a {COLOR, 0, 255}Grain Cake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00652",
+      "en_US": "a {COLOR, 0, 255}Bean Cake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00653",
+      "en_US": "a {COLOR, 0, 255}Mushroom Cake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00654",
+      "en_US": "a {COLOR, 0, 255}Salt Cake{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00655",
+      "en_US": "a {COLOR, 0, 255}Swap Snack recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00656",
+      "en_US": "a {COLOR, 0, 255}Choice Dumpling recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00657",
+      "en_US": "a {COLOR, 0, 255}Twice-Spiced Radish recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00658",
+      "en_US": "a {COLOR, 0, 255}Survival Charm R{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00659",
+      "en_US": "a {COLOR, 0, 255}Survival Charm B{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00660",
+      "en_US": "a {COLOR, 0, 255}Survival Charm P{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00661",
+      "en_US": "a {COLOR, 0, 255}Survival Charm T{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00662",
+      "en_US": "a {COLOR, 0, 255}Survival Charm Y{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00663",
+      "en_US": "a {COLOR, 0, 255}Torn Journal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00664",
+      "en_US": "a {COLOR, 0, 255}Warding Charm R{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00665",
+      "en_US": "a {COLOR, 0, 255}Warding Charm B{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00666",
+      "en_US": "a {COLOR, 0, 255}Warding Charm P{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00667",
+      "en_US": "a {COLOR, 0, 255}Warding Charm T{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00668",
+      "en_US": "a {COLOR, 0, 255}Warding Charm Y{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00669",
+      "en_US": "a {COLOR, 0, 255}Wall Fragment{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00670",
+      "en_US": "a {COLOR, 0, 255}ball of Basculegion Food{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00671",
+      "en_US": "an {COLOR, 0, 255}Old Journal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00672",
+      "en_US": "a {COLOR, 0, 255}Wing Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00673",
+      "en_US": "a {COLOR, 0, 255}Jet Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00674",
+      "en_US": "a {COLOR, 0, 255}Heavy Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00675",
+      "en_US": "a {COLOR, 0, 255}Leaden Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00676",
+      "en_US": "a {COLOR, 0, 255}Gigaton Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00677",
+      "en_US": "a {COLOR, 0, 255}Wing Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00678",
+      "en_US": "a {COLOR, 0, 255}Jet Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00679",
+      "en_US": "a {COLOR, 0, 255}Heavy Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00680",
+      "en_US": "a {COLOR, 0, 255}Hopo Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00681",
+      "en_US": "a {COLOR, 0, 255}dose of Superb Remedy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00682",
+      "en_US": "a {COLOR, 0, 255}dose of Aux Power{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00683",
+      "en_US": "a {COLOR, 0, 255}dose of Aux Guard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00684",
+      "en_US": "a {COLOR, 0, 255}dose of Aux Evasion{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00685",
+      "en_US": "a {COLOR, 0, 255}sack of Grit Dust{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00686",
+      "en_US": "a {COLOR, 0, 255}sack of Grit Gravel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00687",
+      "en_US": "a {COLOR, 0, 255}Grit Pebble{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00688",
+      "en_US": "a {COLOR, 0, 255}Grit Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00689",
+      "en_US": "a {COLOR, 0, 255}dose of Secret Medicine{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00690",
+      "en_US": "a {COLOR, 0, 255}Tempting Charm R{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00691",
+      "en_US": "a {COLOR, 0, 255}Lost Satchel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00692",
+      "en_US": "a {COLOR, 0, 255}Lost Satchel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00693",
+      "en_US": "a {COLOR, 0, 255}Lost Satchel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00694",
+      "en_US": "a {COLOR, 0, 255}Lost Satchel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00695",
+      "en_US": "a {COLOR, 0, 255}Lost Satchel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00696",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00697",
+      "en_US": "an {COLOR, 0, 255}Origin Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00698",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00699",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00700",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00701",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00702",
+      "en_US": "a {COLOR, 0, 255}piece of Origin Ore{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00703",
+      "en_US": "an {COLOR, 0, 255}Adamant Crystal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00704",
+      "en_US": "a {COLOR, 0, 255}Lustrous Globe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00705",
+      "en_US": "a {COLOR, 0, 255}Griseous Core{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00706",
+      "en_US": "a {COLOR, 0, 255}Blank Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00707",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00708",
+      "en_US": "a {COLOR, 0, 255}Crafting Kit{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00709",
+      "en_US": "a {COLOR, 0, 255}Leaden Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00710",
+      "en_US": "a {COLOR, 0, 255}Gigaton Ball recipe{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00711",
+      "en_US": "a {COLOR, 0, 255}Strange Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00712",
+      "en_US": "a {COLOR, 0, 255}Pokédex{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00713",
+      "en_US": "an {COLOR, 0, 255}Old Verse 1{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00714",
+      "en_US": "an {COLOR, 0, 255}Old Verse 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00715",
+      "en_US": "an {COLOR, 0, 255}Old Verse 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00716",
+      "en_US": "an {COLOR, 0, 255}Old Verse 4{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00717",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0849_00718",
+      "en_US": "an {COLOR, 0, 255}Old Verse 5{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00719",
+      "en_US": "an {COLOR, 0, 255}Old Verse 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00720",
+      "en_US": "an {COLOR, 0, 255}Old Verse 7{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00721",
+      "en_US": "an {COLOR, 0, 255}Old Verse 8{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00722",
+      "en_US": "an {COLOR, 0, 255}Old Verse 9{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00723",
+      "en_US": "an {COLOR, 0, 255}Old Verse 10{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00724",
+      "en_US": "an {COLOR, 0, 255}Old Verse 11{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00725",
+      "en_US": "an {COLOR, 0, 255}Old Verse 12{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00726",
+      "en_US": "an {COLOR, 0, 255}Old Verse 13{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00727",
+      "en_US": "an {COLOR, 0, 255}Old Verse 14{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00728",
+      "en_US": "an {COLOR, 0, 255}Old Verse 15{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00729",
+      "en_US": "an {COLOR, 0, 255}Old Verse 16{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00730",
+      "en_US": "an {COLOR, 0, 255}Old Verse 17{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00731",
+      "en_US": "an {COLOR, 0, 255}Old Verse 18{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00732",
+      "en_US": "an {COLOR, 0, 255}Old Verse 19{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00733",
+      "en_US": "an {COLOR, 0, 255}Old Verse 20{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00734",
+      "en_US": "a {COLOR, 0, 255}Mysterious Shard S{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00735",
+      "en_US": "a {COLOR, 0, 255}Mysterious Shard L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00736",
+      "en_US": "a {COLOR, 0, 255}Digger Drill{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00737",
+      "en_US": "a {COLOR, 0, 255}Kanto Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00738",
+      "en_US": "a {COLOR, 0, 255}Johto Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00739",
+      "en_US": "a {COLOR, 0, 255}Soul Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00740",
+      "en_US": "a {COLOR, 0, 255}Rainbow Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00741",
+      "en_US": "a {COLOR, 0, 255}Squall Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00742",
+      "en_US": "an {COLOR, 0, 255}Oceanic Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00743",
+      "en_US": "a {COLOR, 0, 255}Tectonic Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00744",
+      "en_US": "a {COLOR, 0, 255}Stratospheric Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00745",
+      "en_US": "a {COLOR, 0, 255}Genome Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00746",
+      "en_US": "a {COLOR, 0, 255}Discovery Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00747",
+      "en_US": "a {COLOR, 0, 255}Distortion Slate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00748",
+      "en_US": "the {COLOR, 0, 255}DS Sounds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0849_00749",
+      "en_US": []
+    },
+    {
+      "id": "msg_0849_00750",
+      "en_US": []
+    },
+    {
+      "id": "msg_0849_00751",
+      "en_US": []
+    },
+    {
+      "id": "msg_0849_00752",
+      "en_US": []
+    },
+    {
+      "id": "msg_0849_00753",
+      "en_US": []
+    },
+    {
+      "id": "msg_0849_00754",
+      "en_US": "a {COLOR, 0, 255}Legend Plate{COLOR, 0, 0}"
+    }
+  ]
+}

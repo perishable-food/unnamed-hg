@@ -1,0 +1,131 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0952
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetFlag 2507
+	SetVar 0x4000 0
+	SetVar 0x4001 653
+	CMD_807 0x4000 0x4002
+	CompareVarValue 0x4002 0
+	JumpIf DIFFERENT Function#1
+	SetFlagFromVar 0x4001
+Jump Function#2
+
+Script 2:
+	SetVar 0x4000 10
+Jump Function#3
+
+Script 3:
+	SetVar 0x4000 0
+Jump Function#3
+
+Script 4:
+	SetVar 0x4000 1
+Jump Function#3
+
+Script 5:
+	SetVar 0x4000 2
+Jump Function#3
+
+Script 6:
+	SetVar 0x4000 3
+Jump Function#3
+
+Script 7:
+	SetVar 0x4000 4
+Jump Function#3
+
+Script 8:
+	SetVar 0x4000 5
+Jump Function#3
+
+Script 9:
+	SetVar 0x4000 6
+Jump Function#3
+
+Script 10:
+	SetVar 0x4000 7
+Jump Function#3
+
+Script 11:
+	SetVar 0x4000 8
+Jump Function#3
+
+Script 12:
+	SetVar 0x4000 9
+Jump Function#3
+
+//===== FUNCTIONS =====//
+Function 1:
+	ClearFlagFromVar 0x4001
+	IncrementVar 0x4000 1
+	IncrementVar 0x4001 1
+	CompareVarValue 0x4000 10
+	JumpIf LESS Function#4
+End
+
+Function 2:
+	IncrementVar 0x4000 1
+	IncrementVar 0x4001 1
+	CompareVarValue 0x4000 10
+	JumpIf LESS Function#4
+End
+
+Function 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	SetVar 0x4001 2730
+	IncrementVar 0x4001 0x4000
+	FlagStatusToVar 0x4001 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseMessage
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	OverlayManager 4 0
+	CMD_809 0x4000
+	WaitAB
+	CloseMessage
+	OverlayManager 4 1
+	CMD_808 0x4000
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 1
+	CallIf EQUAL Function#6
+	SetFlagFromVar 0x4001
+	ReleaseAll
+End
+
+Function 4:
+	CMD_807 0x4000 0x4002
+	CompareVarValue 0x4002 0
+	JumpIf DIFFERENT Function#1
+	SetFlagFromVar 0x4001
+Jump Function#2
+
+Function 5:
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 2
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	CloseMessage
+	CMD_555 1
+Return
+
+//===== ACTIONS =====//

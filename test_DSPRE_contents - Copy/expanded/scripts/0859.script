@@ -1,0 +1,186 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0859
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	InitVioletGym
+	CheckPokeGearRematch 18 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#1
+	CheckPokegearNumberRegistered 18 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#2
+	CheckBadge 12 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#3
+Jump Function#4
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 0 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_FALKNER_020 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	GiveBadge 0
+	SetVar 0x416F 22
+	SetVar 0x8004 421
+	SetVar 0x8005 1
+	CommonScript 2033
+	AddTrainerScore 22
+	SetTrainerFlag TRAINER_ROD_029
+	SetTrainerFlag TRAINER_ABE_050
+	SetVar 0x4074 1
+	SetFlag 402
+	SetVar 0x4108 6
+	SetFlag 244
+	SetFlag 403
+	Message 1
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	Message 3
+Jump Function#7
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 0 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#8
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 0 0x800C
+	TextPlayerName 0
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#9
+	Message 9
+Jump Function#10
+
+Script 5:
+	SetVar 0x4000 0
+	VioletGymElevator
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	SetFlag 745
+End
+
+Function 2:
+	GetDayOfWeek 0x4001
+	CompareVarValue 0x4001 3
+	JumpIf DIFFERENT Function#11
+	SetFlag 745
+Jump Function#12
+
+Function 3:
+	GetDayOfWeek 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf DIFFERENT Function#13
+	SetFlag 745
+Jump Function#14
+
+Function 4:
+	ClearFlag 745
+End
+
+Function 5:
+	CheckFlag 115
+	JumpIf LESS Function#7
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	LostBattle
+	ReleaseAll
+End
+
+Function 7:
+	SetVar 0x8004 378
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#15
+	CommonScript 2033
+	SetFlag 115
+	ClearFlag 741
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+Jump Function#4
+
+Function 12:
+End
+
+Function 13:
+Jump Function#4
+
+Function 14:
+End
+
+Function 15:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

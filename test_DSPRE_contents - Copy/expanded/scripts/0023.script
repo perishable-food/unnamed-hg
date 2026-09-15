@@ -1,0 +1,151 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0023
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	CommonScript 2042
+	Movement Overworld.1 Action#1
+	WaitMovement
+	TextPlayerName 0
+	Message 2
+	WaitButton
+	CloseMessage
+	CommonScript 2043
+	SetVar 0x40A2 1
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	MecScript
+	LockAll
+	CommonScript 2031
+	Movement Overworld.0 Action#2
+	WaitMovement
+	TextRivalName 0
+	Message 0
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#1
+	TrainerBattle TRAINER_SILVER_267 TRAINER_NONE 0 0
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x800C 703
+	JumpIf DIFFERENT Function#3
+	TrainerBattle TRAINER_SILVER_270 TRAINER_NONE 0 0
+Jump Function#2
+
+Function 2:
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	CommonScript 2070
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#3
+	Movement Overworld.0 Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	RemoveOW Overworld.0
+	CommonScript 2071
+	SetFlag 454
+	SetVar 0x40A6 1
+	ReleaseAll
+End
+
+Function 3:
+	TrainerBattle TRAINER_SILVER_263 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	CommonScript 2070
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#3
+	Movement Overworld.0 Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	RemoveOW Overworld.0
+	CommonScript 2071
+	SetFlag 454
+	SetVar 0x40A6 1
+	ReleaseAll
+End
+
+Function 4:
+	LostBattle
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceWest 0x1
+	EmoteExclamation 0x1
+	WalkWest8 0x3
+End
+
+Action 2:
+	FaceSouth 0x1
+	EmoteExclamation 0x1
+	WalkSouth8 0x4
+	WalkWest8 0x1
+	FaceSouth 0x1
+End
+
+Action 3:
+	WalkSouth8 0x2
+	WalkEast8 0x1
+	FaceWest 0x1
+End
+
+Action 4:
+	WalkSouth8 0x3
+	WalkWest8 0x1
+	WalkSouth8 0x1
+	WalkWest8 0x3
+	WalkSouth8 0x1
+	WalkWest8 0x4
+	WalkSouth8 0x3
+End
+

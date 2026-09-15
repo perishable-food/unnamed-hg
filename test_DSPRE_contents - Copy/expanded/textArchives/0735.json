@@ -1,0 +1,85 @@
+{
+  "key": 20561,
+  "messages": [
+    {
+      "id": "msg_0735_00000",
+      "en_US": "Normal"
+    },
+    {
+      "id": "msg_0735_00001",
+      "en_US": "Fighting"
+    },
+    {
+      "id": "msg_0735_00002",
+      "en_US": "Flying"
+    },
+    {
+      "id": "msg_0735_00003",
+      "en_US": "Poison"
+    },
+    {
+      "id": "msg_0735_00004",
+      "en_US": "Ground"
+    },
+    {
+      "id": "msg_0735_00005",
+      "en_US": "Rock"
+    },
+    {
+      "id": "msg_0735_00006",
+      "en_US": "Bug"
+    },
+    {
+      "id": "msg_0735_00007",
+      "en_US": "Ghost"
+    },
+    {
+      "id": "msg_0735_00008",
+      "en_US": "Steel"
+    },
+    {
+      "id": "msg_0735_00009",
+      "en_US": "Fairy"
+    },
+    {
+      "id": "msg_0735_00010",
+      "en_US": "Fire"
+    },
+    {
+      "id": "msg_0735_00011",
+      "en_US": "Water"
+    },
+    {
+      "id": "msg_0735_00012",
+      "en_US": "Grass"
+    },
+    {
+      "id": "msg_0735_00013",
+      "en_US": "Electric"
+    },
+    {
+      "id": "msg_0735_00014",
+      "en_US": "Psychic"
+    },
+    {
+      "id": "msg_0735_00015",
+      "en_US": "Ice"
+    },
+    {
+      "id": "msg_0735_00016",
+      "en_US": "Dragon"
+    },
+    {
+      "id": "msg_0735_00017",
+      "en_US": "Dark"
+    },
+    {
+      "id": "msg_0735_00018",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0735_00019",
+      "en_US": "Stellar"
+    }
+  ]
+}

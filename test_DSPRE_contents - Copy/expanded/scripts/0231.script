@@ -1,0 +1,419 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0231
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	CommonScript 2029
+	Movement Overworld.2 Action#1
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	SetOWPosition Overworld.1 10 1 7 Left
+	SetOWPosition Overworld.2 10 1 7 Left
+	Movement Overworld.1 Action#2
+	WaitMovement
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	GetPlayerPosition 0x4000 0x4001
+	CheckPokemonAlive 0x4002
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#1
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#2
+	Movement Overworld.1 Action#3
+	Movement Overworld.2 Action#4
+Jump Function#3
+
+Script 2:
+	GetCounterpartSprite 0x4020
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.1 Action#5
+	Movement Overworld.2 Action#6
+Jump Function#5
+
+Function 2:
+	CompareVarValue 0x4001 7
+	JumpIf DIFFERENT Function#6
+	Movement Overworld.1 Action#7
+	Movement Overworld.2 Action#8
+Jump Function#3
+
+Function 3:
+Jump Function#5
+
+Function 4:
+	CompareVarValue 0x4001 7
+	JumpIf DIFFERENT Function#7
+	Movement Overworld.1 Action#9
+	Movement Overworld.2 Action#10
+Jump Function#5
+
+Function 5:
+	WaitMovement
+	Movement Player Action#11
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#8
+	Movement Following Action#11
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 2 3
+	SetVar 0x8004 465
+	SetVar 0x8005 1
+	CommonScript 2033
+	GenderMessage 4 5
+	CloseMessage
+	Movement Overworld.1 Action#11
+	WaitMovement
+	GenderMessage 6 7
+	CloseMessage
+	Movement Overworld.2 Action#12
+	WaitMovement
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#9
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.1 Action#13
+	Movement Overworld.2 Action#14
+Jump Function#11
+
+Function 6:
+	Movement Overworld.1 Action#15
+	Movement Overworld.2 Action#16
+Jump Function#5
+
+Function 7:
+	Movement Overworld.1 Action#17
+	Movement Overworld.2 Action#18
+	WaitMovement
+	Movement Player Action#11
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#8
+	Movement Following Action#11
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 2 3
+	SetVar 0x8004 465
+	SetVar 0x8005 1
+	CommonScript 2033
+	GenderMessage 4 5
+	CloseMessage
+	Movement Overworld.1 Action#11
+	WaitMovement
+	GenderMessage 6 7
+	CloseMessage
+	Movement Overworld.2 Action#12
+	WaitMovement
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#9
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.1 Action#13
+	Movement Overworld.2 Action#14
+Jump Function#11
+
+Function 8:
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 2 3
+	SetVar 0x8004 465
+	SetVar 0x8005 1
+	CommonScript 2033
+	GenderMessage 4 5
+	CloseMessage
+	Movement Overworld.1 Action#11
+	WaitMovement
+	GenderMessage 6 7
+	CloseMessage
+	Movement Overworld.2 Action#12
+	WaitMovement
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#9
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.1 Action#13
+	Movement Overworld.2 Action#14
+Jump Function#11
+
+Function 9:
+	CompareVarValue 0x4001 6
+	JumpIf DIFFERENT Function#12
+	Movement Overworld.1 Action#19
+	Movement Overworld.2 Action#20
+Jump Function#13
+
+Function 10:
+	CompareVarValue 0x4001 7
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.1 Action#21
+	Movement Overworld.2 Action#22
+Jump Function#11
+
+Function 11:
+Jump Function#13
+
+Function 12:
+	CompareVarValue 0x4001 7
+	JumpIf DIFFERENT Function#15
+	Movement Overworld.1 Action#23
+	Movement Overworld.2 Action#24
+Jump Function#13
+
+Function 13:
+	WaitTime 16 0x800C
+	Movement Player Action#25
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#16
+	Movement Following Action#25
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetOWPosition Overworld.1 12 0 28 Up
+	SetOWPosition Overworld.2 12 0 28 Up
+	CommonScript 2030
+	ReleaseAll
+	SetVar 0x4132 1
+End
+
+Function 14:
+	Movement Overworld.1 Action#26
+	Movement Overworld.2 Action#27
+Jump Function#13
+
+Function 15:
+	Movement Overworld.1 Action#28
+	Movement Overworld.2 Action#29
+	WaitTime 16 0x800C
+	Movement Player Action#25
+	CompareVarValue 0x4002 1
+	JumpIf DIFFERENT Function#16
+	Movement Following Action#25
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetOWPosition Overworld.1 12 0 28 Up
+	SetOWPosition Overworld.2 12 0 28 Up
+	CommonScript 2030
+	ReleaseAll
+	SetVar 0x4132 1
+End
+
+Function 16:
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetOWPosition Overworld.1 12 0 28 Up
+	SetOWPosition Overworld.2 12 0 28 Up
+	CommonScript 2030
+	ReleaseAll
+	SetVar 0x4132 1
+End
+
+//===== ACTIONS =====//
+Action 1:
+	SetInvisible 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+End
+
+Action 3:
+	WalkWest8 0x2
+	WalkNorth8 0x1
+	WalkWest8 0x1
+End
+
+Action 4:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x2
+	WalkNorth8 0x1
+	WalkOnSpotWest8 0x1
+End
+
+Action 5:
+	WalkWest8 0x2
+	WalkNorth8 0x1
+	WalkWest8 0x2
+End
+
+Action 6:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x2
+	WalkNorth8 0x1
+	WalkWest8 0x1
+End
+
+Action 7:
+	WalkWest8 0x3
+End
+
+Action 8:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x2
+End
+
+Action 9:
+	WalkWest8 0x4
+End
+
+Action 10:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x3
+End
+
+Action 11:
+	WalkOnSpotEast8 0x1
+End
+
+Action 12:
+	JumpOnSpotWest8 0x2
+End
+
+Action 13:
+	RunSouth 0x1
+	RunWest 0x6
+	SetInvisible 0x1
+End
+
+Action 14:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkSouth4 0x1
+	WalkWest4 0x6
+	SetInvisible 0x1
+End
+
+Action 15:
+	WalkWest8 0x2
+	WalkSouth8 0x1
+	WalkWest8 0x1
+End
+
+Action 16:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x2
+	WalkSouth8 0x1
+	WalkOnSpotWest8 0x1
+End
+
+Action 17:
+	WalkWest8 0x2
+	WalkSouth8 0x1
+	WalkWest8 0x2
+End
+
+Action 18:
+	Delay8 0x1
+	SetVisible 0x1
+	WalkWest8 0x2
+	WalkSouth8 0x1
+	WalkWest8 0x1
+End
+
+Action 19:
+	RunSouth 0x1
+	RunWest 0x5
+	SetInvisible 0x1
+End
+
+Action 20:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkSouth4 0x1
+	WalkWest4 0x5
+	SetInvisible 0x1
+End
+
+Action 21:
+	RunSouth 0x1
+	RunWest 0x4
+	RunNorth 0x1
+	RunWest 0x2
+	SetInvisible 0x1
+End
+
+Action 22:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkSouth4 0x1
+	WalkWest4 0x4
+	WalkNorth4 0x1
+	WalkWest4 0x2
+	SetInvisible 0x1
+End
+
+Action 23:
+	RunSouth 0x1
+	RunWest 0x3
+	RunNorth 0x1
+	RunWest 0x2
+	SetInvisible 0x1
+End
+
+Action 24:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkSouth4 0x1
+	WalkWest4 0x3
+	WalkNorth4 0x1
+	WalkWest4 0x2
+	SetInvisible 0x1
+End
+
+Action 25:
+	WalkOnSpotWest4 0x1
+End
+
+Action 26:
+	RunNorth 0x1
+	RunWest 0x6
+	SetInvisible 0x1
+End
+
+Action 27:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkNorth4 0x1
+	WalkWest4 0x6
+	SetInvisible 0x1
+End
+
+Action 28:
+	RunNorth 0x1
+	RunWest 0x5
+	SetInvisible 0x1
+End
+
+Action 29:
+	Delay2 0x1
+	WalkWest4 0x1
+	WalkNorth4 0x1
+	WalkWest4 0x5
+	SetInvisible 0x1
+End
+

@@ -1,0 +1,524 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0911
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+End
+
+Script 2:
+	MecScript
+	LockAll
+	FadeOutMusic 0 3
+	DoorAnimation 8 7 13 14 77
+	OpenDoor 77
+	WaitDoor 77
+	ClearFlag 470
+	AddOW Overworld.3
+	Movement Overworld.3 Action#1
+	WaitMovement
+	CloseDoor 77
+	WaitDoor 77
+	FreeDoor 77
+	Movement Player Action#2
+	WaitMovement
+	CommonScript 2031
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4001 239
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.3 Action#3
+Jump Function#2
+
+Script 3:
+	SetVar 0x4077 2
+	SetFlag 197
+	SetFlag 2459
+	CompareVarValue 0x40F8 0
+	JumpIf DIFFERENT Function#3
+	SetVar 0x40F8 2
+	SetVar 0x8004 1
+	SetVar 0x8005 2
+	SetVar 0x8006 2
+	CommonScript 2039
+	SetVar 0x4134 6
+End
+
+Script 4:
+	SetFlag 245
+	SetVar 0x4057 1
+	SetVar 0x8004 24
+	SetVar 0x8005 2
+	SetVar 0x8006 0
+	CommonScript 2039
+	SetFlag 585
+	SetVar 0x40A5 3
+End
+
+Script 5:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 7 0x800C
+	CommonScript 2000
+End
+
+Script 6:
+	SetIconBoard 5 0 17 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 7:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 6 0x800C
+	CommonScript 2000
+End
+
+Script 8:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 8 0x800C
+	CommonScript 2000
+End
+
+Script 9:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 10:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 11:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 12:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#4
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#6
+	Movement Player Action#4
+	Movement Overworld.7 Action#5
+Jump Function#7
+
+Script 13:
+	CheckFlag 393
+	JumpIf LESS Function#8
+	ClearFlag 393
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4001 240
+	JumpIf DIFFERENT Function#9
+	Movement Overworld.3 Action#6
+Jump Function#2
+
+Function 2:
+	WaitMovement
+	TextRivalName 0
+	Message 0
+	CloseMessage
+	CompareVarValue 0x4001 239
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.3 Action#7
+	Movement Player Action#8
+	Movement Following Action#9
+Jump Function#11
+
+Function 3:
+	SetVar 0x8004 1
+	SetVar 0x8005 2
+	SetVar 0x8006 2
+	CommonScript 2039
+	SetVar 0x4134 6
+End
+
+Function 4:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#12
+	Movement Player Action#10
+Jump Function#7
+
+Function 7:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#13
+	Movement Following Action#11
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 23
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 1
+	JumpIf DIFFERENT Function#14
+	ClearFlag 638
+Jump Function#15
+
+Function 9:
+	CompareVarValue 0x4001 241
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.3 Action#12
+Jump Function#2
+
+Function 10:
+	CompareVarValue 0x4001 240
+	JumpIf DIFFERENT Function#17
+	Movement Overworld.3 Action#13
+	Movement Player Action#8
+	Movement Following Action#9
+Jump Function#11
+
+Function 11:
+	WaitMovement
+	SetVar 0x4078 1
+	RemoveOW Overworld.3
+	SetFlag 470
+	CommonScript 2032
+	ReleaseAll
+End
+
+Function 12:
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#18
+	Movement Player Action#14
+	Movement Overworld.7 Action#5
+Jump Function#7
+
+Function 13:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 23
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#19
+	ClearFlag 638
+Jump Function#15
+
+Function 15:
+End
+
+Function 16:
+	CompareVarValue 0x4001 242
+	JumpIf DIFFERENT Function#20
+	Movement Overworld.3 Action#15
+Jump Function#2
+
+Function 17:
+	CompareVarValue 0x4001 241
+	JumpIf DIFFERENT Function#21
+	Movement Overworld.3 Action#16
+	Movement Player Action#8
+	Movement Following Action#9
+Jump Function#11
+
+Function 18:
+	Movement Player Action#17
+	Movement Overworld.7 Action#5
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#13
+	Movement Following Action#11
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 23
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 19:
+	SetFlag 638
+End
+
+Function 20:
+	CompareVarValue 0x4001 243
+	JumpIf DIFFERENT Function#2
+	Movement Overworld.3 Action#18
+	WaitMovement
+	TextRivalName 0
+	Message 0
+	CloseMessage
+	CompareVarValue 0x4001 239
+	JumpIf DIFFERENT Function#10
+	Movement Overworld.3 Action#7
+	Movement Player Action#8
+	Movement Following Action#9
+Jump Function#11
+
+Function 21:
+	CompareVarValue 0x4001 242
+	JumpIf DIFFERENT Function#22
+	Movement Overworld.3 Action#19
+	Movement Player Action#8
+	Movement Following Action#9
+Jump Function#11
+
+Function 22:
+	CompareVarValue 0x4001 243
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.3 Action#20
+	Movement Player Action#21
+	Movement Following Action#22
+	WaitMovement
+	SetVar 0x4078 1
+	RemoveOW Overworld.3
+	SetFlag 470
+	CommonScript 2032
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x1
+	Delay15 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+	Delay8 0x1
+End
+
+Action 3:
+	FaceSouth 0x2
+	WalkEast8 0x2
+	Delay15 0x1
+End
+
+Action 4:
+	WalkEast8 0x1
+	WalkNorth8 0x2
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 5:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 6:
+	WalkSouth8 0x1
+	FaceSouth 0x2
+	WalkEast8 0x2
+	Delay15 0x1
+End
+
+Action 7:
+	WalkEast8 0x6
+	FaceNorth 0x2
+	WalkNorth8 0xA
+End
+
+Action 8:
+	FaceNorth 0x2
+	LockDir 0x1
+	WalkSouth6 0x1
+	ReleaseDir 0x1
+	Delay15 0x1
+	WalkOnSpotEast8 0x1
+	Delay15 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 9:
+	FaceNorth 0x2
+	LockDir 0x1
+	WalkSouth6 0x1
+	ReleaseDir 0x1
+	Delay32 0x2
+	WalkOnSpotWest8 0x1
+End
+
+Action 10:
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 11:
+	WalkEast8 0x1
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 12:
+	WalkSouth8 0x2
+	FaceSouth 0x2
+	WalkEast8 0x2
+	Delay15 0x1
+End
+
+Action 13:
+	WalkEast8 0x6
+	FaceNorth 0x2
+	WalkNorth8 0xB
+End
+
+Action 14:
+	WalkNorth8 0x1
+	WalkEast8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 15:
+	WalkSouth8 0x3
+	FaceSouth 0x2
+	WalkEast8 0x2
+	Delay15 0x1
+End
+
+Action 16:
+	WalkEast8 0x6
+	FaceNorth 0x2
+	WalkNorth8 0xC
+End
+
+Action 17:
+	WalkNorth8 0x1
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 18:
+	WalkSouth8 0x4
+	FaceSouth 0x2
+	WalkEast8 0x2
+	Delay15 0x1
+End
+
+Action 19:
+	WalkEast8 0x6
+	FaceNorth 0x2
+	WalkNorth8 0xD
+End
+
+Action 20:
+	WalkEast8 0x6
+	FaceNorth 0x2
+	WalkNorth8 0xE
+End
+
+Action 21:
+	FaceSouth 0x2
+	LockDir 0x1
+	WalkNorth6 0x1
+	ReleaseDir 0x1
+	Delay15 0x1
+	WalkOnSpotEast8 0x1
+	Delay15 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 22:
+	FaceSouth 0x2
+	LockDir 0x1
+	WalkNorth6 0x1
+	ReleaseDir 0x1
+End
+

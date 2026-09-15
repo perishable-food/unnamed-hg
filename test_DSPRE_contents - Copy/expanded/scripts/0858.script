@@ -1,0 +1,167 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0858
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CommonScript 2011
+	FreezeMessage
+	SetVar 0x8004 1
+	CommonScript 2048
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CommonScript 2011
+	FreezeMessage
+	SetVar 0x8004 1
+	CommonScript 2052
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 111
+	JumpIf EQUAL Function#1
+	TextPlayerName 0
+	GenderMessage 2 3
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#3
+	GiveTogepiEgg
+	SetFlag 112
+	TextPlayerName 0
+	Message 4
+	PlaySound SEQ_ME_TAMAGO_GET
+	WaitSound
+	GenderMessage 5 6
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.4 Action#1
+Jump Function#5
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	TextPlayerName 0
+	GenderMessage 9 10
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+End
+
+Function 2:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetFlag 111
+End
+
+Function 3:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetFlag 111
+End
+
+Function 4:
+	Movement Overworld.4 Action#2
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	RemoveOW Overworld.4
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetFlag 407
+	ReleaseAll
+	SetVar 0x4074 3
+	ClearFlag 568
+	ClearFlag 582
+	SetVar 0x4108 7
+End
+
+Function 5:
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	RemoveOW Overworld.4
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetFlag 407
+	ReleaseAll
+	SetVar 0x4074 3
+	ClearFlag 568
+	ClearFlag 582
+	SetVar 0x4108 7
+End
+
+Function 6:
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#3
+	GiveTogepiEgg
+	SetFlag 112
+	TextPlayerName 0
+	Message 4
+	PlaySound SEQ_ME_TAMAGO_GET
+	WaitSound
+	GenderMessage 5 6
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.4 Action#1
+Jump Function#5
+
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x2
+	WalkWest8 0x2
+	WalkSouth8 0x1
+End
+
+Action 2:
+	WalkWest8 0x2
+	WalkSouth8 0x3
+End
+

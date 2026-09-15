@@ -1,0 +1,442 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0815
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Release Following
+	Movement Following Action#1
+	WaitMovement
+	Lock Following
+	CompareVarValue 0x40FD 0
+	JumpIf DIFFERENT Function#1
+	CheckFlag 296
+	JumpIf EQUAL Function#2
+	SetFlag 296
+	Message 0
+	CloseMessage
+	GetPlayerDirection 0x4000
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.0 Action#2
+Jump Function#4
+
+Script 2:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 20 0x800C
+	CommonScript 2000
+End
+
+Script 3:
+	SetIconBoard 21 0 9 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 4:
+	CheckFlag 393
+	JumpIf LESS Function#5
+	ClearFlag 393
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckPokegearNumberRegistered 30 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#6
+	CompareVarValue 0x4004 1
+	JumpIf GREATER/EQUAL Function#7
+	Message 10
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#9
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 5
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#10
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#11
+	Message 6
+	CloseMessage
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 92
+	FacePlayer
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	CountBadges 0x4167
+	CompareVarValue 0x4167 7
+	JumpIf GREATER/EQUAL Function#12
+	TextNumber 0 0x4167
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Movement Overworld.0 Action#3
+	WaitMovement
+	Message 1
+	CountBadges 0x401B
+	CompareVarValue 0x401B 7
+	JumpIf GREATER/EQUAL Function#12
+	TextNumber 0 0x401B
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitMovement
+	Message 1
+	CompareVarValue 0x4135 7
+	JumpIf GREATER/EQUAL Function#12
+	TextNumber 0 0x4135
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	CheckFlag 297
+	JumpIf EQUAL Function#13
+	SetFlag 637
+End
+
+Function 6:
+	Message 15
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#14
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#15
+	Message 16
+	CloseMessage
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 85
+	FacePlayer
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 14
+Jump Function#16
+
+Function 8:
+	TextPlayerName 0
+	Message 11
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	RecordPokegearNumber 30
+	Message 12
+	WaitButton
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	SetFlag 637
+	RemoveOW Overworld.1
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 9:
+	SetVar 0x4004 1
+	Message 13
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	Message 2
+	CloseMessage
+	GetPlayerDirection 0x4000
+	GetOWPosition Following 0x8004 0x8005
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#17
+	CompareVarValue 0x8004 1035
+	JumpIf DIFFERENT Function#18
+	Movement Following Action#4
+	WaitMovement
+Jump Function#19
+
+Function 13:
+	SetFlag 602
+	CheckPokeGearRematch 31 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#20
+	CompareVarValue 0x40FD 0
+	JumpIf EQUAL Function#20
+	GetDayOfWeek 0x4002
+	CompareVarValue 0x4002 5
+	JumpIf DIFFERENT Function#21
+	ClearFlag 602
+Jump Function#20
+
+Function 14:
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 16:
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#9
+End
+
+Function 17:
+	CompareVarValue 0x8005 495
+	JumpIf DIFFERENT Function#19
+	Movement Following Action#5
+	WaitMovement
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#22
+	Movement Overworld.0 Action#6
+Jump Function#23
+
+Function 18:
+Jump Function#19
+
+Function 19:
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#22
+	Movement Overworld.0 Action#6
+Jump Function#23
+
+Function 20:
+	CheckPokegearNumberRegistered 30 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#24
+	CheckBadge 15 0x4002
+	CompareVarValue 0x4002 1
+	JumpIf EQUAL Function#25
+Jump Function#26
+
+Function 21:
+	SetFlag 602
+	CheckPokegearNumberRegistered 30 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#24
+	CheckBadge 15 0x4002
+	CompareVarValue 0x4002 1
+	JumpIf EQUAL Function#25
+Jump Function#26
+
+Function 22:
+	Movement Overworld.0 Action#7
+	WaitMovement
+	Message 3
+	CloseMessage
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#27
+	Movement Overworld.0 Action#8
+	Movement Player Action#9
+	Movement Following Action#9
+Jump Function#28
+
+Function 23:
+	WaitMovement
+	Message 3
+	CloseMessage
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#27
+	Movement Overworld.0 Action#8
+	Movement Player Action#9
+	Movement Following Action#9
+Jump Function#28
+
+Function 24:
+	CheckPokeGearRematch 30 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#26
+	GetDayOfWeek 0x4002
+	CompareVarValue 0x4002 4
+	JumpIf DIFFERENT Function#29
+	ClearFlag 637
+Jump Function#30
+
+Function 25:
+	GetDayOfWeek 0x4002
+	CompareVarValue 0x4002 2
+	JumpIf DIFFERENT Function#31
+	ClearFlag 637
+Jump Function#32
+
+Function 26:
+	SetFlag 637
+End
+
+Function 27:
+	Movement Overworld.0 Action#10
+	Movement Player Action#9
+	Movement Following Action#9
+	WaitMovement
+	RemoveOW Overworld.0
+	SetFlag 602
+	SetFlag 297
+	SetFlag 760
+	ClearFlag 761
+	ReleaseAll
+End
+
+Function 28:
+	WaitMovement
+	RemoveOW Overworld.0
+	SetFlag 602
+	SetFlag 297
+	SetFlag 760
+	ClearFlag 761
+	ReleaseAll
+End
+
+Function 29:
+Jump Function#26
+
+Function 30:
+End
+
+Function 31:
+Jump Function#26
+
+Function 32:
+End
+
+//===== ACTIONS =====//
+Action 1:
+	Delay1 0x1
+End
+
+Action 2:
+	WalkOnSpotEast8 0x1
+	Delay8 0x2
+	WalkOnSpotNorth8 0x1
+	Delay8 0x2
+	WalkOnSpotSouth8 0x1
+End
+
+Action 3:
+	WalkOnSpotNorth8 0x1
+	Delay8 0x2
+	WalkOnSpotEast8 0x1
+	Delay8 0x2
+	WalkOnSpotWest8 0x1
+End
+
+Action 4:
+	WalkSouth8 0x1
+	WalkEast8 0x1
+	WalkOnSpotWest8 0x1
+End
+
+Action 5:
+	WalkWest8 0x1
+	WalkNorth8 0x1
+	WalkOnSpotEast8 0x1
+End
+
+Action 6:
+	WalkWest8 0x1
+	WalkSouth8 0x1
+End
+
+Action 7:
+	WalkSouth8 0x1
+	WalkWest8 0x1
+End
+
+Action 8:
+	WalkSouth8 0x2
+	WalkWest8 0x2
+	WalkSouth8 0x8
+End
+
+Action 9:
+	WalkOnSpotSouth8 0x1
+End
+
+Action 10:
+	WalkSouth8 0x1
+	WalkSouth8 0x2
+	WalkWest8 0x2
+	WalkSouth8 0x7
+End
+

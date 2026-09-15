@@ -1,0 +1,460 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0827
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 763
+	JumpIf EQUAL Function#1
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 8:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 9:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 9 0x800C
+	CommonScript 2000
+End
+
+Script 10:
+	SetIconBoard 10 0 10 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 11:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 11 0x800C
+	CommonScript 2000
+End
+
+Script 12:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 12 0x800C
+	CommonScript 2000
+End
+
+Script 13:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 13 0x800C
+	CommonScript 2000
+End
+
+Script 14:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 14 0x800C
+	CommonScript 2000
+End
+
+Script 15:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#4
+	Movement Player Action#1
+	Movement Overworld.8 Action#2
+Jump Function#5
+
+Script 16:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#6
+	Movement Player Action#3
+	Movement Overworld.9 Action#2
+Jump Function#7
+
+Script 17:
+	CheckFlag 160
+	JumpIf LESS Function#8
+	ClearFlag 160
+	CheckFlag 393
+	JumpIf LESS Function#9
+	ClearFlag 393
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#10
+	Movement Player Action#4
+Jump Function#5
+
+Function 5:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#11
+	Movement Following Action#5
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 52
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#12
+	Movement Player Action#4
+Jump Function#7
+
+Function 7:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#13
+	Movement Following Action#5
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 53
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	CheckFlag 393
+	JumpIf LESS Function#9
+	ClearFlag 393
+End
+
+Function 9:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 1
+	JumpIf EQUAL Function#14
+	CompareVarValue 0x4000 2
+	JumpIf EQUAL Function#14
+	CompareVarValue 0x4000 3
+	JumpIf EQUAL Function#14
+	CompareVarValue 0x4000 5
+	JumpIf EQUAL Function#15
+	CompareVarValue 0x4000 6
+	JumpIf EQUAL Function#15
+	SetFlag 638
+	SetFlag 639
+End
+
+Function 10:
+	Movement Player Action#6
+	Movement Overworld.8 Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#11
+	Movement Following Action#5
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 52
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 52
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#16
+	Movement Player Action#6
+	Movement Overworld.9 Action#2
+Jump Function#7
+
+Function 13:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 53
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	ClearFlag 638
+	SetFlag 639
+End
+
+Function 15:
+	SetFlag 638
+	ClearFlag 639
+End
+
+Function 16:
+	Movement Player Action#7
+	Movement Overworld.9 Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#13
+	Movement Following Action#5
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 53
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkWest8 0x1
+	WalkNorth8 0x2
+	WalkEast8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 2:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 3:
+	WalkEast8 0x1
+	WalkNorth8 0x2
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 4:
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 5:
+	WalkEast8 0x1
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 6:
+	WalkNorth8 0x1
+	WalkEast8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 7:
+	WalkNorth8 0x1
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+

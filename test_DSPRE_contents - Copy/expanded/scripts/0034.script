@@ -1,0 +1,326 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0034
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetFlag 439
+	SetFlag 440
+	SetVar 0x4125 0
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#1
+	ClearFlag 439
+	ClearFlag 440
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_ARCHER_485 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	Message 1
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	RemoveOW Overworld.0
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	ClearFlag 2459
+	FadeOutMusic 0 30
+	StopMusic 0
+	WaitTime 15 0x800C
+	PlayDefaultMusic
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	SetOWPosition Overworld.1 8 1 12 Down
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 7
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.1 Action#1
+Jump Function#4
+
+//===== FUNCTIONS =====//
+Function 1:
+End
+
+Function 2:
+	LostBattle
+	ReleaseAll
+End
+
+Function 3:
+	CompareVarValue 0x4000 8
+	JumpIf DIFFERENT Function#5
+	Movement Overworld.1 Action#2
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	CallIf EQUAL Function#6
+Jump Function#4
+
+Function 4:
+	WaitMovement
+	CompareVarValue 0x4000 8
+	JumpIf DIFFERENT Function#7
+	Movement Player Action#3
+	WaitMovement
+	Message 2
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#8
+	SetVar 0x8004 483
+	SetVar 0x8005 1
+	CommonScript 2033
+	SetFlag 147
+	Message 5
+	CloseMessage
+Jump Function#9
+
+Function 5:
+	CompareVarValue 0x4000 9
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.1 Action#4
+	WaitMovement
+	CompareVarValue 0x4000 8
+	JumpIf DIFFERENT Function#7
+	Movement Player Action#3
+	WaitMovement
+	Message 2
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#8
+	SetVar 0x8004 483
+	SetVar 0x8005 1
+	CommonScript 2033
+	SetFlag 147
+	Message 5
+	CloseMessage
+Jump Function#9
+
+Function 6:
+	GetOWPosition Following 0x8004 0x8005
+	CompareVarValue 0x8004 7
+	JumpIf DIFFERENT Function#10
+	WaitTime 112 0x800C
+	Movement Following Action#5
+Return
+
+Function 7:
+	WaitMovement
+	Message 2
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#8
+	SetVar 0x8004 483
+	SetVar 0x8005 1
+	CommonScript 2033
+	SetFlag 147
+	Message 5
+	CloseMessage
+Jump Function#9
+
+Function 8:
+	SetVar 0x8004 482
+	SetVar 0x8005 1
+	CommonScript 2033
+	SetFlag 148
+	Message 6
+	CloseMessage
+	CompareVarValue 0x4000 7
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.1 Action#6
+Jump Function#12
+
+Function 9:
+	CompareVarValue 0x4000 7
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.1 Action#6
+Jump Function#12
+
+Function 10:
+Return
+
+Function 11:
+	CompareVarValue 0x4000 8
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.1 Action#7
+Jump Function#12
+
+Function 12:
+	WaitMovement
+	Movement Overworld.1 Action#8
+	WaitMovement
+	Movement Player Action#3
+	WaitMovement
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#14
+	Message 7
+Jump Function#15
+
+Function 13:
+	CompareVarValue 0x4000 9
+	JumpIf DIFFERENT Function#12
+	Movement Overworld.1 Action#9
+	WaitMovement
+	Movement Overworld.1 Action#8
+	WaitMovement
+	Movement Player Action#3
+	WaitMovement
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 7
+	JumpIf DIFFERENT Function#14
+	Message 7
+Jump Function#15
+
+Function 14:
+	Message 8
+	CloseMessage
+	Movement Overworld.1 Action#10
+	WaitMovement
+	Message 9
+	CloseMessage
+	Movement Overworld.1 Action#11
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_DOOR10
+	WaitFanfare SEQ_SE_DP_DOOR10
+	WaitTime 8 0x800C
+	RemoveOW Overworld.1
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	ReleaseAll
+	SetVar 0x4077 5
+	SetFlag 198
+	ClearFlag 710
+	SetFlag 711
+	CompareVarValue 0x40F8 2
+	JumpIf DIFFERENT Function#16
+	SetVar 0x40F8 0
+	SetVar 0x407A 1
+	ClearFlag 487
+	SetFlag 512
+	ClearFlag 513
+	SetFlag 2456
+	SetFlag 2429
+End
+
+Function 15:
+	CloseMessage
+	Movement Overworld.1 Action#10
+	WaitMovement
+	Message 9
+	CloseMessage
+	Movement Overworld.1 Action#11
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_DOOR10
+	WaitFanfare SEQ_SE_DP_DOOR10
+	WaitTime 8 0x800C
+	RemoveOW Overworld.1
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	ReleaseAll
+	SetVar 0x4077 5
+	SetFlag 198
+	ClearFlag 710
+	SetFlag 711
+	CompareVarValue 0x40F8 2
+	JumpIf DIFFERENT Function#16
+	SetVar 0x40F8 0
+	SetVar 0x407A 1
+	ClearFlag 487
+	SetFlag 512
+	ClearFlag 513
+	SetFlag 2456
+	SetFlag 2429
+End
+
+Function 16:
+	SetVar 0x407A 1
+	ClearFlag 487
+	SetFlag 512
+	ClearFlag 513
+	SetFlag 2456
+	SetFlag 2429
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x1
+	WalkWest8 0x4
+	WalkNorth8 0x7
+	WalkEast8 0x4
+	WalkNorth8 0x3
+	WalkOnSpotWest8 0x1
+End
+
+Action 2:
+	WalkSouth8 0x1
+	WalkWest8 0x4
+	WalkNorth8 0x7
+	WalkEast8 0x3
+	WalkNorth8 0x2
+	WalkOnSpotEast8 0x1
+End
+
+Action 3:
+	WalkOnSpotWest8 0x1
+End
+
+Action 4:
+	WalkSouth8 0x1
+	WalkWest8 0x4
+	WalkNorth8 0x7
+	WalkEast8 0x4
+	WalkNorth8 0x3
+	WalkOnSpotEast8 0x1
+End
+
+Action 5:
+	WalkNorth8 0x1
+	WalkEast8 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 6:
+	WalkSouth8 0x3
+	WalkWest8 0x4
+	EmoteExclamation 0x1
+End
+
+Action 7:
+	WalkSouth8 0x2
+	WalkWest8 0x3
+	EmoteExclamation 0x1
+End
+
+Action 8:
+	WalkEast8 0x1
+End
+
+Action 9:
+	WalkSouth8 0x3
+	WalkWest8 0x4
+	EmoteExclamation 0x1
+End
+
+Action 10:
+	WalkWest8 0x1
+	WalkSouth8 0x1
+	EmoteExclamation 0x1
+	Delay8 0x3
+	WalkOnSpotNorth8 0x1
+End
+
+Action 11:
+	WalkSouth8 0x6
+	WalkEast8 0x4
+End
+

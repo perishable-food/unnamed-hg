@@ -1,0 +1,493 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0212
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#1
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#3
+	Movement Player Action#1
+	Movement Overworld.0 Action#2
+Jump Function#4
+
+Script 2:
+	CheckFlag 393
+	JumpIf LESS Function#5
+	ClearFlag 393
+End
+
+Script 3:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 0 0x800C
+	CommonScript 2000
+End
+
+Script 4:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#3
+	WaitMovement
+	Movement Overworld.3 Action#4
+	WaitMovement
+	GenderMessage 12 11
+	CloseMessage
+	Movement Overworld.3 Action#5
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 14 13
+	CloseMessage
+	Movement Overworld.3 Action#6
+	WaitMovement
+	GenderMessage 16 15
+	CloseMessage
+	Movement Overworld.3 Action#7
+	Movement Player Action#8
+	WaitMovement
+	GenderMessage 18 17
+	CloseMessage
+	Movement Overworld.3 Action#9
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 20 19
+	CloseMessage
+	Movement Player Action#10
+	Movement Overworld.3 Action#11
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	GetPlayerPosition 0x8004 0x8005
+	LockCamera 0x8004 0x8005
+	Movement Camera Action#12
+	WaitMovement
+	FadeOutMusic 0 30
+	Movement Overworld.2 Action#13
+	WaitMovement
+	TextRivalName 0
+	Message 2
+	CloseMessage
+	Movement Overworld.1 Action#14
+	WaitMovement
+	Message 8
+	CloseMessage
+	Movement Overworld.2 Action#15
+	WaitMovement
+	TextRivalName 0
+	Message 3
+	CloseMessage
+	Movement Overworld.1 Action#16
+	WaitMovement
+	Message 9
+	CloseMessage
+	Movement Overworld.2 Action#13
+	WaitMovement
+	TextRivalName 0
+	Message 4
+	CloseMessage
+	Movement Overworld.1 Action#17
+	WaitMovement
+	Message 10
+	CloseMessage
+	Movement Overworld.1 Action#18
+	WaitMovement
+	Movement Overworld.2 Action#13
+	WaitMovement
+	TextRivalName 0
+	Message 5
+	CloseMessage
+	Movement Overworld.2 Action#13
+	WaitMovement
+	Message 6
+	CloseMessage
+	CommonScript 2031
+	Movement Camera Action#19
+	Movement Overworld.2 Action#20
+	WaitMovement
+	ReleaseCamera
+	TextRivalName 0
+	Message 7
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.2 Action#21
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
+	Movement Player Action#22
+	Movement Overworld.3 Action#8
+	WaitMovement
+	Movement Overworld.2 Action#23
+	Movement Player Action#8
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	RemoveOW Overworld.1
+	RemoveOW Overworld.2
+	SetFlag 769
+	CommonScript 2032
+	GenderMessage 22 21
+	CloseMessage
+	FadeOutMusic 20 30
+	Movement Following Action#24
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_SUZUSYUTUGEN_HO
+	FadeScreen 6 6 0 0x7FFF
+	WaitFadeScreen
+	WaitTime 15 0x800C
+	FadeScreen 6 6 1 0x7FFF
+	WaitFadeScreen
+	Movement Player Action#25
+	Movement Overworld.3 Action#26
+	WaitMovement
+	GenderMessage 24 23
+	CloseMessage
+	PlayFanfare SEQ_SE_GS_TIMESLIP
+	CelebiTimeTravelAnimation
+	SetVar 0x40FE 2
+	ClearFlag 771
+	ClearFlag 785
+	Warp 298 0 6 8 Down
+	FadeScreen 6 15 1 0x7FFF
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Script 5:
+	CompareVarValue 0x40FE 1
+	JumpIf EQUAL Function#6
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#7
+	Movement Player Action#27
+Jump Function#4
+
+Function 4:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#8
+	Movement Following Action#28
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 71
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	CompareVarValue 0x40FE 1
+	JumpIf EQUAL Function#9
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 4
+	JumpIf EQUAL Function#10
+	CompareVarValue 0x4000 0
+	JumpIf EQUAL Function#10
+	SetFlag 638
+End
+
+Function 6:
+	SetOWPosition Overworld.1 947 1 266 Left
+	SetOWPosition Overworld.2 950 1 266 Left
+	SetOWPosition Overworld.3 952 1 280 Right
+End
+
+Function 7:
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#11
+	Movement Player Action#29
+	Movement Overworld.0 Action#2
+Jump Function#4
+
+Function 8:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 71
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	SetFlag 638
+End
+
+Function 10:
+	ClearFlag 638
+End
+
+Function 11:
+	Movement Player Action#30
+	Movement Overworld.0 Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#8
+	Movement Following Action#28
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 71
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkEast8 0x1
+	WalkNorth8 0x2
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 2:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 3:
+	WalkOnSpotNorth8 0x1
+	WalkNorth8 0x1
+	Delay8 0x1
+	WalkOnSpotWest8 0x1
+	Delay16 0x1
+	WalkOnSpotEast8 0x1
+	Delay16 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 4:
+	EmoteExclamation 0x1
+	Delay8 0x1
+	WalkOnSpotEast8 0x1
+	Delay16 0x1
+End
+
+Action 5:
+	WalkNorth4 0x2
+	Delay8 0x1
+	WalkOnSpotWest8 0x1
+	Delay16 0x1
+	WalkOnSpotEast8 0x1
+	Delay16 0x1
+End
+
+Action 6:
+	WalkSouth8 0x1
+End
+
+Action 7:
+	WalkSouth8 0x1
+	WalkOnSpotEast8 0x1
+End
+
+Action 8:
+	Delay16 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 9:
+	EmoteExclamation 0x1
+	Delay8 0x1
+	WalkNorth8 0x2
+	WalkEast8 0x1
+	WalkNorth8 0x2
+End
+
+Action 10:
+	WalkNorth8 0x5
+	WalkWest8 0x2
+	WalkNorth8 0x2
+End
+
+Action 11:
+	WalkNorth8 0x2
+	WalkWest8 0x2
+	WalkNorth8 0x1
+End
+
+Action 12:
+	WalkNorth8 0x5
+	WalkWest8 0x2
+End
+
+Action 13:
+	WalkWest8 0x1
+End
+
+Action 14:
+	WalkOnSpotEast8 0x1
+	Delay8 0x1
+End
+
+Action 15:
+	WalkOnSpotWest8 0x1
+End
+
+Action 16:
+	WalkOnSpotEast8 0x1
+End
+
+Action 17:
+	WalkOnSpotWest8 0x1
+End
+
+Action 18:
+	WalkWest8 0x6
+End
+
+Action 19:
+	WalkEast4 0x2
+	WalkSouth4 0x4
+End
+
+Action 20:
+	Delay32 0x1
+	WalkEast4 0x6
+	WalkSouth4 0x4
+	Delay8 0x1
+	EmoteExclamation 0x1
+	Delay8 0x1
+End
+
+Action 21:
+	WalkSouth4 0x2
+	Delay16 0x1
+End
+
+Action 22:
+	Delay4 0x1
+	LockDir 0x1
+	JumpSouth8 0x1
+	ReleaseDir 0x1
+End
+
+Action 23:
+	WalkEast4 0x1
+	WalkSouth4 0x8
+End
+
+Action 24:
+	FaceSouth 0x1
+	JumpFarSouth 0x1
+	LockDir 0x1
+	JumpNorth8 0x1
+	LockDir 0x1
+End
+
+Action 25:
+	EmoteExclamation 0x1
+	Delay8 0x1
+End
+
+Action 26:
+	WalkOnSpotWest8 0x1
+	Delay16 0x1
+	WalkOnSpotEast8 0x1
+	Delay16 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 27:
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 28:
+	WalkEast8 0x1
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 29:
+	WalkNorth8 0x1
+	WalkEast8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 30:
+	WalkNorth8 0x1
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+

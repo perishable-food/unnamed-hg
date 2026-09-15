@@ -1,0 +1,88 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0115
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4002 1
+	JumpIf GREATER/EQUAL Function#1
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#3
+End
+
+Script 2:
+	CheckPokegearNumberRegistered 34 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#4
+	CheckFlag 2404
+	JumpIf EQUAL Function#5
+Jump Function#4
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 4
+Jump Function#6
+
+Function 2:
+	TextPlayerName 0
+	Message 1
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	RecordPokegearNumber 34
+	Message 2
+	WaitButton
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	SetFlag 611
+	RemoveOW Overworld.0
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 3:
+	SetVar 0x4002 1
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	SetFlag 611
+End
+
+Function 5:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 4
+	JumpIf DIFFERENT Function#4
+	ClearFlag 611
+End
+
+Function 6:
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#3
+End
+
+//===== ACTIONS =====//

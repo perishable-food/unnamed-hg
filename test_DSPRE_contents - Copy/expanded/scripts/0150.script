@@ -1,0 +1,64 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0150
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	CloseMessage
+	CheckItem ITEM_APRICORN_BOX 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	HarvestApricorn 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	GetApricornColor 0x8000
+	SetVar 0x8005 1
+	TextPlayerName 0
+	TextApricorn 1 0x8000
+	Message 1
+	CloseMessage
+	PlaySound SEQ_ME_ITEM
+	Message 3
+	WaitSound
+	GiveApricorn 0x8000 1 0x800C
+	AddTrainerScore 1
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	WaitTime 15 0x800C
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

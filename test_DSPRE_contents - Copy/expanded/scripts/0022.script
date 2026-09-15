@@ -1,0 +1,165 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0022
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	CheckFlag 393
+	JumpIf LESS Function#1
+	ClearFlag 393
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckPokegearNumberRegistered 37 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x4002 1
+	JumpIf GREATER/EQUAL Function#3
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#5
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CheckFlag 2404
+	JumpIf LESS Function#6
+	CheckPokeGearRematch 37 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#6
+	CheckPokegearNumberRegistered 37 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#7
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 1
+	JumpIf DIFFERENT Function#8
+	ClearFlag 714
+Jump Function#9
+
+Function 2:
+	Message 5
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#10
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#11
+	Message 6
+	CloseMessage
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 20
+	FacePlayer
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 4
+Jump Function#12
+
+Function 4:
+	TextPlayerName 0
+	Message 1
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	RecordPokegearNumber 37
+	Message 2
+	WaitButton
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	SetFlag 714
+	RemoveOW Overworld.0
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 5:
+	SetVar 0x4002 1
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	SetFlag 714
+End
+
+Function 7:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 5
+	JumpIf DIFFERENT Function#13
+	ClearFlag 714
+Jump Function#14
+
+Function 8:
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#15
+	ClearFlag 714
+Jump Function#9
+
+Function 9:
+End
+
+Function 10:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#5
+End
+
+Function 13:
+	SetFlag 714
+End
+
+Function 14:
+End
+
+Function 15:
+	SetFlag 714
+End
+
+//===== ACTIONS =====//

@@ -1,0 +1,15 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0208
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	ClearFlag 329
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//

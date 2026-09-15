@@ -1,0 +1,53 @@
+{
+  "key": 21341,
+  "messages": [
+    {
+      "id": "msg_0203_00000",
+      "en_US": "                                                                                                                                         "
+    },
+    {
+      "id": "msg_0203_00001",
+      "en_US": "                                                                                                            "
+    },
+    {
+      "id": "msg_0203_00002",
+      "en_US": "                                                                                                                "
+    },
+    {
+      "id": "msg_0203_00003",
+      "en_US": [
+        "You hurry to\\n",
+        "the Pokémon Center, shielding\\n",
+        "your exhausted\\n",
+        "Pokémon from any further harm..."
+      ]
+    },
+    {
+      "id": "msg_0203_00004",
+      "en_US": [
+        "You hurry back\\n",
+        "home, shielding your exhausted\\n",
+        "Pokémon from any further\\n",
+        "harm..."
+      ]
+    },
+    {
+      "id": "msg_0203_00005",
+      "en_US": [
+        "You went running to\\n",
+        "the Pokémon Center to regroup\\n",
+        "and reconsider your battle\\n",
+        "strategy..."
+      ]
+    },
+    {
+      "id": "msg_0203_00006",
+      "en_US": [
+        "You went running back\\n",
+        "home to regroup\\n",
+        "and reconsider your battle\\n",
+        "strategy..."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0096
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	PlayFanfare SEQ_SE_GS_ZUKAN06
+	CompareVarValue 0x4002 0
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.10 Action#1
+	Movement Overworld.11 Action#2
+	SetVar 0x4002 1
+Jump Function#2
+
+Script 2:
+	MecScript
+	LockAll
+	PlayFanfare SEQ_SE_GS_ZUKAN06
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.6 Action#3
+	Movement Overworld.7 Action#4
+	Movement Overworld.31 Action#5
+	SetVar 0x4000 1
+Jump Function#4
+
+Script 3:
+	MecScript
+	LockAll
+	PlayFanfare SEQ_SE_GS_ZUKAN06
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#5
+	Movement Overworld.8 Action#3
+	Movement Overworld.9 Action#4
+	Movement Overworld.30 Action#5
+	SetVar 0x4001 1
+Jump Function#6
+
+Script 4:
+	CheckFlag 155
+	JumpIf EQUAL Function#7
+	MecScript
+	LockAll
+	PlayFanfare SEQ_SE_GS_ZUKAN06
+	Movement Overworld.26 Action#6
+	Movement Overworld.27 Action#7
+	Movement Overworld.34 Action#8
+	WaitMovement
+	SetFlag 155
+	ReleaseAll
+End
+
+Script 5:
+	MecScript
+	LockAll
+	CommonScript 2031
+	SetOWPosition Overworld.28 28 0 4 Left
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Overworld.28 Action#9
+	Movement Player Action#10
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextRivalName 0
+	Message 0
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#8
+	TrainerBattle TRAINER_SILVER_289 TRAINER_NONE 0 0
+Jump Function#9
+
+Script 6:
+	VanishOverworld Overworld.31
+	VanishOverworld Overworld.30
+	VanishOverworld Overworld.29
+	VanishOverworld Overworld.32
+	VanishOverworld Overworld.33
+	VanishOverworld Overworld.34
+	CheckFlag 155
+	JumpIf EQUAL Function#10
+End
+
+Script 7:
+	SetFlag 439
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#11
+	ClearFlag 439
+	SetVar 0x4000 0
+	SetVar 0x4001 0
+	SetVar 0x4002 1
+	SetVar 0x4003 0
+	SetVar 0x4004 0
+	SetVar 0x4005 0
+	SetVar 0x4006 0
+	SetVar 0x4007 0
+	SetVar 0x4008 0
+	SetVar 0x4009 1
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Movement Overworld.10 Action#11
+	Movement Overworld.11 Action#12
+	SetVar 0x4002 0
+	CompareVarValue 0x4003 0
+	JumpIf DIFFERENT Function#12
+	Movement Overworld.12 Action#1
+	Movement Overworld.13 Action#2
+	SetVar 0x4003 1
+Jump Function#13
+
+Function 2:
+	CompareVarValue 0x4003 0
+	JumpIf DIFFERENT Function#12
+	Movement Overworld.12 Action#1
+	Movement Overworld.13 Action#2
+	SetVar 0x4003 1
+Jump Function#13
+
+Function 3:
+	Movement Overworld.6 Action#6
+	Movement Overworld.7 Action#7
+	Movement Overworld.31 Action#8
+	SetVar 0x4000 0
+	CompareVarValue 0x4002 0
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.10 Action#1
+	Movement Overworld.11 Action#2
+	SetVar 0x4002 1
+Jump Function#15
+
+Function 4:
+	CompareVarValue 0x4002 0
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.10 Action#1
+	Movement Overworld.11 Action#2
+	SetVar 0x4002 1
+Jump Function#15
+
+Function 5:
+	Movement Overworld.8 Action#6
+	Movement Overworld.9 Action#7
+	Movement Overworld.30 Action#8
+	SetVar 0x4001 0
+	CompareVarValue 0x4003 0
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.12 Action#1
+	Movement Overworld.13 Action#2
+	SetVar 0x4003 1
+Jump Function#17
+
+Function 6:
+	CompareVarValue 0x4003 0
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.12 Action#1
+	Movement Overworld.13 Action#2
+	SetVar 0x4003 1
+Jump Function#17
+
+Function 7:
+End
+
+Function 8:
+	CompareVarValue 0x800C 703
+	JumpIf DIFFERENT Function#18
+	TrainerBattle TRAINER_SILVER_271 TRAINER_NONE 0 0
+Jump Function#9
+
+Function 9:
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#19
+	CommonScript 2070
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	SetVar 0x40A0 1
+	Movement Overworld.28 Action#13
+	WaitMovement
+	RemoveOW Overworld.28
+	CommonScript 2071
+	ReleaseAll
+End
+
+Function 10:
+	SetOWPosition Overworld.26 18 0 14 Up
+	SetOWPosition Overworld.27 24 0 14 Up
+	SetOWPosition Overworld.34 24 0 14 Up
+End
+
+Function 11:
+	SetVar 0x4000 0
+	SetVar 0x4001 0
+	SetVar 0x4002 1
+	SetVar 0x4003 0
+	SetVar 0x4004 0
+	SetVar 0x4005 0
+	SetVar 0x4006 0
+	SetVar 0x4007 0
+	SetVar 0x4008 0
+	SetVar 0x4009 1
+End
+
+Function 12:
+	Movement Overworld.12 Action#11
+	Movement Overworld.13 Action#12
+	SetVar 0x4003 0
+	CompareVarValue 0x4004 0
+	JumpIf DIFFERENT Function#20
+	Movement Overworld.14 Action#3
+	Movement Overworld.15 Action#4
+	Movement Overworld.29 Action#5
+	SetVar 0x4004 1
+Jump Function#21
+
+Function 13:
+	CompareVarValue 0x4004 0
+	JumpIf DIFFERENT Function#20
+	Movement Overworld.14 Action#3
+	Movement Overworld.15 Action#4
+	Movement Overworld.29 Action#5
+	SetVar 0x4004 1
+Jump Function#21
+
+Function 14:
+	Movement Overworld.10 Action#11
+	Movement Overworld.11 Action#12
+	SetVar 0x4002 0
+	CompareVarValue 0x4004 0
+	JumpIf DIFFERENT Function#22
+	Movement Overworld.14 Action#3
+	Movement Overworld.15 Action#4
+	Movement Overworld.29 Action#5
+	SetVar 0x4004 1
+Jump Function#23
+
+Function 15:
+	CompareVarValue 0x4004 0
+	JumpIf DIFFERENT Function#22
+	Movement Overworld.14 Action#3
+	Movement Overworld.15 Action#4
+	Movement Overworld.29 Action#5
+	SetVar 0x4004 1
+Jump Function#23
+
+Function 16:
+	Movement Overworld.12 Action#11
+	Movement Overworld.13 Action#12
+	SetVar 0x4003 0
+	CompareVarValue 0x4005 0
+	JumpIf DIFFERENT Function#24
+	Movement Overworld.16 Action#3
+	Movement Overworld.17 Action#4
+	Movement Overworld.32 Action#5
+	SetVar 0x4005 1
+Jump Function#25
+
+Function 17:
+	CompareVarValue 0x4005 0
+	JumpIf DIFFERENT Function#24
+	Movement Overworld.16 Action#3
+	Movement Overworld.17 Action#4
+	Movement Overworld.32 Action#5
+	SetVar 0x4005 1
+Jump Function#25
+
+Function 18:
+	TrainerBattle TRAINER_SILVER_288 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#19
+	CommonScript 2070
+	TextRivalName 0
+	Message 1
+	CloseMessage
+	SetVar 0x40A0 1
+	Movement Overworld.28 Action#13
+	WaitMovement
+	RemoveOW Overworld.28
+	CommonScript 2071
+	ReleaseAll
+End
+
+Function 19:
+	LostBattle
+	ReleaseAll
+End
+
+Function 20:
+	Movement Overworld.14 Action#6
+	Movement Overworld.15 Action#7
+	Movement Overworld.29 Action#8
+	SetVar 0x4004 0
+	CompareVarValue 0x4005 0
+	JumpIf DIFFERENT Function#26
+	Movement Overworld.16 Action#3
+	Movement Overworld.17 Action#4
+	Movement Overworld.32 Action#5
+	SetVar 0x4005 1
+Jump Function#27
+
+Function 21:
+	CompareVarValue 0x4005 0
+	JumpIf DIFFERENT Function#26
+	Movement Overworld.16 Action#3
+	Movement Overworld.17 Action#4
+	Movement Overworld.32 Action#5
+	SetVar 0x4005 1
+Jump Function#27
+
+Function 22:
+	Movement Overworld.14 Action#6
+	Movement Overworld.15 Action#7
+	Movement Overworld.29 Action#8
+	SetVar 0x4004 0
+	CompareVarValue 0x4006 0
+	JumpIf DIFFERENT Function#28
+	Movement Overworld.18 Action#3
+	Movement Overworld.19 Action#4
+	Movement Overworld.33 Action#5
+	SetVar 0x4006 1
+Jump Function#29
+
+Function 23:
+	CompareVarValue 0x4006 0
+	JumpIf DIFFERENT Function#28
+	Movement Overworld.18 Action#3
+	Movement Overworld.19 Action#4
+	Movement Overworld.33 Action#5
+	SetVar 0x4006 1
+Jump Function#29
+
+Function 24:
+	Movement Overworld.16 Action#6
+	Movement Overworld.17 Action#7
+	Movement Overworld.32 Action#8
+	SetVar 0x4005 0
+	CompareVarValue 0x4006 0
+	JumpIf DIFFERENT Function#30
+	Movement Overworld.18 Action#3
+	Movement Overworld.19 Action#4
+	Movement Overworld.33 Action#5
+	SetVar 0x4006 1
+Jump Function#31
+
+Function 25:
+	CompareVarValue 0x4006 0
+	JumpIf DIFFERENT Function#30
+	Movement Overworld.18 Action#3
+	Movement Overworld.19 Action#4
+	Movement Overworld.33 Action#5
+	SetVar 0x4006 1
+Jump Function#31
+
+Function 26:
+	Movement Overworld.16 Action#6
+	Movement Overworld.17 Action#7
+	Movement Overworld.32 Action#8
+	SetVar 0x4005 0
+	CompareVarValue 0x4007 0
+	JumpIf DIFFERENT Function#32
+	Movement Overworld.20 Action#1
+	Movement Overworld.21 Action#2
+	SetVar 0x4007 1
+Jump Function#33
+
+Function 27:
+	CompareVarValue 0x4007 0
+	JumpIf DIFFERENT Function#32
+	Movement Overworld.20 Action#1
+	Movement Overworld.21 Action#2
+	SetVar 0x4007 1
+Jump Function#33
+
+Function 28:
+	Movement Overworld.18 Action#6
+	Movement Overworld.19 Action#7
+	Movement Overworld.33 Action#8
+	SetVar 0x4006 0
+	CompareVarValue 0x4008 0
+	JumpIf DIFFERENT Function#34
+	Movement Overworld.22 Action#1
+	Movement Overworld.23 Action#2
+	SetVar 0x4008 1
+Jump Function#35
+
+Function 29:
+	CompareVarValue 0x4008 0
+	JumpIf DIFFERENT Function#34
+	Movement Overworld.22 Action#1
+	Movement Overworld.23 Action#2
+	SetVar 0x4008 1
+Jump Function#35
+
+Function 30:
+	Movement Overworld.18 Action#6
+	Movement Overworld.19 Action#7
+	Movement Overworld.33 Action#8
+	SetVar 0x4006 0
+	CompareVarValue 0x4007 0
+	JumpIf DIFFERENT Function#36
+	Movement Overworld.20 Action#1
+	Movement Overworld.21 Action#2
+	SetVar 0x4007 1
+Jump Function#37
+
+Function 31:
+	CompareVarValue 0x4007 0
+	JumpIf DIFFERENT Function#36
+	Movement Overworld.20 Action#1
+	Movement Overworld.21 Action#2
+	SetVar 0x4007 1
+Jump Function#37
+
+Function 32:
+	Movement Overworld.20 Action#11
+	Movement Overworld.21 Action#12
+	SetVar 0x4007 0
+	WaitMovement
+	ReleaseAll
+End
+
+Function 33:
+	WaitMovement
+	ReleaseAll
+End
+
+Function 34:
+	Movement Overworld.22 Action#11
+	Movement Overworld.23 Action#12
+	SetVar 0x4008 0
+	CompareVarValue 0x4009 0
+	JumpIf DIFFERENT Function#38
+	Movement Overworld.24 Action#1
+	Movement Overworld.25 Action#2
+	SetVar 0x4009 1
+Jump Function#39
+
+Function 35:
+	CompareVarValue 0x4009 0
+	JumpIf DIFFERENT Function#38
+	Movement Overworld.24 Action#1
+	Movement Overworld.25 Action#2
+	SetVar 0x4009 1
+Jump Function#39
+
+Function 36:
+	Movement Overworld.20 Action#11
+	Movement Overworld.21 Action#12
+	SetVar 0x4007 0
+	CompareVarValue 0x4008 0
+	JumpIf DIFFERENT Function#40
+	Movement Overworld.22 Action#1
+	Movement Overworld.23 Action#2
+	SetVar 0x4008 1
+Jump Function#41
+
+Function 37:
+	CompareVarValue 0x4008 0
+	JumpIf DIFFERENT Function#40
+	Movement Overworld.22 Action#1
+	Movement Overworld.23 Action#2
+	SetVar 0x4008 1
+Jump Function#41
+
+Function 38:
+	Movement Overworld.24 Action#11
+	Movement Overworld.25 Action#12
+	SetVar 0x4009 0
+	WaitMovement
+	ReleaseAll
+End
+
+Function 39:
+	WaitMovement
+	ReleaseAll
+End
+
+Function 40:
+	Movement Overworld.22 Action#11
+	Movement Overworld.23 Action#12
+	SetVar 0x4008 0
+	WaitMovement
+	ReleaseAll
+End
+
+Function 41:
+	WaitMovement
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x2
+End
+
+Action 2:
+	WalkNorth8 0x2
+End
+
+Action 3:
+	WalkEast8 0x2
+End
+
+Action 4:
+	WalkWest8 0x2
+End
+
+Action 5:
+	WalkEast8 0x2
+End
+
+Action 6:
+	WalkWest8 0x2
+End
+
+Action 7:
+	WalkEast8 0x2
+End
+
+Action 8:
+	WalkWest8 0x2
+End
+
+Action 9:
+	Delay4 0x6
+	WalkWest8 0x3
+	WalkSouth8 0x1
+	WalkWest8 0x4
+End
+
+Action 10:
+	EmoteExclamation 0x1
+	WalkEast8 0x1
+End
+
+Action 11:
+	WalkNorth8 0x2
+End
+
+Action 12:
+	WalkSouth8 0x2
+End
+
+Action 13:
+	WalkEast8 0x4
+	WalkNorth8 0x1
+	WalkEast8 0x4
+End
+

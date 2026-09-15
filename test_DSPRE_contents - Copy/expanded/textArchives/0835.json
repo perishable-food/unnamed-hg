@@ -1,0 +1,413 @@
+{
+  "key": 20559,
+  "messages": [
+    {
+      "id": "msg_0835_00000",
+      "en_US": "a {COLOR, 0, 255}Prism Scale{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00001",
+      "en_US": "an {COLOR, 0, 255}Eviolite{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00002",
+      "en_US": "a {COLOR, 0, 255}Float Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00003",
+      "en_US": "a {COLOR, 0, 255}Rocky Helmet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00004",
+      "en_US": "an {COLOR, 0, 255}Air Balloon{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00005",
+      "en_US": "a {COLOR, 0, 255}Red Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00006",
+      "en_US": "a {COLOR, 0, 255}Ring Target{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00007",
+      "en_US": "a {COLOR, 0, 255}Binding Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00008",
+      "en_US": "an {COLOR, 0, 255}Absorb Bulb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00009",
+      "en_US": "a {COLOR, 0, 255}Cell Battery{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00010",
+      "en_US": "an {COLOR, 0, 255}Eject Button{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00011",
+      "en_US": "a {COLOR, 0, 255}Fire Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00012",
+      "en_US": "a {COLOR, 0, 255}Water Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00013",
+      "en_US": "an {COLOR, 0, 255}Electric Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00014",
+      "en_US": "a {COLOR, 0, 255}Grass Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00015",
+      "en_US": "an {COLOR, 0, 255}Ice Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00016",
+      "en_US": "a {COLOR, 0, 255}Fighting Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00017",
+      "en_US": "a {COLOR, 0, 255}Poison Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00018",
+      "en_US": "a {COLOR, 0, 255}Ground Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00019",
+      "en_US": "a {COLOR, 0, 255}Flying Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00020",
+      "en_US": "a {COLOR, 0, 255}Psychic Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00021",
+      "en_US": "a {COLOR, 0, 255}Bug Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00022",
+      "en_US": "a {COLOR, 0, 255}Rock Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00023",
+      "en_US": "a {COLOR, 0, 255}Ghost Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00024",
+      "en_US": "a {COLOR, 0, 255}Dragon Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00025",
+      "en_US": "a {COLOR, 0, 255}Dark Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00026",
+      "en_US": "a {COLOR, 0, 255}Steel Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00027",
+      "en_US": "a {COLOR, 0, 255}Normal Gem{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00028",
+      "en_US": "a {COLOR, 0, 255}Health Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00029",
+      "en_US": "a {COLOR, 0, 255}Muscle Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00030",
+      "en_US": "a {COLOR, 0, 255}Resist Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00031",
+      "en_US": "a {COLOR, 0, 255}Genius Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00032",
+      "en_US": "a {COLOR, 0, 255}Clever Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00033",
+      "en_US": "a {COLOR, 0, 255}Swift Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00034",
+      "en_US": "a {COLOR, 0, 255}Pretty Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00035",
+      "en_US": "a {COLOR, 0, 255}Cover Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00036",
+      "en_US": "a {COLOR, 0, 255}Plume Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00037",
+      "en_US": "a {COLOR, 0, 255}Liberty Pass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00038",
+      "en_US": "a {COLOR, 0, 255}Pass Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00039",
+      "en_US": "a {COLOR, 0, 255}Dream Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00040",
+      "en_US": "a {COLOR, 0, 255}Poké Toy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00041",
+      "en_US": "a {COLOR, 0, 255}Prop Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00042",
+      "en_US": "a {COLOR, 0, 255}Dragon Skull{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00043",
+      "en_US": "a {COLOR, 0, 255}Balm Mushroom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00044",
+      "en_US": "a {COLOR, 0, 255}Big Nugget{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00045",
+      "en_US": "a {COLOR, 0, 255}Pearl String{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00046",
+      "en_US": "a {COLOR, 0, 255}Comet Shard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00047",
+      "en_US": "a {COLOR, 0, 255}Relic Copper{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00048",
+      "en_US": "a {COLOR, 0, 255}Relic Silver{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00049",
+      "en_US": "a {COLOR, 0, 255}Relic Gold{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00050",
+      "en_US": "a {COLOR, 0, 255}Relic Vase{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00051",
+      "en_US": "a {COLOR, 0, 255}Relic Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00052",
+      "en_US": "a {COLOR, 0, 255}Relic Statue{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00053",
+      "en_US": "a {COLOR, 0, 255}Relic Crown{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00054",
+      "en_US": "a {COLOR, 0, 255}Casteliacone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00055",
+      "en_US": "a {COLOR, 0, 255}Dire Hit 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00056",
+      "en_US": "an {COLOR, 0, 255}X Speed 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00057",
+      "en_US": "an {COLOR, 0, 255}X Sp. Atk 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00058",
+      "en_US": "an {COLOR, 0, 255}X Sp. Def 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00059",
+      "en_US": "an {COLOR, 0, 255}X Defense 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00060",
+      "en_US": "an {COLOR, 0, 255}X Attack 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00061",
+      "en_US": "an {COLOR, 0, 255}X Accuracy 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00062",
+      "en_US": "an {COLOR, 0, 255}X Speed 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00063",
+      "en_US": "an {COLOR, 0, 255}X Sp. Atk 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00064",
+      "en_US": "an {COLOR, 0, 255}X Sp. Def 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00065",
+      "en_US": "an {COLOR, 0, 255}X Defense 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00066",
+      "en_US": "an {COLOR, 0, 255}X Attack 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00067",
+      "en_US": "an {COLOR, 0, 255}X Accuracy 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00068",
+      "en_US": "an {COLOR, 0, 255}X Speed 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00069",
+      "en_US": "an {COLOR, 0, 255}X Sp. Atk 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00070",
+      "en_US": "an {COLOR, 0, 255}X Sp. Def 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00071",
+      "en_US": "an {COLOR, 0, 255}X Defense 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00072",
+      "en_US": "an {COLOR, 0, 255}X Attack 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00073",
+      "en_US": "an {COLOR, 0, 255}X Accuracy 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00074",
+      "en_US": "an {COLOR, 0, 255}Ability Urge{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00075",
+      "en_US": "an {COLOR, 0, 255}Item Drop{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00076",
+      "en_US": "an {COLOR, 0, 255}Item Urge{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00077",
+      "en_US": "a {COLOR, 0, 255}Reset Urge{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00078",
+      "en_US": "a {COLOR, 0, 255}Dire Hit 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00079",
+      "en_US": "a {COLOR, 0, 255}Light Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00080",
+      "en_US": "a {COLOR, 0, 255}Dark Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00081",
+      "en_US": "a {COLOR, 0, 255}TM093{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00082",
+      "en_US": "a {COLOR, 0, 255}TM094{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00083",
+      "en_US": "a {COLOR, 0, 255}TM095{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00084",
+      "en_US": "a {COLOR, 0, 255}Xtransceiver{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00085",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0835_00086",
+      "en_US": "a {COLOR, 0, 255}Gram 1{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00087",
+      "en_US": "a {COLOR, 0, 255}Gram 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00088",
+      "en_US": "a {COLOR, 0, 255}Gram 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00089",
+      "en_US": "a {COLOR, 0, 255}Xtransceiver{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00090",
+      "en_US": "a {COLOR, 0, 255}Medal Box{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00091",
+      "en_US": "the {COLOR, 0, 255}DNA Splicers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00092",
+      "en_US": "the {COLOR, 0, 255}DNA Splicers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00093",
+      "en_US": "a {COLOR, 0, 255}Permit{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00094",
+      "en_US": "an {COLOR, 0, 255}Oval Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00095",
+      "en_US": "a {COLOR, 0, 255}Shiny Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00096",
+      "en_US": "a {COLOR, 0, 255}Plasma Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00097",
+      "en_US": "a {COLOR, 0, 255}Grubby Hanky{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00098",
+      "en_US": "a {COLOR, 0, 255}Colress Machine{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00099",
+      "en_US": "a {COLOR, 0, 255}Dropped Item{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00100",
+      "en_US": "a {COLOR, 0, 255}Dropped Item{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0835_00101",
+      "en_US": "a {COLOR, 0, 255}Reveal Glass{COLOR, 0, 0}"
+    }
+  ]
+}

@@ -1,0 +1,2957 @@
+{
+  "key": 20829,
+  "messages": [
+    {
+      "id": "msg_0729_00000",
+      "en_US": "{TRAINER_NAME:-}"
+    },
+    {
+      "id": "msg_0729_00001",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00002",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00003",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00004",
+      "en_US": "{TRAINER_NAME:Wade}"
+    },
+    {
+      "id": "msg_0729_00005",
+      "en_US": "{TRAINER_NAME:Victoria}"
+    },
+    {
+      "id": "msg_0729_00006",
+      "en_US": "{TRAINER_NAME:Keith}"
+    },
+    {
+      "id": "msg_0729_00007",
+      "en_US": "{TRAINER_NAME:Irwin}"
+    },
+    {
+      "id": "msg_0729_00008",
+      "en_US": "{TRAINER_NAME:Joey}"
+    },
+    {
+      "id": "msg_0729_00009",
+      "en_US": "{TRAINER_NAME:Elaine}"
+    },
+    {
+      "id": "msg_0729_00010",
+      "en_US": "{TRAINER_NAME:Amy & Mimi}"
+    },
+    {
+      "id": "msg_0729_00011",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00012",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00013",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00014",
+      "en_US": "{TRAINER_NAME:Duncan}"
+    },
+    {
+      "id": "msg_0729_00015",
+      "en_US": "{TRAINER_NAME:Otis}"
+    },
+    {
+      "id": "msg_0729_00016",
+      "en_US": "{TRAINER_NAME:Simon}"
+    },
+    {
+      "id": "msg_0729_00017",
+      "en_US": "{TRAINER_NAME:Kenji}"
+    },
+    {
+      "id": "msg_0729_00018",
+      "en_US": "{TRAINER_NAME:Justin}"
+    },
+    {
+      "id": "msg_0729_00019",
+      "en_US": "{TRAINER_NAME:Rei}"
+    },
+    {
+      "id": "msg_0729_00020",
+      "en_US": "{TRAINER_NAME:Falkner}"
+    },
+    {
+      "id": "msg_0729_00021",
+      "en_US": "{TRAINER_NAME:Bugsy}"
+    },
+    {
+      "id": "msg_0729_00022",
+      "en_US": "{TRAINER_NAME:Carrie}"
+    },
+    {
+      "id": "msg_0729_00023",
+      "en_US": "{TRAINER_NAME:Larry}"
+    },
+    {
+      "id": "msg_0729_00024",
+      "en_US": "{TRAINER_NAME:Alan}"
+    },
+    {
+      "id": "msg_0729_00025",
+      "en_US": "{TRAINER_NAME:Russel}"
+    },
+    {
+      "id": "msg_0729_00026",
+      "en_US": "{TRAINER_NAME:Roland}"
+    },
+    {
+      "id": "msg_0729_00027",
+      "en_US": "{TRAINER_NAME:Liz}"
+    },
+    {
+      "id": "msg_0729_00028",
+      "en_US": "{TRAINER_NAME:Jake}"
+    },
+    {
+      "id": "msg_0729_00029",
+      "en_US": "{TRAINER_NAME:Rod}"
+    },
+    {
+      "id": "msg_0729_00030",
+      "en_US": "{TRAINER_NAME:Whitney}"
+    },
+    {
+      "id": "msg_0729_00031",
+      "en_US": "{TRAINER_NAME:Morty}"
+    },
+    {
+      "id": "msg_0729_00032",
+      "en_US": "{TRAINER_NAME:Pryce}"
+    },
+    {
+      "id": "msg_0729_00033",
+      "en_US": "{TRAINER_NAME:Jasmine}"
+    },
+    {
+      "id": "msg_0729_00034",
+      "en_US": "{TRAINER_NAME:Chuck}"
+    },
+    {
+      "id": "msg_0729_00035",
+      "en_US": "{TRAINER_NAME:Clair}"
+    },
+    {
+      "id": "msg_0729_00036",
+      "en_US": "{TRAINER_NAME:Joyce}"
+    },
+    {
+      "id": "msg_0729_00037",
+      "en_US": "{TRAINER_NAME:Preston}"
+    },
+    {
+      "id": "msg_0729_00038",
+      "en_US": "{TRAINER_NAME:Colette}"
+    },
+    {
+      "id": "msg_0729_00039",
+      "en_US": "{TRAINER_NAME:Eugene}"
+    },
+    {
+      "id": "msg_0729_00040",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00041",
+      "en_US": "{TRAINER_NAME:Clyde}"
+    },
+    {
+      "id": "msg_0729_00042",
+      "en_US": "{TRAINER_NAME:Nathan}"
+    },
+    {
+      "id": "msg_0729_00043",
+      "en_US": "{TRAINER_NAME:Chow}"
+    },
+    {
+      "id": "msg_0729_00044",
+      "en_US": "{TRAINER_NAME:Derek}"
+    },
+    {
+      "id": "msg_0729_00045",
+      "en_US": "{TRAINER_NAME:Ruth}"
+    },
+    {
+      "id": "msg_0729_00046",
+      "en_US": "{TRAINER_NAME:Martha}"
+    },
+    {
+      "id": "msg_0729_00047",
+      "en_US": "{TRAINER_NAME:Mikey}"
+    },
+    {
+      "id": "msg_0729_00048",
+      "en_US": "{TRAINER_NAME:Rob}"
+    },
+    {
+      "id": "msg_0729_00049",
+      "en_US": "{TRAINER_NAME:Albert}"
+    },
+    {
+      "id": "msg_0729_00050",
+      "en_US": "{TRAINER_NAME:Abe}"
+    },
+    {
+      "id": "msg_0729_00051",
+      "en_US": "{TRAINER_NAME:Nico}"
+    },
+    {
+      "id": "msg_0729_00052",
+      "en_US": "{TRAINER_NAME:Edmond}"
+    },
+    {
+      "id": "msg_0729_00053",
+      "en_US": "{TRAINER_NAME:Jin}"
+    },
+    {
+      "id": "msg_0729_00054",
+      "en_US": "{TRAINER_NAME:Troy}"
+    },
+    {
+      "id": "msg_0729_00055",
+      "en_US": "{TRAINER_NAME:Neal}"
+    },
+    {
+      "id": "msg_0729_00056",
+      "en_US": "{TRAINER_NAME:Gordon}"
+    },
+    {
+      "id": "msg_0729_00057",
+      "en_US": "{TRAINER_NAME:Ralph}"
+    },
+    {
+      "id": "msg_0729_00058",
+      "en_US": "{TRAINER_NAME:Arnold}"
+    },
+    {
+      "id": "msg_0729_00059",
+      "en_US": "{TRAINER_NAME:Kyle}"
+    },
+    {
+      "id": "msg_0729_00060",
+      "en_US": "{TRAINER_NAME:Henry}"
+    },
+    {
+      "id": "msg_0729_00061",
+      "en_US": "{TRAINER_NAME:Anthony}"
+    },
+    {
+      "id": "msg_0729_00062",
+      "en_US": "{TRAINER_NAME:Samuel}"
+    },
+    {
+      "id": "msg_0729_00063",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00064",
+      "en_US": "{TRAINER_NAME:Ian}"
+    },
+    {
+      "id": "msg_0729_00065",
+      "en_US": "{TRAINER_NAME:Gina}"
+    },
+    {
+      "id": "msg_0729_00066",
+      "en_US": "{TRAINER_NAME:Todd}"
+    },
+    {
+      "id": "msg_0729_00067",
+      "en_US": "{TRAINER_NAME:Benny}"
+    },
+    {
+      "id": "msg_0729_00068",
+      "en_US": "{TRAINER_NAME:Al}"
+    },
+    {
+      "id": "msg_0729_00069",
+      "en_US": "{TRAINER_NAME:Josh}"
+    },
+    {
+      "id": "msg_0729_00070",
+      "en_US": "{TRAINER_NAME:Samantha}"
+    },
+    {
+      "id": "msg_0729_00071",
+      "en_US": "{TRAINER_NAME:Cathy}"
+    },
+    {
+      "id": "msg_0729_00072",
+      "en_US": "{TRAINER_NAME:Bryan}"
+    },
+    {
+      "id": "msg_0729_00073",
+      "en_US": "{TRAINER_NAME:Theo}"
+    },
+    {
+      "id": "msg_0729_00074",
+      "en_US": "{TRAINER_NAME:Ivan}"
+    },
+    {
+      "id": "msg_0729_00075",
+      "en_US": "{TRAINER_NAME:Elliot}"
+    },
+    {
+      "id": "msg_0729_00076",
+      "en_US": "{TRAINER_NAME:Brooke}"
+    },
+    {
+      "id": "msg_0729_00077",
+      "en_US": "{TRAINER_NAME:Kim}"
+    },
+    {
+      "id": "msg_0729_00078",
+      "en_US": "{TRAINER_NAME:Arnie}"
+    },
+    {
+      "id": "msg_0729_00079",
+      "en_US": "{TRAINER_NAME:Ken}"
+    },
+    {
+      "id": "msg_0729_00080",
+      "en_US": "{TRAINER_NAME:Dirk}"
+    },
+    {
+      "id": "msg_0729_00081",
+      "en_US": "{TRAINER_NAME:Tori & Til}"
+    },
+    {
+      "id": "msg_0729_00082",
+      "en_US": "{TRAINER_NAME:Toby}"
+    },
+    {
+      "id": "msg_0729_00083",
+      "en_US": "{TRAINER_NAME:Cindy}"
+    },
+    {
+      "id": "msg_0729_00084",
+      "en_US": "{TRAINER_NAME:Barry}"
+    },
+    {
+      "id": "msg_0729_00085",
+      "en_US": "{TRAINER_NAME:Paula}"
+    },
+    {
+      "id": "msg_0729_00086",
+      "en_US": "{TRAINER_NAME:Randall}"
+    },
+    {
+      "id": "msg_0729_00087",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00088",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00089",
+      "en_US": "{TRAINER_NAME:Grace}"
+    },
+    {
+      "id": "msg_0729_00090",
+      "en_US": "{TRAINER_NAME:Kaylee}"
+    },
+    {
+      "id": "msg_0729_00091",
+      "en_US": "{TRAINER_NAME:Susie}"
+    },
+    {
+      "id": "msg_0729_00092",
+      "en_US": "{TRAINER_NAME:Denise}"
+    },
+    {
+      "id": "msg_0729_00093",
+      "en_US": "{TRAINER_NAME:Kara}"
+    },
+    {
+      "id": "msg_0729_00094",
+      "en_US": "{TRAINER_NAME:Wendy}"
+    },
+    {
+      "id": "msg_0729_00095",
+      "en_US": "{TRAINER_NAME:Charlie}"
+    },
+    {
+      "id": "msg_0729_00096",
+      "en_US": "{TRAINER_NAME:George}"
+    },
+    {
+      "id": "msg_0729_00097",
+      "en_US": "{TRAINER_NAME:Berke}"
+    },
+    {
+      "id": "msg_0729_00098",
+      "en_US": "{TRAINER_NAME:Ronald}"
+    },
+    {
+      "id": "msg_0729_00099",
+      "en_US": "{TRAINER_NAME:Matthew}"
+    },
+    {
+      "id": "msg_0729_00100",
+      "en_US": "{TRAINER_NAME:Anthony}"
+    },
+    {
+      "id": "msg_0729_00101",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00102",
+      "en_US": "{TRAINER_NAME:Gaven}"
+    },
+    {
+      "id": "msg_0729_00103",
+      "en_US": "{TRAINER_NAME:Blake}"
+    },
+    {
+      "id": "msg_0729_00104",
+      "en_US": "{TRAINER_NAME:Brian}"
+    },
+    {
+      "id": "msg_0729_00105",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00106",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00107",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00108",
+      "en_US": "{TRAINER_NAME:Ryan}"
+    },
+    {
+      "id": "msg_0729_00109",
+      "en_US": "{TRAINER_NAME:Alton}"
+    },
+    {
+      "id": "msg_0729_00110",
+      "en_US": "{TRAINER_NAME:Paulo}"
+    },
+    {
+      "id": "msg_0729_00111",
+      "en_US": "{TRAINER_NAME:Mike}"
+    },
+    {
+      "id": "msg_0729_00112",
+      "en_US": "{TRAINER_NAME:Cody}"
+    },
+    {
+      "id": "msg_0729_00113",
+      "en_US": "{TRAINER_NAME:Jamie}"
+    },
+    {
+      "id": "msg_0729_00114",
+      "en_US": "{TRAINER_NAME:Reena}"
+    },
+    {
+      "id": "msg_0729_00115",
+      "en_US": "{TRAINER_NAME:Megan}"
+    },
+    {
+      "id": "msg_0729_00116",
+      "en_US": "{TRAINER_NAME:Lois}"
+    },
+    {
+      "id": "msg_0729_00117",
+      "en_US": "{TRAINER_NAME:Lola}"
+    },
+    {
+      "id": "msg_0729_00118",
+      "en_US": "{TRAINER_NAME:Kate}"
+    },
+    {
+      "id": "msg_0729_00119",
+      "en_US": "{TRAINER_NAME:Fran}"
+    },
+    {
+      "id": "msg_0729_00120",
+      "en_US": "{TRAINER_NAME:Irene}"
+    },
+    {
+      "id": "msg_0729_00121",
+      "en_US": "{TRAINER_NAME:Kelly}"
+    },
+    {
+      "id": "msg_0729_00122",
+      "en_US": "{TRAINER_NAME:Marvin}"
+    },
+    {
+      "id": "msg_0729_00123",
+      "en_US": "{TRAINER_NAME:Tully}"
+    },
+    {
+      "id": "msg_0729_00124",
+      "en_US": "{TRAINER_NAME:Wilton}"
+    },
+    {
+      "id": "msg_0729_00125",
+      "en_US": "{TRAINER_NAME:Edgar}"
+    },
+    {
+      "id": "msg_0729_00126",
+      "en_US": "{TRAINER_NAME:Andre}"
+    },
+    {
+      "id": "msg_0729_00127",
+      "en_US": "{TRAINER_NAME:Raymond}"
+    },
+    {
+      "id": "msg_0729_00128",
+      "en_US": "{TRAINER_NAME:Jonah}"
+    },
+    {
+      "id": "msg_0729_00129",
+      "en_US": "{TRAINER_NAME:Shane}"
+    },
+    {
+      "id": "msg_0729_00130",
+      "en_US": "{TRAINER_NAME:Beckett}"
+    },
+    {
+      "id": "msg_0729_00131",
+      "en_US": "{TRAINER_NAME:Brent}"
+    },
+    {
+      "id": "msg_0729_00132",
+      "en_US": "{TRAINER_NAME:Ron}"
+    },
+    {
+      "id": "msg_0729_00133",
+      "en_US": "{TRAINER_NAME:Morgan}"
+    },
+    {
+      "id": "msg_0729_00134",
+      "en_US": "{TRAINER_NAME:Benjamin}"
+    },
+    {
+      "id": "msg_0729_00135",
+      "en_US": "{TRAINER_NAME:Johnny}"
+    },
+    {
+      "id": "msg_0729_00136",
+      "en_US": "{TRAINER_NAME:Linda}"
+    },
+    {
+      "id": "msg_0729_00137",
+      "en_US": "{TRAINER_NAME:Vance}"
+    },
+    {
+      "id": "msg_0729_00138",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00139",
+      "en_US": "{TRAINER_NAME:Debra}"
+    },
+    {
+      "id": "msg_0729_00140",
+      "en_US": "{TRAINER_NAME:Doug}"
+    },
+    {
+      "id": "msg_0729_00141",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00142",
+      "en_US": "{TRAINER_NAME:Gina}"
+    },
+    {
+      "id": "msg_0729_00143",
+      "en_US": "{TRAINER_NAME:Erik}"
+    },
+    {
+      "id": "msg_0729_00144",
+      "en_US": "{TRAINER_NAME:Michael}"
+    },
+    {
+      "id": "msg_0729_00145",
+      "en_US": "{TRAINER_NAME:Parry}"
+    },
+    {
+      "id": "msg_0729_00146",
+      "en_US": "{TRAINER_NAME:Timothy}"
+    },
+    {
+      "id": "msg_0729_00147",
+      "en_US": "{TRAINER_NAME:Ted}"
+    },
+    {
+      "id": "msg_0729_00148",
+      "en_US": "{TRAINER_NAME:Lloyd}"
+    },
+    {
+      "id": "msg_0729_00149",
+      "en_US": "{TRAINER_NAME:Dean}"
+    },
+    {
+      "id": "msg_0729_00150",
+      "en_US": "{TRAINER_NAME:Sid}"
+    },
+    {
+      "id": "msg_0729_00151",
+      "en_US": "{TRAINER_NAME:Erin}"
+    },
+    {
+      "id": "msg_0729_00152",
+      "en_US": "{TRAINER_NAME:Hope}"
+    },
+    {
+      "id": "msg_0729_00153",
+      "en_US": "{TRAINER_NAME:Sharon}"
+    },
+    {
+      "id": "msg_0729_00154",
+      "en_US": "{TRAINER_NAME:Bailey}"
+    },
+    {
+      "id": "msg_0729_00155",
+      "en_US": "{TRAINER_NAME:Anthony}"
+    },
+    {
+      "id": "msg_0729_00156",
+      "en_US": "{TRAINER_NAME:Yoshi}"
+    },
+    {
+      "id": "msg_0729_00157",
+      "en_US": "{TRAINER_NAME:Lao}"
+    },
+    {
+      "id": "msg_0729_00158",
+      "en_US": "{TRAINER_NAME:Kiyo}"
+    },
+    {
+      "id": "msg_0729_00159",
+      "en_US": "{TRAINER_NAME:Lung}"
+    },
+    {
+      "id": "msg_0729_00160",
+      "en_US": "{TRAINER_NAME:Naoko}"
+    },
+    {
+      "id": "msg_0729_00161",
+      "en_US": "{TRAINER_NAME:Sayo}"
+    },
+    {
+      "id": "msg_0729_00162",
+      "en_US": "{TRAINER_NAME:Zuki}"
+    },
+    {
+      "id": "msg_0729_00163",
+      "en_US": "{TRAINER_NAME:Kuni}"
+    },
+    {
+      "id": "msg_0729_00164",
+      "en_US": "{TRAINER_NAME:Miki}"
+    },
+    {
+      "id": "msg_0729_00165",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00166",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00167",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00168",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00169",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00170",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00171",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00172",
+      "en_US": "{TRAINER_NAME:Brent}"
+    },
+    {
+      "id": "msg_0729_00173",
+      "en_US": "{TRAINER_NAME:Brent}"
+    },
+    {
+      "id": "msg_0729_00174",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00175",
+      "en_US": "{TRAINER_NAME:Bethany}"
+    },
+    {
+      "id": "msg_0729_00176",
+      "en_US": "{TRAINER_NAME:Margaret}"
+    },
+    {
+      "id": "msg_0729_00177",
+      "en_US": "{TRAINER_NAME:Ethel}"
+    },
+    {
+      "id": "msg_0729_00178",
+      "en_US": "{TRAINER_NAME:Jack}"
+    },
+    {
+      "id": "msg_0729_00179",
+      "en_US": "{TRAINER_NAME:Kipp}"
+    },
+    {
+      "id": "msg_0729_00180",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00181",
+      "en_US": "{TRAINER_NAME:William}"
+    },
+    {
+      "id": "msg_0729_00182",
+      "en_US": "{TRAINER_NAME:Beverly}"
+    },
+    {
+      "id": "msg_0729_00183",
+      "en_US": "{TRAINER_NAME:Alice}"
+    },
+    {
+      "id": "msg_0729_00184",
+      "en_US": "{TRAINER_NAME:Krise}"
+    },
+    {
+      "id": "msg_0729_00185",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00186",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00187",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00188",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00189",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00190",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00191",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00192",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00193",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00194",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00195",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00196",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00197",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00198",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00199",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00200",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00201",
+      "en_US": "{TRAINER_NAME:Andrew}"
+    },
+    {
+      "id": "msg_0729_00202",
+      "en_US": "{TRAINER_NAME:Calvin}"
+    },
+    {
+      "id": "msg_0729_00203",
+      "en_US": "{TRAINER_NAME:Phillip}"
+    },
+    {
+      "id": "msg_0729_00204",
+      "en_US": "{TRAINER_NAME:Leonard}"
+    },
+    {
+      "id": "msg_0729_00205",
+      "en_US": "{TRAINER_NAME:Nick}"
+    },
+    {
+      "id": "msg_0729_00206",
+      "en_US": "{TRAINER_NAME:Gwen}"
+    },
+    {
+      "id": "msg_0729_00207",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00208",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00209",
+      "en_US": "{TRAINER_NAME:Cassie}"
+    },
+    {
+      "id": "msg_0729_00210",
+      "en_US": "{TRAINER_NAME:Caroline}"
+    },
+    {
+      "id": "msg_0729_00211",
+      "en_US": "{TRAINER_NAME:Huey}"
+    },
+    {
+      "id": "msg_0729_00212",
+      "en_US": "{TRAINER_NAME:Terrell}"
+    },
+    {
+      "id": "msg_0729_00213",
+      "en_US": "{TRAINER_NAME:Kent}"
+    },
+    {
+      "id": "msg_0729_00214",
+      "en_US": "{TRAINER_NAME:Roberto}"
+    },
+    {
+      "id": "msg_0729_00215",
+      "en_US": "{TRAINER_NAME:Connie}"
+    },
+    {
+      "id": "msg_0729_00216",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00217",
+      "en_US": "{TRAINER_NAME:Denis}"
+    },
+    {
+      "id": "msg_0729_00218",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00219",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00220",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00221",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00222",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00223",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00224",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00225",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00226",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00227",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00228",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00229",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00230",
+      "en_US": "{TRAINER_NAME:Franklin}"
+    },
+    {
+      "id": "msg_0729_00231",
+      "en_US": "{TRAINER_NAME:Edward}"
+    },
+    {
+      "id": "msg_0729_00232",
+      "en_US": "{TRAINER_NAME:Vincent}"
+    },
+    {
+      "id": "msg_0729_00233",
+      "en_US": "{TRAINER_NAME:Eric}"
+    },
+    {
+      "id": "msg_0729_00234",
+      "en_US": "{TRAINER_NAME:Eoin}"
+    },
+    {
+      "id": "msg_0729_00235",
+      "en_US": "{TRAINER_NAME:Noland}"
+    },
+    {
+      "id": "msg_0729_00236",
+      "en_US": "{TRAINER_NAME:Shaye}"
+    },
+    {
+      "id": "msg_0729_00237",
+      "en_US": "{TRAINER_NAME:Carol}"
+    },
+    {
+      "id": "msg_0729_00238",
+      "en_US": "{TRAINER_NAME:Stanly}"
+    },
+    {
+      "id": "msg_0729_00239",
+      "en_US": "{TRAINER_NAME:Jeff}"
+    },
+    {
+      "id": "msg_0729_00240",
+      "en_US": "{TRAINER_NAME:Garrett}"
+    },
+    {
+      "id": "msg_0729_00241",
+      "en_US": "{TRAINER_NAME:Kenneth}"
+    },
+    {
+      "id": "msg_0729_00242",
+      "en_US": "{TRAINER_NAME:Fritz}"
+    },
+    {
+      "id": "msg_0729_00243",
+      "en_US": "{TRAINER_NAME:Katie}"
+    },
+    {
+      "id": "msg_0729_00244",
+      "en_US": "{TRAINER_NAME:Lance}"
+    },
+    {
+      "id": "msg_0729_00245",
+      "en_US": "{TRAINER_NAME:Will}"
+    },
+    {
+      "id": "msg_0729_00246",
+      "en_US": "{TRAINER_NAME:Karen}"
+    },
+    {
+      "id": "msg_0729_00247",
+      "en_US": "{TRAINER_NAME:Koga}"
+    },
+    {
+      "id": "msg_0729_00248",
+      "en_US": "{TRAINER_NAME:Ed}"
+    },
+    {
+      "id": "msg_0729_00249",
+      "en_US": "{TRAINER_NAME:Don}"
+    },
+    {
+      "id": "msg_0729_00250",
+      "en_US": "{TRAINER_NAME:Kenji}"
+    },
+    {
+      "id": "msg_0729_00251",
+      "en_US": "{TRAINER_NAME:Nob}"
+    },
+    {
+      "id": "msg_0729_00252",
+      "en_US": "{TRAINER_NAME:Harold}"
+    },
+    {
+      "id": "msg_0729_00253",
+      "en_US": "{TRAINER_NAME:Brock}"
+    },
+    {
+      "id": "msg_0729_00254",
+      "en_US": "{TRAINER_NAME:Misty}"
+    },
+    {
+      "id": "msg_0729_00255",
+      "en_US": "{TRAINER_NAME:Lt. Surge}"
+    },
+    {
+      "id": "msg_0729_00256",
+      "en_US": "{TRAINER_NAME:Erika}"
+    },
+    {
+      "id": "msg_0729_00257",
+      "en_US": "{TRAINER_NAME:Janine}"
+    },
+    {
+      "id": "msg_0729_00258",
+      "en_US": "{TRAINER_NAME:Sabrina}"
+    },
+    {
+      "id": "msg_0729_00259",
+      "en_US": "{TRAINER_NAME:Blaine}"
+    },
+    {
+      "id": "msg_0729_00260",
+      "en_US": "{TRAINER_NAME:Red}"
+    },
+    {
+      "id": "msg_0729_00261",
+      "en_US": "{TRAINER_NAME:Blue}"
+    },
+    {
+      "id": "msg_0729_00262",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00263",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00264",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00265",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00266",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00267",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00268",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00269",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00270",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00271",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00272",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00273",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00274",
+      "en_US": "{TRAINER_NAME:Todd}"
+    },
+    {
+      "id": "msg_0729_00275",
+      "en_US": "{TRAINER_NAME:Todd}"
+    },
+    {
+      "id": "msg_0729_00276",
+      "en_US": "{TRAINER_NAME:Liz}"
+    },
+    {
+      "id": "msg_0729_00277",
+      "en_US": "{TRAINER_NAME:Liz}"
+    },
+    {
+      "id": "msg_0729_00278",
+      "en_US": "{TRAINER_NAME:Kenji}"
+    },
+    {
+      "id": "msg_0729_00279",
+      "en_US": "{TRAINER_NAME:Joey}"
+    },
+    {
+      "id": "msg_0729_00280",
+      "en_US": "{TRAINER_NAME:Joey}"
+    },
+    {
+      "id": "msg_0729_00281",
+      "en_US": "{TRAINER_NAME:Richard}"
+    },
+    {
+      "id": "msg_0729_00282",
+      "en_US": "{TRAINER_NAME:Ned}"
+    },
+    {
+      "id": "msg_0729_00283",
+      "en_US": "{TRAINER_NAME:Orson}"
+    },
+    {
+      "id": "msg_0729_00284",
+      "en_US": "{TRAINER_NAME:Corey}"
+    },
+    {
+      "id": "msg_0729_00285",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00286",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00287",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00288",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00289",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00290",
+      "en_US": "{TRAINER_NAME:Li}"
+    },
+    {
+      "id": "msg_0729_00291",
+      "en_US": "{TRAINER_NAME:Debbie}"
+    },
+    {
+      "id": "msg_0729_00292",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00293",
+      "en_US": "{TRAINER_NAME:Nicole}"
+    },
+    {
+      "id": "msg_0729_00294",
+      "en_US": "{TRAINER_NAME:Lori}"
+    },
+    {
+      "id": "msg_0729_00295",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00296",
+      "en_US": "{TRAINER_NAME:Nikki}"
+    },
+    {
+      "id": "msg_0729_00297",
+      "en_US": "{TRAINER_NAME:Diana}"
+    },
+    {
+      "id": "msg_0729_00298",
+      "en_US": "{TRAINER_NAME:Briana}"
+    },
+    {
+      "id": "msg_0729_00299",
+      "en_US": "{TRAINER_NAME:Hank}"
+    },
+    {
+      "id": "msg_0729_00300",
+      "en_US": "{TRAINER_NAME:Roy}"
+    },
+    {
+      "id": "msg_0729_00301",
+      "en_US": "{TRAINER_NAME:Boris}"
+    },
+    {
+      "id": "msg_0729_00302",
+      "en_US": "{TRAINER_NAME:Bob}"
+    },
+    {
+      "id": "msg_0729_00303",
+      "en_US": "{TRAINER_NAME:Jose}"
+    },
+    {
+      "id": "msg_0729_00304",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00305",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00306",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00307",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00308",
+      "en_US": "{TRAINER_NAME:Jerry}"
+    },
+    {
+      "id": "msg_0729_00309",
+      "en_US": "{TRAINER_NAME:Dwayne}"
+    },
+    {
+      "id": "msg_0729_00310",
+      "en_US": "{TRAINER_NAME:Harris}"
+    },
+    {
+      "id": "msg_0729_00311",
+      "en_US": "{TRAINER_NAME:Zeke}"
+    },
+    {
+      "id": "msg_0729_00312",
+      "en_US": "{TRAINER_NAME:Charles}"
+    },
+    {
+      "id": "msg_0729_00313",
+      "en_US": "{TRAINER_NAME:Reese}"
+    },
+    {
+      "id": "msg_0729_00314",
+      "en_US": "{TRAINER_NAME:Joel}"
+    },
+    {
+      "id": "msg_0729_00315",
+      "en_US": "{TRAINER_NAME:Glenn}"
+    },
+    {
+      "id": "msg_0729_00316",
+      "en_US": "{TRAINER_NAME:Herman}"
+    },
+    {
+      "id": "msg_0729_00317",
+      "en_US": "{TRAINER_NAME:Fidel}"
+    },
+    {
+      "id": "msg_0729_00318",
+      "en_US": "{TRAINER_NAME:Burt}"
+    },
+    {
+      "id": "msg_0729_00319",
+      "en_US": "{TRAINER_NAME:Bill}"
+    },
+    {
+      "id": "msg_0729_00320",
+      "en_US": "{TRAINER_NAME:Martin}"
+    },
+    {
+      "id": "msg_0729_00321",
+      "en_US": "{TRAINER_NAME:Stephen}"
+    },
+    {
+      "id": "msg_0729_00322",
+      "en_US": "{TRAINER_NAME:Barney}"
+    },
+    {
+      "id": "msg_0729_00323",
+      "en_US": "{TRAINER_NAME:Tully}"
+    },
+    {
+      "id": "msg_0729_00324",
+      "en_US": "{TRAINER_NAME:Tully}"
+    },
+    {
+      "id": "msg_0729_00325",
+      "en_US": "{TRAINER_NAME:Wilton}"
+    },
+    {
+      "id": "msg_0729_00326",
+      "en_US": "{TRAINER_NAME:Jo & Zoe}"
+    },
+    {
+      "id": "msg_0729_00327",
+      "en_US": "{TRAINER_NAME:Danny}"
+    },
+    {
+      "id": "msg_0729_00328",
+      "en_US": "{TRAINER_NAME:Tommy}"
+    },
+    {
+      "id": "msg_0729_00329",
+      "en_US": "{TRAINER_NAME:Dudley}"
+    },
+    {
+      "id": "msg_0729_00330",
+      "en_US": "{TRAINER_NAME:Joe}"
+    },
+    {
+      "id": "msg_0729_00331",
+      "en_US": "{TRAINER_NAME:Billy}"
+    },
+    {
+      "id": "msg_0729_00332",
+      "en_US": "{TRAINER_NAME:Heidi}"
+    },
+    {
+      "id": "msg_0729_00333",
+      "en_US": "{TRAINER_NAME:Edna}"
+    },
+    {
+      "id": "msg_0729_00334",
+      "en_US": "{TRAINER_NAME:Gina}"
+    },
+    {
+      "id": "msg_0729_00335",
+      "en_US": "{TRAINER_NAME:Erin}"
+    },
+    {
+      "id": "msg_0729_00336",
+      "en_US": "{TRAINER_NAME:Tanya}"
+    },
+    {
+      "id": "msg_0729_00337",
+      "en_US": "{TRAINER_NAME:Gregory}"
+    },
+    {
+      "id": "msg_0729_00338",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00339",
+      "en_US": "{TRAINER_NAME:Wai}"
+    },
+    {
+      "id": "msg_0729_00340",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00341",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00342",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00343",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00344",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00345",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00346",
+      "en_US": "{TRAINER_NAME:Julia}"
+    },
+    {
+      "id": "msg_0729_00347",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00348",
+      "en_US": "{TRAINER_NAME:Robert}"
+    },
+    {
+      "id": "msg_0729_00349",
+      "en_US": "{TRAINER_NAME:Joshua}"
+    },
+    {
+      "id": "msg_0729_00350",
+      "en_US": "{TRAINER_NAME:Carter}"
+    },
+    {
+      "id": "msg_0729_00351",
+      "en_US": "{TRAINER_NAME:Trevor}"
+    },
+    {
+      "id": "msg_0729_00352",
+      "en_US": "{TRAINER_NAME:Georgia}"
+    },
+    {
+      "id": "msg_0729_00353",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00354",
+      "en_US": "{TRAINER_NAME:Laura}"
+    },
+    {
+      "id": "msg_0729_00355",
+      "en_US": "{TRAINER_NAME:Shannon}"
+    },
+    {
+      "id": "msg_0729_00356",
+      "en_US": "{TRAINER_NAME:Michelle}"
+    },
+    {
+      "id": "msg_0729_00357",
+      "en_US": "{TRAINER_NAME:Clarke}"
+    },
+    {
+      "id": "msg_0729_00358",
+      "en_US": "{TRAINER_NAME:Kenny}"
+    },
+    {
+      "id": "msg_0729_00359",
+      "en_US": "{TRAINER_NAME:Jim}"
+    },
+    {
+      "id": "msg_0729_00360",
+      "en_US": "{TRAINER_NAME:Arnie}"
+    },
+    {
+      "id": "msg_0729_00361",
+      "en_US": "{TRAINER_NAME:Kevin}"
+    },
+    {
+      "id": "msg_0729_00362",
+      "en_US": "{TRAINER_NAME:Quinn}"
+    },
+    {
+      "id": "msg_0729_00363",
+      "en_US": "{TRAINER_NAME:Emma}"
+    },
+    {
+      "id": "msg_0729_00364",
+      "en_US": "{TRAINER_NAME:Sam}"
+    },
+    {
+      "id": "msg_0729_00365",
+      "en_US": "{TRAINER_NAME:Tyrone}"
+    },
+    {
+      "id": "msg_0729_00366",
+      "en_US": "{TRAINER_NAME:Pat}"
+    },
+    {
+      "id": "msg_0729_00367",
+      "en_US": "{TRAINER_NAME:Shawn}"
+    },
+    {
+      "id": "msg_0729_00368",
+      "en_US": "{TRAINER_NAME:Rebecca}"
+    },
+    {
+      "id": "msg_0729_00369",
+      "en_US": "{TRAINER_NAME:Darcy}"
+    },
+    {
+      "id": "msg_0729_00370",
+      "en_US": "{TRAINER_NAME:Jerome}"
+    },
+    {
+      "id": "msg_0729_00371",
+      "en_US": "{TRAINER_NAME:Tucker}"
+    },
+    {
+      "id": "msg_0729_00372",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00373",
+      "en_US": "{TRAINER_NAME:Frankie}"
+    },
+    {
+      "id": "msg_0729_00374",
+      "en_US": "{TRAINER_NAME:Tyson}"
+    },
+    {
+      "id": "msg_0729_00375",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00376",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00377",
+      "en_US": "{TRAINER_NAME:Parker}"
+    },
+    {
+      "id": "msg_0729_00378",
+      "en_US": "{TRAINER_NAME:Warren}"
+    },
+    {
+      "id": "msg_0729_00379",
+      "en_US": "{TRAINER_NAME:Jimmy}"
+    },
+    {
+      "id": "msg_0729_00380",
+      "en_US": "{TRAINER_NAME:Owen}"
+    },
+    {
+      "id": "msg_0729_00381",
+      "en_US": "{TRAINER_NAME:Jason}"
+    },
+    {
+      "id": "msg_0729_00382",
+      "en_US": "{TRAINER_NAME:Hillary}"
+    },
+    {
+      "id": "msg_0729_00383",
+      "en_US": "{TRAINER_NAME:Peter}"
+    },
+    {
+      "id": "msg_0729_00384",
+      "en_US": "{TRAINER_NAME:Daniel}"
+    },
+    {
+      "id": "msg_0729_00385",
+      "en_US": "{TRAINER_NAME:Dara & Dia}"
+    },
+    {
+      "id": "msg_0729_00386",
+      "en_US": "{TRAINER_NAME:Greg}"
+    },
+    {
+      "id": "msg_0729_00387",
+      "en_US": "{TRAINER_NAME:Amy & Mimi}"
+    },
+    {
+      "id": "msg_0729_00388",
+      "en_US": "{TRAINER_NAME:Walt}"
+    },
+    {
+      "id": "msg_0729_00389",
+      "en_US": "{TRAINER_NAME:Nelson}"
+    },
+    {
+      "id": "msg_0729_00390",
+      "en_US": "{TRAINER_NAME:Ray}"
+    },
+    {
+      "id": "msg_0729_00391",
+      "en_US": "{TRAINER_NAME:Issac}"
+    },
+    {
+      "id": "msg_0729_00392",
+      "en_US": "{TRAINER_NAME:Donald}"
+    },
+    {
+      "id": "msg_0729_00393",
+      "en_US": "{TRAINER_NAME:Teru}"
+    },
+    {
+      "id": "msg_0729_00394",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00395",
+      "en_US": "{TRAINER_NAME:Mark}"
+    },
+    {
+      "id": "msg_0729_00396",
+      "en_US": "{TRAINER_NAME:Horton}"
+    },
+    {
+      "id": "msg_0729_00397",
+      "en_US": "{TRAINER_NAME:Chad}"
+    },
+    {
+      "id": "msg_0729_00398",
+      "en_US": "{TRAINER_NAME:Valerie}"
+    },
+    {
+      "id": "msg_0729_00399",
+      "en_US": "{TRAINER_NAME:Lyle}"
+    },
+    {
+      "id": "msg_0729_00400",
+      "en_US": "{TRAINER_NAME:Dana}"
+    },
+    {
+      "id": "msg_0729_00401",
+      "en_US": "{TRAINER_NAME:Alfred}"
+    },
+    {
+      "id": "msg_0729_00402",
+      "en_US": "{TRAINER_NAME:Tiffany}"
+    },
+    {
+      "id": "msg_0729_00403",
+      "en_US": "{TRAINER_NAME:Spencer}"
+    },
+    {
+      "id": "msg_0729_00404",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00405",
+      "en_US": "{TRAINER_NAME:Phil}"
+    },
+    {
+      "id": "msg_0729_00406",
+      "en_US": "{TRAINER_NAME:Zach}"
+    },
+    {
+      "id": "msg_0729_00407",
+      "en_US": "{TRAINER_NAME:Allen}"
+    },
+    {
+      "id": "msg_0729_00408",
+      "en_US": "{TRAINER_NAME:Cybil}"
+    },
+    {
+      "id": "msg_0729_00409",
+      "en_US": "{TRAINER_NAME:Brandon}"
+    },
+    {
+      "id": "msg_0729_00410",
+      "en_US": "{TRAINER_NAME:Harry}"
+    },
+    {
+      "id": "msg_0729_00411",
+      "en_US": "{TRAINER_NAME:Vernon}"
+    },
+    {
+      "id": "msg_0729_00412",
+      "en_US": "{TRAINER_NAME:Eli}"
+    },
+    {
+      "id": "msg_0729_00413",
+      "en_US": "{TRAINER_NAME:Scott}"
+    },
+    {
+      "id": "msg_0729_00414",
+      "en_US": "{TRAINER_NAME:Jose}"
+    },
+    {
+      "id": "msg_0729_00415",
+      "en_US": "{TRAINER_NAME:Jared}"
+    },
+    {
+      "id": "msg_0729_00416",
+      "en_US": "{TRAINER_NAME:Jo & Zoe}"
+    },
+    {
+      "id": "msg_0729_00417",
+      "en_US": "{TRAINER_NAME:Jenn}"
+    },
+    {
+      "id": "msg_0729_00418",
+      "en_US": "{TRAINER_NAME:Bruno}"
+    },
+    {
+      "id": "msg_0729_00419",
+      "en_US": "{TRAINER_NAME:Ellen}"
+    },
+    {
+      "id": "msg_0729_00420",
+      "en_US": "{TRAINER_NAME:Perry}"
+    },
+    {
+      "id": "msg_0729_00421",
+      "en_US": "{TRAINER_NAME:Bret}"
+    },
+    {
+      "id": "msg_0729_00422",
+      "en_US": "{TRAINER_NAME:Rodney}"
+    },
+    {
+      "id": "msg_0729_00423",
+      "en_US": "{TRAINER_NAME:Jeremy}"
+    },
+    {
+      "id": "msg_0729_00424",
+      "en_US": "{TRAINER_NAME:Colin}"
+    },
+    {
+      "id": "msg_0729_00425",
+      "en_US": "{TRAINER_NAME:Meg & Peg}"
+    },
+    {
+      "id": "msg_0729_00426",
+      "en_US": "{TRAINER_NAME:Meg & Peg}"
+    },
+    {
+      "id": "msg_0729_00427",
+      "en_US": "{TRAINER_NAME:Shirley}"
+    },
+    {
+      "id": "msg_0729_00428",
+      "en_US": "{TRAINER_NAME:Nate}"
+    },
+    {
+      "id": "msg_0729_00429",
+      "en_US": "{TRAINER_NAME:Ricky}"
+    },
+    {
+      "id": "msg_0729_00430",
+      "en_US": "{TRAINER_NAME:Jack}"
+    },
+    {
+      "id": "msg_0729_00431",
+      "en_US": "{TRAINER_NAME:Jack}"
+    },
+    {
+      "id": "msg_0729_00432",
+      "en_US": "{TRAINER_NAME:Alan}"
+    },
+    {
+      "id": "msg_0729_00433",
+      "en_US": "{TRAINER_NAME:Alan}"
+    },
+    {
+      "id": "msg_0729_00434",
+      "en_US": "{TRAINER_NAME:Chad}"
+    },
+    {
+      "id": "msg_0729_00435",
+      "en_US": "{TRAINER_NAME:Chad}"
+    },
+    {
+      "id": "msg_0729_00436",
+      "en_US": "{TRAINER_NAME:Beverly}"
+    },
+    {
+      "id": "msg_0729_00437",
+      "en_US": "{TRAINER_NAME:Beverly}"
+    },
+    {
+      "id": "msg_0729_00438",
+      "en_US": "{TRAINER_NAME:Derek}"
+    },
+    {
+      "id": "msg_0729_00439",
+      "en_US": "{TRAINER_NAME:Derek}"
+    },
+    {
+      "id": "msg_0729_00440",
+      "en_US": "{TRAINER_NAME:Huey}"
+    },
+    {
+      "id": "msg_0729_00441",
+      "en_US": "{TRAINER_NAME:Huey}"
+    },
+    {
+      "id": "msg_0729_00442",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00443",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00444",
+      "en_US": "{TRAINER_NAME:Reena}"
+    },
+    {
+      "id": "msg_0729_00445",
+      "en_US": "{TRAINER_NAME:Reena}"
+    },
+    {
+      "id": "msg_0729_00446",
+      "en_US": "{TRAINER_NAME:Jose}"
+    },
+    {
+      "id": "msg_0729_00447",
+      "en_US": "{TRAINER_NAME:Vance}"
+    },
+    {
+      "id": "msg_0729_00448",
+      "en_US": "{TRAINER_NAME:Vance}"
+    },
+    {
+      "id": "msg_0729_00449",
+      "en_US": "{TRAINER_NAME:Arnie}"
+    },
+    {
+      "id": "msg_0729_00450",
+      "en_US": "{TRAINER_NAME:Wilton}"
+    },
+    {
+      "id": "msg_0729_00451",
+      "en_US": "{TRAINER_NAME:Parry}"
+    },
+    {
+      "id": "msg_0729_00452",
+      "en_US": "{TRAINER_NAME:Parry}"
+    },
+    {
+      "id": "msg_0729_00453",
+      "en_US": "{TRAINER_NAME:Erin}"
+    },
+    {
+      "id": "msg_0729_00454",
+      "en_US": "{TRAINER_NAME:Irwin}"
+    },
+    {
+      "id": "msg_0729_00455",
+      "en_US": "{TRAINER_NAME:Irwin}"
+    },
+    {
+      "id": "msg_0729_00456",
+      "en_US": "{TRAINER_NAME:Gaven}"
+    },
+    {
+      "id": "msg_0729_00457",
+      "en_US": "{TRAINER_NAME:Gaven}"
+    },
+    {
+      "id": "msg_0729_00458",
+      "en_US": "{TRAINER_NAME:Jamie}"
+    },
+    {
+      "id": "msg_0729_00459",
+      "en_US": "{TRAINER_NAME:Jamie}"
+    },
+    {
+      "id": "msg_0729_00460",
+      "en_US": "{TRAINER_NAME:Wade}"
+    },
+    {
+      "id": "msg_0729_00461",
+      "en_US": "{TRAINER_NAME:Wade}"
+    },
+    {
+      "id": "msg_0729_00462",
+      "en_US": "{TRAINER_NAME:Ralph}"
+    },
+    {
+      "id": "msg_0729_00463",
+      "en_US": "{TRAINER_NAME:Ralph}"
+    },
+    {
+      "id": "msg_0729_00464",
+      "en_US": "{TRAINER_NAME:Dana}"
+    },
+    {
+      "id": "msg_0729_00465",
+      "en_US": "{TRAINER_NAME:Dana}"
+    },
+    {
+      "id": "msg_0729_00466",
+      "en_US": "{TRAINER_NAME:Tiffany}"
+    },
+    {
+      "id": "msg_0729_00467",
+      "en_US": "{TRAINER_NAME:Tiffany}"
+    },
+    {
+      "id": "msg_0729_00468",
+      "en_US": "{TRAINER_NAME:Ross}"
+    },
+    {
+      "id": "msg_0729_00469",
+      "en_US": "{TRAINER_NAME:Mitch}"
+    },
+    {
+      "id": "msg_0729_00470",
+      "en_US": "{TRAINER_NAME:Gregg}"
+    },
+    {
+      "id": "msg_0729_00471",
+      "en_US": "{TRAINER_NAME:Garett}"
+    },
+    {
+      "id": "msg_0729_00472",
+      "en_US": "{TRAINER_NAME:Trenton}"
+    },
+    {
+      "id": "msg_0729_00473",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00474",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00475",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00476",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00477",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00478",
+      "en_US": "{TRAINER_NAME:Ariana}"
+    },
+    {
+      "id": "msg_0729_00479",
+      "en_US": "{TRAINER_NAME:Ariana}"
+    },
+    {
+      "id": "msg_0729_00480",
+      "en_US": "{TRAINER_NAME:Diana}"
+    },
+    {
+      "id": "msg_0729_00481",
+      "en_US": "{TRAINER_NAME:Jill}"
+    },
+    {
+      "id": "msg_0729_00482",
+      "en_US": "{TRAINER_NAME:Deandre}"
+    },
+    {
+      "id": "msg_0729_00483",
+      "en_US": "{TRAINER_NAME:Patton}"
+    },
+    {
+      "id": "msg_0729_00484",
+      "en_US": "{TRAINER_NAME:Gerardo}"
+    },
+    {
+      "id": "msg_0729_00485",
+      "en_US": "{TRAINER_NAME:Archer}"
+    },
+    {
+      "id": "msg_0729_00486",
+      "en_US": "{TRAINER_NAME:Proton}"
+    },
+    {
+      "id": "msg_0729_00487",
+      "en_US": "{TRAINER_NAME:Petrel}"
+    },
+    {
+      "id": "msg_0729_00488",
+      "en_US": "{TRAINER_NAME:Petrel}"
+    },
+    {
+      "id": "msg_0729_00489",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00490",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00491",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00492",
+      "en_US": "{TRAINER_NAME:Alex}"
+    },
+    {
+      "id": "msg_0729_00493",
+      "en_US": "{TRAINER_NAME:Edith}"
+    },
+    {
+      "id": "msg_0729_00494",
+      "en_US": "{TRAINER_NAME:Georgina}"
+    },
+    {
+      "id": "msg_0729_00495",
+      "en_US": "{TRAINER_NAME:Boy}"
+    },
+    {
+      "id": "msg_0729_00496",
+      "en_US": "{TRAINER_NAME:Boy}"
+    },
+    {
+      "id": "msg_0729_00497",
+      "en_US": "{TRAINER_NAME:Boy}"
+    },
+    {
+      "id": "msg_0729_00498",
+      "en_US": "{TRAINER_NAME:Eusine}"
+    },
+    {
+      "id": "msg_0729_00499",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00500",
+      "en_US": "{TRAINER_NAME:Kobe}"
+    },
+    {
+      "id": "msg_0729_00501",
+      "en_US": "{TRAINER_NAME:Piper}"
+    },
+    {
+      "id": "msg_0729_00502",
+      "en_US": "{TRAINER_NAME:Clea & Gil}"
+    },
+    {
+      "id": "msg_0729_00503",
+      "en_US": "{TRAINER_NAME:Jack}"
+    },
+    {
+      "id": "msg_0729_00504",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00505",
+      "en_US": "{TRAINER_NAME:Alan}"
+    },
+    {
+      "id": "msg_0729_00506",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00507",
+      "en_US": "{TRAINER_NAME:Chad}"
+    },
+    {
+      "id": "msg_0729_00508",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00509",
+      "en_US": "{TRAINER_NAME:Huey}"
+    },
+    {
+      "id": "msg_0729_00510",
+      "en_US": "{TRAINER_NAME:Joey}"
+    },
+    {
+      "id": "msg_0729_00511",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00512",
+      "en_US": "{TRAINER_NAME:Wade}"
+    },
+    {
+      "id": "msg_0729_00513",
+      "en_US": "{TRAINER_NAME:Arnie}"
+    },
+    {
+      "id": "msg_0729_00514",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00515",
+      "en_US": "{TRAINER_NAME:Ralph}"
+    },
+    {
+      "id": "msg_0729_00516",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00517",
+      "en_US": "{TRAINER_NAME:Tully}"
+    },
+    {
+      "id": "msg_0729_00518",
+      "en_US": "{TRAINER_NAME:Liz}"
+    },
+    {
+      "id": "msg_0729_00519",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00520",
+      "en_US": "{TRAINER_NAME:Gina}"
+    },
+    {
+      "id": "msg_0729_00521",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00522",
+      "en_US": "{TRAINER_NAME:Tiffany}"
+    },
+    {
+      "id": "msg_0729_00523",
+      "en_US": "{TRAINER_NAME:Anthony}"
+    },
+    {
+      "id": "msg_0729_00524",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00525",
+      "en_US": "{TRAINER_NAME:Todd}"
+    },
+    {
+      "id": "msg_0729_00526",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00527",
+      "en_US": "{TRAINER_NAME:Irwin}"
+    },
+    {
+      "id": "msg_0729_00528",
+      "en_US": "{TRAINER_NAME:Dana}"
+    },
+    {
+      "id": "msg_0729_00529",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00530",
+      "en_US": "{TRAINER_NAME:Brent}"
+    },
+    {
+      "id": "msg_0729_00531",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00532",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00533",
+      "en_US": "{TRAINER_NAME:Wayne}"
+    },
+    {
+      "id": "msg_0729_00534",
+      "en_US": "{TRAINER_NAME:Kimberly}"
+    },
+    {
+      "id": "msg_0729_00535",
+      "en_US": "{TRAINER_NAME:Marigold}"
+    },
+    {
+      "id": "msg_0729_00536",
+      "en_US": "{TRAINER_NAME:Bertrand}"
+    },
+    {
+      "id": "msg_0729_00537",
+      "en_US": "{TRAINER_NAME:Harrison}"
+    },
+    {
+      "id": "msg_0729_00538",
+      "en_US": "{TRAINER_NAME:Hugh}"
+    },
+    {
+      "id": "msg_0729_00539",
+      "en_US": "{TRAINER_NAME:Markus}"
+    },
+    {
+      "id": "msg_0729_00540",
+      "en_US": "{TRAINER_NAME:Rex}"
+    },
+    {
+      "id": "msg_0729_00541",
+      "en_US": "{TRAINER_NAME:Andy}"
+    },
+    {
+      "id": "msg_0729_00542",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00543",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00544",
+      "en_US": "{TRAINER_NAME:Mickey}"
+    },
+    {
+      "id": "msg_0729_00545",
+      "en_US": "{TRAINER_NAME:French}"
+    },
+    {
+      "id": "msg_0729_00546",
+      "en_US": "{TRAINER_NAME:Sherman}"
+    },
+    {
+      "id": "msg_0729_00547",
+      "en_US": "{TRAINER_NAME:Bruce}"
+    },
+    {
+      "id": "msg_0729_00548",
+      "en_US": "{TRAINER_NAME:Manford}"
+    },
+    {
+      "id": "msg_0729_00549",
+      "en_US": "{TRAINER_NAME:Zac & Jen}"
+    },
+    {
+      "id": "msg_0729_00550",
+      "en_US": "{TRAINER_NAME:Ander}"
+    },
+    {
+      "id": "msg_0729_00551",
+      "en_US": "{TRAINER_NAME:Dwight}"
+    },
+    {
+      "id": "msg_0729_00552",
+      "en_US": "{TRAINER_NAME:Regis}"
+    },
+    {
+      "id": "msg_0729_00553",
+      "en_US": "{TRAINER_NAME:Moe & Lulu}"
+    },
+    {
+      "id": "msg_0729_00554",
+      "en_US": "{TRAINER_NAME:Milton}"
+    },
+    {
+      "id": "msg_0729_00555",
+      "en_US": "{TRAINER_NAME:Justin}"
+    },
+    {
+      "id": "msg_0729_00556",
+      "en_US": "{TRAINER_NAME:Gail}"
+    },
+    {
+      "id": "msg_0729_00557",
+      "en_US": "{TRAINER_NAME:Vic & Tara}"
+    },
+    {
+      "id": "msg_0729_00558",
+      "en_US": "{TRAINER_NAME:Kyler}"
+    },
+    {
+      "id": "msg_0729_00559",
+      "en_US": "{TRAINER_NAME:Tim & Sue}"
+    },
+    {
+      "id": "msg_0729_00560",
+      "en_US": "{TRAINER_NAME:Clark}"
+    },
+    {
+      "id": "msg_0729_00561",
+      "en_US": "{TRAINER_NAME:Tanner}"
+    },
+    {
+      "id": "msg_0729_00562",
+      "en_US": "{TRAINER_NAME:Piper}"
+    },
+    {
+      "id": "msg_0729_00563",
+      "en_US": "{TRAINER_NAME:Ginger}"
+    },
+    {
+      "id": "msg_0729_00564",
+      "en_US": "{TRAINER_NAME:Clarice}"
+    },
+    {
+      "id": "msg_0729_00565",
+      "en_US": "{TRAINER_NAME:Josh}"
+    },
+    {
+      "id": "msg_0729_00566",
+      "en_US": "{TRAINER_NAME:Connor}"
+    },
+    {
+      "id": "msg_0729_00567",
+      "en_US": "{TRAINER_NAME:Torin}"
+    },
+    {
+      "id": "msg_0729_00568",
+      "en_US": "{TRAINER_NAME:Travis}"
+    },
+    {
+      "id": "msg_0729_00569",
+      "en_US": "{TRAINER_NAME:Kay & Tia}"
+    },
+    {
+      "id": "msg_0729_00570",
+      "en_US": "{TRAINER_NAME:Boone}"
+    },
+    {
+      "id": "msg_0729_00571",
+      "en_US": "{TRAINER_NAME:Eleanor}"
+    },
+    {
+      "id": "msg_0729_00572",
+      "en_US": "{TRAINER_NAME:Dale}"
+    },
+    {
+      "id": "msg_0729_00573",
+      "en_US": "{TRAINER_NAME:Jacob}"
+    },
+    {
+      "id": "msg_0729_00574",
+      "en_US": "{TRAINER_NAME:Aiden}"
+    },
+    {
+      "id": "msg_0729_00575",
+      "en_US": "{TRAINER_NAME:Dan}"
+    },
+    {
+      "id": "msg_0729_00576",
+      "en_US": "{TRAINER_NAME:Theron}"
+    },
+    {
+      "id": "msg_0729_00577",
+      "en_US": "{TRAINER_NAME:Markey}"
+    },
+    {
+      "id": "msg_0729_00578",
+      "en_US": "{TRAINER_NAME:Teddy}"
+    },
+    {
+      "id": "msg_0729_00579",
+      "en_US": "{TRAINER_NAME:Ernest}"
+    },
+    {
+      "id": "msg_0729_00580",
+      "en_US": "{TRAINER_NAME:Pedro}"
+    },
+    {
+      "id": "msg_0729_00581",
+      "en_US": "{TRAINER_NAME:Adrian}"
+    },
+    {
+      "id": "msg_0729_00582",
+      "en_US": "{TRAINER_NAME:Cheyenne}"
+    },
+    {
+      "id": "msg_0729_00583",
+      "en_US": "{TRAINER_NAME:Bert}"
+    },
+    {
+      "id": "msg_0729_00584",
+      "en_US": "{TRAINER_NAME:Ernie}"
+    },
+    {
+      "id": "msg_0729_00585",
+      "en_US": "{TRAINER_NAME:Elmo}"
+    },
+    {
+      "id": "msg_0729_00586",
+      "en_US": "{TRAINER_NAME:Luis}"
+    },
+    {
+      "id": "msg_0729_00587",
+      "en_US": "{TRAINER_NAME:Leona}"
+    },
+    {
+      "id": "msg_0729_00588",
+      "en_US": "{TRAINER_NAME:Mina}"
+    },
+    {
+      "id": "msg_0729_00589",
+      "en_US": "{TRAINER_NAME:Murphy}"
+    },
+    {
+      "id": "msg_0729_00590",
+      "en_US": "{TRAINER_NAME:Liam}"
+    },
+    {
+      "id": "msg_0729_00591",
+      "en_US": "{TRAINER_NAME:Gideon}"
+    },
+    {
+      "id": "msg_0729_00592",
+      "en_US": "{TRAINER_NAME:Chelan}"
+    },
+    {
+      "id": "msg_0729_00593",
+      "en_US": "{TRAINER_NAME:Kendra}"
+    },
+    {
+      "id": "msg_0729_00594",
+      "en_US": "{TRAINER_NAME:Esteban}"
+    },
+    {
+      "id": "msg_0729_00595",
+      "en_US": "{TRAINER_NAME:Duane}"
+    },
+    {
+      "id": "msg_0729_00596",
+      "en_US": "{TRAINER_NAME:Kinsley}"
+    },
+    {
+      "id": "msg_0729_00597",
+      "en_US": "{TRAINER_NAME:Easton}"
+    },
+    {
+      "id": "msg_0729_00598",
+      "en_US": "{TRAINER_NAME:Day & Dani}"
+    },
+    {
+      "id": "msg_0729_00599",
+      "en_US": "{TRAINER_NAME:Virgil}"
+    },
+    {
+      "id": "msg_0729_00600",
+      "en_US": "{TRAINER_NAME:Selina}"
+    },
+    {
+      "id": "msg_0729_00601",
+      "en_US": "{TRAINER_NAME:Grunt}"
+    },
+    {
+      "id": "msg_0729_00602",
+      "en_US": "{TRAINER_NAME:Jose}"
+    },
+    {
+      "id": "msg_0729_00603",
+      "en_US": "{TRAINER_NAME:Erin}"
+    },
+    {
+      "id": "msg_0729_00604",
+      "en_US": "{TRAINER_NAME:Gaven}"
+    },
+    {
+      "id": "msg_0729_00605",
+      "en_US": "{TRAINER_NAME:Kenji}"
+    },
+    {
+      "id": "msg_0729_00606",
+      "en_US": "{TRAINER_NAME:Parry}"
+    },
+    {
+      "id": "msg_0729_00607",
+      "en_US": "{TRAINER_NAME:Reena}"
+    },
+    {
+      "id": "msg_0729_00608",
+      "en_US": "{TRAINER_NAME:Wilton}"
+    },
+    {
+      "id": "msg_0729_00609",
+      "en_US": "{TRAINER_NAME:Jamie}"
+    },
+    {
+      "id": "msg_0729_00610",
+      "en_US": "{TRAINER_NAME:Derek}"
+    },
+    {
+      "id": "msg_0729_00611",
+      "en_US": "{TRAINER_NAME:Beverly}"
+    },
+    {
+      "id": "msg_0729_00612",
+      "en_US": "{TRAINER_NAME:Vance}"
+    },
+    {
+      "id": "msg_0729_00613",
+      "en_US": "{TRAINER_NAME:Krise}"
+    },
+    {
+      "id": "msg_0729_00614",
+      "en_US": "{TRAINER_NAME:Krise}"
+    },
+    {
+      "id": "msg_0729_00615",
+      "en_US": "{TRAINER_NAME:Krise}"
+    },
+    {
+      "id": "msg_0729_00616",
+      "en_US": "{TRAINER_NAME:Ian}"
+    },
+    {
+      "id": "msg_0729_00617",
+      "en_US": "{TRAINER_NAME:Ian}"
+    },
+    {
+      "id": "msg_0729_00618",
+      "en_US": "{TRAINER_NAME:Ian}"
+    },
+    {
+      "id": "msg_0729_00619",
+      "en_US": "{TRAINER_NAME:Walt}"
+    },
+    {
+      "id": "msg_0729_00620",
+      "en_US": "{TRAINER_NAME:Walt}"
+    },
+    {
+      "id": "msg_0729_00621",
+      "en_US": "{TRAINER_NAME:Walt}"
+    },
+    {
+      "id": "msg_0729_00622",
+      "en_US": "{TRAINER_NAME:Doug}"
+    },
+    {
+      "id": "msg_0729_00623",
+      "en_US": "{TRAINER_NAME:Doug}"
+    },
+    {
+      "id": "msg_0729_00624",
+      "en_US": "{TRAINER_NAME:Doug}"
+    },
+    {
+      "id": "msg_0729_00625",
+      "en_US": "{TRAINER_NAME:Rob}"
+    },
+    {
+      "id": "msg_0729_00626",
+      "en_US": "{TRAINER_NAME:Rob}"
+    },
+    {
+      "id": "msg_0729_00627",
+      "en_US": "{TRAINER_NAME:Rob}"
+    },
+    {
+      "id": "msg_0729_00628",
+      "en_US": "{TRAINER_NAME:Reese}"
+    },
+    {
+      "id": "msg_0729_00629",
+      "en_US": "{TRAINER_NAME:Reese}"
+    },
+    {
+      "id": "msg_0729_00630",
+      "en_US": "{TRAINER_NAME:Reese}"
+    },
+    {
+      "id": "msg_0729_00631",
+      "en_US": "{TRAINER_NAME:Aiden}"
+    },
+    {
+      "id": "msg_0729_00632",
+      "en_US": "{TRAINER_NAME:Aiden}"
+    },
+    {
+      "id": "msg_0729_00633",
+      "en_US": "{TRAINER_NAME:Aiden}"
+    },
+    {
+      "id": "msg_0729_00634",
+      "en_US": "{TRAINER_NAME:Ernest}"
+    },
+    {
+      "id": "msg_0729_00635",
+      "en_US": "{TRAINER_NAME:Ernest}"
+    },
+    {
+      "id": "msg_0729_00636",
+      "en_US": "{TRAINER_NAME:Ernest}"
+    },
+    {
+      "id": "msg_0729_00637",
+      "en_US": "{TRAINER_NAME:Hillary}"
+    },
+    {
+      "id": "msg_0729_00638",
+      "en_US": "{TRAINER_NAME:Hillary}"
+    },
+    {
+      "id": "msg_0729_00639",
+      "en_US": "{TRAINER_NAME:Hillary}"
+    },
+    {
+      "id": "msg_0729_00640",
+      "en_US": "{TRAINER_NAME:Billy}"
+    },
+    {
+      "id": "msg_0729_00641",
+      "en_US": "{TRAINER_NAME:Billy}"
+    },
+    {
+      "id": "msg_0729_00642",
+      "en_US": "{TRAINER_NAME:Billy}"
+    },
+    {
+      "id": "msg_0729_00643",
+      "en_US": "{TRAINER_NAME:Kay & Tia}"
+    },
+    {
+      "id": "msg_0729_00644",
+      "en_US": "{TRAINER_NAME:Kay & Tia}"
+    },
+    {
+      "id": "msg_0729_00645",
+      "en_US": "{TRAINER_NAME:Kay & Tia}"
+    },
+    {
+      "id": "msg_0729_00646",
+      "en_US": "{TRAINER_NAME:Josh}"
+    },
+    {
+      "id": "msg_0729_00647",
+      "en_US": "{TRAINER_NAME:Josh}"
+    },
+    {
+      "id": "msg_0729_00648",
+      "en_US": "{TRAINER_NAME:Josh}"
+    },
+    {
+      "id": "msg_0729_00649",
+      "en_US": "{TRAINER_NAME:Torin}"
+    },
+    {
+      "id": "msg_0729_00650",
+      "en_US": "{TRAINER_NAME:Torin}"
+    },
+    {
+      "id": "msg_0729_00651",
+      "en_US": "{TRAINER_NAME:Torin}"
+    },
+    {
+      "id": "msg_0729_00652",
+      "en_US": "{TRAINER_NAME:Tim & Sue}"
+    },
+    {
+      "id": "msg_0729_00653",
+      "en_US": "{TRAINER_NAME:Tim & Sue}"
+    },
+    {
+      "id": "msg_0729_00654",
+      "en_US": "{TRAINER_NAME:Tim & Sue}"
+    },
+    {
+      "id": "msg_0729_00655",
+      "en_US": "{TRAINER_NAME:Kenny}"
+    },
+    {
+      "id": "msg_0729_00656",
+      "en_US": "{TRAINER_NAME:Kenny}"
+    },
+    {
+      "id": "msg_0729_00657",
+      "en_US": "{TRAINER_NAME:Kenny}"
+    },
+    {
+      "id": "msg_0729_00658",
+      "en_US": "{TRAINER_NAME:Tanner}"
+    },
+    {
+      "id": "msg_0729_00659",
+      "en_US": "{TRAINER_NAME:Tanner}"
+    },
+    {
+      "id": "msg_0729_00660",
+      "en_US": "{TRAINER_NAME:Tanner}"
+    },
+    {
+      "id": "msg_0729_00661",
+      "en_US": "{TRAINER_NAME:Kyle}"
+    },
+    {
+      "id": "msg_0729_00662",
+      "en_US": "{TRAINER_NAME:Kyle}"
+    },
+    {
+      "id": "msg_0729_00663",
+      "en_US": "{TRAINER_NAME:Kyle}"
+    },
+    {
+      "id": "msg_0729_00664",
+      "en_US": "{TRAINER_NAME:Kyler}"
+    },
+    {
+      "id": "msg_0729_00665",
+      "en_US": "{TRAINER_NAME:Kyler}"
+    },
+    {
+      "id": "msg_0729_00666",
+      "en_US": "{TRAINER_NAME:Kyler}"
+    },
+    {
+      "id": "msg_0729_00667",
+      "en_US": "{TRAINER_NAME:Cheryl}"
+    },
+    {
+      "id": "msg_0729_00668",
+      "en_US": "{TRAINER_NAME:Marley}"
+    },
+    {
+      "id": "msg_0729_00669",
+      "en_US": "{TRAINER_NAME:Mira}"
+    },
+    {
+      "id": "msg_0729_00670",
+      "en_US": "{TRAINER_NAME:Riley}"
+    },
+    {
+      "id": "msg_0729_00671",
+      "en_US": "{TRAINER_NAME:Buck}"
+    },
+    {
+      "id": "msg_0729_00672",
+      "en_US": "{TRAINER_NAME:Alfred}"
+    },
+    {
+      "id": "msg_0729_00673",
+      "en_US": "{TRAINER_NAME:Alfred}"
+    },
+    {
+      "id": "msg_0729_00674",
+      "en_US": "{TRAINER_NAME:Alfred}"
+    },
+    {
+      "id": "msg_0729_00675",
+      "en_US": "{TRAINER_NAME:Lance}"
+    },
+    {
+      "id": "msg_0729_00676",
+      "en_US": "{TRAINER_NAME:Parker}"
+    },
+    {
+      "id": "msg_0729_00677",
+      "en_US": "{TRAINER_NAME:Eddie}"
+    },
+    {
+      "id": "msg_0729_00678",
+      "en_US": "{TRAINER_NAME:Joy}"
+    },
+    {
+      "id": "msg_0729_00679",
+      "en_US": "{TRAINER_NAME:Callie}"
+    },
+    {
+      "id": "msg_0729_00680",
+      "en_US": "{TRAINER_NAME:Kassandra}"
+    },
+    {
+      "id": "msg_0729_00681",
+      "en_US": "{TRAINER_NAME:Arabella}"
+    },
+    {
+      "id": "msg_0729_00682",
+      "en_US": "{TRAINER_NAME:Bonita}"
+    },
+    {
+      "id": "msg_0729_00683",
+      "en_US": "{TRAINER_NAME:Salma}"
+    },
+    {
+      "id": "msg_0729_00684",
+      "en_US": "{TRAINER_NAME:Elan & Ida}"
+    },
+    {
+      "id": "msg_0729_00685",
+      "en_US": "{TRAINER_NAME:Edwin}"
+    },
+    {
+      "id": "msg_0729_00686",
+      "en_US": "{TRAINER_NAME:Bryce}"
+    },
+    {
+      "id": "msg_0729_00687",
+      "en_US": "{TRAINER_NAME:Shaun}"
+    },
+    {
+      "id": "msg_0729_00688",
+      "en_US": "{TRAINER_NAME:Cady}"
+    },
+    {
+      "id": "msg_0729_00689",
+      "en_US": "{TRAINER_NAME:Cary}"
+    },
+    {
+      "id": "msg_0729_00690",
+      "en_US": "{TRAINER_NAME:Waldo}"
+    },
+    {
+      "id": "msg_0729_00691",
+      "en_US": "{TRAINER_NAME:Merle}"
+    },
+    {
+      "id": "msg_0729_00692",
+      "en_US": "{TRAINER_NAME:Lowell}"
+    },
+    {
+      "id": "msg_0729_00693",
+      "en_US": "{TRAINER_NAME:Linden}"
+    },
+    {
+      "id": "msg_0729_00694",
+      "en_US": "{TRAINER_NAME:Daniel}"
+    },
+    {
+      "id": "msg_0729_00695",
+      "en_US": "{TRAINER_NAME:Dane}"
+    },
+    {
+      "id": "msg_0729_00696",
+      "en_US": "{TRAINER_NAME:Dion}"
+    },
+    {
+      "id": "msg_0729_00697",
+      "en_US": "{TRAINER_NAME:Stacey}"
+    },
+    {
+      "id": "msg_0729_00698",
+      "en_US": "{TRAINER_NAME:Ellis}"
+    },
+    {
+      "id": "msg_0729_00699",
+      "en_US": "{TRAINER_NAME:Abner}"
+    },
+    {
+      "id": "msg_0729_00700",
+      "en_US": "{TRAINER_NAME:Giovanni}"
+    },
+    {
+      "id": "msg_0729_00701",
+      "en_US": "{TRAINER_NAME:Lance}"
+    },
+    {
+      "id": "msg_0729_00702",
+      "en_US": "{TRAINER_NAME:Will}"
+    },
+    {
+      "id": "msg_0729_00703",
+      "en_US": "{TRAINER_NAME:Koga}"
+    },
+    {
+      "id": "msg_0729_00704",
+      "en_US": "{TRAINER_NAME:Bruno}"
+    },
+    {
+      "id": "msg_0729_00705",
+      "en_US": "{TRAINER_NAME:Karen}"
+    },
+    {
+      "id": "msg_0729_00706",
+      "en_US": "{TRAINER_NAME:Proton}"
+    },
+    {
+      "id": "msg_0729_00707",
+      "en_US": "{TRAINER_NAME:Palmer}"
+    },
+    {
+      "id": "msg_0729_00708",
+      "en_US": "{TRAINER_NAME:Argenta}"
+    },
+    {
+      "id": "msg_0729_00709",
+      "en_US": "{TRAINER_NAME:Thorton}"
+    },
+    {
+      "id": "msg_0729_00710",
+      "en_US": "{TRAINER_NAME:Dahlia}"
+    },
+    {
+      "id": "msg_0729_00711",
+      "en_US": "{TRAINER_NAME:Darach}"
+    },
+    {
+      "id": "msg_0729_00712",
+      "en_US": "{TRAINER_NAME:Falkner}"
+    },
+    {
+      "id": "msg_0729_00713",
+      "en_US": "{TRAINER_NAME:Bugsy}"
+    },
+    {
+      "id": "msg_0729_00714",
+      "en_US": "{TRAINER_NAME:Whitney}"
+    },
+    {
+      "id": "msg_0729_00715",
+      "en_US": "{TRAINER_NAME:Morty}"
+    },
+    {
+      "id": "msg_0729_00716",
+      "en_US": "{TRAINER_NAME:Pryce}"
+    },
+    {
+      "id": "msg_0729_00717",
+      "en_US": "{TRAINER_NAME:Jasmine}"
+    },
+    {
+      "id": "msg_0729_00718",
+      "en_US": "{TRAINER_NAME:Chuck}"
+    },
+    {
+      "id": "msg_0729_00719",
+      "en_US": "{TRAINER_NAME:Clair}"
+    },
+    {
+      "id": "msg_0729_00720",
+      "en_US": "{TRAINER_NAME:Brock}"
+    },
+    {
+      "id": "msg_0729_00721",
+      "en_US": "{TRAINER_NAME:Misty}"
+    },
+    {
+      "id": "msg_0729_00722",
+      "en_US": "{TRAINER_NAME:Lt. Surge}"
+    },
+    {
+      "id": "msg_0729_00723",
+      "en_US": "{TRAINER_NAME:Erika}"
+    },
+    {
+      "id": "msg_0729_00724",
+      "en_US": "{TRAINER_NAME:Janine}"
+    },
+    {
+      "id": "msg_0729_00725",
+      "en_US": "{TRAINER_NAME:Sabrina}"
+    },
+    {
+      "id": "msg_0729_00726",
+      "en_US": "{TRAINER_NAME:Blaine}"
+    },
+    {
+      "id": "msg_0729_00727",
+      "en_US": "{TRAINER_NAME:Blue}"
+    },
+    {
+      "id": "msg_0729_00728",
+      "en_US": "{TRAINER_NAME:Charlotte}"
+    },
+    {
+      "id": "msg_0729_00729",
+      "en_US": "{TRAINER_NAME:Duff & Eda}"
+    },
+    {
+      "id": "msg_0729_00730",
+      "en_US": "{TRAINER_NAME:Thom & Kae}"
+    },
+    {
+      "id": "msg_0729_00731",
+      "en_US": "{TRAINER_NAME:Devin}"
+    },
+    {
+      "id": "msg_0729_00732",
+      "en_US": "{TRAINER_NAME:Grant}"
+    },
+    {
+      "id": "msg_0729_00733",
+      "en_US": "{TRAINER_NAME:Lance}"
+    },
+    {
+      "id": "msg_0729_00734",
+      "en_US": "{TRAINER_NAME:Clair}"
+    },
+    {
+      "id": "msg_0729_00735",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00736",
+      "en_US": "{TRAINER_NAME:Silver}"
+    },
+    {
+      "id": "msg_0729_00737",
+      "en_US": "{TRAINER_NAME:Silver}"
+    }
+  ]
+}

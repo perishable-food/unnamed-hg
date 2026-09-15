@@ -1,0 +1,220 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0032
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetFlag 439
+	SetFlag 440
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#1
+	ClearFlag 439
+Jump Function#2
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#3
+	Message 1
+Jump Function#4
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_MEOWTH 0
+	Message 7
+	WaitCry
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#5
+	Message 10
+Jump Function#6
+
+Script 8:
+	CheckTrainerFlag TRAINER_GRUNT_200
+	JumpIf EQUAL Function#7
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 12
+	GetPlayerDirection 0x4000
+	CompareVarValue 0x4000 2
+	JumpIf DIFFERENT Function#8
+	Movement Overworld.2 Action#1
+Jump Function#9
+
+Script 9:
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#10
+	SetOWPosition Overworld.4 18 1 12 Right
+	SetOWPosition Overworld.5 19 1 12 Down
+	SetOWPosition Overworld.7 20 1 12 Down
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4077 5
+	JumpIf DIFFERENT Function#2
+	ClearFlag 440
+End
+
+Function 2:
+End
+
+Function 3:
+Jump Function#11
+
+Function 4:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Movement Overworld.2 Action#2
+	WaitMovement
+	Message 13
+	CloseMessage
+	TrainerBattle TRAINER_GRUNT_200 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#12
+	SetTrainerFlag TRAINER_GRUNT_200
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	WaitMovement
+	Message 13
+	CloseMessage
+	TrainerBattle TRAINER_GRUNT_200 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#12
+	SetTrainerFlag TRAINER_GRUNT_200
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+End
+
+Function 11:
+	CheckFlag 145
+	JumpIf EQUAL Function#13
+	Message 2
+	SetVar 0x8004 213
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#14
+	CommonScript 2033
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetFlag 145
+End
+
+Function 12:
+	LostBattle
+	ReleaseAll
+End
+
+Function 13:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+	WalkOnSpotEast8 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+	WalkOnSpotSouth8 0x1
+End
+

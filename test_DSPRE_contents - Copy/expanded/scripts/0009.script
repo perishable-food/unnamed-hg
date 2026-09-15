@@ -1,0 +1,48 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0009
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 0 0x800C
+	CommonScript 2000
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	VanishOverworld Overworld.0
+	GetTimePeriod 0x4001
+	CompareVarValue 0x4001 3
+	JumpIf DIFFERENT Function#1
+	SetOWPosition Overworld.0 18 0 10 Down
+	SetWarpPosition 2 20 3
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4001 4
+	JumpIf DIFFERENT Function#2
+	SetOWPosition Overworld.0 18 0 10 Down
+	SetWarpPosition 2 20 3
+End
+
+Function 2:
+End
+
+//===== ACTIONS =====//

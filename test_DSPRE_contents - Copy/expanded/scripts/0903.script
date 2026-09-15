@@ -1,0 +1,207 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0903
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CommonScript 2011
+	FreezeMessage
+	SetVar 0x8004 7
+	CommonScript 2052
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4077 3
+	JumpIf DIFFERENT Function#1
+	Message 18
+Jump Function#2
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4077 3
+	JumpIf DIFFERENT Function#3
+	Message 16
+Jump Function#4
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 2409
+	JumpIf EQUAL Function#5
+	CheckFlag 141
+	JumpIf EQUAL Function#6
+	Message 9
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+Jump Function#8
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	SetFlag 446
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 0
+	JumpIf EQUAL Function#9
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#10
+	ClearFlag 446
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 142
+	JumpIf EQUAL Function#11
+	GetFirstAlivePokemonSlot 0x8000
+	TextPartyPokemon 0 0x8000
+	Message 0
+	GetPokemonHappiness 0x800C 0x8000
+	CompareVarValue 0x800C 149
+	JumpIf GREATER/EQUAL Function#12
+	CompareVarValue 0x800C 50
+	JumpIf LESS/EQUAL Function#13
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 15
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 13
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	PartyPokemonTradeScreen
+	GetSelectedPartySlot 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#8
+	InitTrade 1
+	SetVarFromVariable 0x8004 0x800C
+	GetPartyPokemonID 0x8004 0x8005
+	GetRequestedPokemon 0x800C
+	CompareVars 0x8005 0x800C
+	JumpIf DIFFERENT Function#14
+	TradePokemonScreen 0x8004
+	EndTrade
+	SetFlag 141
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Message 12
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	ClearFlag 446
+End
+
+Function 10:
+End
+
+Function 11:
+	Message 6
+	SetFlag 142
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	Message 1
+	SetVar 0x8004 354
+	SetVar 0x8005 1
+	CommonScript 2008
+	CloseMessage
+Jump Function#11
+
+Function 13:
+	Message 4
+	SetVar 0x8004 348
+	SetVar 0x8005 1
+	CommonScript 2008
+	CloseMessage
+Jump Function#11
+
+Function 14:
+	EndTrade
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

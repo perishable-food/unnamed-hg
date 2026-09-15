@@ -1,0 +1,387 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0896
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	CheckFlag 181
+	JumpIf EQUAL Function#1
+	CheckBadge 2 0x4000
+	CompareVarValue 0x4000 1
+	JumpIf EQUAL Function#2
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 349
+	JumpIf EQUAL Function#3
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4001
+	CompareVarValue 0x4001 492
+	JumpIf EQUAL Function#4
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	CheckFlag 349
+	JumpIf EQUAL Function#5
+	CheckFlag 181
+	JumpIf LESS Function#5
+	CheckFatefulEncounter 0x4000 492
+	CompareVarValue 0x4000 255
+	JumpIf EQUAL Function#5
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4001
+	CompareVarValue 0x4001 492
+	JumpIf DIFFERENT Function#5
+	SetVar 0x4082 1
+End
+
+Script 4:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#1
+	Movement Overworld.1 Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Movement Overworld.1 Action#3
+	Movement Player Action#4
+	Movement Following Action#5
+	WaitMovement
+	Message 5
+	CloseMessage
+	Movement Overworld.1 Action#6
+	WaitMovement
+	Message 6
+	SetVar 0x8004 466
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x4002
+	CompareVarValue 0x4002 0
+	JumpIf EQUAL Function#6
+	CommonScript 2033
+	Message 7
+	WaitButton
+	CloseMessage
+	SetFlag 349
+	SetVar 0x4082 0
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 3
+	Message 8
+	OpenTouchScreen
+	ShowMoney 20 2
+	MultiTouchStandardText 1 1 0 1 0x800C
+	CreateMultiTouchBox 213 470 0
+	CreateMultiTouchBox 214 472 1
+	CreateMultiTouchBox 215 471 2
+	CreateMultiTouchBox 216 473 3
+	CreateMultiTouchBox 217 474 4
+	CloseMultiTouch
+	SetVarFromVariable 0x8000 0x800C
+	SetVarFromVariable 0x8008 0x8000
+	CompareVarValue 0x8008 0
+	JumpIf EQUAL Function#7
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#8
+	CompareVarValue 0x8008 2
+	JumpIf EQUAL Function#9
+	CompareVarValue 0x8008 3
+	JumpIf EQUAL Function#10
+	Message 10
+Jump Function#11
+
+Function 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckItem ITEM_SQUIRT_BOTTLE 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#12
+	Message 1
+	SetVar 0x8004 477
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#13
+	CommonScript 2033
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	CheckFatefulEncounter 0x800C 492
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#14
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4001
+	CompareVarValue 0x4001 492
+	JumpIf DIFFERENT Function#14
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	Movement Overworld.1 Action#7
+	WaitMovement
+	Message 5
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#15
+	Movement Overworld.1 Action#8
+Jump Function#16
+
+Function 5:
+End
+
+Function 6:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+	SetVar 0x4082 0
+	ReleaseAll
+End
+
+Function 7:
+	SetVar 0x8001 95
+Jump Function#17
+
+Function 8:
+	SetVar 0x8001 96
+Jump Function#17
+
+Function 9:
+	SetVar 0x8001 97
+Jump Function#17
+
+Function 10:
+	SetVar 0x8001 98
+Jump Function#17
+
+Function 11:
+	WaitButton
+	CloseMessage
+	CloseTouchScreen
+	HideMoney
+	ReleaseAll
+End
+
+Function 12:
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#18
+	Movement Overworld.1 Action#9
+Jump Function#16
+
+Function 16:
+	WaitMovement
+	Message 6
+	SetVar 0x8004 466
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x4002
+	CompareVarValue 0x4002 0
+	JumpIf EQUAL Function#19
+	CommonScript 2033
+	Message 7
+	WaitButton
+	CloseMessage
+	SetFlag 349
+	SetVar 0x4082 0
+	ReleaseAll
+End
+
+Function 17:
+	CompareVarValue 0x8000 0
+	CallIf EQUAL Function#20
+	CompareVarValue 0x8000 1
+	CallIf EQUAL Function#21
+	CompareVarValue 0x8000 2
+	CallIf EQUAL Function#22
+	CompareVarValue 0x8000 3
+	CallIf EQUAL Function#23
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#24
+	CheckItemSpace 0x8001 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#25
+	CompareVarValue 0x8000 0
+	CallIf EQUAL Function#26
+	CompareVarValue 0x8000 1
+	CallIf EQUAL Function#27
+	CompareVarValue 0x8000 2
+	CallIf EQUAL Function#28
+	CompareVarValue 0x8000 3
+	CallIf EQUAL Function#29
+	UpdateMoney
+	PlayFanfare SEQ_SE_DP_REGI
+	GiveItem 0x8001 1 0x800C
+	TextItem 0 0x8001
+	Message 11
+	Message 9
+Jump Function#11
+
+Function 18:
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#30
+	Movement Overworld.1 Action#10
+Jump Function#16
+
+Function 19:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+	SetVar 0x4082 0
+	ReleaseAll
+End
+
+Function 20:
+	CompareMoney 0x800C 200
+Return
+
+Function 21:
+	CompareMoney 0x800C 200
+Return
+
+Function 22:
+	CompareMoney 0x800C 200
+Return
+
+Function 23:
+	CompareMoney 0x800C 200
+Return
+
+Function 24:
+	Message 13
+Jump Function#11
+
+Function 25:
+	Message 12
+Jump Function#11
+
+Function 26:
+	TakeMoney 200
+Return
+
+Function 27:
+	TakeMoney 200
+Return
+
+Function 28:
+	TakeMoney 200
+Return
+
+Function 29:
+	TakeMoney 200
+Return
+
+Function 30:
+	Movement Overworld.1 Action#6
+	WaitMovement
+	Message 6
+	SetVar 0x8004 466
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x4002
+	CompareVarValue 0x4002 0
+	JumpIf EQUAL Function#19
+	CommonScript 2033
+	Message 7
+	WaitButton
+	CloseMessage
+	SetFlag 349
+	SetVar 0x4082 0
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkNorth8 0x1
+	Delay8 0x1
+End
+
+Action 2:
+	Delay8 0x1
+	FaceWest 0x1
+	EmoteExclamation 0x1
+End
+
+Action 3:
+	WalkSouth8 0x1
+	WalkWest8 0x1
+End
+
+Action 4:
+	FaceEast 0x1
+End
+
+Action 5:
+	FaceEast 0x1
+End
+
+Action 6:
+	WalkOnSpotWest4 0x4
+End
+
+Action 7:
+	EmoteExclamation 0x1
+End
+
+Action 8:
+	WalkOnSpotSouth4 0x4
+End
+
+Action 9:
+	WalkOnSpotNorth4 0x4
+End
+
+Action 10:
+	WalkOnSpotEast4 0x4
+End
+

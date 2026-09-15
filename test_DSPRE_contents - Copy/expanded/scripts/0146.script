@@ -1,0 +1,844 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0146
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CloseMessage
+Jump Function#3
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 0 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	Message 3
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#5
+	CloseMessage
+Jump Function#3
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Strength 2 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#6
+	Call Function#7
+Jump Function#3
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	CheckBadge 15 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	Message 20
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#9
+	CloseMessage
+Jump Function#10
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	CheckPartner 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#11
+	Message 14
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#12
+	CloseMessage
+Jump Function#10
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	CheckBadge 7 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#13
+	Message 24
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#14
+	CloseMessage
+Jump Function#10
+
+Script 7:
+End
+
+Script 8:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 1
+	CloseMessage
+	GetFollowingPokePartySlot 0x8004
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#15
+	CutAnimation 0x8000
+	HiddenMachineEffect 0 0x8005
+Jump Function#16
+
+Script 9:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 5
+	CloseMessage
+	GetFollowingPokePartySlot 0x8004
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#17
+	SetVar 0x8007 0
+	CutAnimation 0x8000
+	HiddenMachineEffect 1 0x8005
+Jump Function#18
+
+Script 10:
+	MecScript
+	LockAll
+	Strength 2 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#19
+	Call Function#7
+Jump Function#20
+
+Script 11:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 21
+	CloseMessage
+	RockClimbAnimation 0x8000
+	ReleaseAll
+End
+
+Script 12:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 15
+	CloseMessage
+	Release Player
+	SurfAnimation 0x8000
+	Lock Player
+	ReleaseAll
+End
+
+Script 13:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 25
+	CloseMessage
+	Release Player
+	WaterfallAnimation 0x8000
+	Lock Player
+	ReleaseAll
+End
+
+Script 14:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 28
+	CloseMessage
+	GetFollowingPokePartySlot 0x8005
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#21
+	CutAnimation 0x8000
+Jump Function#22
+
+Script 15:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckMoveInParty 0x800C MOVE_HEADBUTT
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#23
+	Message 32
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#24
+	CloseMessage
+Jump Function#3
+
+Script 16:
+	PlayFanfare SEQ_SE_GS_IWAOTOSHI01
+	WaitTime 12 0x800C
+	PlayFanfare SEQ_SE_GS_IWAOTOSHI02
+	ShakeCamera 0 4 2 8
+	ShakeCamera 0 2 1 8
+	WaitFanfare SEQ_SE_GS_IWAOTOSHI02
+	Message 13
+	WaitButton
+	CloseMessage
+End
+
+Script 17:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	CheckBadge 6 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#25
+	Message 29
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#26
+	CloseMessage
+Jump Function#10
+
+Script 18:
+	MecScript
+	LockAll
+	Release Player
+	WhirlpoolAnimation 0x8000
+	Lock Player
+	ReleaseAll
+End
+
+Script 19:
+	MecScript
+	LockAll
+	TextPokeNickname 0 0x8000
+	Message 33
+	CloseMessage
+	GetFollowingPokePartySlot 0x8004
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#27
+	CutAnimation 0x8000
+	HiddenMachineEffect 4 0x8005
+Jump Function#28
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 2
+	WaitButton
+	CloseMessage
+Jump Function#3
+
+Function 2:
+	CloseMessage
+	GetFollowingPokePartySlot 0x8005
+	HiddenMachineEffect 0 0x8005
+Jump Function#29
+
+Function 3:
+	ReleaseAll
+End
+
+Function 4:
+	Message 4
+	WaitButton
+	CloseMessage
+Jump Function#3
+
+Function 5:
+	CloseMessage
+	GetFollowingPokePartySlot 0x8005
+	HiddenMachineEffect 1 0x8005
+Jump Function#30
+
+Function 6:
+	CheckBadge 2 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#31
+	Message 7
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#32
+	CloseMessage
+Jump Function#3
+
+Function 7:
+	Message 10
+	WaitButton
+	CloseMessage
+Return
+
+Function 8:
+	Message 22
+	WaitButton
+	CloseMessage
+Jump Function#10
+
+Function 9:
+	RockClimbAnimation 0x8004
+Jump Function#10
+
+Function 10:
+	ReleaseAll
+End
+
+Function 11:
+	Message 16
+	WaitButton
+	CloseMessage
+Jump Function#10
+
+Function 12:
+	CloseMessage
+	SurfAnimation 0x8004
+Jump Function#10
+
+Function 13:
+	Message 26
+	WaitButton
+	CloseMessage
+Jump Function#10
+
+Function 14:
+	WaterfallAnimation 0x8004
+	CloseMessage
+Jump Function#10
+
+Function 15:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#33
+	CutAnimation 0x8000
+	HiddenMachineEffect 0 0x8005
+Jump Function#16
+
+Function 16:
+	WaitTime 7 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#34
+	ReleaseAll
+End
+
+Function 17:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#35
+	SetVar 0x8007 0
+	CutAnimation 0x8000
+	HiddenMachineEffect 1 0x8005
+Jump Function#18
+
+Function 18:
+	WaitTime 10 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#36
+	ReleaseAll
+	RockSmashItemCheck 0x8007 0x800C 0x8006
+Jump Function#37
+
+Function 19:
+	Strength 1
+	TextPokeNickname 0 0x8000
+	Message 11
+	CloseMessage
+	GetFollowingPokePartySlot 0x8004
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#38
+	CutAnimation 0x8000
+Jump Function#39
+
+Function 20:
+	ReleaseAll
+End
+
+Function 21:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#40
+	CutAnimation 0x8000
+Jump Function#22
+
+Function 22:
+	Flash 1
+	FlashAnimation
+	WaitTime 42 0x800C
+Jump Function#20
+
+Function 23:
+	Message 34
+	WaitButton
+	CloseMessage
+Jump Function#3
+
+Function 24:
+	CheckMoveInParty 0x800C MOVE_HEADBUTT
+	SetVarFromVariable 0x8004 0x800C
+	GetFollowingPokePartySlot 0x8005
+	TextPokeNickname 0 0x800C
+	Message 33
+	CloseMessage
+	CheckPlayerForm 0x800C
+	CheckFollowingPoke 0x8006
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#41
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+Jump Function#42
+
+Function 25:
+	Message 31
+	WaitButton
+	CloseMessage
+Jump Function#10
+
+Function 26:
+	WhirlpoolAnimation 0x8004
+	ReleaseAll
+Jump Function#10
+
+Function 27:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#43
+	CutAnimation 0x8000
+	HiddenMachineEffect 4 0x8005
+Jump Function#28
+
+Function 28:
+	WaitTime 7 0x800C
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#44
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 29:
+	WaitTime 7 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#45
+Jump Function#3
+
+Function 30:
+	WaitTime 10 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#46
+Jump Function#37
+
+Function 31:
+	Message 9
+	WaitButton
+	CloseMessage
+Jump Function#3
+
+Function 32:
+	Strength 1
+	GetFollowingPokePartySlot 0x8005
+Jump Function#47
+
+Function 33:
+	CompareVars 0x8000 0x8004
+	JumpIf EQUAL Function#48
+	CutAnimation 0x8000
+	HiddenMachineEffect 0 0x8005
+Jump Function#16
+
+Function 34:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#34
+	ReleaseAll
+End
+
+Function 35:
+	CompareVars 0x8000 0x8004
+	JumpIf EQUAL Function#49
+	SetVar 0x8007 0
+	CutAnimation 0x8000
+	HiddenMachineEffect 1 0x8005
+Jump Function#18
+
+Function 36:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#36
+	ReleaseAll
+	RockSmashItemCheck 0x8007 0x800C 0x8006
+Jump Function#37
+
+Function 37:
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#50
+	SetVarFromVariable 0x8004 0x8006
+	SetVar 0x8005 1
+	TextItemLowercase 1 0x8004
+	TextCapitalize 1
+	Message 6
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#51
+	CommonScript 2008
+	CloseMessage
+End
+
+Function 38:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#52
+	CutAnimation 0x8000
+Jump Function#39
+
+Function 39:
+	Message 12
+	WaitButton
+	CloseMessage
+Jump Function#20
+
+Function 40:
+	CompareVars 0x8000 0x8005
+	JumpIf EQUAL Function#53
+	CutAnimation 0x8000
+Jump Function#22
+
+Function 41:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#54
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+Jump Function#42
+
+Function 42:
+	WaitTime 7 0x800C
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#55
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 43:
+	CompareVars 0x8000 0x8004
+	JumpIf EQUAL Function#56
+	CutAnimation 0x8000
+	HiddenMachineEffect 4 0x8005
+Jump Function#28
+
+Function 44:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#44
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 45:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#45
+Jump Function#3
+
+Function 46:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#46
+Jump Function#37
+
+Function 47:
+Jump Function#3
+
+Function 48:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#57
+	CutAnimation 0x8004
+	HiddenMachineEffect 0 0x8005
+Jump Function#16
+
+Function 49:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#58
+	CutAnimation 0x8004
+	HiddenMachineEffect 1 0x8005
+Jump Function#18
+
+Function 50:
+End
+
+Function 51:
+	CommonScript 2009
+	CloseMessage
+End
+
+Function 52:
+	CompareVars 0x8000 0x8004
+	JumpIf EQUAL Function#59
+	CutAnimation 0x8000
+Jump Function#39
+
+Function 53:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#60
+	CutAnimation 0x8000
+Jump Function#22
+
+Function 54:
+	CompareVars 0x8004 0x8005
+	JumpIf EQUAL Function#61
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+Jump Function#42
+
+Function 55:
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#55
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 56:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#62
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+Jump Function#28
+
+Function 57:
+	SwapFollowingPokeAndPlayerPositions 1
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#63
+	PlayCry 0x4000 0
+	WaitCry
+	HiddenMachineEffect 3 0x8005
+	WaitTime 7 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#34
+	ReleaseAll
+End
+
+Function 58:
+	SwapFollowingPokeAndPlayerPositions 1
+	SetVar 0x8007 1
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#64
+	PlayCry 0x4000 0
+	WaitCry
+	HiddenMachineEffect 2 0x8005
+	WaitTime 10 0x800C
+	RemoveOW 0x800D
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#36
+	ReleaseAll
+	RockSmashItemCheck 0x8007 0x800C 0x8006
+Jump Function#37
+
+Function 59:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#65
+	CutAnimation 0x8000
+Jump Function#39
+
+Function 60:
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#66
+	PlayCry 0x4000 0
+	WaitCry
+	FollowingPokeFlash 16 2
+	FollowingPokeFlash 16 2
+	Flash 1
+	FlashAnimation
+	WaitTime 42 0x800C
+Jump Function#20
+
+Function 61:
+	CompareVarValue 0x8006 1
+	JumpIf DIFFERENT Function#67
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+Jump Function#42
+
+Function 62:
+	CheckFollowingPokeNextToPlayer 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#68
+	SwapFollowingPokeAndPlayerPositions 1
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#69
+	PlayCry 0x4000 0
+	WaitCry
+	HiddenMachineEffect 5 0x8005
+Jump Function#28
+
+Function 63:
+	AdjustFollowingPokeMood 20
+	GetBornPokemonPartyPos 12 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#70
+	FollowingPokeJump 2
+	AdjustFollowingPokeMood 1
+Jump Function#71
+
+Function 64:
+	AdjustFollowingPokeMood 20
+	GetBornPokemonPartyPos 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#72
+	FollowingPokeJump 2
+	AdjustFollowingPokeMood 1
+Jump Function#73
+
+Function 65:
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#74
+	PlayCry 0x4000 0
+	WaitCry
+	CMD_731
+	Message 12
+	WaitButton
+	CloseMessage
+Jump Function#20
+
+Function 66:
+	GetBornPokemonPartyPos 14 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#75
+	FollowingPokeJump 2
+	AdjustFollowingPokeMood 1
+Jump Function#76
+
+Function 67:
+	CheckFollowingPokeNextToPlayer 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#77
+	SwapFollowingPokeAndPlayerPositions 1
+	GetFirstAlivePokemonSlot 0x4000
+	GetPartyPokemonID 0x4000 0x4000
+	Call Function#69
+	PlayCry 0x4000 0
+	WaitCry
+	HiddenMachineEffect 5 0x8005
+Jump Function#42
+
+Function 68:
+	SendBackFollowingPoke
+	BallResetFollowingPoke
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+	WaitTime 7 0x800C
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#44
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 69:
+	AdjustFollowingPokeMood 20
+	GetBornPokemonPartyPos 0 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#78
+	FollowingPokeJump 2
+	AdjustFollowingPokeMood 1
+Jump Function#79
+
+Function 70:
+	FollowingPokeJump 1
+Return
+
+Function 71:
+Return
+
+Function 72:
+	FollowingPokeJump 1
+Return
+
+Function 73:
+Return
+
+Function 74:
+	GetBornPokemonPartyPos 0 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#80
+	FollowingPokeJump 2
+	AdjustFollowingPokeMood 1
+Jump Function#81
+
+Function 75:
+	FollowingPokeJump 1
+Return
+
+Function 76:
+Return
+
+Function 77:
+	SendBackFollowingPoke
+	BallResetFollowingPoke
+	CutAnimation 0x8004
+	HiddenMachineEffect 4 0x8005
+	WaitTime 7 0x800C
+	WaitTime 1 0x800C
+	CompareVarValue 0x8005 0
+	JumpIf EQUAL Function#55
+	ReleaseAll
+	HeadbuttEncounter 0x800C
+End
+
+Function 78:
+	FollowingPokeJump 1
+Return
+
+Function 79:
+Return
+
+Function 80:
+	FollowingPokeJump 1
+Return
+
+Function 81:
+Return
+
+//===== ACTIONS =====//

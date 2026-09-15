@@ -1,0 +1,185 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0256
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	StopMusic 1037
+	PlayMusic SEQ_GS_EYE_ROCKET
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#1
+Jump Function#2
+
+Script 3:
+	CheckFlag 202
+	JumpIf EQUAL Function#3
+	SetVar 0x410F 0
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 206
+	JumpIf EQUAL Function#4
+	Message 4
+	SetVar 0x8004 363
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#5
+	CommonScript 2008
+	WaitButton
+	SetFlag 206
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Movement Overworld.0 Action#1
+	Movement Overworld.1 Action#2
+	WaitMovement
+	Message 0
+	CompareMoney 0x800C 1000
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	Message 1
+	CloseMessage
+Jump Function#7
+
+Function 2:
+	Movement Overworld.0 Action#3
+	Movement Overworld.1 Action#4
+	WaitMovement
+	Message 0
+	CompareMoney 0x800C 1000
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	Message 1
+	CloseMessage
+Jump Function#9
+
+Function 3:
+End
+
+Function 4:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 2
+	CloseMessage
+Jump Function#7
+
+Function 7:
+	TakeMoney 1000
+	Movement Overworld.0 Action#5
+	Movement Overworld.1 Action#6
+	WaitMovement
+Jump Function#10
+
+Function 8:
+	Message 2
+	CloseMessage
+Jump Function#9
+
+Function 9:
+	TakeMoney 1000
+	Movement Overworld.0 Action#7
+	Movement Overworld.1 Action#8
+	WaitMovement
+	StopMusic 1112
+	PlayMusic SEQ_GS_R_7_42
+	SetVar 0x410F 1
+End
+
+Function 10:
+	StopMusic 1112
+	PlayMusic SEQ_GS_R_7_42
+	SetVar 0x410F 1
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+	WalkSouth2 0x3
+	WalkEast2 0x2
+	FaceSouth 0x1
+End
+
+Action 2:
+	Delay8 0x6
+	FaceSouth 0x1
+	EmoteExclamation 0x1
+	WalkSouth2 0x3
+	WalkWest2 0x1
+	FaceSouth 0x1
+End
+
+Action 3:
+	Delay8 0x6
+	FaceNorth 0x1
+	EmoteExclamation 0x1
+	WalkNorth2 0x4
+	WalkEast2 0x1
+	FaceNorth 0x1
+End
+
+Action 4:
+	EmoteExclamation 0x1
+	WalkNorth2 0x4
+	WalkWest2 0x2
+	FaceNorth 0x1
+End
+
+Action 5:
+	Delay4 0x3
+	WalkWest2 0x2
+	WalkNorth2 0x3
+	FaceSouth 0x1
+End
+
+Action 6:
+	WalkEast2 0x1
+	WalkNorth2 0x3
+End
+
+Action 7:
+	Delay4 0x3
+	WalkWest2 0x1
+	WalkSouth2 0x4
+End
+
+Action 8:
+	WalkEast2 0x2
+	WalkSouth2 0x4
+	FaceNorth 0x1
+End
+

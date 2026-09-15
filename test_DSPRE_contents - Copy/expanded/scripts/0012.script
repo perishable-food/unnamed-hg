@@ -1,0 +1,160 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0012
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PalParkControl 2
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	MessageAll 6
+	WaitTime 30 0x800C
+	MessageAll 7
+	PlayFanfare SEQ_SE_DP_DECIDE
+	WaitTime 30 0x800C
+	MessageAll 8
+	PlayFanfare SEQ_SE_DP_DECIDE
+	WaitTime 30 0x800C
+	MessageAll 9
+	PlayFanfare SEQ_SE_DP_DECIDE
+	WaitTime 30 0x800C
+	MessageAll 10
+	PlayFanfare SEQ_SE_DP_CON_016
+	WaitTime 30 0x800C
+	PalParkControl 0
+	SetVar 0x4124 1
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	PlayFanfare SEQ_SE_DP_PINPON
+	TextPlayerName 0
+	Message 4
+	PlayMusic SEQ_SILENCE_DUNGEON
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	CloseMessage
+	ReleaseAll
+	SetVar 0x4124 1
+	Call Function#1
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 5
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CloseMessage
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Call Function#3
+	CloseMessage
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	SetVar 0x4124 2
+	ReleaseAll
+	Call Function#1
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Call Function#3
+	CloseMessage
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#5
+	SetVar 0x4124 2
+	ReleaseAll
+	Call Function#1
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	PalParkControl 1
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 479 0 7 7 Down
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Return
+
+Function 2:
+	SetVar 0x4124 2
+	ReleaseAll
+	Call Function#1
+End
+
+Function 3:
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	CheckPlayerGender 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#7
+	TextPlayerName 0
+	Message 2
+	WaitButton
+	SetVar 0x800C 0
+Return
+
+Function 4:
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#1
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	ReleaseAll
+End
+
+Function 5:
+	Movement Overworld.0 Action#2
+	WaitMovement
+	ReleaseAll
+End
+
+Function 6:
+	Message 1
+	SetVar 0x800C 1
+Return
+
+Function 7:
+	TextPlayerName 0
+	Message 3
+	WaitButton
+	SetVar 0x800C 0
+Return
+
+//===== ACTIONS =====//
+Action 1:
+	WalkNorth8 0x1
+End
+
+Action 2:
+	WalkOnSpotWest8 0x1
+End
+

@@ -1,0 +1,55 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0106
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_MOLTRES 0
+	WaitCry
+	SetFlag 164
+	WildBattleSp SPECIES_MOLTRES 50 0
+	ClearFlag 164
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	GetBattleOutcome 0x4002
+	CompareVarValue 0x4002 3
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x4002 4
+	CallIf EQUAL Function#3
+	ReleaseAll
+End
+
+Script 2:
+	CheckFlag 164
+	JumpIf EQUAL Function#4
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	LostBattle
+	ReleaseAll
+End
+
+Function 2:
+	ReleaseAll
+End
+
+Function 3:
+	SetFlag 365
+Return
+
+Function 4:
+	SetFlag 775
+	RemoveOW Overworld.0
+	ClearFlag 164
+End
+
+//===== ACTIONS =====//

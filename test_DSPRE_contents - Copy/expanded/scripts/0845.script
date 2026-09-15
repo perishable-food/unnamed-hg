@@ -1,0 +1,468 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0845
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	Movement Overworld.0 Action#2
+	WaitMovement
+	CommonScript 2036
+	WaitTime 30 0x800C
+	Movement Overworld.0 Action#3
+	WaitMovement
+	TextPlayerName 0
+	GenderMessage 0 1
+	SetFlag 283
+	SetFlag 284
+	SetFlag 285
+	SetFlag 286
+	GiveShoes
+	PlaySound SEQ_SE_PL_KIRAKIRA
+	WaitSound
+	Message 5
+	CloseMessage
+	WaitTime 15 0x800C
+	Movement Overworld.0 Action#4
+	WaitMovement
+	CommonScript 2038
+	SetVar 0x4106 1
+	ReleaseAll
+End
+
+Script 2:
+	CheckFlag 2404
+	JumpIf EQUAL Function#1
+	CompareVarValue 0x4108 4
+	JumpIf GREATER/EQUAL Function#2
+	CheckFlag 106
+	JumpIf EQUAL Function#3
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 35
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 36
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 37
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 38
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 7:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	Movement Overworld.0 Action#2
+	WaitMovement
+	CommonScript 2036
+	WaitTime 30 0x800C
+	Movement Overworld.0 Action#3
+	WaitMovement
+	TextPlayerName 0
+	Message 33
+	CloseMessage
+	Movement Overworld.0 Action#4
+	WaitMovement
+	CommonScript 2038
+	SetVar 0x4106 4
+	ReleaseAll
+End
+
+Script 8:
+	LockAll
+	Movement Player Action#5
+	Movement Overworld.0 Action#6
+	WaitMovement
+	IncrementVar 0x4169 1
+	Message 39
+	WaitButton
+	CloseMessage
+	Movement Overworld.0 Action#7
+	WaitMovement
+	ReleaseAll
+End
+
+Script 9:
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_VICTINI 0
+	Message 40
+	WaitCry
+	CloseMessage
+	PlayFanfare SEQ_GS_D_CHIKATSUURO_PHC
+	WildBattleSp SPECIES_VICTINI 75 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	GetBattleOutcome 0x401A
+	CompareVarValue 0x401A 3
+	JumpIf EQUAL Function#5
+	CompareVarValue 0x401A 4
+	JumpIf EQUAL Function#6
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CheckItem ITEM_SS_TICKET 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+Jump Function#2
+
+Function 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 167
+	JumpIf EQUAL Function#8
+	CheckBadge 0 0x4000
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#9
+	Message 15
+Jump Function#10
+
+Function 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 156
+	JumpIf EQUAL Function#11
+	TextPlayerName 0
+	Message 7
+	TextPlayerName 0
+	Message 8
+	SetFlag 156
+	UpgradePokegear 1
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	Message 9
+	Message 10
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#12
+	Message 11
+Jump Function#13
+
+Function 4:
+	LostBattle
+	ReleaseAll
+End
+
+Function 5:
+	ReleaseAll
+End
+
+Function 6:
+	SetFlag 2550
+	IncrementVar 0x4169 1
+	RemoveOW Overworld.1
+	ReleaseAll
+End
+
+Function 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 34
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Message 20
+	ShowMomMoney 1 1
+	OpenTouchScreen
+	MultiTouchLocalText 1 1 0 1 0x800C
+	CreateMultiTouchBox 29 255 0
+	CreateMultiTouchBox 30 255 1
+	CreateMultiTouchBox 31 255 2
+	CreateMultiTouchBox 32 255 3
+	CloseMultiTouch
+	SetVarFromVariable 0x8008 0x800C
+	CompareVarValue 0x8008 0
+	JumpIf EQUAL Function#14
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#15
+	CompareVarValue 0x8008 2
+	JumpIf EQUAL Function#16
+Jump Function#17
+
+Function 9:
+	TextPlayerName 0
+	Message 16
+	SetFlag 167
+	SetVar 0x4095 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#18
+	Message 17
+	SetFlag 2438
+Jump Function#19
+
+Function 10:
+	SetFlag 167
+	SetVar 0x4095 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#18
+	Message 17
+	SetFlag 2438
+Jump Function#19
+
+Function 11:
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	Message 12
+	Message 13
+	WaitABPad
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	Message 13
+	WaitABPad
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	CheckMoneyFull 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#20
+	CheckMomMoneyBalance 0x800C 1
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#21
+	TakeMomMoney 1 0x800C
+	HideMomMoney
+	CloseTouchScreen
+	SetVarFromVariable 0x8008 0x800C
+	CompareVarValue 0x8008 0
+	JumpIf EQUAL Function#22
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#23
+	ReleaseAll
+End
+
+Function 15:
+	CheckMoneyFull 0 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#24
+	CompareMoneyFlex 0x800C 1
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#25
+	TakeMomMoney 0 0x800C
+	HideMomMoney
+	CloseTouchScreen
+	SetVarFromVariable 0x8008 0x800C
+	CompareVarValue 0x8008 0
+	JumpIf EQUAL Function#26
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#23
+	ReleaseAll
+End
+
+Function 16:
+	Message 25
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	HideMomMoney
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#27
+	TextPlayerName 0
+	Message 17
+	SetFlag 2438
+Jump Function#28
+
+Function 17:
+	HideMomMoney
+	CloseTouchScreen
+	Message 21
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 18:
+	Message 18
+	ClearFlag 2438
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 19:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 20:
+	CloseTouchScreen
+	HideMomMoney
+	Message 28
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 21:
+	CloseTouchScreen
+	HideMomMoney
+	Message 22
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 22:
+	CloseMessage
+	WaitTime 8 0x800C
+	PlayFanfare SEQ_SE_GS_OKOZUKAI
+	TextPlayerName 0
+	Message 24
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 23:
+	Message 21
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 24:
+	CloseTouchScreen
+	HideMomMoney
+	Message 27
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 25:
+	CloseTouchScreen
+	HideMomMoney
+	Message 26
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 26:
+	CloseMessage
+	WaitTime 8 0x800C
+	PlayFanfare SEQ_SE_GS_OKOZUKAI
+	Message 23
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 27:
+	Message 18
+	ClearFlag 2438
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 28:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	Delay4 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 2:
+	WalkOnSpotNorth8 0x1
+End
+
+Action 3:
+	WalkNorth8 0x2
+	WalkWest8 0x3
+	WalkNorth8 0x1
+End
+
+Action 4:
+	WalkOnSpotSouth8 0x1
+	WalkSouth8 0x3
+	WalkEast8 0x3
+	WalkOnSpotNorth8 0x1
+End
+
+Action 5:
+	FaceSouth 0x0
+End
+
+Action 6:
+	EmoteExclamation 0x0
+	WalkWest8 0x3
+	FaceNorth 0x0
+End
+
+Action 7:
+	WalkEast8 0x3
+	FaceWest 0x0
+End
+

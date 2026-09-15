@@ -1,0 +1,6343 @@
+{
+  "key": 22090,
+  "messages": [
+    {
+      "id": "msg_0850_00000",
+      "en_US": [
+        "The latest model of smartphone.\\n",
+        "A Pokémon called Rotom lives within it, and\\n",
+        "it can be used to run all sorts of handy apps."
+      ]
+    },
+    {
+      "id": "msg_0850_00001",
+      "en_US": [
+        "A dish made by sandwiching vegetables,\\n",
+        "meat, or other ingredients between\\n",
+        "two pieces of bread.\\r",
+        "It makes a fantastic meal when out on a\\n",
+        "picnic."
+      ]
+    },
+    {
+      "id": "msg_0850_00002",
+      "en_US": [
+        "A Poké Ball that can hold the mysterious\\n",
+        "Pokémon known as Koraidon.\\n",
+        "A boy named Arven gave it to you."
+      ]
+    },
+    {
+      "id": "msg_0850_00003",
+      "en_US": [
+        "A Poké Ball that can hold the mysterious\\n",
+        "Pokémon known as Miraidon.\\n",
+        "A boy named Arven gave it to you."
+      ]
+    },
+    {
+      "id": "msg_0850_00004",
+      "en_US": [
+        "An orb that holds within it the power\\n",
+        "to crystallize. When it is charged with\\n",
+        "energy, it can be used to Terastallize."
+      ]
+    },
+    {
+      "id": "msg_0850_00005",
+      "en_US": [
+        "A record of the expedition that the author,\\n",
+        "Heath, went on within the Great Crater\\n",
+        "of Paldea.\\r",
+        "The book has the name “Sada” written on it\\n",
+        "in clumsy handwriting."
+      ]
+    },
+    {
+      "id": "msg_0850_00006",
+      "en_US": [
+        "A record of the expedition that the author,\\n",
+        "Heath, went on within the Great Crater\\n",
+        "of Paldea.\\r",
+        "The book has the name “Turo” written on it\\n",
+        "in clumsy handwriting."
+      ]
+    },
+    {
+      "id": "msg_0850_00007",
+      "en_US": [
+        "A wallet that was left behind\\n",
+        "by Kofu, the Gym Leader at\\n",
+        "the Cascarrafa Gym.\\r",
+        "You’re to deliver it to him\\n",
+        "at the market in Porto Marinada."
+      ]
+    },
+    {
+      "id": "msg_0850_00008",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00009",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00010",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00011",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00012",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00013",
+      "en_US": [
+        "A small and rare bamboo shoot.\\n",
+        "It’s quite popular with a\\n",
+        "certain class of gourmands."
+      ]
+    },
+    {
+      "id": "msg_0850_00014",
+      "en_US": [
+        "A large and rare bamboo shoot.\\n",
+        "It’s extremely popular with a\\n",
+        "certain class of gourmands."
+      ]
+    },
+    {
+      "id": "msg_0850_00015",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00016",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00017",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00018",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00019",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00020",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00021",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00022",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00023",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00024",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00025",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00026",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00027",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00028",
+      "en_US": [
+        "A scroll that can make a certain species\\n",
+        "of Pokémon evolve. Written upon it are\\n",
+        "the true secrets of the path of darkness."
+      ]
+    },
+    {
+      "id": "msg_0850_00029",
+      "en_US": [
+        "A scroll that can make a certain species\\n",
+        "of Pokémon evolve. Written upon it are\\n",
+        "the true secrets of the path of water."
+      ]
+    },
+    {
+      "id": "msg_0850_00030",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00031",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00032",
+      "en_US": [
+        "A peculiar set of armor that can make\\n",
+        "a certain species of Pokémon evolve.\\n",
+        "Malicious will lurks within it."
+      ]
+    },
+    {
+      "id": "msg_0850_00033",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00034",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00035",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00036",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00037",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00038",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00039",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00040",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00041",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00042",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00043",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00044",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00045",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00046",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00047",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00048",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00049",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00050",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00051",
+      "en_US": [
+        "An item to be held by Pokémon with select\\n",
+        "Abilities. The energy within this capsule\\n",
+        "boosts the strength of the Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00052",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This cute shield protects the holder\\n",
+        "from having its Ability changed by others."
+      ]
+    },
+    {
+      "id": "msg_0850_00053",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This amulet protects from stat drops\\n",
+        "from opposing moves or abilities."
+      ]
+    },
+    {
+      "id": "msg_0850_00054",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This herb allows the holder to mirror an\\n",
+        "opponent’s stat increases--but only once."
+      ]
+    },
+    {
+      "id": "msg_0850_00055",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This glove boosts the power of punching\\n",
+        "moves and prevents direct contact."
+      ]
+    },
+    {
+      "id": "msg_0850_00056",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This cloak conceals the holder, protecting\\n",
+        "it from the additional effects of moves."
+      ]
+    },
+    {
+      "id": "msg_0850_00057",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This dice always rolls a good number,\\n",
+        "ensuring multistrike moves hit more times."
+      ]
+    },
+    {
+      "id": "msg_0850_00058",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00059",
+      "en_US": [
+        "A long loaf sliced\\n",
+        "into top and bottom\\n",
+        "halves.\\r",
+        "Its aroma of wheat and its straightforward,\\n",
+        "salty flavor make it pair well with all\\n",
+        "kinds of sandwich ingredients."
+      ]
+    },
+    {
+      "id": "msg_0850_00060",
+      "en_US": [
+        "A condiment that packs a very tart\\n",
+        "punch yet pairs well with various\\n",
+        "ingredients."
+      ]
+    },
+    {
+      "id": "msg_0850_00061",
+      "en_US": [
+        "A condiment with\\n",
+        "very salty and\\n",
+        "tart flavor.\\r",
+        "While a number of other ingredients\\n",
+        "go into its signature flavor, the\\n",
+        "noble tomato is its heart and soul."
+      ]
+    },
+    {
+      "id": "msg_0850_00062",
+      "en_US": [
+        "A very spicy condiment that’s indispensable\\n",
+        "when bread is on the table.\\n",
+        "It pairs tremendously with ketchup."
+      ]
+    },
+    {
+      "id": "msg_0850_00063",
+      "en_US": [
+        "A condiment that unites salty and\\n",
+        "sweet and also packs a richness\\n",
+        "that makes bread a delight to eat.\\r",
+        "The finest butter products are\\n",
+        "made of 100 percent Moomoo Milk."
+      ]
+    },
+    {
+      "id": "msg_0850_00064",
+      "en_US": [
+        "A very sweet condiment.\\n",
+        "People in Paldea seem to favor the\\n",
+        "sweet varieties over the unsweetened."
+      ]
+    },
+    {
+      "id": "msg_0850_00065",
+      "en_US": [
+        "A condiment with a very spicy kick.\\n",
+        "It’s thanks to Scovillain that this sauce\\n",
+        "gets its signature mouth-tingling burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00066",
+      "en_US": [
+        "A very salty\\n",
+        "seasoning,\\n",
+        "unsurprisingly.\\r",
+        "People quite like the grains of salt that\\n",
+        "can be gathered from the footprints of\\n",
+        "particularly jagged Naclstack."
+      ]
+    },
+    {
+      "id": "msg_0850_00067",
+      "en_US": [
+        "A seasoning\\n",
+        "packing very\\n",
+        "spicy flavor.\\r",
+        "It goes nicely with oilier foods and works\\n",
+        "especially well when you add just a pinch\\n",
+        "for a hint of flavor."
+      ]
+    },
+    {
+      "id": "msg_0850_00068",
+      "en_US": [
+        "A condiment that’s very sweet and very sour.\\n",
+        "It goes especially well with fruit and\\n",
+        "is easy to incorporate into a sandwich."
+      ]
+    },
+    {
+      "id": "msg_0850_00069",
+      "en_US": [
+        "A very sweet condiment.\\n",
+        "Folks in Paldea seem to love the varieties\\n",
+        "that really let the sweetness sing."
+      ]
+    },
+    {
+      "id": "msg_0850_00070",
+      "en_US": [
+        "A condiment offering\\n",
+        "very sweet and very\\n",
+        "tart flavor.\\r",
+        "It goes well with more ingredients\\n",
+        "than you’d expect, making it a\\n",
+        "convenient go-to."
+      ]
+    },
+    {
+      "id": "msg_0850_00071",
+      "en_US": [
+        "A condiment that’s very\\n",
+        "sweet and likewise very\\n",
+        "sour.\\r",
+        "Take care when adding it to sandwiches,\\n",
+        "as the sweet side can overwhelm."
+      ]
+    },
+    {
+      "id": "msg_0850_00072",
+      "en_US": [
+        "A condiment with sour and bitter notes.\\n",
+        "It’s surprisingly useful, as it makes\\n",
+        "a nice counterpoint to oilier foods."
+      ]
+    },
+    {
+      "id": "msg_0850_00073",
+      "en_US": [
+        "A condiment offering\\n",
+        "faint notes of sour\\n",
+        "and bitter flavors.\\r",
+        "The most prized varieties are the ones\\n",
+        "Smoliv love the smell of--such oils’\\n",
+        "quality is assured."
+      ]
+    },
+    {
+      "id": "msg_0850_00074",
+      "en_US": [
+        "A very sour condiment.\\n",
+        "Vinegars derived from grapes\\n",
+        "are popular in Paldea.\\r",
+        "Highly effective when used to\\n",
+        "add just a light note of flavor."
+      ]
+    },
+    {
+      "id": "msg_0850_00075",
+      "en_US": [
+        "A legendary condiment\\n",
+        "told of only in\\n",
+        "books.\\r",
+        "Word has it that one taste of its sweet\\n",
+        "flavor stimulates the digestive system and\\n",
+        "cures a lack of appetite."
+      ]
+    },
+    {
+      "id": "msg_0850_00076",
+      "en_US": [
+        "One of the condiments\\n",
+        "spoken of as\\n",
+        "legends.\\r",
+        "Its mellow saltiness is said to be\\n",
+        "tremendously effective when it comes to\\n",
+        "promoting health."
+      ]
+    },
+    {
+      "id": "msg_0850_00077",
+      "en_US": [
+        "This surpassingly sour condiment is\\n",
+        "said to be super effective in helping\\n",
+        "the eater recover from exhaustion.\\r",
+        "Only a scant few people know it exists."
+      ]
+    },
+    {
+      "id": "msg_0850_00078",
+      "en_US": [
+        "A legendary condiment\\n",
+        "with a deeply bitter\\n",
+        "taste.\\r",
+        "It’s said to dramatically bolster a body’s\\n",
+        "immune defenses, though that hasn’t\\n",
+        "been proven."
+      ]
+    },
+    {
+      "id": "msg_0850_00079",
+      "en_US": [
+        "The legendary condiment\\n",
+        "said to have the mightiest\\n",
+        "of all spicy flavors.\\r",
+        "It’s said that a single bite\\n",
+        "will kick the metabolism\\n",
+        "into high gear immediately."
+      ]
+    },
+    {
+      "id": "msg_0850_00080",
+      "en_US": [
+        "This bitter-tasting ingredient is simple\\n",
+        "and straightforward--just add it to all\\n",
+        "kinds of other ingredients for a\\r",
+        "delightfully crunchy time."
+      ]
+    },
+    {
+      "id": "msg_0850_00081",
+      "en_US": [
+        "This very tart ingredient has a lot\\n",
+        "of savory elements to it, making it\\n",
+        "popular with many Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00082",
+      "en_US": [
+        "A very tart ingredient. Some varieties\\n",
+        "are also very sweet, and these are prized\\n",
+        "above all others by the people of Paldea."
+      ]
+    },
+    {
+      "id": "msg_0850_00083",
+      "en_US": [
+        "A tart and bitter ingredient.\\n",
+        "Using it together with rich-tasting\\n",
+        "ingredients in a sandwich will really\\r",
+        "make the most of a cucumber’s fresh-veggie\\n",
+        "aroma."
+      ]
+    },
+    {
+      "id": "msg_0850_00084",
+      "en_US": [
+        "This very sour ingredient is made by\\n",
+        "pickling veggies in a flavorful\\n",
+        "brine made from spices and vinegar."
+      ]
+    },
+    {
+      "id": "msg_0850_00085",
+      "en_US": [
+        "This spicy veggie is indispensable\\n",
+        "to many sandwiches. It goes well\\n",
+        "with rich ingredients."
+      ]
+    },
+    {
+      "id": "msg_0850_00086",
+      "en_US": [
+        "An ingredient with\\n",
+        "some sweetness to\\n",
+        "it.\\r",
+        "Its spiciness and fragrance are milder\\n",
+        "than those of other onions, making it\\n",
+        "a pleasant bite."
+      ]
+    },
+    {
+      "id": "msg_0850_00087",
+      "en_US": [
+        "An ingredient with some bitterness.\\n",
+        "When sliced, it adds a nice accent\\n",
+        "to a sandwich."
+      ]
+    },
+    {
+      "id": "msg_0850_00088",
+      "en_US": [
+        "An ingredient with some bitterness--but\\n",
+        "its bitter notes and overall flavor are\\n",
+        "pleasantly mild compared to its green\\r",
+        "cousin."
+      ]
+    },
+    {
+      "id": "msg_0850_00089",
+      "en_US": [
+        "An ingredient with some bitterness.\\n",
+        "It’s not much different from its red\\n",
+        "counterpart in flavor, but mixing\\r",
+        "the colors makes a feast for the\\n",
+        "eyes."
+      ]
+    },
+    {
+      "id": "msg_0850_00090",
+      "en_US": [
+        "An ingredient with sweet notes--though its\\n",
+        "flavor is very mild. The avocado’s richness,\\n",
+        "however, makes it satisfying to eat."
+      ]
+    },
+    {
+      "id": "msg_0850_00091",
+      "en_US": [
+        "This very salty ingredient has been\\n",
+        "cooked just shy of charred, making it\\n",
+        "burst with fragrance and tasty flavor."
+      ]
+    },
+    {
+      "id": "msg_0850_00092",
+      "en_US": [
+        "A very salty ingredient-and that\\n",
+        "very saltiness is what makes it such\\n",
+        "a nice companion to veggies."
+      ]
+    },
+    {
+      "id": "msg_0850_00093",
+      "en_US": [
+        "This ingredient is very salty like regular\\n",
+        "ham, but the difference is prosciutto is\\n",
+        "not cooked after it is cured, giving it a\\r",
+        "fun freshness."
+      ]
+    },
+    {
+      "id": "msg_0850_00094",
+      "en_US": [
+        "A very salty and spicy ingredient.\\n",
+        "This type of sausage has\\n",
+        "particularly robust salty flavor,\\r",
+        "and the spicier varieties are extra\\n",
+        "popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00095",
+      "en_US": [
+        "A very salty and bitter ingredient.\\n",
+        "The balance between the potent\\n",
+        "saltiness and the herbs’ bitterness\\r",
+        "make this sausage a pleasure."
+      ]
+    },
+    {
+      "id": "msg_0850_00096",
+      "en_US": [
+        "This very salty ingredient is the\\n",
+        "thing to add if you want to make\\n",
+        "your sandwich truly filling."
+      ]
+    },
+    {
+      "id": "msg_0850_00097",
+      "en_US": [
+        "A very sweet and salty ingredient.\\n",
+        "It’s a nutritious processed food made with a\\n",
+        "concentrate derived from shed Klawf shells."
+      ]
+    },
+    {
+      "id": "msg_0850_00098",
+      "en_US": [
+        "A very salty and bitter ingredient with\\n",
+        "that unmistakable smoky flavor.\\n",
+        "It pairs exceptionally well with veggies."
+      ]
+    },
+    {
+      "id": "msg_0850_00099",
+      "en_US": [
+        "When used in a sandwich, this very salty\\n",
+        "and bitter ingredient is at its best paired\\n",
+        "with sour seasonings."
+      ]
+    },
+    {
+      "id": "msg_0850_00100",
+      "en_US": [
+        "An ingredient with a touch of saltiness.\\n",
+        "It’s full of nutrients and can be enjoyed\\n",
+        "with all sorts of seasonings."
+      ]
+    },
+    {
+      "id": "msg_0850_00101",
+      "en_US": [
+        "A very salty ingredient and\\n",
+        "a popular dish in Paldea.\\n",
+        "It’s undeniably filling."
+      ]
+    },
+    {
+      "id": "msg_0850_00102",
+      "en_US": [
+        "An ingredient with a touch of sweetness.\\n",
+        "It’s unclear how well this raw block of\\n",
+        "tofu will serve as a sandwich filling."
+      ]
+    },
+    {
+      "id": "msg_0850_00103",
+      "en_US": [
+        "An ingredient with a touch of sweetness.\\n",
+        "It’s unclear how well this cooked rice\\n",
+        "will serve as a sandwich filling."
+      ]
+    },
+    {
+      "id": "msg_0850_00104",
+      "en_US": [
+        "A nice salty ingredient.\\n",
+        "It’s unclear how well these boiled noodles\\n",
+        "will serve as a sandwich filling."
+      ]
+    },
+    {
+      "id": "msg_0850_00105",
+      "en_US": [
+        "This very tart ingredient--a soft\\n",
+        "salad that’s all about potatoes--pairs\\n",
+        "tremendously well with bread."
+      ]
+    },
+    {
+      "id": "msg_0850_00106",
+      "en_US": [
+        "A very salty ingredient. This thinly\\n",
+        "sliced cheese is perfect for adding\\n",
+        "to a sandwich."
+      ]
+    },
+    {
+      "id": "msg_0850_00107",
+      "en_US": [
+        "A very sweet ingredient. This go-to\\n",
+        "fruit is sweet and rich, and it’s\\n",
+        "beloved by many Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00108",
+      "en_US": [
+        "A very tart and sweet ingredient,\\n",
+        "popular for its ability to make a\\n",
+        "sandwich visually striking."
+      ]
+    },
+    {
+      "id": "msg_0850_00109",
+      "en_US": [
+        "This very sweet ingredient is sliced\\n",
+        "thin to make it easy to add into a\\n",
+        "sandwich."
+      ]
+    },
+    {
+      "id": "msg_0850_00110",
+      "en_US": [
+        "A very tart ingredient that has a\\n",
+        "light touch of sweetness as well. It\\n",
+        "goes well with rich ingredients."
+      ]
+    },
+    {
+      "id": "msg_0850_00111",
+      "en_US": [
+        "This very tart ingredient is a fruit\\n",
+        "of southern lands, and its color\\n",
+        "and texture are a thrill.\\r",
+        "It’s been cut into chunks to be easily\\n",
+        "manageable."
+      ]
+    },
+    {
+      "id": "msg_0850_00112",
+      "en_US": [
+        "A very spicy ingredient-so spicy as to\\n",
+        "leave no room for ambivalence about it.\\n",
+        "You either like it or you don’t."
+      ]
+    },
+    {
+      "id": "msg_0850_00113",
+      "en_US": [
+        "A very spicy condiment.\\n",
+        "Its distinctive sharp sizzle in your sinuses\\n",
+        "makes it a good match for rich fillings."
+      ]
+    },
+    {
+      "id": "msg_0850_00114",
+      "en_US": [
+        "A very spicy condiment. Just watch out--use\\n",
+        "too much of this potent seasoning, and it’ll\\n",
+        "cancel out the other flavors."
+      ]
+    },
+    {
+      "id": "msg_0850_00115",
+      "en_US": [
+        "This very spicy condiment seems close\\n",
+        "to horseradish at first, but you’ll find\\n",
+        "that it has a superb flavor all its own."
+      ]
+    },
+    {
+      "id": "msg_0850_00116",
+      "en_US": [
+        "A very bitter ingredient that\\n",
+        "stands out among veggies for\\n",
+        "its quirky flavor.\\r",
+        "People tend to either like it or\\n",
+        "not like it--they rarely sit on\\n",
+        "the fence."
+      ]
+    },
+    {
+      "id": "msg_0850_00117",
+      "en_US": [
+        "A very bitter ingredient that’s quite\\n",
+        "versatile, as herbs go.\\n",
+        "It’s fragrant and goes well with tomatoes."
+      ]
+    },
+    {
+      "id": "msg_0850_00118",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00119",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00120",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00121",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00122",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00123",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00124",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00125",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00126",
+      "en_US": "N/A"
+    },
+    {
+      "id": "msg_0850_00127",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00128",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00129",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00130",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00131",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00132",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00133",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00134",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00135",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00136",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00137",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00138",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00139",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00140",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00141",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00142",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00143",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00144",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00145",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00146",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00147",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00148",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00149",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00150",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00151",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00152",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00153",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00154",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00155",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00156",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00157",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00158",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00159",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00160",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00161",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00162",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00163",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00164",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00165",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00166",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00167",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00168",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00169",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00170",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00171",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00172",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00173",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00174",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00175",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00176",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00177",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00178",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00179",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00180",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00181",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00182",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00183",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00184",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00185",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00186",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00187",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00188",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00189",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00190",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00191",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00192",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00193",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00194",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00195",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00196",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00197",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00198",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00199",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00200",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00201",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00202",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00203",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00204",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00205",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00206",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00207",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00208",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00209",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00210",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00211",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00212",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00213",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00214",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00215",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00216",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00217",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00218",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00219",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00220",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00221",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00222",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00223",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00224",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00225",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00226",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00227",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00228",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00229",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00230",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00231",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00232",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00233",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00234",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00235",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00236",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00237",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00238",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00239",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00240",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00241",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00242",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00243",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00244",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00245",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00246",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00247",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00248",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00249",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00250",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00251",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00252",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00253",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00254",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00255",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00256",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00257",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00258",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00259",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00260",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00261",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00262",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00263",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00264",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00265",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00266",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00267",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00268",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00269",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00270",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00271",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00272",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00273",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00274",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00275",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00276",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00277",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00278",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00279",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00280",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00281",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00282",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00283",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00284",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00285",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00286",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00287",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00288",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00289",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00290",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00291",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00292",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00293",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00294",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00295",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00296",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00297",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00298",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00299",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00300",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00301",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00302",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00303",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00304",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00305",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00306",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00307",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00308",
+      "en_US": [
+        "Material accidentally dropped by a\\n",
+        "Pokémon. It seems that Gimmighoul\\n",
+        "treasure and hoard these."
+      ]
+    },
+    {
+      "id": "msg_0850_00309",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00310",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00311",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00312",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00313",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00314",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00315",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00316",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00317",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00318",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00319",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00320",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00321",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00322",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00323",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00324",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00325",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00326",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00327",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00328",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00329",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00330",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00331",
+      "en_US": [
+        "The user vigorously performs a\\n",
+        "mystic, powerful dance that boosts\\n",
+        "its Attack and Speed stats."
+      ]
+    },
+    {
+      "id": "msg_0850_00332",
+      "en_US": [
+        "The user attacks with a ray of light\\n",
+        "that sparkles as if it were made of\\n",
+        "gemstones."
+      ]
+    },
+    {
+      "id": "msg_0850_00333",
+      "en_US": [
+        "The user shoots filthy garbage at\\n",
+        "the foe to attack. It may also\\n",
+        "poison the target."
+      ]
+    },
+    {
+      "id": "msg_0850_00334",
+      "en_US": [
+        "The user makes a copy of itself\\n",
+        "using some of its HP. The copy\\n",
+        "serves as the user’s decoy."
+      ]
+    },
+    {
+      "id": "msg_0850_00335",
+      "en_US": [
+        "The user hardens its body’s surface\\n",
+        "like iron, sharply raising its\\n",
+        "Defense stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00336",
+      "en_US": [
+        "The user slashes at the foe by\\n",
+        "crossing its scythes or claws as if\\n",
+        "they were a pair of scissors."
+      ]
+    },
+    {
+      "id": "msg_0850_00337",
+      "en_US": [
+        "The user rotates its body like a\\n",
+        "drill. It has a high critical-hit\\n",
+        "ratio."
+      ]
+    },
+    {
+      "id": "msg_0850_00338",
+      "en_US": [
+        "The user shoots a sinister, bluish\\n",
+        "white flame at the foe to inflict a\\n",
+        "burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00339",
+      "en_US": [
+        "The user crunches up the foe with\\n",
+        "sharp fangs. It may also lower the\\n",
+        "target’s Defense stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00340",
+      "en_US": [
+        "The user catches the foe off guard\\n",
+        "and swaps the foe’s held item with\\n",
+        "its own."
+      ]
+    },
+    {
+      "id": "msg_0850_00341",
+      "en_US": [
+        "The user slams into the target using\\n",
+        "a full-force blast of water. This may\\n",
+        "also lower the target’s Defense stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00342",
+      "en_US": [
+        "A nutrient-draining attack. The\\n",
+        "user’s HP is restored by half the\\n",
+        "damage taken by the target."
+      ]
+    },
+    {
+      "id": "msg_0850_00343",
+      "en_US": [
+        "The user looses a blast of aura\\n",
+        "power from deep within its body.\\n",
+        "This move is certain to hit."
+      ]
+    },
+    {
+      "id": "msg_0850_00344",
+      "en_US": [
+        "The user whips up a turbulent\\n",
+        "whirlwind that ups the Speed of all\\n",
+        "party Pokémon for three turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00345",
+      "en_US": [
+        "The user hurls a shadowy blob at the\\n",
+        "foe. It may also lower the foe’s Sp.\\n",
+        "Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00346",
+      "en_US": [
+        "The foe is attacked with a shock\\n",
+        "wave generated by the user’s gaping\\n",
+        "mouth."
+      ]
+    },
+    {
+      "id": "msg_0850_00347",
+      "en_US": [
+        "The user lays a trap of levitating\\n",
+        "stones around the foe. The trap\\n",
+        "hurts foes that switch into battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00348",
+      "en_US": [
+        "The user lets loose a horribly\\n",
+        "echoing shout with the power to\\n",
+        "inflict damage."
+      ]
+    },
+    {
+      "id": "msg_0850_00349",
+      "en_US": [
+        "The user exhales a heated breath on\\n",
+        "the foe to attack. It may also leave\\n",
+        "the target with a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00350",
+      "en_US": [
+        "The user draws power from nature and\\n",
+        "fires it at the foe. It may also\\n",
+        "lower the target’s Sp. Def."
+      ]
+    },
+    {
+      "id": "msg_0850_00351",
+      "en_US": [
+        "The foe is hit by a strong\\n",
+        "telekinetic force. It may also\\n",
+        "reduce the foe’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00352",
+      "en_US": [
+        "The user slams into the target. The\\n",
+        "greater the weight difference, the\\n",
+        "greater the damage."
+      ]
+    },
+    {
+      "id": "msg_0850_00353",
+      "en_US": [
+        "The user compels the foe to keep\\n",
+        "using only the move it last used for\\n",
+        "three to seven turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00354",
+      "en_US": [
+        "It swamps the entire battlefield\\n",
+        "with a giant wave. It can also be\\n",
+        "used for crossing water."
+      ]
+    },
+    {
+      "id": "msg_0850_00355",
+      "en_US": [
+        "The user covers its feet in\\n",
+        "thin ice and twirls around,\\n",
+        "slamming into the target.\\r",
+        "This move’s spinning motion\\n",
+        "also destroys the terrain."
+      ]
+    },
+    {
+      "id": "msg_0850_00356",
+      "en_US": [
+        "The foe is scorched with an intense\\n",
+        "blast of fire. The target may also\\n",
+        "be left with a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00357",
+      "en_US": [
+        "A strong electric blast is loosed at\\n",
+        "the foe. It may also leave the foe\\n",
+        "paralyzed."
+      ]
+    },
+    {
+      "id": "msg_0850_00358",
+      "en_US": [
+        "The user attacks by playing rough\\n",
+        "with the target. This may also lower\\n",
+        "the target’s Attack stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00359",
+      "en_US": [
+        "The user temporarily empties\\n",
+        "its mind to forget its concerns.\\n",
+        "It sharply raises the user’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00360",
+      "en_US": [
+        "The user quietly focuses its mind\\n",
+        "and calms its spirit to raise its\\n",
+        "Sp. Atk and Sp. Def stats."
+      ]
+    },
+    {
+      "id": "msg_0850_00361",
+      "en_US": [
+        "A move that boosts the power of the\\n",
+        "ally’s attack in a Double Battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00362",
+      "en_US": [
+        "The user attacks the enemy\\n",
+        "with a pollen puff that\\n",
+        "explodes.\\r",
+        "If the target is an ally,\\n",
+        "it gives the ally a pollen puff\\n",
+        "that restores its HP instead."
+      ]
+    },
+    {
+      "id": "msg_0850_00363",
+      "en_US": [
+        "The user switches places with a\\n",
+        "party Pokémon in waiting, passing\\n",
+        "along any stat changes."
+      ]
+    },
+    {
+      "id": "msg_0850_00364",
+      "en_US": [
+        "The user makes the ground under the\\n",
+        "foe erupt with power. It may also\\n",
+        "lower the target’s Sp. Def."
+      ]
+    },
+    {
+      "id": "msg_0850_00365",
+      "en_US": [
+        "An all-out attack that becomes more\\n",
+        "powerful the less HP the user has."
+      ]
+    },
+    {
+      "id": "msg_0850_00366",
+      "en_US": [
+        "The foe is struck with an icy-cold\\n",
+        "beam of energy. It may also freeze\\n",
+        "the target solid."
+      ]
+    },
+    {
+      "id": "msg_0850_00367",
+      "en_US": [
+        "The user turns the ground into\\n",
+        "Electric Terrain for five turns,\\n",
+        "powering up Electric-type moves.\\r",
+        "Pokémon on the ground can no longer\\n",
+        "fall asleep."
+      ]
+    },
+    {
+      "id": "msg_0850_00368",
+      "en_US": [
+        "The user turns the ground into\\n",
+        "Grassy Terrain for five turns.\\n",
+        "This powers up Grass-type moves."
+      ]
+    },
+    {
+      "id": "msg_0850_00369",
+      "en_US": [
+        "This protects Pokémon on the ground\\n",
+        "from priority moves and powers up\\n",
+        "Psychic-type moves for five turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00370",
+      "en_US": [
+        "This protects Pokémon on the ground from\\n",
+        "status conditions and halves damage from\\n",
+        "Dragon-type moves for five turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00371",
+      "en_US": [
+        "The user stimulates its brain by\\n",
+        "thinking bad thoughts. It sharply\\n",
+        "raises the user’s Sp. Atk."
+      ]
+    },
+    {
+      "id": "msg_0850_00372",
+      "en_US": [
+        "The foe is attacked with an intense\\n",
+        "blast of all-consuming fire. It may\\n",
+        "also leave the target with a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00373",
+      "en_US": [
+        "The foe is blasted by a huge volume\\n",
+        "of water launched under great\\n",
+        "pressure."
+      ]
+    },
+    {
+      "id": "msg_0850_00374",
+      "en_US": [
+        "A howling blizzard is summoned to\\n",
+        "strike the foe. It may also freeze\\n",
+        "the target solid."
+      ]
+    },
+    {
+      "id": "msg_0850_00375",
+      "en_US": [
+        "When used with its grass equivalent,\\n",
+        "its power increases and a vast sea\\n",
+        "of fire appears."
+      ]
+    },
+    {
+      "id": "msg_0850_00376",
+      "en_US": [
+        "When combined with its fire\\n",
+        "equivalent, its power increases and\\n",
+        "a rainbow appears."
+      ]
+    },
+    {
+      "id": "msg_0850_00377",
+      "en_US": [
+        "When used with its water equivalent,\\n",
+        "its power increases and a vast swamp\\n",
+        "appears."
+      ]
+    },
+    {
+      "id": "msg_0850_00378",
+      "en_US": [
+        "The user throws an electrified\\n",
+        "tackle. It hurts the user a little."
+      ]
+    },
+    {
+      "id": "msg_0850_00379",
+      "en_US": [
+        "The user attacks by hurling filthy\\n",
+        "sludge at the foe. It may also\\n",
+        "poison the target."
+      ]
+    },
+    {
+      "id": "msg_0850_00380",
+      "en_US": [
+        "The user sets off an earthquake that\\n",
+        "hits all the Pokémon in the battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00381",
+      "en_US": [
+        "The user stabs the foe with a\\n",
+        "sharpened stone. It has a high\\n",
+        "critical-hit ratio."
+      ]
+    },
+    {
+      "id": "msg_0850_00382",
+      "en_US": [
+        "The user vanishes somewhere, then strikes\\n",
+        "the target on the next turn. This move hits\\n",
+        "even if the target protects itself."
+      ]
+    },
+    {
+      "id": "msg_0850_00383",
+      "en_US": [
+        "The user charges at the foe using\\n",
+        "every bit of its power. The user\\n",
+        "must rest on the next turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00384",
+      "en_US": [
+        "The foe is razed by a fiery\\n",
+        "explosion. The user must rest on the\\n",
+        "next turn, however."
+      ]
+    },
+    {
+      "id": "msg_0850_00385",
+      "en_US": [
+        "The foe is hit with a watery blast.\\n",
+        "The user must rest on the next turn,\\n",
+        "however."
+      ]
+    },
+    {
+      "id": "msg_0850_00386",
+      "en_US": [
+        "The foe is slammed with an enormous\\n",
+        "tree. The user can’t move on the\\n",
+        "next turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00387",
+      "en_US": [
+        "The user rampages and attacks for\\n",
+        "two to three turns. However, it then\\n",
+        "becomes confused."
+      ]
+    },
+    {
+      "id": "msg_0850_00388",
+      "en_US": [
+        "The user attacks the foe at full\\n",
+        "power. The attack’s recoil sharply\\n",
+        "reduces the user’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00389",
+      "en_US": [
+        "The user heightens its mental focus\\n",
+        "and unleashes its power. It may also\\n",
+        "lower the target’s Sp. Def."
+      ]
+    },
+    {
+      "id": "msg_0850_00390",
+      "en_US": [
+        "A storm of sharp leaves is whipped\\n",
+        "up. The attack’s recoil sharply\\n",
+        "reduces the user’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00391",
+      "en_US": [
+        "The user attacks by wrapping its\\n",
+        "opponent in a fierce wind. This may\\n",
+        "also confuse the target."
+      ]
+    },
+    {
+      "id": "msg_0850_00392",
+      "en_US": [
+        "The user creates a bizarre area in\\n",
+        "which slower Pokémon get to move\\n",
+        "first for five turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00393",
+      "en_US": [
+        "The user vibrates its wings to generate\\n",
+        "a damaging sound wave.\\n",
+        "It may also lower the foe’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00394",
+      "en_US": [
+        "The foe is attacked with a powerful\\n",
+        "beam. The user must rest on the next\\n",
+        "turn to regain its energy."
+      ]
+    },
+    {
+      "id": "msg_0850_00395",
+      "en_US": [
+        "The user tucks in its wings and\\n",
+        "charges from a low altitude. The\\n",
+        "user also takes serious damage."
+      ]
+    },
+    {
+      "id": "msg_0850_00396",
+      "en_US": [
+        "The user cloaks itself in fire and\\n",
+        "charges at the foe. The user\\n",
+        "sustains serious damage, too."
+      ]
+    },
+    {
+      "id": "msg_0850_00397",
+      "en_US": [
+        "A wicked thunderbolt is dropped on the\\n",
+        "foe to inflict damage.\\n",
+        "It may also leave the target paralyzed."
+      ]
+    },
+    {
+      "id": "msg_0850_00398",
+      "en_US": [
+        "The user fights the foe up close without\\n",
+        "guarding itself. It also cuts the user’s\\n",
+        "Defense and Sp. Def."
+      ]
+    },
+    {
+      "id": "msg_0850_00399",
+      "en_US": [
+        "A two-turn attack.\\n",
+        "The user gathers light, then blasts\\n",
+        "a bundled beam on the second turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00400",
+      "en_US": [
+        "Comets are summoned down from the\\n",
+        "sky. The attack’s recoil sharply\\n",
+        "reduces the user’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00401",
+      "en_US": [
+        "The user fires a beam of steel that\\n",
+        "it collected from its entire body.\\n",
+        "This also damages the user."
+      ]
+    },
+    {
+      "id": "msg_0850_00402",
+      "en_US": [
+        "If the user has Terastallized,\\n",
+        "it unleashes energy of its\\n",
+        "Tera Type.\\r",
+        "This move inflicts damage using the\\n",
+        "Attack or Sp. Atk stat--whichever is\\n",
+        "higher for the user."
+      ]
+    },
+    {
+      "id": "msg_0850_00403",
+      "en_US": [
+        "The foe is scared off, to be\\n",
+        "replaced by another Pokémon in its\\n",
+        "party. In the wild, the battle ends."
+      ]
+    },
+    {
+      "id": "msg_0850_00404",
+      "en_US": [
+        "The user boosts the power of the\\n",
+        "Electric move it uses next. It also\\n",
+        "raises the user’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00405",
+      "en_US": [
+        "The user creates a haze that\\n",
+        "eliminates every stat change among\\n",
+        "all the Pokémon engaged in battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00406",
+      "en_US": [
+        "A move that leaves the target badly\\n",
+        "poisoned.\\n",
+        "Its poison damage worsens every turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00407",
+      "en_US": [
+        "The user traps the foe inside a\\n",
+        "harshly raging sandstorm for two to\\n",
+        "five turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00408",
+      "en_US": [
+        "The user looses its grudge on the\\n",
+        "move last used by the foe by cutting\\n",
+        "4 PP from it."
+      ]
+    },
+    {
+      "id": "msg_0850_00409",
+      "en_US": [
+        "Gravity is intensified for five\\n",
+        "turns, making moves involving flying\\n",
+        "unusable and negating Levitation."
+      ]
+    },
+    {
+      "id": "msg_0850_00410",
+      "en_US": [
+        "A projectile is thrown at the\\n",
+        "opponent. A flying Pokémon will fall\\n",
+        "to the ground."
+      ]
+    },
+    {
+      "id": "msg_0850_00411",
+      "en_US": [
+        "The user tackles the foe with a\\n",
+        "high-speed spin. The slower the\\n",
+        "user, the greater the damage."
+      ]
+    },
+    {
+      "id": "msg_0850_00412",
+      "en_US": [
+        "The user slaps down the foe’s held\\n",
+        "item, preventing the item from being\\n",
+        "used during the battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00413",
+      "en_US": [
+        "The user bites the foe. If the foe\\n",
+        "is holding a Berry, the user eats it\\n",
+        "and gains its effect."
+      ]
+    },
+    {
+      "id": "msg_0850_00414",
+      "en_US": [
+        "The user chomps hard on the\\n",
+        "foe with its sharp front fangs.\\n",
+        "It cuts the target’s HP to half."
+      ]
+    },
+    {
+      "id": "msg_0850_00415",
+      "en_US": [
+        "The user whirls its fists to send a\\n",
+        "wave of pure vacuum at the foe.\\n",
+        "This move always goes first."
+      ]
+    },
+    {
+      "id": "msg_0850_00416",
+      "en_US": [
+        "The user makes a lunge at the target,\\n",
+        "attacking with full force.\\n",
+        "This also lowers the target’s Attack stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00417",
+      "en_US": [
+        "The user fiercely attacks the target\\n",
+        "using its entire body."
+      ]
+    },
+    {
+      "id": "msg_0850_00418",
+      "en_US": [
+        "The user launches sharp icicles\\n",
+        "at the foe.\\n",
+        "It strikes two to five times in a row."
+      ]
+    },
+    {
+      "id": "msg_0850_00419",
+      "en_US": [
+        "Boiling water is shot at the foe.\\n",
+        "It may also cause a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00420",
+      "en_US": [
+        "The user slams down with fire.\\n",
+        "The more the user outweighs the foe,\\n",
+        "the greater the damage."
+      ]
+    },
+    {
+      "id": "msg_0850_00421",
+      "en_US": [
+        "The user gathers light on the first turn,\\n",
+        "then fills a blade with the light’s energy\\n",
+        "and attacks on the next turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00422",
+      "en_US": [
+        "The user attacks in an uproar for\\n",
+        "two to five turns. Over that time,\\n",
+        "no one can fall asleep."
+      ]
+    },
+    {
+      "id": "msg_0850_00423",
+      "en_US": [
+        "The user focuses its mind before\\n",
+        "launching a punch. It will fail if\\n",
+        "the user is hit before it is used."
+      ]
+    },
+    {
+      "id": "msg_0850_00424",
+      "en_US": [
+        "An attack move that varies in power\\n",
+        "and type depending on the weather."
+      ]
+    },
+    {
+      "id": "msg_0850_00425",
+      "en_US": [
+        "Gliding on the ground, the user\\n",
+        "attacks the target. This move always\\n",
+        "goes first on Grassy Terrain."
+      ]
+    },
+    {
+      "id": "msg_0850_00426",
+      "en_US": [
+        "The user attacks with energy from\\n",
+        "jealousy. This leaves all opposing\\n",
+        "Pokémon that have had their stats\\r",
+        "boosted during the turn with a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00427",
+      "en_US": [
+        "After making its attack, the user\\n",
+        "rushes back to switch places with a\\n",
+        "party Pokémon in waiting."
+      ]
+    },
+    {
+      "id": "msg_0850_00428",
+      "en_US": [
+        "The user slams the target with its\\n",
+        "wings to inflict damage. The target\\n",
+        "is hit twice in a row."
+      ]
+    },
+    {
+      "id": "msg_0850_00429",
+      "en_US": [
+        "The user attacks by controlling the\\n",
+        "target’s item. This move fails if\\n",
+        "the foe isn’t holding an item."
+      ]
+    },
+    {
+      "id": "msg_0850_00430",
+      "en_US": [
+        "The user lashes out to vent its\\n",
+        "frustration toward the target. This\\n",
+        "move’s power is doubled if the\\r",
+        "user’s stats were lowered during\\n",
+        "this turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00431",
+      "en_US": [
+        "The user attacks by shooting scales\\n",
+        "two to five times in a row. This\\n",
+        "raises Speed but lowers Defense."
+      ]
+    },
+    {
+      "id": "msg_0850_00432",
+      "en_US": [
+        "The user attacks everything around it and\\n",
+        "faints upon using this move. This move’s\\n",
+        "power is boosted on Misty Terrain."
+      ]
+    },
+    {
+      "id": "msg_0850_00433",
+      "en_US": [
+        "The user adds its HP to the foe’s\\n",
+        "HP, then equally shares the combined\\n",
+        "HP with the foe."
+      ]
+    },
+    {
+      "id": "msg_0850_00434",
+      "en_US": [
+        "The user hypnotizes itself into\\n",
+        "copying any stat change made by the\\n",
+        "foe."
+      ]
+    },
+    {
+      "id": "msg_0850_00435",
+      "en_US": [
+        "A reckless, life- risking tackle. It\\n",
+        "also damages the user by a fairly\\n",
+        "large amount, however."
+      ]
+    },
+    {
+      "id": "msg_0850_00436",
+      "en_US": [
+        "An attack move that cuts down the\\n",
+        "foe’s HP to equal the user’s HP."
+      ]
+    },
+    {
+      "id": "msg_0850_00437",
+      "en_US": [
+        "The user stirs up a violent petal\\n",
+        "blizzard and attacks everything\\n",
+        "around it."
+      ]
+    },
+    {
+      "id": "msg_0850_00438",
+      "en_US": [
+        "Spurred by desperation, the user attacks\\n",
+        "the target. This move’s power is doubled\\n",
+        "if the user’s previous move failed."
+      ]
+    },
+    {
+      "id": "msg_0850_00439",
+      "en_US": [
+        "Traps the foe inside a whirlpool\\n",
+        "that lasts for two to five turns.\\n",
+        "The user can pass through whirlpools."
+      ]
+    },
+    {
+      "id": "msg_0850_00440",
+      "en_US": [
+        "The user attacks by shooting out\\n",
+        "muddy water. It may also lower the\\n",
+        "foe’s accuracy."
+      ]
+    },
+    {
+      "id": "msg_0850_00441",
+      "en_US": [
+        "The user electrifies its body and drops onto\\n",
+        "the target to inflict damage. If this move\\n",
+        "misses, the user takes damage instead."
+      ]
+    },
+    {
+      "id": "msg_0850_00442",
+      "en_US": [
+        "The user traps the foe in an\\n",
+        "electric net. It also lowers the\\n",
+        "foe’s Speed."
+      ]
+    },
+    {
+      "id": "msg_0850_00443",
+      "en_US": [
+        "A consecutive three-kick attack that\\n",
+        "becomes more powerful with each\\n",
+        "successful hit."
+      ]
+    },
+    {
+      "id": "msg_0850_00444",
+      "en_US": [
+        "The user properly coaches its ally\\n",
+        "Pokémon, boosting their Attack and\\n",
+        "Defense stats."
+      ]
+    },
+    {
+      "id": "msg_0850_00445",
+      "en_US": [
+        "The area around the user is swamped by\\n",
+        "a giant sludge wave.\\n",
+        "It may also poison those hit."
+      ]
+    },
+    {
+      "id": "msg_0850_00446",
+      "en_US": [
+        "The user throws scorching sand at\\n",
+        "the target to attack.\\n",
+        "The target may also be left with a burn."
+      ]
+    },
+    {
+      "id": "msg_0850_00447",
+      "en_US": [
+        "The user covers the foe with a mass\\n",
+        "of down that sharply lowers the\\n",
+        "Attack stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00448",
+      "en_US": [
+        "Two turns after this move is used,\\n",
+        "the foe is attacked with a hunk of\\n",
+        "psychic energy."
+      ]
+    },
+    {
+      "id": "msg_0850_00449",
+      "en_US": [
+        "The user attacks\\n",
+        "the target with\\n",
+        "its psychic power.\\r",
+        "When the ground is Psychic Terrain,\\n",
+        "this move’s power is boosted and it\\n",
+        "damages all opposing Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00450",
+      "en_US": [
+        "The user skitters behind the target\\n",
+        "to attack. This also lowers the\\n",
+        "target’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00451",
+      "en_US": [
+        "The user gathers energy from space\\n",
+        "to raise its Sp. Atk on the first\\n",
+        "turn, then attacks on the next."
+      ]
+    },
+    {
+      "id": "msg_0850_00452",
+      "en_US": [
+        "The user attacks the target’s throat,\\n",
+        "preventing the target from using\\n",
+        "sound-based moves for two turns."
+      ]
+    },
+    {
+      "id": "msg_0850_00453",
+      "en_US": [
+        "The user swings its tough tail\\n",
+        "and attacks opposing Pokémon.\\n",
+        "This also lowers their Attack stats."
+      ]
+    },
+    {
+      "id": "msg_0850_00454",
+      "en_US": [
+        "A horrible sound like scraping metal\\n",
+        "is emitted to sharply reduce the\\n",
+        "foe’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00455",
+      "en_US": [
+        "A move that works differently for\\n",
+        "the Ghost type than for all the\\n",
+        "other types."
+      ]
+    },
+    {
+      "id": "msg_0850_00456",
+      "en_US": [
+        "The target is crushed with an arm, a claw,\\n",
+        "or the like to inflict damage. The attack is\\n",
+        "more powerful the more HP the foe has left."
+      ]
+    },
+    {
+      "id": "msg_0850_00457",
+      "en_US": [
+        "The user raises its allies’ morale\\n",
+        "with a draconic cry so that their\\n",
+        "future attacks have a heightened\\r",
+        "chance of landing critical hits.\\n",
+        "This rouses Dragon types more."
+      ]
+    },
+    {
+      "id": "msg_0850_00458",
+      "en_US": [
+        "The user attacks the target using its angelic\\n",
+        "voice. This also confuses the target if its\\n",
+        "stats have been boosted during the turn."
+      ]
+    },
+    {
+      "id": "msg_0850_00459",
+      "en_US": [
+        "The user attacks the target with\\n",
+        "unpleasant sound waves. For two\\n",
+        "turns, the target is prevented from\\r",
+        "recovering HP through moves,\\n",
+        "Abilities, or held items."
+      ]
+    },
+    {
+      "id": "msg_0850_00460",
+      "en_US": [
+        "The user reacts to the target’s\\n",
+        "movement and strikes with the heel\\n",
+        "of its palm, making the target flinch.\\r",
+        "This move fails if the target is not\\n",
+        "readying a priority move."
+      ]
+    },
+    {
+      "id": "msg_0850_00461",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00462",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00463",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00464",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00465",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00466",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00467",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00468",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00469",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00470",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00471",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00472",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00473",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00474",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00475",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00476",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00477",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00478",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00479",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00480",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00481",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00482",
+      "en_US": [
+        "A roomy basket packed with all sorts\\n",
+        "of things for use when enjoying\\n",
+        "picnicking with your Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00483",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00484",
+      "en_US": [
+        "A bottle emblazoned\\n",
+        "with the academy’s\\n",
+        "emblem.\\r",
+        "It’s light, sturdy, and vacuum insulated,\\n",
+        "so it’ll keep your hots hot and your colds\\n",
+        "cold."
+      ]
+    },
+    {
+      "id": "msg_0850_00485",
+      "en_US": [
+        "A bottle emblazoned\\n",
+        "with the academy’s\\n",
+        "emblem.\\r",
+        "It’s light, sturdy, and vacuum insulated,\\n",
+        "so it’ll keep your hots hot and your colds\\n",
+        "cold."
+      ]
+    },
+    {
+      "id": "msg_0850_00486",
+      "en_US": [
+        "A polka-dot-patterned bottle\\n",
+        "that’s small, light, and even\\n",
+        "comes with a cup.\\r",
+        "The detachable strap makes\\n",
+        "it handy for walking around\\n",
+        "with."
+      ]
+    },
+    {
+      "id": "msg_0850_00487",
+      "en_US": [
+        "A striped bottle that’s\\n",
+        "small, light, and even\\n",
+        "comes with a cup.\\r",
+        "The detachable strap\\n",
+        "makes it handy for\\n",
+        "walking around with."
+      ]
+    },
+    {
+      "id": "msg_0850_00488",
+      "en_US": [
+        "A diamond-patterned bottle\\n",
+        "that’s small, light, and even\\n",
+        "comes with a cup.\\r",
+        "The detachable strap makes\\n",
+        "it handy for walking around\\n",
+        "with."
+      ]
+    },
+    {
+      "id": "msg_0850_00489",
+      "en_US": [
+        "The academy’s standard-issue cup for\\n",
+        "picnicking. The careful design of\\n",
+        "its mouth makes it popular both\\r",
+        "inside and outside the academy."
+      ]
+    },
+    {
+      "id": "msg_0850_00490",
+      "en_US": [
+        "The academy’s standard-issue cup for\\n",
+        "picnicking. The careful design of\\n",
+        "its mouth makes it popular both\\r",
+        "inside and outside the academy."
+      ]
+    },
+    {
+      "id": "msg_0850_00491",
+      "en_US": [
+        "A cup for kids to use at picnics. It’s made\\n",
+        "of light but strong material. It’s stackable,\\n",
+        "which makes it handy for carrying around."
+      ]
+    },
+    {
+      "id": "msg_0850_00492",
+      "en_US": [
+        "A cup for kids to use at picnics. It’s made\\n",
+        "of light but strong material. It’s stackable,\\n",
+        "which makes it handy for carrying around."
+      ]
+    },
+    {
+      "id": "msg_0850_00493",
+      "en_US": [
+        "A cup for kids to use at picnics. It’s made\\n",
+        "of light but strong material. It’s stackable,\\n",
+        "which makes it handy for carrying around."
+      ]
+    },
+    {
+      "id": "msg_0850_00494",
+      "en_US": [
+        "The academy’s standard-issue\\n",
+        "tablecloth. It’s made with the\\n",
+        "latest fiber-processing technology\\r",
+        "and is so tough that not even a\\n",
+        "Razor Claw can tear it."
+      ]
+    },
+    {
+      "id": "msg_0850_00495",
+      "en_US": [
+        "The academy’s standard-issue\\n",
+        "tablecloth. It’s made with the\\n",
+        "latest fiber-processing technology\\r",
+        "and is so tough that not even a\\n",
+        "Razor Claw can tear it."
+      ]
+    },
+    {
+      "id": "msg_0850_00496",
+      "en_US": [
+        "A tablecloth made in collaboration\\n",
+        "with a popular picture-book\\n",
+        "author.\\r",
+        "The gently drawn Pokémon make\\n",
+        "even the loveliest picnic table\\n",
+        "more charming."
+      ]
+    },
+    {
+      "id": "msg_0850_00497",
+      "en_US": [
+        "A botanically themed tablecloth featuring\\n",
+        "Grass-type Pokémon. Can you find the\\n",
+        "Pokémon that doesn’t quite fit in?"
+      ]
+    },
+    {
+      "id": "msg_0850_00498",
+      "en_US": [
+        "A pop-art-style tablecloth with\\n",
+        "Pokémon faces floating up from\\n",
+        "the deep nighttime blue.\\r",
+        "This is a must-have for fans of\\n",
+        "Ghost types."
+      ]
+    },
+    {
+      "id": "msg_0850_00499",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00500",
+      "en_US": [
+        "The academy’s standard-issue ball in\\n",
+        "a regulation size. Lots of students\\n",
+        "believe that if you kick it right on\\r",
+        "the academy emblem, it’ll fly in a\\n",
+        "straight line."
+      ]
+    },
+    {
+      "id": "msg_0850_00501",
+      "en_US": [
+        "The academy’s standard-issue ball in\\n",
+        "a regulation size. Lots of students\\n",
+        "believe that if you kick it right on\\r",
+        "the academy emblem, it’ll fly in a\\n",
+        "straight line."
+      ]
+    },
+    {
+      "id": "msg_0850_00502",
+      "en_US": [
+        "A Marill-themed ball. It’s soft and springy.\\n",
+        "Make sure you haven’t mistaken a real\\n",
+        "Marill for this ball before throwing."
+      ]
+    },
+    {
+      "id": "msg_0850_00503",
+      "en_US": [
+        "A small ball of yarn. It’s woven\\n",
+        "tight so as not to unravel, but even\\n",
+        "if it were to come undone, at least\\r",
+        "you could still use the yarn for\\n",
+        "something."
+      ]
+    },
+    {
+      "id": "msg_0850_00504",
+      "en_US": [
+        "A ball themed after hardcore gaming PCs.\\n",
+        "It may not light up like its inspiration,\\n",
+        "but it still stands out."
+      ]
+    },
+    {
+      "id": "msg_0850_00505",
+      "en_US": [
+        "A golden pick that oozes class.\\n",
+        "Using it on a sandwich lends an\\n",
+        "extravagant air that’ll make you\\r",
+        "want to eat up, even if you don’t\\n",
+        "love the fillings."
+      ]
+    },
+    {
+      "id": "msg_0850_00506",
+      "en_US": [
+        "A silver pick that oozes class.\\n",
+        "Using it on a sandwich lends an\\n",
+        "extravagant air that’ll make you\\r",
+        "want to eat up, even if you don’t\\n",
+        "love the fillings."
+      ]
+    },
+    {
+      "id": "msg_0850_00507",
+      "en_US": [
+        "This pick flies a red flag that\\n",
+        "lends an air of adventure. The flag\\n",
+        "itself is made of card stock, so\\r",
+        "it’ll fly proudly even with no wind."
+      ]
+    },
+    {
+      "id": "msg_0850_00508",
+      "en_US": [
+        "This pick flies a blue flag that\\n",
+        "lends an air of adventure. The flag\\n",
+        "itself is made of card stock, so\\r",
+        "it’ll fly proudly even with no wind."
+      ]
+    },
+    {
+      "id": "msg_0850_00509",
+      "en_US": [
+        "A Pick-achu, as it were, sporting\\n",
+        "Pikachu’s usual expression. It’s\\n",
+        "easy to grab by the ears, which is\\r",
+        "part of why it’s so popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00510",
+      "en_US": [
+        "A Pick-achu, if you will, sporting\\n",
+        "Pikachu’s winking face. It’s easy to\\n",
+        "grab by the ears, which is part of\\r",
+        "why it’s so popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00511",
+      "en_US": [
+        "A pick designed after Eevee,\\n",
+        "sporting the Pokémon’s usual\\n",
+        "expression. It’s easy to grab by the\\r",
+        "ears, which is part of why it’s so\\n",
+        "popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00512",
+      "en_US": [
+        "A pick designed after Eevee,\\n",
+        "sporting the Pokémon’s smiling face.\\n",
+        "It’s easy to grab by the ears, which\\r",
+        "is part of why it’s so popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00513",
+      "en_US": [
+        "A sandwich pick with a simple blue\\n",
+        "Poké Ball design. Often used by\\n",
+        "Trainers who picked a Water-type\\r",
+        "Pokémon for their first partner."
+      ]
+    },
+    {
+      "id": "msg_0850_00514",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00515",
+      "en_US": [
+        "A peculiar set of armor that can make\\n",
+        "a certain species of Pokémon evolve.\\n",
+        "Auspicious wishes live within it."
+      ]
+    },
+    {
+      "id": "msg_0850_00516",
+      "en_US": [
+        "A shard of what appears to be an old blade\\n",
+        "of some sort. It is held only by Bisharp\\n",
+        "that head up a group of Pawniard."
+      ]
+    },
+    {
+      "id": "msg_0850_00517",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00518",
+      "en_US": "- - -"
+    },
+    {
+      "id": "msg_0850_00519",
+      "en_US": [
+        "A go-to bottle widely used for drinks at\\n",
+        "picnics. Its simple design and portability\\n",
+        "make it popular among all sorts of people."
+      ]
+    },
+    {
+      "id": "msg_0850_00520",
+      "en_US": [
+        "A go-to bottle widely used for drinks at\\n",
+        "picnics. Its simple design and portability\\n",
+        "make it popular among all sorts of people."
+      ]
+    },
+    {
+      "id": "msg_0850_00521",
+      "en_US": [
+        "A go-to bottle widely used for drinks at\\n",
+        "picnics. Its simple design and portability\\n",
+        "make it popular among all sorts of people."
+      ]
+    },
+    {
+      "id": "msg_0850_00522",
+      "en_US": [
+        "A go-to bottle sometimes used while\\n",
+        "camping. The stainless steel keeps\\n",
+        "the temperature inside steady,\\r",
+        "making it great for keeping drinks\\n",
+        "hot or cold."
+      ]
+    },
+    {
+      "id": "msg_0850_00523",
+      "en_US": [
+        "A go-to bottle sometimes used while\\n",
+        "camping. The stainless steel keeps\\n",
+        "the temperature inside steady,\\r",
+        "making it great for keeping drinks\\n",
+        "hot or cold."
+      ]
+    },
+    {
+      "id": "msg_0850_00524",
+      "en_US": [
+        "A go-to bottle sometimes used while\\n",
+        "camping. The stainless steel keeps\\n",
+        "the temperature inside steady,\\r",
+        "making it great for keeping drinks\\n",
+        "hot or cold."
+      ]
+    },
+    {
+      "id": "msg_0850_00525",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00526",
+      "en_US": [
+        "A cup that’s as good for using at\\n",
+        "home as on a picnic. It’s light,\\n",
+        "sturdy, and stacks well, so it’s a\\r",
+        "cinch to pack up and carry around."
+      ]
+    },
+    {
+      "id": "msg_0850_00527",
+      "en_US": [
+        "A cup that’s as good for using at\\n",
+        "home as on a picnic. It’s light,\\n",
+        "sturdy, and stacks well, so it’s a\\r",
+        "cinch to pack up and carry around."
+      ]
+    },
+    {
+      "id": "msg_0850_00528",
+      "en_US": [
+        "A cup that’s as good for using at\\n",
+        "home as on a picnic. It’s light,\\n",
+        "sturdy, and stacks well, so it’s a\\r",
+        "cinch to pack up and carry around."
+      ]
+    },
+    {
+      "id": "msg_0850_00529",
+      "en_US": [
+        "A cup sold with the Pink Bottle. The\\n",
+        "two don’t stack, so they’re tough to\\n",
+        "pack-but they look good, so they’re\\r",
+        "popular with those who like to post\\n",
+        "picnic photos."
+      ]
+    },
+    {
+      "id": "msg_0850_00530",
+      "en_US": [
+        "A cup sold with the Blue Bottle. The\\n",
+        "two don’t stack, so they’re tough to\\n",
+        "pack-but they look good, so they’re\\r",
+        "popular with those who like to post\\n",
+        "picnic photos."
+      ]
+    },
+    {
+      "id": "msg_0850_00531",
+      "en_US": [
+        "A cup sold with the Yellow Bottle.\\n",
+        "The two don’t stack, so they’re\\n",
+        "tough to pack-but they look good, so\\r",
+        "they’re popular with those who like\\n",
+        "to post picnic photos."
+      ]
+    },
+    {
+      "id": "msg_0850_00532",
+      "en_US": [
+        "A cup for big-time Pokémon fans.\\n",
+        "Kids will happily drink out of it,\\n",
+        "making it a boon to parents."
+      ]
+    },
+    {
+      "id": "msg_0850_00533",
+      "en_US": [
+        "A cup for big-time Pokémon fans.\\n",
+        "Kids will happily drink out of it,\\n",
+        "making it a boon to parents."
+      ]
+    },
+    {
+      "id": "msg_0850_00534",
+      "en_US": [
+        "A cup for big-time Pokémon fans.\\n",
+        "Kids will happily drink out of it,\\n",
+        "making it a boon to parents."
+      ]
+    },
+    {
+      "id": "msg_0850_00535",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00536",
+      "en_US": [
+        "A big ball designed for exercising.\\n",
+        "It can work as a seat if you get\\n",
+        "tired, too."
+      ]
+    },
+    {
+      "id": "msg_0850_00537",
+      "en_US": [
+        "A sturdy tablecloth made of thick\\n",
+        "fabric. The cheery yellow plaid\\n",
+        "brightens up a table."
+      ]
+    },
+    {
+      "id": "msg_0850_00538",
+      "en_US": [
+        "A sturdy tablecloth made of thick\\n",
+        "fabric. The gentle blue plaid gives\\n",
+        "a table a crisp look."
+      ]
+    },
+    {
+      "id": "msg_0850_00539",
+      "en_US": [
+        "A sturdy tablecloth made of thick\\n",
+        "fabric. The quietly composed red\\n",
+        "plaid gives the table some flair."
+      ]
+    },
+    {
+      "id": "msg_0850_00540",
+      "en_US": [
+        "A tablecloth with a fun, trendy\\n",
+        "black-and-white design featuring\\n",
+        "Pokémon that seem poised to leap\\r",
+        "from the tall grass at any moment."
+      ]
+    },
+    {
+      "id": "msg_0850_00541",
+      "en_US": [
+        "A garish, eye-catching tablecloth.\\n",
+        "Putting this on your picnic table\\n",
+        "will inspire any person or Pokémon\\r",
+        "who eats there to do their best."
+      ]
+    },
+    {
+      "id": "msg_0850_00542",
+      "en_US": [
+        "A tablecloth designed by the Pewter Museum\\n",
+        "of Science. The academic air of the pattern\\n",
+        "is a big hit with kids and adults alike."
+      ]
+    },
+    {
+      "id": "msg_0850_00543",
+      "en_US": [
+        "A tablecloth with a fashionable striped\\n",
+        "pattern. It’s great at repelling water and\\n",
+        "mold, and stains and smudges wipe right off."
+      ]
+    },
+    {
+      "id": "msg_0850_00544",
+      "en_US": [
+        "A tablecloth with a fashionable diamond\\n",
+        "pattern. It’s great at repelling water and\\n",
+        "mold, and stains and smudges wipe right off."
+      ]
+    },
+    {
+      "id": "msg_0850_00545",
+      "en_US": [
+        "A tablecloth with a fashionable polka-dot\\n",
+        "pattern. It’s great at repelling water and\\n",
+        "mold, and stains and smudges wipe right off."
+      ]
+    },
+    {
+      "id": "msg_0850_00546",
+      "en_US": [
+        "A light purple tablecloth. It’s smooth\\n",
+        "and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00547",
+      "en_US": [
+        "A light mint-colored tablecloth. It’s\\n",
+        "smooth and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00548",
+      "en_US": [
+        "A light peach-colored tablecloth. It’s\\n",
+        "smooth and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00549",
+      "en_US": [
+        "A simple yellow tablecloth. It’s smooth\\n",
+        "and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00550",
+      "en_US": [
+        "A simple blue tablecloth. It’s smooth\\n",
+        "and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00551",
+      "en_US": [
+        "A simple pink tablecloth. It’s smooth\\n",
+        "and pleasant to the touch, and dishes\\n",
+        "can be placed on it with hardly a sound."
+      ]
+    },
+    {
+      "id": "msg_0850_00552",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00553",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00554",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00555",
+      "en_US": [
+        "A popular option among hikers. It’s\\n",
+        "made with titanium, so it doesn’t\\n",
+        "rust even if it’s used to hold\\r",
+        "drinks with high sodium content."
+      ]
+    },
+    {
+      "id": "msg_0850_00556",
+      "en_US": [
+        "A sandwich pick with a simple green\\n",
+        "Poké Ball design. Often used by\\n",
+        "Trainers who picked a Grass-type\\r",
+        "Pokémon for their first partner."
+      ]
+    },
+    {
+      "id": "msg_0850_00557",
+      "en_US": [
+        "A sandwich pick with a simple red Poké Ball\\n",
+        "design. Often used by Trainers who picked a\\n",
+        "Fire-type Pokémon for their first partner."
+      ]
+    },
+    {
+      "id": "msg_0850_00558",
+      "en_US": [
+        "This pick features a small sparkler that\\n",
+        "goes off automatically.\\n",
+        "It’s used at parties or for guests of honor.\\r",
+        "It leaves an oddly appealing aroma once it’s\\n",
+        "burned out."
+      ]
+    },
+    {
+      "id": "msg_0850_00559",
+      "en_US": [
+        "A pick made to be the coolest.\\n",
+        "Once you’ve eaten, you can pretend\\n",
+        "you’re a hero of legend.\\r",
+        "Souvenir shops at tourist spots\\n",
+        "sell these for some reason."
+      ]
+    },
+    {
+      "id": "msg_0850_00560",
+      "en_US": [
+        "A pick shaped after a magic wand.\\n",
+        "Perhaps the real magic is the food\\n",
+        "maker’s wish for a delicious dish."
+      ]
+    },
+    {
+      "id": "msg_0850_00561",
+      "en_US": [
+        "A pick shaped after a magic wand.\\n",
+        "Perhaps the real magic is the food\\n",
+        "maker’s wish for a delicious dish."
+      ]
+    },
+    {
+      "id": "msg_0850_00562",
+      "en_US": [
+        "Some complain that the parasol part\\n",
+        "of this pick is hard to hold on to,\\n",
+        "so your fingers get messy.\\r",
+        "Still, it’s fun to twirl this all\\n",
+        "around after you’ve eaten."
+      ]
+    },
+    {
+      "id": "msg_0850_00563",
+      "en_US": [
+        "A flower pick designed to evoke\\n",
+        "a blue sky. It’s part of a line of\\n",
+        "“sky-flower” picks.\\r",
+        "Using a few is guaranteed to boost\\n",
+        "that special picnic spirit."
+      ]
+    },
+    {
+      "id": "msg_0850_00564",
+      "en_US": [
+        "A flower pick designed to evoke\\n",
+        "a blazing sunset. It’s part of\\n",
+        "a line of “sky-flower” picks.\\r",
+        "Using a few is guaranteed to boost\\n",
+        "that special picnic spirit."
+      ]
+    },
+    {
+      "id": "msg_0850_00565",
+      "en_US": [
+        "A flower pick designed to evoke\\n",
+        "a glorious sunrise. It’s part of\\n",
+        "a line of “sky-flower” picks.\\r",
+        "Using a few is guaranteed to boost\\n",
+        "that special picnic spirit."
+      ]
+    },
+    {
+      "id": "msg_0850_00566",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The blue variety is a consistent strong\\n",
+        "seller."
+      ]
+    },
+    {
+      "id": "msg_0850_00567",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The green variety is quite popular."
+      ]
+    },
+    {
+      "id": "msg_0850_00568",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The orange variety is the most popular\\n",
+        "of all."
+      ]
+    },
+    {
+      "id": "msg_0850_00569",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The red variety never fails to sell well."
+      ]
+    },
+    {
+      "id": "msg_0850_00570",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The white variety comes recommended\\n",
+        "by sellers."
+      ]
+    },
+    {
+      "id": "msg_0850_00571",
+      "en_US": [
+        "A dish for picnics.\\n",
+        "Comes in plenty of colors to choose\\n",
+        "from based on the food or the mood.\\r",
+        "The yellow variety is impossible to go\\n",
+        "wrong with."
+      ]
+    },
+    {
+      "id": "msg_0850_00572",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This feather, which gleams faintly in the\\n",
+        "light, boosts the power of Fairy-type moves."
+      ]
+    },
+    {
+      "id": "msg_0850_00573",
+      "en_US": [
+        "A peculiar apple that can make a\\n",
+        "certain species of Pokémon evolve.\\n",
+        "It’s exceptionally syrupy."
+      ]
+    },
+    {
+      "id": "msg_0850_00574",
+      "en_US": [
+        "A teacup that can make a certain species\\n",
+        "of Pokémon evolve. It may be cracked,\\n",
+        "but tea drunk from it is delicious."
+      ]
+    },
+    {
+      "id": "msg_0850_00575",
+      "en_US": [
+        "A teacup that can make a certain species\\n",
+        "of Pokémon evolve. It may be chipped,\\n",
+        "but tea drunk from it is delicious."
+      ]
+    },
+    {
+      "id": "msg_0850_00576",
+      "en_US": [
+        "A teal mask patterned after the face of an\\n",
+        "ogre. Ogerpon dropped it while fleeing up the\\n",
+        "stairs after visiting the Festival of Masks."
+      ]
+    },
+    {
+      "id": "msg_0850_00577",
+      "en_US": [
+        "An item to be held by Ogerpon. This wooden\\n",
+        "mask is adorned with crystals and allows\\n",
+        "Ogerpon to wield the Rock type in battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00578",
+      "en_US": [
+        "An item to be held by Ogerpon. This wooden\\n",
+        "mask is adorned with crystals and allows\\n",
+        "Ogerpon to wield the Water type in battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00579",
+      "en_US": [
+        "An item to be held by Ogerpon. This wooden\\n",
+        "mask is adorned with crystals and allows\\n",
+        "Ogerpon to wield the Fire type in battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00580",
+      "en_US": [
+        "Having one of these cards increases\\n",
+        "the selection available to you in\\n",
+        "boutiques and hair salons."
+      ]
+    },
+    {
+      "id": "msg_0850_00581",
+      "en_US": [
+        "A cluster of the crystals\\n",
+        "found within the Crystal\\n",
+        "Pool.\\r",
+        "They sparkle brilliantly and are\\n",
+        "apparently necessary to repair\\n",
+        "a certain mask."
+      ]
+    },
+    {
+      "id": "msg_0850_00582",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s HP stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00583",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s Attack stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00584",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s Defense stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00585",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00586",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s Sp. Def stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00587",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It increases base points for\\n",
+        "a Pokémon’s Speed stat."
+      ]
+    },
+    {
+      "id": "msg_0850_00588",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "They have a simple design that can stand up\\n",
+        "to both dirt and physical impacts."
+      ]
+    },
+    {
+      "id": "msg_0850_00589",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Academy\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00590",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Academy\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00591",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Whimsical\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00592",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Leafy\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00593",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Spooky\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00594",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the yellow Plaid\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00595",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the blue Plaid\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00596",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the red Plaid\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00597",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the B&W Grass\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00598",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Battle\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00599",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Monstrous\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00600",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Striped\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00601",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Diamond\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00602",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Polka-Dot\\n",
+        "tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00603",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Lilac\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00604",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Mint\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00605",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Peach\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00606",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Yellow\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00607",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Blue\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00608",
+      "en_US": [
+        "A set of chairs that are ideal for picnicking.\\n",
+        "Their design was inspired by the Pink\\n",
+        "Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00609",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00610",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00611",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00612",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00613",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00614",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00615",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00616",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00617",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00618",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00619",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00620",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00621",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00622",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00623",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00624",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00625",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00626",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00627",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00628",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00629",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00630",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00631",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00632",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00633",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00634",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00635",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00636",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00637",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00638",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00639",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00640",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00641",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00642",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00643",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00644",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00645",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00646",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00647",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00648",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00649",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00650",
+      "en_US": [
+        "A mochi cake with Berries kneaded into\\n",
+        "its dough. It causes a Pokémon to lose\\n",
+        "all its base points."
+      ]
+    },
+    {
+      "id": "msg_0850_00651",
+      "en_US": [
+        "A stick to rest a Rotom Phone on.\\n",
+        "It allows you to take selfies from a little\\n",
+        "bit farther away than you could on your own."
+      ]
+    },
+    {
+      "id": "msg_0850_00652",
+      "en_US": [
+        "Having one of these mysterious glimmering\\n",
+        "charms increases the number of Tera Shards\\n",
+        "you receive from Tera Raid Battles."
+      ]
+    },
+    {
+      "id": "msg_0850_00653",
+      "en_US": [
+        "A peculiar metal that can make\\n",
+        "certain species of Pokémon evolve.\\n",
+        "It is composed of many layers."
+      ]
+    },
+    {
+      "id": "msg_0850_00654",
+      "en_US": [
+        "Having one of these cards increases\\n",
+        "the selection available to you in\\n",
+        "boutiques and hair salons."
+      ]
+    },
+    {
+      "id": "msg_0850_00655",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00656",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00657",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00658",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00659",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00660",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00661",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00662",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00663",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00664",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00665",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00666",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00667",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00668",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00669",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00670",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00671",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00672",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00673",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00674",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00675",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00676",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00677",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00678",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00679",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00680",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00681",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00682",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00683",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00684",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00685",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00686",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00687",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00688",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00689",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00690",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00691",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00692",
+      "en_US": [
+        "Material accidentally dropped by\\n",
+        "a Pokémon.\\n",
+        "It can be used to make TMs."
+      ]
+    },
+    {
+      "id": "msg_0850_00693",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Articuno."
+      ]
+    },
+    {
+      "id": "msg_0850_00694",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Zapdos."
+      ]
+    },
+    {
+      "id": "msg_0850_00695",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Moltres."
+      ]
+    },
+    {
+      "id": "msg_0850_00696",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Raikou."
+      ]
+    },
+    {
+      "id": "msg_0850_00697",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Entei."
+      ]
+    },
+    {
+      "id": "msg_0850_00698",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Suicune."
+      ]
+    },
+    {
+      "id": "msg_0850_00699",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Lugia."
+      ]
+    },
+    {
+      "id": "msg_0850_00700",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Ho-Oh."
+      ]
+    },
+    {
+      "id": "msg_0850_00701",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Latias."
+      ]
+    },
+    {
+      "id": "msg_0850_00702",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Latios."
+      ]
+    },
+    {
+      "id": "msg_0850_00703",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Kyogre."
+      ]
+    },
+    {
+      "id": "msg_0850_00704",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Groudon."
+      ]
+    },
+    {
+      "id": "msg_0850_00705",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Rayquaza."
+      ]
+    },
+    {
+      "id": "msg_0850_00706",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Cobalion."
+      ]
+    },
+    {
+      "id": "msg_0850_00707",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Terrakion."
+      ]
+    },
+    {
+      "id": "msg_0850_00708",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Virizion."
+      ]
+    },
+    {
+      "id": "msg_0850_00709",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Reshiram."
+      ]
+    },
+    {
+      "id": "msg_0850_00710",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Zekrom."
+      ]
+    },
+    {
+      "id": "msg_0850_00711",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Kyurem."
+      ]
+    },
+    {
+      "id": "msg_0850_00712",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Solgaleo."
+      ]
+    },
+    {
+      "id": "msg_0850_00713",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Lunala."
+      ]
+    },
+    {
+      "id": "msg_0850_00714",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Necrozma."
+      ]
+    },
+    {
+      "id": "msg_0850_00715",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Kubfu."
+      ]
+    },
+    {
+      "id": "msg_0850_00716",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Glastrier."
+      ]
+    },
+    {
+      "id": "msg_0850_00717",
+      "en_US": [
+        "A snack made from ingredients favored\\n",
+        "by the Legendary Pokémon Spectrier."
+      ]
+    },
+    {
+      "id": "msg_0850_00718",
+      "en_US": [
+        "A mysterious disk with an indigo shine\\n",
+        "to it, given to you by the Top Champion.\\n",
+        "It seems to be tied to Area Zero."
+      ]
+    },
+    {
+      "id": "msg_0850_00719",
+      "en_US": [
+        "A pick designed after Magmortar. It’s said\\n",
+        "that using this pick makes any sandwich\\n",
+        "look like it’s fresh out of the oven."
+      ]
+    },
+    {
+      "id": "msg_0850_00720",
+      "en_US": [
+        "On rare occasions, these shards form\\n",
+        "when a Tera Pokémon falls in battle\\n",
+        "and its Tera Jewel shatters."
+      ]
+    },
+    {
+      "id": "msg_0850_00721",
+      "en_US": [
+        "A Pecha Berry of the highest quality.\\n",
+        "It’s said that a Pecha Berry tree\\n",
+        "carefully tended by an expert gardener\\r",
+        "will produce just one of these Berries\\n",
+        "every few years."
+      ]
+    },
+    {
+      "id": "msg_0850_00722",
+      "en_US": [
+        "Blueberry Academy’s standard issue\\n",
+        "tablecloth, made with the latest\\n",
+        "fiber-processing technology.\\r",
+        "It’s heat-resistant and so tough\\n",
+        "even a Razor Claw can’t tear it."
+      ]
+    },
+    {
+      "id": "msg_0850_00723",
+      "en_US": [
+        "A set of chairs that are ideal\\n",
+        "for picnicking. Their design was\\n",
+        "inspired by the Blueberry Tablecloth."
+      ]
+    },
+    {
+      "id": "msg_0850_00724",
+      "en_US": [
+        "A device that synchronizes your mind\\n",
+        "and feelings with your Pokémon’s so\\n",
+        "that you can work as one.\\r",
+        "It’s still a prototype-hence its\\n",
+        "unrefined appearance."
+      ]
+    },
+    {
+      "id": "msg_0850_00725",
+      "en_US": [
+        "A rock that fell to earth from space.\\n",
+        "It’s warm to the touch. It changes the\\n",
+        "form of a certain species of Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0850_00726",
+      "en_US": [
+        "A record of an expedition to the\\n",
+        "Great Crater of Paldea, given\\n",
+        "to you by Professor Sada.\\r",
+        "The book has the name “Sada” written\\n",
+        "on it in clumsy handwriting."
+      ]
+    },
+    {
+      "id": "msg_0850_00727",
+      "en_US": [
+        "A record of an expedition to the\\n",
+        "Great Crater of Paldea, given\\n",
+        "to you by Professor Turo.\\r",
+        "The book has the name “Turo” written\\n",
+        "on it in clumsy handwriting."
+      ]
+    },
+    {
+      "id": "msg_0850_00728",
+      "en_US": [
+        "A proof copy of the\\n",
+        "exploration notes covering\\n",
+        "the Area Zero Underdepths.\\r",
+        "It’s filled with long paragraphs\\n",
+        "describing what happened,\\n",
+        "along with Briar’s thoughts."
+      ]
+    },
+    {
+      "id": "msg_0850_00729",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00730",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Clefable holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00731",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Victreebel holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00732",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Starmie holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00733",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Dragonite holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00734",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Meganium holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00735",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Feraligatr holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00736",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Skarmory holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00737",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Froslass holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00738",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Heatran holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00739",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Darkrai holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00740",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Emboar holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00741",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Excadrill holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00742",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Scolipede holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00743",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Scrafty holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00744",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Eelektross holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00745",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Chandelure holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00746",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Chesnaught holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00747",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Delphox holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00748",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Greninja holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00749",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Pyroar holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00750",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Floette holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00751",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Malamar holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00752",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Barbaracle holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00753",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Dragalge holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00754",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Hawlucha holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00755",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Zygarde holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00756",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Drampa holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00757",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Falinks holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00758",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00759",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00760",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00761",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00762",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00763",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00764",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00765",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00766",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00767",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00768",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00769",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00770",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00771",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00772",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00773",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00774",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00775",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00776",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00777",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00778",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00779",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00780",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00781",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00782",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00783",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00784",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00785",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00786",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00787",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00788",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00789",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00790",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00791",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00792",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00793",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00794",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00795",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00796",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00797",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00798",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00799",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00800",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00801",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00802",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Raichu holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00803",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Raichu holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00804",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Chimecho holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00805",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Absol holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00806",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Staraptor holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00807",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Garchomp holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00808",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Lucario holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00809",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Golurk holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00810",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Meowstic holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00811",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Crabominable holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00812",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Golisopod holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00813",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Magearna holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00814",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Scovillain holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00815",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Baxcalibur holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00816",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Tatsugiri holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00817",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Glimmora holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0850_00818",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00819",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00820",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00821",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00822",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00823",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00824",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00825",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00826",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00827",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00828",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00829",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00830",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00831",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00832",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00833",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00834",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00835",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00836",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00837",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00838",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00839",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00840",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00841",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00842",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00843",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00844",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00845",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00846",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00847",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00848",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00849",
+      "en_US": "TEMP"
+    },
+    {
+      "id": "msg_0850_00850",
+      "en_US": "TEMP"
+    }
+  ]
+}

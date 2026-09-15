@@ -1,0 +1,500 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0265
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetDaycareNames
+	GetDaycareStatus 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#1
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x800C 3
+	JumpIf EQUAL Function#3
+	CompareVarValue 0x408E 4
+	JumpIf EQUAL Function#4
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	ShowMoney 20 2
+	GetDaycareStatus 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#6
+	CompareVarValue 0x800C 3
+	JumpIf EQUAL Function#7
+	Message 21
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	CloseTouchScreen
+	Message 26
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CMD_149 5
+	Message 1
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#9
+	Message 10
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#9
+	CloseTouchScreen
+	ClearFlag 103
+	RemoveDayCareEgg
+	CompareVarValue 0x408E 3
+	JumpIf DIFFERENT Function#10
+	Message 12
+	SetVar 0x408E 4
+	SetFlag 2450
+Jump Function#4
+
+Function 2:
+	GetDaycareNames
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	GetDaycareNames
+	Message 9
+	GetDayCareMonCompatibility 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#11
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#12
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#13
+Jump Function#14
+
+Function 4:
+	TextPlayerName 0
+	GenderMessage 13 14
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#15
+	SetFlag 2462
+	Message 15
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 25
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 6:
+	Message 30
+	SetVar 0x8000 0
+	Call Function#16
+	Message 24
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	Message 37
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#17
+	CloseTouchScreen
+Jump Function#18
+
+Function 7:
+	Message 30
+	SetVar 0x8000 0
+	Call Function#16
+	SetVar 0x8000 1
+	Call Function#16
+	Message 37
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#17
+	CloseTouchScreen
+	Message 29
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 8:
+	CountPartyBornPokemon 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#19
+	CountTotalAlivePokemon 0x800C
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#20
+	Message 22
+	CloseMessage
+	HideMoney
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	SetVar 0x800C 0
+	CMD_551 0x800C
+	CMD_552 0x8000 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#21
+	PokemonSummaryScreen 0 0x8000 MOVE__
+	GetMoveSelection 0 0x800C
+Jump Function#22
+
+Function 9:
+	CloseTouchScreen
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf DIFFERENT Function#23
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	CompareVarValue 0x408E 4
+	JumpIf DIFFERENT Function#24
+	Message 47
+Jump Function#4
+
+Function 12:
+	CompareVarValue 0x408E 4
+	JumpIf DIFFERENT Function#25
+	Message 48
+Jump Function#4
+
+Function 13:
+	CompareVarValue 0x408E 4
+	JumpIf DIFFERENT Function#26
+	Message 49
+Jump Function#4
+
+Function 14:
+	CompareVarValue 0x408E 4
+	JumpIf DIFFERENT Function#27
+	Message 50
+Jump Function#4
+
+Function 15:
+	ClearFlag 2462
+	CMD_149 5
+	Message 16
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 16:
+	CheckDaycareLevelGain 0x800C 0x8000
+	CompareVarValue 0x800C 0
+	CallIf DIFFERENT Function#28
+Return
+
+Function 17:
+	GetPartyCount 0x800C
+	CompareVarValue 0x800C 6
+	JumpIf EQUAL Function#29
+	GetDaycareStatus 0x800C
+	SetVar 0x8001 0
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#30
+	OpenTouchScreen
+	MultiTouchStandardText 1 1 0 1 0x8001
+	TextDaycareMonData 0 1 2 0
+	CreateMultiTouchBox 136 255 0
+	TextDaycareMonData 0 1 2 1
+	CreateMultiTouchBox 137 255 1
+	CreateMultiTouchBox 138 255 2
+	CloseMultiTouch
+	SetVarFromVariable 0x8008 0x8001
+	CompareVarValue 0x8008 0
+	JumpIf EQUAL Function#30
+	CompareVarValue 0x8008 1
+	JumpIf EQUAL Function#30
+	CloseTouchScreen
+Jump Function#18
+
+Function 18:
+	Message 29
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 19:
+	CloseTouchScreen
+	Message 36
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 20:
+	CloseTouchScreen
+	Message 39
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 21:
+	CompareVarValue 0x8000 255
+	JumpIf EQUAL Function#31
+	DayCareSanitizeMon 0x8000 0x800C
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#32
+	GetPartyPokemonID 0x8000 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#33
+	CountAlivePokemonExceptFirst 0x800C 0x8000
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#34
+	GiveDayCareMon 0x8000
+	Call Function#35
+	GetDayCareSpeciesandNick 0x8001
+	SetFlag 104
+	GetDaycareStatus 0x800C
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#36
+Jump Function#37
+
+Function 22:
+	CMD_551 0x800C
+	CMD_552 0x8000 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#21
+	PokemonSummaryScreen 0 0x8000 MOVE__
+	GetMoveSelection 0 0x800C
+Jump Function#22
+
+Function 23:
+	TextPlayerName 0
+	Message 5
+	PlaySound SEQ_ME_TAMAGO_GET
+	WaitSound
+	GiveDayCareEgg
+	ClearFlag 103
+	CompareVarValue 0x408E 3
+	JumpIf DIFFERENT Function#38
+	Message 11
+	SetVar 0x408E 4
+	SetFlag 2450
+Jump Function#4
+
+Function 24:
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 25:
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 26:
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 27:
+	Message 20
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 28:
+	Message 31
+Return
+
+Function 29:
+	CloseTouchScreen
+	Message 32
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 30:
+	TextDayCareCost 0x8004 0x8001
+	Message 33
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#39
+	CloseTouchScreen
+Jump Function#18
+
+Function 31:
+	Call Function#35
+	CloseTouchScreen
+	Message 29
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 32:
+	Call Function#35
+	CloseTouchScreen
+	HideMoney
+	CommonScript 2041
+End
+
+Function 33:
+	Call Function#35
+	CloseTouchScreen
+	Message 40
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 34:
+	Call Function#35
+	CloseTouchScreen
+	Message 38
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 35:
+	ReturnScreen
+	ShowMoney 20 2
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Return
+
+Function 36:
+	PlayCry 0x8001 0
+	Message 23
+	WaitCry
+Jump Function#40
+
+Function 37:
+	CloseTouchScreen
+	PlayCry 0x8001 0
+	Message 41
+	WaitButton
+	CloseMessage
+	WaitCry
+	HideMoney
+	ReleaseAll
+End
+
+Function 38:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 39:
+	CompareMoneyFlex 0x800C 0x8004
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#41
+	CloseTouchScreen
+	Message 27
+	WaitButton
+	CloseMessage
+	HideMoney
+	ReleaseAll
+End
+
+Function 40:
+	Message 24
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	CloseTouchScreen
+Jump Function#18
+
+Function 41:
+	RetrieveDayCareMon 0x8002 0x8001
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	UpdateDayCareMonOverworlds
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	TakeMoneyFlex 0x8004
+	UpdateMoney
+	PlayFanfare SEQ_SE_DP_REGI
+	WaitFanfare SEQ_SE_DP_REGI
+	Message 34
+	PlayCry 0x8002 0
+	TextPlayerName 1
+	Message 35
+	WaitCry
+	GetDaycareStatus 0x800C
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#42
+	CloseTouchScreen
+Jump Function#18
+
+Function 42:
+	Message 28
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#17
+	CloseTouchScreen
+Jump Function#18
+
+//===== ACTIONS =====//

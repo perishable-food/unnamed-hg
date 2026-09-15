@@ -1,0 +1,213 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0066
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 185
+	SetVar 0x406A 2
+	JumpIf EQUAL Function#1
+	CompareVarValue 0x40A5 0
+	JumpIf EQUAL Function#2
+	Message 1
+	CloseMessage
+	Movement Overworld.1 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x40A5 2
+	JumpIf LESS Function#3
+	PlayCry SPECIES_AMPHAROS 0
+	Message 12
+	WaitCry
+Jump Function#4
+
+Script 3:
+End
+
+Script 4:
+	SetVar 0x4125 0
+End
+
+Script 5:
+	CheckFlag 472
+	JumpIf EQUAL Function#5
+	VanishOverworld Overworld.4
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 2
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+	TakeItem ITEM_SECRET_MEDICINE 1 0x800C
+	TextPlayerName 0
+	Message 3
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	Message 4
+	CloseMessage
+	Movement Overworld.1 Action#1
+	WaitMovement
+	Message 5
+	CloseMessage
+	Movement Overworld.2 Action#2
+	WaitMovement
+	PlayCry SPECIES_AMPHAROS 0
+	Message 6
+	WaitCry
+	CloseMessage
+	CMD_459
+	Movement Overworld.2 Action#3
+	WaitMovement
+	PlayCry SPECIES_AMPHAROS 0
+	WaitCry
+	Message 7
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#4
+	Movement Overworld.1 Action#5
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	RemoveOW Overworld.1
+	ReleaseAll
+	SetFlag 2410
+	SetVar 0x40A5 2
+	SetVar 0x410E 1
+	SetFlag 471
+	ClearFlag 473
+	SetFlag 474
+	SetFlag 475
+	ClearFlag 476
+	ClearFlag 477
+	SetFlag 2456
+End
+
+Function 2:
+	Message 0
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Player Action#6
+	Movement Overworld.1 Action#7
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	PlayFanfare SEQ_SE_DP_DOOR
+	RemoveOW Overworld.4
+	RemoveOW Overworld.0
+	WaitFanfare SEQ_SE_DP_DOOR
+	Movement Overworld.1 Action#8
+	WaitMovement
+	ReleaseAll
+	SetVar 0x40A5 1
+	SetFlag 472
+End
+
+Function 3:
+	PlayCry SPECIES_AMPHAROS 12
+	Message 10
+	WaitCry
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+End
+
+Function 6:
+	Message 8
+	CloseMessage
+	Movement Overworld.1 Action#1
+	WaitMovement
+	Message 9
+	CloseMessage
+	PlayCry SPECIES_AMPHAROS 12
+	WaitCry
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkOnSpotEast16 0x1
+End
+
+Action 2:
+	WalkOnSpotWest16 0x1
+End
+
+Action 3:
+	JumpOnSpotWest8 0x3
+End
+
+Action 4:
+	FaceNorth 0x1
+	LockDir 0x1
+	WalkSouth8 0x1
+	ReleaseDir 0x1
+	Delay8 0x2
+	Delay4 0x1
+	WalkOnSpotEast8 0x1
+End
+
+Action 5:
+	Delay8 0x1
+	WalkSouth8 0x1
+	WalkEast8 0x2
+	WalkOnSpotSouth8 0x1
+	WalkSouth8 0x1
+End
+
+Action 6:
+	FaceWest 0x1
+	LockDir 0x1
+	WalkEast8 0x1
+	ReleaseDir 0x1
+	Delay8 0x3
+	Delay4 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 7:
+	Delay8 0x1
+	WalkSouth8 0x3
+	WalkEast8 0x1
+	WalkOnSpotSouth8 0x1
+	Delay16 0x1
+End
+
+Action 8:
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotEast8 0x1
+End
+

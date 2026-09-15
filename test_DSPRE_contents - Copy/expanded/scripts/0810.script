@@ -1,0 +1,101 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0810
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetVar 0x8007 0
+	CommonScript 2002
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.6 Action#1
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.6 Action#2
+Jump Function#2
+
+Function 2:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Movement Overworld.6 Action#3
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceEast 0x1
+	FaceNorth 0x1
+	FaceWest 0x1
+	FaceSouth 0x1
+	FaceEast 0x1
+	FaceNorth 0x1
+	FaceWest 0x1
+	FaceSouth 0x1
+End
+
+Action 2:
+	FaceNorth 0x1
+	FaceWest 0x1
+	FaceSouth 0x1
+	FaceEast 0x1
+	FaceNorth 0x1
+	FaceWest 0x1
+	FaceSouth 0x1
+	FaceEast 0x1
+End
+
+Action 3:
+	FaceSouth 0x1
+	FaceEast 0x1
+	FaceNorth 0x1
+	FaceWest 0x1
+	FaceSouth 0x1
+	FaceEast 0x1
+	FaceNorth 0x1
+	FaceWest 0x1
+End
+

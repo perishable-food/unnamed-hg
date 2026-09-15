@@ -1,0 +1,34 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0109
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	Movement Player Action#1
+	UnvanishOverworld Player
+	WaitMovement
+	ShakeCamera 0 1 1 8
+	PlayFanfare SEQ_SE_DP_SUTYA2
+	SetVar 0x40CA 0
+End
+
+Script 2:
+	CompareVarValue 0x40CA 1
+	JumpIf DIFFERENT Function#1
+	VanishOverworld Player
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+End
+
+//===== ACTIONS =====//
+Action 1:
+	TeleportDown 0x1
+End
+

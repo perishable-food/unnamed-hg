@@ -1,0 +1,220 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0877
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4000 0
+	JumpIf EQUAL Function#1
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf GREATER/EQUAL Function#2
+	CheckBadge 4 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_CHUCK_034 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	Message 3
+	SetTrainerFlag TRAINER_YOSHI_156
+	SetTrainerFlag TRAINER_LAO_157
+	SetTrainerFlag TRAINER_NOB_251
+	SetTrainerFlag TRAINER_LUNG_159
+	TextPlayerName 0
+	Message 4
+	GiveBadge 4
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	AddTrainerScore 22
+	SetVar 0x4116 1
+	CompareVarValue 0x4134 3
+	JumpIf DIFFERENT Function#5
+	SetVar 0x4077 1
+	Message 5
+Jump Function#6
+
+Script 2:
+	CianwoodGymInit
+	ClearFlag 2433
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4000 0
+	JumpIf EQUAL Function#7
+	Message 12
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 4 0x800C
+	TextPlayerName 0
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#8
+	Message 13
+Jump Function#9
+
+Script 5:
+	GiveBadge 5
+	GiveBadge 6
+	GiveBadge 7
+End
+
+Script 6:
+	GiveBadge 8
+End
+
+Script 7:
+	GiveBadge 9
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	CheckBadge 4 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_CHUCK_718 TRAINER_CHUCK_718 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	Message 3
+	SetTrainerFlag TRAINER_YOSHI_156
+	SetTrainerFlag TRAINER_LAO_157
+	SetTrainerFlag TRAINER_NOB_251
+	SetTrainerFlag TRAINER_LUNG_159
+	TextPlayerName 0
+	Message 4
+	GiveBadge 4
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	AddTrainerScore 22
+	SetVar 0x4116 1
+	CompareVarValue 0x4134 3
+	JumpIf DIFFERENT Function#5
+	SetVar 0x4077 1
+	Message 5
+Jump Function#6
+
+Function 3:
+	CheckFlag 186
+	JumpIf LESS Function#6
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	LostBattle
+	ReleaseAll
+End
+
+Function 5:
+	Message 5
+Jump Function#6
+
+Function 6:
+	SetVar 0x8004 328
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	CommonScript 2033
+	SetFlag 186
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf EQUAL Function#11
+	CompareVarValue 0x800C 7
+	JumpIf LESS/EQUAL Function#12
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 10
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#13
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	IncrementVar 0x416F 15
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	IncrementVar 0x416F 10
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	TextPlayerName 0
+	Message 11
+	CloseMessage
+	SetFlag 2433
+	StopFanfare SEQ_SE_GS_N_TAKI
+	PlayFanfare SEQ_SE_DP_SHIP03
+	PlayFanfare SEQ_SE_GS_TAKI2
+	CianwoodGymTurnWinch 0x4000
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

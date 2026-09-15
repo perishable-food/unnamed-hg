@@ -1,0 +1,209 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0043
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	OpenAlphaPuzzle 2
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CheckFlag 2425
+	JumpIf EQUAL Function#1
+	ReleaseAll
+End
+
+Script 2:
+	MecScript
+	LockAll
+	OpenRuinsofAlphHiddenRoom 2
+	ReleaseAll
+End
+
+Script 3:
+	MecScript
+	LockAll
+	CheckFlag 543
+	JumpIf EQUAL Function#2
+	WaitTime 2 0x8004
+	ShakeCamera 0 2 10 6
+	WaitTime 10 0x8004
+	Movement Player Action#1
+	WaitMovement
+	RemoveOW Overworld.0
+	SetFlag 543
+	PlayFanfare SEQ_SE_DP_UG_008
+	ReleaseAll
+End
+
+Script 4:
+	MecScript
+	LockAll
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#4
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	WaitTime 2 0x8004
+	ShakeCamera 0 2 10 6
+	WaitTime 10 0x8004
+	Movement Player Action#1
+	WaitMovement
+	RemoveOW Overworld.1
+	PlayFanfare SEQ_SE_DP_KI_GASYAN
+	ClearFlag 273
+	SetFlag 544
+	ClearFlag 565
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#5
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+End
+
+Function 2:
+	WaitTime 10 0x8004
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Movement Player Action#2
+	WaitMovement
+Jump Function#7
+
+Function 4:
+	Movement Player Action#2
+	Movement Following Action#3
+	WaitMovement
+	SetVar 0x40CE 1
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	CompareVarValue 0x403E 7
+	JumpIf GREATER/EQUAL Function#8
+	CompareVarValue 0x403E 6
+	JumpIf EQUAL Function#9
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 5:
+	Movement Player Action#2
+	WaitMovement
+Jump Function#10
+
+Function 6:
+	Movement Player Action#2
+	Movement Following Action#3
+	WaitMovement
+	SetVar 0x40CE 1
+	CompareVarValue 0x40EC 1
+	JumpIf GREATER/EQUAL Function#11
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	SetVar 0x40DF 1
+	IncrementVar 0x40EC 1
+	ReleaseAll
+End
+
+Function 7:
+	SetVar 0x40CE 1
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	CompareVarValue 0x403E 7
+	JumpIf GREATER/EQUAL Function#8
+	CompareVarValue 0x403E 6
+	JumpIf EQUAL Function#9
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 8:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 492 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Jump Function#12
+
+Function 9:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 490 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Jump Function#12
+
+Function 10:
+	SetVar 0x40CE 1
+	CompareVarValue 0x40EC 1
+	JumpIf GREATER/EQUAL Function#11
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	SetVar 0x40DF 1
+	IncrementVar 0x40EC 1
+	ReleaseAll
+End
+
+Function 11:
+	SetFlag 565
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 42 Up
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	SetVar 0x40DF 1
+	IncrementVar 0x40EC 1
+	ReleaseAll
+End
+
+Function 12:
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+End
+
+Action 2:
+	WalkOnSpotNorth2 0x4
+	SetInvisible 0x1
+End
+
+Action 3:
+	Delay4 0x3
+	WalkNorth2 0x1
+	SetInvisible 0x1
+End
+

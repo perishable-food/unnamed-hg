@@ -1,0 +1,45 @@
+file_image_padding_value: 0
+section_padding_value: 0
+header: header.yaml
+header_logo: header_logo.png
+arm9_bin: arm9/arm9.bin
+arm9_config: arm9/arm9.yaml
+arm7_bin: arm7/arm7.bin
+arm7_config: arm7/arm7.yaml
+itcm:
+  bin: arm9/itcm.bin
+  config: arm9/itcm.yaml
+dtcm:
+  bin: arm9/dtcm.bin
+  config: arm9/dtcm.yaml
+arm9_overlays: arm9_overlays/overlays.yaml
+arm7_overlays: null
+banner: banner/banner.yaml
+files_dir: files/
+path_order: path_order.txt
+arm9_hmac_sha1_key: arm9/hmac_sha1_key.bin
+multiboot_signature: null
+alignment:
+  arm9: 512
+  arm9_overlay_table: 4
+  arm9_overlay: 512
+  arm7: 512
+  arm7_overlay_table: 512
+  arm7_overlay: 4
+  file_name_table: 512
+  file_allocation_table: 512
+  banner: 512
+  file_image_block: 512
+  file: 512
+padding:
+  arm9: 0
+  arm9_overlay_table: 255
+  arm9_overlays: 255
+  arm7: 255
+  arm7_overlay_table: 255
+  arm7_overlays: 255
+  fnt: 255
+  fat: 255
+  banner: 255
+  file_image: 255
+  rom: 255

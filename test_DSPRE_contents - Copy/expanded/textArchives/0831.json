@@ -1,0 +1,2153 @@
+{
+  "key": 20555,
+  "messages": [
+    {
+      "id": "msg_0831_00000",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00001",
+      "en_US": "a {COLOR, 0, 255}Master Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00002",
+      "en_US": "an {COLOR, 0, 255}Ultra Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00003",
+      "en_US": "a {COLOR, 0, 255}Great Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00004",
+      "en_US": "a {COLOR, 0, 255}Poké Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00005",
+      "en_US": "a {COLOR, 0, 255}Safari Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00006",
+      "en_US": "a {COLOR, 0, 255}Net Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00007",
+      "en_US": "a {COLOR, 0, 255}Dive Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00008",
+      "en_US": "a {COLOR, 0, 255}Nest Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00009",
+      "en_US": "a {COLOR, 0, 255}Repeat Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00010",
+      "en_US": "a {COLOR, 0, 255}Timer Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00011",
+      "en_US": "a {COLOR, 0, 255}Luxury Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00012",
+      "en_US": "a {COLOR, 0, 255}Premier Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00013",
+      "en_US": "a {COLOR, 0, 255}Dusk Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00014",
+      "en_US": "a {COLOR, 0, 255}Heal Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00015",
+      "en_US": "a {COLOR, 0, 255}Quick Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00016",
+      "en_US": "a {COLOR, 0, 255}Cherish Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00017",
+      "en_US": "a {COLOR, 0, 255}Potion{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00018",
+      "en_US": "an {COLOR, 0, 255}Antidote{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00019",
+      "en_US": "a {COLOR, 0, 255}Burn Heal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00020",
+      "en_US": "an {COLOR, 0, 255}Ice Heal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00021",
+      "en_US": "an {COLOR, 0, 255}Awakening{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00022",
+      "en_US": "a {COLOR, 0, 255}Paralyze Heal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00023",
+      "en_US": "a {COLOR, 0, 255}Full Restore{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00024",
+      "en_US": "a {COLOR, 0, 255}Max Potion{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00025",
+      "en_US": "a {COLOR, 0, 255}Hyper Potion{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00026",
+      "en_US": "a {COLOR, 0, 255}Super Potion{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00027",
+      "en_US": "a {COLOR, 0, 255}Full Heal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00028",
+      "en_US": "a {COLOR, 0, 255}Revive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00029",
+      "en_US": "a {COLOR, 0, 255}Max Revive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00030",
+      "en_US": "a {COLOR, 0, 255}Fresh Water{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00031",
+      "en_US": "a {COLOR, 0, 255}Soda Pop{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00032",
+      "en_US": "a {COLOR, 0, 255}Lemonade{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00033",
+      "en_US": "a {COLOR, 0, 255}Moomoo Milk{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00034",
+      "en_US": "an {COLOR, 0, 255}Energy Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00035",
+      "en_US": "an {COLOR, 0, 255}Energy Root{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00036",
+      "en_US": "a {COLOR, 0, 255}Heal Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00037",
+      "en_US": "a {COLOR, 0, 255}Revival Herb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00038",
+      "en_US": "an {COLOR, 0, 255}Ether{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00039",
+      "en_US": "a {COLOR, 0, 255}Max Ether{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00040",
+      "en_US": "an {COLOR, 0, 255}Elixir{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00041",
+      "en_US": "a {COLOR, 0, 255}Max Elixir{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00042",
+      "en_US": "a {COLOR, 0, 255}Lava Cookie{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00043",
+      "en_US": "a {COLOR, 0, 255}Berry Juice{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00044",
+      "en_US": "a {COLOR, 0, 255}Sacred Ash{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00045",
+      "en_US": "an {COLOR, 0, 255}HP Up{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00046",
+      "en_US": "a {COLOR, 0, 255}Protein{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00047",
+      "en_US": "an {COLOR, 0, 255}Iron{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00048",
+      "en_US": "a {COLOR, 0, 255}Carbos{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00049",
+      "en_US": "a {COLOR, 0, 255}Calcium{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00050",
+      "en_US": "a {COLOR, 0, 255}Rare Candy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00051",
+      "en_US": "a {COLOR, 0, 255}PP Up{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00052",
+      "en_US": "a {COLOR, 0, 255}Zinc{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00053",
+      "en_US": "a {COLOR, 0, 255}PP Max{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00054",
+      "en_US": "an {COLOR, 0, 255}Old Gateau{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00055",
+      "en_US": "a {COLOR, 0, 255}Guard Spec.{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00056",
+      "en_US": "a {COLOR, 0, 255}Dire Hit{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00057",
+      "en_US": "an {COLOR, 0, 255}X Attack{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00058",
+      "en_US": "an {COLOR, 0, 255}X Defense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00059",
+      "en_US": "an {COLOR, 0, 255}X Speed{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00060",
+      "en_US": "an {COLOR, 0, 255}X Accuracy{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00061",
+      "en_US": "an {COLOR, 0, 255}X Sp. Atk{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00062",
+      "en_US": "an {COLOR, 0, 255}X Sp. Def{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00063",
+      "en_US": "a {COLOR, 0, 255}Poké Doll{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00064",
+      "en_US": "a {COLOR, 0, 255}Fluffy Tail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00065",
+      "en_US": "a {COLOR, 0, 255}Blue Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00066",
+      "en_US": "a {COLOR, 0, 255}Yellow Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00067",
+      "en_US": "a {COLOR, 0, 255}Red Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00068",
+      "en_US": "a {COLOR, 0, 255}Black Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00069",
+      "en_US": "a {COLOR, 0, 255}White Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00070",
+      "en_US": "a {COLOR, 0, 255}Shoal Salt{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00071",
+      "en_US": "a {COLOR, 0, 255}Shoal Shell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00072",
+      "en_US": "a {COLOR, 0, 255}Red Shard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00073",
+      "en_US": "a {COLOR, 0, 255}Blue Shard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00074",
+      "en_US": "a {COLOR, 0, 255}Yellow Shard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00075",
+      "en_US": "a {COLOR, 0, 255}Green Shard{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00076",
+      "en_US": "a {COLOR, 0, 255}Super Repel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00077",
+      "en_US": "a {COLOR, 0, 255}Max Repel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00078",
+      "en_US": "an {COLOR, 0, 255}Escape Rope{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00079",
+      "en_US": "a {COLOR, 0, 255}Repel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00080",
+      "en_US": "a {COLOR, 0, 255}Sun Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00081",
+      "en_US": "a {COLOR, 0, 255}Moon Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00082",
+      "en_US": "a {COLOR, 0, 255}Fire Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00083",
+      "en_US": "a {COLOR, 0, 255}Thunder Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00084",
+      "en_US": "a {COLOR, 0, 255}Water Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00085",
+      "en_US": "a {COLOR, 0, 255}Leaf Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00086",
+      "en_US": "a {COLOR, 0, 255}Tiny Mushroom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00087",
+      "en_US": "a {COLOR, 0, 255}Big Mushroom{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00088",
+      "en_US": "a {COLOR, 0, 255}Pearl{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00089",
+      "en_US": "a {COLOR, 0, 255}Big Pearl{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00090",
+      "en_US": "a {COLOR, 0, 255}Stardust{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00091",
+      "en_US": "a {COLOR, 0, 255}Star Piece{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00092",
+      "en_US": "a {COLOR, 0, 255}Nugget{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00093",
+      "en_US": "a {COLOR, 0, 255}Heart Scale{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00094",
+      "en_US": "a {COLOR, 0, 255}Honey{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00095",
+      "en_US": "a {COLOR, 0, 255}Growth Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00096",
+      "en_US": "a {COLOR, 0, 255}Damp Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00097",
+      "en_US": "a {COLOR, 0, 255}Stable Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00098",
+      "en_US": "a {COLOR, 0, 255}Gooey Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00099",
+      "en_US": "a {COLOR, 0, 255}Root Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00100",
+      "en_US": "a {COLOR, 0, 255}Claw Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00101",
+      "en_US": "a {COLOR, 0, 255}Helix Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00102",
+      "en_US": "a {COLOR, 0, 255}Dome Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00103",
+      "en_US": "an {COLOR, 0, 255}Old Amber{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00104",
+      "en_US": "an {COLOR, 0, 255}Armor Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00105",
+      "en_US": "a {COLOR, 0, 255}Skull Fossil{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00106",
+      "en_US": "a {COLOR, 0, 255}Rare Bone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00107",
+      "en_US": "a {COLOR, 0, 255}Shiny Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00108",
+      "en_US": "a {COLOR, 0, 255}Dusk Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00109",
+      "en_US": "a {COLOR, 0, 255}Dawn Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00110",
+      "en_US": "an {COLOR, 0, 255}Oval Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00111",
+      "en_US": "an {COLOR, 0, 255}Odd Keystone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00112",
+      "en_US": "a {COLOR, 0, 255}Griseous Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00113",
+      "en_US": "a {COLOR, 0, 255}Tea{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00114",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00115",
+      "en_US": "an {COLOR, 0, 255}Autograph{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00116",
+      "en_US": "a {COLOR, 0, 255}Douse Drive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00117",
+      "en_US": "a {COLOR, 0, 255}Shock Drive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00118",
+      "en_US": "a {COLOR, 0, 255}Burn Drive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00119",
+      "en_US": "a {COLOR, 0, 255}Chill Drive{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00120",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00121",
+      "en_US": "a {COLOR, 0, 255}Pokémon Box Link{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00122",
+      "en_US": "a {COLOR, 0, 255}Medicine Pocket{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00123",
+      "en_US": "a {COLOR, 0, 255}TM Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00124",
+      "en_US": "a {COLOR, 0, 255}Candy Jar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00125",
+      "en_US": "a {COLOR, 0, 255}Power-Up Pocket{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00126",
+      "en_US": "a {COLOR, 0, 255}Clothing Trunk{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00127",
+      "en_US": "a {COLOR, 0, 255}Catching Pocket{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00128",
+      "en_US": "a {COLOR, 0, 255}Battle Pocket{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00129",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00130",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00131",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00132",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00133",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0831_00134",
+      "en_US": "a {COLOR, 0, 255}Sweet Heart{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00135",
+      "en_US": "an {COLOR, 0, 255}Adamant Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00136",
+      "en_US": "a {COLOR, 0, 255}Lustrous Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00137",
+      "en_US": "a {COLOR, 0, 255}Grass Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00138",
+      "en_US": "a {COLOR, 0, 255}Flame Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00139",
+      "en_US": "a {COLOR, 0, 255}Bubble Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00140",
+      "en_US": "a {COLOR, 0, 255}Bloom Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00141",
+      "en_US": "a {COLOR, 0, 255}Tunnel Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00142",
+      "en_US": "a {COLOR, 0, 255}Steel Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00143",
+      "en_US": "a {COLOR, 0, 255}Heart Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00144",
+      "en_US": "a {COLOR, 0, 255}Snow Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00145",
+      "en_US": "a {COLOR, 0, 255}Space Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00146",
+      "en_US": "an {COLOR, 0, 255}Air Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00147",
+      "en_US": "a {COLOR, 0, 255}Mosaic Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00148",
+      "en_US": "a {COLOR, 0, 255}Brick Mail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00149",
+      "en_US": "a {COLOR, 0, 255}Cheri Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00150",
+      "en_US": "a {COLOR, 0, 255}Chesto Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00151",
+      "en_US": "a {COLOR, 0, 255}Pecha Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00152",
+      "en_US": "a {COLOR, 0, 255}Rawst Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00153",
+      "en_US": "an {COLOR, 0, 255}Aspear Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00154",
+      "en_US": "a {COLOR, 0, 255}Leppa Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00155",
+      "en_US": "an {COLOR, 0, 255}Oran Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00156",
+      "en_US": "a {COLOR, 0, 255}Persim Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00157",
+      "en_US": "a {COLOR, 0, 255}Lum Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00158",
+      "en_US": "a {COLOR, 0, 255}Sitrus Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00159",
+      "en_US": "a {COLOR, 0, 255}Figy Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00160",
+      "en_US": "a {COLOR, 0, 255}Wiki Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00161",
+      "en_US": "a {COLOR, 0, 255}Mago Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00162",
+      "en_US": "an {COLOR, 0, 255}Aguav Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00163",
+      "en_US": "an {COLOR, 0, 255}Iapapa Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00164",
+      "en_US": "a {COLOR, 0, 255}Razz Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00165",
+      "en_US": "a {COLOR, 0, 255}Bluk Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00166",
+      "en_US": "a {COLOR, 0, 255}Nanab Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00167",
+      "en_US": "a {COLOR, 0, 255}Wepear Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00168",
+      "en_US": "a {COLOR, 0, 255}Pinap Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00169",
+      "en_US": "a {COLOR, 0, 255}Pomeg Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00170",
+      "en_US": "a {COLOR, 0, 255}Kelpsy Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00171",
+      "en_US": "a {COLOR, 0, 255}Qualot Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00172",
+      "en_US": "a {COLOR, 0, 255}Hondew Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00173",
+      "en_US": "a {COLOR, 0, 255}Grepa Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00174",
+      "en_US": "a {COLOR, 0, 255}Tamato Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00175",
+      "en_US": "a {COLOR, 0, 255}Cornn Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00176",
+      "en_US": "a {COLOR, 0, 255}Magost Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00177",
+      "en_US": "a {COLOR, 0, 255}Rabuta Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00178",
+      "en_US": "a {COLOR, 0, 255}Nomel Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00179",
+      "en_US": "a {COLOR, 0, 255}Spelon Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00180",
+      "en_US": "a {COLOR, 0, 255}Pamtre Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00181",
+      "en_US": "a {COLOR, 0, 255}Watmel Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00182",
+      "en_US": "a {COLOR, 0, 255}Durin Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00183",
+      "en_US": "a {COLOR, 0, 255}Belue Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00184",
+      "en_US": "an {COLOR, 0, 255}Occa Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00185",
+      "en_US": "a {COLOR, 0, 255}Passho Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00186",
+      "en_US": "a {COLOR, 0, 255}Wacan Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00187",
+      "en_US": "a {COLOR, 0, 255}Rindo Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00188",
+      "en_US": "a {COLOR, 0, 255}Yache Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00189",
+      "en_US": "a {COLOR, 0, 255}Chople Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00190",
+      "en_US": "a {COLOR, 0, 255}Kebia Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00191",
+      "en_US": "a {COLOR, 0, 255}Shuca Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00192",
+      "en_US": "a {COLOR, 0, 255}Coba Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00193",
+      "en_US": "a {COLOR, 0, 255}Payapa Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00194",
+      "en_US": "a {COLOR, 0, 255}Tanga Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00195",
+      "en_US": "a {COLOR, 0, 255}Charti Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00196",
+      "en_US": "a {COLOR, 0, 255}Kasib Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00197",
+      "en_US": "a {COLOR, 0, 255}Haban Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00198",
+      "en_US": "a {COLOR, 0, 255}Colbur Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00199",
+      "en_US": "a {COLOR, 0, 255}Babiri Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00200",
+      "en_US": "a {COLOR, 0, 255}Chilan Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00201",
+      "en_US": "a {COLOR, 0, 255}Liechi Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00202",
+      "en_US": "a {COLOR, 0, 255}Ganlon Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00203",
+      "en_US": "a {COLOR, 0, 255}Salac Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00204",
+      "en_US": "a {COLOR, 0, 255}Petaya Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00205",
+      "en_US": "an {COLOR, 0, 255}Apicot Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00206",
+      "en_US": "a {COLOR, 0, 255}Lansat Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00207",
+      "en_US": "a {COLOR, 0, 255}Starf Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00208",
+      "en_US": "an {COLOR, 0, 255}Enigma Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00209",
+      "en_US": "a {COLOR, 0, 255}Micle Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00210",
+      "en_US": "a {COLOR, 0, 255}Custap Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00211",
+      "en_US": "a {COLOR, 0, 255}Jaboca Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00212",
+      "en_US": "a {COLOR, 0, 255}Rowap Berry{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00213",
+      "en_US": "a {COLOR, 0, 255}Bright Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00214",
+      "en_US": "a {COLOR, 0, 255}White Herb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00215",
+      "en_US": "a {COLOR, 0, 255}Macho Brace{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00216",
+      "en_US": "an {COLOR, 0, 255}Exp. Share{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00217",
+      "en_US": "a {COLOR, 0, 255}Quick Claw{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00218",
+      "en_US": "a {COLOR, 0, 255}Soothe Bell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00219",
+      "en_US": "a {COLOR, 0, 255}Mental Herb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00220",
+      "en_US": "a {COLOR, 0, 255}Choice Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00221",
+      "en_US": "a {COLOR, 0, 255}King’s Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00222",
+      "en_US": "a {COLOR, 0, 255}Silver Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00223",
+      "en_US": "an {COLOR, 0, 255}Amulet Coin{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00224",
+      "en_US": "a {COLOR, 0, 255}Cleanse Tag{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00225",
+      "en_US": "a {COLOR, 0, 255}Soul Dew{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00226",
+      "en_US": "a {COLOR, 0, 255}Deep Sea Tooth{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00227",
+      "en_US": "a {COLOR, 0, 255}Deep Sea Scale{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00228",
+      "en_US": "a {COLOR, 0, 255}Smoke Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00229",
+      "en_US": "an {COLOR, 0, 255}Everstone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00230",
+      "en_US": "a {COLOR, 0, 255}Focus Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00231",
+      "en_US": "a {COLOR, 0, 255}Lucky Egg{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00232",
+      "en_US": "a {COLOR, 0, 255}Scope Lens{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00233",
+      "en_US": "a {COLOR, 0, 255}Metal Coat{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00234",
+      "en_US": "the {COLOR, 0, 255}Leftovers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00235",
+      "en_US": "a {COLOR, 0, 255}Dragon Scale{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00236",
+      "en_US": "a {COLOR, 0, 255}Light Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00237",
+      "en_US": "a {COLOR, 0, 255}Soft Sand{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00238",
+      "en_US": "a {COLOR, 0, 255}Hard Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00239",
+      "en_US": "a {COLOR, 0, 255}Miracle Seed{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00240",
+      "en_US": "the {COLOR, 0, 255}Black Glasses{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00241",
+      "en_US": "a {COLOR, 0, 255}Black Belt{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00242",
+      "en_US": "a {COLOR, 0, 255}Magnet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00243",
+      "en_US": "a {COLOR, 0, 255}Mystic Water{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00244",
+      "en_US": "a {COLOR, 0, 255}Sharp Beak{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00245",
+      "en_US": "a {COLOR, 0, 255}Poison Barb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00246",
+      "en_US": "a {COLOR, 0, 255}Never-Melt Ice{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00247",
+      "en_US": "a {COLOR, 0, 255}Spell Tag{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00248",
+      "en_US": "a {COLOR, 0, 255}Twisted Spoon{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00249",
+      "en_US": "a {COLOR, 0, 255}Charcoal{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00250",
+      "en_US": "a {COLOR, 0, 255}Dragon Fang{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00251",
+      "en_US": "a {COLOR, 0, 255}Silk Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00252",
+      "en_US": "an {COLOR, 0, 255}Upgrade{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00253",
+      "en_US": "a {COLOR, 0, 255}Shell Bell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00254",
+      "en_US": "a {COLOR, 0, 255}Sea Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00255",
+      "en_US": "a {COLOR, 0, 255}Lax Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00256",
+      "en_US": "a {COLOR, 0, 255}Lucky Punch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00257",
+      "en_US": "a {COLOR, 0, 255}Metal Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00258",
+      "en_US": "a {COLOR, 0, 255}Thick Club{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00259",
+      "en_US": "a {COLOR, 0, 255}Leek{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00260",
+      "en_US": "a {COLOR, 0, 255}Red Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00261",
+      "en_US": "a {COLOR, 0, 255}Blue Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00262",
+      "en_US": "a {COLOR, 0, 255}Pink Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00263",
+      "en_US": "a {COLOR, 0, 255}Green Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00264",
+      "en_US": "a {COLOR, 0, 255}Yellow Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00265",
+      "en_US": "a {COLOR, 0, 255}Wide Lens{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00266",
+      "en_US": "a {COLOR, 0, 255}Muscle Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00267",
+      "en_US": "the {COLOR, 0, 255}Wise Glasses{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00268",
+      "en_US": "an {COLOR, 0, 255}Expert Belt{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00269",
+      "en_US": "a {COLOR, 0, 255}Light Clay{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00270",
+      "en_US": "a {COLOR, 0, 255}Life Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00271",
+      "en_US": "a {COLOR, 0, 255}Power Herb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00272",
+      "en_US": "a {COLOR, 0, 255}Toxic Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00273",
+      "en_US": "a {COLOR, 0, 255}Flame Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00274",
+      "en_US": "a {COLOR, 0, 255}Quick Powder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00275",
+      "en_US": "a {COLOR, 0, 255}Focus Sash{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00276",
+      "en_US": "a {COLOR, 0, 255}Zoom Lens{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00277",
+      "en_US": "a {COLOR, 0, 255}Metronome{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00278",
+      "en_US": "an {COLOR, 0, 255}Iron Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00279",
+      "en_US": "a {COLOR, 0, 255}Lagging Tail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00280",
+      "en_US": "a {COLOR, 0, 255}Destiny Knot{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00281",
+      "en_US": "a {COLOR, 0, 255}Black Sludge{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00282",
+      "en_US": "an {COLOR, 0, 255}Icy Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00283",
+      "en_US": "a {COLOR, 0, 255}Smooth Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00284",
+      "en_US": "a {COLOR, 0, 255}Heat Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00285",
+      "en_US": "a {COLOR, 0, 255}Damp Rock{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00286",
+      "en_US": "a {COLOR, 0, 255}Grip Claw{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00287",
+      "en_US": "a {COLOR, 0, 255}Choice Scarf{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00288",
+      "en_US": "a {COLOR, 0, 255}Sticky Barb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00289",
+      "en_US": "a {COLOR, 0, 255}Power Bracer{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00290",
+      "en_US": "a {COLOR, 0, 255}Power Belt{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00291",
+      "en_US": "a {COLOR, 0, 255}Power Lens{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00292",
+      "en_US": "a {COLOR, 0, 255}Power Band{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00293",
+      "en_US": "a {COLOR, 0, 255}Power Anklet{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00294",
+      "en_US": "a {COLOR, 0, 255}Power Weight{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00295",
+      "en_US": "a {COLOR, 0, 255}Shed Shell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00296",
+      "en_US": "a {COLOR, 0, 255}Big Root{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00297",
+      "en_US": "the {COLOR, 0, 255}Choice Specs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00298",
+      "en_US": "a {COLOR, 0, 255}Flame Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00299",
+      "en_US": "a {COLOR, 0, 255}Splash Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00300",
+      "en_US": "a {COLOR, 0, 255}Zap Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00301",
+      "en_US": "a {COLOR, 0, 255}Meadow Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00302",
+      "en_US": "an {COLOR, 0, 255}Icicle Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00303",
+      "en_US": "a {COLOR, 0, 255}Fist Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00304",
+      "en_US": "a {COLOR, 0, 255}Toxic Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00305",
+      "en_US": "an {COLOR, 0, 255}Earth Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00306",
+      "en_US": "a {COLOR, 0, 255}Sky Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00307",
+      "en_US": "a {COLOR, 0, 255}Mind Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00308",
+      "en_US": "an {COLOR, 0, 255}Insect Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00309",
+      "en_US": "a {COLOR, 0, 255}Stone Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00310",
+      "en_US": "a {COLOR, 0, 255}Spooky Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00311",
+      "en_US": "a {COLOR, 0, 255}Draco Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00312",
+      "en_US": "a {COLOR, 0, 255}Dread Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00313",
+      "en_US": "an {COLOR, 0, 255}Iron Plate{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00314",
+      "en_US": "an {COLOR, 0, 255}Odd Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00315",
+      "en_US": "a {COLOR, 0, 255}Rock Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00316",
+      "en_US": "a {COLOR, 0, 255}Full Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00317",
+      "en_US": "a {COLOR, 0, 255}Wave Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00318",
+      "en_US": "a {COLOR, 0, 255}Rose Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00319",
+      "en_US": "a {COLOR, 0, 255}Luck Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00320",
+      "en_US": "a {COLOR, 0, 255}Pure Incense{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00321",
+      "en_US": "a {COLOR, 0, 255}Protector{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00322",
+      "en_US": "an {COLOR, 0, 255}Electirizer{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00323",
+      "en_US": "a {COLOR, 0, 255}Magmarizer{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00324",
+      "en_US": "a {COLOR, 0, 255}Dubious Disc{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00325",
+      "en_US": "a {COLOR, 0, 255}Reaper Cloth{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00326",
+      "en_US": "a {COLOR, 0, 255}Razor Claw{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00327",
+      "en_US": "a {COLOR, 0, 255}Razor Fang{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00328",
+      "en_US": "a {COLOR, 0, 255}TM001{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00329",
+      "en_US": "a {COLOR, 0, 255}TM002{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00330",
+      "en_US": "a {COLOR, 0, 255}TM003{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00331",
+      "en_US": "a {COLOR, 0, 255}TM004{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00332",
+      "en_US": "a {COLOR, 0, 255}TM005{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00333",
+      "en_US": "a {COLOR, 0, 255}TM006{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00334",
+      "en_US": "a {COLOR, 0, 255}TM007{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00335",
+      "en_US": "a {COLOR, 0, 255}TM008{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00336",
+      "en_US": "a {COLOR, 0, 255}TM009{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00337",
+      "en_US": "a {COLOR, 0, 255}TM010{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00338",
+      "en_US": "a {COLOR, 0, 255}TM011{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00339",
+      "en_US": "a {COLOR, 0, 255}TM012{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00340",
+      "en_US": "a {COLOR, 0, 255}TM013{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00341",
+      "en_US": "a {COLOR, 0, 255}TM014{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00342",
+      "en_US": "a {COLOR, 0, 255}TM015{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00343",
+      "en_US": "a {COLOR, 0, 255}TM016{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00344",
+      "en_US": "a {COLOR, 0, 255}TM017{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00345",
+      "en_US": "a {COLOR, 0, 255}TM018{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00346",
+      "en_US": "a {COLOR, 0, 255}TM019{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00347",
+      "en_US": "a {COLOR, 0, 255}TM020{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00348",
+      "en_US": "a {COLOR, 0, 255}TM021{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00349",
+      "en_US": "a {COLOR, 0, 255}TM022{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00350",
+      "en_US": "a {COLOR, 0, 255}TM023{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00351",
+      "en_US": "a {COLOR, 0, 255}TM024{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00352",
+      "en_US": "a {COLOR, 0, 255}TM025{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00353",
+      "en_US": "a {COLOR, 0, 255}TM026{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00354",
+      "en_US": "a {COLOR, 0, 255}TM027{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00355",
+      "en_US": "a {COLOR, 0, 255}TM028{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00356",
+      "en_US": "a {COLOR, 0, 255}TM029{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00357",
+      "en_US": "a {COLOR, 0, 255}TM030{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00358",
+      "en_US": "a {COLOR, 0, 255}TM031{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00359",
+      "en_US": "a {COLOR, 0, 255}TM032{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00360",
+      "en_US": "a {COLOR, 0, 255}TM033{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00361",
+      "en_US": "a {COLOR, 0, 255}TM034{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00362",
+      "en_US": "a {COLOR, 0, 255}TM035{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00363",
+      "en_US": "a {COLOR, 0, 255}TM036{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00364",
+      "en_US": "a {COLOR, 0, 255}TM037{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00365",
+      "en_US": "a {COLOR, 0, 255}TM038{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00366",
+      "en_US": "a {COLOR, 0, 255}TM039{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00367",
+      "en_US": "a {COLOR, 0, 255}TM040{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00368",
+      "en_US": "a {COLOR, 0, 255}TM041{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00369",
+      "en_US": "a {COLOR, 0, 255}TM042{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00370",
+      "en_US": "a {COLOR, 0, 255}TM043{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00371",
+      "en_US": "a {COLOR, 0, 255}TM044{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00372",
+      "en_US": "a {COLOR, 0, 255}TM045{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00373",
+      "en_US": "a {COLOR, 0, 255}TM046{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00374",
+      "en_US": "a {COLOR, 0, 255}TM047{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00375",
+      "en_US": "a {COLOR, 0, 255}TM048{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00376",
+      "en_US": "a {COLOR, 0, 255}TM049{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00377",
+      "en_US": "a {COLOR, 0, 255}TM050{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00378",
+      "en_US": "a {COLOR, 0, 255}TM051{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00379",
+      "en_US": "a {COLOR, 0, 255}TM052{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00380",
+      "en_US": "a {COLOR, 0, 255}TM053{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00381",
+      "en_US": "a {COLOR, 0, 255}TM054{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00382",
+      "en_US": "a {COLOR, 0, 255}TM055{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00383",
+      "en_US": "a {COLOR, 0, 255}TM056{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00384",
+      "en_US": "a {COLOR, 0, 255}TM057{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00385",
+      "en_US": "a {COLOR, 0, 255}TM058{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00386",
+      "en_US": "a {COLOR, 0, 255}TM059{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00387",
+      "en_US": "a {COLOR, 0, 255}TM060{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00388",
+      "en_US": "a {COLOR, 0, 255}TM061{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00389",
+      "en_US": "a {COLOR, 0, 255}TM062{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00390",
+      "en_US": "a {COLOR, 0, 255}TM063{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00391",
+      "en_US": "a {COLOR, 0, 255}TM064{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00392",
+      "en_US": "a {COLOR, 0, 255}TM065{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00393",
+      "en_US": "a {COLOR, 0, 255}TM066{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00394",
+      "en_US": "a {COLOR, 0, 255}TM067{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00395",
+      "en_US": "a {COLOR, 0, 255}TM068{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00396",
+      "en_US": "a {COLOR, 0, 255}TM069{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00397",
+      "en_US": "a {COLOR, 0, 255}TM070{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00398",
+      "en_US": "a {COLOR, 0, 255}TM071{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00399",
+      "en_US": "a {COLOR, 0, 255}TM072{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00400",
+      "en_US": "a {COLOR, 0, 255}TM073{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00401",
+      "en_US": "a {COLOR, 0, 255}TM074{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00402",
+      "en_US": "a {COLOR, 0, 255}TM075{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00403",
+      "en_US": "a {COLOR, 0, 255}TM076{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00404",
+      "en_US": "a {COLOR, 0, 255}TM077{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00405",
+      "en_US": "a {COLOR, 0, 255}TM078{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00406",
+      "en_US": "a {COLOR, 0, 255}TM079{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00407",
+      "en_US": "a {COLOR, 0, 255}TM080{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00408",
+      "en_US": "a {COLOR, 0, 255}TM081{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00409",
+      "en_US": "a {COLOR, 0, 255}TM082{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00410",
+      "en_US": "a {COLOR, 0, 255}TM083{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00411",
+      "en_US": "a {COLOR, 0, 255}TM084{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00412",
+      "en_US": "a {COLOR, 0, 255}TM085{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00413",
+      "en_US": "a {COLOR, 0, 255}TM086{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00414",
+      "en_US": "a {COLOR, 0, 255}TM087{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00415",
+      "en_US": "a {COLOR, 0, 255}TM088{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00416",
+      "en_US": "a {COLOR, 0, 255}TM089{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00417",
+      "en_US": "a {COLOR, 0, 255}TM090{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00418",
+      "en_US": "a {COLOR, 0, 255}TM091{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00419",
+      "en_US": "a {COLOR, 0, 255}TM092{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00420",
+      "en_US": "an {COLOR, 0, 255}HM01{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00421",
+      "en_US": "an {COLOR, 0, 255}HM02{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00422",
+      "en_US": "an {COLOR, 0, 255}HM03{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00423",
+      "en_US": "an {COLOR, 0, 255}HM04{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00424",
+      "en_US": "an {COLOR, 0, 255}HM05{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00425",
+      "en_US": "an {COLOR, 0, 255}HM06{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00426",
+      "en_US": "an {COLOR, 0, 255}HM07{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00427",
+      "en_US": "an {COLOR, 0, 255}HM08{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00428",
+      "en_US": "an {COLOR, 0, 255}Explorer Kit{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00429",
+      "en_US": "a {COLOR, 0, 255}Loot Sack{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00430",
+      "en_US": "a {COLOR, 0, 255}Rule Book{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00431",
+      "en_US": "a {COLOR, 0, 255}Poké Radar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00432",
+      "en_US": "a {COLOR, 0, 255}Point Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00433",
+      "en_US": "a {COLOR, 0, 255}Guidebook{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00434",
+      "en_US": "a {COLOR, 0, 255}Sticker Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00435",
+      "en_US": "a {COLOR, 0, 255}Fashion Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00436",
+      "en_US": "a {COLOR, 0, 255}Sticker Bag{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00437",
+      "en_US": "a {COLOR, 0, 255}Pal Pad{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00438",
+      "en_US": "a {COLOR, 0, 255}Works Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00439",
+      "en_US": "an {COLOR, 0, 255}Old Charm{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00440",
+      "en_US": "a {COLOR, 0, 255}Galactic Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00441",
+      "en_US": "a {COLOR, 0, 255}Red Chain{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00442",
+      "en_US": "a {COLOR, 0, 255}Town Map{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00443",
+      "en_US": "a {COLOR, 0, 255}Vs. Seeker{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00444",
+      "en_US": "a {COLOR, 0, 255}Coin Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00445",
+      "en_US": "an {COLOR, 0, 255}Old Rod{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00446",
+      "en_US": "a {COLOR, 0, 255}Good Rod{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00447",
+      "en_US": "a {COLOR, 0, 255}Super Rod{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00448",
+      "en_US": "a {COLOR, 0, 255}Sprayduck{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00449",
+      "en_US": "a {COLOR, 0, 255}Poffin Case{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00450",
+      "en_US": "a {COLOR, 0, 255}Bike{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00451",
+      "en_US": "a {COLOR, 0, 255}Suite Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00452",
+      "en_US": "{COLOR, 0, 255}Oak’s Letter{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00453",
+      "en_US": "a {COLOR, 0, 255}Lunar Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00454",
+      "en_US": "a {COLOR, 0, 255}Member Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00455",
+      "en_US": "an {COLOR, 0, 255}Azure Flute{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00456",
+      "en_US": "an {COLOR, 0, 255}S.S. Ticket{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00457",
+      "en_US": "a {COLOR, 0, 255}Contest Pass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00458",
+      "en_US": "a {COLOR, 0, 255}Magma Stone{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00459",
+      "en_US": "a {COLOR, 0, 255}Parcel{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00460",
+      "en_US": "a {COLOR, 0, 255}Coupon 1{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00461",
+      "en_US": "a {COLOR, 0, 255}Coupon 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00462",
+      "en_US": "a {COLOR, 0, 255}Coupon 3{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00463",
+      "en_US": "a {COLOR, 0, 255}Storage Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00464",
+      "en_US": "a {COLOR, 0, 255}Secret Medicine{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00465",
+      "en_US": "a {COLOR, 0, 255}Vs. Recorder{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00466",
+      "en_US": "a {COLOR, 0, 255}Gracidea{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00467",
+      "en_US": "a {COLOR, 0, 255}Secret Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00468",
+      "en_US": "an {COLOR, 0, 255}Apricorn Box{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00469",
+      "en_US": "an {COLOR, 0, 255}Unown Report{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00470",
+      "en_US": "the {COLOR, 0, 255}Berry Pots{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00471",
+      "en_US": "a {COLOR, 0, 255}Dowsing Machine{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00472",
+      "en_US": "a {COLOR, 0, 255}Blue Card{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00473",
+      "en_US": "a {COLOR, 0, 255}Slowpoke Tail{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00474",
+      "en_US": "a {COLOR, 0, 255}Clear Bell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00475",
+      "en_US": "a {COLOR, 0, 255}Card Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00476",
+      "en_US": "a {COLOR, 0, 255}Basement Key{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00477",
+      "en_US": "a {COLOR, 0, 255}Squirt Bottle{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00478",
+      "en_US": "a {COLOR, 0, 255}Red Scale{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00479",
+      "en_US": "a {COLOR, 0, 255}Lost Item{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00480",
+      "en_US": "a {COLOR, 0, 255}Pass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00481",
+      "en_US": "a {COLOR, 0, 255}Machine Part{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00482",
+      "en_US": "a {COLOR, 0, 255}Silver Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00483",
+      "en_US": "a {COLOR, 0, 255}Rainbow Feather{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00484",
+      "en_US": "a {COLOR, 0, 255}Mystery Egg{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00485",
+      "en_US": "a {COLOR, 0, 255}Red Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00486",
+      "en_US": "a {COLOR, 0, 255}Yellow Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00487",
+      "en_US": "a {COLOR, 0, 255}Blue Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00488",
+      "en_US": "a {COLOR, 0, 255}Green Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00489",
+      "en_US": "a {COLOR, 0, 255}Pink Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00490",
+      "en_US": "a {COLOR, 0, 255}White Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00491",
+      "en_US": "a {COLOR, 0, 255}Black Apricorn{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00492",
+      "en_US": "a {COLOR, 0, 255}Fast Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00493",
+      "en_US": "a {COLOR, 0, 255}Level Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00494",
+      "en_US": "a {COLOR, 0, 255}Lure Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00495",
+      "en_US": "a {COLOR, 0, 255}Heavy Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00496",
+      "en_US": "a {COLOR, 0, 255}Love Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00497",
+      "en_US": "a {COLOR, 0, 255}Friend Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00498",
+      "en_US": "a {COLOR, 0, 255}Moon Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00499",
+      "en_US": "a {COLOR, 0, 255}Sport Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00500",
+      "en_US": "a {COLOR, 0, 255}Park Ball{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00501",
+      "en_US": "a {COLOR, 0, 255}Photo Album{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00502",
+      "en_US": "the {COLOR, 0, 255}GB Sounds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00503",
+      "en_US": "a {COLOR, 0, 255}Tidal Bell{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00504",
+      "en_US": "a {COLOR, 0, 255}Rage Candy Bar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00505",
+      "en_US": "a {COLOR, 0, 255}Data Card 01{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00506",
+      "en_US": "a {COLOR, 0, 255}Data Card 02{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00507",
+      "en_US": "a {COLOR, 0, 255}Data Card 03{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00508",
+      "en_US": "a {COLOR, 0, 255}Data Card 04{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00509",
+      "en_US": "a {COLOR, 0, 255}Data Card 05{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00510",
+      "en_US": "a {COLOR, 0, 255}Data Card 06{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00511",
+      "en_US": "a {COLOR, 0, 255}Data Card 07{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00512",
+      "en_US": "a {COLOR, 0, 255}Data Card 08{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00513",
+      "en_US": "a {COLOR, 0, 255}Data Card 09{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00514",
+      "en_US": "a {COLOR, 0, 255}Data Card 10{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00515",
+      "en_US": "a {COLOR, 0, 255}Data Card 11{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00516",
+      "en_US": "a {COLOR, 0, 255}Data Card 12{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00517",
+      "en_US": "a {COLOR, 0, 255}Data Card 13{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00518",
+      "en_US": "a {COLOR, 0, 255}Data Card 14{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00519",
+      "en_US": "a {COLOR, 0, 255}Data Card 15{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00520",
+      "en_US": "a {COLOR, 0, 255}Data Card 16{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00521",
+      "en_US": "a {COLOR, 0, 255}Data Card 17{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00522",
+      "en_US": "a {COLOR, 0, 255}Data Card 18{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00523",
+      "en_US": "a {COLOR, 0, 255}Data Card 19{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00524",
+      "en_US": "a {COLOR, 0, 255}Data Card 20{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00525",
+      "en_US": "a {COLOR, 0, 255}Data Card 21{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00526",
+      "en_US": "a {COLOR, 0, 255}Data Card 22{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00527",
+      "en_US": "a {COLOR, 0, 255}Data Card 23{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00528",
+      "en_US": "a {COLOR, 0, 255}Data Card 24{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00529",
+      "en_US": "a {COLOR, 0, 255}Data Card 25{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00530",
+      "en_US": "a {COLOR, 0, 255}Data Card 26{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00531",
+      "en_US": "a {COLOR, 0, 255}Data Card 27{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00532",
+      "en_US": "a {COLOR, 0, 255}Jade Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00533",
+      "en_US": "a {COLOR, 0, 255}Lock Capsule{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00534",
+      "en_US": "a {COLOR, 0, 255}Red Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00535",
+      "en_US": "a {COLOR, 0, 255}Blue Orb{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0831_00536",
+      "en_US": "an {COLOR, 0, 255}Enigma Stone{COLOR, 0, 0}"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0888
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 12
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+Jump Function#2
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 350
+	JumpIf LESS Function#3
+	GiveItem ITEM_HEART_SCALE 1 0x800C
+	CheckItem ITEM_HEART_SCALE 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#4
+	Message 22
+	Message 24
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonSelection
+	GetSelectedPartySlot 0x8005
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x8005 255
+	JumpIf EQUAL Function#4
+	GetPartyPokemonID 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#5
+	CheckHasLearnableMoves 0x800C 0x8005
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	Message 25
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	RememberMoveScreen 0x8005
+	ResponseTeachMove 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#4
+	TakeItem ITEM_HEART_SCALE 1 0x800C
+	TextPlayerName 3
+	Message 28
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 13
+	WaitAB
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonSelection
+	GetSelectedPartySlot 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#2
+	SetVarFromVariable 0x8005 0x800C
+	GetPartyPokemonID 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	CheckTradedPokemon 0x8005 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#8
+	TextPokeNickname 0 0x8005
+	Message 14
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#9
+Jump Function#2
+
+Function 2:
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 21
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetFlag 350
+End
+
+Function 4:
+	Message 23
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 27
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 26
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 20
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	TextPokeNickname 0 0x8005
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	Message 15
+	CloseMessage
+	SetVar 0x800C 0
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonNickname 0x8005 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#10
+	TextPokeNickname 0 0x8005
+	Message 16
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	TextPokeNickname 0 0x8005
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

@@ -1,0 +1,387 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0874
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	CheckFlag 123
+	JumpIf EQUAL Function#1
+	SetFlag 427
+End
+
+Script 2:
+	CheckFlag 124
+	JumpIf EQUAL Function#2
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	TextPlayerName 0
+	Message 0
+	WaitAB
+	CloseMessage
+	GetPlayerDirection 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#3
+Jump Function#4
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 119
+	JumpIf EQUAL Function#5
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_SLOWPOKE 0
+	Message 20
+	WaitCry
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 21
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 6:
+	MecScript
+	LockAll
+	SetVar 0x4080 3
+	Movement Overworld.0 Action#1
+	WaitMovement
+	TextPlayerName 0
+	Message 1
+	SetVar 0x8004 492
+	SetVar 0x8005 1
+	CommonScript 2008
+	SetFlag 124
+	CloseTouchScreen
+	WaitButton
+	CloseMessage
+	ReleaseAll
+Jump Function#2
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4077 2
+	JumpIf DIFFERENT Function#6
+	Message 24
+Jump Function#7
+
+//===== FUNCTIONS =====//
+Function 1:
+	ClearFlag 427
+End
+
+Function 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x416E 0
+	JumpIf EQUAL Function#8
+	CheckKurtApricorn 0x8000
+	CompareVarValue 0x8000 0
+	JumpIf DIFFERENT Function#9
+	GetApricornCount 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	Movement Overworld.0 Action#2
+	WaitMovement
+	Message 4
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	KurtApricornMenuScreen
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CheckKurtApricorn 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#11
+	Message 6
+Jump Function#12
+
+Function 3:
+	Movement Overworld.0 Action#3
+	WaitMovement
+	ReleaseAll
+	RemoveOW Overworld.0
+	WaitSound
+	SetFlag 119
+	SetFlag 414
+	SetFlag 415
+End
+
+Function 4:
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	GetOWPosition Following 0x4002 0x4003
+	CompareVarValue 0x4002 5
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.0 Action#4
+Jump Function#14
+
+Function 5:
+	CheckFlag 123
+	JumpIf EQUAL Function#15
+	Message 12
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	CompareVarValue 0x4077 3
+	JumpIf DIFFERENT Function#16
+	Message 24
+Jump Function#7
+
+Function 7:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	CheckBadge 6 0x8006
+	CompareVarValue 0x8006 1
+	JumpIf EQUAL Function#17
+End
+
+Function 9:
+	CheckFlag 2722
+	JumpIf EQUAL Function#18
+	TextPlayerName 0
+	Message 8
+	GetApricornBallID 0x8004
+	CheckItemSpace 0x8004 0x8000 0x800C
+	SetVarFromVariable 0x8005 0x8000
+	CommonScript 2033
+	ClearKurtApricornData
+	CompareVarValue 0x413B 10
+	JumpIf GREATER/EQUAL Function#19
+	IncrementVar 0x413B 1
+	CompareVarValue 0x413B 10
+	CallIf GREATER/EQUAL Function#20
+	Message 10
+Jump Function#21
+
+Function 10:
+	Message 3
+	CompareVarValue 0x4080 3
+	JumpIf EQUAL Function#22
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	SetFlag 2722
+	Message 5
+	WaitButton
+	CloseMessage
+	CompareVarValue 0x4080 3
+	JumpIf EQUAL Function#22
+	ReleaseAll
+End
+
+Function 12:
+	WaitButton
+	CloseMessage
+	CompareVarValue 0x4080 3
+	JumpIf EQUAL Function#22
+	ReleaseAll
+End
+
+Function 13:
+	PlayFanfare SEQ_SE_DP_WALL_HIT
+	Movement Overworld.0 Action#3
+	Movement Player Action#5
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+Jump Function#23
+
+Function 14:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+Jump Function#23
+
+Function 15:
+	CheckPokegearNumberRegistered 5 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf EQUAL Function#24
+	CheckFlag 2404
+	JumpIf EQUAL Function#25
+	Message 13
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 16:
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#26
+	Message 24
+Jump Function#7
+
+Function 17:
+	IncrementVar 0x416E 1
+	Message 25
+	SetVar 0x8004 742
+	SetVar 0x8005 1
+	CommonScript 2033
+	CloseMessage
+End
+
+Function 18:
+	Message 7
+Jump Function#21
+
+Function 19:
+	Message 10
+Jump Function#21
+
+Function 20:
+	SetFlag 295
+Return
+
+Function 21:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 22:
+	SetVar 0x4080 4
+	Movement Overworld.1 Action#6
+	WaitMovement
+	Movement Player Action#7
+	WaitMovement
+	Message 15
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#27
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#28
+End
+
+Function 23:
+	ReleaseAll
+	RemoveOW Overworld.0
+	WaitSound
+	SetFlag 119
+	SetFlag 414
+	SetFlag 415
+End
+
+Function 24:
+	Message 19
+Jump Function#29
+
+Function 25:
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 26:
+	Message 23
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 27:
+	TextPlayerName 0
+	Message 16
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	RecordPokegearNumber 5
+	Message 17
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 28:
+	Message 18
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 29:
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#27
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#28
+End
+
+//===== ACTIONS =====//
+Action 1:
+	Delay16 0x1
+	WalkOnSpotSouth4 0x1
+End
+
+Action 2:
+	EmoteExclamation 0x1
+	Delay8 0x1
+End
+
+Action 3:
+	WalkSouth4 0x5
+End
+
+Action 4:
+	WalkWest4 0x1
+	WalkSouth4 0x2
+	WalkEast4 0x1
+	WalkSouth4 0x3
+End
+
+Action 5:
+	WalkWest4 0x1
+	Delay16 0x1
+End
+
+Action 6:
+	WalkWest8 0x1
+End
+
+Action 7:
+	WalkOnSpotEast4 0x1
+	FaceEast 0x1
+End
+

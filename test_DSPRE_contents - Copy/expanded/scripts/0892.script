@@ -1,0 +1,176 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0892
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 149
+	JumpIf EQUAL Function#1
+	TextPlayerName 0
+	Message 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x410D 1
+	JumpIf EQUAL Function#4
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckPokegearNumberRegistered 9 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#5
+	CompareVarValue 0x410D 1
+	JumpIf EQUAL Function#6
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	GetPartyCount 0x8005
+	CompareVarValue 0x8005 6
+	JumpIf EQUAL Function#7
+	Message 1
+	SetFlag 2600
+	GivePokemon SPECIES_EEVEE 5 ITEM_NONE 0 0 0x800C
+	SetFlag 149
+	ClearFlag 2600
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_POKEGET
+	WaitSound
+	Message 7
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#8
+	CompareVarValue 0x800C 1
+	JumpIf GREATER/EQUAL Function#9
+	CloseMessage
+	SetVar 0x4000 0
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonNickname 0x8005 0x4000
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	Message 3
+	WaitButton
+	CloseMessage
+	CloseTouchScreen
+	ReleaseAll
+End
+
+Function 3:
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 15
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 12
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#11
+End
+
+Function 7:
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	CloseMessage
+	SetVar 0x4000 0
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	ChoosePokemonNickname 0x8005 0x4000
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	Message 3
+	WaitButton
+	CloseMessage
+	CloseTouchScreen
+	ReleaseAll
+End
+
+Function 9:
+	Message 3
+	WaitButton
+	CloseMessage
+	CloseTouchScreen
+	ReleaseAll
+End
+
+Function 10:
+	TextPlayerName 0
+	Message 13
+	RecordPokegearNumber 9
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	Message 15
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

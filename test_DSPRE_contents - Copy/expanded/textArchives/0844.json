@@ -1,0 +1,1197 @@
+{
+  "key": 22350,
+  "messages": [
+    {
+      "id": "msg_0844_00000",
+      "en_US": "{COLOR, 0, 255}pieces of Normalium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00001",
+      "en_US": "{COLOR, 0, 255}pieces of Firium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00002",
+      "en_US": "{COLOR, 0, 255}pieces of Waterium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00003",
+      "en_US": "{COLOR, 0, 255}pieces of Electrium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00004",
+      "en_US": "{COLOR, 0, 255}pieces of Grassium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00005",
+      "en_US": "{COLOR, 0, 255}pieces of Icium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00006",
+      "en_US": "{COLOR, 0, 255}pieces of Fightinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00007",
+      "en_US": "{COLOR, 0, 255}pieces of Poisonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00008",
+      "en_US": "{COLOR, 0, 255}pieces of Groundium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00009",
+      "en_US": "{COLOR, 0, 255}pieces Flyinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00010",
+      "en_US": "{COLOR, 0, 255}pieces Psychium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00011",
+      "en_US": "{COLOR, 0, 255}pieces of Buginium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00012",
+      "en_US": "{COLOR, 0, 255}pieces of Rockium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00013",
+      "en_US": "{COLOR, 0, 255}pieces of Ghostium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00014",
+      "en_US": "{COLOR, 0, 255}pieces of Dragonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00015",
+      "en_US": "{COLOR, 0, 255}pieces of Darkinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00016",
+      "en_US": "{COLOR, 0, 255}pieces of Steelium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00017",
+      "en_US": "{COLOR, 0, 255}pieces of Fairium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00018",
+      "en_US": "{COLOR, 0, 255}pieces of Pikanium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00019",
+      "en_US": "{COLOR, 0, 255}Bottle Caps{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00020",
+      "en_US": "{COLOR, 0, 255}Gold Bottle Caps{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00021",
+      "en_US": "{COLOR, 0, 255}Z-Rings{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00022",
+      "en_US": "{COLOR, 0, 255}pieces of Decidium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00023",
+      "en_US": "{COLOR, 0, 255}pieces of Incinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00024",
+      "en_US": "{COLOR, 0, 255}pieces of Primarium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00025",
+      "en_US": "{COLOR, 0, 255}pieces of Tapunium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00026",
+      "en_US": "{COLOR, 0, 255}pieces of Marshadium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00027",
+      "en_US": "{COLOR, 0, 255}pieces of Aloraichium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00028",
+      "en_US": "{COLOR, 0, 255}pieces of Snorlium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00029",
+      "en_US": "{COLOR, 0, 255}pieces of Eevium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00030",
+      "en_US": "{COLOR, 0, 255}pieces of Mewnium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00031",
+      "en_US": "{COLOR, 0, 255}pieces of Normalium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00032",
+      "en_US": "{COLOR, 0, 255}pieces of Firium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00033",
+      "en_US": "{COLOR, 0, 255}pieces of Waterium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00034",
+      "en_US": "{COLOR, 0, 255}pieces of Electrium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00035",
+      "en_US": "{COLOR, 0, 255}pieces of Grassium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00036",
+      "en_US": "{COLOR, 0, 255}pieces of Icium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00037",
+      "en_US": "{COLOR, 0, 255}pieces of Fightinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00038",
+      "en_US": "{COLOR, 0, 255}pieces of Poisonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00039",
+      "en_US": "{COLOR, 0, 255}pieces of Groundium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00040",
+      "en_US": "{COLOR, 0, 255}pieces of Flyinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00041",
+      "en_US": "{COLOR, 0, 255}pieces of Psychium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00042",
+      "en_US": "{COLOR, 0, 255}pieces of Buginium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00043",
+      "en_US": "{COLOR, 0, 255}pieces of Rockium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00044",
+      "en_US": "{COLOR, 0, 255}pieces of Ghostium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00045",
+      "en_US": "{COLOR, 0, 255}pieces of Dragonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00046",
+      "en_US": "{COLOR, 0, 255}pieces of Darkinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00047",
+      "en_US": "{COLOR, 0, 255}pieces of Steelium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00048",
+      "en_US": "{COLOR, 0, 255}pieces of Fairium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00049",
+      "en_US": "{COLOR, 0, 255}pieces of Pikanium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00050",
+      "en_US": "{COLOR, 0, 255}pieces of Decidium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00051",
+      "en_US": "{COLOR, 0, 255}pieces of Incinium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00052",
+      "en_US": "{COLOR, 0, 255}pieces of Primarium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00053",
+      "en_US": "{COLOR, 0, 255}pieces of Tapunium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00054",
+      "en_US": "{COLOR, 0, 255}pieces of Marshadium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00055",
+      "en_US": "{COLOR, 0, 255}pieces of Aloraichium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00056",
+      "en_US": "{COLOR, 0, 255}pieces of Snorlium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00057",
+      "en_US": "{COLOR, 0, 255}pieces of Eevium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00058",
+      "en_US": "{COLOR, 0, 255}pieces of Mewnium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00059",
+      "en_US": "{COLOR, 0, 255}pieces of Pikashunium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00060",
+      "en_US": "{COLOR, 0, 255}pieces of Pikashunium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00061",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00062",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00063",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00064",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00065",
+      "en_US": "{COLOR, 0, 255}Forage Bags{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00066",
+      "en_US": "{COLOR, 0, 255}Fishing Rods{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00067",
+      "en_US": "{COLOR, 0, 255}Professor’s Masks{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00068",
+      "en_US": "{COLOR, 0, 255}Festival Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00069",
+      "en_US": "{COLOR, 0, 255}Sparkling Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00070",
+      "en_US": "{COLOR, 0, 255}Adrenaline Orbs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00071",
+      "en_US": "{COLOR, 0, 255}Zygarde Cubes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00072",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00073",
+      "en_US": "{COLOR, 0, 255}Ice Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00074",
+      "en_US": "{COLOR, 0, 255}Ride Pagers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00075",
+      "en_US": "{COLOR, 0, 255}Beast Balls{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00076",
+      "en_US": "{COLOR, 0, 255}Big Malasadas{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00077",
+      "en_US": "{COLOR, 0, 255}jars of Red Nectar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00078",
+      "en_US": "{COLOR, 0, 255}jars of Yellow Nectar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00079",
+      "en_US": "{COLOR, 0, 255}jars of Pink Nectar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00080",
+      "en_US": "{COLOR, 0, 255}jars of Purple Nectar{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00081",
+      "en_US": "{COLOR, 0, 255}Sun Flutes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00082",
+      "en_US": "{COLOR, 0, 255}Moon Flutes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00083",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00084",
+      "en_US": "{COLOR, 0, 255}Enigmatic Cards{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00085",
+      "en_US": "{COLOR, 0, 255}Silver Razz Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00086",
+      "en_US": "{COLOR, 0, 255}Golden Razz Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00087",
+      "en_US": "{COLOR, 0, 255}Silver Nanab Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00088",
+      "en_US": "{COLOR, 0, 255}Golden Nanab Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00089",
+      "en_US": "{COLOR, 0, 255}Silver Pinap Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00090",
+      "en_US": "{COLOR, 0, 255}Golden Pinap Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00091",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00092",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00093",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00094",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00095",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00096",
+      "en_US": "{COLOR, 0, 255}Secret Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00097",
+      "en_US": "{COLOR, 0, 255}S.S. Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00098",
+      "en_US": "{COLOR, 0, 255}Silph Scopes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00099",
+      "en_US": "{COLOR, 0, 255}Parcels{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00100",
+      "en_US": "{COLOR, 0, 255}Card Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00101",
+      "en_US": "{COLOR, 0, 255}sets of Gold Teeth{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00102",
+      "en_US": "{COLOR, 0, 255}Lift Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00103",
+      "en_US": "{COLOR, 0, 255}Terrain Extenders{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00104",
+      "en_US": "{COLOR, 0, 255}sets of Protective Pads{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00105",
+      "en_US": "{COLOR, 0, 255}Electric Seeds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00106",
+      "en_US": "{COLOR, 0, 255}Psychic Seeds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00107",
+      "en_US": "{COLOR, 0, 255}Misty Seeds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00108",
+      "en_US": "{COLOR, 0, 255}Grassy Seeds{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00109",
+      "en_US": "{COLOR, 0, 255}Stretchy Springs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00110",
+      "en_US": "{COLOR, 0, 255}Chalky Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00111",
+      "en_US": "{COLOR, 0, 255}Marbles{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00112",
+      "en_US": "{COLOR, 0, 255}Lone Earrings{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00113",
+      "en_US": "{COLOR, 0, 255}pieces of Beach Glass{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00114",
+      "en_US": "{COLOR, 0, 255}Gold Leaves{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00115",
+      "en_US": "{COLOR, 0, 255}Silver Leaves{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00116",
+      "en_US": "{COLOR, 0, 255}Polished Mud Balls{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00117",
+      "en_US": "{COLOR, 0, 255}Tropical Shells{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00118",
+      "en_US": "{COLOR, 0, 255}Leaf Letters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00119",
+      "en_US": "{COLOR, 0, 255}Leaf Letters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00120",
+      "en_US": "{COLOR, 0, 255}Small Bouquets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00121",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00122",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00123",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00124",
+      "en_US": "{COLOR, 0, 255}Lures{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00125",
+      "en_US": "{COLOR, 0, 255}Super Lures{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00126",
+      "en_US": "{COLOR, 0, 255}Max Lures{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00127",
+      "en_US": "{COLOR, 0, 255}bags of Pewter Crunchies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00128",
+      "en_US": "{COLOR, 0, 255}Fighting Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00129",
+      "en_US": "{COLOR, 0, 255}Flying Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00130",
+      "en_US": "{COLOR, 0, 255}Poison Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00131",
+      "en_US": "{COLOR, 0, 255}Ground Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00132",
+      "en_US": "{COLOR, 0, 255}Rock Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00133",
+      "en_US": "{COLOR, 0, 255}Bug Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00134",
+      "en_US": "{COLOR, 0, 255}Ghost Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00135",
+      "en_US": "{COLOR, 0, 255}Steel Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00136",
+      "en_US": "{COLOR, 0, 255}Fire Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00137",
+      "en_US": "{COLOR, 0, 255}Water Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00138",
+      "en_US": "{COLOR, 0, 255}Grass Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00139",
+      "en_US": "{COLOR, 0, 255}Electric Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00140",
+      "en_US": "{COLOR, 0, 255}Psychic Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00141",
+      "en_US": "{COLOR, 0, 255}Ice Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00142",
+      "en_US": "{COLOR, 0, 255}Dragon Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00143",
+      "en_US": "{COLOR, 0, 255}Dark Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00144",
+      "en_US": "{COLOR, 0, 255}Fairy Memories{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00145",
+      "en_US": "{COLOR, 0, 255}pieces of Solganium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00146",
+      "en_US": "{COLOR, 0, 255}pieces of Lunalium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00147",
+      "en_US": "{COLOR, 0, 255}pieces of Ultranecrozium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00148",
+      "en_US": "{COLOR, 0, 255}pieces of Mimikium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00149",
+      "en_US": "{COLOR, 0, 255}pieces of Lycanium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00150",
+      "en_US": "{COLOR, 0, 255}pieces of Kommonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00151",
+      "en_US": "{COLOR, 0, 255}pieces of Solganium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00152",
+      "en_US": "{COLOR, 0, 255}pieces of Lunalium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00153",
+      "en_US": "{COLOR, 0, 255}pieces of Ultranecrozium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00154",
+      "en_US": "{COLOR, 0, 255}pieces of Mimikium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00155",
+      "en_US": "{COLOR, 0, 255}pieces of Lycanium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00156",
+      "en_US": "{COLOR, 0, 255}pieces of Kommonium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00157",
+      "en_US": "{COLOR, 0, 255}Z-Power Rings{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00158",
+      "en_US": "{COLOR, 0, 255}Pink Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00159",
+      "en_US": "{COLOR, 0, 255}Orange Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00160",
+      "en_US": "{COLOR, 0, 255}Blue Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00161",
+      "en_US": "{COLOR, 0, 255}Red Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00162",
+      "en_US": "{COLOR, 0, 255}Green Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00163",
+      "en_US": "{COLOR, 0, 255}Yellow Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00164",
+      "en_US": "{COLOR, 0, 255}Purple Petals{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00165",
+      "en_US": "{COLOR, 0, 255}Rainbow Flowers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00166",
+      "en_US": "{COLOR, 0, 255}Surge Badges{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00167",
+      "en_US": "{COLOR, 0, 255}N-Solarizers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00168",
+      "en_US": "{COLOR, 0, 255}N-Lunarizers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00169",
+      "en_US": "{COLOR, 0, 255}N-Solarizers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00170",
+      "en_US": "{COLOR, 0, 255}N-Lunarizers{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00171",
+      "en_US": "{COLOR, 0, 255}pieces of Ilima’s Normalium Z{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00172",
+      "en_US": "{COLOR, 0, 255}Left Poké Balls{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00173",
+      "en_US": "{COLOR, 0, 255}Roto Hatches{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00174",
+      "en_US": "{COLOR, 0, 255}Roto Bargains{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00175",
+      "en_US": "{COLOR, 0, 255}Roto Prize Money{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00176",
+      "en_US": "{COLOR, 0, 255}Roto Exp. Points{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00177",
+      "en_US": "{COLOR, 0, 255}Roto Friendships{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00178",
+      "en_US": "{COLOR, 0, 255}Roto Encounters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00179",
+      "en_US": "{COLOR, 0, 255}Roto Stealths{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00180",
+      "en_US": "{COLOR, 0, 255}Roto HP Restores{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00181",
+      "en_US": "{COLOR, 0, 255}Roto PP Restores{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00182",
+      "en_US": "{COLOR, 0, 255}Roto Boosts{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00183",
+      "en_US": "{COLOR, 0, 255}Roto Catches{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00184",
+      "en_US": "{COLOR, 0, 255}Health Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00185",
+      "en_US": "{COLOR, 0, 255}Mighty Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00186",
+      "en_US": "{COLOR, 0, 255}Tough Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00187",
+      "en_US": "{COLOR, 0, 255}Smart Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00188",
+      "en_US": "{COLOR, 0, 255}Courage Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00189",
+      "en_US": "{COLOR, 0, 255}Quick Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00190",
+      "en_US": "{COLOR, 0, 255}Health Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00191",
+      "en_US": "{COLOR, 0, 255}Mighty Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00192",
+      "en_US": "{COLOR, 0, 255}Tough Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00193",
+      "en_US": "{COLOR, 0, 255}Smart Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00194",
+      "en_US": "{COLOR, 0, 255}Courage Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00195",
+      "en_US": "{COLOR, 0, 255}Quick Candies L{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00196",
+      "en_US": "{COLOR, 0, 255}Health Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00197",
+      "en_US": "{COLOR, 0, 255}Mighty Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00198",
+      "en_US": "{COLOR, 0, 255}Tough Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00199",
+      "en_US": "{COLOR, 0, 255}Smart Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00200",
+      "en_US": "{COLOR, 0, 255}Courage Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00201",
+      "en_US": "{COLOR, 0, 255}Quick Candies XL{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00202",
+      "en_US": "{COLOR, 0, 255}Bulbasaur Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00203",
+      "en_US": "{COLOR, 0, 255}Charmander Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00204",
+      "en_US": "{COLOR, 0, 255}Squirtle Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00205",
+      "en_US": "{COLOR, 0, 255}Caterpie Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00206",
+      "en_US": "{COLOR, 0, 255}Weedle Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00207",
+      "en_US": "{COLOR, 0, 255}Pidgey Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00208",
+      "en_US": "{COLOR, 0, 255}Rattata Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00209",
+      "en_US": "{COLOR, 0, 255}Spearow Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00210",
+      "en_US": "{COLOR, 0, 255}Ekans Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00211",
+      "en_US": "{COLOR, 0, 255}Pikachu Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00212",
+      "en_US": "{COLOR, 0, 255}Sandshrew Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00213",
+      "en_US": "{COLOR, 0, 255}Nidoran♀ Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00214",
+      "en_US": "{COLOR, 0, 255}Nidoran♂ Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00215",
+      "en_US": "{COLOR, 0, 255}Clefairy Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00216",
+      "en_US": "{COLOR, 0, 255}Vulpix Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00217",
+      "en_US": "{COLOR, 0, 255}Jigglypuff Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00218",
+      "en_US": "{COLOR, 0, 255}Zubat Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00219",
+      "en_US": "{COLOR, 0, 255}Oddish Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00220",
+      "en_US": "{COLOR, 0, 255}Paras Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00221",
+      "en_US": "{COLOR, 0, 255}Venonat Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00222",
+      "en_US": "{COLOR, 0, 255}Diglett Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00223",
+      "en_US": "{COLOR, 0, 255}Meowth Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00224",
+      "en_US": "{COLOR, 0, 255}Psyduck Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00225",
+      "en_US": "{COLOR, 0, 255}Mankey Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00226",
+      "en_US": "{COLOR, 0, 255}Growlithe Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00227",
+      "en_US": "{COLOR, 0, 255}Poliwag Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00228",
+      "en_US": "{COLOR, 0, 255}Abra Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00229",
+      "en_US": "{COLOR, 0, 255}Machop Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00230",
+      "en_US": "{COLOR, 0, 255}Bellsprout Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00231",
+      "en_US": "{COLOR, 0, 255}Tentacool Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00232",
+      "en_US": "{COLOR, 0, 255}Geodude Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00233",
+      "en_US": "{COLOR, 0, 255}Ponyta Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00234",
+      "en_US": "{COLOR, 0, 255}Slowpoke Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00235",
+      "en_US": "{COLOR, 0, 255}Magnemite Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00236",
+      "en_US": "{COLOR, 0, 255}Farfetch’d Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00237",
+      "en_US": "{COLOR, 0, 255}Doduo Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00238",
+      "en_US": "{COLOR, 0, 255}Seel Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00239",
+      "en_US": "{COLOR, 0, 255}Grimer Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00240",
+      "en_US": "{COLOR, 0, 255}Shellder Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00241",
+      "en_US": "{COLOR, 0, 255}Gastly Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00242",
+      "en_US": "{COLOR, 0, 255}Onix Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00243",
+      "en_US": "{COLOR, 0, 255}Drowzee Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00244",
+      "en_US": "{COLOR, 0, 255}Krabby Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00245",
+      "en_US": "{COLOR, 0, 255}Voltorb Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00246",
+      "en_US": "{COLOR, 0, 255}Exeggcute Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00247",
+      "en_US": "{COLOR, 0, 255}Cubone Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00248",
+      "en_US": "{COLOR, 0, 255}Hitmonlee Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00249",
+      "en_US": "{COLOR, 0, 255}Hitmonchan Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00250",
+      "en_US": "{COLOR, 0, 255}Lickitung Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00251",
+      "en_US": "{COLOR, 0, 255}Koffing Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00252",
+      "en_US": "{COLOR, 0, 255}Rhyhorn Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00253",
+      "en_US": "{COLOR, 0, 255}Chansey Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00254",
+      "en_US": "{COLOR, 0, 255}Tangela Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00255",
+      "en_US": "{COLOR, 0, 255}Kangaskhan Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00256",
+      "en_US": "{COLOR, 0, 255}Horsea Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00257",
+      "en_US": "{COLOR, 0, 255}Goldeen Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00258",
+      "en_US": "{COLOR, 0, 255}Staryu Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00259",
+      "en_US": "{COLOR, 0, 255}Mr. Mime Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00260",
+      "en_US": "{COLOR, 0, 255}Scyther Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00261",
+      "en_US": "{COLOR, 0, 255}Jynx Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00262",
+      "en_US": "{COLOR, 0, 255}Electabuzz Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00263",
+      "en_US": "{COLOR, 0, 255}Pinsir Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00264",
+      "en_US": "{COLOR, 0, 255}Tauros Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00265",
+      "en_US": "{COLOR, 0, 255}Magikarp Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00266",
+      "en_US": "{COLOR, 0, 255}Lapras Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00267",
+      "en_US": "{COLOR, 0, 255}Ditto Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00268",
+      "en_US": "{COLOR, 0, 255}Eevee Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00269",
+      "en_US": "{COLOR, 0, 255}Porygon Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00270",
+      "en_US": "{COLOR, 0, 255}Omanyte Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00271",
+      "en_US": "{COLOR, 0, 255}Kabuto Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00272",
+      "en_US": "{COLOR, 0, 255}Aerodactyl Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00273",
+      "en_US": "{COLOR, 0, 255}Snorlax Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00274",
+      "en_US": "{COLOR, 0, 255}Articuno Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00275",
+      "en_US": "{COLOR, 0, 255}Zapdos Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00276",
+      "en_US": "{COLOR, 0, 255}Moltres Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00277",
+      "en_US": "{COLOR, 0, 255}Dratini Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00278",
+      "en_US": "{COLOR, 0, 255}Mewtwo Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00279",
+      "en_US": "{COLOR, 0, 255}Mew Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00280",
+      "en_US": "{COLOR, 0, 255}Meltan Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00281",
+      "en_US": "{COLOR, 0, 255}Magmar Candies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0844_00282",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00283",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00284",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00285",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00286",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00287",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00288",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00289",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00290",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00291",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00292",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00293",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00294",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00295",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00296",
+      "en_US": "???"
+    },
+    {
+      "id": "msg_0844_00297",
+      "en_US": "???"
+    }
+  ]
+}

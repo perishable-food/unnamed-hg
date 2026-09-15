@@ -1,0 +1,55 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0064
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	SetVar 0x40A7 1
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	Movement Player Action#1
+	Movement Following Action#2
+	WaitMovement
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+	Movement Player Action#1
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 221 0 15 3 Down
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 2:
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 221 0 15 3 Down
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkEast4 0x1
+	SetInvisible 0x1
+End
+
+Action 2:
+	WalkEast4 0x1
+	SetInvisible 0x1
+End
+

@@ -1,0 +1,124 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0100
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetVar 0x4000 12
+	SetVar 0x4001 12
+Jump Function#1
+
+Script 2:
+	SetVar 0x4000 10
+	SetVar 0x4001 21
+Jump Function#1
+
+Script 3:
+	SetVar 0x4000 20
+	SetVar 0x4001 10
+Jump Function#1
+
+Script 4:
+	SetVar 0x4000 21
+	SetVar 0x4001 23
+Jump Function#1
+
+//===== FUNCTIONS =====//
+Function 1:
+	MecScript
+	LockAll
+	SetVar 0x40AB 1
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#2
+	Movement Player Action#1
+	Movement Following Action#2
+Jump Function#3
+
+Function 2:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#4
+	Movement Player Action#3
+	Movement Following Action#4
+Jump Function#3
+
+Function 3:
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 238 0 0x4000 0x4001 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 4:
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#5
+	Movement Player Action#5
+	Movement Following Action#6
+Jump Function#3
+
+Function 5:
+	Movement Player Action#7
+	Movement Following Action#8
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 238 0 0x4000 0x4001 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkOnSpotNorth2 0x4
+	SetInvisible 0x1
+End
+
+Action 2:
+	Delay4 0x3
+	WalkNorth2 0x1
+	SetInvisible 0x1
+End
+
+Action 3:
+	WalkOnSpotSouth2 0x4
+	SetInvisible 0x1
+End
+
+Action 4:
+	Delay4 0x3
+	WalkSouth2 0x1
+	SetInvisible 0x1
+End
+
+Action 5:
+	WalkOnSpotWest2 0x4
+	SetInvisible 0x1
+End
+
+Action 6:
+	Delay4 0x3
+	WalkWest2 0x1
+	SetInvisible 0x1
+End
+
+Action 7:
+	WalkOnSpotEast2 0x4
+	SetInvisible 0x1
+End
+
+Action 8:
+	Delay4 0x3
+	WalkEast2 0x1
+	SetInvisible 0x1
+End
+

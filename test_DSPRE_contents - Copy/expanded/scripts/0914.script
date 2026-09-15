@@ -1,0 +1,162 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0914
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetVar 0x8007 0
+	CommonScript 2002
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 5:
+	CheckTrainerFlag TRAINER_CHARLOTTE_728
+	JumpIf EQUAL Function#1
+	CompareVarValue 0x4007 77
+	JumpIf EQUAL Function#2
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 3
+	SetVar 0x4007 77
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#3
+	Movement Overworld.7 Action#1
+Jump Function#4
+
+//===== FUNCTIONS =====//
+Function 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 8
+Jump Function#5
+
+Function 3:
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.7 Action#2
+	WaitMovement
+	Message 4
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+	Message 5
+	CloseMessage
+	TrainerBattle TRAINER_CHARLOTTE_728 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	SetTrainerFlag TRAINER_CHARLOTTE_728
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitMovement
+	Message 4
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+	Message 5
+	CloseMessage
+	TrainerBattle TRAINER_CHARLOTTE_728 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	SetTrainerFlag TRAINER_CHARLOTTE_728
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#6
+	Message 5
+	CloseMessage
+	TrainerBattle TRAINER_CHARLOTTE_728 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	SetTrainerFlag TRAINER_CHARLOTTE_728
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	LostBattle
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkOnSpotEast8 0x1
+End
+
+Action 2:
+	WalkOnSpotSouth8 0x1
+End
+

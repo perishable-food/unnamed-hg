@@ -1,0 +1,86 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0864
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 113
+	JumpIf EQUAL Function#1
+	Message 1
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+Jump Function#3
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	CloseMessage
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	PartyPokemonTradeScreen
+	GetSelectedPartySlot 0x800C
+	ReturnScreen
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	CompareVarValue 0x800C 255
+	JumpIf EQUAL Function#3
+	InitTrade 0
+	SetVarFromVariable 0x8004 0x800C
+	GetPartyPokemonID 0x8004 0x8005
+	GetRequestedPokemon 0x800C
+	CompareVars 0x8005 0x800C
+	JumpIf DIFFERENT Function#4
+	TradePokemonScreen 0x8004
+	EndTrade
+	SetFlag 113
+	Message 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	EndTrade
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

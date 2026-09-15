@@ -1,0 +1,202 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0238
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	UpdateDayCareMonOverworlds
+End
+
+Script 2:
+	MecScript
+	LockAll
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Overworld.1 Action#1
+	Movement Overworld.2 Action#2
+	Movement Player Action#3
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextPlayerName 0
+	GenderMessage 0 10
+	CloseMessage
+	GenderMessage 1 11
+	CloseMessage
+	Movement Overworld.1 Action#4
+	WaitMovement
+	GenderMessage 2 12
+	CloseMessage
+	GenderMessage 3 13
+	CloseMessage
+	Movement Overworld.1 Action#5
+	WaitMovement
+	GenderMessage 4 14
+	CloseMessage
+	Movement Overworld.1 Action#6
+	Movement Overworld.2 Action#7
+	WaitMovement
+	GenderMessage 5 15
+	CloseMessage
+	Movement Overworld.1 Action#8
+	Movement Overworld.2 Action#9
+	WaitMovement
+	Movement Player Action#10
+	WaitMovement
+	GenderMessage 6 16
+	CloseMessage
+	CheckPlayerGender 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#1
+	RecordPokegearNumber 4
+Jump Function#2
+
+//===== FUNCTIONS =====//
+Function 1:
+	RecordPokegearNumber 3
+	TextPlayerName 0
+	GenderMessage 7 17
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	Movement Overworld.1 Action#11
+	WaitMovement
+	GenderMessage 8 18
+	CloseMessage
+	Movement Overworld.1 Action#12
+	Movement Overworld.2 Action#13
+	WaitMovement
+	GenderMessage 9 19
+	CloseMessage
+	Movement Overworld.1 Action#14
+	Movement Overworld.2 Action#15
+	Movement Player Action#16
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	RemoveOW Overworld.1
+	RemoveOW Overworld.2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetVar 0x408E 2
+	SetFlag 557
+	ReleaseAll
+End
+
+Function 2:
+	TextPlayerName 0
+	GenderMessage 7 17
+	PlaySound SEQ_ME_POKEGEAR_REGIST
+	WaitSound
+	Movement Overworld.1 Action#11
+	WaitMovement
+	GenderMessage 8 18
+	CloseMessage
+	Movement Overworld.1 Action#12
+	Movement Overworld.2 Action#13
+	WaitMovement
+	GenderMessage 9 19
+	CloseMessage
+	Movement Overworld.1 Action#14
+	Movement Overworld.2 Action#15
+	Movement Player Action#16
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	RemoveOW Overworld.1
+	RemoveOW Overworld.2
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	SetVar 0x408E 2
+	SetFlag 557
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	Delay8 0x1
+	WalkNorth8 0x3
+End
+
+Action 2:
+	WalkNorth4 0x3
+	JumpOnSpotNorth8 0x2
+End
+
+Action 3:
+	Delay8 0x1
+	WalkNorth8 0x3
+End
+
+Action 4:
+	EmoteExclamation 0x1
+End
+
+Action 5:
+	WalkOnSpotSouth8 0x1
+End
+
+Action 6:
+	WalkWest8 0x1
+	WalkSouth8 0x3
+	Delay8 0x1
+	EmoteExclamation 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 7:
+	WalkWest8 0x2
+	WalkSouth8 0x2
+End
+
+Action 8:
+	Delay8 0x1
+	WalkNorth8 0x1
+	WalkOnSpotEast8 0x1
+End
+
+Action 9:
+	WalkOnSpotEast8 0x1
+	LockDir 0x1
+	JumpWest8 0x1
+	ReleaseDir 0x1
+End
+
+Action 10:
+	WalkOnSpotWest8 0x1
+End
+
+Action 11:
+	WalkOnSpotEast8 0x1
+End
+
+Action 12:
+	WalkOnSpotNorth8 0x1
+End
+
+Action 13:
+	WalkOnSpotNorth8 0x1
+End
+
+Action 14:
+	WalkSouth8 0x2
+	WalkEast8 0x1
+	WalkSouth8 0x1
+	SetInvisible 0x1
+End
+
+Action 15:
+	Delay8 0x1
+	JumpOnSpotNorth8 0x2
+	Delay8 0x1
+	WalkSouth4 0x3
+	WalkEast4 0x2
+	WalkOnSpotSouth4 0x1
+End
+
+Action 16:
+	Delay8 0x2
+	WalkOnSpotSouth8 0x1
+End
+

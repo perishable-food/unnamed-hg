@@ -1,0 +1,163 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0065
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#1
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#3
+	Movement Player Action#1
+Jump Function#4
+
+Script 2:
+	CheckFlag 393
+	JumpIf LESS Function#5
+	ClearFlag 393
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Movement Player Action#2
+	Movement Overworld.3 Action#3
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#6
+	Movement Following Action#4
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 27
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#6
+	Movement Following Action#4
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 27
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 3
+	JumpIf EQUAL Function#7
+	CompareVarValue 0x4000 6
+	JumpIf EQUAL Function#7
+	SetFlag 638
+End
+
+Function 6:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 27
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	ClearFlag 638
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 2:
+	WalkNorth8 0x1
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 3:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 4:
+	WalkEast8 0x1
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+

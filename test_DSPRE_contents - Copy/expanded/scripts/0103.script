@@ -1,0 +1,147 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0103
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 279
+	JumpIf EQUAL Function#1
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf EQUAL Function#2
+	CheckFlag 262
+	JumpIf EQUAL Function#3
+	CheckFlag 148
+	JumpIf EQUAL Function#4
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	CompareVarValue 0x4003 111
+	JumpIf DIFFERENT Function#5
+	CheckFlag 262
+	JumpIf EQUAL Function#6
+	SetVar 0x4003 0
+End
+
+Script 3:
+	WaitTime 60 0x800C
+	Message 3
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#7
+	Movement Overworld.0 Action#1
+Jump Function#8
+
+Script 4:
+	SetVar 0x4003 111
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	CheckFlag 262
+	JumpIf EQUAL Function#3
+	CheckFlag 148
+	JumpIf EQUAL Function#4
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	CheckVersion 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf DIFFERENT Function#9
+	CheckFlag 265
+	JumpIf EQUAL Function#10
+	CheckFlag 261
+	JumpIf EQUAL Function#11
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	Message 2
+	CloseMessage
+	ShowLegendaryWing 1
+	ReleaseAll
+	SetFlag 262
+End
+
+Function 5:
+	SetVar 0x4003 0
+End
+
+Function 6:
+	SetOWPosition Overworld.0 34 1 29 Right
+	SetVar 0x4003 0
+End
+
+Function 7:
+	Movement Overworld.0 Action#2
+	WaitMovement
+	WaitTime 30 0x800C
+End
+
+Function 8:
+	WaitMovement
+	WaitTime 30 0x800C
+End
+
+Function 9:
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceEast 0x1
+	LockDir 0x1
+	WalkWest8 0x1
+	ReleaseDir 0x1
+End
+
+Action 2:
+	FaceSouth 0x1
+	LockDir 0x1
+	WalkNorth8 0x1
+	ReleaseDir 0x1
+End
+

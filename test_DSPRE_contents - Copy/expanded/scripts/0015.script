@@ -1,0 +1,466 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0015
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf GREATER/EQUAL Function#1
+	CheckBadge 14 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_BLAINE_259 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	GiveBadge 14
+	IncrementVar 0x4135 1
+	SetFlag 613
+	SetFlag 665
+	ClearFlag 666
+	AddTrainerScore 22
+	SetFlag 319
+	SetFlag 320
+	SetFlag 316
+	Message 1
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	Message 3
+Jump Function#4
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 14 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	Message 24
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 3:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 315
+	JumpIf EQUAL Function#6
+	Message 6
+	CloseMessage
+	TrainerBattle TRAINER_CARY_689 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 8
+	CloseMessage
+	Movement Overworld.5 Action#1
+	WaitMovement
+	SetFlag 315
+	ReleaseAll
+End
+
+Script 4:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 316
+	JumpIf EQUAL Function#7
+	Message 9
+	CloseMessage
+	TrainerBattle TRAINER_WALDO_690 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 11
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#8
+	Movement Overworld.6 Action#2
+Jump Function#9
+
+Script 5:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 317
+	JumpIf EQUAL Function#10
+	Message 12
+	CloseMessage
+	TrainerBattle TRAINER_MERLE_691 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 14
+	CloseMessage
+	Movement Overworld.7 Action#3
+	WaitMovement
+	SetFlag 317
+	ReleaseAll
+End
+
+Script 6:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 318
+	JumpIf EQUAL Function#11
+	Message 15
+	CloseMessage
+	TrainerBattle TRAINER_LOWELL_692 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 17
+	CloseMessage
+	Movement Overworld.2 Action#4
+	WaitMovement
+	SetFlag 318
+	ReleaseAll
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 319
+	JumpIf EQUAL Function#12
+	Message 18
+	CloseMessage
+	TrainerBattle TRAINER_LINDEN_693 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 20
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#13
+	Movement Overworld.3 Action#5
+Jump Function#14
+
+Script 8:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 320
+	JumpIf EQUAL Function#15
+	Message 21
+	CloseMessage
+	TrainerBattle TRAINER_DANIEL_694 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	Message 23
+	CloseMessage
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#16
+	Movement Overworld.4 Action#6
+Jump Function#17
+
+Script 9:
+	CheckFlag 315
+	CallIf EQUAL Function#18
+	CheckFlag 317
+	CallIf EQUAL Function#19
+	CheckFlag 318
+	CallIf EQUAL Function#20
+End
+
+Script 10:
+	CheckPokeGearRematch 30 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#21
+	CheckPokegearNumberRegistered 30 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#22
+	CheckBadge 15 0x4002
+	CompareVarValue 0x4002 1
+	JumpIf EQUAL Function#23
+	ClearFlag 757
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	CheckBadge 14 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#2
+	Message 0
+	CloseMessage
+	AdrsValueSet 0x20436D4 14
+	FlashAnimation
+	AdrsValueSet 0x20436D4 0
+	TrainerBattle TRAINER_BLAINE_726 TRAINER_BLAINE_726 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	GiveBadge 14
+	IncrementVar 0x4135 1
+	SetFlag 613
+	SetFlag 665
+	ClearFlag 666
+	AddTrainerScore 22
+	SetFlag 319
+	SetFlag 320
+	SetFlag 316
+	Message 1
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	Message 3
+Jump Function#4
+
+Function 2:
+	CheckFlag 381
+	JumpIf LESS Function#4
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	LostBattle
+	ReleaseAll
+End
+
+Function 4:
+	SetVar 0x8004 377
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#24
+	CommonScript 2033
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf EQUAL Function#25
+	CompareVarValue 0x800C 7
+	JumpIf LESS/EQUAL Function#26
+	SetFlag 381
+	TextPlayerName 0
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	Message 25
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	Movement Overworld.6 Action#7
+	WaitMovement
+	SetFlag 316
+	ReleaseAll
+End
+
+Function 9:
+	WaitMovement
+	SetFlag 316
+	ReleaseAll
+End
+
+Function 10:
+	Message 13
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	Message 16
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	Movement Overworld.3 Action#8
+	WaitMovement
+	SetFlag 319
+	ReleaseAll
+End
+
+Function 14:
+	WaitMovement
+	SetFlag 319
+	ReleaseAll
+End
+
+Function 15:
+	Message 22
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 16:
+	Movement Overworld.4 Action#9
+	WaitMovement
+	SetFlag 320
+	ReleaseAll
+End
+
+Function 17:
+	WaitMovement
+	SetFlag 320
+	ReleaseAll
+End
+
+Function 18:
+	SetOWPosition Overworld.5 21 0 14 Left
+Return
+
+Function 19:
+	SetOWPosition Overworld.7 9 0 13 Up
+Return
+
+Function 20:
+	SetOWPosition Overworld.2 15 0 16 Down
+Return
+
+Function 21:
+	SetFlag 757
+End
+
+Function 22:
+	GetDayOfWeek 0x4002
+	CompareVarValue 0x4002 4
+	JumpIf DIFFERENT Function#27
+	SetFlag 757
+Jump Function#28
+
+Function 23:
+	GetDayOfWeek 0x4002
+	CompareVarValue 0x4002 2
+	JumpIf DIFFERENT Function#29
+	SetFlag 757
+Jump Function#30
+
+Function 24:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+Function 25:
+	IncrementVar 0x416F 15
+	SetFlag 381
+	TextPlayerName 0
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 26:
+	IncrementVar 0x416F 10
+	SetFlag 381
+	TextPlayerName 0
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 27:
+	ClearFlag 757
+End
+
+Function 28:
+End
+
+Function 29:
+	ClearFlag 757
+End
+
+Function 30:
+End
+
+//===== ACTIONS =====//
+Action 1:
+	WalkEast8 0x1
+	FaceWest 0x1
+End
+
+Action 2:
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 3:
+	WalkSouth8 0x1
+	FaceNorth 0x1
+End
+
+Action 4:
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 5:
+	WalkEast8 0x1
+	FaceWest 0x1
+End
+
+Action 6:
+	WalkWest8 0x1
+	FaceEast 0x1
+End
+
+Action 7:
+	WalkSouth8 0x1
+	FaceNorth 0x1
+End
+
+Action 8:
+	WalkWest8 0x1
+	FaceEast 0x1
+End
+
+Action 9:
+	WalkEast8 0x1
+	FaceWest 0x1
+End
+

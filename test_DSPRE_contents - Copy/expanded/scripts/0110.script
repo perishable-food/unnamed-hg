@@ -1,0 +1,315 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0110
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	WaitMovement
+	ClearFlag 522
+	AddOW Overworld.0
+	CommonScript 2031
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 37
+	JumpIf DIFFERENT Function#1
+	Movement Overworld.0 Action#2
+Jump Function#2
+
+Script 2:
+End
+
+Script 3:
+	SetVar 0x4000 57
+	SetVar 0x4001 42
+Jump Function#3
+
+Script 4:
+	SetVar 0x4000 28
+	SetVar 0x4001 38
+Jump Function#3
+
+Script 5:
+	SetVar 0x4000 31
+	SetVar 0x4001 44
+Jump Function#3
+
+Script 6:
+	SetVar 0x4000 22
+	SetVar 0x4001 17
+Jump Function#3
+
+Script 7:
+	SetVar 0x4000 58
+	SetVar 0x4001 28
+Jump Function#3
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x4000 38
+	JumpIf DIFFERENT Function#4
+	Movement Overworld.0 Action#3
+Jump Function#2
+
+Function 2:
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextPlayerName 0
+	Message 0
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#5
+	TrainerBattle TRAINER_SILVER_268 TRAINER_NONE 0 0
+Jump Function#6
+
+Function 3:
+	MecScript
+	LockAll
+	SetVar 0x40CA 1
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#7
+	Movement Player Action#5
+	Movement Following Action#6
+Jump Function#8
+
+Function 4:
+	Movement Overworld.0 Action#7
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#4
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	TextPlayerName 0
+	Message 0
+	CloseMessage
+	CheckStarter 0x800C
+	CompareVarValue 0x800C 956
+	JumpIf DIFFERENT Function#5
+	TrainerBattle TRAINER_SILVER_268 TRAINER_NONE 0 0
+Jump Function#6
+
+Function 5:
+	CompareVarValue 0x800C 703
+	JumpIf DIFFERENT Function#9
+	TrainerBattle TRAINER_SILVER_272 TRAINER_NONE 0 0
+Jump Function#6
+
+Function 6:
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	CommonScript 2070
+	Message 1
+	CloseMessage
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 37
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.0 Action#8
+Jump Function#12
+
+Function 7:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#13
+	Movement Player Action#9
+	Movement Following Action#10
+Jump Function#8
+
+Function 8:
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 178 0 0x4000 0x4001 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 9:
+	TrainerBattle TRAINER_SILVER_264 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	CommonScript 2070
+	Message 1
+	CloseMessage
+	GetPlayerPosition 0x4000 0x4001
+	CompareVarValue 0x4000 37
+	JumpIf DIFFERENT Function#11
+	Movement Overworld.0 Action#8
+Jump Function#12
+
+Function 10:
+	RemoveOW Overworld.0
+	SetFlag 522
+	LostBattle
+	ReleaseAll
+End
+
+Function 11:
+	CompareVarValue 0x4000 38
+	JumpIf DIFFERENT Function#14
+	Movement Overworld.0 Action#11
+Jump Function#12
+
+Function 12:
+	WaitMovement
+	SetFlag 522
+	RemoveOW Overworld.0
+	CommonScript 2071
+	SetVar 0x40C5 1
+	ReleaseAll
+End
+
+Function 13:
+	CompareVarValue 0x800C 3
+	JumpIf DIFFERENT Function#15
+	Movement Player Action#12
+	Movement Following Action#13
+Jump Function#8
+
+Function 14:
+	Movement Overworld.0 Action#14
+	WaitMovement
+	SetFlag 522
+	RemoveOW Overworld.0
+	CommonScript 2071
+	SetVar 0x40C5 1
+	ReleaseAll
+End
+
+Function 15:
+	Movement Player Action#15
+	Movement Following Action#16
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 178 0 0x4000 0x4001 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+	Delay8 0x2
+	FaceSouth 0x2
+End
+
+Action 2:
+	WalkNorth4 0x3
+	FaceEast 0x2
+	WalkEast4 0x4
+	FaceNorth 0x2
+	WalkNorth4 0x3
+End
+
+Action 3:
+	WalkNorth4 0x3
+	FaceEast 0x2
+	WalkEast4 0x5
+	FaceNorth 0x2
+	WalkNorth4 0x3
+End
+
+Action 4:
+	WalkSouth16 0x1
+End
+
+Action 5:
+	WalkOnSpotNorth2 0x4
+	SetInvisible 0x1
+End
+
+Action 6:
+	Delay4 0x3
+	WalkNorth2 0x1
+	SetInvisible 0x1
+End
+
+Action 7:
+	WalkNorth4 0x3
+	FaceEast 0x2
+	WalkEast4 0x6
+	FaceNorth 0x2
+	WalkNorth4 0x3
+End
+
+Action 8:
+	FaceSouth 0x2
+	WalkSouth8 0x2
+	FaceWest 0x2
+	WalkWest8 0x5
+	FaceSouth 0x2
+	WalkSouth8 0x7
+End
+
+Action 9:
+	WalkOnSpotSouth2 0x4
+	SetInvisible 0x1
+End
+
+Action 10:
+	Delay4 0x3
+	WalkSouth2 0x1
+	SetInvisible 0x1
+End
+
+Action 11:
+	FaceSouth 0x2
+	WalkSouth8 0x2
+	FaceWest 0x2
+	WalkWest8 0x6
+	FaceSouth 0x2
+	WalkSouth8 0x7
+End
+
+Action 12:
+	WalkOnSpotEast2 0x4
+	SetInvisible 0x1
+End
+
+Action 13:
+	Delay4 0x3
+	WalkEast2 0x1
+	SetInvisible 0x1
+End
+
+Action 14:
+	FaceSouth 0x2
+	WalkSouth8 0x2
+	FaceWest 0x2
+	WalkWest8 0x7
+	FaceSouth 0x2
+	WalkSouth8 0x7
+End
+
+Action 15:
+	WalkOnSpotWest2 0x4
+	SetInvisible 0x1
+End
+
+Action 16:
+	Delay4 0x3
+	WalkWest2 0x1
+	SetInvisible 0x1
+End
+

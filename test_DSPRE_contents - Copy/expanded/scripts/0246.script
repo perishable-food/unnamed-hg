@@ -1,0 +1,138 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0246
+ * Generated: 9/2/2026 12:10:05 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 0
+	JumpIf DIFFERENT Function#1
+	ClearFlag 451
+Jump Function#2
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetFirstAlivePokemonSlot 0x8002
+	CheckRibbon 0x800C 0x8002 65
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#3
+	CheckFlag 2748
+	JumpIf EQUAL Function#4
+	CompareVarValue 0x4094 7
+	JumpIf EQUAL Function#5
+	CheckFlag 165
+	JumpIf EQUAL Function#6
+	GetDayOfWeek 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#7
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 27
+Jump Function#8
+
+Script 3:
+	SetIconBoard 0 1 3 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 4:
+	SetTextBoard 3 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 1 0x800C
+	CommonScript 2000
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	SetFlag 451
+End
+
+Function 2:
+End
+
+Function 3:
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 53
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 55
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	GetDayOfWeek 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#9
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 27
+Jump Function#8
+
+Function 6:
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 26
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 24
+	SetVar 0x8004 242
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#10
+	CommonScript 2033
+	SetFlag 165
+	IncrementVar 0x4094 1
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 25
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	GetCommonMessageArchive 0 0x800C
+	MessageFromArchive 0x800C 52
+	TextPartyPokemon 0 0x8002
+	MessageFromArchive 0x800C 54
+	GiveRibbon 0x8002 65
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	SetFlag 2748
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 10:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

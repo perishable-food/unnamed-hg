@@ -1,0 +1,553 @@
+{
+  "key": 22346,
+  "messages": [
+    {
+      "id": "msg_0840_00000",
+      "en_US": "{COLOR, 0, 255}Weakness Policies{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00001",
+      "en_US": "{COLOR, 0, 255}Assault Vests{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00002",
+      "en_US": "{COLOR, 0, 255}Holo Casters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00003",
+      "en_US": "{COLOR, 0, 255}Prof’s Letters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00004",
+      "en_US": "{COLOR, 0, 255}pairs of Roller Skates{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00005",
+      "en_US": "{COLOR, 0, 255}Pixie Plates{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00006",
+      "en_US": "{COLOR, 0, 255}Ability Capsules{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00007",
+      "en_US": "{COLOR, 0, 255}dollops of Whipped Dream{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00008",
+      "en_US": "{COLOR, 0, 255}Sachets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00009",
+      "en_US": "{COLOR, 0, 255}clumps of Luminous Moss{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00010",
+      "en_US": "{COLOR, 0, 255}Snowballs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00011",
+      "en_US": "{COLOR, 0, 255}pairs of Safety Goggles{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00012",
+      "en_US": "{COLOR, 0, 255}Poké Flutes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00013",
+      "en_US": "{COLOR, 0, 255}bags of Rich Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00014",
+      "en_US": "{COLOR, 0, 255}bags of Surprise Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00015",
+      "en_US": "{COLOR, 0, 255}bags of Boost Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00016",
+      "en_US": "{COLOR, 0, 255}bags of Amaze Mulch{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00017",
+      "en_US": "{COLOR, 0, 255}Gengarites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00018",
+      "en_US": "{COLOR, 0, 255}Gardevoirites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00019",
+      "en_US": "{COLOR, 0, 255}Ampharosites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00020",
+      "en_US": "{COLOR, 0, 255}Venusaurites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00021",
+      "en_US": "{COLOR, 0, 255}Charizardite Xs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00022",
+      "en_US": "{COLOR, 0, 255}Blastoisinites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00023",
+      "en_US": "{COLOR, 0, 255}Mewtwonite Xs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00024",
+      "en_US": "{COLOR, 0, 255}Mewtwonite Ys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00025",
+      "en_US": "{COLOR, 0, 255}Blazikenites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00026",
+      "en_US": "{COLOR, 0, 255}Medichamites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00027",
+      "en_US": "{COLOR, 0, 255}Houndoominites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00028",
+      "en_US": "{COLOR, 0, 255}Aggronites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00029",
+      "en_US": "{COLOR, 0, 255}Banettites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00030",
+      "en_US": "{COLOR, 0, 255}Tyranitarites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00031",
+      "en_US": "{COLOR, 0, 255}Scizorites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00032",
+      "en_US": "{COLOR, 0, 255}Pinsirites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00033",
+      "en_US": "{COLOR, 0, 255}Aerodactylites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00034",
+      "en_US": "{COLOR, 0, 255}Lucarionites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00035",
+      "en_US": "{COLOR, 0, 255}Abomasites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00036",
+      "en_US": "{COLOR, 0, 255}Kangaskhanites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00037",
+      "en_US": "{COLOR, 0, 255}Gyaradosites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00038",
+      "en_US": "{COLOR, 0, 255}Absolites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00039",
+      "en_US": "{COLOR, 0, 255}Charizardite Ys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00040",
+      "en_US": "{COLOR, 0, 255}Alakazites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00041",
+      "en_US": "{COLOR, 0, 255}Heracronites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00042",
+      "en_US": "{COLOR, 0, 255}Mawilites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00043",
+      "en_US": "{COLOR, 0, 255}Manectites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00044",
+      "en_US": "{COLOR, 0, 255}Garchompites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00045",
+      "en_US": "{COLOR, 0, 255}Latiasites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00046",
+      "en_US": "{COLOR, 0, 255}Latiosites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00047",
+      "en_US": "{COLOR, 0, 255}Roseli Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00048",
+      "en_US": "{COLOR, 0, 255}Kee Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00049",
+      "en_US": "{COLOR, 0, 255}Maranga Berries{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00050",
+      "en_US": "{COLOR, 0, 255}Sprinklotads{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00051",
+      "en_US": "{COLOR, 0, 255}TM096s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00052",
+      "en_US": "{COLOR, 0, 255}TM097s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00053",
+      "en_US": "{COLOR, 0, 255}TM098s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00054",
+      "en_US": "{COLOR, 0, 255}TM099s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00055",
+      "en_US": "{COLOR, 0, 255}TM100s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00056",
+      "en_US": "{COLOR, 0, 255}Power Plant Passes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00057",
+      "en_US": "{COLOR, 0, 255}Mega Rings{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00058",
+      "en_US": "{COLOR, 0, 255}Intriguing Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00059",
+      "en_US": "{COLOR, 0, 255}Common Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00060",
+      "en_US": "{COLOR, 0, 255}Discount Coupons{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00061",
+      "en_US": "{COLOR, 0, 255}Elevator Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00062",
+      "en_US": "{COLOR, 0, 255}TMV Passes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00063",
+      "en_US": "{COLOR, 0, 255}Honor of Kalos emblems{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00064",
+      "en_US": "{COLOR, 0, 255}Adventure Guides{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00065",
+      "en_US": "{COLOR, 0, 255}Strange Souvenirs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00066",
+      "en_US": "{COLOR, 0, 255}Lens Cases{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00067",
+      "en_US": "{COLOR, 0, 255}Makeup Bags{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00068",
+      "en_US": "{COLOR, 0, 255}Travel Trunks{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00069",
+      "en_US": "{COLOR, 0, 255}Lumiose Galettes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00070",
+      "en_US": "{COLOR, 0, 255}Shalour Sables{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00071",
+      "en_US": "{COLOR, 0, 255}Jaw Fossils{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00072",
+      "en_US": "{COLOR, 0, 255}Sail Fossils{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00073",
+      "en_US": "{COLOR, 0, 255}Looker Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00074",
+      "en_US": "{COLOR, 0, 255}Bikes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00075",
+      "en_US": "{COLOR, 0, 255}Holo Casters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00076",
+      "en_US": "{COLOR, 0, 255}Fairy Gems{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00077",
+      "en_US": "{COLOR, 0, 255}Mega Charms{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00078",
+      "en_US": "{COLOR, 0, 255}Mega Gloves{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00079",
+      "en_US": "{COLOR, 0, 255}Mach Bikes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00080",
+      "en_US": "{COLOR, 0, 255}Acro Bikes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00081",
+      "en_US": "{COLOR, 0, 255}Wailmer Pails{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00082",
+      "en_US": "{COLOR, 0, 255}cases of Devon Parts{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00083",
+      "en_US": "{COLOR, 0, 255}Soot Sacks{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00084",
+      "en_US": "{COLOR, 0, 255}Basement Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00085",
+      "en_US": "{COLOR, 0, 255}Pokéblock Kits{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00086",
+      "en_US": "{COLOR, 0, 255}Letters{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00087",
+      "en_US": "{COLOR, 0, 255}Eon Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00088",
+      "en_US": "{COLOR, 0, 255}Scanners{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00089",
+      "en_US": "{COLOR, 0, 255}pairs of Go-Goggles{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00090",
+      "en_US": "{COLOR, 0, 255}Meteorites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00091",
+      "en_US": "{COLOR, 0, 255}Keys to Room 1{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00092",
+      "en_US": "{COLOR, 0, 255}Keys to Room 2{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00093",
+      "en_US": "{COLOR, 0, 255}Keys to Room 4{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00094",
+      "en_US": "{COLOR, 0, 255}Keys to Room 6{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00095",
+      "en_US": "{COLOR, 0, 255}Storage Keys{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00096",
+      "en_US": "{COLOR, 0, 255}Devon Scopes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00097",
+      "en_US": "{COLOR, 0, 255}S.S. Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00098",
+      "en_US": "{COLOR, 0, 255}HM07s{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00099",
+      "en_US": "{COLOR, 0, 255}sets of Devon Scuba Gear{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00100",
+      "en_US": "{COLOR, 0, 255}Contest Costumes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00101",
+      "en_US": "{COLOR, 0, 255}Contest Costumes{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00102",
+      "en_US": "{COLOR, 0, 255}Magma Suits{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00103",
+      "en_US": "{COLOR, 0, 255}Aqua Suits{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00104",
+      "en_US": "{COLOR, 0, 255}Pairs of Tickets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00105",
+      "en_US": "{COLOR, 0, 255}Mega Bracelets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00106",
+      "en_US": "{COLOR, 0, 255}Mega Pendants{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00107",
+      "en_US": "{COLOR, 0, 255}pairs of Mega Glasses{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00108",
+      "en_US": "{COLOR, 0, 255}Mega Anchors{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00109",
+      "en_US": "{COLOR, 0, 255}Mega Stickpins{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00110",
+      "en_US": "{COLOR, 0, 255}Mega Tiaras{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00111",
+      "en_US": "{COLOR, 0, 255}Mega Anklets{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00112",
+      "en_US": "{COLOR, 0, 255}Meteorites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00113",
+      "en_US": "{COLOR, 0, 255}Swampertites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00114",
+      "en_US": "{COLOR, 0, 255}Sceptilites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00115",
+      "en_US": "{COLOR, 0, 255}Sablenites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00116",
+      "en_US": "{COLOR, 0, 255}Altarianites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00117",
+      "en_US": "{COLOR, 0, 255}Galladites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00118",
+      "en_US": "{COLOR, 0, 255}Audinites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00119",
+      "en_US": "{COLOR, 0, 255}Metagrossites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00120",
+      "en_US": "{COLOR, 0, 255}Sharpedonites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00121",
+      "en_US": "{COLOR, 0, 255}Slowbronites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00122",
+      "en_US": "{COLOR, 0, 255}Steelixites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00123",
+      "en_US": "{COLOR, 0, 255}Pidgeotites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00124",
+      "en_US": "{COLOR, 0, 255}Glalitites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00125",
+      "en_US": "{COLOR, 0, 255}Diancites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00126",
+      "en_US": "{COLOR, 0, 255}Prison Bottles{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00127",
+      "en_US": "{COLOR, 0, 255}Mega Cuffs{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00128",
+      "en_US": "{COLOR, 0, 255}Cameruptites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00129",
+      "en_US": "{COLOR, 0, 255}Lopunnites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00130",
+      "en_US": "{COLOR, 0, 255}Salamencites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00131",
+      "en_US": "{COLOR, 0, 255}Beedrillites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00132",
+      "en_US": "{COLOR, 0, 255}Meteorites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00133",
+      "en_US": "{COLOR, 0, 255}Meteorites{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00134",
+      "en_US": "{COLOR, 0, 255}Key Stones{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00135",
+      "en_US": "{COLOR, 0, 255}Meteorite Shards{COLOR, 0, 0}"
+    },
+    {
+      "id": "msg_0840_00136",
+      "en_US": "{COLOR, 0, 255}Eon Flutes{COLOR, 0, 0}"
+    }
+  ]
+}

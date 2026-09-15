@@ -1,0 +1,131 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0181
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#1
+	CheckFlag 356
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x4000 1
+	JumpIf EQUAL Function#3
+	CheckItem ITEM_RAGE_CANDY_BAR 1 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#4
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 2:
+	SetVar 0x4000 0
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 5
+	CloseMessage
+	Message 6
+	WaitButton
+	CloseMessage
+	SetVar 0x4001 1
+	SetFlag 356
+	ReleaseAll
+End
+
+Function 2:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	Message 2
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	CheckItemSpace ITEM_TM064 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	TextPlayerName 0
+	Message 3
+	TakeItem ITEM_RAGE_CANDY_BAR 1 0x800C
+	Message 4
+	CloseMessage
+	SetVar 0x8004 391
+	SetVar 0x8005 1
+	CommonScript 2008
+	Message 5
+	CloseMessage
+	Message 6
+	WaitButton
+	CloseMessage
+	SetVar 0x4001 1
+	SetFlag 356
+	ReleaseAll
+End
+
+Function 4:
+	Message 1
+	CloseMessage
+	Movement Overworld.0 Action#1
+	WaitMovement
+	Message 2
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#5
+	CheckItemSpace ITEM_TM064 1 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#6
+	TextPlayerName 0
+	Message 3
+	TakeItem ITEM_RAGE_CANDY_BAR 1 0x800C
+	Message 4
+	CloseMessage
+	SetVar 0x8004 391
+	SetVar 0x8005 1
+	CommonScript 2008
+	Message 5
+	CloseMessage
+	Message 6
+	WaitButton
+	CloseMessage
+	SetVar 0x4001 1
+	SetFlag 356
+	ReleaseAll
+End
+
+Function 5:
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+	SetVar 0x4000 1
+End
+
+Function 6:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	EmoteExclamation 0x1
+End
+

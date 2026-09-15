@@ -1,0 +1,51 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0818
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 0 0x800C
+	CommonScript 2000
+End
+
+Script 2:
+	LockAll
+	FacePlayer
+	PlayCry SPECIES_ZEKROM 0
+	WaitCry
+	PlayFanfare SEQ_GS_D_CHIKATSUURO_PHC
+	WildBattleSp SPECIES_ZEKROM 75 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#1
+	GetBattleOutcome 0x401A
+	CompareVarValue 0x401A 3
+	JumpIf EQUAL Function#2
+	CompareVarValue 0x401A 4
+	JumpIf EQUAL Function#3
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	LostBattle
+	ReleaseAll
+End
+
+Function 2:
+	ReleaseAll
+End
+
+Function 3:
+	RemoveOW Overworld.1
+	ReleaseAll
+End
+
+//===== ACTIONS =====//

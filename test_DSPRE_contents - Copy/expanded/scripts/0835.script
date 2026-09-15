@@ -1,0 +1,59 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0835
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	MecScript
+	LockAll
+	Movement Player Action#1
+	WaitMovement
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 400 0 3 3 Right
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	WaitFanfare SEQ_SE_DP_KAIDAN2
+	BallResetFollowingPoke
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Message 0
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	Movement Player Action#3
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//
+Action 1:
+	WalkSouth8 0x3
+	WalkEast8 0x7
+End
+
+Action 2:
+	WalkEast8 0xB
+	WalkSouth8 0x4
+End
+
+Action 3:
+	WalkSouth8 0x2
+End
+

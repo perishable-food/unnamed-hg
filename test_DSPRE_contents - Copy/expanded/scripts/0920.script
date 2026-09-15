@@ -1,0 +1,573 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0920
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+End
+
+Script 2:
+	SetIconBoard 11 0 18 0x800C
+	ShowBoard 3
+	WaitBoard
+	CloseBoard 0x800C
+	CommonScript 2000
+End
+
+Script 3:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 12 0x800C
+	CommonScript 2000
+End
+
+Script 4:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 13 0x800C
+	CommonScript 2000
+End
+
+Script 5:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 14 0x800C
+	CommonScript 2000
+End
+
+Script 6:
+	MecScript
+	LockAll
+	ClearFlag 575
+	AddOW Overworld.6
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.6 Action#1
+	Movement Player Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
+	Message 16
+	WaitTime 30 0x800C
+	TextRivalName 1
+	Message 17
+	CloseMessage
+	Movement Overworld.6 Action#3
+	WaitMovement
+	TextPlayerName 0
+	TextRivalName 1
+	Message 18
+	CloseMessage
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 56
+	Movement Overworld.6 Action#4
+	Movement Player Action#2
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	Movement Overworld.6 Action#5
+	Movement Player Action#6
+	WaitMovement
+	RemoveOW Overworld.6
+	SetFlag 575
+	ReleaseAll
+	SetVar 0x4079 4
+	SetVar 0x410C 4
+	ClearFlag 572
+	SetFlag 577
+End
+
+Script 7:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 2404
+	JumpIf EQUAL Function#1
+	CompareVarValue 0x40A1 0
+	JumpIf DIFFERENT Function#2
+	Message 5
+Jump Function#3
+
+Script 8:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 10
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 9:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 2410
+	JumpIf EQUAL Function#4
+	Message 8
+Jump Function#5
+
+Script 10:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckFlag 2404
+	JumpIf EQUAL Function#6
+	Message 0
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 11:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CompareVarValue 0x410C 2
+	JumpIf GREATER Function#7
+	Message 2
+Jump Function#8
+
+Script 12:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 13:
+	MecScript
+	LockAll
+	DoorAnimation 11 5 25 23 1
+	OpenDoor 1
+	WaitDoor 1
+	Movement Player Action#7
+	WaitMovement
+	Lock Following
+	GetFollowingPokeSize 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#9
+	BallResetFollowingPoke
+Jump Function#10
+
+Script 14:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 19
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 15:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 0
+	OpenTouchScreen
+	YesNoTouchScreen 0x800C
+	CloseTouchScreen
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#11
+	CheckAlbumPhoto 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#12
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 1
+	CloseMessage
+	LockFollowingPoke 0
+	WaitFollowingPoke
+	SetFollowingPokeMovement 55
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#13
+	Movement Player Action#8
+	Movement Overworld.8 Action#9
+Jump Function#14
+
+Script 16:
+	CheckFlag 393
+	JumpIf LESS Function#15
+	ClearFlag 393
+End
+
+Script 17:
+	SetTextBoard 2 0
+	ShowBoard 3
+	WaitBoard
+	BoardMessage 15 0x800C
+	CommonScript 2000
+End
+
+Script 18:
+	LockAll
+	FacePlayer
+	Message 20
+	CloseMessage
+End
+
+Script 19:
+	LockAll
+	FacePlayer
+	GenderMessage 21 20
+	Message 22
+	Message 23
+	GiveItem ITEM_ABILITY_CAPSULE 995 0x800C
+	GiveItem ITEM_BRIARS_BOOK 1 0x800C
+	GiveItem ITEM_LONELY_MINT 995 0x800C
+	GiveItem ITEM_ADAMANT_MINT 995 0x800C
+	GiveItem ITEM_NAUGHTY_MINT 995 0x800C
+	GiveItem ITEM_BRAVE_MINT 995 0x800C
+	GiveItem ITEM_BOLD_MINT 995 0x800C
+	GiveItem ITEM_IMPISH_MINT 995 0x800C
+	GiveItem ITEM_LAX_MINT 995 0x800C
+	GiveItem ITEM_RELAXED_MINT 995 0x800C
+	GiveItem ITEM_MODEST_MINT 995 0x800C
+	GiveItem ITEM_MILD_MINT 995 0x800C
+	GiveItem ITEM_RASH_MINT 995 0x800C
+	GiveItem ITEM_QUIET_MINT 995 0x800C
+	GiveItem ITEM_CALM_MINT 995 0x800C
+	GiveItem ITEM_GENTLE_MINT 995 0x800C
+	GiveItem ITEM_CAREFUL_MINT 995 0x800C
+	GiveItem ITEM_SASSY_MINT 995 0x800C
+	GiveItem ITEM_TIMID_MINT 995 0x800C
+	GiveItem ITEM_HASTY_MINT 995 0x800C
+	GiveItem ITEM_JOLLY_MINT 995 0x800C
+	GiveItem ITEM_NAIVE_MINT 995 0x800C
+	GiveItem ITEM_SERIOUS_MINT 995 0x800C
+	RemoveOW Overworld.9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 20:
+	Lock Player
+	SetOWPosition Overworld.10 32 0 58 Left
+	Movement Overworld.10 Action#10
+	WaitMovement
+	TextPlayerName 0
+	Message 24
+	WaitButton
+	SetVar 0x8004 456
+	SetVar 0x8005 1
+	SetFlag 242
+	CommonScript 2033
+	WaitButton
+	Movement Overworld.10 Action#11
+	Message 26
+	WaitButton
+	Message 27
+	PlaySound SEQ_ME_ITEM
+	WaitSound
+	SetFlag 2566
+	Message 28
+	Message 29
+	SetVar 0x414C 2
+	SetFlag 300
+	WaitButton
+	CloseMessage
+	Movement Overworld.10 Action#12
+	WaitMovement
+	RemoveOW Overworld.10
+	ReleaseAll
+End
+
+Script 21:
+	Lock Player
+	Movement Overworld.11 Action#13
+	Message 26
+	SetFlag 2566
+	SetVar 0x4168 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 3:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 4:
+	Message 9
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 5:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 6:
+	Message 1
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 7:
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 8:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 9:
+	NoBallResetFollowingPoke
+	Release Following
+	SetVar 0x4079 0
+	CloseDoor 1
+	WaitDoor 1
+	FreeDoor 1
+	ReleaseAll
+End
+
+Function 10:
+	Release Following
+	SetVar 0x4079 0
+	CloseDoor 1
+	WaitDoor 1
+	FreeDoor 1
+	ReleaseAll
+End
+
+Function 11:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 12:
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#16
+	Movement Player Action#14
+Jump Function#14
+
+Function 14:
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#17
+	Movement Following Action#15
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 19
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 5
+	JumpIf DIFFERENT Function#18
+	ClearFlag 638
+Jump Function#19
+
+Function 16:
+	Movement Player Action#16
+	Movement Overworld.8 Action#9
+	WaitMovement
+	WaitFollowingPoke
+	LockFollowingPoke 1
+	SetFollowingPokeMovement 48
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#17
+	Movement Following Action#15
+	WaitMovement
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 19
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 17:
+	SetFlag 393
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	TakePhoto 19
+	LockAll
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ClearFlag 393
+	GetCommonMessageArchive 2 0x800C
+	MessageFromArchive 0x800C 2
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 18:
+	SetFlag 638
+End
+
+Function 19:
+End
+
+//===== ACTIONS =====//
+Action 1:
+	LockDir 0x1
+	WalkSouth4 0x1
+	WalkOnSpotNorth4 0x1
+	ReleaseDir 0x1
+End
+
+Action 2:
+	FaceNorth 0x1
+	LockDir 0x1
+	WalkSouth4 0x1
+	ReleaseDir 0x1
+End
+
+Action 3:
+	EmoteExclamation 0x1
+	Delay8 0x1
+	WalkOnSpotSouth8 0x1
+End
+
+Action 4:
+	WalkSouth4 0x1
+	WalkOnSpotSouth4 0x1
+End
+
+Action 5:
+	WalkWest16 0x3
+	Delay8 0x3
+	WalkWest4 0x6
+End
+
+Action 6:
+	Delay8 0x3
+	WalkOnSpotWest8 0x1
+End
+
+Action 7:
+	WalkSouth4 0x2
+	Delay8 0x1
+End
+
+Action 8:
+	WalkEast8 0x1
+	WalkNorth8 0x2
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 9:
+	Delay8 0x1
+	WalkOnSpotNorth8 0x1
+End
+
+Action 10:
+	WalkWest8 0x8
+	WalkNorth8 0x1
+	EmoteExclamation 0x1
+End
+
+Action 11:
+	EmoteExclamation 0x1
+End
+
+Action 12:
+	WalkSouth8 0x1
+	WalkEast8 0x8
+End
+
+Action 13:
+	WalkSouth4 0x9
+End
+
+Action 14:
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+
+Action 15:
+	WalkEast8 0x1
+	WalkNorth8 0x1
+	FaceSouth 0x1
+End
+
+Action 16:
+	WalkNorth8 0x1
+	WalkWest8 0x1
+	WalkNorth8 0x3
+	WalkOnSpotSouth8 0x1
+End
+

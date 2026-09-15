@@ -1,0 +1,433 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0778
+ * Generated: 9/2/2026 12:10:08 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	VermillionGymBin 0 0x800C
+Jump Function#1
+
+Script 2:
+	VermillionGymBin 1 0x800C
+Jump Function#1
+
+Script 3:
+	VermillionGymBin 2 0x800C
+Jump Function#1
+
+Script 4:
+	VermillionGymBin 3 0x800C
+Jump Function#1
+
+Script 5:
+	VermillionGymBin 4 0x800C
+Jump Function#1
+
+Script 6:
+	VermillionGymBin 5 0x800C
+Jump Function#1
+
+Script 7:
+	VermillionGymBin 6 0x800C
+Jump Function#1
+
+Script 8:
+	VermillionGymBin 7 0x800C
+Jump Function#1
+
+Script 9:
+	VermillionGymBin 8 0x800C
+Jump Function#1
+
+Script 10:
+	VermillionGymBin 9 0x800C
+Jump Function#1
+
+Script 11:
+	VermillionGymBin 10 0x800C
+Jump Function#1
+
+Script 12:
+	VermillionGymBin 11 0x800C
+Jump Function#1
+
+Script 13:
+	VermillionGymBin 12 0x800C
+Jump Function#1
+
+Script 14:
+	VermillionGymBin 13 0x800C
+Jump Function#1
+
+Script 15:
+	VermillionGymBin 14 0x800C
+Jump Function#1
+
+Script 16:
+End
+
+Script 17:
+End
+
+Script 18:
+End
+
+Script 19:
+End
+
+Script 20:
+End
+
+Script 21:
+End
+
+Script 22:
+	CheckFlag 794
+	JumpIf EQUAL Function#2
+	ClearFlag 2470
+	VermilionGymInit
+	CheckPokeGearRematch 36 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#3
+	CheckFlag 330
+	JumpIf LESS Function#4
+	CheckPokegearNumberRegistered 36 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#5
+	GetHour 0x4000
+	CompareVarValue 0x4000 9
+	JumpIf DIFFERENT Function#6
+	SetFlag 752
+Jump Function#7
+
+Script 23:
+	CheckFlag 794
+	JumpIf EQUAL Function#8
+	VanishOverworld Overworld.0
+	VanishOverworld Overworld.1
+	VanishOverworld Overworld.2
+	VanishOverworld Overworld.3
+	VanishOverworld Overworld.4
+	VanishOverworld Overworld.5
+End
+
+Script 24:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf GREATER/EQUAL Function#9
+	CheckBadge 10 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#10
+	Message 0
+	CloseMessage
+	TrainerBattle TRAINER_LT_SURGE_255 TRAINER_NONE 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#11
+	GiveBadge 10
+	IncrementVar 0x4135 1
+	AddTrainerScore 22
+	SetFlag 794
+	RemoveOW Overworld.0
+	RemoveOW Overworld.1
+	RemoveOW Overworld.2
+	RemoveOW Overworld.3
+	RemoveOW Overworld.4
+	RemoveOW Overworld.5
+	SetTrainerFlag TRAINER_VINCENT_232
+	SetTrainerFlag TRAINER_GREGORY_337
+	SetTrainerFlag TRAINER_HORTON_396
+	Message 1
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	Message 3
+Jump Function#12
+
+Script 25:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 10 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#13
+	Message 6
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Script 26:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	CheckBadge 10 0x800C
+	TextPlayerName 0
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#14
+	Message 13
+Jump Function#15
+
+//===== FUNCTIONS =====//
+Function 1:
+	CompareVarValue 0x800C 4
+	JumpIf EQUAL Function#16
+	CompareVarValue 0x800C 2
+	JumpIf EQUAL Function#17
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#18
+	CompareVarValue 0x800C 3
+	JumpIf EQUAL Function#19
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#20
+End
+
+Function 2:
+	VermilionGymInit
+	CheckPokeGearRematch 36 0x4001
+	CompareVarValue 0x4001 0
+	JumpIf DIFFERENT Function#3
+	CheckFlag 330
+	JumpIf LESS Function#4
+	CheckPokegearNumberRegistered 36 0x4001
+	CompareVarValue 0x4001 1
+	JumpIf EQUAL Function#5
+	GetHour 0x4000
+	CompareVarValue 0x4000 9
+	JumpIf DIFFERENT Function#6
+	SetFlag 752
+Jump Function#7
+
+Function 3:
+	SetFlag 752
+End
+
+Function 4:
+	ClearFlag 752
+End
+
+Function 5:
+	CheckFlag 354
+	JumpIf EQUAL Function#21
+	SetFlag 752
+End
+
+Function 6:
+	CompareVarValue 0x4000 10
+	JumpIf DIFFERENT Function#22
+	SetFlag 752
+Jump Function#7
+
+Function 7:
+End
+
+Function 8:
+End
+
+Function 9:
+	CheckBadge 10 0x800C
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#10
+	Message 0
+	CloseMessage
+	AdrsValueSet 0x20436D4 22
+	FlashAnimation
+	AdrsValueSet 0x20436D4 0
+	TrainerBattle TRAINER_LT_SURGE_722 TRAINER_LT_SURGE_722 0 0
+	CheckBattleIsLost 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#11
+	GiveBadge 10
+	IncrementVar 0x4135 1
+	AddTrainerScore 22
+	SetFlag 794
+	RemoveOW Overworld.0
+	RemoveOW Overworld.1
+	RemoveOW Overworld.2
+	RemoveOW Overworld.3
+	RemoveOW Overworld.4
+	RemoveOW Overworld.5
+	SetTrainerFlag TRAINER_VINCENT_232
+	SetTrainerFlag TRAINER_GREGORY_337
+	SetTrainerFlag TRAINER_HORTON_396
+	Message 1
+	TextPlayerName 0
+	Message 2
+	PlaySound SEQ_ME_BADGE
+	WaitSound
+	Message 3
+Jump Function#12
+
+Function 10:
+	CheckFlag 385
+	JumpIf LESS Function#12
+	Message 5
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 11:
+	LostBattle
+	ReleaseAll
+End
+
+Function 12:
+	SetVar 0x8004 361
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#23
+	CommonScript 2033
+	CountBadges 0x800C
+	CompareVarValue 0x800C 8
+	JumpIf EQUAL Function#24
+	CompareVarValue 0x800C 7
+	JumpIf LESS/EQUAL Function#25
+	SetFlag 385
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 13:
+	Message 7
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 14:
+	Message 14
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 15:
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 16:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 17:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 9
+	WaitButton
+	CloseMessage
+	VermillionGymAnimation 1 0
+	SetFlag 2470
+	StopFanfare SEQ_SE_GS_DENGEKIBARIA
+	Message 12
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 18:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 9
+	WaitButton
+	CloseMessage
+	VermillionGymAnimation 0 0
+	Message 11
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 19:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 10
+	WaitButton
+	CloseMessage
+	VermillionGymAnimation 0 1
+	ResetVermilionGymCans
+	ReleaseAll
+End
+
+Function 20:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 8
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 21:
+	GetDayOfWeek 0x4000
+	CompareVarValue 0x4000 5
+	JumpIf DIFFERENT Function#26
+	SetFlag 752
+Jump Function#27
+
+Function 22:
+	CompareVarValue 0x4000 11
+	JumpIf DIFFERENT Function#28
+	SetFlag 752
+Jump Function#7
+
+Function 23:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+Function 24:
+	IncrementVar 0x416F 15
+	SetFlag 385
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 25:
+	IncrementVar 0x416F 10
+	SetFlag 385
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 26:
+	CompareVarValue 0x4000 6
+	JumpIf DIFFERENT Function#29
+	SetFlag 752
+Jump Function#27
+
+Function 27:
+End
+
+Function 28:
+	ClearFlag 752
+End
+
+Function 29:
+	ClearFlag 752
+End
+
+//===== ACTIONS =====//

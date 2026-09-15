@@ -1,0 +1,15 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0137
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	EnterBattleRoom
+End
+
+//===== FUNCTIONS =====//
+//===== ACTIONS =====//

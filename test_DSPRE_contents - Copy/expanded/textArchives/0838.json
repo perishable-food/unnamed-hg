@@ -1,0 +1,1081 @@
+{
+  "key": 20546,
+  "messages": [
+    {
+      "id": "msg_0838_00000",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "Attack and Sp. Atk sharply increase if\\n",
+        "the holder is hit by a move it’s weak to."
+      ]
+    },
+    {
+      "id": "msg_0838_00001",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "This offensive vest raises Sp. Def\\n",
+        "but prevents the use of status moves."
+      ]
+    },
+    {
+      "id": "msg_0838_00002",
+      "en_US": [
+        "A device that allows you to view the\\n",
+        "hologram clips you have received at\\n",
+        "any time."
+      ]
+    },
+    {
+      "id": "msg_0838_00003",
+      "en_US": [
+        "A letter that Professor Sycamore wrote\\n",
+        "to your mother. A faint but pleasant\\n",
+        "perfume seems to cling to the paper."
+      ]
+    },
+    {
+      "id": "msg_0838_00004",
+      "en_US": [
+        "Attaches roller skates to the bottom\\n",
+        "of your shoes, allowing you to glide\\n",
+        "quickly around and perform tricks."
+      ]
+    },
+    {
+      "id": "msg_0838_00005",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "It’s a stone tablet that boosts\\n",
+        "the power of Fairy-type moves."
+      ]
+    },
+    {
+      "id": "msg_0838_00006",
+      "en_US": [
+        "A capsule that allows a Pokémon to\\n",
+        "switch its current Ability to the\\n",
+        "other Ability its species can have."
+      ]
+    },
+    {
+      "id": "msg_0838_00007",
+      "en_US": [
+        "A soft and sweet treat made of fluffy,\\n",
+        "puffy, whipped, and whirled cream.\\n",
+        "It’s loved by a certain Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0838_00008",
+      "en_US": [
+        "A sachet filled with fragrant perfumes\\n",
+        "that are just slightly overwhelming.\\n",
+        "Yet it’s loved by a certain Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0838_00009",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "Boosts Sp. Def if the holder is hit by\\n",
+        "a Water-type attack--but only once."
+      ]
+    },
+    {
+      "id": "msg_0838_00010",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "Boosts Attack if the holder is hit by\\n",
+        "a Ice-type attack--but only once."
+      ]
+    },
+    {
+      "id": "msg_0838_00011",
+      "en_US": [
+        "An item to be held by a Pokémon.\\n",
+        "These goggles protect the holder from\\n",
+        "both weather-related damage and powder."
+      ]
+    },
+    {
+      "id": "msg_0838_00012",
+      "en_US": [
+        "A flute that can play with such a\\n",
+        "beautiful tone that even sleeping\\n",
+        "Pokémon find themselves woken up."
+      ]
+    },
+    {
+      "id": "msg_0838_00013",
+      "en_US": [
+        "A fertilizer for growing Berries. However,\\n",
+        "it appears to be unsuitable for the soil\\n",
+        "in the Johto region and has no effect."
+      ]
+    },
+    {
+      "id": "msg_0838_00014",
+      "en_US": [
+        "A fertilizer for growing Berries. However,\\n",
+        "it appears to be unsuitable for the soil\\n",
+        "in the Johto region and has no effect."
+      ]
+    },
+    {
+      "id": "msg_0838_00015",
+      "en_US": [
+        "A fertilizer for growing Berries. However,\\n",
+        "it appears to be unsuitable for the soil\\n",
+        "in the Johto region and has no effect."
+      ]
+    },
+    {
+      "id": "msg_0838_00016",
+      "en_US": [
+        "A fertilizer for growing Berries. However,\\n",
+        "it appears to be unsuitable for the soil\\n",
+        "in the Johto region and has no effect."
+      ]
+    },
+    {
+      "id": "msg_0838_00017",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Gengar holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00018",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Gardevoir holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00019",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Ampharos holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00020",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Venusaur holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00021",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Charizard holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00022",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Blastoise holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00023",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Mewtwo holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00024",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Mewtwo holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00025",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Blaziken holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00026",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Medicham holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00027",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Houndoom holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00028",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Aggron holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00029",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Banette holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00030",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Tyranitar holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00031",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Scizor holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00032",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Pinsir holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00033",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Aerodactyl holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00034",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Lucario holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00035",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Abomasnow holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00036",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Kangaskhan holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00037",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Gyarados holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00038",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Absol holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00039",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Charizard holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00040",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Alakazam holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00041",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Heracross holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00042",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Mawile holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00043",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Manectric holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00044",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Garchomp holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00045",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Latias holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00046",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Latios holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00047",
+      "en_US": [
+        "If a Pokémon holding this Berry is hit\\n",
+        "with a supereffective Fairy-type move,\\n",
+        "the power of that move will be weakened."
+      ]
+    },
+    {
+      "id": "msg_0838_00048",
+      "en_US": [
+        "If a Pokémon holding this Berry is hit\\n",
+        "with a physical move, the holder’s\\n",
+        "Defense stat will be boosted."
+      ]
+    },
+    {
+      "id": "msg_0838_00049",
+      "en_US": [
+        "If a Pokémon holding this Berry is hit\\n",
+        "with a special move, the holder’s\\n",
+        "Sp. Def stat will be boosted."
+      ]
+    },
+    {
+      "id": "msg_0838_00050",
+      "en_US": [
+        "A watering can shaped like a Lotad.\\n",
+        "It helps promote the healthy growth of\\n",
+        "any Berries planted in good, soft soil."
+      ]
+    },
+    {
+      "id": "msg_0838_00051",
+      "en_US": [
+        "The user’s body generates an eerie impulse.\\n",
+        "Exposing the target to it harshly lowers\\n",
+        "the target’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0838_00052",
+      "en_US": [
+        "The user soars, then strikes on the\\n",
+        "second turn. It can also be used for\\n",
+        "flying to any familiar town."
+      ]
+    },
+    {
+      "id": "msg_0838_00053",
+      "en_US": [
+        "The user employs its psychic power\\n",
+        "to exchange abilities with the foe."
+      ]
+    },
+    {
+      "id": "msg_0838_00054",
+      "en_US": [
+        "The foe slams the target with its\\n",
+        "steel-hard head. It may also make\\n",
+        "the target flinch."
+      ]
+    },
+    {
+      "id": "msg_0838_00055",
+      "en_US": [
+        "The user tells the target a secret, and\\n",
+        "the target loses its ability to concentrate.\\n",
+        "This lowers the target’s Sp. Atk stat."
+      ]
+    },
+    {
+      "id": "msg_0838_00056",
+      "en_US": [
+        "This pass serves as an ID card for\\n",
+        "gaining access to the Power Plant\\n",
+        "that lies along Route 13."
+      ]
+    },
+    {
+      "id": "msg_0838_00057",
+      "en_US": [
+        "This ring contains an untold power that\\n",
+        "somehow enables Pokémon carrying a\\n",
+        "Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00058",
+      "en_US": [
+        "A rather curious stone that\\n",
+        "might appear valuable to some.\\n",
+        "It’s all in the eye of the beholder."
+      ]
+    },
+    {
+      "id": "msg_0838_00059",
+      "en_US": [
+        "A perfectly normal stone that\\n",
+        "might appear valuable to some.\\n",
+        "It’s all in the eye of the beholder."
+      ]
+    },
+    {
+      "id": "msg_0838_00060",
+      "en_US": [
+        "This special coupon allows you to\\n",
+        "buy items at a discount when you are\\n",
+        "shopping at a boutique."
+      ]
+    },
+    {
+      "id": "msg_0838_00061",
+      "en_US": [
+        "A card key that activates the elevator\\n",
+        "in Lysandre Labs.\\n",
+        "It is emblazoned with Team Flare’s logo."
+      ]
+    },
+    {
+      "id": "msg_0838_00062",
+      "en_US": [
+        "A commuter pass that allows the holder\\n",
+        "to ride the TMV between Lumiose City\\n",
+        "and Kiloude City at any time."
+      ]
+    },
+    {
+      "id": "msg_0838_00063",
+      "en_US": [
+        "A precious symbol that is awarded to\\n",
+        "individuals who have done great\\n",
+        "things for the Kalos region."
+      ]
+    },
+    {
+      "id": "msg_0838_00064",
+      "en_US": [
+        "A mysterious and convenient notebook that\\n",
+        "contains all the advice a Trainer receives\\n",
+        "out on an adventure."
+      ]
+    },
+    {
+      "id": "msg_0838_00065",
+      "en_US": [
+        "An ornament depicting a Pokémon\\n",
+        "that is venerated as a protector\\n",
+        "in some region far from Kalos."
+      ]
+    },
+    {
+      "id": "msg_0838_00066",
+      "en_US": [
+        "A rather chic-looking case for\\n",
+        "carrying contact lenses."
+      ]
+    },
+    {
+      "id": "msg_0838_00067",
+      "en_US": [
+        "A chic-looking case for carrying\\n",
+        "lipsticks."
+      ]
+    },
+    {
+      "id": "msg_0838_00068",
+      "en_US": [
+        "A light and yet incredibly effective trunk,\\n",
+        "which can contain every last piece of\\n",
+        "clothing that can be bought."
+      ]
+    },
+    {
+      "id": "msg_0838_00069",
+      "en_US": [
+        "A popular treat in Lumiose City. It\\n",
+        "can be used to cure any status\\n",
+        "condition a Pokémon may have."
+      ]
+    },
+    {
+      "id": "msg_0838_00070",
+      "en_US": [
+        "Shalour City’s famous shortbread. It\\n",
+        "can be used to cure any status\\n",
+        "condition a Pokémon may have."
+      ]
+    },
+    {
+      "id": "msg_0838_00071",
+      "en_US": [
+        "A fossil from a prehistoric Pokémon\\n",
+        "that once lived on the land. It looks\\n",
+        "as if it could be a piece of a large jaw."
+      ]
+    },
+    {
+      "id": "msg_0838_00072",
+      "en_US": [
+        "A fossil from a prehistoric Pokémon\\n",
+        "that once lived on the land. It looks\\n",
+        "like the impression from a skin sail."
+      ]
+    },
+    {
+      "id": "msg_0838_00073",
+      "en_US": [
+        "A ticket that was handmade by\\n",
+        "Looker. It’s decorated with a\\n",
+        "liberal amount of glittery paint."
+      ]
+    },
+    {
+      "id": "msg_0838_00074",
+      "en_US": [
+        "A folding bike that enables a rider\\n",
+        "to get around much faster than with\\n",
+        "Running Shoes."
+      ]
+    },
+    {
+      "id": "msg_0838_00075",
+      "en_US": [
+        "A device that allows you to view the\\n",
+        "hologram clips you have received at\\n",
+        "any time."
+      ]
+    },
+    {
+      "id": "msg_0838_00076",
+      "en_US": [
+        "A gem with an essence of the fey.\\n",
+        "When held, it strengthens the power\\n",
+        "of a Fairy-type move one time."
+      ]
+    },
+    {
+      "id": "msg_0838_00077",
+      "en_US": [
+        "This charm contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00078",
+      "en_US": [
+        "This glove contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00079",
+      "en_US": [
+        "This folding bike more than doubles\\n",
+        "your movement speed."
+      ]
+    },
+    {
+      "id": "msg_0838_00080",
+      "en_US": [
+        "This folding bike allows you to\\n",
+        "perform actions such as wheelies and\\n",
+        "bunny hops."
+      ]
+    },
+    {
+      "id": "msg_0838_00081",
+      "en_US": [
+        "A watering can shaped like a Wailmer.\\n",
+        "It helps promote the healthy growth\\n",
+        "of any Berries planted in soil."
+      ]
+    },
+    {
+      "id": "msg_0838_00082",
+      "en_US": [
+        "A case that contains mechanical\\n",
+        "parts of some sort made by the Devon\\n",
+        "Corporation."
+      ]
+    },
+    {
+      "id": "msg_0838_00083",
+      "en_US": [
+        "A sack used to gather and hold\\n",
+        "volcanic ash."
+      ]
+    },
+    {
+      "id": "msg_0838_00084",
+      "en_US": [
+        "The key to New Mauville, which was\\n",
+        "constructed beneath Mauville City."
+      ]
+    },
+    {
+      "id": "msg_0838_00085",
+      "en_US": [
+        "A set containing a Berry Blender for\\n",
+        "making Pokéblocks and a Pokéblock\\n",
+        "Case for storing Pokéblocks."
+      ]
+    },
+    {
+      "id": "msg_0838_00086",
+      "en_US": [
+        "An extremely important letter to\\n",
+        "Steven from the president of Devon\\n",
+        "Corporation."
+      ]
+    },
+    {
+      "id": "msg_0838_00087",
+      "en_US": [
+        "The ticket required for sailing on a ferry\\n",
+        "to the Southern Island. Does Norman, the\\n",
+        "Petalburg Gym Leader, know a secret?!"
+      ]
+    },
+    {
+      "id": "msg_0838_00088",
+      "en_US": "A device found inside Sea Mauville."
+    },
+    {
+      "id": "msg_0838_00089",
+      "en_US": [
+        "Nifty goggles to protect eyes from\\n",
+        "desert sandstorms."
+      ]
+    },
+    {
+      "id": "msg_0838_00090",
+      "en_US": [
+        "A meteorite originally found at\\n",
+        "Meteor Falls.\\n",
+        "You got it at Mt. Chimney."
+      ]
+    },
+    {
+      "id": "msg_0838_00091",
+      "en_US": [
+        "A key that opens a door inside Sea\\n",
+        "Mauville."
+      ]
+    },
+    {
+      "id": "msg_0838_00092",
+      "en_US": [
+        "A key that opens a door inside Sea\\n",
+        "Mauville."
+      ]
+    },
+    {
+      "id": "msg_0838_00093",
+      "en_US": [
+        "A key that opens a door inside Sea\\n",
+        "Mauville."
+      ]
+    },
+    {
+      "id": "msg_0838_00094",
+      "en_US": [
+        "A key that opens a door inside Sea\\n",
+        "Mauville."
+      ]
+    },
+    {
+      "id": "msg_0838_00095",
+      "en_US": [
+        "A key that opens the storage hold\\n",
+        "inside Sea Mauville."
+      ]
+    },
+    {
+      "id": "msg_0838_00096",
+      "en_US": [
+        "A special device made by Devon\\n",
+        "Corporation that signals the\\n",
+        "presence of any unseen Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0838_00097",
+      "en_US": [
+        "Ticket required for sailing on a\\n",
+        "ferry."
+      ]
+    },
+    {
+      "id": "msg_0838_00098",
+      "en_US": [
+        "Diving on the first turn, the user\\n",
+        "floats up and attacks on the next\\n",
+        "turn."
+      ]
+    },
+    {
+      "id": "msg_0838_00099",
+      "en_US": [
+        "A device made by Devon Corporation\\n",
+        "that provides oxygen to users during\\n",
+        "the use of Dive."
+      ]
+    },
+    {
+      "id": "msg_0838_00100",
+      "en_US": [
+        "A very cool suit to be worn during\\n",
+        "the Contest Spectacular."
+      ]
+    },
+    {
+      "id": "msg_0838_00101",
+      "en_US": [
+        "A very cute dress to be worn during\\n",
+        "the Contest Spectacular."
+      ]
+    },
+    {
+      "id": "msg_0838_00102",
+      "en_US": [
+        "A suit made with the collective\\n",
+        "technological know-how of Team Magma.\\n",
+        "It can withstand any impact."
+      ]
+    },
+    {
+      "id": "msg_0838_00103",
+      "en_US": [
+        "A suit made with the collective\\n",
+        "technological know-how of Team Aqua.\\n",
+        "It can withstand any impact."
+      ]
+    },
+    {
+      "id": "msg_0838_00104",
+      "en_US": [
+        "Tickets for two to the astronomical\\n",
+        "show being held at the Mossdeep\\n",
+        "Space Center."
+      ]
+    },
+    {
+      "id": "msg_0838_00105",
+      "en_US": [
+        "This bracelet contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00106",
+      "en_US": [
+        "This necklace contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00107",
+      "en_US": [
+        "These glasses contain an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00108",
+      "en_US": [
+        "This anchor contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00109",
+      "en_US": [
+        "This stickpin contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00110",
+      "en_US": [
+        "This tiara contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00111",
+      "en_US": [
+        "This anklet contains an untold power\\n",
+        "that somehow enables Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00112",
+      "en_US": [
+        "A meteorite that you got at Mt. Chimney.\\n",
+        "It gives off a faint glow."
+      ]
+    },
+    {
+      "id": "msg_0838_00113",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Swampert holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00114",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Sceptile holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00115",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Sableye holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00116",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Altaria holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00117",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Gallade holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00118",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "An Audino holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00119",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Metagross holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00120",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Sharpedo holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00121",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Slowbro holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00122",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Steelix holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00123",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Pidgeot holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00124",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Glalie holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00125",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Diancie holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00126",
+      "en_US": [
+        "A bottle believed to have been used\\n",
+        "to seal away the power of a certain\\n",
+        "Pokémon long, long ago."
+      ]
+    },
+    {
+      "id": "msg_0838_00127",
+      "en_US": [
+        "This cuff contains an unknown power that\\n",
+        "somehow enables a Pokémon carrying\\n",
+        "a Mega Stone to Mega Evolve in battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00128",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Camerupt holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00129",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Lopunny holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00130",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Salamence holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00131",
+      "en_US": [
+        "A variety of the mysterious Mega Stones.\\n",
+        "A Beedrill holding this stone will be\\n",
+        "able to Mega Evolve during battle."
+      ]
+    },
+    {
+      "id": "msg_0838_00132",
+      "en_US": [
+        "A meteorite that you got at Mt. Chimney.\\n",
+        "It continues to give off a faint glow\\n",
+        "and is slightly warm to the touch."
+      ]
+    },
+    {
+      "id": "msg_0838_00133",
+      "en_US": [
+        "A meteorite that you got at Mt. Chimney.\\n",
+        "A pattern has risen to the surface,\\n",
+        "and it’s shining with rainbow-colored light."
+      ]
+    },
+    {
+      "id": "msg_0838_00134",
+      "en_US": [
+        "A stone filled with an unexplained power.\\n",
+        "It makes Pokémon that battle with\\n",
+        "a Mega Stone Mega Evolve."
+      ]
+    },
+    {
+      "id": "msg_0838_00135",
+      "en_US": [
+        "One of the fragments of a\\n",
+        "meteorite from Granite Cave.\\n",
+        "It’s faintly warm to the touch."
+      ]
+    },
+    {
+      "id": "msg_0838_00136",
+      "en_US": [
+        "A flute that can be used to summon\\n",
+        "Latios or Latias no matter where you\\n",
+        "are."
+      ]
+    }
+  ]
+}

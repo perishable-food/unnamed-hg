@@ -1,0 +1,52 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0939
+ * Generated: 9/2/2026 12:10:09 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	CheckFlag 199
+	JumpIf EQUAL Function#1
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	Message 0
+	SetVar 0x8004 337
+	SetVar 0x8005 1
+	CheckItemSpace 0x8004 0x8005 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#2
+	CommonScript 2033
+	SetFlag 199
+	Message 2
+	WaitButton
+	CloseMessage
+	Movement Overworld.0 Action#1
+	WaitMovement
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	Message 4
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+Function 2:
+	CommonScript 2009
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	FaceEast 0x1
+End
+

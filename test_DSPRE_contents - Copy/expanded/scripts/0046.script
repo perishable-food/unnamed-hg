@@ -1,0 +1,213 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0046
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	Movement Player Action#1
+	UnvanishOverworld Player
+	WaitMovement
+	ShakeCamera 0 1 1 8
+	PlayFanfare SEQ_SE_DP_SUTYA2
+	SetVar 0x40D8 0
+	CompareVarValue 0x40F0 1
+	JumpIf EQUAL Function#1
+	SetVar 0x40F0 1
+	IncrementVar 0x40F1 1
+End
+
+Script 2:
+	CompareVarValue 0x40D8 1
+	JumpIf DIFFERENT Function#2
+	VanishOverworld Player
+End
+
+Script 3:
+	MecScript
+	LockAll
+	SetVar 0x40CE 1
+	SetFlag 273
+	CheckPokemonAlive 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf EQUAL Function#3
+	CompareVarValue 0x800C 1
+	JumpIf EQUAL Function#4
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+End
+
+Function 2:
+End
+
+Function 3:
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#5
+	Movement Player Action#2
+Jump Function#6
+
+Function 4:
+	GetPlayerDirection 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#7
+	Movement Player Action#2
+	Movement Following Action#3
+Jump Function#8
+
+Function 5:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#9
+	Movement Player Action#4
+Jump Function#6
+
+Function 6:
+	WaitMovement
+Jump Function#10
+
+Function 7:
+	CompareVarValue 0x800C 1
+	JumpIf DIFFERENT Function#11
+	Movement Player Action#4
+	Movement Following Action#5
+Jump Function#8
+
+Function 8:
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	CompareVarValue 0x403E 7
+	JumpIf GREATER/EQUAL Function#12
+	CompareVarValue 0x403E 6
+	JumpIf EQUAL Function#13
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 24 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 9:
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#14
+	Movement Player Action#6
+Jump Function#6
+
+Function 10:
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	CompareVarValue 0x403E 7
+	JumpIf GREATER/EQUAL Function#12
+	CompareVarValue 0x403E 6
+	JumpIf EQUAL Function#13
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 24 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 11:
+	CompareVarValue 0x800C 2
+	JumpIf DIFFERENT Function#15
+	Movement Player Action#6
+	Movement Following Action#7
+Jump Function#8
+
+Function 12:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 492 0 5 24 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Jump Function#16
+
+Function 13:
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 490 0 5 24 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+Jump Function#16
+
+Function 14:
+	Movement Player Action#8
+	WaitMovement
+Jump Function#10
+
+Function 15:
+	Movement Player Action#8
+	Movement Following Action#9
+	WaitMovement
+	PlayFanfare SEQ_SE_GS_RAKKA01
+	CompareVarValue 0x403E 7
+	JumpIf GREATER/EQUAL Function#12
+	CompareVarValue 0x403E 6
+	JumpIf EQUAL Function#13
+	FadeScreen 6 1 0 0
+	WaitFadeScreen
+	Warp 315 0 5 24 0x800C
+	FadeScreen 6 1 1 0
+	WaitFadeScreen
+	ReleaseAll
+End
+
+Function 16:
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
+Action 1:
+	TeleportDown 0x1
+End
+
+Action 2:
+	WalkOnSpotNorth2 0x4
+	SetInvisible 0x1
+End
+
+Action 3:
+	Delay4 0x3
+	WalkNorth2 0x1
+	SetInvisible 0x1
+End
+
+Action 4:
+	WalkOnSpotSouth2 0x4
+	SetInvisible 0x1
+End
+
+Action 5:
+	Delay4 0x3
+	WalkSouth2 0x1
+	SetInvisible 0x1
+End
+
+Action 6:
+	WalkOnSpotWest2 0x4
+	SetInvisible 0x1
+End
+
+Action 7:
+	Delay4 0x3
+	WalkWest2 0x1
+	SetInvisible 0x1
+End
+
+Action 8:
+	WalkOnSpotEast2 0x4
+	SetInvisible 0x1
+End
+
+Action 9:
+	Delay4 0x3
+	WalkEast2 0x1
+	SetInvisible 0x1
+End
+

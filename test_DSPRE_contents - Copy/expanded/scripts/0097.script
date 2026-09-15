@@ -1,0 +1,50 @@
+/*
+ * DSPRE Script File
+ * Rom ID: test
+ * Game: HGSS
+ * File: 0097
+ * Generated: 9/2/2026 12:10:04 PM
+ */
+
+//===== SCRIPTS =====//
+Script 1:
+	SetFlag 439
+	SetFlag 440
+	CompareVarValue 0x4077 4
+	JumpIf DIFFERENT Function#1
+	ClearFlag 439
+	ClearFlag 440
+End
+
+Script 2:
+	PlayFanfare SEQ_SE_CONFIRM
+	LockAll
+	FacePlayer
+	GetItemQuantity ITEM_CARD_KEY 0x800C
+	CompareVarValue 0x800C 0
+	JumpIf DIFFERENT Function#2
+	Message 0
+	SetFlag 449
+	SetVar 0x8004 475
+	SetVar 0x8005 1
+	CommonScript 2033
+	Message 2
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== FUNCTIONS =====//
+Function 1:
+End
+
+Function 2:
+	Message 2
+	Message 3
+	WaitButton
+	CloseMessage
+	ReleaseAll
+End
+
+//===== ACTIONS =====//
