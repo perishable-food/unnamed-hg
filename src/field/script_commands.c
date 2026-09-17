@@ -405,6 +405,67 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
             SetMonData(totem, MON_DATA_PERSONALITY, &pid_1);
             break;
 
+        case SPECIES_OGERPON:
+            // Ability:
+            u16 data_2 = ABILITY_COMPETITIVE;
+            SetMonData(totem, MON_DATA_ABILITY, &data_2);
+
+            // Item:
+            data_2 = ITEM_EXPERT_BELT;
+            SetMonData(totem, MON_DATA_HELD_ITEM, &data_2);
+
+            // Move slot 1:
+            data_2 = MOVE_MOONBLAST;
+            SetMonData(totem, MON_DATA_MOVE1, &data_2);
+            data_2 = GetMoveMaxPP(data_2, 0);
+            SetMonData(totem, MON_DATA_MOVE1PP, &data_2);
+            data_2 = 0;
+            SetMonData(totem, MON_DATA_MOVE1PPUP, &data_2);
+
+            // Move slot 2:
+            data_2 = MOVE_SYNTHESIS;
+            SetMonData(totem, MON_DATA_MOVE2, &data_2);
+            data_2 = GetMoveMaxPP(data_2, 0);
+            SetMonData(totem, MON_DATA_MOVE2PP, &data_2);
+            data_2 = 0;
+            SetMonData(totem, MON_DATA_MOVE2PPUP, &data_2);
+
+            // Move slot 3:
+            data_2 = MOVE_CALM_MIND;
+            SetMonData(totem, MON_DATA_MOVE3, &data_2);
+            data_2 = GetMoveMaxPP(data_2, 0);
+            SetMonData(totem, MON_DATA_MOVE3PP, &data_2);
+            data_2 = 0;
+            SetMonData(totem, MON_DATA_MOVE3PPUP, &data_2);
+
+            // Move slot 4:
+            data_2 = MOVE_AURA_SPHERE;
+            SetMonData(totem, MON_DATA_MOVE4, &data_2);
+            data_2 = GetMoveMaxPP(data_2, 0);
+            SetMonData(totem, MON_DATA_MOVE4PP, &data_2);
+            data_2 = 0;
+            SetMonData(totem, MON_DATA_MOVE4PPUP, &data_2);
+            break;
+
+            // IVs:
+            data_2 = 31;
+            SetMonData(totem, MON_DATA_HP_IV, &data_2);
+            SetMonData(totem, MON_DATA_ATK_IV, &data_2);
+            SetMonData(totem, MON_DATA_DEF_IV, &data_2);
+            SetMonData(totem, MON_DATA_SPEED_IV, &data_2);
+            SetMonData(totem, MON_DATA_SPATK_IV, &data_2);
+            SetMonData(totem, MON_DATA_SPDEF_IV, &data_2);
+
+            // Nature:
+            data_2 = NATURE_TIMID;
+            u32 pid_2 = GetMonData(totem, MON_DATA_PERSONALITY, NULL);
+            u8 currentNature_2 = pid_2 % 25;
+            pid_2 = pid_2 + data_2 - currentNature_2;
+            SetMonData(totem, MON_DATA_PERSONALITY, &pid_2);
+
+            data_2 = 4;
+            SetMonData(totem, MON_DATA_FORM, &data_2);
+            break;
     default:
         break;
     }
