@@ -294,8 +294,8 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
 #ifdef DEBUG_BEFORE_MOVE_LOGIC
         debug_printf("In BEFORE_MOVE_STATE_CHECK_PP\n");
 #endif
-
-        if (!ctx->futureSightHitTurn) {
+        BOOL isConsecutiveHitFromMultiHit = (ctx->multiHitCount && ctx->multiHitCount != ctx->multiHitCountTemp);
+        if (!ctx->futureSightHitTurn && !isConsecutiveHitFromMultiHit) {
             BattleController_CheckPP(bsys, ctx);
         }
         ctx->wb_seq_no++;
@@ -730,7 +730,10 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
 #ifdef DEBUG_BEFORE_MOVE_LOGIC
         debug_printf("In BEFORE_MOVE_STATE_SET_STEEL_BEAM_FLAG\n");
 #endif
-
+        if (!ctx->moveConditionsFlags[ctx->attack_client].mindBlownOrSteelBeam
+            && (ctx->current_move_index == MOVE_STEEL_BEAM || ctx->current_move_index == MOVE_MIND_BLOWN)) {
+            ctx->moveConditionsFlags[ctx->attack_client].mindBlownOrSteelBeam = TRUE;
+        }
         ctx->wb_seq_no++;
         FALLTHROUGH;
     }
@@ -2919,7 +2922,7 @@ BOOL BattleController_CheckAirBalloonTelekinesisMagnetRise(struct BattleSystem *
         ctx->moveStatusFlagForSpreadMoves[defender] = MOVE_STATUS_MAGNET_RISE_IMMUNE;
         BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, TRUE);
         ctx->battlerIdTemp = defender;
-        LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_DOESNT_AFFECT_ABILITY);
+        LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_DOESNT_AFFECT);
         ctx->next_server_seq_no = ctx->server_seq_no;
         ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
         return TRUE;
@@ -2969,9 +2972,14 @@ BOOL BattleController_CheckTypeBasedMoveConditionImmunities1(struct BattleSystem
     }
 
     // Dark-type Prankster immunity
-    if ((priority > 0 && GetMoveSplit(ctx, ctx->current_move_index) == SPLIT_STATUS && GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_PRANKSTER && HasType(ctx, defender, TYPE_DARK) && (ctx->attack_client & 1) != (defender & 1)) // used on an enemy)
-                                                                                                                                                                                                                                           // Ghost-type immunity to trapping moves
-                                                                                                                                                                                                                                           // TODO: handle Octolock
+    if ((priority > 0
+            && GetMoveSplit(ctx, ctx->current_move_index) == SPLIT_STATUS
+            && ctx->moveTbl[ctx->current_move_index].target != RANGE_OPPONENT_SIDE
+            && GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_PRANKSTER
+            && HasType(ctx, defender, TYPE_DARK)
+            && (ctx->attack_client & 1) != (defender & 1)) // used on an enemy)
+                                                           // TODO: Ghost-type immunity to trapping moves
+                                                           // TODO: handle Octolock
         || (moveEffect == MOVE_EFFECT_PREVENT_ESCAPE && HasType(ctx, defender, TYPE_GHOST))
         // Grass-type powder immunity
         || (IsPowderMove(ctx->current_move_index) && HasType(ctx, defender, TYPE_GRASS) && ctx->attack_client != defender)
