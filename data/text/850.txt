@@ -849,3 +849,14 @@ TEMP
 TEMP
 TEMP
 TEMP
+A variety of the mysterious Mega Stones.\nA Decidueye holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nAn Incineroar holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Primarina holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Dedenne holding this stone will be\nable to Mega Evolve during battle.
+A mysterious stone that allows Eevee’s\nevolutions to revert back to their\npre-evolved state.
+A variety of the mysterious Mega Stones.\nA Ledian holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Marshadow holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Jirachi holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Meowscarada holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Skeledirge holding this stone will be\nable to Mega Evolve during battle.
+A variety of the mysterious Mega Stones.\nA Quaquaval holding this stone will be\nable to Mega Evolve during battle.

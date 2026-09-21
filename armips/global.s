@@ -16,6 +16,8 @@
 
 .include "armips/asm/no_partner_double_battles.s" // allows no partner double battles
 
+.include "armips/asm/enable_surf_without_knowing_move.s" 
+
 .if FAIRY_TYPE_IMPLEMENTED == 1
 
 .include "armips/asm/fairy.s" // repoints all the move table defines within the structure
