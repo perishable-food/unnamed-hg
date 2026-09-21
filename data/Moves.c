@@ -24949,6 +24949,34 @@ const MoveSourceEntry sMoveSource[NUM_OF_MOVES + 1] = {
         .description = "The goat boosts all\\nits stats by using\\nsome of its own HP.",
     },
 
+    [MOVE_CUDGEL_OF_RUIN] = {
+        .names = {
+            .name = "Cudgel of Ruin",
+            .capsName = "CUDGEL OF RUIN",
+            .fullName = "Cudgel of Ruin",
+        },
+        .data = {
+            .effect = MOVE_EFFECT_HIGH_CRITICAL,
+            .split = SPLIT_SPECIAL,
+            .power = 100,
+            .type = TYPE_FAIRY,
+            .accuracy = 100,
+            .pp = 10,
+            .effectChance = 0,
+        },
+        .battle = {
+            .target = RANGE_SINGLE_TARGET,
+            .priority = 0,
+            .flags = FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT,
+        },
+        .contest = {
+            .appeal = 0,
+            .contestType = CONTEST_COOL,
+        },
+        .description = "The user fires a beam from a cudgel. It has a high critical-hit ratio.",
+    },
+
+
     [NUM_OF_MOVES] = {
         .names = {
             .name = "",

@@ -942,13 +942,14 @@
 
 
 #define MOVE_GOAT_POLISH (NUM_OF_CANONICAL_MOVES)
+#define MOVE_CUDGEL_OF_RUIN (NUM_OF_CANONICAL_MOVES + 1)
 // define your new moves below like this
 // #define MOVE_CUSTOM_MOVE_1 (NUM_OF_CANONICAL_MOVES)
 // #define MOVE_CUSTOM_MOVE_2 (NUM_OF_CANONICAL_MOVES + 1)
 // ...
 
 // update this number yourself manually
-#define NUM_OF_CUSTOM_MOVES 1
+#define NUM_OF_CUSTOM_MOVES 2
 
 #define NUM_OF_MOVES (NUM_OF_CANONICAL_MOVES + NUM_OF_CUSTOM_MOVES)
 
