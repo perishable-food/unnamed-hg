@@ -24967,13 +24967,13 @@ const MoveSourceEntry sMoveSource[NUM_OF_MOVES + 1] = {
         .battle = {
             .target = RANGE_SINGLE_TARGET,
             .priority = 0,
-            .flags = FLAG_KEEP_HP_BAR | FLAG_MIRROR_MOVE | FLAG_PROTECT,
+            .flags = FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_HIDE_SHADOW,
         },
         .contest = {
             .appeal = 0,
             .contestType = CONTEST_COOL,
         },
-        .description = "The user fires a beam from a cudgel. It has a high critical-hit ratio.",
+        .description = "The user fires a beam\\nfrom a cudgel.\\nIt has a high\\ncritical-hit ratio.",
     },
 
 

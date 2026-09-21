@@ -233,7 +233,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
         }
         break;
     case MOVE_SPIT_UP:
-        if (AttackingMon.parentalBondFlag == 2 && AttackingMon.ability == (ABILITY_PARENTAL_BOND || ABILITY_STARSTRUCK)) {
+        if (AttackingMon.parentalBondFlag == 2 && AttackingMon.ability == ABILITY_PARENTAL_BOND) {
             movepower = damage_power;
         } else {
             movepower = 100 * AttackingMon.stockpileCount;

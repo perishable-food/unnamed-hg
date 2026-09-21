@@ -1123,7 +1123,7 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         }
     }
 
-if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
+/*if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
     && sp->moveTbl[sp->current_move_index].power <= 60)
 {
     // list taken from bulbapedia article on sheer force and the moves affected.
@@ -1171,7 +1171,7 @@ if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
         default:
             break;
         }
-    }
+    }*/
 
     JumpToMoveEffectScript(sp, 30, effect);
 
