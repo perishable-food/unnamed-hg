@@ -415,7 +415,7 @@ void SetupAndStartTotemBattle(TaskManager *taskManager, u16 species, u8 level, u
             SetMonData(totem, MON_DATA_HELD_ITEM, &data_2);
 
             // Move slot 1:
-            data_2 = MOVE_MOONBLAST;
+            data_2 = MOVE_CUDGEL_OF_RUIN;
             SetMonData(totem, MON_DATA_MOVE1, &data_2);
             data_2 = GetMoveMaxPP(data_2, 0);
             SetMonData(totem, MON_DATA_MOVE1PP, &data_2);

@@ -1500,5 +1500,8 @@ const u16 UNUSED BaseExperienceTable[] =
     [SPECIES_MEGA_MEOWSCARADA            ] = 165,
     [SPECIES_MEGA_SKELEDIRGE             ] = 170,
     [SPECIES_MEGA_QUAQUAVAL              ] = 165,
-    [SPECIES_ETERNAL_FRUIT_OGERPON       ] = 300
+    [SPECIES_ETERNAL_FRUIT_OGERPON       ] = 300,
+    [SPECIES_MEGA_ETERNAL_FRUIT_OGERPON  ] = 170,
+    [SPECIES_ARMORED_MEWTWO              ] = 165,
+    [SPECIES_ARMORED_NIDOKING            ] = 300
 };

@@ -171525,6 +171525,172 @@
       {
         "Level": 66,
         "Move": "MOVE_WISH"
+      },
+      {
+        "Level": 85,
+        "Move": "MOVE_LIGHT_OF_RUIN"
+      }
+    ],
+    "MachineMoves": [
+      "MOVE_BRICK_BREAK",
+      "MOVE_BULLET_SEED",
+      "MOVE_CHARM",
+      "MOVE_ENCORE",
+      "MOVE_ENDURE",
+      "MOVE_ENERGY_BALL",
+      "MOVE_FACADE",
+      "MOVE_FALSE_SWIPE",
+      "MOVE_FLING",
+      "MOVE_FRUSTRATION",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_GIGA_IMPACT",
+      "MOVE_GRASSY_TERRAIN",
+      "MOVE_GRASS_KNOT",
+      "MOVE_HELPING_HAND",
+      "MOVE_LASH_OUT",
+      "MOVE_LEAF_STORM",
+      "MOVE_MAGICAL_LEAF",
+      "MOVE_PLAY_ROUGH",
+      "MOVE_PROTECT",
+      "MOVE_RAIN_DANCE",
+      "MOVE_REST",
+      "MOVE_SANDSTORM",
+      "MOVE_SCARY_FACE",
+      "MOVE_SLEEP_TALK",
+      "MOVE_SOLAR_BEAM",
+      "MOVE_SOLAR_BLADE",
+      "MOVE_SPIKES",
+      "MOVE_SUBSTITUTE",
+      "MOVE_SUNNY_DAY",
+      "MOVE_SWORDS_DANCE",
+      "MOVE_TAKE_DOWN",
+      "MOVE_TAUNT",
+      "MOVE_TERA_BLAST",
+      "MOVE_THROAT_CHOP",
+      "MOVE_TRAILBLAZE",
+      "MOVE_ZEN_HEADBUTT",
+      "MOVE_HIDDEN_POWER",
+      "MOVE_RETURN",
+      "MOVE_ALLURING_VOICE",
+      "MOVE_AURA_SPHERE",
+      "MOVE_CALM_MIND",
+      "MOVE_DRAINING_KISS",
+      "MOVE_GRAVITY",
+      "MOVE_ALLY_SWITCH",
+      "MOVE_LIGHT_SCREEN",
+      "MOVE_REFLECT",
+      "MOVE_METRONOME",
+      "MOVE_MISTY_TERRAIN",
+      "MOVE_NASTY_PLOT",
+      "MOVE_FOCUS_BLAST",
+      "MOVE_DARK_PULSE",
+      "MOVE_SHADOW_BALL",
+      "MOVE_VACUUM_WAVE",
+      "MOVE_TERRAIN_PULSE",
+      "MOVE_HYPER_BEAM",
+      "MOVE_HYPER_VOICE"
+
+    ],
+    "EggMoves": [],
+    "TutorMoves": []
+  },
+  "SPECIES_MEGA_ETERNAL_FRUIT_OGERPON": { 
+    "LevelMoves": [
+      {
+        "Level": 0,
+        "Move": "MOVE_DOUBLE_KICK"
+      },
+      {
+        "Level": 0,
+        "Move": "MOVE_MIRROR_COAT"
+      },
+      {
+        "Level": 0,
+        "Move": "MOVE_TRI_ATTACK"
+      },
+      {
+        "Level": 0,
+        "Move": "MOVE_PLAY_ROUGH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_DOUBLE_KICK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_MIRROR_COAT"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_RETALIATE"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_PLAY_ROUGH"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_FAIRY_WIND"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_LEECH_SEED"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_QUICK_ATTACK"
+      },
+      {
+        "Level": 1,
+        "Move": "MOVE_TAUNT"
+      },
+      {
+        "Level": 6,
+        "Move": "MOVE_FOCUS_ENERGY"
+      },
+      {
+        "Level": 12,
+        "Move": "MOVE_GROWTH"
+      },
+      {
+        "Level": 18,
+        "Move": "MOVE_SLAM"
+      },
+      {
+        "Level": 24,
+        "Move": "MOVE_DAZZLING_GLEAM"
+      },
+      {
+        "Level": 30,
+        "Move": "MOVE_CUDGEL_OF_RUIN"
+      },
+      {
+        "Level": 36,
+        "Move": "MOVE_ENERGY_BALL"
+      },
+      {
+        "Level": 42,
+        "Move": "MOVE_SYNTHESIS"
+      },
+      {
+        "Level": 48,
+        "Move": "MOVE_CRAFTY_SHIELD"
+      },
+      {
+        "Level": 54,
+        "Move": "MOVE_MOONBLAST"
+      },
+      {
+        "Level": 60,
+        "Move": "MOVE_DARK_PULSE"
+      },
+      {
+        "Level": 66,
+        "Move": "MOVE_WISH"
+      },
+      {
+        "Level": 85,
+        "Move": "MOVE_LIGHT_OF_RUIN"
       }
     ],
     "MachineMoves": [

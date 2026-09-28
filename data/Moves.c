@@ -24956,7 +24956,7 @@ const MoveSourceEntry sMoveSource[NUM_OF_MOVES + 1] = {
             .fullName = "Cudgel of Ruin",
         },
         .data = {
-            .effect = MOVE_EFFECT_HIGH_CRITICAL,
+            .effect = MOVE_EFFECT_CUDGEL_OF_RUIN,
             .split = SPLIT_SPECIAL,
             .power = 100,
             .type = TYPE_FAIRY,

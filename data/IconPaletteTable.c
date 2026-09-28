@@ -1556,4 +1556,7 @@ u8 gIconPalTable[] = {
     [SPECIES_MEGA_SKELEDIRGE]                    = 0,
     [SPECIES_MEGA_QUAQUAVAL]                     = 0,
     [SPECIES_ETERNAL_FRUIT_OGERPON]              = 0,
+    [SPECIES_MEGA_ETERNAL_FRUIT_OGERPON]              = 0,
+    [SPECIES_ARMORED_MEWTWO]              = 2,
+    [SPECIES_ARMORED_NIDOKING]            = 2,
 };

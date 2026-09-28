@@ -731,7 +731,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
             }
 
             // handle Tough Claws
-            if ((AttackingMon.ability == ABILITY_TOUGH_CLAWS)
+            if ((AttackingMon.ability == ABILITY_TOUGH_CLAWS) || (AttackingMon.ability == ABILITY_TOXIC_CLAWS)
                 && (IsContactBeingMade(AttackingMon.ability, AttackingMon.item_held_effect, DefendingMon.item_held_effect, moveno, moveFlag))) {
                 basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_3);
                 continue;
@@ -1130,6 +1130,10 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
 
             // handle Steelworker
             if (AttackingMon.ability == ABILITY_STEELWORKER && (movetype == TYPE_STEEL)) {
+                attackModifier = QMul_RoundUp(attackModifier, UQ412__1_5);
+            }
+            // handle Toxic Claws
+            if (AttackingMon.ability == ABILITY_TOXIC_CLAWS && (movetype == TYPE_POISON)) {
                 attackModifier = QMul_RoundUp(attackModifier, UQ412__1_5);
             }
 

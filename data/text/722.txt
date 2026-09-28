@@ -318,3 +318,4 @@ Placeholder
 Placeholder
 Burns the attacker upon\ntaking damage.
 Moves under 60 Base Power hit\nfive times. 
+Poison type moves are strengthened.\nDoes more damage on contact.

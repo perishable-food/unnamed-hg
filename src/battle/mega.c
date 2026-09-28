@@ -531,7 +531,12 @@ const struct MegaStruct sMegaTable[] = {
         .monindex = SPECIES_QUAQUAVAL,
         .itemindex = ITEM_QUAQUAVITE,
         .form = 1,
-    },
+    }/*,
+    {
+        .monindex = SPECIES_OGERPON,
+        .itemindex = ITEM_POKE_BALL, // ITEM_ETERNAL_MASK
+        .form = 9,
+    }*/
 };
 
 const struct MegaStructMove sMegaMoveTable[] = {
@@ -544,6 +549,10 @@ const struct MegaStructMove sMegaMoveTable[] = {
         .monindex = SPECIES_DIANCIE,
         .moveindex = MOVE_DIAMOND_STORM,
         .form = 1,
+    },
+    {.monindex = SPECIES_OGERPON,
+        .moveindex = MOVE_CUDGEL_OF_RUIN,
+        .form = 9,
     },
 };
 #endif // MEGA_EVOLUTIONS
@@ -736,8 +745,22 @@ BOOL CheckCanDrawMegaButton(struct BI_PARAM *bip)
     }
 
     form_no = GetMonData(pp, MON_DATA_FORM, 0);
-    if (form_no || (bip->bw->sp->battlemon[bip->client_no].condition2 & STATUS2_TRANSFORM)) { // can not draw mega button if form is nonzero.  only base form can mega evolve
+    mon = GetMonData(pp, MON_DATA_SPECIES, NULL);
+    if (bip->bw->sp->battlemon[bip->client_no].condition2 & STATUS2_TRANSFORM) { 
         return FALSE;
+    }
+    if (mon != SPECIES_OGERPON && mon != SPECIES_ZYGARDE && mon != SPECIES_FLOETTE) {
+        if (form_no != 0) {
+            return FALSE;
+        }
+    }    
+    if (mon == SPECIES_OGERPON) {
+        if (form_no != 8) {
+            return FALSE;
+        }
+        if (form_no == 8) {
+            return TRUE;
+        }
     }
 
     return CheckMegaData(mon, item) || CheckMegaMoveData(mon, moves);

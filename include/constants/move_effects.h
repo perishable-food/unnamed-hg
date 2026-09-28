@@ -416,7 +416,7 @@
 #define MAX_BASE_MOVE_EFFECT_NUM 408
 
 // define your custom move effects below like this
-#define MOVE_EFFECT_STARSTRUCK (MAX_BASE_MOVE_EFFECT_NUM + 1)
+#define MOVE_EFFECT_CUDGEL_OF_RUIN (MAX_BASE_MOVE_EFFECT_NUM + 1)
 
 
 #define RANGE_SINGLE_TARGET           0
