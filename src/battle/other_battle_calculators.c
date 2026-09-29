@@ -932,8 +932,8 @@ BOOL LONG_CALL CalcAccuracy(void *bw, struct BattleStruct *sp, int attacker, int
 
         // Victory Star - 4506/4096 for each Victory Star
 
-        if (BATTLER_ALLY(attacker) == sp->rawSpeedNonRNGClientOrder[i]
-            && GetBattlerAbility(sp, sp->rawSpeedNonRNGClientOrder[i]) == ABILITY_VICTORY_STAR) {
+        if (((attacker == sp->rawSpeedNonRNGClientOrder[i]) && atk_ability == ABILITY_VICTORY_STAR)
+            || ((BATTLER_ALLY(attacker) == sp->rawSpeedNonRNGClientOrder[i]) && GetBattlerAbility(sp, BATTLER_ALLY(attacker)) == ABILITY_VICTORY_STAR)) {
             accuracyModifier = QMul_RoundUp(accuracyModifier, UQ412__1_1_BUT_HIGHER);
         }
     }
@@ -2147,7 +2147,7 @@ BOOL BattlerCantSwitch(void *bw, struct BattleStruct *sp, int battlerId)
     BOOL ret = FALSE;
 
     // ghost types can switch from anything like they had shed skin
-    if (HeldItemHoldEffectGet(sp, battlerId) == HOLD_EFFECT_SWITCH || HasType(sp, battlerId, TYPE_GHOST)) {
+    if (HeldItemHoldEffectGet(sp, battlerId) == HOLD_EFFECT_SWITCH || GetBattlerAbility(sp, battlerId) == ABILITY_RUN_AWAY || HasType(sp, battlerId, TYPE_GHOST)) {
         return FALSE;
     }
 
@@ -4116,7 +4116,7 @@ u32 LONG_CALL RollMetronomeMove(struct BattleSystem *bsys)
  *  @param item the held item of the attacker
  *  @return TRUE if item can be removed, FALSE otherwise
  */
-BOOL LONG_CALL CanItemBeRemovedFromSpecies(u16 species, u16 item)
+BOOL LONG_CALL CanItemBeRemovedFromSpecies(u16 species, u16 item, u32 form)
 {
     // blanket item bans
     if (IS_ITEM_MAIL(item) || IS_ITEM_Z_CRYSTAL(item)) {
@@ -4147,7 +4147,7 @@ BOOL LONG_CALL CanItemBeRemovedFromSpecies(u16 species, u16 item)
 
     // then the other swathes of species
     if ((IS_SPECIES_PARADOX_FORM(species) && item == ITEM_BOOSTER_ENERGY)
-        || (CheckMegaData(species, item))) {
+        || (CheckMegaData(species, item, form))) {
         return FALSE;
     }
 
@@ -4157,13 +4157,7 @@ BOOL LONG_CALL CanItemBeRemovedFromSpecies(u16 species, u16 item)
 BOOL LONG_CALL CanItemBeRemovedFromClient(u32 species, u32 item, u32 form)
 {
     // bypass klutz and friends probably
-
-    // CheckMegaData will gladly tell you a galarian slowbro can't lose its slowbronite...  we have to take over
-    if (species == SPECIES_SLOWBRO && item == ITEM_SLOWBRONITE && form == 2) {
-        return TRUE;
-    } else {
-        return CanItemBeRemovedFromSpecies(species, item);
-    }
+    return CanItemBeRemovedFromSpecies(species, item, form);
 }
 
 /**
