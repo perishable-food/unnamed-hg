@@ -535,6 +535,9 @@
 // define your custom subscripts below like this
 // #define MOVE_SUBSCRIPT_CUSTOM_1 (MAX_BASE_SUBSCRIPT_NUM + 1)
 
+#define BATTLE_SUBSCRIPT_STANCE_CHANGE_ATTACK (MAX_BASE_SUBSCRIPT_NUM + 1)
+#define BATTLE_SUBSCRIPT_STANCE_CHANGE_DEFENSE (MAX_BASE_SUBSCRIPT_NUM + 2)
+#define BATTLE_SUBSCRIPT_STANCE_CHANGE_SPEED (MAX_BASE_SUBSCRIPT_NUM + 3)
 
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c

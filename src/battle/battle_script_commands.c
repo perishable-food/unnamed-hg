@@ -1043,6 +1043,11 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         effect = MOVE_EFFECT_HIT;
     }
 
+    if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SERENE_GRACE && sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_HIT_IN_3_TURNS) {
+        effect = MOVE_EFFECT_FUTURE_HIT_INSTANTLY;
+
+    }
+
     if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE || HeldItemHoldEffectGet(sp, sp->defence_client) == HOLD_EFFECT_PREVENT_SECONDARY_EFFECTS) {
         // list taken from bulbapedia article on sheer force and the moves affected.
         // Also applies to covert cloak
@@ -1126,10 +1131,9 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         }
     }
 
-/*if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
-    && sp->moveTbl[sp->current_move_index].power <= 60)
-{
-    // list taken from bulbapedia article on sheer force and the moves affected.
+     /*if ((GetBattlerAbility(sp, sp->attack_client) == ABILITY_STARSTRUCK)
+        && sp->moveTbl[sp->current_move_index].power <= 60) {
+    
     switch (effect)
     {
         case MOVE_EFFECT_FLINCH_HIT:

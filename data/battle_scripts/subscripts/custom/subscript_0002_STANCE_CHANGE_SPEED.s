@@ -1,0 +1,38 @@
+#include "constants/battle_constants.h"
+#include "constants/battle_message_constants.h"
+.include "battle_commands.inc"
+
+.data
+
+_000:
+    CompareMonDataToValue OPCODE_FLAG_NOT, BATTLER_CATEGORY_MSG_TEMP, BMON_DATA_STATUS2, STATUS2_SUBSTITUTE, _016
+    PlayBattleAnimation BATTLER_CATEGORY_MSG_TEMP, BATTLE_ANIMATION_SUB_OUT
+    Wait
+    RestoreSprite BATTLER_CATEGORY_MSG_TEMP
+    Wait
+    PlayBattleAnimation BATTLER_CATEGORY_MSG_TEMP, BATTLE_ANIMATION_SUB_IN
+    Wait
+
+_016:
+    AbilityPopup BATTLER_CATEGORY_MSG_TEMP
+    PlaySound BATTLER_CATEGORY_MSG_TEMP, 1980
+    SetMosaic BATTLER_CATEGORY_MSG_TEMP, 8, 1
+    Wait
+    ChangeForm BATTLER_CATEGORY_MSG_TEMP
+    PlaySound BATTLER_CATEGORY_MSG_TEMP, 1984
+    SetMosaic BATTLER_CATEGORY_MSG_TEMP, 0, 1
+    Wait
+    // Changed to Speed Forme!
+    PrintMessage 1797, TAG_NONE
+    Wait
+    WaitButtonABTime 30
+    CompareMonDataToValue OPCODE_FLAG_NOT, BATTLER_CATEGORY_MSG_TEMP, BMON_DATA_STATUS2, STATUS2_SUBSTITUTE, _058
+    PlayBattleAnimation BATTLER_CATEGORY_MSG_TEMP, BATTLE_ANIMATION_SUB_OUT
+    Wait
+    RefreshSprite BATTLER_CATEGORY_MSG_TEMP
+    Wait
+    PlayBattleAnimation BATTLER_CATEGORY_MSG_TEMP, BATTLE_ANIMATION_SUB_IN
+    Wait
+
+_058:
+    End

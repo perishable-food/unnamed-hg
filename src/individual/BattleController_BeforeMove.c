@@ -87,6 +87,7 @@ void BattleController_CheckConfusion(struct BattleSystem *bsys, struct BattleStr
 void BattleController_CheckParalysis(struct BattleSystem *bsys, struct BattleStruct *ctx);
 void BattleController_CheckInfatuation(struct BattleSystem *bsys, struct BattleStruct *ctx);
 void BattleController_CheckStanceChange(struct BattleSystem *bsys, struct BattleStruct *ctx);
+void BattleController_CheckDeoxysStanceChange(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BattlerController_RedirectTarget(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BattlerController_DecrementPP(struct BattleSystem *bsys, struct BattleStruct *ctx);
 void BattleController_CheckThawOut(struct BattleSystem *bsys UNUSED, struct BattleStruct *ctx);
@@ -481,6 +482,15 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
         ctx->wb_seq_no++;
         return;
     }
+    case BEFORE_MOVE_STATE_DEOXYS_STANCE_CHANGE: {
+#ifdef DEBUG_BEFORE_MOVE_LOGIC
+            debug_printf("In BEFORE_MOVE_STATE_DEOXYS_STANCE_CHANGE\n");
+#endif
+
+            BattleController_CheckDeoxysStanceChange(bsys, ctx);
+            ctx->wb_seq_no++;
+            return;
+        }
     case BEFORE_MOVE_STATE_MOVE_TYPE_CHANGES: {
 #ifdef DEBUG_BEFORE_MOVE_LOGIC
         debug_printf("In BEFORE_MOVE_STATE_MOVE_TYPE_CHANGES\n");
@@ -1559,7 +1569,7 @@ void BattleController_CheckInfatuation(struct BattleSystem *bsys, struct BattleS
 // TODO: unique subscript for Stance Change
 void BattleController_CheckStanceChange(struct BattleSystem *bsys, struct BattleStruct *ctx)
 {
-    if (ctx->battlemon[ctx->attack_client].ability == ABILITY_STANCE_CHANGE && ctx->battlemon[ctx->attack_client].species == SPECIES_AEGISLASH) {
+    if (ctx->battlemon[ctx->attack_client].species == SPECIES_AEGISLASH) {
         ctx->battlerIdTemp = ctx->attack_client;
         if (ctx->current_move_index == MOVE_KINGS_SHIELD && ctx->battlemon[ctx->attack_client].form_no == 1) {
             ctx->battlemon[ctx->battlerIdTemp].form_no = 0;
@@ -1573,6 +1583,42 @@ void BattleController_CheckStanceChange(struct BattleSystem *bsys, struct Battle
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_FORM_CHANGE);
             ctx->next_server_seq_no = ctx->server_seq_no;
             ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        }
+    }
+
+    if (ctx->battlemon[ctx->attack_client].ability == ABILITY_STANCE_CHANGE && ctx->battlemon[ctx->attack_client].species == SPECIES_DEOXYS) {
+        ctx->battlerIdTemp = ctx->attack_client;
+        if (ctx->moveTbl[ctx->current_move_index].split == SPLIT_STATUS && ctx->battlemon[ctx->attack_client].form_no != 3) {
+            ctx->battlemon[ctx->battlerIdTemp].form_no = 3;
+            BattleFormChange(ctx->battlerIdTemp, ctx->battlemon[ctx->battlerIdTemp].form_no, bsys, ctx, 0);
+            LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_STANCE_CHANGE_SPEED);
+            ctx->next_server_seq_no = ctx->server_seq_no;
+            ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        } else if (ctx->moveTbl[ctx->current_move_index].split != SPLIT_STATUS && ctx->battlemon[ctx->attack_client].form_no != 1) {
+            ctx->battlemon[ctx->battlerIdTemp].form_no = 1;
+            BattleFormChange(ctx->battlerIdTemp, ctx->battlemon[ctx->battlerIdTemp].form_no, bsys, ctx, 0);
+            LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_STANCE_CHANGE_ATTACK);
+            ctx->next_server_seq_no = ctx->server_seq_no;
+            ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        }
+    }
+}
+
+// stealing this code from mojo IT WAS MY IDEA ANYWAYS I DONT CARE ANYMORE
+void BattleController_CheckDeoxysStanceChange(struct BattleSystem *bsys, struct BattleStruct *ctx) {
+    if (ctx->battlemon[ctx->defence_client].ability == ABILITY_STANCE_CHANGE && ctx->battlemon[ctx->defence_client].species == SPECIES_DEOXYS) {
+        ctx->battlerIdTemp = ctx->attack_client;
+        if (ctx->moveTbl[ctx->current_move_index].split != SPLIT_STATUS)
+        {
+            ctx->battlerIdTemp = ctx->defence_client;
+            if (ctx->battlemon[ctx->defence_client].form_no != 2) 
+            {
+                ctx->battlemon[ctx->battlerIdTemp].form_no = 2;
+                BattleFormChange(ctx->battlerIdTemp, ctx->battlemon[ctx->battlerIdTemp].form_no, bsys, ctx, 0);
+                LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_STANCE_CHANGE_DEFENSE);
+                ctx->next_server_seq_no = ctx->server_seq_no;
+                ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+            }
         }
     }
 }

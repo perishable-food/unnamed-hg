@@ -556,6 +556,9 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
             if (DefendingMon.isGrounded && movetype == TYPE_DRAGON) {
                 basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__0_5);
             }
+            if (AttackingMon.isGrounded && movetype == TYPE_FAIRY) {
+                basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_3);
+            }
             break;
         case PSYCHIC_TERRAIN:
             if (AttackingMon.isGrounded && movetype == TYPE_PSYCHIC) {
