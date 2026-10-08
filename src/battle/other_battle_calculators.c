@@ -2684,11 +2684,32 @@ BOOL LONG_CALL BattleSystem_CheckMoveEffect(void *bw, struct BattleStruct *sp, i
         return TRUE;
     }
 
-    if (!(sp->server_status_flag & BATTLE_STATUS_FLAT_HIT_RATE) // TODO: Is this flag a debug flag to ignore hit rates..?
-        && ((sp->battlemon[battlerIdTarget].effect_of_moves & MOVE_EFFECT_FLAG_LOCK_ON
-                && sp->battlemon[battlerIdTarget].moveeffect.battlerIdLockOn == battlerIdAttacker)
-            || GetBattlerAbility(sp, battlerIdAttacker) == ABILITY_NO_GUARD
-            || GetBattlerAbility(sp, battlerIdTarget) == ABILITY_NO_GUARD)) {
+    BOOL lockOnOrNoGuard = (GetBattlerAbility(sp, battlerIdAttacker) == ABILITY_NO_GUARD) || (GetBattlerAbility(sp, battlerIdTarget) == ABILITY_NO_GUARD)
+        || (sp->battlemon[battlerIdTarget].effect_of_moves & MOVE_EFFECT_FLAG_LOCK_ON
+            && sp->battlemon[battlerIdTarget].moveeffect.battlerIdLockOn == battlerIdAttacker);
+
+    if (sp->moveTbl[move].effect == MOVE_EFFECT_ONE_HIT_KO) // || sp->server_status_flag & BATTLE_STATUS_FLAT_HIT_RATE
+    {
+        int levelDiff = (sp->battlemon[battlerIdAttacker].level - sp->battlemon[battlerIdTarget].level);
+        int accuracy = sp->moveTbl[move].accuracy;
+
+        if (move == MOVE_SHEER_COLD && !HasType(sp, battlerIdAttacker, TYPE_ICE)) {
+            accuracy = 20;
+        }
+        accuracy += levelDiff;
+        // if (levelDiff >= 0) //checked in BeforeMove
+        {
+            if (lockOnOrNoGuard || ((BattleRand(bw) % 100) < accuracy)) {
+                sp->waza_status_flag &= ~MOVE_STATUS_MISSED;
+                sp->waza_status_flag |= MOVE_STATUS_ONE_HIT_KO;
+                return TRUE;
+            }
+        }
+
+        sp->waza_status_flag |= MOVE_STATUS_ONE_HIT_KO_FAILED;
+        return FALSE;
+
+    } else if (lockOnOrNoGuard) { // non-OHKO move always hits
         sp->waza_status_flag &= ~MOVE_STATUS_MISSED;
         return TRUE;
     }
@@ -3017,7 +3038,7 @@ void LONG_CALL ov12_0224C4D8(struct BattleSystem *bsys, struct BattleStruct *ctx
         // Skip vanilla fail message printing
         // ctx->server_seq_no = CONTROLLER_COMMAND_26;
         ctx->server_seq_no = CONTROLLER_COMMAND_35;
-    } else if ((effect == MOVE_EFFECT_HIT_IN_3_TURNS && ctx->futureSightHitTurn == TRUE) || effect == MOVE_EFFECT_FUTURE_HIT_INSTANTLY) {
+    } else if (effect == MOVE_EFFECT_HIT_IN_3_TURNS && ctx->futureSightHitTurn == TRUE) {
         LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_FUTURE_SIGHT_DAMAGE);
         ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
         ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
@@ -3030,6 +3051,12 @@ void LONG_CALL ov12_0224C4D8(struct BattleSystem *bsys, struct BattleStruct *ctx
         ST_ServerTotteokiCountCalc(bsys, ctx); // 801B570h
     }
     ST_ServerMetronomeBeforeCheck(bsys, ctx); // 801ED20h
+
+    if (effect == MOVE_EFFECT_FUTURE_HIT_INSTANTLY) {
+        LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_FUTURE_SIGHT_DAMAGE);
+        ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
+        ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+    } 
 }
 
 void LONG_CALL ov12_0224C678(struct BattleSystem *bsys, struct BattleStruct *ctx)

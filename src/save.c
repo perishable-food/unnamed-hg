@@ -8,7 +8,6 @@
 #include "constants/file.h"
 
 #include "map_events_internal.h"
-
 #include "message.h"
 #include "pokemon.h"
 #include "pokemon_storage_system.h"
