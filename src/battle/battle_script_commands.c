@@ -1043,10 +1043,10 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         effect = MOVE_EFFECT_HIT;
     }
 
-    /*if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SERENE_GRACE && sp->moveTbl[sp->current_move_index].effect == MOVE_EFFECT_HIT_IN_3_TURNS) {
-        effect = MOVE_EFFECT_FUTURE_HIT_INSTANTLY;
+    if ((sp->field_condition & FIELD_CONDITION_METEOR_SHOWER) && (sp->current_move_index == MOVE_ETERNABEAM)) {
+        effect = MOVE_EFFECT_HIT;
 
-    }*/
+    }
 
     if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE || HeldItemHoldEffectGet(sp, sp->defence_client) == HOLD_EFFECT_PREVENT_SECONDARY_EFFECTS) {
         // list taken from bulbapedia article on sheer force and the moves affected.
@@ -2729,7 +2729,7 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp)
 
     int client_no = 0; // initialize
     u8 count = 0;
-    int client_set_max, i, lowerBound, sunAddress, rainAddress, windsAddress, failAddress;
+    int client_set_max, i, lowerBound, sunAddress, rainAddress, windsAddress, meteorAddress, failAddress;
 
     IncrementBattleScriptPtr(sp, 1);
 
@@ -2737,11 +2737,12 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp)
     sunAddress = read_battle_script_param(sp);
     rainAddress = read_battle_script_param(sp);
     windsAddress = read_battle_script_param(sp);
+    meteorAddress = read_battle_script_param(sp);
     failAddress = read_battle_script_param(sp);
 
     client_set_max = BattleWorkClientSetMaxGet(bw);
 
-    u32 currentPrimalWeather = sp->field_condition & (FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT | FIELD_CONDITION_HEAVY_RAIN | FIELD_CONDITION_STRONG_WINDS);
+    u32 currentPrimalWeather = sp->field_condition & (FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT | FIELD_CONDITION_HEAVY_RAIN | FIELD_CONDITION_STRONG_WINDS | FIELD_CONDITION_METEOR_SHOWER);
 
     if (currentPrimalWeather) {
         for (i = 0; i < client_set_max; i++) {
@@ -2759,6 +2760,11 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp)
                 break;
             case FIELD_CONDITION_STRONG_WINDS:
                 if (GetBattlerAbility(sp, client_no) == ABILITY_DELTA_STREAM && sp->battlemon[client_no].hp != 0) {
+                    count++;
+                }
+                break;
+            case FIELD_CONDITION_METEOR_SHOWER:
+                if (GetBattlerAbility(sp, client_no) == ABILITY_COMET_CALL && sp->battlemon[client_no].hp != 0) {
                     count++;
                 }
                 break;
@@ -2794,6 +2800,12 @@ BOOL btl_scr_cmd_F9_canclearprimalweather(void *bw, struct BattleStruct *sp)
             // sprintf(buf, "FIELD_CONDITION_STRONG_WINDS\n");
             // debugsyscall(buf);
             IncrementBattleScriptPtr(sp, windsAddress);
+            return FALSE;
+            break;
+        case FIELD_CONDITION_METEOR_SHOWER:
+            // sprintf(buf, "FIELD_CONDITION_METEOR_SHOWER\n");
+            // debugsyscall(buf);
+            IncrementBattleScriptPtr(sp, meteorAddress);
             return FALSE;
             break;
 
@@ -3364,7 +3376,7 @@ BOOL BtlCmd_CalcWeatherBallParams(void *bw, struct BattleStruct *sp)
         if (weather & FIELD_CONDITION_RAIN_ALL) {
             sp->move_type = TYPE_WATER;
         }
-        if (weather & FIELD_CONDITION_SANDSTORM_ALL) {
+        if ((weather & FIELD_CONDITION_SANDSTORM_ALL) || (weather & FIELD_CONDITION_METEOR_SHOWER)) {
             sp->move_type = TYPE_ROCK;
         }
         if (weather & FIELD_CONDITION_SUN_ALL) {

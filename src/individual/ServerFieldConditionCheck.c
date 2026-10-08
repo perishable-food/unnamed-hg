@@ -277,6 +277,14 @@ void ServerFieldConditionCheck(void *bw, struct BattleStruct *sp)
                 sp->server_seq_no = 22;
                 ret = 1;
             }
+            if (sp->field_condition & FIELD_CONDITION_METEOR_SHOWER) {
+                sp->mp.id = BATTLE_MSG_STARS_CONTINUE_TO_FALL; // The stars continued to fall.
+                sp->mp.tag = TAG_NONE;
+                LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_WEATHER_CONTINUES);
+                sp->next_server_seq_no = sp->server_seq_no;
+                sp->server_seq_no = 22;
+                ret = 1;
+            }
 
             sp->fcc_seq_no++;
             sp->scc_work = 0;

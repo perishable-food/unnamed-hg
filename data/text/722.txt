@@ -320,3 +320,4 @@ Burns the attacker upon\ntaking damage.
 Halves the damage from\ncontact moves.
 Moves under 60 Base Power hit\nfive times. 
 Poison type moves are strengthened.\nDoes more damage on contact.
+Stars begin to fall from the sky.\nActivates meteor shower weather.

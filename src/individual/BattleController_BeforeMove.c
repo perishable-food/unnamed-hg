@@ -4390,7 +4390,7 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
             || (ctx->field_condition & FIELD_CONDITION_SNOW_PERMANENT)) {
             butItFailedFlag = TRUE;
         }
-        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS)) {
+        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS) || (ctx->field_condition & FIELD_CONDITION_METEOR_SHOWER)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, FALSE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_USE_WEATHER_MOVE_FAIL);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
@@ -4409,7 +4409,7 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
             || (ctx->field_condition & FIELD_CONDITION_SNOW_PERMANENT)) {
             butItFailedFlag = TRUE;
         }
-        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS)) {
+        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS) || (ctx->field_condition & FIELD_CONDITION_METEOR_SHOWER)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, FALSE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_USE_WEATHER_MOVE_FAIL);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
@@ -4428,7 +4428,7 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
             || (ctx->field_condition & FIELD_CONDITION_SNOW_PERMANENT)) {
             butItFailedFlag = TRUE;
         }
-        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS)) {
+        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS) || (ctx->field_condition & FIELD_CONDITION_METEOR_SHOWER)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, FALSE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_USE_WEATHER_MOVE_FAIL);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
@@ -4447,7 +4447,7 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
             || (ctx->field_condition & FIELD_CONDITION_SNOW_PERMANENT)) {
             butItFailedFlag = TRUE;
         }
-        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS)) {
+        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS) || (ctx->field_condition & FIELD_CONDITION_METEOR_SHOWER)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, FALSE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_USE_WEATHER_MOVE_FAIL);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;
@@ -4471,7 +4471,7 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
         ) {
             butItFailedFlag = TRUE;
         }
-        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS)) {
+        if ((ctx->field_condition & FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT) || (ctx->field_condition & FIELD_CONDITION_HEAVY_RAIN) || (ctx->field_condition & FIELD_CONDITION_STRONG_WINDS) || (ctx->field_condition & FIELD_CONDITION_METEOR_SHOWER)) {
             BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, FALSE);
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_USE_WEATHER_MOVE_FAIL);
             ctx->next_server_seq_no = CONTROLLER_COMMAND_25;

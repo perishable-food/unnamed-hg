@@ -538,6 +538,7 @@
 #define BATTLE_SUBSCRIPT_STANCE_CHANGE_ATTACK (MAX_BASE_SUBSCRIPT_NUM + 1)
 #define BATTLE_SUBSCRIPT_STANCE_CHANGE_DEFENSE (MAX_BASE_SUBSCRIPT_NUM + 2)
 #define BATTLE_SUBSCRIPT_STANCE_CHANGE_SPEED (MAX_BASE_SUBSCRIPT_NUM + 3)
+#define BATTLE_SUBSCRIPT_COMET_CALL (MAX_BASE_SUBSCRIPT_NUM + 4)
 
 
 // add status effect constants--used in battle effect scripts to queue up a subscript through the table in src/moves.c

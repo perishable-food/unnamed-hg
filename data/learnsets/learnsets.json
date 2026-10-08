@@ -66932,11 +66932,11 @@
       },
       {
         "Level": 84,
-        "Move": "MOVE_COSMIC_POWER"
+        "Move": "MOVE_ETERNABEAM"
       },
       {
         "Level": 91,
-        "Move": "MOVE_LAST_RESORT"
+        "Move": "MOVE_METEOR_BEAM"
       },
       {
         "Level": 98,

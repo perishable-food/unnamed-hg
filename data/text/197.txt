@@ -1797,3 +1797,8 @@ Changed to Attack forme!
 Changed to Defense forme!
 Changed to Speed forme! 
 The future is now, thanks to\n{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!
+The stars fall regardless!
+The stars stopped falling!
+The stars continued to fall.
+{STRVAR_1 1, 0, 0} was hurt\nby the falling stars!
+Stars began to fall from the\nsky!

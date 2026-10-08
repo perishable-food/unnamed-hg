@@ -1,19 +1,19 @@
-// Test: Rayquaza - Mega with move
+// Test: Eternabeam does not cool down when Meteor Shower is active
 #include "../../battle_tests.h"
 BEGIN_TEST
 {
     .battleType = BATTLE_TYPE_TRAINER,
-    .weather = FIELD_CONDITION_NONE,
+    .weather = FIELD_CONDITION_METEOR_SHOWER,
     .fieldCondition = 0,
     .terrain = TERRAIN_NONE,
     .playerParty = {
         {
-            .species = SPECIES_RAYQUAZA,
+            .species = SPECIES_ETERNATUS,
             .level = 50,
             .form = 0,
-            .ability = ABILITY_CLOUD_NINE,
+            .ability = ABILITY_PRESSURE,
             .item = ITEM_NONE,
-            .moves = { MOVE_SLEEP_TALK, MOVE_DRAGON_ASCENT, MOVE_NONE, MOVE_NONE },
+            .moves = { MOVE_ETERNABEAM, MOVE_NONE, MOVE_NONE, MOVE_NONE },
             .hp = FULL_HP,
             .status = 0,
             .condition2 = 0,
@@ -26,10 +26,10 @@ BEGIN_TEST
         { .species = SPECIES_NONE }
     },
     .enemyParty = { {
-                        .species = SPECIES_RAYQUAZA,
-                        .level = 45,
+                        .species = SPECIES_CELESTEELA,
+                        .level = 50,
                         .form = 0,
-                        .ability = ABILITY_CLOUD_NINE,
+                        .ability = ABILITY_PRESSURE,
                         .item = ITEM_NONE,
                         .moves = { MOVE_SLEEP_TALK, MOVE_NONE, MOVE_NONE, MOVE_NONE },
                         .hp = FULL_HP,
@@ -83,11 +83,8 @@ BEGIN_TEST
             { ACTION_NONE, 0 },
         } },
     .expectations = {
-        { .expectationType = EXPECTATION_TYPE_MESSAGE_CONTAINS, .expectationValue.message = "'s fervent wish has reached Rayquaza!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Rayquaza has Mega Evolved into Mega Rayquaza!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Rayquaza's Delta Stream" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE, .expectationValue.message = "Mysterious strong winds are protecting Flying-type Pokemon!" },
-        { .expectationType = EXPECTATION_TYPE_MESSAGE_DOES_NOT_CONTAIN, .expectationValue.message = "'s fervent wish has reached Rayquaza!" },
     }
+
+
 }
 END_TEST

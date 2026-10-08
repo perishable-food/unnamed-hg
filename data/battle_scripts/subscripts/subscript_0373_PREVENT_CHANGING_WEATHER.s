@@ -7,6 +7,7 @@ _000:
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_EXTREMELY_HARSH_SUNLIGHT, _015
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_HEAVY_RAIN, _020
     CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_STRONG_WINDS, _025
+    CompareVarToValue OPCODE_FLAG_SET, BSCRIPT_VAR_FIELD_CONDITION, FIELD_CONDITION_METEOR_SHOWER, _026
     End
 
 _015:
@@ -34,6 +35,14 @@ _025:
     WaitTime 30
     // The mysterious strong winds blow on regardless!
     PrintMessage 1450, TAG_NONE
+
+_026:
+    UpdateVar OPCODE_SET, BSCRIPT_VAR_MSG_MOVE_TEMP, MOVE_WISH
+    PlayMoveAnimation BATTLER_CATEGORY_MSG_TEMP
+    Wait
+    WaitTime 30
+    // The stars fall regardless!
+    PrintMessage 1799, TAG_NONE
 
 _028:
     Wait
