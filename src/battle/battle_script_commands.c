@@ -2202,9 +2202,11 @@ BOOL btl_scr_cmd_E5_iftailwindactive(void *bw, struct BattleStruct *sp)
 
     client_no = GrabClientFromBattleScriptParam(bw, sp, client_no);
 
-    if (sp->tailwindCount[IsClientEnemy(bw, client_no)]) {
+    if ((sp->tailwindCount[IsClientEnemy(bw, client_no)]) &&
+        (sp->tailwindCount[IsClientEnemy(bw, client_no)] != 255)) {
         IncrementBattleScriptPtr(sp, address);
     }
+
 
     return FALSE;
 }

@@ -54,38 +54,94 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
             if (sp->weather_check_flag == 0) {
                 switch (BattleWorkWeatherGet(bw)) {
                 case WEATHER_SYS_RAIN:
-                case WEATHER_SYS_HEAVY_RAIN:
-                case WEATHER_SYS_THUNDER:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_RAIN;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                case WEATHER_SYS_SNOW:
-                case WEATHER_SYS_SNOWSTORM:
-                    // case WEATHER_SYS_BLIZZARD:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_HAIL;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                case WEATHER_SYS_SANDSTORM:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_SAND;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                case WEATHER_SYS_MIST1:
-                case WEATHER_SYS_MIST2:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_FOG;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                case WEATHER_SYS_HIGH_SUN:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_SUN;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                case WEATHER_SYS_TRICK_ROOM:
-                    scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TRICK_ROOM;
-                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
-                    break;
-                }
-                if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
-                    sp->weather_check_flag = 1;
-                }
+                        case WEATHER_SYS_HEAVY_RAIN:
+                        case WEATHER_SYS_THUNDER:
+                        case 15:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_RAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_SNOW:
+                        case WEATHER_SYS_SNOWSTORM:
+                        // case WEATHER_SYS_BLIZZARD:
+                        case 17:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_HAIL;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_SANDSTORM:
+                        case 16:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_SAND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_MIST1:
+                        case WEATHER_SYS_MIST2:
+                    //        scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_FOG;
+                    //        ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            sp->current_move_index = MOVE_MISTY_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case WEATHER_SYS_HIGH_SUN:
+                        case 14:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_SUN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case WEATHER_SYS_TRICK_ROOM:
+                        case 18:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TRICK_ROOM; 
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case 19:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_GRAVITY;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case 20:
+                            sp->current_move_index = MOVE_GRASSY_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 21:
+                            sp->current_move_index = MOVE_MISTY_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 22:
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 23:
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN; // force move anim to play
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_CREATE_TERRAIN_OVERLAY;
+                            break;
+                        case 24:
+                            sp->current_move_index = MOVE_ELECTRIC_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TERRAIN_TRICK_ROOM;
+                            break;
+                        case 25:
+                            sp->current_move_index = MOVE_PSYCHIC_TERRAIN;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TERRAIN_TRICK_ROOM;
+                            break;
+                        case 26:
+                            sp->tailwindCount[1] = 255;
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TAILWIND;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case 27:
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_STRONG_WINDS;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                        case 28:
+                            ((sp->side_condition[1] & SIDE_STATUS_LUCKY_CHANT) == 255);
+                            scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_LUCKY_CHANT;
+                            ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                            break;
+                    }
+                    if (ret == SWITCH_IN_CHECK_MOVE_SCRIPT) {
+                        sp->weather_check_flag = 1;
+                    }
             }
             sp->switch_in_check_seq_no++;
         } break;
