@@ -712,7 +712,7 @@ BOOL CheckCanMega(struct BattleStruct *battle, int client)
     return CheckMegaData(mon, item, form) || CheckMegaMoveData(mon, battle->battlemon[client].move, form);
 }
 
-BOOL IsMegaSpecies(u32 mon, u32 form)
+BOOL LONG_CALL IsMegaSpecies(u32 mon, u32 form)
 {
 #ifdef MEGA_EVOLUTIONS
     u32 i;
