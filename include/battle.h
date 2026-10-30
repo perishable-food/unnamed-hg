@@ -522,7 +522,7 @@ struct __attribute__((packed)) side_condition_work {
 
     u32 followMeFlag : 1;
     u32 battlerIdFollowMe : 2;
-    u32 knockoff_item : 6;
+    u32 knockoff_item : 6; // unused
     u32 oikaze_count : 3;
 
     u32 spikesLayers : 2;
@@ -780,7 +780,10 @@ typedef struct MoveConditionsFlags {
     u8 dragonDartsStatus : 3;
     u8 grounded : 1;
     u8 mindBlownOrSteelBeam : 1;
-    u8 padding : 3;
+    u8 ejectPackFlag : 1;
+    u8 firstTurnOut : 2;
+
+    // new var
 } MoveConditionsFlags;
 
 typedef struct MovePerformanceContext {
@@ -1075,7 +1078,8 @@ struct BattleStruct {
     u8 futureSightHitTurn : 1;
     u8 futureSightNoAttacker : 1;
     u8 futureSightSTAB : 1;
-    u8 gemBoostingMovePadding : 4;
+    u8 ejectPackActivated : 1;
+    u8 gemBoostingMovePadding : 3;
 
     int currentMoveSwitchStatus;
 
@@ -1089,6 +1093,8 @@ struct BattleStruct {
     HealingWishQueue healingWishQueue;
     int field_condition2; // gen5+ field conditions
     int magicRoomCounter;
+
+    int recoilDamage;
 };
 
 enum {
@@ -1975,6 +1981,12 @@ u8 LONG_CALL IsClientEnemy(void *bw, int client);
  *  @return adjusted damage value.  also store move flags in flag
  */
 int LONG_CALL TypeCalc(void *bw, struct BattleStruct *sp, int movenum, int movetype, int attacker, int defender, int damage, u32 *flag);
+
+/**
+ *  @brief used to calculate effectiveness of Stealth Rock during switch-in
+ *
+ */
+int LONG_CALL CalculateTypeEffectiveness(u8 typeMove, u8 typeMon1, u8 typeMon2);
 
 /**
  *  @brief sees if anticipation will automatially log a certain move (i.e. OHKO moves)
@@ -3800,5 +3812,20 @@ PokepicManager LONG_CALL *BattleSystem_GetPokepicManager(struct BattleSystem *ba
 BOOL LONG_CALL sub_02017068(void *animManager, int battlerId);
 void LONG_CALL *ov12_0223B750(struct BattleSystem *battleSystem);
 void LONG_CALL ov12_022600F0(SysTask *task, void *data); // Task_PlayFaintingSequence
+
+/// @brief Check if ability causes Receiver and Power of Alchemy to fail
+/// @param ability
+/// @return `TRUE` or `FALSE`
+BOOL LONG_CALL AbilityNoReceiver(int ability);
+
+BOOL LONG_CALL IsBattlerOnField(struct BattleStruct *ctx, int battlerId);
+
+BOOL LONG_CALL AnyPendingSwitches(struct BattleSystem *bsys, struct BattleStruct *ctx);
+BOOL LONG_CALL BattlerFirstTurnOut(struct BattleStruct *ctx, int battlerId);
+
+BOOL LONG_CALL CanSwitchMon(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId);
+
+void LONG_CALL InitSwitchWork(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId);
+void LONG_CALL ov12_02256F78(struct BattleSystem *bsys, struct BattleStruct *ctx, int battlerId, u8 selectedMonIndex);
 
 #endif // BATTLE_H

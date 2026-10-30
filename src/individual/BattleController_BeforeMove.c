@@ -163,11 +163,6 @@ BOOL LONG_CALL AbilityDisabledByNeutralizingGas(int ability);
 /// @return `TRUE` or `FALSE`
 BOOL LONG_CALL AbilityFailRolePlay(int ability);
 
-/// @brief Check if ability causes Receiver and Power of Alchemy to fail
-/// @param ability
-/// @return `TRUE` or `FALSE`
-BOOL LONG_CALL AbilityNoReceiver(int ability);
-
 /// @brief Check if ability causes Entrainment to fail
 /// @param ability
 /// @return `TRUE` or `FALSE`
@@ -2009,7 +2004,8 @@ BOOL BattleController_CheckMoveFailures1(struct BattleSystem *bsys, struct Battl
         // Clangorous Soul when user lacks HP to execute the move
         || ((currentMoveIndex == MOVE_CLANGOROUS_SOUL) && (attackClient.hp < (s32)(attackClient.maxhp / 3)))
         // Fake Out / First Impression / Mat Block after user has already performed an action
-        || ((currentMoveIndex == MOVE_FAKE_OUT || currentMoveIndex == MOVE_FIRST_IMPRESSION || currentMoveIndex == MOVE_MAT_BLOCK) && attackClient.moveeffect.fakeOutCount != ctx->total_turn)
+        || ((currentMoveIndex == MOVE_FAKE_OUT || currentMoveIndex == MOVE_FIRST_IMPRESSION || currentMoveIndex == MOVE_MAT_BLOCK)
+            && !BattlerFirstTurnOut(ctx, ctx->attack_client))
         // Follow Me / Rage Powder in singles
         || ((currentMoveIndex == MOVE_FOLLOW_ME || currentMoveIndex == MOVE_RAGE_POWDER) && !(BattleTypeGet(bsys) & (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLES)))
         // Future Sight / Doom Desire into target that already has future attack
@@ -2602,11 +2598,9 @@ BOOL BattleController_CheckSemiInvulnerability(struct BattleSystem *bsys UNUSED,
 
 BOOL CanHitThroughProtect(struct BattleStruct *ctx, int attacker, int defender)
 {
-    u32 moveEffect = ctx->moveTbl[ctx->current_move_index].effect;
+    u32 moveHasProtectFlag = (ctx->moveTbl[ctx->current_move_index].flag & FLAG_PROTECT) != 0;
     u32 ability = GetBattlerAbility(ctx, attacker);
-    if (moveEffect == MOVE_EFFECT_REMOVE_PROTECT
-        || moveEffect == MOVE_EFFECT_SHADOW_FORCE
-        || moveEffect == MOVE_EFFECT_IGNORE_PROTECT
+    if (!moveHasProtectFlag
         || (ctx->current_move_index == MOVE_CURSE && HasType(ctx, attacker, TYPE_GHOST))
         || ((ability == ABILITY_UNSEEN_FIST
                 || ability == ABILITY_PIERCING_DRILL)
@@ -3755,7 +3749,7 @@ BOOL BattleController_CheckAbilityFailures4_StatusBasedFailures(struct BattleSys
         doesNotAffect = TRUE;
     }
 
-    if ((MoldBreakerAbilityCheck(ctx, attacker, defender, ABILITY_INSOMNIA))
+    if ((MoldBreakerAbilityCheck(ctx, attacker, defender, ABILITY_INSOMNIA) || (MoldBreakerAbilityCheck(ctx, attacker, defender, ABILITY_VITAL_SPIRIT)))
         && (moveEffect == MOVE_EFFECT_STATUS_SLEEP || moveEffect == MOVE_EFFECT_STATUS_SLEEP_NEXT_TURN || moveEffect == MOVE_EFFECT_RECOVER_HEALTH_AND_SLEEP)) {
         doesNotAffect = TRUE;
     }
@@ -5142,14 +5136,6 @@ BOOL LONG_CALL AbilityFailRolePlay(int ability)
     return GetAbilityFlags(ability).failsRolePlay;
 }
 
-/// @brief Check if ability causes Receiver and Power of Alchemy to fail
-/// @param ability
-/// @return `TRUE` or `FALSE`
-BOOL LONG_CALL AbilityNoReceiver(int ability)
-{
-    return GetAbilityFlags(ability).failsReceiver;
-}
-
 /// @brief Check if ability causes Entrainment to fail
 /// @param ability
 /// @return `TRUE` or `FALSE`
@@ -5247,5 +5233,6 @@ void RemoveItemOnFlingFailure(struct BattleStruct *ctx)
     if (ctx->current_move_index == MOVE_FLING) {
         ctx->recycle_item[ctx->attack_client] = ctx->battlemon[ctx->attack_client].item;
         ctx->battlemon[ctx->attack_client].item = ITEM_NONE;
+        ctx->battlemon[ctx->attack_client].moveeffect.knockOffFlag = TRUE;
     }
 }
