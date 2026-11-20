@@ -1805,3 +1805,6 @@ Stars began to fall from the\nsky!
 {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nwas taken over!
 The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nwas taken over!
 The opposing {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\nwas taken over!
+{STRVAR_1 1, 0, 0} is drowsing!
+The wild {STRVAR_1 1, 0, 0} is drowsing!
+The opposing {STRVAR_1 1, 0, 0} is drowsing!
