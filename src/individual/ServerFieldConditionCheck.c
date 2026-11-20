@@ -1388,7 +1388,7 @@ void ServerFieldConditionCheck(void *bw, struct BattleStruct *sp)
                             // clear ability activated flag for wind power/rider
                             for (int index = side; index < client_set_max; index += 2) {
                                 u32 currAbility = GetBattlerAbility(sp, index);
-                                if (currAbility == ABILITY_WIND_POWER || currAbility == ABILITY_WIND_RIDER) {
+                                if (currAbility == ABILITY_WIND_POWER || currAbility == ABILITY_WIND_RIDER || currAbility == ABILITY_MACH_SPEED) {
                                     sp->battlemon[index].ability_activated_flag = FALSE;
                                 }
                             }

@@ -877,6 +877,22 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                         ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                         break;
                     }
+
+                    if ((sp->battlemon[client_no].hp)
+                        // tailwind is active -- should catch if tailwind was just used as well
+                        && (sp->tailwindCount[IsClientEnemy(bw, client_no)] != 0)
+                        && (GetBattlerAbility(sp, client_no) == ABILITY_MACH_SPEED)
+                        && (sp->battlemon[client_no].ability_activated_flag == 0)) {
+                        sp->battlemon[client_no].ability_activated_flag = TRUE; // make sure to reset when clearing tailwind
+                        sp->addeffect_param = MOVE_SUBSCRIPT_PTR_SPEED_UP_1_STAGE;
+                        sp->addeffect_type = SIDE_EFFECT_TYPE_ABILITY;
+                        sp->state_client = client_no;
+                        sp->battlerIdTemp = client_no;
+                        sp->current_move_index = MOVE_TAILWIND;
+                        scriptnum = BATTLE_SUBSCRIPT_HANDLE_ABILITY_STAT_CHANGE;
+                        ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                        break;
+                    }
                 }
 
                 // Orichalcum Pulse

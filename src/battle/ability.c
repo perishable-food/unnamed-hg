@@ -124,6 +124,17 @@ int MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int 
         }
     }
 
+    if (MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_MACH_SPEED) == TRUE) {
+        if ((IsMoveWindMove(sp->current_move_index)) && (attacker != defender)) {
+            scriptnum = BATTLE_SUBSCRIPT_HANDLE_WIND_RIDER;
+            sp->addeffect_param = MOVE_SUBSCRIPT_PTR_SPEED_UP_1_STAGE;
+            sp->addeffect_type = SIDE_EFFECT_TYPE_ABILITY;
+            sp->state_client = defender;
+            sp->battlerIdTemp = defender;
+            // scriptnum = BATTLE_SUBSCRIPT_BOOST_STATS;
+        }
+    }
+
     // Handle Lightning Rod
     if (MoldBreakerAbilityCheck(sp, attacker, defender, ABILITY_LIGHTNING_ROD) == TRUE) {
         if ((movetype == TYPE_ELECTRIC) && (attacker != defender)) {
