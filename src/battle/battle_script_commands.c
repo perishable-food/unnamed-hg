@@ -125,7 +125,7 @@ BOOL btl_scr_cmd_117_activateparadoxability(void *bsys, struct BattleStruct *ctx
 BOOL btl_scr_cmd_118_resetparadoxability(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_119_SetCurrentMoveDoneSwitchingFlag(void *bsys UNUSED, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_11A_TrySynchronizeStatus(void *bsys, struct BattleStruct *ctx);
-BOOL btl_scr_cmd_11B_TryCureStatusBerry(void *bsys, struct BattleStruct *ctx);
+BOOL btl_scr_cmd_11B_TryEatBerry(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_11C_BatchUpdateHealthBar(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_11D_BatchUpdateHealthBarValue(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_11E_BatchFollowupMessage(void *bsys UNUSED, struct BattleStruct *ctx);
@@ -143,11 +143,14 @@ BOOL btl_scr_cmd_129_SetFieldCondition2(void *bsys UNUSED, struct BattleStruct *
 BOOL btl_scr_cmd_12A_GoToIfMoveConditionFlagSet(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_12B_TryActivateReceiver(void *bsys, struct BattleStruct *ctx);
 BOOL btl_scr_cmd_12C_TryActivateEmergencyExit(void *bsys, struct BattleStruct *ctx);
-BOOL btl_scr_cmd_12D_TryEatHpBerry(void *bsys, struct BattleStruct *ctx);
+BOOL btl_scr_cmd_12D_TryClearUnnerve(void *bsys, struct BattleStruct *ctx);
+BOOL btl_scr_cmd_12E_TryActivateSymbiosis(void *bsys, struct BattleStruct *ctx);
+BOOL btl_scr_cmd_12F_RestoreBoosterEnergyBattler(void *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_GoToMoveScript(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_WeatherHPRecovery(void *bw, struct BattleStruct *sp);
 BOOL BtlCmd_CalcWeatherBallParams(void *bw, struct BattleStruct *sp);
 BOOL BtlCmd_EndOfTurnWeatherEffect(struct BattleSystem *bsys, struct BattleStruct *ctx);
+BOOL BtlCmd_TryEncore(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_TryWish(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_TryFutureSight(struct BattleSystem *bsys, struct BattleStruct *ctx);
 BOOL BtlCmd_SetMultiHit(struct BattleSystem *bsys, struct BattleStruct *ctx);
@@ -471,7 +474,7 @@ const u8 *BattleScrCmdNames[] = {
     "ResetParadoxAbility",
     "SetCurrentMoveDoneSwitchingFlag",
     "TrySynchronizeStatus",
-    "TryCureStatusBerry",
+    "TryEatBerry",
     "BatchUpdateHealthBar",
     "BatchUpdateHealthBarValue",
     "BatchFollowupMessage",
@@ -487,9 +490,11 @@ const u8 *BattleScrCmdNames[] = {
     "IsFieldCondition2On",
     "SetFieldCondition2",
     "GoToIfMoveConditionFlagSet",
-    "TryActivateReceiver"
-    "TryActivateEmergencyExit"
-    "TryEatHpBerry"
+    "TryActivateReceiver",
+    "TryActivateEmergencyExit",
+    "TryClearUnnerve",
+    "TryActivateSymbiosis"
+    "RestoreBoosterEnergyBattler",
     // "YourCustomCommand",
 };
 
@@ -497,7 +502,7 @@ u32 cmdAddress = 0;
 #pragma GCC diagnostic pop
 #endif // DEBUG_BATTLE_SCRIPT_COMMANDS
 
-#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0x12D
+#define BASE_ENGINE_BTL_SCR_CMDS_MAX 0x12E
 
 // clang-format off
 const btl_scr_cmd_func NewBattleScriptCmdTable[] = {
@@ -559,7 +564,7 @@ const btl_scr_cmd_func NewBattleScriptCmdTable[] = {
     [0x118 - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_118_resetparadoxability,
     [0x119 - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_119_SetCurrentMoveDoneSwitchingFlag,
     [0x11A - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11A_TrySynchronizeStatus,
-    [0x11B - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11B_TryCureStatusBerry,
+    [0x11B - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11B_TryEatBerry,
     [0x11C - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11C_BatchUpdateHealthBar,
     [0x11D - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11D_BatchUpdateHealthBarValue,
     [0x11E - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_11E_BatchFollowupMessage,
@@ -577,7 +582,9 @@ const btl_scr_cmd_func NewBattleScriptCmdTable[] = {
     [0x12A - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12A_GoToIfMoveConditionFlagSet,
     [0x12B - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12B_TryActivateReceiver,
     [0x12C - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12C_TryActivateEmergencyExit,
-    [0x12D - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12D_TryEatHpBerry,
+    [0x12D - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12D_TryClearUnnerve,
+    [0x12E - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12E_TryActivateSymbiosis,
+    [0x12F - START_OF_NEW_BTL_SCR_CMDS] = btl_scr_cmd_12F_RestoreBoosterEnergyBattler,
     // [BASE_ENGINE_BTL_SCR_CMDS_MAX - START_OF_NEW_BTL_SCR_CMDS + 1] = btl_scr_cmd_custom_01_your_custom_command,
 };
 
@@ -698,7 +705,48 @@ BOOL LONG_CALL PopBattleScript(struct BattleStruct *sp)
         sp->skill_seq_no = sp->push_skill_seq_no[sp->push_count];
         return FALSE;
     }
+
+    // Here we check if Symbiosis needs to activate whenever a subscript ends (not including calls inside subscripts)
+    if (!sp->moveInProgress && TryActivateSymbiosis(gBattleSystem, sp)) {
+        LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_SYMBIOSIS);
+        return FALSE;
+    }
     return TRUE;
+}
+
+/**
+ *  @brief Has side effect of setting `pendingSymbiosis` and `battlerIdTemp`
+ */
+BOOL LONG_CALL TryActivateSymbiosis(struct BattleSystem *bsys, struct BattleStruct *ctx)
+{
+    int maxBattlers = BattleWorkClientSetMaxGet(bsys);
+
+    for (int i = 0; i < maxBattlers; i++) {
+        int symbiosisBattler = ctx->turnOrder[i];
+        int ally = BATTLER_ALLY(symbiosisBattler);
+
+        if (ally >= maxBattlers || !ctx->abilityProcessingFlags[ally].pendingSymbiosis) {
+            continue;
+        }
+
+        if (GetBattlerAbility(ctx, symbiosisBattler) == ABILITY_SYMBIOSIS
+            && ctx->battlemon[symbiosisBattler].hp != 0
+            && ctx->battlemon[symbiosisBattler].item != ITEM_NONE
+            && ctx->battlemon[ally].hp != 0
+            && ctx->battlemon[ally].item == ITEM_NONE
+            && CanItemBeRemovedFromSpecies(ctx->battlemon[symbiosisBattler].species, ctx->battlemon[symbiosisBattler].item, ctx->battlemon[symbiosisBattler].form_no)
+            && CanItemBeRemovedFromSpecies(ctx->battlemon[ally].species, ctx->battlemon[symbiosisBattler].item, ctx->battlemon[ally].form_no)) {
+            ctx->abilityProcessingFlags[ally].pendingSymbiosis = 0;
+            ctx->battlerIdTemp = symbiosisBattler;
+            return TRUE;
+        }
+    }
+
+    for (int battler = 0; battler < CLIENT_MAX; battler++) {
+        ctx->abilityProcessingFlags[battler].pendingSymbiosis = 0;
+    }
+
+    return FALSE;
 }
 
 /**
@@ -1078,34 +1126,31 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         switch (effect) {
         case MOVE_EFFECT_FLINCH_HIT:
         case MOVE_EFFECT_ALWAYS_FLINCH_FIRST_TURN_ONLY:
-        case MOVE_EFFECT_RAISE_ALL_STATS_HIT:
         case MOVE_EFFECT_BLIZZARD:
         case MOVE_EFFECT_PARALYZE_HIT:
         case MOVE_EFFECT_LOWER_ATTACK_HIT:
         case MOVE_EFFECT_LOWER_SPEED_HIT:
-        case MOVE_EFFECT_RAISE_SP_ATK_HIT:
         case MOVE_EFFECT_CONFUSE_HIT:
         case MOVE_EFFECT_LOWER_DEFENSE_HIT:
         case MOVE_EFFECT_LOWER_SP_DEF_HIT:
         case MOVE_EFFECT_BURN_HIT:
         case MOVE_EFFECT_FLINCH_BURN_HIT:
-        case MOVE_EFFECT_RAISE_SPEED_HIT:
         case MOVE_EFFECT_POISON_HIT:
         case MOVE_EFFECT_FREEZE_HIT:
         case MOVE_EFFECT_FLINCH_FREEZE_HIT:
-        case MOVE_EFFECT_RAISE_ATTACK_HIT:
         case MOVE_EFFECT_LOWER_ACCURACY_HIT:
         case MOVE_EFFECT_BADLY_POISON_HIT:
-        // case MOVE_EFFECT_SECRET_POWER: // need a different way of doing this i think
+        case MOVE_EFFECT_SECRET_POWER:
+        case MOVE_EFFECT_SLEEP_HIT: // relic song, wicked torque
+        case MOVE_EFFECT_POISON_HIT_DOUBLE_POWER_ON_POISONED: // barb barrage
+        case MOVE_EFFECT_SLEEP_POISON_PARALYZE_HIT: // dire claw
         case MOVE_EFFECT_LOWER_SP_ATK_HIT:
-        case MOVE_EFFECT_RAISE_DEF_HIT:
         case MOVE_EFFECT_THROAT_CHOP:
         case MOVE_EFFECT_THUNDER:
         case MOVE_EFFECT_HURRICANE:
         case MOVE_EFFECT_FLINCH_PARALYZE_HIT:
         case MOVE_EFFECT_FLINCH_DOUBLE_DAMAGE_FLY_OR_BOUNCE: // removes the double damage flying too
         case MOVE_EFFECT_LOWER_SP_DEF_2_HIT:
-        case MOVE_EFFECT_PREVENT_ESCAPE_HIT:
         case MOVE_EFFECT_THAW_AND_BURN_HIT: // it does thaw otherwise
         case MOVE_EFFECT_CHATTER: // confuse chance based on volume of cry
         case MOVE_EFFECT_FLINCH_MINIMIZE_DOUBLE_HIT:
@@ -1118,8 +1163,36 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
             sheer_force_active = TRUE;
             break;
 
+        case MOVE_EFFECT_PREVENT_ESCAPE_HIT:
+            if (sp->current_move_index == MOVE_THOUSAND_WAVES && GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE) {
+                break;
+            }
+            effect = MOVE_EFFECT_HIT;
+            sheer_force_active = TRUE;
+            break;
+
         case MOVE_EFFECT_POISON_MULTI_HIT: // twineedle
             effect = MOVE_EFFECT_MULTI_HIT;
+            sheer_force_active = TRUE;
+            break;
+
+        case MOVE_EFFECT_CONFUSE_HIT_CRASH_ON_MISS: // axe kick
+            effect = MOVE_EFFECT_CRASH_ON_MISS;
+            sheer_force_active = TRUE;
+            break;
+
+        case MOVE_EFFECT_HIT_TWICE_AND_FLINCH: // double iron bash
+            effect = MOVE_EFFECT_HIT_TWICE;
+            sheer_force_active = TRUE;
+            break;
+
+        case MOVE_EFFECT_CHARGE_TURN_HIGH_CRIT_FLINCH: // sky attack
+            effect = MOVE_EFFECT_CHARGE_TURN_HIGH_CRIT;
+            sheer_force_active = TRUE;
+            break;
+
+        case MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT_BURN_HIT: // matcha gotcha
+            effect = MOVE_EFFECT_RECOVER_HALF_DAMAGE_DEALT;
             sheer_force_active = TRUE;
             break;
 
@@ -1140,16 +1213,41 @@ BOOL btl_scr_cmd_24_jumptocurmoveeffectscript(void *bw UNUSED, struct BattleStru
         }
 
         if (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE) {
-            // moves boosted by sheer force that still maintain their effect
+            switch (effect) {
+            case MOVE_EFFECT_RAISE_ALL_STATS_HIT: // ancient power
+            case MOVE_EFFECT_RAISE_SP_ATK_HIT: // torch song
+            case MOVE_EFFECT_RAISE_SPEED_HIT: // trailblaze
+            case MOVE_EFFECT_RAISE_ATTACK_HIT: // power up punch
+            case MOVE_EFFECT_RAISE_DEF_HIT: // steel wing
+            case MOVE_EFFECT_REMOVE_HAZARDS_AND_BINDING: // rapid spin
+            case MOVE_EFFECT_RAISE_DEF_2_HIT: // diamond storm
+            case MOVE_EFFECT_RAISE_EVA_HIT: // zippy zap
+                effect = MOVE_EFFECT_HIT;
+                sheer_force_active = TRUE;
+                break;
+            case MOVE_EFFECT_HIGH_CRITICAL_RAISE_SPEED_HIT: // esper wing
+                effect = MOVE_EFFECT_HIGH_CRITICAL;
+                sheer_force_active = TRUE;
+                break;
+
+            default:
+                break;
+            }
+
             if ((sheer_force_active == TRUE)
                 || (sp->current_move_index == MOVE_SPARKLING_ARIA)
-                // || (sp->current_move_index == MOVE_GENESIS_SUPERNOVA) // doesnt have an eff atm but still on the table
-                || (sp->current_move_index == MOVE_SPIRIT_SHACKLE)
-                || (sp->current_move_index == MOVE_ANCHOR_SHOT)
-                // || (sp->current_move_index == MOVE_EERIE_SPELL) // same as genesis supernova
+                || (sp->current_move_index == MOVE_GENESIS_SUPERNOVA) // TODO
+                || (sp->current_move_index == MOVE_EERIE_SPELL) // TODO
+                || (sp->current_move_index == MOVE_SALT_CURE) // TODO
+                || (sp->current_move_index == MOVE_SYRUP_BOMB) // TODO
+                || (sp->current_move_index == MOVE_SHELL_SIDE_ARM) // TODO
+                || (sp->current_move_index == MOVE_ORDER_UP) // keep stat boost
                 || (sp->current_move_index == MOVE_CEASELESS_EDGE)
                 || (sp->current_move_index == MOVE_STONE_AXE)
-                || (sp->current_move_index == MOVE_ELECTRO_SHOT)) { // according to bulbapedia but only on the electro shot page ?
+#if SHEER_FORCE_GENERATION < GEN_CHAMPIONS
+                || (sp->current_move_index == MOVE_ELECTRO_SHOT) // keep stat boost
+#endif
+            ) {
                 sp->battlemon[sp->attack_client].sheer_force_flag = 1;
             }
         }
@@ -3530,6 +3628,27 @@ BOOL BtlCmd_EndOfTurnWeatherEffect(struct BattleSystem *bsys, struct BattleStruc
     return FALSE;
 }
 
+BOOL BtlCmd_TryEncore(struct BattleSystem *bsys UNUSED, struct BattleStruct *ctx)
+{
+    IncrementBattleScriptPtr(ctx, 1);
+
+    // handled in BeforMove
+    int adrs UNUSED = read_battle_script_param(ctx);
+
+    struct BattlePokemon *target = &ctx->battlemon[ctx->defence_client];
+    u16 lastMove = ctx->waza_no_sketch[ctx->defence_client];
+
+    target->moveeffect.encoredMove = lastMove;
+    target->moveeffect.encoredMoveIndex = BattleMon_GetMoveIndex(target, lastMove);
+    target->moveeffect.encoredTurns = 3;
+
+    if (IsMovingAfterClient(ctx, ctx->defence_client) == FALSE) {
+        target->moveeffect.encoredTurns--;
+    }
+
+    return FALSE;
+}
+
 BOOL BtlCmd_TryWish(struct BattleSystem *bsys UNUSED, struct BattleStruct *ctx)
 {
     IncrementBattleScriptPtr(ctx, 1);
@@ -3813,8 +3932,13 @@ BOOL BtlCmd_RemoveItem(void *bsys, struct BattleStruct *ctx)
 
     int side = read_battle_script_param(ctx);
     int battlerId = GrabClientFromBattleScriptParam(bsys, ctx, side);
+    u16 item = ctx->battlemon[battlerId].item;
 
-    ctx->recycle_item[battlerId] = ctx->battlemon[battlerId].item;
+    if (item != ITEM_EJECT_BUTTON && item != ITEM_EJECT_PACK) {
+        ctx->abilityProcessingFlags[battlerId].pendingSymbiosis = 1;
+    }
+
+    ctx->recycle_item[battlerId] = item;
     ctx->battlemon[battlerId].item = ITEM_NONE;
 
     ctx->battlemon[battlerId].moveeffect.knockOffFlag = TRUE;
@@ -4240,6 +4364,10 @@ BOOL BtlCmd_TryPluck(void *bw, struct BattleStruct *sp)
         sp->mp.param[1] = item;
         sp->battlemon[sp->defence_client].item = 0; // no recycle
         sp->battlemon[sp->defence_client].moveeffect.knockOffFlag = TRUE;
+
+        if (sp->battlemon[sp->attack_client].item == ITEM_NONE && sp->temp_work != 0) {
+            sp->abilityProcessingFlags[sp->attack_client].pendingSymbiosis = 1;
+        }
 
         if (GetItemData(item, ITEM_PARAM_HOLD_EFFECT, 5) != 0) {
             sp->onceOnlyMoveConditionFlags[SanitizeClientForTeamAccess(bw, sp->attack_client)][sp->sel_mons_no[sp->attack_client]].berryEatenAndCanBelch = TRUE;
@@ -5305,15 +5433,16 @@ BOOL btl_scr_cmd_11A_TrySynchronizeStatus(void *bsys UNUSED, struct BattleStruct
     return FALSE;
 }
 
-BOOL btl_scr_cmd_11B_TryCureStatusBerry(void *bsys, struct BattleStruct *ctx)
+BOOL btl_scr_cmd_11B_TryEatBerry(void *bsys, struct BattleStruct *ctx)
 {
     IncrementBattleScriptPtr(ctx, 1);
     int side = read_battle_script_param(ctx);
+    u32 filter = read_battle_script_param(ctx);
     int failAddress = read_battle_script_param(ctx);
     int script = 0;
     int battler = GrabClientFromBattleScriptParam(bsys, ctx, side);
 
-    if (GetHeldItemStatusRecoverySubscript(ctx, battler, &script) == TRUE) {
+    if (IsBattlerOnField(ctx, battler) && GetHeldItemUseSubscript(bsys, ctx, battler, &script, filter) == TRUE) {
         ctx->battlerIdTemp = battler;
         ctx->item_work = GetBattleMonItem(ctx, battler);
         ctx->temp_work = script;
@@ -6062,7 +6191,8 @@ BOOL btl_scr_cmd_12C_TryActivateEmergencyExit(void *bsys, struct BattleStruct *c
         && (ctx->battlemon[client_no].hp <= (s32)(ctx->battlemon[client_no].maxhp / 2))
         // EE can be triggered by any residual damage, such as Burn, Sandstorm, Curse, etc
         && ((ctx->battlemon[client_no].hp - ctx->hp_calc_work) > (s32)ctx->battlemon[client_no].maxhp / 2)
-        && CanSwitchMon(bsys, ctx, client_no)) {
+        // the partner may already be waiting for the last mon in the back
+        && CanSwitchMonConsideringPendingSwitches(bsys, ctx, client_no)) {
         ctx->addeffect_type = SIDE_EFFECT_TYPE_ABILITY;
         ctx->state_client = client_no;
         ctx->battlerIdTemp = client_no;
@@ -6074,75 +6204,49 @@ BOOL btl_scr_cmd_12C_TryActivateEmergencyExit(void *bsys, struct BattleStruct *c
     return FALSE;
 }
 
-BOOL BtlCmd_SwitchAndUpdateMon(struct BattleSystem *bsys, struct BattleStruct *ctx)
-{
-    IncrementBattleScriptPtr(ctx, 1);
-    u32 side = read_battle_script_param(ctx);
-
-    int battlerId = 0;
-
-    switch (side) {
-    case BATTLER_CATEGORY_ATTACKER:
-        battlerId = ctx->attack_client;
-        break;
-    case BATTLER_CATEGORY_SWITCHED_MON:
-        battlerId = ctx->reshuffle_client;
-        break;
-    case BATTLER_CATEGORY_FORCED_OUT:
-        battlerId = ctx->defence_client;
-        break;
-    }
-
-    ctx->moveConditionsFlags[battlerId].firstTurnOut = 2;
-    ctx->client_status[battlerId] &= ~1;
-    ctx->no_reshuffle_client &= (No2Bit(battlerId) ^ ~0);
-    ctx->sel_mons_no[battlerId] = ctx->reshuffle_sel_mons_no[battlerId];
-    ctx->reshuffle_sel_mons_no[battlerId] = 6;
-
-    BattleSystem_GetBattleMon(bsys, ctx, battlerId, ctx->sel_mons_no[battlerId]);
-    ov12_02256F78(bsys, ctx, battlerId, ctx->sel_mons_no[battlerId]);
-
-    ctx->hp_temp = ctx->battlemon[1].hp;
-
-    InitSwitchWork(bsys, ctx, battlerId);
-
-    return FALSE;
-}
-
-BOOL btl_scr_cmd_12D_TryEatHpBerry(void *bsys, struct BattleStruct *ctx)
+BOOL btl_scr_cmd_12D_TryClearUnnerve(void *bsys, struct BattleStruct *ctx)
 {
     IncrementBattleScriptPtr(ctx, 1);
     int side = read_battle_script_param(ctx);
     int failAddress = read_battle_script_param(ctx);
-    int script = 0;
-    int battler = GrabClientFromBattleScriptParam(bsys, ctx, side);
+    int battlerId = GrabClientFromBattleScriptParam(bsys, ctx, side);
+    int ally = BATTLER_ALLY(battlerId);
 
-    if (IsBattlerOnField(ctx, battler)) {
-        switch (HeldItemHoldEffectGet(ctx, battler)) {
-        case HOLD_EFFECT_HP_RESTORE: // oran berry, berry juice
-        case HOLD_EFFECT_HP_PCT_RESTORE: // sitrus berry
-        case HOLD_EFFECT_HP_RESTORE_SPICY: // figy berry
-        case HOLD_EFFECT_HP_RESTORE_DRY: // wiki berry
-        case HOLD_EFFECT_HP_RESTORE_SWEET: // mago berry
-        case HOLD_EFFECT_HP_RESTORE_BITTER: // aguav berry
-        case HOLD_EFFECT_HP_RESTORE_SOUR: // iapapa berry
-
-            if (GetHeldItemUseSubscript(bsys, ctx, battler, &script) == TRUE) {
-                ctx->battlerIdTemp = battler;
-                ctx->item_work = GetBattleMonItem(ctx, battler);
-                ctx->temp_work = script;
-
-                if (IS_ITEM_BERRY(ctx->item_work)) {
-                    ctx->onceOnlyMoveConditionFlags[SanitizeClientForTeamAccess(bsys, battler)][ctx->sel_mons_no[battler]].berryEatenAndCanBelch = TRUE;
-                }
-            }
-        default:
-            break;
-        }
+    if (!HasUnnerveAbility(ctx, battlerId)) {
+        IncrementBattleScriptPtr(ctx, failAddress);
+        return FALSE;
     }
-    if (script == 0) {
+
+    ctx->switchInFlags[battlerId].unnerveInactive = TRUE;
+
+    if ((BattleTypeGet(bsys) & BATTLE_TYPE_DOUBLES)
+        && ctx->battlemon[ally].hp != 0
+        && !ctx->switchInFlags[ally].unnerveInactive
+        && HasUnnerveAbility(ctx, ally)) {
         IncrementBattleScriptPtr(ctx, failAddress);
     }
+
+    return FALSE;
+}
+
+BOOL btl_scr_cmd_12E_TryActivateSymbiosis(void *bsys, struct BattleStruct *ctx)
+{
+    IncrementBattleScriptPtr(ctx, 1);
+    int failAddress = read_battle_script_param(ctx);
+
+    if (!TryActivateSymbiosis(bsys, ctx)) {
+        IncrementBattleScriptPtr(ctx, failAddress);
+    }
+
+    return FALSE;
+}
+
+BOOL btl_scr_cmd_12F_RestoreBoosterEnergyBattler(void UNUSED *bsys, struct BattleStruct *ctx)
+{
+    IncrementBattleScriptPtr(ctx, 1);
+
+    ctx->battlerIdTemp = BATTLER_ALLY(ctx->battlerIdTemp);
+    ctx->msg_work = ctx->paradoxBoostedStat[ctx->battlerIdTemp];
 
     return FALSE;
 }

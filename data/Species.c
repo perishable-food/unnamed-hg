@@ -54112,7 +54112,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 65,
             },
             .types = { TYPE_NORMAL, TYPE_PSYCHIC },
-            .catchRate = 135,
+            .catchRate = 45,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 0,
@@ -54169,7 +54169,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 85,
             },
             .types = { TYPE_BUG, TYPE_ROCK },
-            .catchRate = 115,
+            .catchRate = 15,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 0,
@@ -54226,7 +54226,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 50,
             },
             .types = { TYPE_GROUND, TYPE_NORMAL },
-            .catchRate = 75,
+            .catchRate = 20,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 0,
@@ -54283,7 +54283,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 78,
             },
             .types = { TYPE_WATER, TYPE_GHOST },
-            .catchRate = 135,
+            .catchRate = 45,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 2,
@@ -54340,7 +54340,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 120,
             },
             .types = { TYPE_FIGHTING, TYPE_POISON },
-            .catchRate = 135,
+            .catchRate = 20,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 0,
@@ -54397,7 +54397,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 85,
             },
             .types = { TYPE_DARK, TYPE_POISON },
-            .catchRate = 135,
+            .catchRate = 45,
             .baseExpRewardPadding = 0,
             .evYields = {
                 .hp = 0,
@@ -72733,7 +72733,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ZYGARDE_10_COMPLETE] = {
+    [SPECIES_ZYGARDE_COMPLETE] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -72777,63 +72777,6 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
         .metricsData = {
             .heightDecimetres = 12,
-            .weightHectograms = 6100,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_ZYGARDE_50_COMPLETE] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Order Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 216,
-                .attack = 100,
-                .defense = 121,
-                .spAttack = 91,
-                .spDefense = 95,
-                .speed = 85,
-            },
-            .types = { TYPE_DRAGON, TYPE_GROUND },
-            .catchRate = 3,
-            .baseExpRewardPadding = 63,
-            .evYields = {
-                .hp = 3,
-                .attack = 0,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 255,
-            .hatchCycles = 120,
-            .baseFriendship = 0,
-            .expRate = GROWTH_SLOW,
-            .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED },
-            .abilities = { ABILITY_POWER_CONSTRUCT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_BLACK,
-            .flipSprite = 1,
-        },
-        .metricsData = {
-            .heightDecimetres = 45,
             .weightHectograms = 6100,
             .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
             .femaleTrainerScale = 0,
@@ -74785,7 +74728,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_BERRY_SWEET] = {
+    [SPECIES_ALCREMIE_RUBY_CREAM] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -74842,7 +74785,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_LOVE_SWEET] = {
+    [SPECIES_ALCREMIE_MATCHA_CREAM] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -74899,7 +74842,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_STAR_SWEET] = {
+    [SPECIES_ALCREMIE_MINT_CREAM] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -74956,7 +74899,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_CLOVER_SWEET] = {
+    [SPECIES_ALCREMIE_LEMON_CREAM] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -75013,7 +74956,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_FLOWER_SWEET] = {
+    [SPECIES_ALCREMIE_SALTED_CREAM] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -75070,7 +75013,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_RIBBON_SWEET] = {
+    [SPECIES_ALCREMIE_RUBY_SWIRL] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -75127,7 +75070,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_FILLER_1] = {
+    [SPECIES_ALCREMIE_CARAMEL_SWIRL] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -75184,7 +75127,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
     },
 
-    [SPECIES_ALCREMIE_FILLER_2] = {
+    [SPECIES_ALCREMIE_RAINBOW_SWIRL] = {
         .textData = {
             .name = "-----",
             .pokedexEntry = "",
@@ -75829,7 +75772,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 55,
             },
             .types = { TYPE_FIRE, TYPE_ROCK },
-            .catchRate = 235,
+            .catchRate = 190,
             .baseExpRewardPadding = 91,
             .evYields = {
                 .hp = 0,
@@ -75886,7 +75829,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 90,
             },
             .types = { TYPE_FIRE, TYPE_ROCK },
-            .catchRate = 0,
+            .catchRate = 75,
             .baseExpRewardPadding = 213,
             .evYields = {
                 .hp = 0,
@@ -75904,7 +75847,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
             .hatchCycles = 0,
             .baseFriendship = 70,
             .expRate = GROWTH_SLOW,
-            .eggGroups = { EGG_GROUP_NONE, EGG_GROUP_NONE },
+            .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD },
             .abilities = { ABILITY_INTIMIDATE, ABILITY_FLASH_FIRE },
             .safariFleeRate = 0,
             .bodyColor = BODY_COLOR_BROWN,
@@ -75943,7 +75886,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 100,
             },
             .types = { TYPE_ELECTRIC, TYPE_GRASS },
-            .catchRate = 235,
+            .catchRate = 190,
             .baseExpRewardPadding = 103,
             .evYields = {
                 .hp = 0,
@@ -76000,7 +75943,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 150,
             },
             .types = { TYPE_ELECTRIC, TYPE_GRASS },
-            .catchRate = 135,
+            .catchRate = 60,
             .baseExpRewardPadding = 150,
             .evYields = {
                 .hp = 0,
@@ -76114,7 +76057,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 85,
             },
             .types = { TYPE_DARK, TYPE_POISON },
-            .catchRate = 235,
+            .catchRate = 45,
             .baseExpRewardPadding = 100,
             .evYields = {
                 .hp = 0,
@@ -76171,7 +76114,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 115,
             },
             .types = { TYPE_FIGHTING, TYPE_POISON },
-            .catchRate = 235,
+            .catchRate = 60,
             .baseExpRewardPadding = 132,
             .evYields = {
                 .hp = 0,
@@ -76228,7 +76171,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 85,
             },
             .types = { TYPE_WATER, TYPE_DARK },
-            .catchRate = 55,
+            .catchRate = 45,
             .baseExpRewardPadding = 155,
             .evYields = {
                 .hp = 0,
@@ -76285,7 +76228,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 105,
             },
             .types = { TYPE_GRASS, TYPE_FIGHTING },
-            .catchRate = 135,
+            .catchRate = 75,
             .baseExpRewardPadding = 109,
             .evYields = {
                 .hp = 0,
@@ -76342,7 +76285,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 70,
             },
             .types = { TYPE_NORMAL, TYPE_GHOST },
-            .catchRate = 215,
+            .catchRate = 75,
             .baseExpRewardPadding = 43,
             .evYields = {
                 .hp = 0,
@@ -76399,7 +76342,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 110,
             },
             .types = { TYPE_NORMAL, TYPE_GHOST },
-            .catchRate = 115,
+            .catchRate = 45,
             .baseExpRewardPadding = 117,
             .evYields = {
                 .hp = 0,
@@ -76456,7 +76399,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 65,
             },
             .types = { TYPE_PSYCHIC, TYPE_FLYING },
-            .catchRate = 135,
+            .catchRate = 65,
             .baseExpRewardPadding = 117,
             .evYields = {
                 .hp = 0,
@@ -76513,7 +76456,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 40,
             },
             .types = { TYPE_STEEL, TYPE_DRAGON },
-            .catchRate = 55,
+            .catchRate = 45,
             .baseExpRewardPadding = 14,
             .evYields = {
                 .hp = 0,
@@ -76570,7 +76513,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 60,
             },
             .types = { TYPE_STEEL, TYPE_DRAGON },
-            .catchRate = 55,
+            .catchRate = 45,
             .baseExpRewardPadding = 14,
             .evYields = {
                 .hp = 0,
@@ -76684,7 +76627,7 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
                 .speed = 95,
             },
             .types = { TYPE_GRASS, TYPE_FIGHTING },
-            .catchRate = 55,
+            .catchRate = 45,
             .baseExpRewardPadding = 239,
             .evYields = {
                 .hp = 0,
@@ -78192,291 +78135,6 @@ const SpeciesDataEntry sSpeciesData[MAX_SPECIES_INCLUDING_FORMS + 1] = {
         },
         .metricsData = {
             .heightDecimetres = 10,
-            .weightHectograms = 1200,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_REVAVROOM_SEGIN] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Multi-Cyl Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 80,
-                .attack = 119,
-                .defense = 90,
-                .spAttack = 54,
-                .spDefense = 67,
-                .speed = 90,
-            },
-            .types = { TYPE_STEEL, TYPE_POISON },
-            .catchRate = 75,
-            .baseExpRewardPadding = 0,
-            .evYields = {
-                .hp = 0,
-                .attack = 2,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 127,
-            .hatchCycles = 20,
-            .baseFriendship = 50,
-            .expRate = GROWTH_MEDIUM_FAST,
-            .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-            .abilities = { ABILITY_OVERCOAT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_GRAY,
-            .flipSprite = 0,
-        },
-        .metricsData = {
-            .heightDecimetres = 18,
-            .weightHectograms = 1200,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_REVAVROOM_SCHEDAR] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Multi-Cyl Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 80,
-                .attack = 119,
-                .defense = 90,
-                .spAttack = 54,
-                .spDefense = 67,
-                .speed = 90,
-            },
-            .types = { TYPE_STEEL, TYPE_POISON },
-            .catchRate = 75,
-            .baseExpRewardPadding = 0,
-            .evYields = {
-                .hp = 0,
-                .attack = 2,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 127,
-            .hatchCycles = 20,
-            .baseFriendship = 50,
-            .expRate = GROWTH_MEDIUM_FAST,
-            .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-            .abilities = { ABILITY_OVERCOAT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_GRAY,
-            .flipSprite = 0,
-        },
-        .metricsData = {
-            .heightDecimetres = 18,
-            .weightHectograms = 1200,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_REVAVROOM_NAVI] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Multi-Cyl Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 80,
-                .attack = 119,
-                .defense = 90,
-                .spAttack = 54,
-                .spDefense = 67,
-                .speed = 90,
-            },
-            .types = { TYPE_STEEL, TYPE_POISON },
-            .catchRate = 75,
-            .baseExpRewardPadding = 0,
-            .evYields = {
-                .hp = 0,
-                .attack = 2,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 127,
-            .hatchCycles = 20,
-            .baseFriendship = 50,
-            .expRate = GROWTH_MEDIUM_FAST,
-            .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-            .abilities = { ABILITY_OVERCOAT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_GRAY,
-            .flipSprite = 0,
-        },
-        .metricsData = {
-            .heightDecimetres = 18,
-            .weightHectograms = 1200,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_REVAVROOM_RUCHBAH] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Multi-Cyl Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 80,
-                .attack = 119,
-                .defense = 90,
-                .spAttack = 54,
-                .spDefense = 67,
-                .speed = 90,
-            },
-            .types = { TYPE_STEEL, TYPE_POISON },
-            .catchRate = 75,
-            .baseExpRewardPadding = 0,
-            .evYields = {
-                .hp = 0,
-                .attack = 2,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 127,
-            .hatchCycles = 20,
-            .baseFriendship = 50,
-            .expRate = GROWTH_MEDIUM_FAST,
-            .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-            .abilities = { ABILITY_OVERCOAT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_GRAY,
-            .flipSprite = 0,
-        },
-        .metricsData = {
-            .heightDecimetres = 18,
-            .weightHectograms = 1200,
-            .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
-            .femaleTrainerScale = 0,
-            .femalePokemonScale = 0,
-            .maleTrainerScale = 0,
-            .malePokemonScale = 0,
-            .femaleTrainerYOffset = 0,
-            .femalePokemonYOffset = 0,
-            .maleTrainerYOffset = 0,
-            .malePokemonYOffset = 0,
-        },
-    },
-
-    [SPECIES_REVAVROOM_CAPH] = {
-        .textData = {
-            .name = "-----",
-            .pokedexEntry = "",
-            .classification = "Multi-Cyl Pokémon",
-            .height = "???’??”",
-            .weight = "????.? lbs.",
-        },
-        .speciesData = {
-            .baseStats = {
-                .hp = 80,
-                .attack = 119,
-                .defense = 90,
-                .spAttack = 54,
-                .spDefense = 67,
-                .speed = 90,
-            },
-            .types = { TYPE_STEEL, TYPE_POISON },
-            .catchRate = 75,
-            .baseExpRewardPadding = 0,
-            .evYields = {
-                .hp = 0,
-                .attack = 2,
-                .defense = 0,
-                .spAttack = 0,
-                .spDefense = 0,
-                .speed = 0,
-            },
-            .wildHeldItems = {
-                .common = ITEM_NONE,
-                .rare = ITEM_NONE,
-            },
-            .genderRatio = 127,
-            .hatchCycles = 20,
-            .baseFriendship = 50,
-            .expRate = GROWTH_MEDIUM_FAST,
-            .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-            .abilities = { ABILITY_OVERCOAT, ABILITY_NONE },
-            .safariFleeRate = 0,
-            .bodyColor = BODY_COLOR_GRAY,
-            .flipSprite = 0,
-        },
-        .metricsData = {
-            .heightDecimetres = 18,
             .weightHectograms = 1200,
             .bodyType = DEX_SEARCH_BODYTYPE_QUADRUPED,
             .femaleTrainerScale = 0,

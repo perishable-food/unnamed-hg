@@ -59,6 +59,16 @@ enum {
     CHECK_STATUS_DONE,
 };
 
+static const u16 sMovesCallingOtherMoves[] = {
+    MOVE_ASSIST,
+    MOVE_COPYCAT,
+    MOVE_INSTRUCT,
+    MOVE_ME_FIRST,
+    MOVE_METRONOME,
+    MOVE_NATURE_POWER,
+    MOVE_SLEEP_TALK,
+};
+
 const u16 sProtectSuccessChance[] = {
     1, // 100%
     3, // ~33.3%
@@ -224,7 +234,13 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
         if (IsAttackerOnField(ctx)) {
             ctx->battlemon[ctx->attack_client].condition2 &= ~STATUS2_DESTINY_BOND;
             ctx->battlemon[ctx->attack_client].effect_of_moves &= ~MOVE_EFFECT_FLAG_GRUDGE;
+            ctx->battlemon[ctx->attack_client].sheer_force_flag = 0;
         }
+        for (int battler = 0; battler < CLIENT_MAX; battler++) {
+            // To clear flag set during switch-in due to banned item
+            ctx->abilityProcessingFlags[battler].pendingSymbiosis = 0;
+        }
+        ctx->moveInProgress = TRUE;
         // reset new stuff here, because subscript is modified
         // ctx->battlemon[ctx->attack_client].moveeffect.custapBerryFlag = 0;
         // ctx->battlemon[ctx->attack_client].moveeffect.quickClawFlag = 0;
@@ -578,7 +594,6 @@ void __attribute__((section(".init"))) BattleController_BeforeMove(struct Battle
 
         if (IsAttackerOnField(ctx) && ctx->battlemon[ctx->attack_client].moveeffect.boostedAccuracy) {
             ctx->boostedAccuracy = TRUE;
-            ctx->battlemon[ctx->attack_client].moveeffect.boostedAccuracy = 0;
         }
 
         ctx->wb_seq_no++;
@@ -1431,7 +1446,8 @@ BOOL BattleController_CheckChoiceItemMoveUsage(struct BattleStruct *ctx)
         int itemEffect = HeldItemHoldEffectGet(ctx, ctx->attack_client);
         if (itemEffect == HOLD_EFFECT_CHOICE_ATK || itemEffect == HOLD_EFFECT_CHOICE_SPEED || itemEffect == HOLD_EFFECT_CHOICE_SPATK) {
             if (ctx->battlemon[ctx->attack_client].moveeffect.moveNoChoice
-                && ctx->battlemon[ctx->attack_client].moveeffect.moveNoChoice != ctx->current_move_index) {
+                && ctx->battlemon[ctx->attack_client].moveeffect.moveNoChoice != ctx->current_move_index
+                && ctx->current_move_index != MOVE_STRUGGLE) {
                 BattleController_ResetGeneralMoveFailureFlags(ctx, ctx->attack_client, TRUE);
                 ctx->battlerIdTemp = ctx->attack_client;
                 ctx->moveStatusFlagForSpreadMoves[ctx->attack_client] = MOVE_STATUS_FAILED;
@@ -1962,7 +1978,7 @@ BOOL BattleController_CheckMoveFailures1(struct BattleSystem *bsys, struct Battl
     int move;
     int attackerAbility = GetBattlerAbility(ctx, ctx->attack_client);
     u32 weather = GetWeather(bsys, ctx, ctx->attack_client);
-    int attackerItem = GetBattleMonItem(ctx, ctx->attack_client);
+    int attackerItem = GetBattleMonItemIgnoringUnnerve(ctx, ctx->attack_client);
 
     // For Sucker Punch
     if (ctx->battlemon[ctx->defence_client].moveeffect.encoredMove && ctx->battlemon[ctx->defence_client].moveeffect.encoredMove == ctx->battlemon[ctx->defence_client].move[ctx->battlemon[ctx->defence_client].moveeffect.encoredMoveIndex]) {
@@ -2081,8 +2097,10 @@ BOOL BattleController_CheckMoveFailures1(struct BattleSystem *bsys, struct Battl
         sideB = IsClientEnemy(bsys, battlerId);
         if (!(ctx->oneTurnFlag[ctx->attack_client].special_damage[battlerId] && sideA != sideB && ctx->battlemon[battlerId].hp)) {
             ctx->oneSelfFlag[ctx->attack_client].no_pressure_flag = 1;
+            flag = TRUE;
         }
         break;
+    case MOVE_COMEUPPANCE:
     case MOVE_METAL_BURST:
         battlerId = ctx->oneTurnFlag[ctx->attack_client].last_damager;
         sideB = IsClientEnemy(bsys, battlerId);
@@ -4359,7 +4377,19 @@ BOOL BattleController_CheckMoveFailures4_SingleTarget(struct BattleSystem *bsys 
         break;
     }
     case MOVE_ENCORE: {
-        // TODO
+        // dirty hack: waza_no_sketch holds the last clicked move
+        struct BattlePokemon *target = &ctx->battlemon[ctx->defence_client];
+        u16 lastMove = ctx->waza_no_sketch[ctx->defence_client];
+        int movePos = BattleMon_GetMoveIndex(target, lastMove);
+
+        if (lastMove == MOVE_NONE
+            || IsElementInArray(sMovesCallingOtherMoves, &lastMove, NELEMS(sMovesCallingOtherMoves), sizeof(sMovesCallingOtherMoves[0]))
+            || !IsMoveEncored(ctx, lastMove)
+            || movePos == MAX_MON_MOVES
+            || target->pp[movePos] == 0
+            || target->moveeffect.encoredMove != MOVE_NONE) {
+            butItFailedFlag = TRUE;
+        }
         break;
     }
     case MOVE_SKETCH: {
@@ -5255,5 +5285,6 @@ void RemoveItemOnFlingFailure(struct BattleStruct *ctx)
         ctx->recycle_item[ctx->attack_client] = ctx->battlemon[ctx->attack_client].item;
         ctx->battlemon[ctx->attack_client].item = ITEM_NONE;
         ctx->battlemon[ctx->attack_client].moveeffect.knockOffFlag = TRUE;
+        ctx->abilityProcessingFlags[ctx->attack_client].pendingSymbiosis = 1;
     }
 }

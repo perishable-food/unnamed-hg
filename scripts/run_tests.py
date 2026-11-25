@@ -126,7 +126,7 @@ def get_idle_timeout_seconds(partition_count: int) -> int:
 
 
 def read_communication_hole_value():
-    return emu_memory.signed[g_EmulatorCommunicationSendHoleAddress]
+    return emu_memory.read(g_EmulatorCommunicationSendHoleAddress, g_EmulatorCommunicationSendHoleAddress, 4, True)
 
 
 def write_communication_hole_value(value: int):
@@ -400,6 +400,7 @@ def run_single_partition(args) -> int:
 
         if window is not None:
             window.draw()
+            window.process_input()
 
         emu.cycle(False)
 

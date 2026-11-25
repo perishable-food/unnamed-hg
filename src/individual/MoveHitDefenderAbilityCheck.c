@@ -330,7 +330,10 @@ BOOL __attribute__((section(".init"))) MoveHitDefenderAbilityCheckInternal(struc
             && sp->battlemon[sp->attack_client].pp[move_pos] != 0 // pp is nonzero
             && sp->current_move_index != 0 // a move has already been used
             && sp->moveTbl[sp->current_move_index].power != 0
-            && BattleRand(bw) % 10 < 3) {
+#ifndef DEBUG_BATTLE_SCENARIOS
+            && BattleRand(bw) % 10 < 3
+#endif
+        ) {
             sp->waza_work = sp->current_move_index;
             sp->battlemon[sp->attack_client].moveeffect.disabledMove = sp->waza_work;
             sp->battlemon[sp->attack_client].moveeffect.disabledTurns = 4; // cursed body disables for 4 turns every time
@@ -427,6 +430,13 @@ BOOL __attribute__((section(".init"))) MoveHitDefenderAbilityCheckInternal(struc
             sp->addeffect_type = SIDE_EFFECT_TYPE_PRINT_WORK_ABILITY;
             seq_no[0] = BATTLE_SUBSCRIPT_PERISH_BODY;
             ret = TRUE;
+        }
+    } else if (GetBattlerAbility(sp, sp->defence_client) == ABILITY_PICKPOCKET) { // not breakable
+        if ((sp->oneSelfFlag[sp->defence_client].physical_damage || sp->oneSelfFlag[sp->defence_client].special_damage)
+            && sp->battlemon[sp->defence_client].hp
+            && (IsContactBeingMade(GetBattlerAbility(sp, sp->attack_client), HeldItemHoldEffectGet(sp, sp->attack_client), HeldItemHoldEffectGet(sp, sp->defence_client), sp->current_move_index, sp->moveTbl[sp->current_move_index].flag))) {
+            sp->pickpocketBattler |= No2Bit(sp->defence_client);
+            sp->pickpocketAttackerSlot = sp->sel_mons_no[sp->attack_client];
         }
     }
 

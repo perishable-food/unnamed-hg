@@ -36,6 +36,7 @@ int LONG_CALL Activate_MirrorHerb_WhiteHerb_EjectPack(void *bw, struct BattleStr
 int LONG_CALL Activate_KeeMarangaBerry_RedCard_EjectButton(void *bsys, struct BattleStruct *ctx);
 int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct BattleStruct *ctx);
 int LONG_CALL Activate_Pickpocket(void *bsys, struct BattleStruct *sp);
+int LONG_CALL Activate_Symbiosis(void *bsys, struct BattleStruct *ctx);
 int LONG_CALL Activate_Disguise_IceFace(void *bsys, struct BattleStruct *sp);
 int LONG_CALL Activate_SecondaryEffects(void *bsys, struct BattleStruct *ctx);
 int LONG_CALL Activate_HowlLifeDew(void *bsys, struct BattleStruct *ctx);
@@ -402,7 +403,7 @@ void __attribute__((section(".init"))) ServerDoPostMoveEffectsInternal(void *bsy
         debug_printf("in MOVE_PERFORMANCE_STEP_13_0_MULTIHIT_MOVE_ATTACKER_ITEMS_4 %d\n", ctx->swoam_seq_no);
 #endif
         if (ctx->multiHitCount > 0) {
-            if (TryUseHeldItem(bsys, ctx, ctx->attack_client) == TRUE) {
+            if (TryUseHeldItem(bsys, ctx, ctx->attack_client, (HELD_ITEM_USE_CHANGE_HP | HELD_ITEM_USE_REMOVE_CONDITION | HELD_ITEM_USE_PINCH_BERRY)) == TRUE) {
                 return;
             }
         }
@@ -415,7 +416,7 @@ void __attribute__((section(".init"))) ServerDoPostMoveEffectsInternal(void *bsy
 #endif
 
         if (ctx->multiHitCount > 0) {
-            if (TryUseHeldItem(bsys, ctx, ctx->defence_client) == TRUE) {
+            if (TryUseHeldItem(bsys, ctx, ctx->defence_client, (HELD_ITEM_USE_CHANGE_HP | HELD_ITEM_USE_REMOVE_CONDITION | HELD_ITEM_USE_PINCH_BERRY)) == TRUE) {
                 return;
             }
         }
@@ -655,8 +656,14 @@ void __attribute__((section(".init"))) ServerDoPostMoveEffectsInternal(void *bsy
         ctx->swoak_work = 0;
         ctx->swoam_seq_no++;
         FALLTHROUGH;
-    case MOVE_PERFORMANCE_STEP_27_1_OPPORTUNIST_SYMBIOSIS:
-        // TODO
+    case MOVE_PERFORMANCE_STEP_27_1_OPPORTUNIST_SYMBIOSIS: // speed order
+#ifdef DEBUG_MOVE_PERFORMANCE_LOGIC
+        debug_printf("in MOVE_PERFORMANCE_STEP_27_1_OPPORTUNIST_SYMBIOSIS %d\n", ctx->swoam_seq_no);
+#endif
+        // TODO opportunist
+        if (Activate_Symbiosis(bsys, ctx) == TRUE) {
+            return;
+        }
         ctx->swoak_work = 0;
         ctx->swoam_seq_no++;
         FALLTHROUGH;
@@ -788,162 +795,12 @@ void __attribute__((section(".init"))) ServerDoPostMoveEffectsInternal(void *bsy
     ctx->swoak_work = 0;
     ctx->server_seq_no = CONTROLLER_COMMAND_32;
 }
-/*
-// Sort clients because moves may affect ctxeed
-DynamicSortClientExecutionOrder(bsys, ctx, FALSE);
-switch (ctx->swoam_seq_no) {
-    case SWOAK_SEQ_VANISH_ON_OFF: {
-        int ret = 0;
-        while (ctx->swoak_work < BattleWorkClientSetMaxGet(bsys))
-        {
-            if (((ctx->battlemon[ctx->swoak_work].effect_of_moves & (MOVE_EFFECT_FLAG_SEMI_INVULNERABLE)) == 0)
-             && (ctx->battlemon[ctx->swoak_work].effect_of_moves_temp & (MOVE_EFFECT_FLAG_SEMI_INVULNERABLE)))
-            {
-                ctx->battlemon[ctx->swoak_work].effect_of_moves_temp &= ~(MOVE_EFFECT_FLAG_SEMI_INVULNERABLE);
-                LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_VANISH_OFF);
-                ctx->battlerIdTemp = ctx->swoak_work;
-                ctx->next_server_seq_no = ctx->server_seq_no;
-                ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-                ret = 1;
-            }
-
-            ctx->swoak_work++;
-
-            if (ret)
-                return;
-        }
-    }
-    ctx->swoam_seq_no++;
-    ctx->swoak_work = 0;
-    FALLTHROUGH;
-case SWOAK_SEQ_SYNCHRONIZE_CHECK:
-    ctx->swoam_seq_no++;
-    if (SynchroniseAbilityCheck(bsys, ctx, ctx->server_seq_no) == TRUE)
-        return;
-    FALLTHROUGH;
-case SWOAK_SEQ_POKE_APPEAR_CHECK:
-    {
-        int seq_no;
-
-        seq_no = ST_ServerPokeAppearCheck(bsys, ctx);   //switch in ability check
-
-        if (seq_no)
-        {
-            LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, seq_no);
-            ctx->next_server_seq_no = ctx->server_seq_no;
-            ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-            return;
-        }
-    }
-    ctx->swoam_seq_no++;
-    FALLTHROUGH;
-case SWOAK_SEQ_CHECK_HELD_ITEM_EFFECT_ATTACKER:
-    ctx->swoam_seq_no++;
-    if (TryUseHeldItem(bsys, ctx, ctx->attack_client) == TRUE) // will eventually need TryUseHeldItem anyway.  generic berry function thing
-        return;
-    FALLTHROUGH;
-case SWOAK_SEQ_CHECK_HELD_ITEM_EFFECT_DEFENDER:
-    ctx->swoam_seq_no++;
-    if (ctx->defence_client != 0xFF)
-    {
-        if (TryUseHeldItem(bsys, ctx, ctx->defence_client) == TRUE)
-            return;
-    }
-    FALLTHROUGH;
-case SWOAK_SEQ_CHECK_DEFENDER_ITEM_ON_HIT:
-    {
-        int seq_no;
-
-        ctx->swoam_seq_no++;
-        if (CheckDefenderItemEffectOnHit(bsys, ctx, &seq_no) == TRUE)
-        {
-            LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, seq_no);
-            ctx->next_server_seq_no = ctx->server_seq_no;
-            ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-            return;
-        }
-    }
-    FALLTHROUGH;
-case SWOAK_SEQ_THAW_ICE:
-    {
-        int movetype;
-        u16 currMove = ctx->current_move_index;
-
-        movetype = GetAdjustedMoveType(ctx, ctx->attack_client, currMove); // new normalize checks
-
-        ctx->swoam_seq_no++;
-
-        if (ctx->defence_client != 0xFF)
-        {
-            if ((ctx->battlemon[ctx->defence_client].condition & STATUS_FREEZE)
-             && ((ctx->waza_status_flag & MOVE_STATUS_MULTI_HIT_DISRUPTED) == 0)
-             && (ctx->defence_client != ctx->attack_client)
-             && ((ctx->oneSelfFlag[ctx->defence_client].physical_damage) || (ctx->oneSelfFlag[ctx->defence_client].special_damage))
-             && (ctx->battlemon[ctx->defence_client].hp)
-             && ((movetype == TYPE_FIRE) || (IsElementInArray(gMovesThatThawFrozenMons, &currMove, NELEMS(gMovesThatThawFrozenMons), sizeof(u16)))) // scald can also melt opponents as of gen 6
-             && ctx->oneTurnFlag[ctx->attack_client].parental_bond_flag == 0)
-            {
-                ctx->battlerIdTemp = ctx->defence_client;
-                LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_THAW_OUT);
-                ctx->next_server_seq_no = ctx->server_seq_no;
-                ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-                return;
-            }
-        }
-    }
-    FALLTHROUGH;
-case SWOAK_SEQ_CHECK_HEALING_ITEMS:
-    {
-        int client_no;
-        int ret=0;
-        int seq_no;
-
-        while (ctx->swoak_work < BattleWorkClientSetMaxGet(bsys))
-        {
-            client_no = ctx->turnOrder[ctx->swoak_work];
-            if (ctx->no_reshuffle_client & No2Bit(client_no))
-            {
-                ctx->swoak_work++;
-                continue;
-            }
-
-            ctx->swoak_work++;
-
-            if (HeldItemHealStatusCheck(bsys, ctx, client_no, &seq_no) == TRUE) // will also probably need this one too
-            {
-                ctx->battlerIdTemp = client_no;
-                LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, seq_no);
-                ctx->next_server_seq_no = ctx->server_seq_no;
-                ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-                ret = 1;
-                break;
-            }
-        }
-
-        if (ret == 0)
-        {
-            ctx->swoam_seq_no++;
-            ctx->swoak_work = 0;
-        }
-    }
-    FALLTHROUGH;
-case SWOAK_SEQ_CLEAR_MAGIC_COAT:
-    ctx->swoam_seq_no++;
-    break;
-default:
-    break;
-}
-//ctx->swoam_seq_no = 0;
-ctx->swoak_work = 0;
-ctx->server_seq_no = CONTROLLER_COMMAND_32;
-
-}*/
 
 int LONG_CALL Activate_AllBattlerItems(void *bsys, struct BattleStruct *ctx)
 {
     for (int battler = 0; battler < BattleWorkClientSetMaxGet(bsys); battler++) {
         int client_no = ctx->turnOrder[battler];
-        if (TryUseHeldItem(bsys, ctx, client_no) == TRUE) {
+        if (TryUseHeldItem(bsys, ctx, client_no, (HELD_ITEM_USE_CHANGE_HP | HELD_ITEM_USE_CHANGE_PP | HELD_ITEM_USE_REMOVE_CONDITION | HELD_ITEM_USE_PINCH_BERRY)) == TRUE) {
             return TRUE;
         }
     }
@@ -1161,7 +1018,8 @@ int LONG_CALL Activate_AdditionalMoveEffects(void *bsys UNUSED, struct BattleStr
         break;
     case MOVE_EFFECT_STEALTH_ROCK_HIT: // https://discord.com/channels/419213663107416084/1368163973366681712/1392652799686348912
         if (ctx->attack_client != BATTLER_NONE
-            && (ctx->battlemon[ctx->attack_client].hp != 0)) {
+            && (ctx->battlemon[ctx->attack_client].hp != 0)
+            && !(GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1)) {
             ctx->addeffect_type = SIDE_EFFECT_TYPE_MOVE_EFFECT;
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_SET_STEALTH_ROCK);
             ctx->next_server_seq_no = ctx->server_seq_no;
@@ -1171,7 +1029,8 @@ int LONG_CALL Activate_AdditionalMoveEffects(void *bsys UNUSED, struct BattleStr
         break;
     case MOVE_EFFECT_SET_SPIKES_HIT:
         if (ctx->attack_client != BATTLER_NONE
-            && (ctx->battlemon[ctx->attack_client].hp != 0)) {
+            && (ctx->battlemon[ctx->attack_client].hp != 0)
+            && !(GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1)) {
             ctx->addeffect_type = SIDE_EFFECT_TYPE_MOVE_EFFECT;
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_SET_SPIKES);
             ctx->next_server_seq_no = ctx->server_seq_no;
@@ -1421,7 +1280,9 @@ int LONG_CALL ThawTarget_FromFireMove_Scald(void *bsys UNUSED, struct BattleStru
             && (ctx->defence_client != ctx->attack_client)
             && ((ctx->oneSelfFlag[ctx->defence_client].physical_damage) || (ctx->oneSelfFlag[ctx->defence_client].special_damage))
             && (ctx->battlemon[ctx->defence_client].hp)
-            && ((movetype == TYPE_FIRE) || (IsElementInArray(gMovesThatThawFrozenMons, &currMove, NELEMS(gMovesThatThawFrozenMons), sizeof(u16)))) // scald can also melt opponents as of gen 6
+            && ((movetype == TYPE_FIRE)
+                || (IsElementInArray(gMovesThatThawFrozenMons, &currMove, NELEMS(gMovesThatThawFrozenMons), sizeof(u16)) // scald can also melt opponents as of gen 6
+                    && !(GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1)))
             && ctx->oneTurnFlag[ctx->attack_client].parental_bond_flag == 0) {
             ctx->battlerIdTemp = ctx->defence_client;
             LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_THAW_OUT);
@@ -1443,6 +1304,7 @@ int LONG_CALL Activate_SkillEffects(void *bsys UNUSED, struct BattleStruct *ctx)
             && ctx->battlemon[ctx->attack_client].item) {
             ctx->recycle_item[ctx->attack_client] = ctx->battlemon[ctx->attack_client].item;
             ctx->battlemon[ctx->attack_client].item = 0;
+            ctx->abilityProcessingFlags[ctx->attack_client].pendingSymbiosis = 1;
         }
         break;
     case MOVE_BURN_UP:
@@ -1548,9 +1410,15 @@ int LONG_CALL Activate_RampageConfusion(void *bsys UNUSED, struct BattleStruct *
     return FALSE;
 }
 
+BOOL AttackerCameInThisTurn(struct BattleStruct *ctx)
+{
+    return ctx->moveConditionsFlags[ctx->attack_client].firstTurnOut == 2 && !ctx->futureSightHitTurn;
+}
+
 int LONG_CALL Activate_ShellBell_LifeOrb(void *bw UNUSED, struct BattleStruct *sp)
 {
     if (!IsAttackerOnField(sp)
+        || AttackerCameInThisTurn(sp)
         || (GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE
             && sp->battlemon[sp->attack_client].sheer_force_flag == 1)) { // skip over shell bell and life orb if sheer force is active
         return FALSE;
@@ -1613,7 +1481,7 @@ int LONG_CALL Activate_Moxie_BeastBoost_Others(void *bsys, struct BattleStruct *
                 int client_no = ctx->turnOrder[battler];
 
                 if (client_no == ctx->attack_client
-                    || (ctx->battlemon[client_no].ability == ABILITY_STICKY_HOLD
+                    || ((GetBattlerAbility(ctx, client_no) == ABILITY_STICKY_HOLD)
                         && ctx->battlemon[client_no].hp)
                     || (CheckSubstitute(ctx, client_no) == TRUE)
                     || (ctx->battlemon[client_no].item == ITEM_NONE)
@@ -1846,6 +1714,11 @@ int LONG_CALL Activate_MirrorHerb_WhiteHerb_EjectPack(void *bsys, struct BattleS
 
 int LONG_CALL Activate_KeeMarangaBerry_RedCard_EjectButton(void *bsys, struct BattleStruct *ctx)
 {
+    if (GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1) {
+        ctx->swoak_work = 0;
+        return FALSE;
+    }
+
     for (; ctx->swoak_work < BattleWorkClientSetMaxGet(bsys);) {
         int client_no = ctx->turnOrder[ctx->swoak_work];
         ctx->swoak_work++;
@@ -1862,7 +1735,6 @@ int LONG_CALL Activate_KeeMarangaBerry_RedCard_EjectButton(void *bsys, struct Ba
             // Defender is alive after the attack
             if (!ctx->futureSightHitTurn
                 && (ctx->currentMoveSwitchStatus < CURRENT_MOVE_SWITCH_PENDING)
-                && !((GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE) && (ctx->battlemon[ctx->attack_client].sheer_force_flag == 1))
                 && ((ctx->oneSelfFlag[client_no].physical_damage)
                     || (ctx->oneSelfFlag[client_no].special_damage))
                 && CanSwitchMon(bsys, ctx, client_no)) {
@@ -1882,7 +1754,6 @@ int LONG_CALL Activate_KeeMarangaBerry_RedCard_EjectButton(void *bsys, struct Ba
             if (IsAttackerOnField(ctx)
                 && !ctx->futureSightHitTurn
                 && ctx->battlemon[ctx->attack_client].hp
-                && !((GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE) && (ctx->battlemon[ctx->attack_client].sheer_force_flag == 1))
                 //&& (ctx->currentMoveSwitchStatus < CURRENT_MOVE_SWITCH_PENDING)
                 // Damage was dealt
                 && ((ctx->oneSelfFlag[client_no].physical_damage)
@@ -1944,6 +1815,13 @@ int LONG_CALL Activate_KeeMarangaBerry_RedCard_EjectButton(void *bsys, struct Ba
 
 int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct BattleStruct *ctx)
 {
+#if SHEER_FORCE_GENERATION < GEN_CHAMPIONS
+    if (GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1) {
+        ctx->swoak_work = 0;
+        return FALSE;
+    }
+#endif
+
     for (; ctx->swoak_work < BattleWorkClientSetMaxGet(bsys);) {
         int client_no = ctx->turnOrder[ctx->swoak_work];
         ctx->swoak_work++;
@@ -1962,8 +1840,6 @@ int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct 
                 (ctx->battlemon[client_no].hp)
                 && (ctx->battlemon[client_no].states[STAT_SPECIAL_ATTACK] < 12)
                 && ((ctx->oneSelfFlag[client_no].physical_damage) || (ctx->oneSelfFlag[client_no].special_damage))
-                // berserk doesn't activate if the Pokémon gets attacked by a sheer force boosted move
-                && !((GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE) && (ctx->battlemon[ctx->attack_client].sheer_force_flag == 1))
                 // berserk doesn't activate until the last hit of a multi-hit move
                 && (ctx->battlemon[client_no].hp <= (s32)(ctx->battlemon[client_no].maxhp / 2))
                 && (
@@ -1988,8 +1864,6 @@ int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct 
                     || (ctx->battlemon[client_no].states[STAT_DEFENSE] > 0)
                     || (ctx->battlemon[client_no].states[STAT_SPECIAL_DEFENSE] > 0))
                 && ((ctx->oneSelfFlag[client_no].physical_damage) || (ctx->oneSelfFlag[client_no].special_damage))
-                // anger shell doesn't activate if the Pokémon gets attacked by a sheer force boosted move
-                && !((GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE) && (ctx->battlemon[ctx->attack_client].sheer_force_flag == 1))
                 // anger shell doesn't activate until the last hit of a multi-hit move
                 && (ctx->battlemon[client_no].hp <= (s32)(ctx->battlemon[client_no].maxhp / 2))
                 && (
@@ -2007,10 +1881,6 @@ int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct 
                 return TRUE;
             }
         } else if (MoldBreakerAbilityCheck(ctx, ctx->attack_client, client_no, ABILITY_COLOR_CHANGE)) {
-            if (GetBattlerAbility(ctx, ctx->attack_client) == ABILITY_SHEER_FORCE && ctx->battlemon[ctx->attack_client].sheer_force_flag == 1) { // sheer force doesn't let color change activate
-                return FALSE;
-            }
-
             u8 movetype = GetAdjustedMoveType(ctx, ctx->attack_client, ctx->current_move_index); // new normalize checks
 
             if ((ctx->battlemon[client_no].hp)
@@ -2040,6 +1910,15 @@ int LONG_CALL Activate_Berserk_AngerShell_ColorChange(void *bsys UNUSED, struct 
 
 int LONG_CALL Activate_Pickpocket(void *bsys, struct BattleStruct *sp)
 {
+    if (sp->pickpocketBattler == 0) {
+        return FALSE;
+    }
+
+    BOOL attackerInBattle = sp->sel_mons_no[sp->attack_client] == sp->pickpocketAttackerSlot;
+    struct PartyPokemon *attacker = Battle_GetClientPartyMon(bsys, sp->attack_client, sp->pickpocketAttackerSlot);
+    u16 attackerItem = attackerInBattle ? sp->battlemon[sp->attack_client].item : GetMonData(attacker, MON_DATA_HELD_ITEM, NULL);
+    u16 attackerAbility = attackerInBattle ? GetBattlerAbility(sp, sp->attack_client) : GetMonData(attacker, MON_DATA_ABILITY, NULL);
+
     for (int battler = 0; battler < BattleWorkClientSetMaxGet(bsys); battler++) {
         int client_no = sp->turnOrder[battler];
         if (client_no == sp->attack_client
@@ -2051,27 +1930,69 @@ int LONG_CALL Activate_Pickpocket(void *bsys, struct BattleStruct *sp)
         }
 
         // handle pickpocket - steal attacker's item if it can
-        if (MoldBreakerAbilityCheck(sp, sp->attack_client, client_no, ABILITY_PICKPOCKET)) {
-            if (((sp->oneSelfFlag[client_no].physical_damage)
-                    || (sp->oneSelfFlag[client_no].special_damage))
-                && IsContactBeingMade(GetBattlerAbility(sp, sp->attack_client), HeldItemHoldEffectGet(sp, sp->attack_client), HeldItemHoldEffectGet(sp, client_no), sp->current_move_index, sp->moveTbl[sp->current_move_index].flag)
-                && sp->moveTbl[sp->current_move_index].power != 0
-                // can not steal an item if you already have one
-                && sp->battlemon[client_no].item == ITEM_NONE
-                // if the attacker has its species-specific item or the target would get its item, then pickpocket can not activate
-                && CanTrickHeldItem(sp, sp->attack_client, client_no)
-                // pickpocket doesn't activate if attacked by sheer force
-                && !(GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE && sp->battlemon[sp->attack_client].sheer_force_flag == 1)) {
+        if ((sp->pickpocketBattler & No2Bit(client_no))
+            && sp->moveTbl[sp->current_move_index].power != 0
+            && attackerItem != ITEM_NONE
+            && attackerAbility != ABILITY_STICKY_HOLD
+            // can not steal an item if you already have one
+            && sp->battlemon[client_no].item == ITEM_NONE
+            // if the attacker has its species-specific item or the target would get its item, then pickpocket can not activate
+            && CanTrickHeldItemManual(attackerItem,
+                GetMonData(attacker, MON_DATA_SPECIES, NULL),
+                sp->battlemon[client_no].item,
+                sp->battlemon[client_no].species,
+                GetMonData(attacker, MON_DATA_FORM, NULL),
+                sp->battlemon[client_no].form_no)
+#if SHEER_FORCE_GENERATION < GEN_CHAMPIONS
+            // pickpocket doesn't activate if attacked by sheer force
+            && !(GetBattlerAbility(sp, sp->attack_client) == ABILITY_SHEER_FORCE && sp->battlemon[sp->attack_client].sheer_force_flag == 1)
+#endif
+        ) {
 
-                sp->defence_client = client_no;
-                LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_HANDLE_PICKPOCKET_DEF);
-                sp->next_server_seq_no = sp->server_seq_no;
-                sp->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
-                return TRUE;
+            sp->mp.id = BATTLE_MSG_PICKPOCKET;
+            sp->mp.tag = TAG_NICKNAME_ITEM;
+            sp->mp.param[0] = (sp->pickpocketAttackerSlot << 8) | sp->attack_client;
+            sp->mp.param[1] = attackerItem;
+            sp->battlerIdTemp = client_no;
+
+            if (attackerInBattle) {
+                sp->battlemon[sp->attack_client].item = ITEM_NONE;
+                CopyBattleMonToPartyMon(bsys, sp, sp->attack_client);
+            } else {
+                u16 noItem = ITEM_NONE;
+                SetMonData(attacker, MON_DATA_HELD_ITEM, &noItem);
             }
+            sp->battlemon[client_no].item = attackerItem;
+            CopyBattleMonToPartyMon(bsys, sp, client_no);
+
+            sp->defence_client = client_no;
+            LoadBattleSubSeqScript(sp, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_HANDLE_PICKPOCKET_DEF);
+            sp->next_server_seq_no = sp->server_seq_no;
+            sp->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+            return TRUE;
         }
     }
 
+    return FALSE;
+}
+
+int LONG_CALL Activate_Symbiosis(void *bsys, struct BattleStruct *ctx)
+{
+    if (ctx->current_move_index == MOVE_BESTOW
+        && ctx->attack_client != BATTLER_NONE
+        && ctx->battlemon[ctx->attack_client].item == ITEM_NONE
+        && (ctx->waza_status_flag & WAZA_STATUS_FLAG_NO_OUT) == 0) {
+        ctx->abilityProcessingFlags[ctx->attack_client].pendingSymbiosis = 1;
+    }
+
+    if (TryActivateSymbiosis(bsys, ctx)) {
+        LoadBattleSubSeqScript(ctx, ARC_BATTLE_SUB_SEQ, BATTLE_SUBSCRIPT_SYMBIOSIS);
+        ctx->next_server_seq_no = ctx->server_seq_no;
+        ctx->server_seq_no = CONTROLLER_COMMAND_RUN_SCRIPT;
+        return TRUE;
+    }
+
+    ctx->moveInProgress = FALSE;
     return FALSE;
 }
 
@@ -2177,6 +2098,7 @@ int LONG_CALL Activate_Switch(void *bsys, struct BattleStruct *ctx)
         if (ctx->attack_client != BATTLER_NONE
             && ctx->battlemon[ctx->attack_client].hp > 0
             && (ctx->currentMoveSwitchStatus < CURRENT_MOVE_SWITCH_PENDING)
+            && !AttackerCameInThisTurn(ctx)
             && CanSwitchMon(bsys, ctx, ctx->attack_client)) {
             ctx->addeffect_type = SIDE_EFFECT_TYPE_MOVE_EFFECT;
             ctx->state_client = ctx->attack_client;
