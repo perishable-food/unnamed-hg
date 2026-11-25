@@ -748,7 +748,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
 
             // handle Tough Claws
             if ((AttackingMon.ability == ABILITY_TOUGH_CLAWS) || (AttackingMon.ability == ABILITY_TOXIC_CLAWS)
-                && (IsContactBeingMade(AttackingMon.ability, AttackingMon.item_held_effect, DefendingMon.item_held_effect, moveno, moveFlag))) {
+                && (IsMoveMakingContact(AttackingMon.ability, AttackingMon.item_held_effect, moveno, moveFlag))) {
                 basePowerModifier = QMul_RoundUp(basePowerModifier, UQ412__1_3);
                 continue;
             }
@@ -989,6 +989,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
     if (MoldBreakerAbilityCheckInternal(attacker, defender, AttackingMon.ability, DefendingMon.ability, moveno, movesplit, ABILITY_UNAWARE) == TRUE) {
         AttackingMon.atkstate = 0;
         AttackingMon.spatkstate = 0;
+        AttackingMon.defstate = 0; // Body Press
     }
 
 #ifdef DEBUG_DAMAGE_CALC
